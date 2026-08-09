@@ -1,0 +1,309 @@
+from flask import Flask, jsonify, request
+from flask_cors import CORS
+import docker
+import os
+import subprocess
+import json
+import time
+import threading
+from github import Github
+from dotenv import load_dotenv
+import uuid
+import logging
+
+# Load environment variables
+load_dotenv()
+
+app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Docker client
+docker_client = docker.from_env()
+
+# In-memory task storage (for MVP - in production use proper database)
+tasks = {}
+
+class TaskStatus:
+    PENDING = "pending"
+    RUNNING = "running" 
+    COMPLETED = "completed"
+    FAILED = "failed"
+
+@app.route('/ping', methods=['GET'])
+def ping():
+    """Health check endpoint"""
+    return jsonify({
+        'status': 'success',
+        'message': 'pong',
+        'timestamp': None
+    })
+
+@app.route('/', methods=['GET'])
+def home():
+    """Root endpoint"""
+    return jsonify({
+        'status': 'success',
+        'message': 'Claude Code Automation API',
+        'endpoints': ['/ping', '/start-task', '/task-status', '/git-diff', '/create-pr']
+    })
+
+@app.route('/start-task', methods=['POST'])
+def start_task():
+    """Start a new Claude Code automation task"""
+    try:
+        data = request.get_json()
+        
+        if not data:
+            return jsonify({'error': 'No data provided'}), 400
+            
+        prompt = data.get('prompt')
+        repo_url = data.get('repo_url')
+        branch = data.get('branch', 'main')
+        github_token = data.get('github_token')
+        model = data.get('model', 'claude')  # Default to claude for backward compatibility
+        
+        if not all([prompt, repo_url, github_token]):
+            return jsonify({'error': 'prompt, repo_url, and github_token are required'}), 400
+        
+        # Validate model selection
+        if model not in ['claude', 'codex']:
+            return jsonify({'error': 'model must be either "claude" or "codex"'}), 400
+        
+        # Generate unique task ID
+        task_id = str(uuid.uuid4())
+        
+        # Initialize task
+        tasks[task_id] = {
+            'id': task_id,
+            'status': TaskStatus.PENDING,
+            'prompt': prompt,
+            'repo_url': repo_url,
+            'branch': branch,
+            'github_token': github_token,
+            'model': model,
+            'container_id': None,
+            'commit_hash': None,
+            'git_diff': None,
+            'error': None,
+            'created_at': time.time()
+        }
+        
+        # Start task in background thread
+        thread = threading.Thread(target=run_claude_code_task, args=(task_id,))
+        thread.daemon = True
+        thread.start()
+        
+        return jsonify({
+            'status': 'success',
+            'task_id': task_id,
+            'message': 'Task started successfully'
+        })
+        
+    except Exception as e:
+        logger.error(f"Error starting task: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/task-status/<task_id>', methods=['GET'])
+def get_task_status(task_id):
+    """Get the status of a specific task"""
+    if task_id not in tasks:
+        return jsonify({'error': 'Task not found'}), 404
+    
+    task = tasks[task_id]
+    return jsonify({
+        'status': 'success',
+        'task': {
+            'id': task['id'],
+            'status': task['status'],
+            'prompt': task['prompt'],
+            'repo_url': task['repo_url'],
+            'branch': task['branch'],
+            'model': task.get('model', 'claude'),  # Include model in response
+            'commit_hash': task.get('commit_hash'),
+            'error': task.get('error'),
+            'created_at': task['created_at']
+        }
+    })
+
+@app.route('/git-diff/<task_id>', methods=['GET'])
+def get_git_diff(task_id):
+    """Get the git diff for a completed task"""
+    if task_id not in tasks:
+        return jsonify({'error': 'Task not found'}), 404
+    
+    task = tasks[task_id]
+    
+    if task['status'] != TaskStatus.COMPLETED:
+        return jsonify({'error': 'Task not completed yet'}), 400
+    
+    return jsonify({
+        'status': 'success',
+        'git_diff': task.get('git_diff', ''),
+        'commit_hash': task.get('commit_hash')
+    })
+
+@app.route('/create-pr/<task_id>', methods=['POST'])
+def create_pull_request(task_id):
+    """Create a pull request for a completed task"""
+    try:
+        if task_id not in tasks:
+            return jsonify({'error': 'Task not found'}), 404
+        
+        task = tasks[task_id]
+        
+        if task['status'] != TaskStatus.COMPLETED:
+            return jsonify({'error': 'Task not completed yet'}), 400
+        
+        data = request.get_json() or {}
+        pr_title = data.get('title', f"Claude Code: {task['prompt'][:50]}...")
+        pr_body = data.get('body', f"Automated changes generated by Claude Code.\n\nPrompt: {task['prompt']}")
+        
+        # Extract repo info from URL
+        repo_parts = task['repo_url'].replace('https://github.com/', '').replace('.git', '')
+        
+        # Create GitHub client
+        g = Github(task['github_token'])
+        repo = g.get_repo(repo_parts)
+        
+        # Get the commit
+        commit = repo.get_commit(task['commit_hash'])
+        
+        # Create a new branch for the PR
+        pr_branch = f"claude-code-{task_id[:8]}"
+        base_branch = repo.get_branch(task['branch'])
+        repo.create_git_ref(f"refs/heads/{pr_branch}", commit.sha)
+        
+        # Create pull request
+        pr = repo.create_pull(
+            title=pr_title,
+            body=pr_body,
+            head=pr_branch,
+            base=task['branch']
+        )
+        
+        return jsonify({
+            'status': 'success',
+            'pr_url': pr.html_url,
+            'pr_number': pr.number
+        })
+        
+    except Exception as e:
+        logger.error(f"Error creating PR: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+def run_claude_code_task(task_id):
+    """Run Claude Code automation in a container"""
+    try:
+        task = tasks[task_id]
+        task['status'] = TaskStatus.RUNNING
+        
+        logger.info(f"Starting {task.get('model', 'claude').upper()} task {task_id}")
+        
+        # Escape special characters in prompt for shell safety
+        escaped_prompt = task['prompt'].replace('"', '\\"').replace('$', '\\$').replace('`', '\\`')
+        
+        # Create container environment variables
+        env_vars = {
+            'ANTHROPIC_API_KEY': os.getenv('ANTHROPIC_API_KEY'),
+        }
+        
+        # Determine which CLI to use
+        model_cli = task.get('model', 'claude')
+        
+        # Create the command to run in container
+        container_command = f'''
+set -e
+echo "Setting up repository..."
+
+# Clone repository
+git clone -b {task['branch']} {task['repo_url']} /workspace/repo
+cd /workspace/repo
+
+# Configure git
+git config user.email "claude-code@automation.com"
+git config user.name "Claude Code Automation"
+
+echo "Starting {model_cli.upper()} with prompt..."
+
+# Run the selected model CLI with the prompt
+echo "{escaped_prompt}" | {model_cli}
+
+# Check if there are changes
+if git diff --quiet; then
+    echo "No changes made"
+    exit 1
+fi
+
+# Commit changes
+git add .
+git commit -m "{model_cli.capitalize()}: {escaped_prompt[:100]}"
+
+# Get commit hash and diff
+echo "COMMIT_HASH=$(git rev-parse HEAD)"
+echo "=== GIT DIFF START ==="
+git diff HEAD~1 HEAD
+echo "=== GIT DIFF END ==="
+'''
+        
+        # Run container with Claude Code
+        container = docker_client.containers.run(
+            'claude-code-automation:latest',
+            command=['bash', '-c', container_command],
+            environment=env_vars,
+            detach=True,
+            remove=True,
+            working_dir='/workspace',
+            network_mode='bridge'  # Ensure proper networking
+        )
+        
+        task['container_id'] = container.id
+        
+        # Wait for container to finish with timeout
+        try:
+            result = container.wait(timeout=300)  # 5 minute timeout
+            logs = container.logs().decode('utf-8')
+        except Exception as e:
+            logger.error(f"Container timeout or error: {str(e)}")
+            task['status'] = TaskStatus.FAILED
+            task['error'] = f"Container execution timeout or error: {str(e)}"
+            return
+        
+        if result['StatusCode'] == 0:
+            # Parse output to extract commit hash and diff
+            lines = logs.split('\n')
+            commit_hash = None
+            git_diff = []
+            capturing_diff = False
+            
+            for line in lines:
+                if line.startswith('COMMIT_HASH='):
+                    commit_hash = line.split('=', 1)[1]
+                elif line == '=== GIT DIFF START ===':
+                    capturing_diff = True
+                elif line == '=== GIT DIFF END ===':
+                    capturing_diff = False
+                elif capturing_diff:
+                    git_diff.append(line)
+            
+            task['status'] = TaskStatus.COMPLETED
+            task['commit_hash'] = commit_hash
+            task['git_diff'] = '\n'.join(git_diff)
+            
+            logger.info(f"Task {task_id} completed successfully")
+            
+        else:
+            task['status'] = TaskStatus.FAILED
+            task['error'] = f"Container exited with code {result['StatusCode']}: {logs}"
+            logger.error(f"Task {task_id} failed: {task['error']}")
+            
+    except Exception as e:
+        task['status'] = TaskStatus.FAILED
+        task['error'] = str(e)
+        logger.error(f"Task {task_id} failed with exception: {str(e)}")
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
