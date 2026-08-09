@@ -1,0 +1,1174 @@
+"""
+τ²-bench implementation for verifiers.
+Supports full dual-control (both agent and user can execute tools).
+All tool execution and user simulation happens within env_response.
+"""
+
+import json
+import os
+import subprocess
+from typing import List, Tuple, Dict, Any, Optional
+from copy import deepcopy
+from datetime import datetime
+
+import verifiers as vf
+from verifiers.envs.multiturn_env import MultiTurnEnv
+from verifiers.types import ChatCompletionMessageToolCall
+from datasets import Dataset
+
+# Import tau2-bench components
+try:
+    from tau2.domains.retail.environment import get_environment as get_retail_env
+    from tau2.domains.retail.environment import get_tasks as get_retail_tasks
+    from tau2.domains.airline.environment import get_environment as get_airline_env
+    from tau2.domains.airline.environment import get_tasks as get_airline_tasks
+    from tau2.domains.telecom.environment import get_environment as get_telecom_env
+    from tau2.domains.telecom.environment import get_tasks as get_telecom_tasks
+    from tau2.data_model.message import (
+        AssistantMessage, UserMessage, ToolMessage, Message as Tau2Message, ToolCall
+    )
+    from tau2.user.user_simulator import UserSimulator
+    from tau2.user.base import STOP, TRANSFER, OUT_OF_SCOPE
+    from tau2.utils.utils import DATA_DIR
+    # Import the evaluators
+    from tau2.evaluator.evaluator import evaluate_simulation, EvaluationType
+    from tau2.data_model.simulation import SimulationRun, TerminationReason
+    from tau2.data_model.tasks import RewardType
+    from tau2.environment.environment import Environment as Tau2Environment
+    TAU2_AVAILABLE = True
+except ImportError as e:
+    print(f"DEBUG: Import error: {e}")
+    import traceback
+    traceback.print_exc()
+    TAU2_AVAILABLE = False
+    STOP = "STOP"
+    TRANSFER = "TRANSFER"
+    OUT_OF_SCOPE = "OUT_OF_SCOPE"
+    DATA_DIR = None
+    print("Warning: tau2-bench not installed. Please install it to use this environment.")
+
+
+def setup_tau2_data():
+    """Setup tau2-bench data by downloading from GitHub if not present."""
+    if not TAU2_AVAILABLE or not DATA_DIR:
+        return
+        
+    # Check if data already exists
+    if os.path.exists(DATA_DIR) and os.path.exists(os.path.join(DATA_DIR, "tau2", "domains")):
+        return
+        
+    print(f"Setting up tau2-bench data in {DATA_DIR}...")
+    
+    # Create data directory
+    os.makedirs(DATA_DIR, exist_ok=True)
+    
+    # Clone tau2-bench temporarily to get data
+    temp_dir = "/tmp/tau2_bench_temp"
+    try:
+        # Clone the repository
+        subprocess.run(
+            ["git", "clone", "--depth", "1", "https://github.com/sierra-research/tau2-bench.git", temp_dir],
+            check=True,
+            capture_output=True
+        )
+        
+        # Copy data directory
+        import shutil
+        src_data = os.path.join(temp_dir, "data")
+        if os.path.exists(src_data):
+            shutil.copytree(src_data, DATA_DIR, dirs_exist_ok=True)
+            print(f"✅ tau2-bench data successfully set up in {DATA_DIR}")
+        else:
+            print(f"⚠️  Warning: Could not find data directory in tau2-bench repository")
+            
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️  Warning: Failed to download tau2-bench data: {e}")
+    finally:
+        # Clean up temp directory
+        if os.path.exists(temp_dir):
+            import shutil
+            shutil.rmtree(temp_dir)
+
+
+class Tau2BenchEnv(MultiTurnEnv):
+    """
+    τ²-bench environment supporting dual-control scenarios.
+    Both agent and user can execute tools within env_response.
+    """
+    
+    def __init__(self,
+                 dataset: Dataset,
+                 rubric: vf.Rubric,
+                 domain: str,
+                 tau2_tasks: List[Any],
+                 user_llm: str = "gpt-4.1-mini",
+                 max_turns: int = 30,
+                 max_errors: int = 3,
+                 solo_mode: bool = False,
+                 **kwargs):
+        # Initialize parent class
+        super().__init__(dataset=dataset, rubric=rubric, **kwargs)
+        self.domain = domain
+        self.tau2_tasks = tau2_tasks
+        self.user_llm = user_llm
+        self.max_turns = max_turns
+        self.max_errors = max_errors
+        self.solo_mode = solo_mode
+        
+        # Create task lookup
+        self.task_lookup = {task.id: task for task in tau2_tasks}
+        
+        # Get environment configuration from domain
+        if domain == "retail":
+            temp_env = get_retail_env()
+        elif domain == "airline":
+            temp_env = get_airline_env()
+        elif domain == "telecom":
+            temp_env = get_telecom_env(solo_mode=solo_mode)
+        else:
+            raise ValueError(f"Unknown domain: {domain}")
+            
+        # Store environment configuration
+        self.env_config = {
+            "domain": domain,
+            "policy": temp_env.policy,
+            "tools": temp_env.tools,
+            "user_tools": getattr(temp_env, 'user_tools', None),
+            "solo_mode": solo_mode
+        }
+
+    def _create_fresh_env(self, initial_db_state: dict = None):
+        """Create a fresh tau2 environment instance with optional initial state."""
+        # Create fresh environment
+        env = Tau2Environment(
+            domain_name=self.env_config["domain"],
+            policy=self.env_config["policy"],
+            tools=self.env_config["tools"],
+            user_tools=self.env_config["user_tools"],
+            solo_mode=self.env_config.get("solo_mode", False)
+        )
+        
+        # Set initial database state if provided
+        if initial_db_state:
+            env.set_state(initial_db_state)
+            
+        return env
+
+    def is_completed(self, messages: vf.Messages, state: vf.State, **kwargs) -> bool:
+        """Check if conversation is completed."""
+        # Check max turns
+        turn_count = state.get("turn_count", 0)
+        if turn_count >= self.max_turns:
+            state["termination_reason"] = "max_turns_reached"
+            return True
+            
+        # Check error count
+        if state.get("error_count", 0) >= self.max_errors:
+            state["termination_reason"] = "too_many_errors"
+            return True
+            
+        # Check if user said stop/transfer
+        if messages:
+            last_msg = messages[-1]
+            if last_msg["role"] == "user":
+                content = last_msg.get("content", "").lower()
+                if any(word in content for word in ["stop", "transfer", "goodbye", "bye"]):
+                    state["termination_reason"] = "user_stop"
+                    return True
+                    
+        # Check if task goal is achieved
+        if self._check_task_completion(state):
+            state["termination_reason"] = "goal_achieved"
+            return True
+            
+        return False
+        
+    def env_response(self, messages: vf.Messages, state: vf.State, **kwargs) -> Tuple[vf.Messages, vf.State]:
+        """
+        Handle environment response including tool execution and user simulation.
+        All non-agent logic happens here.
+        """
+        if not messages:
+            return [], state
+            
+        last_msg = messages[-1]
+        response_messages = []
+        
+        # Initialize state components if needed
+        self._init_state(state)
+        
+        # Handle assistant messages (may contain tool calls)
+        if last_msg["role"] == "assistant":
+            # Process any tool calls from the agent
+            if "tool_calls" in last_msg and last_msg["tool_calls"]:
+                tool_results = self._execute_agent_tools(last_msg["tool_calls"], state)
+                response_messages.extend(tool_results)
+                # Return tool results only - let agent respond to them first
+                return response_messages, state
+                
+            # Generate user response only if no tool calls
+            # (or this will be called after agent responds to tool results)
+            user_response = self._generate_user_response(messages, state)
+            if user_response:
+                response_messages.append(user_response)
+                
+                # In telecom, user response might contain tool calls
+                if self.domain == "telecom" and "tool_calls" in user_response:
+                    user_tool_results = self._execute_user_tools(
+                        user_response["tool_calls"], 
+                        state
+                    )
+                    response_messages.extend(user_tool_results)
+                    
+        # Update turn count
+        state["turn_count"] += len([m for m in response_messages if m["role"] in ["assistant", "user"]])
+        
+        return response_messages, state
+        
+    def _init_state(self, state: vf.State):
+        """Initialize state components if not already present."""
+        # Ensure task_id is in state
+        if "task_id" not in state and "info" in state:
+            state["task_id"] = state["info"].get("task_id")
+            
+        if "agent_state" not in state:
+            state["agent_state"] = {}
+            
+        if "user_state" not in state:
+            task_id = state.get("task_id")
+            
+            if not task_id:
+                print(f"WARNING: No task_id found in state: {list(state.keys())}")
+                
+            task = self.task_lookup.get(task_id) if task_id else None
+            user_scenario = task.user_scenario.model_dump() if task and hasattr(task, 'user_scenario') and task.user_scenario else {}
+            # Extract instructions from user_scenario
+            instructions = user_scenario.get("instructions", {}) if user_scenario else {}
+            state["user_state"] = {
+                "instructions": instructions,
+                "persona": user_scenario.get("persona"),
+                "context": {},
+                "conversation_stage": "initial"
+            }
+            
+        if "turn_count" not in state:
+            state["turn_count"] = 0
+            
+        if "tau2_env" not in state:
+            # Create fresh environment
+            state["tau2_env"] = self._create_fresh_env()
+            
+            # Use tau2's set_state method to initialize properly
+            task_id = state.get("task_id")
+            task = self.task_lookup.get(task_id) if task_id else None
+            
+            if task and hasattr(task, 'initial_state') and task.initial_state:
+                # Use tau2's set_state to initialize the environment
+                initialization_data = task.initial_state.initialization_data if hasattr(task.initial_state, 'initialization_data') else None
+                initialization_actions = task.initial_state.initialization_actions if hasattr(task.initial_state, 'initialization_actions') else None
+                message_history = task.initial_state.message_history if hasattr(task.initial_state, 'message_history') else []
+                
+                state["tau2_env"].set_state(
+                    initialization_data=initialization_data,
+                    initialization_actions=initialization_actions,
+                    message_history=message_history
+                )
+                
+                # Store initial database hashes
+                state["initial_db_hash"] = state["tau2_env"].get_db_hash()
+                state["initial_user_db_hash"] = state["tau2_env"].get_user_db_hash()
+            else:
+                # No initial state - store empty hashes
+                state["initial_db_hash"] = state["tau2_env"].get_db_hash()
+                state["initial_user_db_hash"] = state["tau2_env"].get_user_db_hash()
+                
+        if "tool_executions" not in state:
+            state["tool_executions"] = []
+            
+        if "error_count" not in state:
+            state["error_count"] = 0
+            
+        # Initialize user simulator if needed
+        if "user_simulator" not in state:
+            self._init_user_simulator(state)
+            
+    def _init_user_simulator(self, state: vf.State):
+        """Initialize the user simulator for this task."""
+        user_instructions = state["user_state"]["instructions"]
+        
+        # Debug: Check what instructions we're passing
+        if not user_instructions or (isinstance(user_instructions, dict) and not any(user_instructions.values())):
+            print(f"WARNING: Empty user instructions for task {state.get('task_id')}")
+            print(f"User state: {state['user_state']}")
+        
+        tau2_env = state.get("tau2_env")
+        if self.domain == "telecom" and tau2_env and hasattr(tau2_env, 'user_tools'):
+            # User with tools for telecom
+            user_tools = list(tau2_env.user_tools.get_tools().values())
+            state["user_simulator"] = UserSimulator(
+                tools=user_tools,
+                instructions=user_instructions,
+                llm=self.user_llm
+            )
+        else:
+            # User without tools for other domains
+            state["user_simulator"] = UserSimulator(
+                tools=None,
+                instructions=user_instructions,
+                llm=self.user_llm
+            )
+            
+    def _execute_agent_tools(self, tool_calls: List[Any], state: vf.State) -> List[Dict]:
+        """Execute agent tool calls and return tool messages."""
+        print(f"\nDEBUG: _execute_agent_tools called with {len(tool_calls)} tool calls")
+        tool_messages = []
+        
+        for tool_call in tool_calls:
+            # Handle both dict and object formats
+            if isinstance(tool_call, ChatCompletionMessageToolCall):
+                # This is the OpenAI object format
+                tool_name = tool_call.function.name
+                tool_args = json.loads(tool_call.function.arguments)
+                tool_id = tool_call.id
+            elif hasattr(tool_call, 'function'):
+                # Generic object format
+                tool_name = tool_call.function.name
+                tool_args = json.loads(tool_call.function.arguments)
+                tool_id = getattr(tool_call, 'id', f"tool_call_{tool_name}_{datetime.now().timestamp()}")
+            else:
+                # Dictionary format
+                tool_name = tool_call["function"]["name"]
+                tool_args = json.loads(tool_call["function"]["arguments"])
+                tool_id = tool_call.get("id", f"tool_call_{tool_name}_{datetime.now().timestamp()}")
+            
+            # Create tau2 ToolCall object
+            tau2_tool_call = ToolCall(
+                id=tool_id,
+                name=tool_name,
+                arguments=tool_args,
+                requestor="assistant"
+            )
+            
+            # Get database hash before execution
+            tau2_env = state["tau2_env"]
+            db_hash_before = tau2_env.get_db_hash()
+            
+            # Use tau2's get_response method directly
+            tool_response = tau2_env.get_response(tau2_tool_call)
+            
+            # Get database hash after execution
+            db_hash_after = tau2_env.get_db_hash()
+            
+            # Track execution for evaluation
+            exec_record = {
+                "role": "assistant",
+                "tool": tool_name,
+                "arguments": tool_args,
+                "timestamp": datetime.now().isoformat(),
+                "requestor": "assistant",
+                "result": tool_response.content,
+                "error": tool_response.error,
+                "db_hash_before": db_hash_before,
+                "db_hash_after": db_hash_after,
+                "db_changed": db_hash_before != db_hash_after
+            }
+            state["tool_executions"].append(exec_record)
+            
+            # Update error count if needed
+            if tool_response.error:
+                state["error_count"] = state.get("error_count", 0) + 1
+            
+            # Store current database hash
+            state["current_db_hash"] = db_hash_after
+            
+            # Convert tau2 response to verifiers format
+            tool_messages.append({
+                "role": "tool",
+                "content": tool_response.content,
+                "tool_call_id": tool_id
+            })
+            
+        return tool_messages
+        
+    def _execute_user_tools(self, tool_calls: List[Any], state: vf.State) -> List[Dict]:
+        """Execute user tool calls (only in telecom domain)."""
+        if self.domain != "telecom":
+            return []
+            
+        tool_messages = []
+        
+        for tool_call in tool_calls:
+            # Handle both dict and object formats
+            if isinstance(tool_call, ChatCompletionMessageToolCall):
+                # This is the OpenAI object format
+                tool_name = tool_call.function.name
+                tool_args = json.loads(tool_call.function.arguments)
+                tool_id = tool_call.id
+            elif hasattr(tool_call, 'function'):
+                # Generic object format
+                tool_name = tool_call.function.name
+                tool_args = json.loads(tool_call.function.arguments)
+                tool_id = getattr(tool_call, 'id', f"tool_call_{tool_name}_{datetime.now().timestamp()}")
+            else:
+                # Dictionary format
+                tool_name = tool_call.get("function", {}).get("name", "")
+                tool_args = json.loads(tool_call.get("function", {}).get("arguments", "{}"))
+                tool_id = tool_call.get("id", f"tool_call_{tool_name}_{datetime.now().timestamp()}")
+                
+            # Create tau2 ToolCall object
+            tau2_tool_call = ToolCall(
+                id=tool_id,
+                name=tool_name,
+                arguments=tool_args,
+                requestor="user"
+            )
+            
+            # Get database hashes before execution
+            tau2_env = state["tau2_env"]
+            user_db_hash_before = tau2_env.get_user_db_hash()
+            
+            # Use tau2's get_response method directly
+            tool_response = tau2_env.get_response(tau2_tool_call)
+            
+            # Get database hashes after execution
+            user_db_hash_after = tau2_env.get_user_db_hash()
+            
+            # Track execution for evaluation
+            exec_record = {
+                "role": "user",
+                "tool": tool_name,
+                "arguments": tool_args,
+                "timestamp": datetime.now().isoformat(),
+                "requestor": "user",
+                "result": tool_response.content,
+                "error": tool_response.error,
+                "user_db_hash_before": user_db_hash_before,
+                "user_db_hash_after": user_db_hash_after,
+                "user_db_changed": user_db_hash_before != user_db_hash_after
+            }
+            state["tool_executions"].append(exec_record)
+            
+            # Update error count if needed
+            if tool_response.error:
+                state["error_count"] = state.get("error_count", 0) + 1
+            
+            # Store current user database hash
+            state["current_user_db_hash"] = user_db_hash_after
+            
+            # Convert tau2 response to verifiers format
+            tool_messages.append({
+                "role": "tool",
+                "content": tool_response.content,
+                "tool_call_id": tool_id,
+                "name": f"user_{tool_name}"  # Prefix to distinguish user tools
+            })
+            
+        return tool_messages
+        
+    def _generate_user_response(self, messages: vf.Messages, state: vf.State) -> Optional[Dict]:
+        """Generate user response using tau2 user simulator."""
+        user_sim = state.get("user_simulator")
+        if not user_sim:
+            return None
+            
+        # Get last message to respond to
+        if not messages:
+            return None
+        last_msg = messages[-1]
+        
+        # Convert to tau2 format
+        tau2_messages = self._convert_to_tau2_messages(messages)
+        if not tau2_messages:
+            return None
+            
+        # Get or create user state
+        if "tau2_user_state" not in state:
+            # Initialize user state with message history (excluding tool messages)
+            # Filter out tool messages and messages with tool_calls
+            history_for_user = []
+            for msg in tau2_messages[:-1]:
+                if msg.role == "tool":
+                    continue
+                if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                    # Skip messages with tool calls as they cause issues
+                    continue
+                history_for_user.append(msg)
+                
+            state["tau2_user_state"] = user_sim.get_init_state(
+                message_history=history_for_user
+            )
+        
+        try:
+            # Generate user response - pass ONLY the last message
+            last_tau2_msg = tau2_messages[-1]
+
+            
+            user_msg, new_user_state = user_sim.generate_next_message(
+                message=last_tau2_msg,
+                state=state["tau2_user_state"]
+            )
+            
+            # Update user state
+            state["tau2_user_state"] = new_user_state
+                
+            # Handle special responses
+            if user_msg.content == STOP:
+                state["termination_reason"] = "user_stop"
+                return {
+                    "role": "user",
+                    "content": "I'd like to stop here. Thank you for your help."
+                }
+            elif user_msg.content == TRANSFER:
+                state["termination_reason"] = "user_transfer"
+                return {
+                    "role": "user",
+                    "content": "I'd like to speak to a human agent please."
+                }
+            elif user_msg.content == OUT_OF_SCOPE:
+                return {
+                    "role": "user",
+                    "content": "I'm not sure that's related to what I need help with."
+                }
+                
+            # Convert to verifiers format
+            msg = {
+                "role": "user",
+                "content": user_msg.content if user_msg.content else ""
+            }
+            
+            # Handle tool calls in user message (telecom only)
+            if hasattr(user_msg, 'tool_calls') and user_msg.tool_calls:
+                msg["tool_calls"] = [
+                    {
+                        "id": tc.id,
+                        "type": "function",
+                        "function": {
+                            "name": tc.function.name,
+                            "arguments": tc.function.arguments
+                        }
+                    }
+                    for tc in user_msg.tool_calls
+                ]
+                
+            return msg
+            
+        except Exception as e:
+            # Fallback response
+            state["user_errors"] = state.get("user_errors", 0) + 1
+            return {
+                "role": "user",
+                "content": "I'm having trouble understanding. Could you please help me?"
+            }
+            
+    def _check_task_completion(self, state: vf.State) -> bool:
+        """Check if task goals are achieved using tau2's environment state comparison."""
+        task_id = state.get("task_id")
+        task = self.task_lookup.get(task_id)
+        
+        if not task or not hasattr(task, 'evaluation_criteria') or not task.evaluation_criteria:
+            return False
+            
+        # For now, don't auto-complete based on state checking
+        # Let the evaluation handle the final assessment
+        # This prevents premature termination
+        return False
+        
+    def _check_single_goal(self, goal: Dict, state: vf.State) -> bool:
+        """Check if a single goal is achieved."""
+        goal_type = goal.get("type", "")
+        
+        if goal_type == "db_state":
+            # Check database state matches expected
+            expected_db = goal.get("expected_db", {})
+            current_db = state.get("env_db", {})
+            
+            # Simple check - all expected fields match
+            for key, expected_value in expected_db.items():
+                if current_db.get(key) != expected_value:
+                    return False
+            return True
+            
+        elif goal_type == "tool_called":
+            # Check if required tool was called successfully
+            required_tool = goal.get("tool_name", "")
+            tool_execs = state.get("tool_executions", [])
+            
+            for exec in tool_execs:
+                if exec["tool"] == required_tool and exec.get("success", False):
+                    return True
+            return False
+            
+        elif goal_type == "conversation":
+            # Check conversation content - simplified
+            return True
+            
+        return False
+        
+    def _convert_to_tau2_messages(self, messages: vf.Messages) -> List[Tau2Message]:
+        """Convert verifiers messages to tau2 format."""
+        tau2_messages = []
+        
+        for msg in messages:
+            if msg["role"] == "assistant":
+                # Convert tool calls to tau2 format
+                tau2_tool_calls = []
+                if "tool_calls" in msg and msg["tool_calls"]:
+                    for tc in msg["tool_calls"]:
+                        # Handle both dict and object formats
+                        if hasattr(tc, 'function'):
+                            # Object format (from API)
+                            args_str = tc.function.arguments
+                            tc_id = tc.id if hasattr(tc, 'id') else ""
+                            tc_name = tc.function.name
+                        else:
+                            # Dict format
+                            args_str = tc.get("function", {}).get("arguments", "{}")
+                            tc_id = tc.get("id", "")
+                            tc_name = tc.get("function", {}).get("name", "")
+                        
+                        # Parse arguments if they're a string
+                        try:
+                            args_dict = json.loads(args_str) if isinstance(args_str, str) else args_str
+                        except:
+                            args_dict = {}
+                            
+                        tau2_tool_calls.append({
+                            "id": tc_id,
+                            "name": tc_name,
+                            "arguments": args_dict
+                        })
+                
+                # Set tool_calls to None if empty (critical for tau2 compatibility)
+                tau2_msg = AssistantMessage(
+                    role="assistant",
+                    content=msg.get("content", ""),
+                    tool_calls=tau2_tool_calls if tau2_tool_calls else None,
+                    cost=0.0
+                )
+            elif msg["role"] == "user":
+                # Handle user tool calls (for telecom domain)
+                user_tool_calls = msg.get("tool_calls", [])
+                tau2_msg = UserMessage(
+                    role="user",
+                    content=msg.get("content", ""),
+                    tool_calls=user_tool_calls if user_tool_calls else None
+                )
+            elif msg["role"] == "tool":
+                tau2_msg = ToolMessage(
+                    id=msg.get("tool_call_id", ""),  # tau2 expects 'id' not 'tool_call_id'
+                    role="tool",
+                    content=msg.get("content", ""),
+                    name=msg.get("name", "tool")  # tau2 also expects tool name
+                )
+            else:
+                continue
+                
+            tau2_messages.append(tau2_msg)
+            
+        return tau2_messages
+
+
+def create_tau2_dataset(domain: str = "retail") -> Dataset:
+    """Create a dataset from tau2 tasks using tau2's native functions."""
+    from tau2.domains.retail.environment import get_tasks as get_retail_tasks
+    from tau2.domains.airline.environment import get_tasks as get_airline_tasks
+    from tau2.domains.telecom.environment import get_tasks as get_telecom_tasks
+    from tau2.agent.llm_agent import AGENT_INSTRUCTION, SYSTEM_PROMPT
+    
+    # Get tasks using tau2's native functions
+    if domain == "retail":
+        tau2_tasks = get_retail_tasks()
+        tau2_env = get_retail_env()
+    elif domain == "airline":
+        tau2_tasks = get_airline_tasks()
+        tau2_env = get_airline_env()
+    elif domain == "telecom":
+        tau2_tasks = get_telecom_tasks()
+        tau2_env = get_telecom_env(solo_mode=False)
+    else:
+        raise ValueError(f"Unknown domain: {domain}")
+    
+    # Get tools using tau2's environment method
+    tools = tau2_env.get_tools()
+    
+    # Get policy from environment
+    policy = tau2_env.policy
+    
+    # Build the system prompt exactly as tau2 does
+    system_prompt = SYSTEM_PROMPT.format(
+        agent_instruction=AGENT_INSTRUCTION,
+        domain_policy=policy
+    )
+    
+    # Convert to OpenAI format - store as JSON string to avoid HF Dataset schema inference issues
+    oai_tools = [tool.openai_schema for tool in tools] if tools else []
+    
+    dataset_rows = []
+    for task in tau2_tasks:
+        # Get initial messages from task
+        initial_messages = []
+        if hasattr(task, 'initial_state') and task.initial_state:
+            if hasattr(task.initial_state, 'message_history') and task.initial_state.message_history:
+                # Convert tau2 messages to verifiers format - preserve full structure
+                for msg in task.initial_state.message_history:
+                    if hasattr(msg, 'role') and hasattr(msg, 'content'):
+                        verifiers_msg = {
+                            "role": msg.role,
+                            "content": msg.content
+                        }
+                        
+                        # Preserve tool_calls if present (for assistant messages)
+                        if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                            verifiers_msg["tool_calls"] = []
+                            for tc in msg.tool_calls:
+                                verifiers_msg["tool_calls"].append({
+                                    "id": tc.id,
+                                    "type": "function",
+                                    "function": {
+                                        "name": tc.name,
+                                        "arguments": json.dumps(tc.arguments)
+                                    }
+                                })
+                        
+                        # Preserve tool_call_id if present (for tool messages)
+                        if msg.role == "tool" and hasattr(msg, 'id'):
+                            verifiers_msg["tool_call_id"] = msg.id
+                            if hasattr(msg, 'name'):
+                                verifiers_msg["name"] = msg.name
+                            
+                        initial_messages.append(verifiers_msg)
+        
+        # Always start with the exact system prompt from original
+        initial_messages = [{"role": "system", "content": system_prompt}] + initial_messages
+        
+        # Get scenario description
+        scenario = ""
+        if hasattr(task, 'user_scenario') and task.user_scenario:
+            if hasattr(task.user_scenario, 'scenario'):
+                scenario = task.user_scenario.scenario
+            elif hasattr(task.user_scenario, 'instructions'):
+                scenario = task.user_scenario.instructions
+            # Handle StructuredUserInstructions or any object with string representation
+            if not isinstance(scenario, str) and scenario is not None:
+                scenario = str(scenario)
+        
+        # Create dataset row
+        row = {
+            "prompt": initial_messages,
+            "question": scenario if scenario else "Help the customer with their request.",
+            "info": {
+                "task_id": task.id,
+                "domain": domain,
+                "expected_state": task.expected_state.model_dump() if hasattr(task, 'expected_state') and task.expected_state else {},
+                "initial_state": task.initial_state.model_dump() if hasattr(task, 'initial_state') and task.initial_state else {},
+                "user_scenario": task.user_scenario.model_dump() if hasattr(task, 'user_scenario') and task.user_scenario else {},
+                "evaluation_criteria": task.evaluation_criteria.model_dump() if hasattr(task, 'evaluation_criteria') and task.evaluation_criteria else {},
+                "oai_tools": json.dumps(oai_tools)  # Store as JSON string to avoid HF Dataset schema conflicts
+            },
+            "answer": "Successfully helped the customer",  # Placeholder
+            "task": f"tau2_{domain}",
+            # Store task_id in state for easy lookup  
+            "task_id": task.id
+        }
+        dataset_rows.append(row)
+    
+    return Dataset.from_list(dataset_rows)
+
+
+
+
+
+def create_tau2_rubric(domain: str) -> vf.Rubric:
+    """Create evaluation rubric that uses tau2-bench's official evaluation logic."""
+    
+    def evaluate_tau2_task(completion, info, state, **kwargs) -> float:
+        """
+        Evaluate task using tau2-bench's official evaluation logic.
+        Returns 1.0 for pass, 0.0 for fail (no partial credit).
+        """
+        print(f"\n!!! EVALUATE_TAU2_TASK CALLED !!!")
+        print(f"State keys: {list(state.keys()) if state else 'No state'}")
+        print(f"Info keys: {list(info.keys()) if info else 'No info'}")
+        
+        # Get task info
+        task_id = state.get("task_id") or info.get("task_id")
+        if not task_id:
+            print("DEBUG: No task_id found, returning 0.0")
+            return 0.0
+            
+        print(f"DEBUG: Task ID = {task_id}")
+        print(f"DEBUG: Domain = {domain}")  # domain should be in closure
+            
+        # Get the original task from tau2
+        if domain == "retail":
+            all_tasks = get_retail_tasks()
+        elif domain == "airline":
+            all_tasks = get_airline_tasks()
+        elif domain == "telecom":
+            all_tasks = get_telecom_tasks()
+        else:
+            print(f"DEBUG: Unknown domain {domain}, returning 0.0")
+            return 0.0
+            
+        print(f"DEBUG: Found {len(all_tasks)} tasks for domain {domain}")
+            
+        task = next((t for t in all_tasks if t.id == task_id), None)
+        if not task:
+            print(f"DEBUG: Task {task_id} not found in tasks, returning 0.0")
+            return 0.0
+            
+        print(f"DEBUG: Found task {task_id}")
+        
+        try:
+            # Create a SimulationRun object from our state and messages
+            termination_reason = state.get("termination_reason", "")
+            if termination_reason == "too_many_errors":
+                term_reason = TerminationReason.TOO_MANY_ERRORS
+            elif termination_reason == "max_turns_reached":
+                term_reason = TerminationReason.MAX_STEPS
+            elif termination_reason == "user_stop":
+                term_reason = TerminationReason.USER_STOP
+            elif termination_reason == "goal_achieved":
+                term_reason = TerminationReason.AGENT_STOP
+            else:
+                term_reason = TerminationReason.AGENT_STOP
+                
+            print(f"DEBUG: Termination reason = {term_reason}")
+                
+            # Convert messages to tau2 format
+            tau2_messages = []
+            tool_call_count = 0
+            tool_message_count = 0
+            tool_call_ids = []
+            tool_message_ids = []
+            
+            if isinstance(completion, list):
+                # completion is already the full message history
+                for i, msg in enumerate(completion):
+                    if msg["role"] == "assistant":
+                        # Convert tool calls to tau2 format if present
+                        tau2_tool_calls = None
+                        if "tool_calls" in msg and msg["tool_calls"]:
+                            tool_call_count += len(msg["tool_calls"])
+                            tau2_tool_calls = []
+                            for tc in msg["tool_calls"]:
+                                # Handle both dict and object formats
+                                if hasattr(tc, 'function'):
+                                    args_str = tc.function.arguments
+                                    tc_id = tc.id if hasattr(tc, 'id') else ""
+                                    tc_name = tc.function.name
+                                else:
+                                    args_str = tc.get("function", {}).get("arguments", "{}")
+                                    tc_id = tc.get("id", "")
+                                    tc_name = tc.get("function", {}).get("name", "")
+                                
+                                tool_call_ids.append(tc_id)
+                                
+                                # Parse arguments
+                                try:
+                                    args_dict = json.loads(args_str) if isinstance(args_str, str) else args_str
+                                except:
+                                    args_dict = {}
+                                    
+                                tau2_tool_calls.append(
+                                    ToolCall(
+                                        id=tc_id,
+                                        name=tc_name,
+                                        arguments=args_dict
+                                    )
+                                )
+                        
+                        tau2_msg = AssistantMessage(
+                            role="assistant",
+                            content=msg.get("content", ""),
+                            tool_calls=tau2_tool_calls,
+                            cost=0.0
+                        )
+                    elif msg["role"] == "user":
+                        # Handle user tool calls (for telecom domain)
+                        tau2_tool_calls = None
+                        if "tool_calls" in msg and msg["tool_calls"]:
+                            tau2_tool_calls = []
+                            for tc in msg["tool_calls"]:
+                                # Similar conversion as above
+                                if hasattr(tc, 'function'):
+                                    args_str = tc.function.arguments
+                                    tc_id = tc.id if hasattr(tc, 'id') else ""
+                                    tc_name = tc.function.name
+                                else:
+                                    args_str = tc.get("function", {}).get("arguments", "{}")
+                                    tc_id = tc.get("id", "")
+                                    tc_name = tc.get("function", {}).get("name", "")
+                                
+                                try:
+                                    args_dict = json.loads(args_str) if isinstance(args_str, str) else args_str
+                                except:
+                                    args_dict = {}
+                                    
+                                tau2_tool_calls.append(
+                                    ToolCall(
+                                        id=tc_id,
+                                        name=tc_name,
+                                        arguments=args_dict
+                                    )
+                                )
+                        
+                        tau2_msg = UserMessage(
+                            role="user",
+                            content=msg.get("content", ""),
+                            tool_calls=tau2_tool_calls
+                        )
+                    elif msg["role"] == "tool":
+                        tool_message_count += 1
+                        tm_id = msg.get("tool_call_id", "")
+                        tool_message_ids.append(tm_id)
+                        tau2_msg = ToolMessage(
+                            id=tm_id,
+                            role="tool",
+                            content=msg.get("content", ""),
+                            name=msg.get("name", "tool")
+                        )
+                    else:
+                        continue
+                    tau2_messages.append(tau2_msg)
+                    
+            print(f"\nDEBUG: Converted {len(tau2_messages)} messages")
+            print(f"DEBUG: Found {tool_call_count} tool calls and {tool_message_count} tool messages")
+            if tool_call_count != tool_message_count:
+                print(f"WARNING: Tool call/message count mismatch!")
+                
+            # Check for ID mismatches
+            missing_responses = []
+            for tc_id in tool_call_ids:
+                if tc_id not in tool_message_ids:
+                    missing_responses.append(tc_id)
+            if missing_responses:
+                print(f"WARNING: Tool calls without responses: {missing_responses}")
+                
+            orphan_responses = []
+            for tm_id in tool_message_ids:
+                if tm_id not in tool_call_ids:
+                    orphan_responses.append(tm_id)
+            if orphan_responses:
+                print(f"WARNING: Tool messages without calls: {orphan_responses}")
+                    
+            simulation = SimulationRun(
+                id=f"verifiers_eval_{task_id}_{datetime.now().isoformat()}",
+                agent_id="verifiers_agent",
+                task_id=task_id,
+                messages=tau2_messages,
+                termination_reason=term_reason,
+                task_completed=state.get("termination_reason") == "goal_achieved",
+                errors=state.get("error_count", 0),
+                num_steps=state.get("turn_count", 0),
+                cost=0.0,  # We don't track cost in verifiers
+                timestamp=datetime.now().isoformat(),
+                start_time=datetime.now().isoformat(),
+                end_time=datetime.now().isoformat(),
+                duration=0.0,  # We don't track duration in verifiers
+                metadata={}
+            )
+            
+            # Check actions
+            expected_actions = []
+            if task.evaluation_criteria and task.evaluation_criteria.actions:
+                expected_actions = task.evaluation_criteria.actions
+                
+            # Print detailed comparison
+            print(f"\n================================================================================")
+            print(f"EVALUATION DEBUG for task {task_id}")
+            print(f"================================================================================")
+            
+            print(f"\nEXPECTED ACTIONS ({len(expected_actions)}):")
+            for i, action in enumerate(expected_actions, 1):
+                print(f"  {i}. {action.requestor}: {action.name}({action.arguments})")
+                if action.compare_args:
+                    print(f"     Compare only: {action.compare_args}")
+                    
+            print(f"\nACTUAL TOOL CALLS:")
+            actual_count = 0
+            for exec_record in state.get("tool_executions", []):
+                actual_count += 1
+                print(f"  {actual_count}. {exec_record.get('requestor', 'unknown')}: {exec_record['tool']}({exec_record['arguments']})")
+                
+            # Try to match each expected action
+            print(f"\nDETAILED ACTION MATCHING:")
+            for action in expected_actions:
+                print(f"\nLooking for: {action.name} by {action.requestor}")
+                print(f"  Expected args: {action.arguments}")
+                if action.compare_args:
+                    print(f"  Compare only: {action.compare_args}")
+                    
+                found = False
+                for exec_record in state.get("tool_executions", []):
+                    if exec_record['tool'] == action.name and exec_record.get('requestor', 'assistant') == action.requestor:
+                        # Check arguments
+                        if action.compare_args:
+                            # Only compare specified args
+                            expected_subset = {k: v for k, v in action.arguments.items() if k in action.compare_args}
+                            actual_subset = {k: v for k, v in exec_record['arguments'].items() if k in action.compare_args}
+                            if expected_subset == actual_subset:
+                                found = True
+                                print(f"  ✓ MATCHED with {exec_record['tool']} call")
+                                break
+                            else:
+                                print(f"  ✗ Args mismatch with {exec_record['tool']}: expected {expected_subset}, got {actual_subset}")
+                        else:
+                            # Compare all args
+                            if exec_record['arguments'] == action.arguments:
+                                found = True
+                                print(f"  ✓ MATCHED with {exec_record['tool']} call")
+                                break
+                            else:
+                                print(f"  ✗ Args mismatch with {exec_record['tool']}: expected {action.arguments}, got {exec_record['arguments']}")
+                                
+                if not found:
+                    print(f"  ✗ NOT FOUND")
+                    
+            # Also run the tau2 evaluation
+            print(f"\nRunning tau2 evaluation...")
+            
+            # Use tau2-bench's official evaluation
+            reward_info = evaluate_simulation(
+                simulation=simulation,
+                task=task,
+                evaluation_type=EvaluationType.ALL,
+                solo_mode=False,  # All domains use False for solo_mode
+                domain=domain
+            )
+            
+            # Log evaluation results
+            print(f"\nEVALUATION RESULTS:")
+            print(f"  Final reward: {reward_info.reward}")
+            if hasattr(reward_info, 'reward_breakdown') and reward_info.reward_breakdown:
+                print(f"  Reward breakdown: {reward_info.reward_breakdown}")
+            
+            # Log specific check results
+            if hasattr(reward_info, 'action_checks') and reward_info.action_checks:
+                print(f"\n  Action checks:")
+                for check in reward_info.action_checks:
+                    status = "✓" if check.action_match else "✗"
+                    print(f"    {status} {check.action.name} - Match: {check.action_match}")
+                    if not check.action_match:
+                        print(f"       Expected args: {check.action.arguments}")
+                        if check.action.compare_args:
+                            print(f"       Compare only: {check.action.compare_args}")
+                        # Try to find closest match
+                        print(f"       Looking for tool call with name: {check.action.name}")
+                        found_with_name = False
+                        for msg in tau2_messages:
+                            if hasattr(msg, 'tool_calls') and msg.tool_calls:
+                                for tc in msg.tool_calls:
+                                    if tc.name == check.action.name:
+                                        found_with_name = True
+                                        print(f"       Found call with args: {tc.arguments}")
+                                        # Show which args differ
+                                        if check.action.compare_args:
+                                            for arg in check.action.compare_args:
+                                                expected = check.action.arguments.get(arg)
+                                                actual = tc.arguments.get(arg)
+                                                if expected != actual:
+                                                    print(f"         - {arg}: expected '{expected}', got '{actual}'")
+                        if not found_with_name:
+                            print(f"       No tool call found with name '{check.action.name}'")
+            
+            if hasattr(reward_info, 'db_check') and reward_info.db_check:
+                print(f"\n  DB check: {reward_info.db_check}")
+                
+            if hasattr(reward_info, 'nl_assertions') and reward_info.nl_assertions:
+                print(f"\n  NL assertions: {len(reward_info.nl_assertions)} checks")
+                
+            if hasattr(reward_info, 'communicate_checks') and reward_info.communicate_checks:
+                print(f"\n  Communicate checks: {len(reward_info.communicate_checks)} checks")
+            
+            # Log termination reason
+            print(f"\n  Termination: {term_reason.value}")
+            # Additional info if available
+            if hasattr(simulation, 'errors'):
+                print(f"  Errors: {simulation.errors}")
+            if hasattr(simulation, 'num_steps'):
+                print(f"  Steps: {simulation.num_steps}")
+            
+            # Log info if present
+            if hasattr(reward_info, 'info') and reward_info.info:
+                print(f"\n  Additional info: {reward_info.info}")
+            
+            print(f"{'='*80}\n")
+            
+            return reward_info.reward
+        except Exception as e:
+            import traceback
+            print(f"ERROR during evaluation: {e}")
+            print(f"Traceback: {traceback.format_exc()}")
+            return 0.0
+    
+    # Create rubric with the exact evaluation function
+    return vf.Rubric(
+        funcs=[evaluate_tau2_task],
+        weights=[1.0]
+    )
+
+
+def load_environment(
+    dataset_name: str = "tau2-bench",
+    dataset_config: str = "retail",
+    dataset_split: str = "train", 
+    subset_size: Optional[int] = None,
+    seed: int = 42,
+    domain: str = "retail",
+    use_cache: bool = True,
+    solo_mode: bool = False,
+    **kwargs
+) -> vf.MultiTurnEnv:
+    """Load tau2-bench environment using tau2's native functions."""
+    if not TAU2_AVAILABLE:
+        raise ImportError("tau2-bench is not installed. Please install it first.")
+    
+    # Ensure data is set up
+    setup_tau2_data()
+    
+    # Use domain from dataset_config if not explicitly provided
+    if dataset_config and domain == "retail":
+        domain = dataset_config
+    
+    # Create dataset using tau2's native functions
+    full_dataset = create_tau2_dataset(domain)
+    
+    # Get environment and tasks for the domain
+    if domain == "retail":
+        tau2_env = get_retail_env()
+        tau2_tasks = get_retail_tasks()
+    elif domain == "airline":
+        tau2_env = get_airline_env()
+        tau2_tasks = get_airline_tasks()
+    elif domain == "telecom":
+        tau2_env = get_telecom_env(solo_mode=solo_mode)
+        tau2_tasks = get_telecom_tasks()
+    else:
+        raise ValueError(f"Unknown domain: {domain}")
+    
+    # Handle subset if requested
+    if subset_size is not None and subset_size < len(full_dataset):
+        indices = list(range(len(full_dataset)))
+        import random
+        random.seed(seed)
+        random.shuffle(indices)
+        full_dataset = full_dataset.select(indices[:subset_size])
+    
+    # Create rubric using tau2's evaluation
+    rubric = create_tau2_rubric(domain)
+    
+    # Create environment instance
+    env = Tau2BenchEnv(
+        dataset=full_dataset,
+        rubric=rubric,
+        domain=domain,
+        tau2_tasks=tau2_tasks,
+        user_llm=kwargs.get("user_llm", "gpt-4.1-mini"),
+        max_turns=kwargs.get("max_turns", 30),
+        max_errors=kwargs.get("max_errors", 3),
+        solo_mode=solo_mode,
+        **kwargs
+    )
+    
+    return env

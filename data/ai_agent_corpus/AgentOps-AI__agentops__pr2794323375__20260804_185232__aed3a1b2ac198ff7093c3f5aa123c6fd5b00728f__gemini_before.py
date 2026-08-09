@@ -1,0 +1,159 @@
+from typing import Optional, Generator, Any, Dict, Union
+
+from agentops.llms.providers.base import BaseProvider
+from agentops.event import LLMEvent
+from agentops.session import Session
+from agentops.helpers import get_ISO_time, check_call_stack_for_agent_id
+from agentops.log_config import logger
+from agentops.singleton import singleton
+
+
+@singleton
+class GeminiProvider(BaseProvider):
+    """Provider for Google's Gemini API.
+
+    This provider is automatically detected and initialized when agentops.init()
+    is called and the google.generativeai package is imported. No manual
+    initialization is required."""
+
+    _original_generate = None  # Store as class attribute
+
+    def __init__(self, client=None):
+        """Initialize the Gemini provider.
+
+        Args:
+            client: Optional client instance. If not provided, will be set during override.
+        """
+        super().__init__(client)
+        self._provider_name = "Gemini"
+
+    def handle_response(
+        self, response, kwargs, init_timestamp, session: Optional[Session] = None
+    ) -> Union[Any, Generator[Any, None, None]]:
+        """Handle responses from Gemini API for both sync and streaming modes.
+
+        Args:
+            response: The response from the Gemini API
+            kwargs: The keyword arguments passed to generate_content
+            init_timestamp: The timestamp when the request was initiated
+            session: Optional AgentOps session for recording events
+
+        Returns:
+            For sync responses: The original response object
+            For streaming responses: A generator yielding response chunks
+
+        Note:
+            Token counts are not currently provided by the Gemini API.
+            Future versions may add token counting functionality.
+        """
+        llm_event = LLMEvent(init_timestamp=init_timestamp, params=kwargs)
+        if session is not None:
+            llm_event.session_id = session.session_id
+
+        # For streaming responses
+        if kwargs.get("stream", False):
+            accumulated_text = []  # Use list to accumulate text chunks
+
+            def handle_stream_chunk(chunk):
+                if llm_event.returns is None:
+                    llm_event.returns = chunk
+                    llm_event.agent_id = check_call_stack_for_agent_id()
+                    llm_event.model = getattr(chunk, "model", "gemini-1.5-flash")  # Default if not provided
+                    llm_event.prompt = kwargs.get("contents", [])
+
+                try:
+                    if hasattr(chunk, "text") and chunk.text:
+                        accumulated_text.append(chunk.text)
+
+                    # Extract token counts if available
+                    if hasattr(chunk, "usage_metadata"):
+                        usage = chunk.usage_metadata
+                        llm_event.prompt_tokens = getattr(usage, "prompt_token_count", None)
+                        llm_event.completion_tokens = getattr(usage, "candidates_token_count", None)
+
+                    # If this is the last chunk
+                    if hasattr(chunk, "finish_reason") and chunk.finish_reason:
+                        llm_event.completion = "".join(accumulated_text)
+                        llm_event.end_timestamp = get_ISO_time()
+                        self._safe_record(session, llm_event)
+
+                except Exception as e:
+                    logger.warning(
+                        f"Unable to parse chunk for Gemini LLM call. Skipping upload to AgentOps\n"
+                        f"Error: {str(e)}\n"
+                        f"Chunk: {chunk}\n"
+                        f"kwargs: {kwargs}\n"
+                    )
+
+            def stream_handler(stream):
+                for chunk in stream:
+                    handle_stream_chunk(chunk)
+                    yield chunk
+
+            return stream_handler(response)
+
+        # For synchronous responses
+        try:
+            llm_event.returns = response
+            llm_event.agent_id = check_call_stack_for_agent_id()
+            llm_event.prompt = kwargs.get("contents", [])
+            llm_event.completion = response.text
+            llm_event.model = getattr(response, "model", "gemini-1.5-flash")
+
+            # Extract token counts from usage metadata if available
+            if hasattr(response, "usage_metadata"):
+                usage = response.usage_metadata
+                llm_event.prompt_tokens = getattr(usage, "prompt_token_count", None)
+                llm_event.completion_tokens = getattr(usage, "candidates_token_count", None)
+
+            llm_event.end_timestamp = get_ISO_time()
+            self._safe_record(session, llm_event)
+        except Exception as e:
+            logger.warning(
+                f"Unable to parse response for Gemini LLM call. Skipping upload to AgentOps\n"
+                f"Error: {str(e)}\n"
+                f"Response: {response}\n"
+                f"kwargs: {kwargs}\n"
+            )
+
+        return response
+
+    def override(self):
+        """Override Gemini's generate_content method to track LLM events.
+
+        Note:
+            This method is called automatically by AgentOps during initialization.
+            Users should not call this method directly."""
+        import google.generativeai as genai
+
+        # Store original method if not already stored
+        if GeminiProvider._original_generate is None:
+            GeminiProvider._original_generate = genai.GenerativeModel.generate_content
+
+        # Store provider instance for the closure
+        provider = self
+
+        def patched_function(self, *args, **kwargs):
+            init_timestamp = get_ISO_time()
+            session = kwargs.pop("session", None)  # Always try to pop session, returns None if not present
+
+            # Call original method and track event
+            if GeminiProvider._original_generate:
+                result = GeminiProvider._original_generate(self, *args, **kwargs)
+                return provider.handle_response(result, kwargs, init_timestamp, session=session)
+            else:
+                logger.error("Original generate_content method not found. Cannot proceed with override.")
+                return None
+
+        # Override the method at class level
+        genai.GenerativeModel.generate_content = patched_function
+
+    def undo_override(self):
+        """Restore original Gemini methods.
+
+        Note:
+            This method is called automatically by AgentOps during cleanup.
+            Users should not call this method directly."""
+        if GeminiProvider._original_generate is not None:
+            import google.generativeai as genai
+            genai.GenerativeModel.generate_content = GeminiProvider._original_generate
