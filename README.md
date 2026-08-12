@@ -6,7 +6,8 @@ Comprehend? Assessing AI Agent Python Code Proficiency in the Wild"* (MSR '26,
 compare Python code proficiency between AI coding agents and human developers on the
 [AIDev](https://arxiv.org/abs/2507.15003) dataset. This extension swaps pycefr for a more
 empirically-grounded proficiency-leveling tool (see [Tool](#tool) below) and reruns the
-analysis over a refreshed corpus of AI-agent-authored pull requests.
+analysis over three comparison corpora: AI-agent-authored PRs, current-era human PRs, and a
+pre-ChatGPT (pre-LLM-assistance) human PR baseline — see [Data](#data) below.
 
 ## Tool
 
@@ -62,18 +63,35 @@ That metadata isn't in this corpus yet.
 - **`data/human_corpus_by_repo/`** — not stored, same reasoning as above. Regenerate with
   `python3 scripts/group_by_repo.py human_corpus`.
 
+- **`data/pre_chatgpt_results/`** — 13,092 Python files from 604 merged human-authored PRs
+  across 50 repos, all merged **before 2022-11-30** (ChatGPT's public release) — a pre-LLM-
+  assistance temporal baseline, the third comparison group alongside the AI-agent and
+  current-era human corpora above. Same filename pattern.
+- **`data/pre_chatgpt_pr_index.csv`** — PR-level (not file-level) metadata:
+  `full_name, pr_id, number, merged_at, n_files, n_py_files, has_py, kept, n_commits,
+  n_rows_emitted, note`. 606 of 1,764 candidate PRs were `kept`.
+- **`data/pre_chatgpt_fetch_summary.csv`** — per-file fetch manifest, same shape as the other
+  two `*_fetch_summary.csv` files.
+- **`data/output_by_repo_pre_chatgpt/`** — one result CSV per repo, same naming convention.
+  All files under GitHub's 100MB limit uncompressed (largest: `spcl__dace`, 92.5MB).
+- **`data/pre_chatgpt_results_by_repo/`** — not stored, same reasoning as above. Regenerate
+  with `python3 scripts/group_by_repo.py pre_chatgpt_results`.
+
 ## Running the analysis
 
 ```bash
-python3 scripts/group_by_repo.py                  # regenerate data/ai_agent_corpus_by_repo/
-python3 scripts/group_by_repo.py human_corpus      # regenerate data/human_corpus_by_repo/
+python3 scripts/group_by_repo.py                        # regenerate data/ai_agent_corpus_by_repo/
+python3 scripts/group_by_repo.py human_corpus            # regenerate data/human_corpus_by_repo/
+python3 scripts/group_by_repo.py pre_chatgpt_results      # regenerate data/pre_chatgpt_results_by_repo/
 TOOL_DIR=/path/to/codeProficiencyExtraction ./run_extraction_by_repo.sh
 TOOL_DIR=/path/to/codeProficiencyExtraction INPUT_ROOT=data/human_corpus_by_repo OUTPUT_DIR=data/output_by_repo_human ./run_extraction_by_repo.sh
+TOOL_DIR=/path/to/codeProficiencyExtraction INPUT_ROOT=data/pre_chatgpt_results_by_repo OUTPUT_DIR=data/output_by_repo_pre_chatgpt ./run_extraction_by_repo.sh
 ```
 
 Safe to re-run — repos with an existing output CSV are skipped. Took ~3h17m for the AI-agent
-corpus (142 repos) and ~12h (interrupted partway by the second ReDoS bug above, then quick
-after the fix) for the human-PR corpus (160 repos).
+corpus (142 repos), ~12h (interrupted partway by the second ReDoS bug above, then quick after
+the fix) for the human-PR corpus (160 repos), and ~44min for the pre-ChatGPT corpus (50
+repos, run after both ReDoS fixes landed — no issues).
 
 **Current status / known gaps before results are directly comparable to the MSR paper**:
 1. The tool currently derives A1-C2 levels via naive equal-width binning of

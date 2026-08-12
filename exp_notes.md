@@ -242,3 +242,29 @@ run, or modify this codebase.
   `data/output_by_repo_human/`. Did not yet push this to the study repo — pending the user's
   answer on whether to commit now or wait (asked once, got interrupted by the "is it stuck"
   investigation above; re-asked after this completion).
+
+- **Pushed the human corpus + results to the study repo** (per user's answer: push everything,
+  same treatment as the AI-agent corpus). Total push ~1.9GB. Two output CSVs
+  (`Azure__azure-sdk-for-python`, `crewAIInc__crewAI`) exceeded GitHub's **hard** 100MB
+  per-file limit uncompressed (300MB and 113MB) — gzip brought them to 26MB/16MB, comfortably
+  under the limit, so stored as `.csv.gz` instead of excluding them. Generalized
+  `scripts/group_by_repo.py` in the study repo to take a corpus-name argument rather than
+  duplicating it per corpus. Confirmed landed at
+  https://github.com/cragkhit/agent-cefr-journal-study (commit `2474321c`).
+
+- **Downloaded a third corpus ("pre-ChatGPT") and ran the same pipeline** — 51MB
+  `pre_chatgpt_results.zip` (same Drive-download workaround), extracted to 13,092 files / 604
+  PRs / 50 repos. Also came with a new file not seen in the other two corpora,
+  `pre_chatgpt_pr_index.csv` (PR-level, not file-level: `full_name, pr_id, number, merged_at,
+  n_files, n_py_files, has_py, kept, n_commits, n_rows_emitted, note`). Checked `merged_at`
+  range: 2012-09-12 to **2022-11-29** — i.e., PRs merged right up to ChatGPT's public release
+  (2022-11-30), confirming this is a genuine temporal baseline corpus (pre-LLM-assistance human
+  coding), the third comparison group for the study alongside AI-agent and (current-era) human
+  PRs. 606/1,764 candidate PRs were `kept` per the index. Grouped by repo via the same
+  `group_by_repo.py` logic and started the batch run — no ReDoS concerns expected since both
+  fixes are already in `regularExpressionList.json` at this point.
+  Completed cleanly: 50/50 repos, 0 failures, 2,624s (~44min) total, all 13,092 files
+  accounted for exactly, 282MB of output in `data/output_by_repo_pre_chatgpt/`. Confirms both
+  ReDoS fixes hold on a third, independently-sourced corpus. Not yet pushed to the study repo
+  — pending the user's decision (same question as before: push now, push results-only, or
+  hold off).
