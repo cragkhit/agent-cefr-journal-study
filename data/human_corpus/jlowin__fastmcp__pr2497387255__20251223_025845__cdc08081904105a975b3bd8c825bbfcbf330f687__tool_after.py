@@ -1,0 +1,204 @@
+from __future__ import annotations
+
+import inspect
+import json
+from collections.abc import Callable
+from typing import TYPE_CHECKING, Annotated, Any
+
+import pydantic_core
+from mcp.types import EmbeddedResource, ImageContent, TextContent, ToolAnnotations
+from mcp.types import Tool as MCPTool
+from pydantic import BaseModel, BeforeValidator, Field
+
+from fastmcp.exceptions import ToolError
+from fastmcp.utilities.json_schema import prune_params
+from fastmcp.utilities.logging import get_logger
+from fastmcp.utilities.types import (
+    Image,
+    _convert_set_defaults,
+    get_cached_typeadapter,
+    is_class_member_of_type,
+)
+
+if TYPE_CHECKING:
+    from mcp.server.session import ServerSessionT
+    from mcp.shared.context import LifespanContextT
+
+    from fastmcp.server import Context
+
+logger = get_logger(__name__)
+
+
+def default_serializer(data: Any) -> str:
+    return pydantic_core.to_json(data, fallback=str, indent=2).decode()
+
+
+class Tool(BaseModel):
+    """Internal tool registration info."""
+
+    fn: Callable[..., Any]
+    name: str = Field(description="Name of the tool")
+    description: str = Field(description="Description of what the tool does")
+    parameters: dict[str, Any] = Field(description="JSON schema for tool parameters")
+    context_kwarg: str | None = Field(
+        None, description="Name of the kwarg that should receive context"
+    )
+    tags: Annotated[set[str], BeforeValidator(_convert_set_defaults)] = Field(
+        default_factory=set, description="Tags for the tool"
+    )
+    annotations: ToolAnnotations | None = Field(
+        None, description="Additional annotations about the tool"
+    )
+    serializer: Callable[[Any], str] | None = Field(
+        None, description="Optional custom serializer for tool results"
+    )
+
+    @classmethod
+    def from_function(
+        cls,
+        fn: Callable[..., Any],
+        name: str | None = None,
+        description: str | None = None,
+        context_kwarg: str | None = None,
+        tags: set[str] | None = None,
+        annotations: ToolAnnotations | None = None,
+        serializer: Callable[[Any], str] | None = None,
+    ) -> Tool:
+        """Create a Tool from a function."""
+        from fastmcp import Context
+
+        func_name = name or fn.__name__
+
+        if func_name == "<lambda>":
+            raise ValueError("You must provide a name for lambda functions")
+
+        func_doc = description or fn.__doc__ or ""
+
+        if inspect.ismethod(fn) and hasattr(fn, "__func__"):
+            sig = inspect.signature(fn.__func__)
+        else:
+            sig = inspect.signature(fn)
+        if context_kwarg is None:
+            for param_name, param in sig.parameters.items():
+                if is_class_member_of_type(param.annotation, Context):
+                    context_kwarg = param_name
+                    break
+
+        type_adapter = get_cached_typeadapter(fn)
+        schema = type_adapter.json_schema()
+        if context_kwarg:
+            schema = prune_params(schema, params=[context_kwarg])
+
+        return cls(
+            fn=fn,
+            name=func_name,
+            description=func_doc,
+            parameters=schema,
+            context_kwarg=context_kwarg,
+            tags=tags or set(),
+            annotations=annotations,
+            serializer=serializer,
+        )
+
+    async def run(
+        self,
+        arguments: dict[str, Any],
+        context: Context[ServerSessionT, LifespanContextT] | None = None,
+    ) -> list[TextContent | ImageContent | EmbeddedResource]:
+        """Run the tool with arguments."""
+        try:
+            injected_args = (
+                {self.context_kwarg: context} if self.context_kwarg is not None else {}
+            )
+
+            parsed_args = arguments.copy()
+
+            # Pre-parse data from JSON in order to handle cases like `["a", "b", "c"]`
+            # being passed in as JSON inside a string rather than an actual list.
+            #
+            # Claude desktop is prone to this - in fact it seems incapable of NOT doing
+            # this. For sub-models, it tends to pass dicts (JSON objects) as JSON strings,
+            # which can be pre-parsed here.
+            for param_name in self.parameters["properties"]:
+                if isinstance(parsed_args.get(param_name, None), str):
+                    try:
+                        parsed_args[param_name] = json.loads(parsed_args[param_name])
+                    except json.JSONDecodeError:
+                        pass
+
+            type_adapter = get_cached_typeadapter(self.fn)
+            result = type_adapter.validate_python(parsed_args | injected_args)
+            if inspect.isawaitable(result):
+                result = await result
+
+            return _convert_to_content(result, serializer=self.serializer)
+        except Exception as e:
+            raise ToolError(f"Error executing tool {self.name}: {e}") from e
+
+    def to_mcp_tool(self, **overrides: Any) -> MCPTool:
+        kwargs = {
+            "name": self.name,
+            "description": self.description,
+            "inputSchema": self.parameters,
+            "annotations": self.annotations,
+        }
+        return MCPTool(**kwargs | overrides)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Tool):
+            return False
+        return self.model_dump() == other.model_dump()
+
+
+def _convert_to_content(
+    result: Any,
+    serializer: Callable[[Any], str] | None = None,
+    _process_as_single_item: bool = False,
+) -> list[TextContent | ImageContent | EmbeddedResource]:
+    """Convert a result to a sequence of content objects."""
+    if result is None:
+        return []
+
+    if isinstance(result, TextContent | ImageContent | EmbeddedResource):
+        return [result]
+
+    if isinstance(result, Image):
+        return [result.to_image_content()]
+
+    if isinstance(result, list | tuple) and not _process_as_single_item:
+        # if the result is a list, then it could either be a list of MCP types,
+        # or a "regular" list that the tool is returning, or a mix of both.
+        #
+        # so we extract all the MCP types / images and convert them as individual content elements,
+        # and aggregate the rest as a single content element
+
+        mcp_types = []
+        other_content = []
+
+        for item in result:
+            if isinstance(item, TextContent | ImageContent | EmbeddedResource | Image):
+                mcp_types.append(_convert_to_content(item)[0])
+            else:
+                other_content.append(item)
+        if other_content:
+            other_content = _convert_to_content(
+                other_content, _process_as_single_item=True
+            )
+
+        return other_content + mcp_types
+
+    if not isinstance(result, str):
+        if serializer is None:
+            result = default_serializer(result)
+        else:
+            try:
+                result = serializer(result)
+            except Exception as e:
+                logger.warning(
+                    "Error serializing tool result: %s",
+                    e,
+                    exc_info=True,
+                )
+                result = default_serializer(result)
+
+    return [TextContent(type="text", text=result)]

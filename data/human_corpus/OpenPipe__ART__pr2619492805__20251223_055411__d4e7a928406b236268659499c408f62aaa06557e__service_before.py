@@ -1,0 +1,48 @@
+import asyncio
+from dataclasses import dataclass
+from typing import AsyncIterator
+from vllm import AsyncEngineArgs
+from vllm.v1.engine.async_llm import AsyncLLM
+
+from .. import dev
+from ..local.pack import DiskPackedTensors
+from .. import types
+from ..vllm import get_llm, openai_server_task
+
+
+@dataclass
+class TorchtuneService:
+    model_name: str
+    base_model: str
+    config: dev.InternalModelConfig
+    output_dir: str
+
+    @property
+    def llm_task(self) -> asyncio.Task[AsyncLLM]:
+        print(self.config.get("engine_args", {}))
+        return asyncio.create_task(
+            get_llm(AsyncEngineArgs(**self.config.get("engine_args", {})))  # type: ignore
+        )
+
+    async def start_openai_server(self, config: dev.OpenAIServerConfig | None) -> None:
+        await openai_server_task(
+            engine=await self.llm_task,
+            config=dev.get_openai_server_config(
+                model_name=self.model_name,
+                # TODO: Choose the base model to be the latest version of the model
+                base_model=self.base_model,
+                log_file=f"{self.output_dir}/logs/vllm.log",
+                config=config,
+            ),
+        )
+
+    async def train(
+        self,
+        disk_packed_tensors: DiskPackedTensors,
+        config: types.TrainConfig,
+        _config: dev.TrainConfig,
+        verbose: bool = False,
+    ) -> AsyncIterator[dict[str, float]]:
+        print(f"Training {self.model_name} with {config}")
+        await asyncio.sleep(1)
+        yield {"loss": 0.0}

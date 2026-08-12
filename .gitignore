@@ -1,6 +1,6 @@
-# Regenerable derived layout (would duplicate ~160MB already in data/ai_agent_corpus/) --
-# see scripts/group_by_repo.py
+# Regenerable derived layouts -- see scripts/group_by_repo.py
 data/ai_agent_corpus_by_repo/
+data/human_corpus_by_repo/
 
 # Local scratch/venv cruft
 __pycache__/

@@ -182,3 +182,63 @@ run, or modify this codebase.
   uses the naive equal-width `Index` binning (not `Final Group`) and whole-file counts (not
   the before/after differential the MSR methodology needs). Both gaps remain open (see the
   "Motivation & Related Research" section of `README.md`).
+
+- **Published this study as its own repo**: https://github.com/cragkhit/agent-cefr-journal-study
+  (the target repo already existed, empty/placeholder). Per explicit user choices: included
+  the full raw corpus (not just derived CSVs), and referenced the tool by URL/PR link rather
+  than vendoring its code. Built it in a fresh clone of the target repo (not a `git init` in
+  `pycefr/`), to inherit its existing placeholder commit cleanly rather than dealing with
+  unrelated-history merge issues.
+  Two judgment calls made without a further round of questions, both explained in the new
+  repo's README: (1) dropped `ai_agent_corpus.zip` and `ai_agent_corpus_by_repo/` from the
+  push — both are byte-identical duplicates of `ai_agent_corpus/` under a different
+  packaging/layout, so including them would only add ~190MB for zero new information;
+  `ai_agent_corpus_by_repo/` regenerates in seconds via a new `scripts/group_by_repo.py`.
+  (2) Wrote a new top-level `README.md` specific to the study repo (what it replicates, links
+  to the tool fork/PR, data layout, reproduction steps) rather than reusing the
+  tool-architecture README verbatim — moved that content to `docs/tool-notes.md` with a
+  preamble clarifying it describes the separate (unvendored) tool repo.
+  Also made `run_extraction_by_repo.sh` portable: it previously hardcoded this machine's
+  absolute paths (`/home/chaiyong.rag/pycefr/...`); now it takes `TOOL_DIR` as an env var and
+  resolves its own data paths relative to the script's location, so it works for anyone who
+  clones the study repo. Total push: 324MB, 8,742 files, well under GitHub's per-file/repo
+  limits (largest single file ~21MB), no Git LFS needed.
+
+- **Downloaded a second corpus ("human PRs") and ran the same pipeline** — 140MB
+  `human_corpus.zip` from a Google Drive link (same curl-against-`drive.usercontent.google.com`
+  workaround as before), extracted to 36,757 files / 785 PRs / 160 repos (matches the MSR
+  paper's 785-human-PR figure), grouped by repo via the same `group_by_repo.py` logic, and
+  parameterized `run_extraction_by_repo.sh` with `INPUT_ROOT`/`OUTPUT_DIR` env vars (default
+  unchanged) instead of writing a second near-duplicate script.
+
+- **Found and fixed a second wave of ReDoS bugs while running the human-PR batch** — this one
+  much more severe in impact (the batch run appeared to hang for 19+ hours on
+  `tinygrad__tinygrad` before being caught). Root cause was the same overlap-ambiguity anti-
+  pattern as the original fix, but manifesting in same-line wildcards (`.*`/`.+`) rather than
+  the multi-line `[\s\S]*` already addressed. Two-stage fix, both verified necessary via direct
+  experiment (not assumed):
+  1. Bounded all 103 patterns with bare `.*`→`.{0,200}` / `.+`→`.{1,200}`, and fixed a
+     pre-existing `nestedTuple` bug (ended in `\])` instead of `\))`, meaning it could never
+     legitimately match a real tuple — an "always fails" pattern is the worst case for
+     backtracking, since every tuple-shaped line forced a full futile search.
+  2. That bounding alone was NOT sufficient — confirmed empirically that `\w+` immediately
+     followed by a bounded wildcard still hangs on real lines up to ~4,200 characters long
+     (a real length found in the crewAI/tinygrad corpus files), because cost scales as
+     `line_length × bound^k` regardless of how small the bound is once the pattern chains
+     multiple wildcards and the line never matches. Fixed by merging the adjacent overlapping
+     quantifiers into one (`\w+.{0,200}` → `\w.{0,200}`), which is the actual fix — bounding
+     alone was a dead end for this shape of bug. Verified: the worst synthetic case (4,200-char
+     line) now runs all 136 patterns in ~2.8s (previously indefinite hang); the real tinygrad
+     file that hung 19+ hours in production now completes in ~4.5s.
+  Added 18 more regression tests (`tests/test_bare_wildcard_fix.py`) plus a second real
+  trigger-file fixture, verified (as before) to discriminate correctly against both
+  intermediate pre-fix states, not just trivially pass. Pushed both fixes as additional
+  commits on the same open PR (#1) rather than a new one, since it's clearly the same class of
+  bug in the same file, just a different manifestation the first fix's test corpus (AI-agent
+  PRs) never happened to trigger.
+
+- **Completed the full human-PR batch run**: all 160 repos, 0 failures, 36,757 files
+  accounted for exactly (matches corpus size), 746MB of output CSVs in
+  `data/output_by_repo_human/`. Did not yet push this to the study repo — pending the user's
+  answer on whether to commit now or wait (asked once, got interrupted by the "is it stuck"
+  investigation above; re-asked after this completion).
