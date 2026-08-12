@@ -1,6 +1,7 @@
 # Regenerable derived layouts -- see scripts/group_by_repo.py
 data/ai_agent_corpus_by_repo/
 data/human_corpus_by_repo/
+data/pre_chatgpt_results_by_repo/
 
 # Local scratch/venv cruft
 __pycache__/
