@@ -15,9 +15,13 @@ This repo does **not** vendor the analysis tool itself. It was run against:
 - **Fork**: [cragkhit/codeProficiencyExtraction](https://github.com/cragkhit/codeProficiencyExtraction),
   branch `fix/redos-try-except-patterns`
 - **Upstream**: [swindlemek/codeProficiencyExtraction](https://github.com/swindlemek/codeProficiencyExtraction),
-  [PR #1](https://github.com/swindlemek/codeProficiencyExtraction/pull/1) — fixes a
-  catastrophic-regex-backtracking (ReDoS) bug in the construct-detection patterns that
-  otherwise hangs the tool on real-world-sized Python files.
+  [PR #1](https://github.com/swindlemek/codeProficiencyExtraction/pull/1) — fixes two waves of
+  catastrophic-regex-backtracking (ReDoS) bugs in the construct-detection patterns that
+  otherwise hang the tool on real-world-sized Python files (the first wave — multi-line
+  `try`/`except`/`finally` patterns — surfaced running the AI-agent corpus below; the second
+  — same-line wildcards, e.g. `generatorExpression`, plus an unrelated `nestedTuple` bracket
+  bug — surfaced running the human-PR corpus, and hung for 19+ hours in production before
+  being caught and fixed).
 
 Background on the tool's own architecture, its relationship to pycefr/PyGress/the MSR paper,
 and known limitations (e.g. `ubersequenceLevel.csv`'s `Final Group`/`Percentage` columns not
@@ -48,15 +52,28 @@ git clone --branch fix/redos-try-except-patterns https://github.com/cragkhit/cod
 PR-task-type (feat/fix/refactor/...) column, both of which the MSR paper's RQ1/RQ3 depend on.
 That metadata isn't in this corpus yet.
 
+- **`data/human_corpus/`** — 36,757 Python files from 785 merged human-authored PRs across 160
+  repos (matches the MSR paper's 785-PR human comparison set), same filename pattern as above.
+- **`data/human_fetch_summary.csv`** — per-file fetch manifest, same shape as `ai_fetch_summary.csv`.
+- **`data/output_by_repo_human/`** — one result CSV per repo, same naming convention. Two
+  files (`Azure__azure-sdk-for-python`, `crewAIInc__crewAI`) exceeded GitHub's 100MB
+  per-file limit uncompressed (300MB and 113MB) and are stored gzipped
+  (`.csv.gz`, 26MB/16MB) — read with `pd.read_csv(path, compression="gzip")` or `gunzip` first.
+- **`data/human_corpus_by_repo/`** — not stored, same reasoning as above. Regenerate with
+  `python3 scripts/group_by_repo.py human_corpus`.
+
 ## Running the analysis
 
 ```bash
-python3 scripts/group_by_repo.py   # regenerate data/ai_agent_corpus_by_repo/
+python3 scripts/group_by_repo.py                  # regenerate data/ai_agent_corpus_by_repo/
+python3 scripts/group_by_repo.py human_corpus      # regenerate data/human_corpus_by_repo/
 TOOL_DIR=/path/to/codeProficiencyExtraction ./run_extraction_by_repo.sh
+TOOL_DIR=/path/to/codeProficiencyExtraction INPUT_ROOT=data/human_corpus_by_repo OUTPUT_DIR=data/output_by_repo_human ./run_extraction_by_repo.sh
 ```
 
-Safe to re-run — repos with an existing output CSV are skipped. Took ~3h17m for the full
-142-repo corpus on the original run.
+Safe to re-run — repos with an existing output CSV are skipped. Took ~3h17m for the AI-agent
+corpus (142 repos) and ~12h (interrupted partway by the second ReDoS bug above, then quick
+after the fix) for the human-PR corpus (160 repos).
 
 **Current status / known gaps before results are directly comparable to the MSR paper**:
 1. The tool currently derives A1-C2 levels via naive equal-width binning of
