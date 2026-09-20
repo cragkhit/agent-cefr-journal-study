@@ -1,0 +1,468 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1464435992
+title: Added ailia audio implementation for whisper
+body:
+ailia.audioを使用した実装を追加。
+
+----- PR -----
+pr_id: 1464735610
+title: SAT: optionally disable discovered catalog caching
+body:
+## What
+I think the ongoing build failure of the `source-tiktok-marketing` connectors are due to a default caching of discovered catalog in SAT. 
+
+This connector catalog is dynamic according to connector configurations. Multiple acceptance tests are run with different configurations hence different catalogs. But some tests fail because they try to retrieve a stream defined in the configured catalog absent from the cached discovered catalog.
+
+After investigation, there is nothing badly configured on TikTok's acceptance test config. 
+I figured a catalog discovered in the previous tests was reused and caused the error.
+
+## How
+* Expose a new configuration field on SAT to disable discovered catalog caching.
+
+----- PR -----
+pr_id: 1464736850
+title: fix(profiling): Resolve inherited method class names
+body:
+Methods may be inherited from a parent class. If multiple classes inherit from the same class and uses the inherited method, we'd want it to report the parent class's name instead of the individual child classes since they'd have the same filename and lineno of the parent class and not the children.
+
+----- PR -----
+pr_id: 1464848738
+title: fix(ingest): bigquery - missing sqlalchemy dep and row count fix
+body:
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1464900984
+title: Bump pytorch-lightning from 1.8.0.post1 to 1.8.3.post1 in /requirements
+body:
+Bumps [pytorch-lightning](https://github.com/Lightning-AI/lightning) from 1.8.0.post1 to 1.8.3.post1.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/Lightning-AI/lightning/releases">pytorch-lightning's releases</a>.</em></p>
+<blockquote>
+<h2>Hotfix for Python Server</h2>
+<h2>App</h2>
+<h3>Changed</h3>
+<ul>
+<li>Fixed the PyTorch Inference locally on GPU (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/pull/15813">#15813</a>)</li>
+</ul>
+<hr />
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Lightning-AI/lightning/compare/1.8.3...1.8.3">https://github.com/Lightning-AI/lightning/compare/1.8.3...1.8.3</a></p>
+<h2>Hotfix for requirements</h2>
+<p>No release notes provided.</p>
+<h2>Weekly patch release</h2>
+<h2>App</h2>
+<h3>Changed</h3>
+<ul>
+<li>Deduplicate top-level lighting CLI command groups (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15761">#15761</a>)
+<ul>
+<li><code>lightning add ssh-key</code> CLI command has been transitioned to <code>lightning create ssh-key</code></li>
+<li><code>lightning remove ssh-key</code> CLI command has been transitioned to <code>lightning delete ssh-key</code></li>
+</ul>
+</li>
+<li>Set Torch inference mode for prediction (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15719">#15719</a>)</li>
+<li>Improved <code>LightningTrainerScript</code> start-up time (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15751">#15751</a>)</li>
+<li>Disable XSRF protection in <code>StreamlitFrontend</code> to support upload in localhost (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15684">#15684</a>)</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Fixed debugging with VSCode IDE (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15747">#15747</a>)</li>
+<li>Fixed setting property to the <code>LightningFlow</code> (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15750">#15750</a>)</li>
+</ul>
+<h2>Lite</h2>
+<h3>Changed</h3>
+<ul>
+<li>Temporarily removed support for Hydra multi-run (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15737">#15737</a>)</li>
+</ul>
+<h2>Pytorch</h2>
+<h3>Changed</h3>
+<ul>
+<li>Temporarily removed support for Hydra multi-run (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15737">#15737</a>)</li>
+<li>Switch from <code>tensorboard</code> to <code>tensorboardx</code> in <code>TensorBoardLogger</code> (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15728">#15728</a>)</li>
+</ul>
+<hr />
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Lightning-AI/lightning/compare/1.8.2...1.8.3">https://github.com/Lightning-AI/lightning/compare/1.8.2...1.8.3</a></p>
+<h2>Weekly patch release</h2>
+<h2>App</h2>
+<h3>Added</h3>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/92fe18871721b88472844ab12da728e8cdaa88b9"><code>92fe188</code></a> [App] Release 1.8.3post1 (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15820">#15820</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/655ade656d4a74db96fe195963c3ee1210fedba3"><code>655ade6</code></a> Revert/s3fs (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15792">#15792</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/7d6cfb1a95e08991f70d5487708ed1e1b54f31d3"><code>7d6cfb1</code></a> Releasing 1.8.3 (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15757">#15757</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/8bea72b8510c79b74691136b16c24ce746f1ee6f"><code>8bea72b</code></a> Releasing 1.8.2 [rebase &amp; merge] (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15698">#15698</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/18c587e958a6518c14ad61dccff4fcb1ceb3c16a"><code>18c587e</code></a> fix pypi pkg (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15629">#15629</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/2c47738b1b08501c5d468ca2891379a6723c48b4"><code>2c47738</code></a> Docs 4/n (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15628">#15628</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/eb8701813bc844980b278da00c7a632b1f96fec6"><code>eb87018</code></a> Sample datatype for Serve Component (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15623">#15623</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/0851202929a3db259f232298ade9c7f725eb8801"><code>0851202</code></a> Add Ethan as Lightning App CodeOwners (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15626">#15626</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/7135c2425df6dd262a1956dce7acf8daec6bce78"><code>7135c24</code></a> version 1.8.1</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/9e702fb451bd5ec77e8c562d4546d65970dc8305"><code>9e702fb</code></a> updated changelog</li>
+<li>Additional commits viewable in <a href="https://github.com/Lightning-AI/lightning/compare/1.8.0.post1...1.8.3post1">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=pytorch-lightning&package-manager=pip&previous-version=1.8.0.post1&new-version=1.8.3.post1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+
+
+</details>
+
+----- PR -----
+pr_id: 1465049997
+title: add docs for custom agents
+body:
+(empty)
+
+----- PR -----
+pr_id: 1465051474
+title: Harrison/agent memory
+body:
+add doc for agent with memory
+
+----- PR -----
+pr_id: 1465063576
+title: add custom prompt notebooks
+body:
+(empty)
+
+----- PR -----
+pr_id: 1465174995
+title: Fix Unicode error on Windows (Issue #200)
+body:
+Fix Unicode error on Windows during setup, while trying to read contents of README.md.
+
+(Issue #200)
+
+----- PR -----
+pr_id: 1465192565
+title: fix(ingest): bigquery - Fixing querying non-date partition columns in profiling
+body:
+Adding to the source report the number of non-eligible tables for profiling
+
+
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1465266822
+title: fix self ask w search
+body:
+(empty)
+
+----- PR -----
+pr_id: 1465277751
+title: pal chain
+body:
+from https://arxiv.org/pdf/2211.10435.pdf
+
+----- PR -----
+pr_id: 1465319585
+title: Logging fixes.
+body:
+Fix a few logging UX issues:
+
+1. Previously:
+```
+» sky spot logs 3                                                                                                                 
+Spot controller sky-spot-controller-8a3968f2 is INIT.
+Please wait for the controller to be ready.
+sky.exceptions.ClusterNotUpError
+```
+
+This PR removes the last line.
+
+2. Previously, the controller log for a preempted spot job shows:
+<img width="1725" alt="Screen Shot 2022-11-27 at 11 08 29" src="https://user-images.githubusercontent.com/592670/204117941-5b859286-d22a-435d-8268-031cedaf3479.png">
+
+The red text is part of the "Exception" in the line above, but looks weird when joining with `)`. This PR rearranges it a bit.
+
+3. Previously `sky spot status` shows:
+```
+WARNING: `status` is deprecated and will be removed in a future release. Please use `queue` instead.
+```
+This may be a bit confusing as to whether it also refers to `sky status`. This PR makes it more clear.
+
+----- PR -----
+pr_id: 1465508056
+title: feat: expose web client for direct access to any Slack Web API methods
+body:
+(empty)
+
+----- PR -----
+pr_id: 1465530473
+title: nits
+body:
+use json.dump
+
+move test to integration tests (since it requires huggingface_hub)
+
+----- PR -----
+pr_id: 1465619965
+title: Print errors for GCP timeout.
+body:
+I'm in a network where pinging Google results in 100% packet loss:
+```
+» ping google.com
+PING google.com (172.217.163.46): 56 data bytes
+Request timeout for icmp_seq 0
+Request timeout for icmp_seq 1
+Request timeout for icmp_seq 2
+Request timeout for icmp_seq 3
+Request timeout for icmp_seq 4
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 0 packets received, 100.0% packet loss
+```
+
+This means I can't launch GCP clusters. This PR adds some error messages to hint at what's up:
+```
+» sky cpunode -t n2d-highmem-96 --down -y                                                                                130 ↵
+...
+I 11-28 07:48:51 cloud_vm_ray_backend.py:988] To view detailed progress: tail -n100 -f /Users/zongheng/sky_logs/sky-2022-11-28-07-48-50-387576/provision.log
+E 11-28 07:49:52 authentication.py:179] Socket timed out when trying to get the GCP project. Please check your network connection.
+W 11-28 07:49:52 common_utils.py:251] Caught timed out. Retrying.
+E 11-28 07:50:54 authentication.py:179] Socket timed out when trying to get the GCP project. Please check your network connection.
+W 11-28 07:50:54 common_utils.py:251] Caught timed out. Retrying.
+E 11-28 07:51:57 authentication.py:179] Socket timed out when trying to get the GCP project. Please check your network connection.
+...
+<large stacktrace>
+  File "/Users/zongheng/anaconda/envs/py37/lib/python3.7/site-packages/httplib2/__init__.py", line 1343, in _conn_request
+    conn.connect()
+  File "/Users/zongheng/anaconda/envs/py37/lib/python3.7/site-packages/httplib2/__init__.py", line 1133, in connect
+    sock.connect((self.host, self.port))
+socket.timeout: timed out
+```
+
+----- PR -----
+pr_id: 1465729706
+title: [AutoRelease] t2-imagebuilder-2022-11-28-46274(can only be merged by SDK owner)
+body:
+https://github.com/Azure/sdk-release-request/issues/3464 
+Live test success 
+https://dev.azure.com/azure-sdk/internal/_build?definitionId=978
+BuildTargetingString
+  azure-mgmt-imagebuilder
+Skip.CreateApiReview
+true
+
+----- PR -----
+pr_id: 1465730711
+title: [AutoRelease] t2-communication-2022-11-28-60964(can only be merged by SDK owner)
+body:
+https://github.com/Azure/sdk-release-request/issues/3465 
+Live test success 
+https://dev.azure.com/azure-sdk/internal/_build?definitionId=2047
+BuildTargetingString
+  azure-mgmt-communication
+Skip.CreateApiReview
+true
+
+----- PR -----
+pr_id: 1465851073
+title: [Storage] Fix copy monuts for file with s3 bucket url
+body:
+Closes #1456 
+
+Tested:
+- [x] `tests/run_smoke_tests.sh test_file_mounts` (the new file_mounts fails before this PR, due to `/s3-data-file` is a file)
+- [x] `tests/run_smoke_tests.sh test_spot_storage`
+
+----- PR -----
+pr_id: 1465858944
+title: [autostop] Support restarting the autostop timer.
+body:
+Support restarting the autostop timer via
+- `sky autostop --cancel` then `sky autostop -i <minutes>`
+- submitting a job
+
+This is requested by a user, and possibly also can close #1418 (TBD).
+
+Tested:
+
+- [x] smoke tests: `test_autostop`, `test_autodown`
+- [x] Test DB has no concurrency issue: 
+```
+» cat test_db.py
+from sky.skylet.autostop_lib import set_last_active_time_to_now
+set_last_active_time_to_now()
+
+» for i in {1..200}; do python -u test_db.py &; done; wait
+```
+- [x] Test that each job will set idle-time-so-far to 0 (passes on this PR, fails on master)
+```
+» sky launch -i1 -c autostop     
+» for i in {1..30}; do sky exec autostop echo hi; done
+```
+
+- [ ] add some docs to user facing places (pending #1455)
+
+----- PR -----
+pr_id: 1465927334
+title: [Improvement] Check kernel panic when node(s) in bad state
+body:
+(empty)
+
+----- PR -----
+pr_id: 1466133789
+title: SAT: stricter integer validation
+body:
+## What
+Closes https://github.com/airbytehq/airbyte/issues/19800
+
+According to JSON schema a float value with a zero fractional part is a valid integer. We don't want to have this behavior and make field that are declared as `integer` fail if their value is `1.0, 2.0` etc...
+
+
+
+
+## How
+Leverage `jsonschema` [capabilities](https://python-jsonschema.readthedocs.io/en/latest/creating/) at redefining type checker of validators, and extending the off the shelf validators (`Draft7` in our case).
+
+----- PR -----
+pr_id: 1466239762
+title: storage_sync2: `wait_completion()` MVP
+body:
+Commit 1:
+
+```
+ refactor: turn compaction code async
+
+We need this to insert remote_client.wait_completion() calls.
+That'll happen in the next commit.
+
+The major wrinkle in this change is Tenant::timeline_delete().
+Before this change, Tenant::timeline_delete() does the following:
+1 Acquire timelines.lock()
+2 get a ref to the timelines map
+3 Set it to `TimelineState::Paused`
+4 Get Tenant::layer_removal_guard()
+  (Internally, this is a Tenant::layer_removal_cs.try_lock().expect())
+5 Remove timeline directory and all its files.
+6 drop the guard
+7 Remove the timeline from the timelines map
+8 drop timelines lock (implicit drop)
+
+Couple of odd things about that:
+
+- I think (3) is supposed to lock out any more timeline ops and and
+  (4) is supposed to drain any existing timeline ops, namely, GC & Compactions.
+  So that (5) can then remove the layer files, knowing that nobody
+  references the corresponding Layer structs anymore, except us.
+- If that assumption is correct, I think there are several flaws with
+  that approach:
+  1. The layer_remvoal_guard() is a try_lock() that will panic if we
+     can't get it. The caller only shuts down timeline tasks before
+     calling us, but GC & Compaction is a per-tenant loop, so, I think
+     we could reach the case where the try_lock() fails. In that case,
+     timeline_delete() panicks.
+  2. The `layer_removal_guard()` only waits for concurrent GC & Compaction.
+     Once we have it, we delete the layer files (5).
+     We need to be 100% sure that nobody else will be accessing these layer
+     files anymore.
+     The caller has killed WAL receiver, that's good.
+     But the timeline is still reachable via PS HTTP API.
+     So, if there's any HTTP op that started before (3), we haven't
+     yet waited for it to finish.
+
+This PR doesn't address those problems.
+And possible, it makes things worse because layer_removal_cs needs to
+become a tokio::sync::Mutex, so that the next commit's
+can hold it across the remote_client.wait_completion().await points
+that it adds.
+
+So, the solution in delete_timeline() is to drop the timelines.lock()
+after setting the `TimelineState::Paused`.
+Then do compaction while holding `layer_removal_cs()`.
+Then re-aquire timelines.lock() and delete the timeline.
+```
+
+Commit 2:
+
+```
+ add remote_storage.wait_completion() calls to compaction() and gc() 
+```
+
+----- PR -----
+pr_id: 1466511006
+title: fix(ingest): bigquery - Setting partition id for profiling data and project_id fix
+body:
+- Setting partition id for profiling data
+- Don't list projects if project_id is set to eliminate the need for `resourcemanager.projects.list` permission
+
+
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1466693983
+title: docs(ingest/kafka): add field descriptions of kafka-related configs to pydantic
+body:
+Added descriptions of kafka-related configs to pydantic so that these can appear on the datahub's documentation page. (e.g see https://datahubproject.io/docs/generated/ingestion/sources/kafka#config-details)

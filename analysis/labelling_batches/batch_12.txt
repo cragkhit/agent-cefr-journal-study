@@ -1,0 +1,312 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1455316455
+title: Add just enough types to avoid mypy notes
+body:
+Mypy 0.990 has started triggering notes on annotations in functions that are not type checked. This is essentially because these type annotations have no effect since, they are not checked. This fixes that by adding partial type annotations to those functions.
+
+----- PR -----
+pr_id: 1455428709
+title: Add features to ready branch
+body:
+(empty)
+
+----- PR -----
+pr_id: 1455539241
+title: json serialization for point cloud (for demo)
+body:
+(empty)
+
+----- PR -----
+pr_id: 1455685395
+title: add to_json to umap widget
+body:
+(empty)
+
+----- PR -----
+pr_id: 1455723667
+title: chore: rename project
+body:
+- chore: change project directory and name to phoenix
+- Change project name to phoenix
+
+----- PR -----
+pr_id: 1455827018
+title: Introduce major version pinning for mlflow requirement in saved models
+body:
+Signed-off-by: Ben Wilson <benjamin.wilson@databricks.com>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## Related Issues/PRs
+
+<!--
+Please reference any related feature requests, issues, or PRs here. For example, `#123`. To automatically close the referenced issues when this PR is merged, please use a closing keyword (close, fix, or resolve). For example, `Resolve #123`. See https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue for more information.
+-->
+
+<!-- Resolve --> #xxx
+
+## What changes are proposed in this pull request?
+
+Add major version pinning support for the mlflow package requirement within saved models
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [X] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [ ] No. You can skip the rest of this section.
+- [X] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+Introduce major version pinning for mlflow requirement in saved models by specifying major version ranges based on the version of the client installation of MLflow used when a model is saved
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [ ] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [X] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [ ] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [X] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1455829745
+title: Cleanup _libcall and _usercall distinction
+body:
+Cleanup _libcall and _usercall distinction
+
+----- PR -----
+pr_id: 1455871496
+title: Revert "[Spot] Let cancel interrupt the spot job"
+body:
+Reverts skypilot-org/skypilot#1414
+
+Due to #1431
+
+----- PR -----
+pr_id: 1456033317
+title: docs: add dataset example
+body:
+- Add dataset example
+- Add reading from hdf5
+
+----- PR -----
+pr_id: 1456053352
+title: chore: generate plain dockerfile without buildkit syntax
+body:
+The generated Dockerfile inside Bento will now be stripped down without BuildKit syntax.
+
+This is for purpose of serving users who wants to build directly using this Dockerfile.
+
+By default `bentoml containerize` is the recommended way and it uses BuildKit by default.
+
+To opt-out specify `DOCKER_BUILDKIT=0`
+
+Signed-off-by: Ubuntu <29749331+aarnphm@users.noreply.github.com>
+
+----- PR -----
+pr_id: 1456075968
+title: [Spot] Let cancel interrupt the spot job (#1414)
+body:
+Closes #1146
+
+This PR is a resubmission of #1414, fixing the issue in #1431.
+
+Tested:
+- [x] `./tests/run_smoke_tests.sh test_spot_cancellation`
+- [x] `./tests/run_smoke_tests.sh test_spot`
+- [x] `./tests/run_smoke_tests.sh test_spot_gcp`
+- [x] `./tests/run_smoke_tests.sh test_spot_recovery`
+- [x] `./tests/run_smoke_tests.sh test_spot_recovery_multi_node`
+- [x] `./tests/run_smoke_tests.sh test_spot_storage`
+- [x] `tests/run_smoke_tests.sh test_spot_tpu`
+
+----- PR -----
+pr_id: 1456092041
+title: Implement Euclidean Distance for Embeddings
+body:
+(empty)
+
+----- PR -----
+pr_id: 1456198279
+title: docs: Initialize README.md
+body:
+Adds a barebones readme
+
+----- PR -----
+pr_id: 1456227752
+title: chore: Structure project
+body:
+(empty)
+
+----- PR -----
+pr_id: 1456554661
+title: [fix issues] run dhclient as needed when restart nic
+body:
+(empty)
+
+----- PR -----
+pr_id: 1456644243
+title: Silence test_remote_storage failure, caused by error message change
+body:
+(empty)
+
+----- PR -----
+pr_id: 1456750998
+title: Template Update
+body:
+Made the template a little simpler and compact.
+
+----- PR -----
+pr_id: 1456871663
+title: cache cost results
+body:
+# Related to: [#2887 ](https://github.com/microsoft/AzureTRE/issues/2835)
+
+## What is being addressed
+
+Reduces probability for Azure cost management throttling issue by caching result,
+caching will improve performance by returning faster response for cached cost reports.
+
+## How is this addressed
+
+- cache Azure cost management result if not exists yet in cache for two hours
+- clear expired cache items
+- make ```CostService``` as a singleton with ```@lru_cache(maxsize=None)``` decorator
+- Update CHANGELOG.md if needed
+
+----- PR -----
+pr_id: 1456969356
+title: Version 4.0.2
+body:
+- https://github.com/InamuraJIN/ActionRecorder/issues/39
+- fixed path issues
+- improved icon system
+- fixed import bug
+
+----- PR -----
+pr_id: 1457056660
+title: Add basic unit tests
+body:
+Added unit tests for all the base classes and made sure they pass.
+
+----- PR -----
+pr_id: 1457100885
+title: Create config class
+body:
+Created a new class: `pc.Config`
+
+Now the new default `pcconfig.py` file looks something like:
+```
+import pynecone as pc
+
+
+config = pc.Config(
+    app_name="asdf",
+)
+```
+
+and extra fields can just be passed as keyword arguments inside there.
+This way they don't have to see the defaults also.
+
+----- PR -----
+pr_id: 1457112362
+title: Fix event chain bug
+body:
+(empty)
+
+----- PR -----
+pr_id: 1457196566
+title: [fix issues] set max count of nic as 1 if no MaxNetworkInterfaces capabilitie for some vm sizes, e.g. Standard_EC96ads_cc_v5
+body:
+(empty)
+
+----- PR -----
+pr_id: 1457279640
+title: Enable delayed type annotation evaluation according to PEP 563
+body:
+- Add `from __future__ import annotations` to all files needed
+- Use the new style type annotation https://peps.python.org/pep-0604/
+- Fix mypy errors
+
+----- PR -----
+pr_id: 1457334712
+title: Simplify setuptools config
+body:
+- Move everything to pyproject.toml
+- Simplify how version is specified

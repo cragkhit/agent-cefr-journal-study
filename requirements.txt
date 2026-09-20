@@ -1,0 +1,13 @@
+# Collection (scripts/collection) and analysis (scripts/analysis, analysis/)
+pandas
+numpy
+pyarrow
+fsspec
+huggingface_hub
+requests
+python-dotenv
+scipy
+statsmodels
+patsy
+matplotlib
+jupyter

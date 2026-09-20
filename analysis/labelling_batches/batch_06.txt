@@ -1,0 +1,258 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1394599289
+title: Update tests to use learntorank.query and deprecate vespa.query
+body:
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1395563786
+title: Bugfix, fix deepClone crash issue for directly copy raw pointer
+body:
+These issue is different from #624 
+The root cause is 
+``` cpp
+struct ModuleHeaderSyntax : public SyntaxNode {
+    Token moduleKeyword;
+    Token lifetime;
+    Token name;
+    SyntaxList<PackageImportDeclarationSyntax> imports;
+    ParameterPortListSyntax* parameters;
+    PortListSyntax* ports;
+    Token semi;
+};
+```
+It owns raw pointer, and  it should be deepClone either, but the original script doesn't handle it.
+Since the raw pointer maybe nullptr, the generated code looks similar
+``` cpp
+node.parameters ? deepClone(*node.parameters, alloc) : nullptr,
+```
+
+----- PR -----
+pr_id: 1395566415
+title: Address issue #359 add filter_type to filterdict
+body:
+This PR addresses iss #359, which, in short, identified a bug in `common_ephys.FirFilter` where `filter_type` was not properly inserted into the table. This PR adds `filter_type` as an entry to the `filterdict` dictionary, which is eventually inserted into the FirFilter table on line 119. This was tested once (see `FirFilter` entry LFP 300-600 Hz with `filter_type` 'bandpass').
+
+----- PR -----
+pr_id: 1395915199
+title: Remove query module
+body:
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1396765224
+title: Fix dashboard
+body:
+- Refresh the date and data for each user and not only at startup.
+
+----- PR -----
+pr_id: 1397936143
+title: Implement type and shape inference for ArrayFeatureExtractor
+body:
+### Description
+This PR implements type and shape inference for the `ArrayFeatureExtractor` operator. This functionality was previously missing. 
+
+
+### Motivation and Context
+Having shape/type inference is better than not having it :) I did not find a related issue. Is there a tracking issue for missing or incomplete type/shape inference functions?
+
+----- PR -----
+pr_id: 1401594483
+title: Print line information on validation failure
+body:
+(empty)
+
+----- PR -----
+pr_id: 1401730290
+title: PyObject Callbacks
+body:
+Callbacks can return arbitrary pyobjects, which are only reusable in other callbacks.
+Also includes bugfixes for callbacks and return values, as well as tests.
+
+----- PR -----
+pr_id: 1401757092
+title: Replace Click with Typer
+body:
+Before:
+
+<img width="1270" alt="Screen Shot 2022-10-09 at 14 23 47" src="https://user-images.githubusercontent.com/12688084/194759398-9e23a515-a7b2-46ac-a7b6-3ad98ace11b2.png">
+
+After:
+
+<img width="1269" alt="Screen Shot 2022-10-09 at 14 24 07" src="https://user-images.githubusercontent.com/12688084/194759402-c0c2bb5b-3f21-45e8-a162-16d58b51c1a0.png">
+
+----- PR -----
+pr_id: 1401956109
+title: Move query module to learntorank
+body:
+* Moved query module (QueryModel concept) from pyvespa to learntorank
+* app.query and app.query_batch will now only accept YQL via the body parameter (lots of tests to rewrite and move to learntorank)
+* Moved app.collect_vespa_features and app.store_vespa features to learntorank
+* Removed gallery module from pyvespa
+
+
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1402334475
+title: Fix number of samples per subject in queue
+body:
+<!-- Replace {issue_number} with the issue that will be closed after merging this PR -->
+Fixes #979.
+
+**Checklist**
+
+<!-- You do not need to complete all the items by the time you submit the pull
+request, but most likely the changes will only be merged if all the tasks are
+done. See more information about the submission process in the
+CONTRIBUTING (https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs. -->
+
+<!-- Write an `x` in all the boxes that apply -->
+- [x] I have read the [`CONTRIBUTING`](https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs and have a developer setup (especially important are `pre-commit`and `pytest`)
+- [x] Non-breaking change (would not break existing functionality)
+- [ ] Breaking change (would cause existing functionality to change)
+- [x] Tests added or modified to cover the changes
+- [x] Integration tests passed locally by running `pytest`
+- [ ] In-line docstrings updated
+- [ ] Documentation updated, tested running `make html` inside the `docs/` folder
+- [x] This pull request is ready to be reviewed
+- [ ] If the PR is ready and there are multiple commits, I have [squashed them and force-pushed](https://www.w3docs.com/snippets/git/how-to-combine-multiple-commits-into-one-with-3-steps.html#force-pushing-commits-7)
+
+----- PR -----
+pr_id: 1402354124
+title: Stop loading data when copying unloaded image
+body:
+<!-- Replace {issue_number} with the issue that will be closed after merging this PR -->
+Fixes #974.
+
+@dmus, can you please take a look?
+
+----- PR -----
+pr_id: 1402437346
+title: Use more pytest tools in tests
+body:
+(empty)
+
+----- PR -----
+pr_id: 1403867692
+title: Enable partial data propagation for Resize's sizes
+body:
+### Description
+Enable partial data propagation for Resize's sizes
+
+
+### Motivation and Context
+Current Resize's size cannot get symbolic shape from ONNX's data propagation. Closes https://github.com/onnx/onnx/issues/4580.
+
+----- PR -----
+pr_id: 1404520836
+title: Fix string literals in elementwise and disallowed keywords in decorators
+body:
+(empty)
+
+----- PR -----
+pr_id: 1405815065
+title: Infer aliasing information for nested SDFGs
+body:
+- [x] Aliasing analysis
+- [x] Generate `__restrict__` for non-aliased pointers in nested SDFGs
+
+----- PR -----
+pr_id: 1408286785
+title: Add type inference for CategoryMapper & TreeEnsembleRegressor/Classifier
+body:
+### Description
+
+Adds/extends type & shape inference for operators in `ai.onnx.ml`:
+- `CategoryMapper`
+- `TreeEnsembleRegressor`
+- `TreeEnsembleClassifier`
+
+### Motivation and Context
+
+Traditional ML operators under `ai.onnx.ml` tend to be lacking in type and shape inference.
+
+There is still a need for improving documentation for these operators and extending inference for other operators. They also generally lack sanity-checking whether they are properly specified - for example for the tree ensemble family, where there's a lot of attributes and almost no checking is done.
+
+As a general note, adding new inference/verify functions is a bit of a pain. There's a lot of somewhat generic patterns (attributes of equal length, only one of attribute group is set, make dimensions equal to given shape list) that seem to be done really inefficiently, involving a lot of mutation. 
+
+Adding inference functions is currently not an open issue but there probably should be one opened. Existence of operators like these causes total failure of the shape inference routines (as all succeeding operators fail their inference).
+
+Related to #4572, which makes a similar improvement by implementing another inference function.
+
+----- PR -----
+pr_id: 1408344001
+title: Support nil as a paramterized value
+body:
+(empty)
+
+----- PR -----
+pr_id: 1409092390
+title: Datamodule naming TropicalCyclone
+body:
+This PR closes #815 by renaming the `TropicalCycloneWindEstimation` to `TropicalCyclone` and the `CycloneDataModule` to `TropicalCycloneDataModule`. The naming scheme of data modules is now consistent again where the name of the data module is the dataset name concatenated with `DataModule`.
+
+----- PR -----
+pr_id: 1409290947
+title: Added model for ailia SDK 1.2.13
+body:
+- crestereo
+- glip
+- dehamer
+- mobilestereonet
+
+----- PR -----
+pr_id: 1409860475
+title: Add style.qss to data_files in setup.py
+body:
+Fixes #2013
+
+----- PR -----
+pr_id: 1410236747
+title: Replace dead link in Vaihingen dataset documentation
+body:
+The current documentation contained a dead link so I replaced it and additionally added a link to the download page.
+
+----- PR -----
+pr_id: 1410268577
+title: Docs/trainers for Classification and Segmentation Task
+body:
+- I thought it would be useful to add some documentation to the trainers, just to clarify how flexible they are and the wide choices of models they support without someone having to dig.
+- The documentation for `ClassificationTask` states that possible weights are `Either “random”, “imagenet_only”, “imagenet_and_random”, or “random_rgb”` but only "imagenet" or "random" work otherwise you get an error, so I corrected the documentation for that
+- In the documentation there were keyword args missing that were actually necessary to use the task with a trainer, so I added documentation for the required keywords
+
+----- PR -----
+pr_id: 1410290763
+title: feat: replace dacite with Pydantic
+body:
+(empty)
+
+----- PR -----
+pr_id: 1410952732
+title: Generic slice view removal transformation
+body:
+Supports squeezing and expansion ("unsqueezing"), as well as arbitrary subsets.

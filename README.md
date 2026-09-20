@@ -49,9 +49,10 @@ git clone --branch fix/redos-try-except-patterns https://github.com/cragkhit/cod
   python3 scripts/group_by_repo.py
   ```
 
-**Known gap**: `ai_fetch_summary.csv` has no AI-agent-identity (Copilot/Cursor/Devin) or
-PR-task-type (feat/fix/refactor/...) column, both of which the MSR paper's RQ1/RQ3 depend on.
-That metadata isn't in this corpus yet.
+**Agent identity and PR task type** are not columns of `ai_fetch_summary.csv` or of the
+tool's output. Both are joined back by `pr_id`: agents from `data/aidev_pr_agent.parquet`
+(7,104 AIDev agent PRs → agent; no PR mixes agents at commit level), task types from AIDev's
+`pr_task_type` / `human_pr_task_type` tables. See [Code](#code) below.
 
 - **`data/human_corpus/`** — 36,757 Python files from 785 merged human-authored PRs across 160
   repos (matches the MSR paper's 785-PR human comparison set), same filename pattern as above.
@@ -93,13 +94,65 @@ corpus (142 repos), ~12h (interrupted partway by the second ReDoS bug above, the
 the fix) for the human-PR corpus (160 repos), and ~44min for the pre-ChatGPT corpus (50
 repos, run after both ReDoS fixes landed — no issues).
 
-**Current status / known gaps before results are directly comparable to the MSR paper**:
-1. The tool currently derives A1-C2 levels via naive equal-width binning of
-   `ubersequenceLevel.csv`'s `Index` column, not its empirically-derived `Final Group` column
-   — see `docs/tool-notes.md`.
-2. No before/after differential construct counting yet (the MSR paper's method for isolating
-   PR-*added* code from pre-existing file content) — `data/output_by_repo/` currently holds
-   whole-file counts for every snapshot independently.
+**Notes on the tool's output**:
+1. The tool derives A1-C2 levels by binning `ubersequenceLevel.csv`'s `Index` column twenty
+   constructs per level (the paper's Übersequence ordering), not its `Final Group` column
+   — see `docs/tool-notes.md`. A copy of the mapping is at `data/ubersequenceLevel.csv`.
+2. `data/output_by_repo*/` holds **whole-file** counts for every snapshot independently. The
+   before/after differencing that isolates PR-*added* code is done downstream by the
+   analysis scripts: per construct, `delta = max(after − before, 0)`, applied **before**
+   mapping constructs to levels; files new in a PR are counted in full.
+
+## Code
+
+Everything from the AIDev pull to the numbers in the paper. Run all commands **from the
+repository root**. `pip install -r requirements.txt`; scripts that call the GitHub API read
+`GITHUB_TOKEN` from a `.env` file (gitignored — never commit it).
+
+> **AIDev is pinned.** On 2026-08-21 AIDev's maintainers promoted v4 (AIDev-2.7M) to `main`
+> on Hugging Face, which deleted `pr_task_type`, `human_pr_task_type` and
+> `human_pull_request` and replaced `pull_request`. Every number in the paper comes from v3,
+> so every script here reads revision `68ed5f4b80` (the last v3 revision).
+> `data/human_pull_request.parquet` is a local copy of the deleted human PR table.
+
+### Stage 1 — building the corpora (`scripts/collection/`)
+
+| Group | Scripts, in order |
+|---|---|
+| AI agents | `collect_commits.py` (joins AIDev `pull_request` + `pr_commit_details`) → `convert_to_csv.py` → `make_file_versions.py` (fetches each file's before/after version from the GitHub API) |
+| Human | `collect_human_prs.py` → `human_prs_to_csv.py` → `collect_human_pr_commits.py` → `make_file_versions_human.py` (`collect_human_commits.py` is the earlier file-level exporter) |
+| Human, pre-ChatGPT | `collect_pre_chatgpt_prs.py` + `analyze_pre_chatgpt_prs.py` (which repositories have pre-2022-11-30 history → `data/td1_*.csv`, `data/td2_td3_*.csv`) → `collect_pre_chatgpt_commits.py` → `make_file_versions.py`; `fetch_pre_chatgpt_titles.py` adds PR titles/bodies for task-type labelling |
+| all | `package_paper_corpora.py` drops failed fetches and non-merged PRs and zips the corpora stored under `data/` |
+
+### Stage 2 — proficiency extraction
+
+`scripts/group_by_repo.py` and `run_extraction_by_repo.sh`, see
+[Running the analysis](#running-the-analysis) above.
+
+### Stage 3 — results
+
+| Paper artifact | Command | Output |
+|---|---|---|
+| Table 4, RQ1 statistics | `python scripts/analysis/analyze_rq1_new_tool.py --output-dir data/output_by_repo --mapping data/ubersequenceLevel.csv --commits data/aidev_pr_agent.parquet` | `data/rq1_new_tool_*.csv` |
+| Tables 5–6 (RQ1 by task type) | `python scripts/analysis/analyze_rq3_new_tool.py` | `data/rq1_new_tool_by_pr_type.csv`, `data/rq1_new_tool_residuals.csv`, `data/rq3_new_tool_*.csv` |
+| Figures 3–4 (task type × agent) | `python analysis/rq1_make_fig_task_type_agent.py` | `cefr_*_task_types.pdf` at the repository root (copies in `figures/`) |
+| Table 7, RQ2 statistics | `python scripts/analysis/analyze_rq2_three_groups.py --repo-root .` then `python scripts/analysis/rq2_pairwise_stats.py` | `data/rq2_three_groups_*.csv`; pairwise tests printed |
+| Figure 5 (repository-paired) | `python scripts/analysis/make_fig_repo_paired.py` | `figures/repo_paired_cefr.pdf` |
+| RQ3 tables and figures | `analysis/rq3_task_type_proficiency.ipynb` | `analysis/rq3_tables/`, `figures/rq3_outlier_tasks_*.pdf` |
+| RQ4 tables and figures | `analysis/rq4_review_effort.ipynb` | `analysis/rq4_tables/`, `figures/rq4_predicted_effort_*.pdf` |
+
+The `data/*.tex` files are the LaTeX tables as pasted into the paper, typeset by hand from the
+CSVs above — no script writes them.
+
+The two human CPET outputs stored as `.csv.gz` are read transparently — the scripts glob both
+`*.csv` and `*.csv.gz`.
+
+`analysis/` is self-contained (its scripts and notebooks use paths relative to that folder):
+the per-PR tables for the three groups with task types and review-effort columns, the
+pre-ChatGPT task-type labelling (prompt, batches, GPT-4.1-mini labels), and the RQ4
+review-effort data pulled from the GitHub API. `analysis/rq4-review-effort-data.md` is the
+column reference. The notebooks write figures one level up (the paper includes them from its
+root); copies of every generated figure in the paper are in `figures/`.
 
 ## Process log
 

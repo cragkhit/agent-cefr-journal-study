@@ -1,0 +1,35 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 2 rows, in the order given.
+
+Input (2 PRs):
+
+----- PR -----
+pr_id: 997190661
+title: Several pickle files
+body:
+I'm pretty sure I fixed the test that wasn't passing, it was a bug in the test of course. If you can run the tests again I would be very glad (like the previous time when I PR the tests don't seem to run properly).
+
+----- PR -----
+pr_id: 999391004
+title: several pickle files
+body:
+done, let's check.

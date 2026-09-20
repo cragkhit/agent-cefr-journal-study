@@ -1,0 +1,294 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1412846000
+title: Passes Interface Improvements
+body:
+- [x] Provide an interface to query all available passes
+- [x] Group passes and pipelines into categories
+- [x] Remove deprecated functions and transformations that were surpassed by passes
+- [x] Make passes and pipelines use properties rather than (just) dataclasses
+- [x] Rename the Pipeline map scope to `PipelineScope` to avoid namespace clashes with the new pass pipelines
+
+This serves as a prerequisite for https://github.com/spcl/dace-vscode/pull/203
+
+----- PR -----
+pr_id: 1412980156
+title: query only mode fix - added nosource option. appropriate JSON fields …
+body:
+query only mode fix - added nosource option. appropriate JSON fields …
+
+#### Pull Request Description
+
+_[Add a description of your pull request here]_
+
+---
+
+#### Future Release Comment
+_[Add description of your change, to include in the next release]_
+_[Delete any or all irrelevant sections, e.g. if your change does not warrant a release comment at all]_
+
+**Breaking Changes:**
+- None
+
+**Features:**
+- None
+
+**Fixes:**
+- None
+
+----- PR -----
+pr_id: 1414109762
+title: Implement whisper
+body:
+https://github.com/axinc-ai/ailia-models/issues/923
+
+----- PR -----
+pr_id: 1414230379
+title: Backup forwarding
+body:
+(empty)
+
+----- PR -----
+pr_id: 1415643668
+title: perf(profiling): Tune the sample profile generation code for performance
+body:
+We noticed that generating the sample format at the end of a profile can get rather slow and this aims to improve what we can here with minimal changes. A few things we took advantage of to accomplish this:
+
+- Turning the extracted stack into a tuple so it is hashable so it can be used as a dictionary key. This let's us check if the stack is indexed first, and skip indexing the frames again. This is especially effective in profiles where it's blocking on a network request for example, since there will be many identical stacks.
+- Using the hash of the stack as the dictionary key. Hashing the entire stack can be an expensive operation since a stack can have up to 128 frames. Using it as a dictionary key means it needs to be rehashed each time. To avoid this, we pre-hash the stack and use the hash as a dictionary key which is more efficient.
+- Convert numbers to strings ahead of time if we know have to. Values like the tid and elapsed since start ns needs to be sent as a string. However, many samples share the same value for it, and we're doing the conversion each time. Instead, we convert them to a string upfront and reuse it as needed in order to minimize unnecessary calculations.
+
+----- PR -----
+pr_id: 1415737990
+title: Add method to VideoFile to return absolute path based on environment variable
+body:
+Currently, we get the path to the video file associated with an nwb file and epoch using the external_file field of the video object in the NWB file. This breaks when a user moves a video file from it's original location when the NWB file was created. This method on the `VideoFile` table uses the `SPYGLASS_BASE_DIR` environment variable and the name of the video file, as listed in the NWB file, to look for the video file in a video folder (in our case `/stelmo/nwb/video/`). It returns a FIleNotFound error if the video file is not in the directory specified by `SPYGLASS_BASE_DIR/video`. 
+
+Open to any feedback others may have. @acomrie may have further rationale for why this is necessary.
+
+----- PR -----
+pr_id: 1416181873
+title: Add exception handling to Asyncio Integration
+body:
+Make sure that we also capture exceptions from spawned async Tasks.
+
+Refs #1690
+
+----- PR -----
+pr_id: 1416294168
+title: Fix a bug for ETCI2021 loader
+body:
+### Summary
+
+Fix the ETCI 2021 Data loader by removing glob for each folder
+
+### Details
+
+I tried ETCI2021DataModule (on Mac), then found a bug for loading the images.
+The loaded images are sometimes not correct by each sorted glob
+
+You can find the image file paths are not same (of vv and water_mask) in attached result.
+![Screen Shot 2022-10-20 at 18 16 52](https://user-images.githubusercontent.com/4539228/196911037-b4c8ced6-9284-4e75-b198-7e632408a193.png)
+
+This PR changes the loader will do sorted glob once in vv folder, and then use it for others.
+
+----- PR -----
+pr_id: 1416512939
+title: More end-to-end backup testing
+body:
+(empty)
+
+----- PR -----
+pr_id: 1417102060
+title: Allow multilabels in VectorDataset
+body:
+This PR modifies VectorDataset to handle multiple labels. Without this, masks built from shapefiles are always coded into binary masks.
+
+An optional parameter `label_name` is added to VectorDataset to indicate the name of the property where the label is stored in the shapefile. This label is then rasterized to the mask, instead of just a 1.
+
+Here is an example of a mask from a VectorDataset using this option:
+
+<img width="141" alt="image" src="https://user-images.githubusercontent.com/1119499/197033050-23228650-fe78-4aad-b49f-1b0e533a248b.png">
+
+I added an additional test to VectorDataset, but I'm not sure its the right way to do it. Let me know if it's ok or I can change it if needed.
+
+----- PR -----
+pr_id: 1417326604
+title: Add average latency to benchmark results.
+body:
+Average latency within 30us of the common language client is one of our requirements, so we should log it in the benchmarks. In order to reduce the burden on the code, removed the logging of the results to the console, since there's no need to repeat them, and the print code used unreadably long strings.
+
+----- PR -----
+pr_id: 1417337064
+title: Forward Load requests
+body:
+(empty)
+
+----- PR -----
+pr_id: 1417351745
+title: feat: use structlog for logging
+body:
+(empty)
+
+----- PR -----
+pr_id: 1417942959
+title: add CSRSparse class and improve performance
+body:
+## Changes
+
+-  set the default option of SA, SQA `sparse=True`.
+-  add `CSRSparse`class that holds `Eigen::SparseMatrix` directly in `include/openjij/graph`
+   - add corresponding code to `openjij/system` and `openjij/update`.
+   - add pybind binding
+- use `CSRSparse` class instead of `Sparse` class when `sparse=True`
+- modify `get_cxxjij_ising_graph` in `openjij/model/model.py` (improve performance in the case of `sparse=True`)
+- modify `geometric_ising_beta_schedule` in `openjij/sampler/sa_sampler.py` (temperature schedule is modified and performance is improved.)
+
+## Destructive changes
+- affect performance when `sparse` option is not set or `sparse=True`.
+- affect the accuracy of the solution (due to temperature schedule changing)
+
+----- PR -----
+pr_id: 1418067730
+title: The wrapped receive() did not return anything.
+body:
+We wrapped the `receive()` callback of all ASGI middleware to create spans when they where executed. 
+The `receive()` callback is used to receive message from the server.
+
+But we forgot to return the value that the original `receive()` callback returns. So basically swallowing the return of the server.
+
+Refs #1696
+
+----- PR -----
+pr_id: 1418155323
+title: Bug fixes for FastAPI and Sentry SDK 1.10.0
+body:
+Make sure receive/send callbacks can also be `functools.partial` objects (or other objects that are not having a `__name__`)
+
+Refs #1697
+
+----- PR -----
+pr_id: 1418526054
+title: Fix failing tests
+body:
+pandas 1.5.0 introduced a regression in the groupby behavior—which we fixed with #2007—but just restored the previous behavior in 1.5.1 (see https://pandas.pydata.org/docs/whatsnew/v1.5.1.html#behavior-of-groupby-with-categorical-groupers-gh48645)
+We too restore the previous code and avoid installing 1.5.0.
+
+----- PR -----
+pr_id: 1418834665
+title: feat(profiling): Extract more frame info
+body:
+This extracts a little more information around the frame that we'll use to improve the visualization/groupings including
+- in_app
+- module
+
+----- PR -----
+pr_id: 1419204777
+title: Straightforward, functional installation on Apple Silicon // moving to PySide6 // rc2
+body:
+- Transition from pyside2 to pyside6–only the latter is supported on M1/M2 chips (https://wiki.qt.io/Qt_for_Python)
+- Utilize Apple's tensorflow plugin (https://developer.apple.com/metal/tensorflow-plugin/). Note that I had to remove tensorflow from the required dependencies in the setup.py; we otherwise run into an error due to the mismatch between tensorflow and tensorflow-macos. I would argue that's also advantageous, as this allows for lighter installation e.g. for users training remotely, or lets users pip install the version matching their GPU device.
+
+I paste below the simple steps to follow to get a working installation with python 3.9 and tensorflow 2.10:
+
+We'll get the miniconda M1 bash installer, as explained in https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html. In the Terminal, run the following commands:
+```
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-MacOSX-arm64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+source ~/miniconda/bin/activate
+conda init zsh
+```
+Then, clone DeepLabCut (`git clone https://github.com/DeepLabCut/DeepLabCut.git`), and run `conda env create -f conda-environments/DEEPLABCUT_M1.yaml`. Next, activate the environment (`conda activate DEEPLABCUT_M1`), and launch DLC with `pythonw -m deeplabcut`.
+
+----- PR -----
+pr_id: 1419687175
+title: allow empty case
+body:
+## Changes
+
+- Allow empty interactions
+
+## Sample code
+
+```python
+import openjij as oj
+a = oj.SQASampler()
+res = a.sample_qubo(Q={})
+print(len(res.first.sample))
+```
+## Misc
+- This code will be merged after https://github.com/OpenJij/cimod/pull/118 is merged and released.
+
+----- PR -----
+pr_id: 1419765869
+title: Move ranking module to learntorank
+body:
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1420219638
+title: Assortment of code generation and simplify fixes
+body:
+- [x] DDE: Don't eliminate library node in/out connectors
+- [x] Persistent thread-local array naming fix (fixes #1148)
+- [x] Raise an error when reassigning into a View (fixes #1146)
+
+----- PR -----
+pr_id: 1421575499
+title: set default sparse option on
+body:
+## Changes
+
+- fix sparse option bug (default spase option is false)
+
+----- PR -----
+pr_id: 1422243645
+title: Fix corrupted video analysis
+body:
+When analyzing videos with corrupted frames, we sometimes ran into silent IndexErrors due to `counter` exceeding the dimensions of `PredictedData`. Indexing is now fixed, and 0s are left when frames could not be decoded (which the user is warned about in the console).
+
+Fixes #1996.
+
+----- PR -----
+pr_id: 1423177111
+title: add GroupNormalization-18
+body:
+Signed-off-by: Yuan Yao <yuanyao@nvidia.com>
+
+### Description
+Add new function op `GroupNormalization` to opset 18.
+
+
+### Motivation and Context
+Group norm is a commonly used normalization op, similar to some of the existing ONNX ops such as `BatchNormalization`, `InstanceNormalization`, and `LayerNormalization`.
+
+Original paper that introduced the op: https://arxiv.org/abs/1803.08494
+
+Related issue: https://github.com/onnx/onnx/issues/2020
+
+Implementations in other frameworks:
+https://www.tensorflow.org/addons/api_docs/python/tfa/layers/GroupNormalization
+https://pytorch.org/docs/stable/generated/torch.nn.GroupNorm.html
