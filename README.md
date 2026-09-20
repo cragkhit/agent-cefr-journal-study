@@ -120,7 +120,7 @@ repository root**. `pip install -r requirements.txt`; scripts that call the GitH
 | Group | Scripts, in order |
 |---|---|
 | AI agents | `collect_commits.py` (joins AIDev `pull_request` + `pr_commit_details`) → `convert_to_csv.py` → `make_file_versions.py` (fetches each file's before/after version from the GitHub API) |
-| Human | `collect_human_prs.py` → `human_prs_to_csv.py` → `collect_human_pr_commits.py` → `make_file_versions_human.py` (`collect_human_commits.py` is the earlier file-level exporter) |
+| Human | `collect_human_prs.py` (AIDev `human_pull_request`) → `collect_human_commits.py` (file-level commit details from the GitHub API) → `filter_human_commits.py` (keep `.py` files and merged PRs: 27,029 rows, 795 PRs) → `make_file_versions_human.py --input-csv data_csv/human_commit_data_py.csv`. `human_prs_to_csv.py` and `collect_human_pr_commits.py` are an earlier commit-level exporter; its output covers only 46% of the final corpus and was not what the corpus was built from. |
 | Human, pre-ChatGPT | `collect_pre_chatgpt_prs.py` + `analyze_pre_chatgpt_prs.py` (which repositories have pre-2022-11-30 history → `data/td1_*.csv`, `data/td2_td3_*.csv`) → `collect_pre_chatgpt_commits.py` → `make_file_versions.py`; `fetch_pre_chatgpt_titles.py` adds PR titles/bodies for task-type labelling |
 | all | `package_paper_corpora.py` drops failed fetches and non-merged PRs and zips the corpora stored under `data/` |
 
