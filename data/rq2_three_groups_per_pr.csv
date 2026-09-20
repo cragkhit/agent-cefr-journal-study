@@ -1,0 +1,1628 @@
+group,pr_id,repo,A1,A2,B1,B2,C1,C2
+AI agents,3224777239,14790897/handwriting-web,19,6,3,1,0,0
+AI agents,3200836668,514-labs/moose,63,16,12,15,6,0
+AI agents,3084795047,567-labs/instructor,23,9,5,1,2,0
+AI agents,3094442612,567-labs/instructor,10,3,1,6,0,0
+AI agents,3253313679,567-labs/instructor,59,6,3,24,2,1
+AI agents,3094439662,567-labs/instructor,6,2,1,0,0,0
+AI agents,2794323375,AgentOps-AI/agentops,380,76,33,70,14,2
+AI agents,2895754600,AgentOps-AI/agentops,101,20,13,15,2,0
+AI agents,3238383944,AgentOps-AI/agentops,250,48,17,6,5,2
+AI agents,3271196926,AgentOps-AI/agentops,226,31,22,12,8,0
+AI agents,2760243902,AgentOps-AI/agentops,306,76,45,58,6,0
+AI agents,3138517311,AgentOps-AI/agentops,27,6,5,0,0,0
+AI agents,3207286828,AgentOps-AI/agentops,126,13,12,7,1,1
+AI agents,3081620313,AliAkhtari78/SpotifyScraper,345,37,49,37,9,0
+AI agents,3091643325,AliAkhtari78/SpotifyScraper,197,48,21,11,14,0
+AI agents,3244974554,Arize-ai/phoenix,57,6,7,13,1,4
+AI agents,3241570199,Arize-ai/phoenix,230,9,11,23,2,1
+AI agents,3244989711,Arize-ai/phoenix,71,19,8,15,4,0
+AI agents,3229430451,Arize-ai/phoenix,9,0,2,1,0,0
+AI agents,3244675358,Azure-Samples/openai-chat-vision-quickstart,10092,1888,1400,1016,385,98
+AI agents,3244675240,Azure-Samples/openai-chat-vision-quickstart,4839,1117,722,485,188,41
+AI agents,3258691697,Azure-Samples/openai-chat-vision-quickstart,5,0,0,0,0,0
+AI agents,3258694358,Azure-Samples/rag-postgres-openai-python,32,3,1,8,2,0
+AI agents,3076401687,Azure/azure-kusto-python,111,25,6,14,8,0
+AI agents,3080751824,Azure/azure-sdk-for-net,281,109,37,25,16,5
+AI agents,3193634550,Azure/azure-sdk-for-python,100,47,18,14,5,0
+AI agents,3131569548,Azure/azure-sdk-for-python,10,3,0,10,0,1
+AI agents,3236369998,Azure/azure-sdk-for-python,27,9,0,3,1,0
+AI agents,3213367725,Azure/azure-sdk-for-python,62,17,6,4,6,0
+AI agents,3125531606,Azure/azure-sdk-for-python,172,69,11,3,0,0
+AI agents,3232636358,Azure/azure-sdk-for-python,1,0,0,0,0,0
+AI agents,3179973928,Azure/azure-sdk-for-python,2,0,0,0,0,0
+AI agents,3158220791,Azure/azure-sdk-tools,84,21,8,4,1,1
+AI agents,3082070083,Azure/azure-storage-fuse,15,2,6,4,6,0
+AI agents,3239582067,Bandit-HaxUnit/haxunit,13,1,0,2,0,0
+AI agents,3225638345,BerriAI/litellm,154,32,22,19,9,0
+AI agents,3131698049,BerriAI/litellm,149,36,19,9,4,6
+AI agents,3207423060,BlueFalconHD/apple_generative_model_safety_decrypted,60,12,6,1,3,0
+AI agents,3204333284,ChristopheZhao/ChaGPT-API-Call,1,0,0,0,0,0
+AI agents,2884473950,ComposioHQ/composio,156,19,22,12,0,1
+AI agents,2970993516,DannyMac180/meta-agent,41,4,5,2,0,1
+AI agents,3205514535,DeepLabCut/DeepLabCut,44,15,2,0,0,0
+AI agents,3161229907,DonDebonair/slack-machine,31,0,0,0,0,0
+AI agents,3204463734,Efeckc17/YoutubeGO,2,0,1,0,0,0
+AI agents,3193101857,EvolvingLMMs-Lab/lmms-eval,249,68,36,43,7,3
+AI agents,2980213795,GlareDB/glaredb,66,18,4,3,4,1
+AI agents,3204337980,InamuraJIN/ActionRecorder,12,2,0,4,0,0
+AI agents,2960029883,Jij-Inc/OpenJij,2,2,0,0,0,0
+AI agents,3266983404,Ljzd-PRO/KToolBox,118,20,21,16,6,0
+AI agents,3275505167,Ljzd-PRO/KToolBox,69,16,15,12,0,0
+AI agents,3271948323,Ljzd-PRO/KToolBox,101,25,11,30,3,0
+AI agents,3266984732,Ljzd-PRO/KToolBox,40,14,6,8,3,0
+AI agents,3246155636,Ljzd-PRO/KToolBox,28,4,4,1,1,0
+AI agents,3272353154,Ljzd-PRO/KToolBox,28,11,3,3,5,1
+AI agents,3271959157,Ljzd-PRO/KToolBox,7,0,1,0,0,0
+AI agents,3272335041,Ljzd-PRO/KToolBox,91,51,12,25,10,0
+AI agents,3216289477,LorenFrankLab/spyglass,156,32,8,33,1,0
+AI agents,3117273620,MikePopoloski/slang,180,28,16,21,6,0
+AI agents,3195788503,NewFuture/DDNS,25,8,25,0,0,0
+AI agents,3241734959,NewFuture/DDNS,184,47,41,23,7,1
+AI agents,3225037054,NewFuture/DDNS,148,14,48,16,17,0
+AI agents,3193524394,NewFuture/DDNS,311,34,57,24,31,0
+AI agents,3235347485,NewFuture/DDNS,72,11,14,22,0,1
+AI agents,3224735740,NewFuture/DDNS,36,21,11,2,6,0
+AI agents,3226556821,NewFuture/DDNS,231,26,57,17,32,0
+AI agents,3244901827,NewFuture/DDNS,145,35,41,19,17,0
+AI agents,3225486077,NewFuture/DDNS,104,35,7,4,1,0
+AI agents,3199112507,NewFuture/DDNS,171,18,13,8,14,0
+AI agents,3195573803,NewFuture/DDNS,39,18,7,10,5,0
+AI agents,3194326319,NewFuture/DDNS,67,45,30,2,2,0
+AI agents,3192545670,NewFuture/DDNS,6,0,0,0,0,0
+AI agents,3127998239,ObservedObserver/async-code,457,64,37,7,10,0
+AI agents,3128183116,ObservedObserver/async-code,620,65,34,31,39,0
+AI agents,3127341913,ObservedObserver/async-code,122,25,6,2,4,0
+AI agents,3127380361,ObservedObserver/async-code,5,0,0,0,0,0
+AI agents,3177433178,OpenPipe/ART,20,2,2,0,0,0
+AI agents,3177251348,OpenPipe/ART,3,0,0,2,0,0
+AI agents,3180190431,OpenPipe/ART,2,3,1,4,1,0
+AI agents,3174546403,OpenPipe/ART,121,16,4,2,0,0
+AI agents,3170718599,OpenPipe/ART,226,31,18,1,1,0
+AI agents,2905480608,Osly-AI/PocketManus,0,1,2,0,0,0
+AI agents,3221791587,PDFMathTranslate/PDFMathTranslate-next,4,0,0,0,0,0
+AI agents,3233722470,PromtEngineer/localGPT,25,5,1,0,1,0
+AI agents,3230910315,PromtEngineer/localGPT,52,2,5,5,0,0
+AI agents,3249977632,PromtEngineer/localGPT,62,7,14,8,1,0
+AI agents,3185333353,TorchIO-project/torchio,48,9,0,10,0,0
+AI agents,3212315483,WorkflowAI/WorkflowAI,211,19,21,14,8,1
+AI agents,3150662401,WorkflowAI/WorkflowAI,114,26,12,11,1,0
+AI agents,3150205159,WorkflowAI/WorkflowAI,0,0,2,0,0,0
+AI agents,3166030819,WorkflowAI/WorkflowAI,38,0,4,6,0,0
+AI agents,3144470664,WorkflowAI/WorkflowAI,4,1,0,0,0,0
+AI agents,3158599292,WorkflowAI/WorkflowAI,31,15,0,6,0,0
+AI agents,3161437023,WorkflowAI/WorkflowAI,10,2,2,0,1,0
+AI agents,3168726032,WorkflowAI/WorkflowAI,24,6,9,4,0,0
+AI agents,3154952530,WorkflowAI/WorkflowAI,1,0,0,0,0,0
+AI agents,3176871505,Z3Prover/z3,233,28,16,4,4,1
+AI agents,3183504987,Z3Prover/z3,13,0,0,0,0,0
+AI agents,3118735492,a16z/halmos,64,19,6,11,5,1
+AI agents,3138256165,a16z/halmos,28,8,3,6,0,0
+AI agents,3161413967,a16z/halmos,10,0,2,0,0,0
+AI agents,3150510293,a16z/halmos,10,4,2,8,0,0
+AI agents,3130418267,aavetis/PRarena,13,3,1,0,0,0
+AI agents,3118782981,aavetis/PRarena,9,0,0,0,0,0
+AI agents,3128820704,aavetis/PRarena,24,1,1,0,0,0
+AI agents,3118493362,aavetis/PRarena,23,1,1,0,0,0
+AI agents,3092136699,aavetis/PRarena,32,1,0,0,0,0
+AI agents,3095115214,aavetis/PRarena,6,0,0,0,0,0
+AI agents,3119031442,aavetis/PRarena,11,3,4,0,1,0
+AI agents,3097996516,adrgs/requestrepo,154,25,11,14,3,2
+AI agents,3094575862,adrgs/requestrepo,85,30,16,27,9,0
+AI agents,2819900203,ag2ai/build-with-ag2,51,12,32,1,1,0
+AI agents,3064701818,airbytehq/PyAirbyte,83,25,36,34,2,0
+AI agents,2964017894,airbytehq/PyAirbyte,51,11,8,4,0,0
+AI agents,3140874272,airbytehq/PyAirbyte,31,2,2,0,0,0
+AI agents,2939739434,airbytehq/PyAirbyte,1,2,0,0,0,0
+AI agents,2939562448,airbytehq/PyAirbyte,21,9,1,2,0,0
+AI agents,3165202236,airbytehq/PyAirbyte,36,2,9,1,0,0
+AI agents,3064641172,airbytehq/PyAirbyte,72,23,34,27,2,0
+AI agents,3057663648,airbytehq/airbyte,95,18,10,14,13,0
+AI agents,2947041637,airbytehq/airbyte,114,44,28,16,9,0
+AI agents,2839377784,airbytehq/airbyte,8,0,0,0,0,0
+AI agents,2814487611,airbytehq/airbyte,65,20,15,11,1,1
+AI agents,2889084115,airbytehq/airbyte,209,43,23,15,1,2
+AI agents,2821659019,airbytehq/airbyte,2,0,0,0,0,0
+AI agents,2888982802,airbytehq/airbyte,2,0,0,0,0,0
+AI agents,2888969472,airbytehq/airbyte,5,1,7,0,0,0
+AI agents,2821716083,airbytehq/airbyte,60,13,3,5,4,0
+AI agents,3190127291,airbytehq/airbyte,5,2,11,0,0,0
+AI agents,2895849861,airbytehq/airbyte,13,5,4,5,4,0
+AI agents,3223709587,allthingslinux/tux,6679,1280,1119,830,260,87
+AI agents,3114898378,artprima/prometheus-metrics-bundle,106,31,5,1,1,1
+AI agents,3234052393,axinc-ai/ailia-models,411,96,27,29,4,38
+AI agents,3171113463,aztfmod/terraform-provider-azurecaf,84,10,6,1,3,0
+AI agents,3175054599,aztfmod/terraform-provider-azurecaf,84,10,6,1,3,0
+AI agents,2805690384,bentoml/BentoML,4,2,1,0,0,0
+AI agents,2862179936,bentoml/BentoML,8,4,1,8,0,0
+AI agents,2773427771,bespokelabsai/curator,8,10,8,2,1,0
+AI agents,2771599553,bespokelabsai/curator,56,0,0,0,0,0
+AI agents,2761311271,bespokelabsai/curator,4,0,0,0,0,0
+AI agents,2773911009,bespokelabsai/curator,22,10,1,1,0,0
+AI agents,3225614089,bmander/graphserver,20,1,0,0,1,0
+AI agents,3225093820,bmander/graphserver,35,1,0,0,1,0
+AI agents,3224819412,bmander/graphserver,83,6,0,6,6,0
+AI agents,3265259944,bmander/graphserver,428,102,41,50,8,6
+AI agents,3224798225,bmander/graphserver,0,1,1,1,6,0
+AI agents,3182466609,browser-use/browser-use,334,5,69,17,5,2
+AI agents,3171852682,browser-use/browser-use,1260,168,108,205,28,10
+AI agents,3211580457,browser-use/browser-use,66,0,0,1,0,2
+AI agents,3185381113,browser-use/browser-use,423,15,79,22,6,2
+AI agents,3260366203,browser-use/browser-use,7,0,0,1,0,0
+AI agents,3207071991,browser-use/browser-use,591,80,58,106,8,4
+AI agents,3215483455,browser-use/browser-use,4,0,0,0,0,0
+AI agents,3228424652,browser-use/browser-use,6,0,0,0,0,0
+AI agents,3213110142,bruin-data/ingestr,1,0,0,0,0,0
+AI agents,2887628012,codegen-sh/codegen,43,5,5,0,0,0
+AI agents,2768257624,crewAIInc/crewAI-tools,75,8,17,6,1,0
+AI agents,2761977984,crewAIInc/crewAI-tools,36,8,5,5,9,0
+AI agents,2761376844,crewAIInc/crewAI-tools,14,2,5,9,1,0
+AI agents,2982438384,crewAIInc/crewAI,141,47,9,25,9,0
+AI agents,3135410764,crewAIInc/crewAI,101,33,11,12,2,0
+AI agents,2914582204,crewAIInc/crewAI,43,13,5,3,1,0
+AI agents,3115451494,crewAIInc/crewAI,27,6,0,4,2,0
+AI agents,2763242692,crewAIInc/crewAI,117,43,19,28,5,0
+AI agents,2912958566,crewAIInc/crewAI,85,20,11,13,14,2
+AI agents,3172939109,crewAIInc/crewAI,143,40,22,54,9,2
+AI agents,3226800357,crewAIInc/crewAI,42,13,3,2,0,0
+AI agents,2810378681,crewAIInc/crewAI,10,3,5,0,0,0
+AI agents,3075757415,crewAIInc/crewAI,235,36,27,20,10,0
+AI agents,2786715226,crewAIInc/crewAI,1186,231,167,191,50,4
+AI agents,2802417432,crewAIInc/crewAI,153,55,17,35,14,0
+AI agents,2763878383,crewAIInc/crewAI,80,13,27,38,9,0
+AI agents,3078777355,crewAIInc/crewAI,59,13,7,6,0,1
+AI agents,2790183982,crewAIInc/crewAI,43,11,8,21,3,0
+AI agents,2833722888,crewAIInc/crewAI,3,1,1,0,0,0
+AI agents,2978840535,crewAIInc/crewAI,20,17,11,6,2,0
+AI agents,2784993744,crewAIInc/crewAI,39,8,5,23,5,0
+AI agents,2990115371,crewAIInc/crewAI,58,6,3,16,0,2
+AI agents,2918683850,crewAIInc/crewAI,86,20,11,13,14,2
+AI agents,2910029842,crewAIInc/crewAI,39,1,0,8,4,2
+AI agents,2797482061,crewAIInc/crewAI,36,5,7,11,4,0
+AI agents,2894930869,crewAIInc/crewAI,87,31,12,39,5,0
+AI agents,2840202434,crewAIInc/crewAI,47,12,0,18,5,0
+AI agents,2762078403,crewAIInc/crewAI,67,17,3,21,2,0
+AI agents,2763395657,crewAIInc/crewAI,50,11,5,3,1,0
+AI agents,2984176797,crewAIInc/crewAI,8,1,0,2,2,0
+AI agents,3090192279,crewAIInc/crewAI,97,14,11,23,4,1
+AI agents,2869463251,crewAIInc/crewAI,15,2,0,1,0,0
+AI agents,3075723453,crewAIInc/crewAI,30,4,2,2,0,0
+AI agents,2949364196,crewAIInc/crewAI,21,4,0,1,1,0
+AI agents,2989761342,crewAIInc/crewAI,6,2,2,0,1,0
+AI agents,2982204377,crewAIInc/crewAI,2,6,4,0,0,0
+AI agents,2761325861,crewAIInc/crewAI,3,0,0,1,0,0
+AI agents,3217207276,datahub-project/datahub,28,0,3,0,0,0
+AI agents,3217261924,datahub-project/datahub,0,4,4,0,0,0
+AI agents,3201207080,datahub-project/datahub,0,0,0,0,3,3
+AI agents,3064113810,different-ai/zero-finance,144,38,34,7,9,0
+AI agents,2976319344,digitaldemocracy2030/kouchou-ai,473,96,70,49,37,3
+AI agents,3071829832,digitaldemocracy2030/kouchou-ai,353,19,24,86,6,0
+AI agents,2976332198,digitaldemocracy2030/kouchou-ai,328,66,52,33,33,2
+AI agents,2978436805,digitaldemocracy2030/kouchou-ai,473,95,69,49,37,3
+AI agents,3076685839,digitaldemocracy2030/kouchou-ai,154,18,6,14,7,0
+AI agents,3037451152,digitaldemocracy2030/kouchou-ai,173,16,17,18,1,0
+AI agents,2971926630,digitaldemocracy2030/kouchou-ai,17,2,5,3,1,0
+AI agents,2976318527,digitaldemocracy2030/kouchou-ai,461,94,64,46,36,3
+AI agents,2971908072,digitaldemocracy2030/kouchou-ai,37,6,8,8,2,0
+AI agents,3004072776,digitaldemocracy2030/kouchou-ai,11,1,2,1,0,0
+AI agents,2872773751,disler/single-file-agents,200,22,14,8,4,0
+AI agents,2925357207,disler/single-file-agents,1682,198,134,245,180,3
+AI agents,2926270506,disler/single-file-agents,1612,244,197,79,135,0
+AI agents,2911983646,disler/single-file-agents,818,249,83,82,27,2
+AI agents,2878797964,disler/single-file-agents,171,38,12,5,6,1
+AI agents,3219282636,docling-project/docling,24,5,0,1,1,0
+AI agents,3219667345,docling-project/docling,116,37,20,14,2,1
+AI agents,3255564010,docling-project/docling,119,28,13,20,5,0
+AI agents,3169258035,exa-labs/exa-py,244,37,24,0,0,0
+AI agents,3169182560,exa-labs/exa-py,2,0,1,0,0,0
+AI agents,3092813223,frenck/spook,36,4,1,0,0,0
+AI agents,2939503388,get-convex/convex-helpers,7,3,2,1,0,0
+AI agents,3149341709,getsentry/sentry-python,24,1,0,7,2,0
+AI agents,3139974947,getsentry/sentry-python,40,14,5,29,0,0
+AI agents,3150026775,getsentry/sentry-python,4,1,0,1,0,0
+AI agents,3171819372,getsentry/sentry,2,0,0,0,0,0
+AI agents,3200615668,getsentry/sentry,36,4,1,21,4,0
+AI agents,3135538721,getsentry/sentry,363,41,25,22,0,0
+AI agents,3138534395,getsentry/sentry,178,25,2,14,2,2
+AI agents,3244343726,getsentry/sentry,33,5,1,8,2,0
+AI agents,3223703470,getsentry/sentry,2,0,0,0,0,0
+AI agents,3212856580,getsentry/sentry,430,66,86,32,0,0
+AI agents,3174634284,getsentry/sentry,10,0,0,2,0,0
+AI agents,3154088521,getsentry/sentry,2,0,0,0,0,0
+AI agents,3174571388,getsentry/sentry,1,0,0,0,0,0
+AI agents,3137099861,getsentry/sentry,3,1,0,0,0,0
+AI agents,3131328255,getsentry/sentry,2,0,0,0,0,0
+AI agents,3150091151,github/issue-metrics,152,50,17,4,11,0
+AI agents,2842178996,goat-sdk/goat,310,60,34,66,11,1
+AI agents,2802180853,goat-sdk/goat,178,29,35,19,1,1
+AI agents,2842228579,goat-sdk/goat,233,10,16,67,36,0
+AI agents,2845335545,goat-sdk/goat,49,7,22,14,2,0
+AI agents,2784417626,goat-sdk/goat,21,7,9,9,0,1
+AI agents,2790317638,goat-sdk/goat,167,30,38,16,26,2
+AI agents,2788029019,goat-sdk/goat,15,5,4,6,0,0
+AI agents,2784386339,goat-sdk/goat,29,6,13,9,0,1
+AI agents,2784399427,goat-sdk/goat,31,8,11,8,0,1
+AI agents,2795172513,goat-sdk/goat,78,12,17,15,0,1
+AI agents,2788022491,goat-sdk/goat,72,8,16,11,0,1
+AI agents,2784590302,goat-sdk/goat,46,7,15,12,4,1
+AI agents,2795084819,goat-sdk/goat,117,10,21,17,0,1
+AI agents,2784574087,goat-sdk/goat,85,6,26,14,0,1
+AI agents,2794907896,goat-sdk/goat,38,1,6,0,0,0
+AI agents,2792386162,goat-sdk/goat,23,11,10,11,5,0
+AI agents,2784409350,goat-sdk/goat,21,12,10,8,0,1
+AI agents,2777165691,goat-sdk/goat,28,5,10,9,0,1
+AI agents,3185509791,iterative/datachain,27,13,2,4,0,0
+AI agents,3213779460,iterative/datachain,67,24,24,9,0,0
+AI agents,3226557036,jeroenterheerdt/HAsmartirrigation,90,13,3,0,2,0
+AI agents,3226602604,jeroenterheerdt/HAsmartirrigation,257,28,41,43,24,0
+AI agents,3225468380,jeroenterheerdt/HAsmartirrigation,7,0,0,0,0,0
+AI agents,3226779561,jeroenterheerdt/HAsmartirrigation,1,0,0,0,0,0
+AI agents,3245783375,jeroenterheerdt/HAsmartirrigation,201,38,43,22,9,1
+AI agents,3237976887,jeroenterheerdt/HAsmartirrigation,207,42,29,11,2,0
+AI agents,3229043367,jeroenterheerdt/HAsmartirrigation,198,31,32,22,1,0
+AI agents,3245442057,jeroenterheerdt/HAsmartirrigation,63,10,8,1,0,0
+AI agents,3225681004,jeroenterheerdt/HAsmartirrigation,1,0,0,0,0,0
+AI agents,3212993541,jxxghp/MoviePilot,170,39,44,17,17,0
+AI agents,3204520335,jxxghp/MoviePilot,23,1,0,1,0,0
+AI agents,3211849916,jxxghp/MoviePilot,7,0,0,0,0,0
+AI agents,3215138589,jxxghp/MoviePilot,62,29,9,14,3,0
+AI agents,3214915262,jxxghp/MoviePilot,276,55,32,0,119,0
+AI agents,3132740864,keephq/keep,755,83,65,18,29,0
+AI agents,3176759438,keephq/keep,131,15,12,21,2,0
+AI agents,3165822621,keephq/keep,226,11,63,18,15,0
+AI agents,3140117936,keephq/keep,95,9,11,52,11,8
+AI agents,3246263935,kortix-ai/suna,1,0,0,0,0,0
+AI agents,3245408233,kortix-ai/suna,6,0,1,0,0,0
+AI agents,3235734906,kortix-ai/suna,7,0,0,0,0,0
+AI agents,3214496315,kyegomez/swarms,0,1,0,0,0,0
+AI agents,3062887664,langbot-app/LangBot,0,0,0,1,0,0
+AI agents,3050491453,langbot-app/LangBot,4,0,0,2,0,0
+AI agents,3126647068,langbot-app/LangBot,74,18,6,10,4,1
+AI agents,3246180908,langbot-app/LangBot,11,0,1,0,0,0
+AI agents,3058736038,langbot-app/LangBot,6,2,3,1,0,0
+AI agents,3077212751,langbot-app/LangBot,99,23,12,26,3,1
+AI agents,3061751436,langbot-app/LangBot,27,15,10,9,0,0
+AI agents,3250552871,langchain-ai/langchain,8,0,0,1,0,0
+AI agents,3250549842,langchain-ai/langchain,166,33,6,16,3,0
+AI agents,3250548398,langchain-ai/langchain,25,4,4,13,0,0
+AI agents,3200914224,langflow-ai/langflow,644,114,114,142,41,2
+AI agents,3209950136,langfuse/langfuse-python,9,8,0,6,0,0
+AI agents,3203515928,laude-institute/terminal-bench,65,22,16,9,1,0
+AI agents,3200961570,laude-institute/terminal-bench,64,6,6,13,5,1
+AI agents,2840161375,marimo-team/marimo,2,5,0,2,0,0
+AI agents,2770724281,marimo-team/marimo,14,8,0,6,2,0
+AI agents,2818558986,marimo-team/marimo,16,3,2,9,0,0
+AI agents,2892580326,marimo-team/marimo,22,2,1,0,0,0
+AI agents,2839339063,marimo-team/marimo,4,1,0,0,0,0
+AI agents,2895280174,marimo-team/marimo,22,9,3,12,2,0
+AI agents,2901620466,marimo-team/marimo,257,105,81,118,8,0
+AI agents,2848656258,marimo-team/marimo,12,3,2,1,2,0
+AI agents,2908717563,marimo-team/marimo,171,74,57,67,25,0
+AI agents,2861751791,marimo-team/marimo,1,5,1,0,0,0
+AI agents,2901619958,marimo-team/marimo,9,12,3,5,0,0
+AI agents,2861606292,marimo-team/marimo,4,4,4,0,0,0
+AI agents,2861659768,marimo-team/marimo,7,6,0,1,2,1
+AI agents,2870860967,marimo-team/marimo,13,7,6,5,2,0
+AI agents,2814132697,marimo-team/marimo,5,0,1,0,0,0
+AI agents,2827635328,marimo-team/marimo,10,7,4,3,2,1
+AI agents,2795821755,marimo-team/marimo,12,4,2,16,4,0
+AI agents,2904873173,marimo-team/marimo,62,12,7,12,9,0
+AI agents,2901612191,marimo-team/marimo,280,38,23,77,18,0
+AI agents,2901653641,marimo-team/marimo,66,13,9,9,0,0
+AI agents,2895280316,marimo-team/marimo,7,7,3,1,1,0
+AI agents,3190739105,matsui528/rii,0,1,0,0,0,0
+AI agents,3212186764,matthias-k/pysaliency,115,29,27,7,3,6
+AI agents,3200319091,mediar-ai/terminator,157,28,7,8,2,0
+AI agents,3176708032,mendableai/firecrawl,30,5,1,1,0,0
+AI agents,2990679795,mendableai/firecrawl,40,4,2,0,2,0
+AI agents,3050346044,mendableai/firecrawl,2,1,0,3,1,0
+AI agents,2993960739,mendableai/firecrawl,6,0,0,0,0,0
+AI agents,3158038793,mendableai/firecrawl,18,0,0,0,0,0
+AI agents,3067443431,mendableai/firecrawl,9,0,0,0,0,0
+AI agents,3232587454,mendableai/firecrawl,2,2,0,0,0,0
+AI agents,3036314560,mendableai/firecrawl,17,0,0,0,0,0
+AI agents,3253693371,mendableai/firecrawl,35,5,2,1,4,0
+AI agents,3032932433,mendableai/firecrawl,66,8,9,0,1,3
+AI agents,3227004326,messense/typst-py,7,1,2,5,0,0
+AI agents,3139579722,microsoft/AzureTRE,170,12,11,26,4,0
+AI agents,3076670977,microsoft/AzureTRE,30,3,0,0,0,0
+AI agents,3125458401,microsoft/Olive,442,135,255,72,13,2
+AI agents,3119042017,microsoft/Olive,87,34,9,2,6,0
+AI agents,3146305288,microsoft/Olive,10,0,1,1,0,0
+AI agents,3135068930,microsoft/Olive,346,62,45,3,5,3
+AI agents,3136594828,microsoft/Qcodes,30,4,5,4,0,0
+AI agents,3148932692,microsoft/Qcodes,186,43,37,10,1,0
+AI agents,3133771594,microsoft/Qcodes,310,52,34,20,2,0
+AI agents,3158983348,microsoft/RD-Agent,93,19,27,13,2,0
+AI agents,3199905484,microsoft/autogen,56,9,10,35,2,1
+AI agents,3155084033,microsoft/autogen,357,133,59,136,17,1
+AI agents,3158819982,microsoft/autogen,277,39,12,24,10,0
+AI agents,3206203957,microsoft/autogen,12,2,0,2,0,0
+AI agents,3222565138,microsoft/autogen,28,1,0,10,0,0
+AI agents,3151697572,microsoft/autogen,59,26,13,3,3,0
+AI agents,3222599276,microsoft/autogen,28,8,1,12,1,0
+AI agents,3168889284,microsoft/debug-gym,60,13,5,9,0,0
+AI agents,3091825094,microsoft/debug-gym,22,1,3,1,0,0
+AI agents,3091765131,microsoft/debug-gym,16,4,4,7,1,0
+AI agents,3219342467,microsoft/debug-gym,26,19,2,9,0,0
+AI agents,3084261971,microsoft/fabric-cicd,227,55,29,36,6,0
+AI agents,3196295632,microsoft/fabric-cicd,54,13,13,4,0,0
+AI agents,3153698253,microsoft/fabric-cicd,145,11,0,8,0,0
+AI agents,3193741359,microsoft/fabric-cicd,38,4,2,0,0,0
+AI agents,3199964804,microsoft/fabric-cicd,80,19,20,4,6,0
+AI agents,3078782339,microsoft/graphrag,483,130,101,215,14,3
+AI agents,3103634798,microsoft/graphrag,415,75,123,24,28,12
+AI agents,3148267777,microsoft/lisa,202,3,1,0,0,0
+AI agents,3187683940,microsoft/lisa,20,0,0,0,0,0
+AI agents,3078356584,microsoft/lisa,12,5,2,0,1,0
+AI agents,3172444753,microsoft/lisa,6,0,0,0,0,0
+AI agents,3181433167,microsoft/lisa,49,2,3,0,0,0
+AI agents,3081361910,microsoft/lisa,23,9,4,4,0,1
+AI agents,3113782046,microsoft/lisa,9,3,0,1,0,0
+AI agents,3139359977,microsoft/lisa,44,9,5,0,0,0
+AI agents,3084794817,microsoft/lisa,11,4,2,2,4,0
+AI agents,3077768704,microsoft/magentic-ui,5,3,0,1,0,0
+AI agents,3077668165,microsoft/magentic-ui,10,4,3,1,0,0
+AI agents,3199839671,microsoft/onnxscript,0,0,12,0,0,0
+AI agents,3223461985,microsoft/onnxscript,240,32,15,14,4,0
+AI agents,3189898546,microsoft/onnxscript,42,9,6,1,1,0
+AI agents,3145373517,microsoft/onnxscript,76,12,2,9,3,0
+AI agents,3230759504,microsoft/onnxscript,95,19,8,10,7,0
+AI agents,3161317787,microsoft/onnxscript,50,19,17,3,10,0
+AI agents,3158055411,microsoft/onnxscript,0,0,0,0,0,1
+AI agents,3146310469,microsoft/onnxscript,277,53,13,14,18,1
+AI agents,3193514773,microsoft/onnxscript,4,0,0,0,0,0
+AI agents,3185225851,microsoft/torchgeo,19,18,0,7,0,0
+AI agents,3152257828,microsoft/typespec,4952,1062,693,516,181,38
+AI agents,3179515957,microsoft/typespec,75,20,15,14,0,2
+AI agents,3082820826,mlflow/mlflow,121,21,43,64,31,10
+AI agents,3085398469,mlflow/mlflow,3260,622,474,414,143,61
+AI agents,3148655251,mlflow/mlflow,3,0,0,0,0,0
+AI agents,3181479231,mlflow/mlflow,1020,75,72,39,17,3
+AI agents,3140666398,mlflow/mlflow,244,33,35,33,20,3
+AI agents,3119857154,mlflow/mlflow,94,23,20,20,13,0
+AI agents,3261572196,mlflow/mlflow,28,1,0,0,0,0
+AI agents,3120603357,mlflow/mlflow,316,85,61,53,30,3
+AI agents,3108908027,mlflow/mlflow,23,5,1,0,0,0
+AI agents,3109263417,mlflow/mlflow,2,5,9,0,0,0
+AI agents,3116225832,mlflow/mlflow,16,0,0,7,1,0
+AI agents,3155745045,mlflow/mlflow,6,2,2,3,0,0
+AI agents,3166878308,mlflow/mlflow,1,0,0,0,0,0
+AI agents,3268208096,mlflow/mlflow,1057,145,165,70,60,8
+AI agents,3164935344,mlflow/mlflow,2,1,0,1,0,1
+AI agents,3138995292,mlflow/mlflow,8,2,0,0,1,0
+AI agents,3156456557,mlflow/mlflow,10,3,1,0,2,1
+AI agents,3094020110,mlflow/mlflow,1,0,0,0,0,0
+AI agents,3165063018,mlflow/mlflow,11,1,0,1,4,1
+AI agents,3123684653,mlflow/mlflow,0,2,2,0,0,0
+AI agents,3120162244,mlflow/mlflow,17,3,1,4,4,0
+AI agents,3272051898,mlflow/mlflow,39,16,4,8,3,0
+AI agents,3113006799,mlflow/mlflow,19,6,13,2,0,0
+AI agents,2797157546,modal-labs/modal-client,8,1,0,0,0,0
+AI agents,3125029980,nearai/nearai,133,19,9,11,10,0
+AI agents,3122455352,nearai/nearai,24,1,0,7,0,0
+AI agents,2986070957,neondatabase/neon,443,81,62,105,12,9
+AI agents,3016994685,neondatabase/neon,1,0,0,1,0,0
+AI agents,3127150444,octgn/OCTGN,1,0,0,0,2,0
+AI agents,3160615563,onnx/onnx,9,7,0,0,4,0
+AI agents,2816690510,onyx-dot-app/onyx,81,10,3,9,1,0
+AI agents,2818857108,onyx-dot-app/onyx,5,3,1,3,0,0
+AI agents,2816855074,onyx-dot-app/onyx,9,0,1,0,0,0
+AI agents,3255020828,pamelafox/python-openai-demos,33,13,0,0,1,0
+AI agents,2783423999,patched-codes/patchwork,72,9,7,11,1,0
+AI agents,3211605383,pulearn/pulearn,41,6,1,12,1,0
+AI agents,3211931262,pulearn/pulearn,39,12,2,3,0,0
+AI agents,3212422037,pulearn/pulearn,17,5,1,1,0,0
+AI agents,3216426710,python-cachier/cachier,88,11,3,37,8,0
+AI agents,3225271859,python/python-docs-zh-tw,166,29,15,1,5,0
+AI agents,3241451851,quantalogic/quantalogic,512,92,56,33,3,0
+AI agents,3203547623,radius-project/radius,19,1,2,0,0,0
+AI agents,3184116369,reflex-dev/reflex-web,54,1,2,3,0,0
+AI agents,3220805963,reflex-dev/reflex-web,1,0,0,0,0,0
+AI agents,3220699146,reflex-dev/reflex-web,13,1,5,0,0,0
+AI agents,3029881950,reflex-dev/reflex-web,13,3,2,3,2,0
+AI agents,3235947868,reflex-dev/reflex-web,3,0,0,0,0,0
+AI agents,3184434153,reflex-dev/reflex-web,308,56,42,29,3,0
+AI agents,3223923166,reflex-dev/reflex-web,562,65,33,35,4,0
+AI agents,3029848964,reflex-dev/reflex-web,9,1,0,0,0,0
+AI agents,3154494868,reflex-dev/reflex-web,102,21,20,1,4,2
+AI agents,3223299299,reflex-dev/reflex-web,1,0,0,0,0,0
+AI agents,3221298768,reflex-dev/reflex-web,4,0,0,0,0,0
+AI agents,3166697455,reflex-dev/reflex-web,1,0,2,0,0,0
+AI agents,3033064900,reflex-dev/reflex-web,0,1,0,0,1,0
+AI agents,3027014635,reflex-dev/reflex-web,14,4,1,0,0,0
+AI agents,3217318621,reflex-dev/reflex-web,1,0,0,0,0,0
+AI agents,3271571849,reflex-dev/reflex-web,12,4,1,0,0,0
+AI agents,3220896124,reflex-dev/reflex-web,143,21,4,18,1,0
+AI agents,3027102072,reflex-dev/reflex-web,10,3,0,0,0,0
+AI agents,3213599064,reflex-dev/reflex-web,0,0,0,1,0,0
+AI agents,3210536156,reflex-dev/reflex-web,11,0,1,0,0,0
+AI agents,3233131994,reflex-dev/reflex-web,10,3,2,3,2,0
+AI agents,3249840983,reflex-dev/reflex-web,2,0,0,0,0,0
+AI agents,3029823831,reflex-dev/reflex-web,63,13,6,4,6,0
+AI agents,3224534498,reflex-dev/reflex-web,6,2,1,0,0,0
+AI agents,3220166345,reflex-dev/reflex-web,2,0,0,0,0,0
+AI agents,3229578432,reflex-dev/reflex-web,2,0,0,0,0,0
+AI agents,3032813632,reflex-dev/reflex,29,9,1,10,2,0
+AI agents,3253517563,reflex-dev/reflex,40,2,0,0,1,0
+AI agents,3233174406,reflex-dev/reflex,1,0,1,0,0,0
+AI agents,3220799500,reflex-dev/reflex,103,15,9,17,1,0
+AI agents,3147157841,remotion-dev/remotion,4783,1081,726,504,186,38
+AI agents,3149019667,remotion-dev/remotion,124,24,14,10,3,0
+AI agents,3235069491,rohitg00/awesome-ai-apps,96,19,14,2,10,1
+AI agents,3094173620,rqlite/rqlite,18,6,1,4,0,0
+AI agents,3169711198,skypilot-org/skypilot,107,51,26,1,3,0
+AI agents,3090570894,spcl/dace,224,64,22,21,15,16
+AI agents,3214122373,spcl/dace,207,60,12,33,13,4
+AI agents,2892552345,stack-auth/stack-auth,180,20,27,16,14,0
+AI agents,3158079001,teaxyz/chai,326,59,60,39,2,1
+AI agents,3182061205,teaxyz/chai,490,60,90,65,2,0
+AI agents,3126127102,teaxyz/chai,166,19,31,132,16,8
+AI agents,3006259704,tumf/mcp-text-editor,2,1,9,0,1,0
+AI agents,3201407554,ucbepic/docetl,327,42,68,31,13,0
+AI agents,3201304127,ucbepic/docetl,11,6,0,0,6,0
+AI agents,3203387779,ucbepic/docetl,126,22,24,32,0,0
+AI agents,3231935037,valkey-io/valkey-glide,35,11,6,5,0,1
+AI agents,3239748118,valkey-io/valkey-glide,2,0,0,0,0,0
+AI agents,3231931598,valkey-io/valkey-glide,7,2,0,0,0,0
+AI agents,3198591963,valkey-io/valkey-glide,31,2,3,0,2,0
+AI agents,3196955536,valkey-io/valkey-glide,17,3,4,1,0,1
+AI agents,3272229568,vespa-engine/pyvespa,92,30,6,0,7,0
+AI agents,3009041550,vladfi1/slippi-ai,50,18,8,0,3,0
+AI agents,3009482660,vladfi1/slippi-ai,53,21,7,5,4,1
+AI agents,2889287277,vlm-run/vlmrun-hub,31,1,2,0,0,0
+AI agents,2780834098,vlm-run/vlmrun-hub,30,3,4,0,0,0
+AI agents,2889242157,vlm-run/vlmrun-hub,53,2,8,0,0,0
+AI agents,2889288178,vlm-run/vlmrun-hub,24,2,5,0,0,0
+AI agents,2776603613,vlm-run/vlmrun-hub,8,1,3,0,0,0
+AI agents,2777500617,vlm-run/vlmrun-hub,51,4,5,0,0,0
+AI agents,2768982424,vlm-run/vlmrun-hub,36,8,6,7,2,0
+AI agents,2771417743,vlm-run/vlmrun-hub,47,2,5,0,0,0
+AI agents,2889292561,vlm-run/vlmrun-hub,18,1,3,1,0,0
+AI agents,3267581502,willccbb/verifiers,130,18,14,3,0,0
+AI agents,3266348344,willccbb/verifiers,274,49,30,8,6,2
+AI agents,3201428116,willccbb/verifiers,635,211,154,227,102,0
+AI agents,3232422158,willccbb/verifiers,341,81,101,81,23,0
+AI agents,3266377001,willccbb/verifiers,74,10,7,2,0,1
+AI agents,3201813962,willccbb/verifiers,98,53,19,17,10,0
+AI agents,3248544441,wzdavid/ThinkRAG,11,0,1,4,0,1
+AI agents,3236303099,wzdavid/ThinkRAG,13,2,0,1,0,0
+AI agents,3265325720,yutto-dev/yutto,196,60,35,17,0,0
+AI agents,3192728541,zfit/zfit,733,116,38,94,24,1
+AI agents,3192012013,zfit/zfit,4,0,1,0,0,0
+Human,2400261241,567-labs/instructor,121,26,8,16,14,0
+Human,2298301775,567-labs/instructor,67,20,18,17,7,0
+Human,2373978615,ACEsuit/mace,1940,334,137,279,41,4
+Human,2389891260,AgentOps-AI/agentops,559,218,75,44,42,1
+Human,2368306114,AgentOps-AI/agentops,660,106,128,116,17,0
+Human,2552315306,AgentOps-AI/agentops,3330,787,400,180,96,27
+Human,2282594982,AgentOps-AI/agentops,1,0,4,0,0,0
+Human,2390024977,AgentOps-AI/agentops,535,215,74,41,38,1
+Human,2520130599,AgentOps-AI/agentops,19,4,1,9,1,1
+Human,2454776899,AgentOps-AI/agentops,71,14,18,4,2,0
+Human,2389334004,AgentOps-AI/agentops,260,20,16,12,4,2
+Human,2448959577,AgentOps-AI/agentops,27,5,17,3,0,0
+Human,2389875437,AgentOps-AI/agentops,84,21,39,8,9,0
+Human,2448591120,AgentOps-AI/agentops,21,8,1,1,2,0
+Human,2394800356,AgentOps-AI/agentops,0,1,3,0,0,0
+Human,2573822378,Azure/azure-functions-core-tools,43,9,4,11,1,0
+Human,2547279361,Azure/azure-functions-core-tools,5,1,1,0,0,0
+Human,2452881601,Azure/azure-sdk-for-net,141,52,19,9,7,2
+Human,2440441097,Azure/azure-sdk-for-python,103247,14505,12520,13605,3986,391
+Human,2433002376,Azure/azure-sdk-for-python,1674,181,169,76,47,3
+Human,2492492371,Azure/azure-sdk-for-python,3,1,1,0,0,0
+Human,2531079994,Azure/azure-sdk-for-python,14,1,3,0,2,0
+Human,2449032917,Azure/azure-sdk-for-python,136,41,25,15,6,1
+Human,2522613536,Azure/azure-sdk-for-python,16,0,0,0,0,0
+Human,2516078067,BOINC/boinc,8,2,2,0,3,0
+Human,2351814084,BOINC/boinc,79,23,1,3,1,0
+Human,2578599113,BeehiveInnovations/zen-mcp-server,10,0,0,0,0,0
+Human,2313919432,BerriAI/litellm,5,2,1,0,1,0
+Human,2525424596,BerriAI/litellm,458,62,53,52,7,1
+Human,2510098763,BerriAI/litellm,38,18,8,6,1,0
+Human,2334613112,BerriAI/litellm,94,5,2,0,1,0
+Human,2272274981,Blaizzy/mlx-vlm,4,0,0,0,0,0
+Human,2442916529,Blaizzy/mlx-vlm,16,0,0,0,0,0
+Human,2399463135,Blaizzy/mlx-vlm,1,0,1,0,0,0
+Human,2625218797,Blaizzy/mlx-vlm,0,2,0,1,0,0
+Human,2328335930,ComposioHQ/composio,2,0,0,0,0,0
+Human,2306867477,ComposioHQ/composio,79,23,28,3,2,0
+Human,2283901622,ComposioHQ/composio,123,52,36,1,6,0
+Human,2301636676,ComposioHQ/composio,30,10,14,1,1,0
+Human,2291207655,EricLBuehler/mistral.rs,13,1,0,0,1,0
+Human,2456276880,EricLBuehler/mistral.rs,65,2,1,0,0,0
+Human,2404174558,EricLBuehler/mistral.rs,25,3,3,0,1,0
+Human,2561677603,GlareDB/glaredb,9,5,2,0,2,0
+Human,2441758104,GodsScion/Auto_job_applier_linkedIn,101,0,7,36,2,5
+Human,2356246191,Kanaries/pygwalker,183,33,27,7,4,2
+Human,2430314015,Kanaries/pygwalker,29,2,1,14,4,0
+Human,2440808816,Kanaries/pygwalker,31,1,1,2,0,0
+Human,2367079250,Kiln-AI/Kiln,8343,1517,1155,1720,296,20
+Human,2313076850,Kiln-AI/Kiln,53,12,6,33,0,1
+Human,2278053264,Kiln-AI/Kiln,3,1,0,0,0,0
+Human,2441330487,Kiln-AI/Kiln,942,110,131,126,30,0
+Human,2511573741,Kiln-AI/Kiln,98,20,7,17,1,0
+Human,2345504485,Kiln-AI/Kiln,222,43,38,54,14,2
+Human,2315875250,Kiln-AI/Kiln,31,1,4,6,0,0
+Human,2512329986,Kiln-AI/Kiln,93,5,4,15,0,0
+Human,2402337662,Kiln-AI/Kiln,124,14,39,19,6,0
+Human,2310831032,Kiln-AI/Kiln,21,2,5,7,0,1
+Human,2340845626,Kiln-AI/Kiln,107,35,16,30,3,0
+Human,2609550717,Kiln-AI/Kiln,8,2,3,2,1,0
+Human,2394359557,MaiM-with-u/MaiBot,793,155,34,80,6,7
+Human,2480611839,MaiM-with-u/MaiBot,12,2,1,2,0,0
+Human,2310214732,MervinPraison/PraisonAI,36,2,4,1,0,0
+Human,2275795781,MikePopoloski/slang,134,39,2,47,1,0
+Human,2286566641,MikePopoloski/slang,16,9,0,0,0,0
+Human,2272586142,Netflix/metaflow,186,48,34,29,12,0
+Human,2545179720,NousResearch/atropos,175,49,34,26,4,2
+Human,2272661584,ObservedObserver/streamlit-shadcn-ui,238,108,74,43,52,1
+Human,2619492805,OpenPipe/ART,1312,246,176,136,34,11
+Human,2496892442,OpenPipe/ART,15,7,7,6,1,0
+Human,2461648574,OpenPipe/ART,31,1,3,4,1,0
+Human,2492871484,OpenPipe/ART,175,61,34,19,6,1
+Human,2535720745,Panchovix/stable-diffusion-webui-reForge,832,95,32,56,34,0
+Human,2465429535,PrefectHQ/marvin,33,9,7,6,1,1
+Human,2420201980,PrefectHQ/prefect,75,2,2,12,0,0
+Human,2333329270,PriorLabs/TabPFN,55,33,14,9,8,1
+Human,2363986187,PriorLabs/TabPFN,406,81,61,24,16,2
+Human,2267854135,PriorLabs/TabPFN,2,0,0,0,0,0
+Human,2620590040,PriorLabs/TabPFN,0,0,1,0,0,0
+Human,2276244631,PriorLabs/TabPFN,19,9,4,7,0,0
+Human,2567130351,PrunaAI/pruna,3,0,0,0,0,0
+Human,2546726071,PrunaAI/pruna,0,2,2,0,0,0
+Human,2513413649,RockChinQ/LangBot,4,0,0,0,0,0
+Human,2518007609,RockChinQ/LangBot,1823,385,265,359,30,24
+Human,2355300308,RockChinQ/LangBot,134,12,5,35,4,1
+Human,2428059466,RockChinQ/LangBot,166,49,22,36,17,0
+Human,2425648879,RockChinQ/LangBot,109,41,8,31,1,2
+Human,2483823196,RockChinQ/LangBot,5,0,0,0,0,0
+Human,2358334023,RockChinQ/LangBot,8,0,0,0,0,0
+Human,2592855865,RockChinQ/LangBot,16,0,0,0,0,0
+Human,2364787187,RockChinQ/LangBot,4,2,0,2,0,0
+Human,2465464455,RockChinQ/LangBot,14,9,2,6,0,1
+Human,2290337879,Significant-Gravitas/AutoGPT,2194,212,505,146,105,2
+Human,2579991903,Significant-Gravitas/AutoGPT,4,0,0,0,0,0
+Human,2279176635,Significant-Gravitas/AutoGPT,251,60,46,16,9,0
+Human,2536954288,Significant-Gravitas/AutoGPT,21,5,5,7,5,0
+Human,2387062321,Significant-Gravitas/AutoGPT,345,23,21,25,13,3
+Human,2516490273,Significant-Gravitas/AutoGPT,245,17,27,12,5,0
+Human,2493806134,Significant-Gravitas/AutoGPT,14,0,0,0,0,0
+Human,2416987762,Significant-Gravitas/AutoGPT,2,0,0,0,0,0
+Human,2313339743,Significant-Gravitas/AutoGPT,61,2,2,3,1,0
+Human,2286020833,Significant-Gravitas/AutoGPT,10,1,1,0,0,0
+Human,2506495465,Significant-Gravitas/AutoGPT,54,2,1,0,0,0
+Human,2483120959,Significant-Gravitas/AutoGPT,4,0,0,0,0,0
+Human,2262795916,SirVer/ultisnips,4,1,0,0,0,0
+Human,2380702095,SirVer/ultisnips,1,0,0,0,0,0
+Human,2484533924,Skyvern-AI/skyvern,201,18,5,8,6,0
+Human,2603520463,Skyvern-AI/skyvern,119,11,4,1,0,0
+Human,2334155600,Skyvern-AI/skyvern,156,10,26,16,3,0
+Human,2275685120,Skyvern-AI/skyvern,7,0,0,0,0,0
+Human,2371172565,Skyvern-AI/skyvern,0,1,0,0,0,0
+Human,2525453714,Skyvern-AI/skyvern,9,0,0,0,0,0
+Human,2371342937,Skyvern-AI/skyvern,2,1,0,0,0,0
+Human,2495510561,Skyvern-AI/skyvern,4,3,1,0,0,0
+Human,2502348618,Skyvern-AI/skyvern,3,0,0,0,0,0
+Human,2467788242,TheAlgorithms/Python,9,3,0,0,0,0
+Human,2446905064,TobikoData/sqlmesh,327,39,49,45,38,14
+Human,2364508628,TobikoData/sqlmesh,0,1,2,0,0,0
+Human,2522826360,TobikoData/sqlmesh,101,22,37,21,3,2
+Human,2609611207,TracecatHQ/tracecat,3,1,1,0,0,0
+Human,2526673638,Uberi/speech_recognition,11,4,3,0,0,0
+Human,2508359703,a16z/halmos,74,16,4,13,0,2
+Human,2496790216,a16z/halmos,110,0,16,5,0,0
+Human,2332197870,a16z/halmos,38,2,5,6,6,2
+Human,2423298921,a16z/halmos,3,0,0,0,0,0
+Human,2304936326,ag2ai/ag2,183,29,18,16,9,3
+Human,2330987167,ag2ai/ag2,1,1,0,1,0,0
+Human,2338301511,aipotheosis-labs/aci,133,45,28,18,9,0
+Human,2342963782,aipotheosis-labs/aci,124,18,35,11,5,0
+Human,2414338451,airbytehq/airbyte,44,20,24,5,0,1
+Human,2542934986,airbytehq/airbyte,202,41,39,25,5,1
+Human,2334947154,airbytehq/airbyte,230,24,15,9,10,1
+Human,2264866046,airbytehq/airbyte,61,18,26,8,4,1
+Human,2282388423,airbytehq/airbyte,134,11,19,9,3,0
+Human,2505218165,airbytehq/airbyte,3,0,0,0,0,0
+Human,2357159587,airbytehq/airbyte,3,0,0,1,0,0
+Human,2556631520,alexanderjeurissen/ranger_devicons,8,8,2,8,0,0
+Human,2512266582,allenai/open-instruct,8650,2252,847,666,152,115
+Human,2571668210,allenai/reward-bench,254,15,6,51,0,0
+Human,2579713983,allenai/reward-bench,4,0,0,0,0,0
+Human,2282684079,assistant-ui/assistant-ui,1,0,2,2,0,1
+Human,2259244255,astral-sh/ruff,2,0,0,0,0,0
+Human,2559292377,awslabs/mcp,1139,247,94,140,29,10
+Human,2580095745,awslabs/mcp,12279,1792,2164,1794,939,20
+Human,2530024859,awslabs/mcp,2754,513,469,473,218,19
+Human,2444161151,awslabs/mcp,152,6,13,0,5,3
+Human,2553341049,awslabs/mcp,2811,383,415,534,203,11
+Human,2564827914,awslabs/mcp,7,0,0,0,0,0
+Human,2311202049,azerothcore/azerothcore-wotlk,27,4,4,1,0,0
+Human,2363577673,bentoml/BentoML,20,3,5,0,0,0
+Human,2321207962,bentoml/BentoML,4,0,0,1,0,0
+Human,2356042683,bentoml/BentoML,10,2,2,1,0,0
+Human,2455025552,bentoml/BentoML,0,1,0,0,0,0
+Human,2291282775,bentoml/BentoML,18,7,7,1,0,0
+Human,2383761721,bentoml/BentoML,2,0,0,0,0,0
+Human,2474702276,bentoml/BentoML,1,0,0,0,0,0
+Human,2411811233,bespokelabsai/curator,524,85,58,120,12,0
+Human,2272183023,bespokelabsai/curator,15,5,29,2,0,1
+Human,2358893378,bespokelabsai/curator,545,100,125,23,27,3
+Human,2321088762,bespokelabsai/curator,71,9,13,13,6,1
+Human,2409498745,bespokelabsai/curator,93,21,17,13,1,0
+Human,2317330363,bespokelabsai/curator,86,17,15,10,3,0
+Human,2466713034,bespokelabsai/curator,5,0,0,1,0,0
+Human,2358916441,bespokelabsai/curator,4,0,0,0,0,0
+Human,2274941460,blorm-network/ZerePy,240,45,45,43,10,0
+Human,2265140449,blorm-network/ZerePy,8,1,2,1,0,0
+Human,2338454215,brentyi/tyro,41,6,2,0,0,0
+Human,2549162857,bruin-data/bruin,15,3,3,3,0,0
+Human,2388365918,bruin-data/bruin,3,3,1,0,0,0
+Human,2552725254,bruin-data/bruin,1,0,0,1,0,0
+Human,2532214135,bruin-data/ingestr,131,40,36,14,1,0
+Human,2548639363,bruin-data/ingestr,135,35,24,13,5,0
+Human,2615702170,bruin-data/ingestr,4,0,0,0,0,0
+Human,2527047579,cartography-cncf/cartography,2555,833,921,124,76,213
+Human,2449229785,cartography-cncf/cartography,43,15,15,4,2,1
+Human,2464579828,cartography-cncf/cartography,4,0,0,0,0,0
+Human,2437191001,cartography-cncf/cartography,8,1,1,1,0,0
+Human,2515872022,cartography-cncf/cartography,48,22,12,3,1,0
+Human,2264445875,cloudflare/workerd,17,6,1,0,0,0
+Human,2275392075,commaai/opendbc,481,10,5,17,1,0
+Human,2352418494,commaai/opendbc,8,0,0,0,0,0
+Human,2323330865,commaai/openpilot,0,1,1,0,0,0
+Human,2484707366,commaai/openpilot,0,3,0,0,0,0
+Human,2565257900,commaai/panda,0,4,0,0,0,0
+Human,2352002275,commaai/panda,0,1,1,0,0,0
+Human,2307912274,crewAIInc/crewAI-tools,33,3,7,7,0,0
+Human,2480335338,crewAIInc/crewAI-tools,152,28,9,12,6,0
+Human,2497413147,crewAIInc/crewAI-tools,30,0,2,4,0,0
+Human,2553400368,crewAIInc/crewAI-tools,12,2,0,2,2,0
+Human,2618367092,crewAIInc/crewAI-tools,48,11,5,21,2,1
+Human,2362692923,crewAIInc/crewAI-tools,41,11,12,1,0,0
+Human,2476426259,crewAIInc/crewAI-tools,91,32,5,11,38,0
+Human,2544166428,crewAIInc/crewAI-tools,131,35,16,38,5,0
+Human,2478356468,crewAIInc/crewAI-tools,247,49,32,22,23,1
+Human,2476088746,crewAIInc/crewAI-tools,55,11,4,9,8,0
+Human,2615181588,crewAIInc/crewAI-tools,8,9,2,3,2,0
+Human,2301717301,crewAIInc/crewAI-tools,33,13,4,23,7,0
+Human,2582175523,crewAIInc/crewAI-tools,6,0,0,1,0,0
+Human,2259134684,crewAIInc/crewAI-tools,1,0,2,4,0,0
+Human,2417540342,crewAIInc/crewAI-tools,2,1,0,1,0,0
+Human,2271028668,crewAIInc/crewAI,96,30,20,32,6,0
+Human,2262012370,crewAIInc/crewAI,241,45,28,13,4,1
+Human,2320665719,crewAIInc/crewAI,1304,372,283,367,153,3
+Human,2419949551,crewAIInc/crewAI,2359,436,336,326,71,10
+Human,2262339176,crewAIInc/crewAI,934,242,155,126,40,4
+Human,2301650713,crewAIInc/crewAI,311,115,51,84,8,1
+Human,2366769880,crewAIInc/crewAI,205,30,18,42,19,1
+Human,2290991358,crewAIInc/crewAI,1178,259,227,352,106,14
+Human,2347595567,crewAIInc/crewAI,1175,177,108,168,54,7
+Human,2487987691,crewAIInc/crewAI,176,68,38,34,21,0
+Human,2375952745,crewAIInc/crewAI,979,148,93,129,38,4
+Human,2368438500,crewAIInc/crewAI,2568,410,292,437,87,9
+Human,2437697330,crewAIInc/crewAI,1729,402,290,266,60,3
+Human,2357329519,crewAIInc/crewAI,117,1,3,2,0,0
+Human,2374803772,crewAIInc/crewAI,979,148,93,129,38,4
+Human,2337664006,crewAIInc/crewAI,446,182,127,158,107,2
+Human,2455434480,crewAIInc/crewAI,1083,283,194,167,65,1
+Human,2414330903,crewAIInc/crewAI,6,4,3,0,0,0
+Human,2486761780,crewAIInc/crewAI,10,3,0,8,0,0
+Human,2527656583,crewAIInc/crewAI,929,190,114,134,59,11
+Human,2377969663,crewAIInc/crewAI,1086,150,94,130,39,5
+Human,2413163485,crewAIInc/crewAI,439,85,82,159,11,0
+Human,2407260224,crewAIInc/crewAI,217,55,63,25,4,1
+Human,2384903678,crewAIInc/crewAI,1918,353,273,315,64,7
+Human,2292816579,crewAIInc/crewAI,67,34,18,14,10,0
+Human,2345245386,crewAIInc/crewAI,296,156,107,125,95,1
+Human,2300872354,crewAIInc/crewAI,145,58,28,17,0,1
+Human,2279949383,crewAIInc/crewAI,502,101,75,133,37,7
+Human,2318504207,crewAIInc/crewAI,175,37,29,22,5,1
+Human,2514963554,crewAIInc/crewAI,160,37,10,3,4,2
+Human,2305518056,crewAIInc/crewAI,140,45,24,54,3,0
+Human,2532696552,crewAIInc/crewAI,172,33,25,32,6,0
+Human,2357294413,crewAIInc/crewAI,164,31,21,23,20,1
+Human,2400016065,crewAIInc/crewAI,38,10,8,1,7,2
+Human,2337914874,crewAIInc/crewAI,446,181,127,158,107,2
+Human,2267141880,crewAIInc/crewAI,86,30,18,14,1,0
+Human,2364339053,crewAIInc/crewAI,945,146,93,129,32,3
+Human,2596785730,crewAIInc/crewAI,0,1,0,0,0,0
+Human,2517361361,crewAIInc/crewAI,612,118,58,65,21,1
+Human,2425787906,crewAIInc/crewAI,52,22,14,15,5,0
+Human,2508388895,crewAIInc/crewAI,62,16,11,11,7,2
+Human,2258407801,crewAIInc/crewAI,0,1,0,1,0,0
+Human,2588019871,crewAIInc/crewAI,91,19,10,5,2,0
+Human,2458149257,crewAIInc/crewAI,1249,349,238,200,55,1
+Human,2397036219,crewAIInc/crewAI,939,134,127,137,28,3
+Human,2489551645,crewAIInc/crewAI,53,26,16,10,7,0
+Human,2573402396,crewAIInc/crewAI,181,24,21,34,22,10
+Human,2277513970,crewAIInc/crewAI,42,15,10,25,10,4
+Human,2582168338,crewAIInc/crewAI,160,40,15,16,4,0
+Human,2282276280,crewAIInc/crewAI,490,101,75,133,37,7
+Human,2340415841,crewAIInc/crewAI,845,250,192,244,134,3
+Human,2370866483,crewAIInc/crewAI,979,148,93,129,38,4
+Human,2259409621,crewAIInc/crewAI,982,283,195,122,39,1
+Human,2523497110,crewAIInc/crewAI,968,175,103,147,56,11
+Human,2520520652,crewAIInc/crewAI,4,4,2,1,1,0
+Human,2315421154,crewAIInc/crewAI,885,183,139,225,57,3
+Human,2404580117,crewAIInc/crewAI,1360,239,250,215,37,4
+Human,2564186622,crewAIInc/crewAI,78,34,21,12,5,0
+Human,2585527884,crewAIInc/crewAI,215,60,21,20,6,0
+Human,2490820490,crewAIInc/crewAI,93,26,17,27,8,0
+Human,2286429519,crewAIInc/crewAI,372,127,74,89,20,3
+Human,2325911874,crewAIInc/crewAI,131,44,44,78,11,0
+Human,2432652514,crewAIInc/crewAI,591,127,118,69,28,1
+Human,2350676311,crewAIInc/crewAI,207,33,18,42,19,1
+Human,2615049612,crewAIInc/crewAI,39,14,10,5,10,2
+Human,2490479931,crewAIInc/crewAI,348,99,61,40,30,0
+Human,2323035316,crewAIInc/crewAI,198,40,31,24,7,1
+Human,2419756676,crewAIInc/crewAI,83,27,12,5,2,0
+Human,2298215908,crewAIInc/crewAI,360,126,58,87,8,1
+Human,2578618188,crewAIInc/crewAI,60,5,3,9,6,0
+Human,2407843599,crewAIInc/crewAI,3,2,1,1,1,1
+Human,2521968459,crewAIInc/crewAI,94,19,3,3,1,1
+Human,2302954528,crewAIInc/crewAI,133,46,24,55,3,0
+Human,2354037309,crewAIInc/crewAI,54,15,10,23,12,0
+Human,2290763666,crewAIInc/crewAI,49,16,12,7,3,0
+Human,2395130345,crewAIInc/crewAI,35,9,7,0,6,2
+Human,2506089162,crewAIInc/crewAI,171,21,12,6,9,0
+Human,2518881728,crewAIInc/crewAI,6,0,0,0,1,0
+Human,2437426439,crewAIInc/crewAI,494,86,73,35,15,1
+Human,2513949410,crewAIInc/crewAI,49,11,9,13,9,2
+Human,2345381566,crewAIInc/crewAI,469,175,118,150,106,2
+Human,2451443553,crewAIInc/crewAI,18,9,5,5,0,0
+Human,2348293372,crewAIInc/crewAI,205,30,18,42,19,1
+Human,2455635139,crewAIInc/crewAI,96,32,6,17,6,0
+Human,2332036167,crewAIInc/crewAI,43,20,27,56,9,0
+Human,2357405562,crewAIInc/crewAI,146,20,7,17,8,0
+Human,2257424685,crewAIInc/crewAI,0,1,0,1,0,0
+Human,2500987244,crewAIInc/crewAI,307,56,33,23,20,4
+Human,2565281191,crewAIInc/crewAI,78,34,21,12,5,0
+Human,2419803338,crewAIInc/crewAI,54,20,5,3,2,0
+Human,2400073348,crewAIInc/crewAI,35,8,7,0,6,1
+Human,2570156540,crewAIInc/crewAI,167,24,11,32,22,10
+Human,2534242211,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2524441113,crewAIInc/crewAI,77,34,22,12,6,0
+Human,2431562619,crewAIInc/crewAI,0,0,0,0,1,1
+Human,2567658267,crewAIInc/crewAI,0,0,0,0,6,0
+Human,2288132868,crewAIInc/crewAI,139,27,36,66,10,3
+Human,2419768442,crewAIInc/crewAI,54,20,5,3,2,0
+Human,2543469021,crewAIInc/crewAI,5,1,2,2,0,0
+Human,2368800162,crewAIInc/crewAI,303,43,20,33,17,0
+Human,2448658771,crewAIInc/crewAI,72,18,10,17,4,0
+Human,2489970694,crewAIInc/crewAI,35,8,13,8,6,0
+Human,2452209048,crewAIInc/crewAI,90,22,13,10,12,0
+Human,2542621311,crewAIInc/crewAI,114,18,12,23,5,1
+Human,2419373483,crewAIInc/crewAI,168,40,19,28,6,0
+Human,2620691920,crewAIInc/crewAI,101,31,13,44,6,0
+Human,2357793364,crewAIInc/crewAI,135,19,4,17,8,0
+Human,2596069069,crewAIInc/crewAI,1,2,0,0,0,0
+Human,2533298162,crewAIInc/crewAI,83,3,11,5,3,0
+Human,2482427127,crewAIInc/crewAI,128,9,2,5,0,0
+Human,2615575502,crewAIInc/crewAI,25,11,7,5,3,1
+Human,2395736133,crewAIInc/crewAI,36,9,7,0,6,2
+Human,2357935218,crewAIInc/crewAI,6,0,3,1,0,0
+Human,2259921353,crewAIInc/crewAI,2,3,2,0,0,0
+Human,2309721352,crewAIInc/crewAI,16,4,1,9,2,0
+Human,2552324549,crewAIInc/crewAI,66,7,5,4,2,0
+Human,2318180373,crewAIInc/crewAI,78,15,15,16,5,1
+Human,2499368647,crewAIInc/crewAI,16,8,5,4,1,0
+Human,2427394493,crewAIInc/crewAI,0,0,0,1,1,1
+Human,2406710118,crewAIInc/crewAI,6,8,5,1,3,0
+Human,2343048840,crewAIInc/crewAI,13,0,0,0,0,0
+Human,2449273362,crewAIInc/crewAI,56,5,4,14,2,0
+Human,2419596001,crewAIInc/crewAI,24,3,4,2,0,0
+Human,2307862531,crewAIInc/crewAI,2,0,0,2,0,0
+Human,2579412972,crewAIInc/crewAI,32,28,10,11,9,0
+Human,2479797388,crewAIInc/crewAI,10,3,2,2,0,0
+Human,2315788773,crewAIInc/crewAI,65,20,7,7,4,0
+Human,2621480434,crewAIInc/crewAI,6,1,4,1,1,0
+Human,2568413405,crewAIInc/crewAI,1,1,0,0,6,0
+Human,2348026203,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2401471175,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2343359978,crewAIInc/crewAI,13,0,0,0,0,0
+Human,2266347131,crewAIInc/crewAI,189,0,0,0,0,0
+Human,2492065021,crewAIInc/crewAI,30,7,12,6,0,0
+Human,2567582405,crewAIInc/crewAI,0,0,0,0,6,0
+Human,2326564664,crewAIInc/crewAI,34,7,3,7,1,0
+Human,2322590988,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2473992346,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2307975331,crewAIInc/crewAI,33,13,1,11,6,0
+Human,2464366664,crewAIInc/crewAI,1,0,0,0,0,0
+Human,2338814541,cvxpy/cvxpy,133,30,6,10,2,0
+Human,2591073348,dagster-io/dagster,1166,289,141,99,57,1
+Human,2280794084,dagster-io/dagster,1,1,1,0,0,0
+Human,2391963504,dagster-io/dagster,427,81,46,27,20,1
+Human,2365534722,dagster-io/dagster,43,7,3,4,2,0
+Human,2504015780,dense-analysis/neural,1,0,0,0,0,0
+Human,2397352966,devitocodes/devito,3,1,1,1,1,0
+Human,2617719726,dlt-hub/dlt,657,131,113,102,52,1
+Human,2625235744,dotnet/aspire,188,44,16,9,4,0
+Human,2551809139,dotnet/fsharp,188,44,16,9,4,0
+Human,2518652004,dotnet/runtime,20,5,1,0,0,0
+Human,2263908486,dotnet/runtime,188,44,16,9,4,0
+Human,2307815455,dotnet/runtime,3,0,0,0,0,0
+Human,2335576720,dotnet/sdk,188,44,16,9,4,0
+Human,2612105218,dropseed/plain,137,52,53,43,11,3
+Human,2467087648,dropseed/plain,11,1,1,0,0,1
+Human,2540205307,dropseed/plain,4,1,2,2,0,0
+Human,2542348118,effekseer/Effekseer,52,11,1,0,1,2
+Human,2547160591,effekseer/Effekseer,47,7,2,0,1,1
+Human,2604844532,electricitymaps/electricitymaps-contrib,1,1,1,0,0,0
+Human,2476534203,featureform/enrichmcp,349,116,79,55,29,1
+Human,2587797965,featureform/enrichmcp,769,97,257,71,42,7
+Human,2615743216,featureform/enrichmcp,175,38,52,16,20,2
+Human,2476323666,featureform/enrichmcp,685,221,188,181,71,1
+Human,2491706379,featureform/enrichmcp,54,23,14,14,2,0
+Human,2474912280,featureform/enrichmcp,56,4,7,5,1,0
+Human,2462185471,featureform/enrichmcp,169,65,40,27,17,1
+Human,2608653300,featureform/enrichmcp,3,1,0,0,0,0
+Human,2438259044,featureform/enrichmcp,11,3,4,0,0,0
+Human,2492797998,featureform/enrichmcp,13,2,1,2,0,0
+Human,2615739647,featureform/enrichmcp,1,0,0,0,0,0
+Human,2435007062,featureform/enrichmcp,106,17,6,14,0,0
+Human,2585293213,featureform/enrichmcp,227,27,16,26,10,3
+Human,2489869522,featureform/enrichmcp,3,0,1,0,0,0
+Human,2615665027,featureform/enrichmcp,63,18,21,6,3,0
+Human,2597060187,featureform/enrichmcp,2,0,0,0,0,0
+Human,2616211667,featureform/enrichmcp,33,11,16,2,2,0
+Human,2353932762,getsentry/sentry-python,106,57,59,16,2,2
+Human,2327061220,getsentry/sentry-python,15,11,2,3,0,0
+Human,2448918557,getsentry/sentry-python,0,1,0,0,0,0
+Human,2310085567,getsentry/sentry,393,93,95,89,18,2
+Human,2332333882,getsentry/sentry,13,0,0,0,0,0
+Human,2438086945,getsentry/sentry,4,2,2,0,0,0
+Human,2397521401,getsentry/sentry,6,0,0,0,0,0
+Human,2486573779,getsentry/sentry,0,0,0,0,2,0
+Human,2371650610,goat-sdk/goat,72,25,12,5,6,1
+Human,2417452941,goat-sdk/goat,443,109,93,34,7,1
+Human,2385785847,goat-sdk/goat,35,20,12,0,1,0
+Human,2457606922,goat-sdk/goat,168,41,44,45,2,1
+Human,2284670608,goat-sdk/goat,94,17,21,19,0,1
+Human,2309356556,goat-sdk/goat,12,0,2,0,0,0
+Human,2263791524,goat-sdk/goat,24,19,13,0,1,1
+Human,2270266984,goat-sdk/goat,20,14,10,0,1,0
+Human,2434746882,goat-sdk/goat,71,19,12,7,2,0
+Human,2444052038,goat-sdk/goat,4,0,0,1,0,0
+Human,2325372908,goat-sdk/goat,12,0,2,0,0,0
+Human,2270393774,goat-sdk/goat,19,14,10,0,1,0
+Human,2476004130,gptme/gptme,14,2,0,0,0,0
+Human,2495956871,gridaco/grida,78,16,10,3,6,0
+Human,2497441108,gridaco/grida,1,0,0,0,0,0
+Human,2288772617,herbie-fp/herbie,29,5,1,1,1,0
+Human,2453464080,huggingface/huggingface.js,18,1,3,0,0,0
+Human,2378845122,huggingface/huggingface.js,85,19,19,1,1,0
+Human,2460147666,huggingface/huggingface_hub,415,44,31,40,8,5
+Human,2270252961,huggingface/smolagents,24,0,9,0,0,1
+Human,2306686014,ikamensh/flynt,51,5,5,5,3,0
+Human,2274981373,janbjorge/pgqueuer,0,5,1,2,1,2
+Human,2475411025,janbjorge/pgqueuer,37,5,6,2,6,1
+Human,2327904675,janbjorge/pgqueuer,23,5,4,2,2,0
+Human,2281573752,janbjorge/pgqueuer,10,1,0,1,0,0
+Human,2272633617,janbjorge/pgqueuer,1,0,0,2,0,0
+Human,2576026392,jlowin/fastmcp,1297,337,385,239,100,3
+Human,2369044945,joshyattridge/smart-money-concepts,8,7,2,0,0,0
+Human,2369238232,joshyattridge/smart-money-concepts,17,2,0,0,0,0
+Human,2369253951,joshyattridge/smart-money-concepts,28,0,1,0,0,0
+Human,2610958081,julep-ai/julep,607,91,237,113,49,2
+Human,2337771326,julep-ai/julep,20,6,4,4,1,0
+Human,2291386657,julep-ai/julep,66,38,16,8,6,0
+Human,2400813849,julep-ai/julep,2134,361,396,430,120,36
+Human,2325260235,julep-ai/julep,5587,799,846,506,124,8
+Human,2352743534,julep-ai/julep,806,116,132,49,23,0
+Human,2305916890,julep-ai/julep,0,2,2,0,1,0
+Human,2496802096,julep-ai/julep,414,61,110,73,40,1
+Human,2258107647,julep-ai/julep,2,1,1,0,0,0
+Human,2405191622,julep-ai/julep,649,120,164,148,42,5
+Human,2391309914,julep-ai/julep,122,23,8,5,1,0
+Human,2506199692,julep-ai/julep,1677,287,482,297,175,5
+Human,2454841034,julep-ai/julep,288,43,36,49,15,12
+Human,2286936119,julep-ai/julep,539,156,92,46,40,1
+Human,2424187155,julep-ai/julep,615,71,98,48,19,2
+Human,2519061854,julep-ai/julep,697,104,143,103,30,0
+Human,2330651068,julep-ai/julep,36,4,22,21,2,0
+Human,2402507335,julep-ai/julep,147,18,28,3,0,0
+Human,2436920877,julep-ai/julep,117,22,16,20,4,1
+Human,2317921458,julep-ai/julep,60,13,2,10,2,0
+Human,2455759309,julep-ai/julep,39,22,11,3,0,0
+Human,2331266758,julep-ai/julep,2,1,0,1,0,0
+Human,2324261949,julep-ai/julep,6,0,0,1,0,0
+Human,2257939947,julep-ai/julep,12,2,3,0,0,1
+Human,2315949481,julep-ai/julep,20,12,11,7,0,0
+Human,2337700846,julep-ai/julep,3,0,0,0,0,0
+Human,2543172477,julep-ai/julep,0,0,1,0,0,0
+Human,2361949938,julep-ai/julep,4,3,2,1,1,0
+Human,2344813558,julep-ai/julep,2,7,2,2,1,0
+Human,2376425978,julep-ai/julep,152,22,40,47,7,0
+Human,2355805138,julep-ai/julep,17,0,21,2,1,0
+Human,2341398834,julep-ai/julep,3,0,2,1,0,0
+Human,2483429223,julep-ai/julep,1,1,1,0,0,0
+Human,2513299472,julep-ai/julep,1,0,0,0,0,0
+Human,2340411739,keephq/keep,53,7,6,2,0,0
+Human,2427595507,keephq/keep,209,22,17,25,2,0
+Human,2308425047,keephq/keep,35,7,4,0,0,0
+Human,2256920866,keephq/keep,20,4,1,0,0,0
+Human,2355823480,keephq/keep,2,1,0,0,0,0
+Human,2260748681,keephq/keep,6,0,1,0,0,0
+Human,2415977644,keephq/keep,4,0,0,0,0,0
+Human,2590345700,kohya-ss/sd-scripts,180,9,18,16,6,1
+Human,2494218951,langchain-ai/langgraph,86,29,33,26,3,4
+Human,2338275002,langchain-ai/langgraph,0,1,1,0,0,0
+Human,2542040727,langchain-ai/langgraph,57,7,13,16,6,1
+Human,2482170552,langchain-ai/langsmith-sdk,9,6,4,1,0,0
+Human,2394823134,langchain-ai/langsmith-sdk,1,0,0,0,0,0
+Human,2443706665,langchain-ai/langsmith-sdk,2,0,0,0,0,0
+Human,2329041793,mangiucugna/json_repair,2,0,0,2,0,0
+Human,2488024698,mangiucugna/json_repair,31,1,0,11,0,0
+Human,2524180167,mangiucugna/json_repair,0,0,1,0,0,0
+Human,2329914697,marimo-team/marimo,344,59,23,35,47,0
+Human,2307381985,marimo-team/marimo,53,12,9,6,2,0
+Human,2422893059,marimo-team/marimo,12,25,0,0,0,0
+Human,2277915906,marimo-team/marimo,208,54,28,39,31,0
+Human,2609183598,marimo-team/marimo,22,3,2,0,0,0
+Human,2485165438,marimo-team/marimo,17,1,0,2,0,0
+Human,2449210861,marimo-team/marimo,1,0,1,1,0,0
+Human,2360768678,marimo-team/marimo,60,6,2,6,0,0
+Human,2510412824,marimo-team/marimo,87,37,12,16,1,2
+Human,2489863587,marimo-team/marimo,12,4,0,0,0,0
+Human,2574861103,marimo-team/marimo,29,3,3,5,0,0
+Human,2505436254,marimo-team/marimo,14,0,1,0,0,0
+Human,2489510452,marimo-team/marimo,9,0,0,4,0,0
+Human,2447403860,marimo-team/marimo,4,2,1,1,3,0
+Human,2514803422,marimo-team/marimo,2,0,0,0,0,0
+Human,2290730629,marimo-team/marimo,25,10,0,6,0,0
+Human,2375014471,marimo-team/marimo,48,13,1,8,0,1
+Human,2318387549,marimo-team/marimo,3,0,0,0,0,0
+Human,2487549923,marimo-team/marimo,1,0,0,0,0,0
+Human,2609301316,marimo-team/marimo,9,3,4,0,0,0
+Human,2266427544,marimo-team/marimo,14,4,0,1,5,0
+Human,2536644442,mediar-ai/terminator,149,20,6,3,2,0
+Human,2511401891,mediar-ai/terminator,114,12,2,1,1,0
+Human,2556638049,mediar-ai/terminator,16,4,1,0,1,0
+Human,2343133415,mendableai/firecrawl,49,1,7,8,0,0
+Human,2474303758,mendableai/firecrawl,4,0,0,1,0,0
+Human,2366817698,mendableai/firecrawl,57,3,6,8,0,0
+Human,2482475399,mendableai/firecrawl,1,0,0,0,0,0
+Human,2345558913,mendableai/firecrawl,118,18,7,4,1,0
+Human,2507136336,microsoft/Olive,39,25,13,4,2,0
+Human,2443127427,microsoft/RD-Agent,4,0,0,0,1,1
+Human,2309714629,microsoft/autogen,171,65,35,17,14,0
+Human,2258241795,microsoft/autogen,1,0,0,0,0,0
+Human,2389375209,microsoft/debugpy,3,0,0,0,0,0
+Human,2415207829,microsoft/graphrag,907,189,149,126,36,5
+Human,2606069562,microsoft/magentic-ui,76,3,1,6,0,1
+Human,2608822195,microsoft/magentic-ui,1,0,0,0,0,0
+Human,2345763476,microsoft/onnxruntime-genai,222,37,12,16,4,1
+Human,2274694131,microsoft/onnxruntime-genai,131,8,4,25,3,4
+Human,2332558096,microsoft/onnxruntime,114,19,6,1,1,0
+Human,2424549019,microsoft/onnxruntime,68,31,12,12,1,0
+Human,2569040246,microsoft/onnxruntime,127,37,11,12,0,1
+Human,2422882617,microsoft/onnxruntime,7,3,5,1,0,0
+Human,2529504231,microsoft/qsharp,110,34,27,1,3,0
+Human,2596620305,microsoft/qsharp,2,2,0,0,0,0
+Human,2266772678,microsoft/semantic-kernel,350,46,62,88,0,0
+Human,2392791155,microsoft/typespec,32,16,2,23,9,0
+Human,2282773242,microsoft/typespec,2,0,0,0,0,0
+Human,2458717003,microsoft/typespec,3,0,0,0,0,0
+Human,2446878923,microsoft/typespec,84,51,57,17,12,0
+Human,2355891934,microsoft/typespec,32,13,4,7,4,0
+Human,2258464517,microsoft/typespec,24,18,10,4,6,0
+Human,2478537850,microsoft/typespec,0,1,0,0,0,0
+Human,2414812043,microsoft/typespec,4,6,2,4,4,0
+Human,2429861894,microsoft/typespec,54,8,6,12,0,0
+Human,2578194357,mistralai/mistral-common,33,13,6,4,1,0
+Human,2503986210,mistralai/mistral-common,263,31,19,56,4,0
+Human,2424508586,mlflow/mlflow,29,0,1,3,0,0
+Human,2478962352,mlflow/mlflow,1145,186,183,65,33,10
+Human,2566068573,mlflow/mlflow,112,27,15,31,1,0
+Human,2341061114,mlflow/mlflow,68,9,8,17,4,1
+Human,2301884134,mlflow/mlflow,472,166,152,104,15,13
+Human,2546517998,mlflow/mlflow,89,21,18,3,1,0
+Human,2293706753,mlflow/mlflow,420,116,88,130,20,2
+Human,2530772992,mlflow/mlflow,0,1,0,1,0,0
+Human,2352217584,mlflow/mlflow,993,327,259,343,90,16
+Human,2383765749,mlflow/mlflow,26,11,10,13,7,0
+Human,2572033204,mlflow/mlflow,40,14,20,9,7,1
+Human,2539193736,mlflow/mlflow,18,5,5,9,0,0
+Human,2574405759,mlflow/mlflow,3,0,1,0,0,0
+Human,2283939870,mlflow/mlflow,53,13,11,5,3,1
+Human,2456461996,mlflow/mlflow,5,3,2,3,0,0
+Human,2518704449,mlflow/mlflow,2,0,0,0,0,0
+Human,2605359283,mlflow/mlflow,2,0,0,2,0,0
+Human,2555850827,mlflow/mlflow,3,0,0,0,0,0
+Human,2427808826,mlflow/mlflow,20,0,0,0,0,0
+Human,2526305378,mlflow/mlflow,26,13,1,5,1,0
+Human,2513290516,mlflow/mlflow,80,7,52,2,6,0
+Human,2530634034,mlflow/mlflow,2,1,0,0,0,0
+Human,2348777785,mlflow/mlflow,13,3,0,2,0,1
+Human,2558927034,mlflow/mlflow,1,0,1,0,1,0
+Human,2530551941,mlflow/mlflow,33,4,9,0,0,0
+Human,2472893702,mlflow/mlflow,24,8,23,1,4,0
+Human,2373275700,mlflow/mlflow,29,0,3,1,0,0
+Human,2332627314,mlflow/mlflow,2,1,0,2,0,0
+Human,2520978741,mlflow/mlflow,2,0,0,2,1,0
+Human,2445405546,mlflow/mlflow,15,6,7,6,1,1
+Human,2536184715,mlflow/mlflow,40,5,1,5,4,1
+Human,2594350058,mlflow/mlflow,4,2,2,0,0,0
+Human,2484633517,mlflow/mlflow,2,0,0,0,0,0
+Human,2293719331,near/nearcore,1,1,0,0,0,0
+Human,2340199001,near/nearcore,110,35,11,1,5,0
+Human,2294324935,near/nearcore,1,1,0,0,0,0
+Human,2295546141,near/nearcore,5,2,0,0,0,0
+Human,2383582907,near/nearcore,3,0,0,0,0,0
+Human,2550459755,neondatabase/neon,117,16,6,8,5,1
+Human,2493988876,neondatabase/neon,2,1,2,0,0,0
+Human,2312226914,netket/netket,14,2,0,2,2,0
+Human,2312748329,netket/netket,14,2,0,5,1,0
+Human,2364987713,netket/netket,74,0,1,3,3,0
+Human,2460742554,netket/netket,10,4,0,0,0,1
+Human,2461755763,onyx-dot-app/onyx,42,8,28,3,2,0
+Human,2464811084,onyx-dot-app/onyx,37,4,3,10,0,0
+Human,2420444104,onyx-dot-app/onyx,6,4,4,0,0,0
+Human,2267093351,onyx-dot-app/onyx,98,38,17,23,2,0
+Human,2335012557,onyx-dot-app/onyx,0,1,1,0,0,0
+Human,2417566506,onyx-dot-app/onyx,26,9,12,0,0,0
+Human,2398678659,onyx-dot-app/onyx,1,0,0,0,0,0
+Human,2603695662,open-webui/open-webui,2,0,0,1,0,0
+Human,2493189964,openai/codex,234,39,11,7,3,2
+Human,2471938138,openai/openai-agents-python,14,8,1,0,0,0
+Human,2297770994,opencv/opencv,38,9,2,6,0,0
+Human,2365854601,oven-sh/bun,1,0,0,0,0,0
+Human,2616198898,peass-ng/PEASS-ng,2,0,0,0,0,0
+Human,2500329315,plexguide/Huntarr.io,25,10,10,3,0,0
+Human,2446305071,plexguide/Huntarr.io,179,50,21,4,32,0
+Human,2476066957,plexguide/Huntarr.io,16,1,7,1,0,0
+Human,2297781093,promptfoo/promptfoo,13,4,10,1,2,0
+Human,2421585261,promptfoo/promptfoo,77,9,6,1,0,0
+Human,2596992929,promptfoo/promptfoo,6,1,1,0,0,0
+Human,2434638102,pydata/pandas-datareader,14,10,6,0,0,0
+Human,2404972295,reflex-dev/reflex,34,9,5,3,5,5
+Human,2430313600,reflex-dev/reflex,133,40,33,14,2,1
+Human,2523947863,remotion-dev/remotion,2,0,0,0,0,0
+Human,2308602042,remotion-dev/remotion,3,0,1,5,0,0
+Human,2462139687,reown-com/appkit,14,5,3,2,3,0
+Human,2463366494,reown-com/appkit,14,5,3,2,3,0
+Human,2379148000,rishikanthc/Scriberr,26,0,0,0,0,0
+Human,2448420848,risingwavelabs/risingwave,331,99,35,14,13,1
+Human,2408616836,roboflow/inference,1122,204,173,122,27,24
+Human,2335926569,roboflow/inference,299,61,50,18,8,1
+Human,2276460202,roboflow/inference,135,14,14,12,7,2
+Human,2300488657,roboflow/inference,6,1,1,0,0,0
+Human,2304107826,roboflow/inference,5,1,0,0,0,0
+Human,2519831355,roboflow/inference,133,15,22,24,7,2
+Human,2465780443,roboflow/inference,91,2,10,2,2,1
+Human,2499298823,roboflow/inference,2,2,0,0,0,0
+Human,2428382467,roboflow/inference,292,38,38,48,3,0
+Human,2344950093,roboflow/inference,20,2,4,0,0,0
+Human,2570876716,roboflow/inference,20,4,1,1,0,0
+Human,2320571535,roboflow/inference,2,0,0,0,0,0
+Human,2299613217,rsyslog/rsyslog,25,5,2,2,1,0
+Human,2540997654,skypilot-org/skypilot,8,0,0,1,0,0
+Human,2374159047,skypilot-org/skypilot,4,2,1,0,1,0
+Human,2554942977,sooperset/mcp-atlassian,21,0,1,8,0,0
+Human,2364953101,spcl/dace,210,51,20,14,4,1
+Human,2390765352,spcl/dace,43,8,1,6,0,0
+Human,2292256358,spcl/dace,49,14,5,5,5,0
+Human,2288142889,spcl/dace,29,8,3,6,1,1
+Human,2276824107,spcl/dace,19,4,0,0,0,0
+Human,2268256983,spcl/dace,26,2,0,1,0,0
+Human,2600773171,spcl/dace,4,4,2,0,1,0
+Human,2483801280,stair-lab/kg-gen,3,0,1,0,0,0
+Human,2381144892,stanford-crfm/levanter,18,9,3,2,0,0
+Human,2413225736,stanfordnlp/dspy,996,209,230,154,76,1
+Human,2574401083,stanfordnlp/dspy,0,0,1,0,0,0
+Human,2382109803,tegnike/aituber-kit,12,1,0,1,0,0
+Human,2455489057,tegnike/aituber-kit,3,3,3,3,2,0
+Human,2364156735,tegnike/aituber-kit,1030,151,98,23,40,2
+Human,2366807942,tegnike/aituber-kit,119,27,20,2,4,0
+Human,2448748294,tegnike/aituber-kit,0,3,3,3,2,0
+Human,2469761206,tegnike/aituber-kit,0,3,3,3,2,0
+Human,2366839400,tegnike/aituber-kit,235,54,40,3,8,0
+Human,2347982033,test-zeus-ai/testzeus-hercules,516,93,86,76,35,3
+Human,2294642912,tinygrad/tinygrad,111,72,26,20,9,5
+Human,2324987642,tinygrad/tinygrad,17,10,4,2,0,1
+Human,2501616219,tinygrad/tinygrad,2,0,0,0,0,0
+Human,2576212936,tinygrad/tinygrad,0,4,5,0,0,0
+Human,2336377580,tinygrad/tinygrad,10,3,1,0,1,2
+Human,2282210055,uxlfoundation/oneDAL,8,5,3,2,0,0
+Human,2318016110,vlm-run/vlmrun-hub,75,6,6,0,0,0
+Human,2262691551,vlm-run/vlmrun-hub,5,1,2,0,2,0
+Human,2260812064,vlm-run/vlmrun-hub,6,1,7,4,0,1
+Human,2260802549,vlm-run/vlmrun-hub,180,4,17,1,0,0
+Human,2354769460,vlm-run/vlmrun-hub,226,6,43,0,0,0
+Human,2315722929,vlm-run/vlmrun-hub,44,0,0,0,0,0
+Human,2351543999,vlm-run/vlmrun-hub,6,3,2,0,2,0
+Human,2576376243,volcengine/verl,3651,713,475,484,69,17
+Human,2462032838,wandb/openui,3,1,1,0,0,0
+Human,2283064887,wandb/wandb,74,24,10,18,10,0
+Human,2548010588,wandb/weave,381,55,69,39,9,0
+Human,2269208152,wandb/weave,6,1,0,3,0,0
+Human,2405425459,wandb/weave,1109,238,166,429,29,4
+Human,2385847879,whitphx/streamlit-webrtc,6,0,3,0,0,0
+Human,2579953738,wizarrrr/wizarr,18,6,4,6,0,0
+Human,2551797459,writer/writer-framework,6,0,1,1,1,0
+Human,2502086135,writer/writer-framework,5,0,1,0,0,1
+Human,2434289186,writer/writer-framework,3,0,0,0,1,0
+Human,2537431731,zenml-io/zenml,3,0,0,2,1,1
+Human,2607442037,zenml-io/zenml,1176,168,155,77,38,0
+Human,2295215962,zenml-io/zenml,633,130,118,18,14,2
+Human,2519322384,zenml-io/zenml,3,0,0,0,0,0
+Human,2450440359,zenml-io/zenml,3,0,1,0,0,0
+Human,2500796031,zenml-io/zenml,11,7,1,2,0,0
+Human (pre-ChatGPT),1456227752,Arize-ai/phoenix,27,2,10,3,2,0
+Human (pre-ChatGPT),1460405154,Arize-ai/phoenix,255,90,39,76,24,9
+Human (pre-ChatGPT),1459247528,Arize-ai/phoenix,77,20,11,22,0,0
+Human (pre-ChatGPT),1454232318,Arize-ai/phoenix,1,6,0,0,0,0
+Human (pre-ChatGPT),1454039769,Arize-ai/phoenix,4,5,2,1,0,1
+Human (pre-ChatGPT),1455723667,Arize-ai/phoenix,9,11,4,4,0,1
+Human (pre-ChatGPT),1458615792,Arize-ai/phoenix,2,0,1,0,2,0
+Human (pre-ChatGPT),1456198279,Arize-ai/phoenix,8,0,0,2,0,0
+Human (pre-ChatGPT),1452703302,Arize-ai/phoenix,0,0,1,1,0,0
+Human (pre-ChatGPT),1456092041,Arize-ai/phoenix,51,26,3,3,2,0
+Human (pre-ChatGPT),1456033317,Arize-ai/phoenix,58,26,4,4,4,0
+Human (pre-ChatGPT),1455539241,Arize-ai/phoenix,1,6,0,0,0,0
+Human (pre-ChatGPT),1467203348,Arize-ai/phoenix,3,0,0,1,0,0
+Human (pre-ChatGPT),1452643545,Arize-ai/phoenix,0,0,0,0,6,0
+Human (pre-ChatGPT),1455685395,Arize-ai/phoenix,1,0,1,2,0,0
+Human (pre-ChatGPT),1369842427,Azure/azure-kusto-python,160,47,18,77,12,1
+Human (pre-ChatGPT),1331569076,Azure/azure-kusto-python,411,125,32,92,64,2
+Human (pre-ChatGPT),1287418523,Azure/azure-kusto-python,344,30,17,10,54,2
+Human (pre-ChatGPT),1361499336,Azure/azure-kusto-python,36,7,7,8,8,0
+Human (pre-ChatGPT),1358674166,Azure/azure-kusto-python,55,6,4,10,8,0
+Human (pre-ChatGPT),1412980156,Azure/azure-kusto-python,13,0,0,0,0,0
+Human (pre-ChatGPT),1340121603,Azure/azure-kusto-python,342,122,40,104,40,4
+Human (pre-ChatGPT),1379481242,Azure/azure-kusto-python,67,1,1,2,1,0
+Human (pre-ChatGPT),1442357616,Azure/azure-kusto-python,6,7,1,1,2,0
+Human (pre-ChatGPT),1334239831,Azure/azure-kusto-python,5,3,0,0,2,0
+Human (pre-ChatGPT),1335624499,Azure/azure-kusto-python,2,1,0,0,2,0
+Human (pre-ChatGPT),1457486443,Azure/azure-kusto-python,4,6,1,1,1,0
+Human (pre-ChatGPT),1361658351,Azure/azure-kusto-python,1,0,0,0,0,0
+Human (pre-ChatGPT),1428875966,Azure/azure-kusto-python,13,0,0,0,0,0
+Human (pre-ChatGPT),1465730711,Azure/azure-sdk-for-python,1647,247,305,135,132,9
+Human (pre-ChatGPT),1463283172,Azure/azure-sdk-for-python,2822,379,417,141,200,42
+Human (pre-ChatGPT),1465729706,Azure/azure-sdk-for-python,1411,176,280,137,106,10
+Human (pre-ChatGPT),1464146839,Azure/azure-sdk-for-python,44,3,2,4,1,0
+Human (pre-ChatGPT),1464124455,Azure/azure-sdk-for-python,1372,150,238,105,97,9
+Human (pre-ChatGPT),1464102540,Azure/azure-sdk-for-python,3618,407,445,158,168,9
+Human (pre-ChatGPT),1467172114,Azure/azure-sdk-for-python,0,1,0,0,0,0
+Human (pre-ChatGPT),1467132791,Azure/azure-sdk-for-python,20,0,0,2,0,0
+Human (pre-ChatGPT),1467362557,Azure/azure-sdk-for-python,9,0,0,0,0,0
+Human (pre-ChatGPT),1467703373,Azure/azure-sdk-for-python,0,0,1,0,0,0
+Human (pre-ChatGPT),1467398695,Azure/azure-sdk-for-python,2,0,0,0,0,0
+Human (pre-ChatGPT),1467305035,Azure/azure-sdk-for-python,2,0,0,0,0,0
+Human (pre-ChatGPT),1436194259,DeepLabCut/DeepLabCut,329,90,61,22,18,9
+Human (pre-ChatGPT),1442348528,DeepLabCut/DeepLabCut,7,0,0,0,0,3
+Human (pre-ChatGPT),1460806826,DeepLabCut/DeepLabCut,29,6,4,0,0,0
+Human (pre-ChatGPT),1422243645,DeepLabCut/DeepLabCut,331,90,61,22,18,9
+Human (pre-ChatGPT),1428302955,DeepLabCut/DeepLabCut,55,29,3,6,5,3
+Human (pre-ChatGPT),1419204777,DeepLabCut/DeepLabCut,347,95,62,31,18,9
+Human (pre-ChatGPT),1460800072,DeepLabCut/DeepLabCut,29,6,4,0,0,0
+Human (pre-ChatGPT),1409860475,DeepLabCut/DeepLabCut,1,0,0,0,0,0
+Human (pre-ChatGPT),1436205486,DeepLabCut/DeepLabCut,329,90,61,22,18,9
+Human (pre-ChatGPT),1454675597,DeepLabCut/DeepLabCut,1,0,0,0,0,0
+Human (pre-ChatGPT),1418526054,DeepLabCut/DeepLabCut,1,0,0,0,0,0
+Human (pre-ChatGPT),1438300442,DeepLabCut/DeepLabCut,1,0,0,0,0,0
+Human (pre-ChatGPT),1417351745,DonDebonair/slack-machine,34,12,13,0,0,0
+Human (pre-ChatGPT),1465508056,DonDebonair/slack-machine,14,4,2,2,2,0
+Human (pre-ChatGPT),1384224314,DonDebonair/slack-machine,7,2,1,1,2,0
+Human (pre-ChatGPT),1410290763,DonDebonair/slack-machine,10,5,5,3,1,0
+Human (pre-ChatGPT),1440724171,InamuraJIN/ActionRecorder,1050,311,107,52,29,14
+Human (pre-ChatGPT),1456969356,InamuraJIN/ActionRecorder,16,9,0,0,0,18
+Human (pre-ChatGPT),1449896319,InamuraJIN/ActionRecorder,4,0,0,0,2,0
+Human (pre-ChatGPT),1375221700,Jij-Inc/OpenJij,3,17,17,3,0,0
+Human (pre-ChatGPT),1421575499,Jij-Inc/OpenJij,18,3,9,3,0,0
+Human (pre-ChatGPT),1417942959,Jij-Inc/OpenJij,383,72,38,108,1,5
+Human (pre-ChatGPT),1419687175,Jij-Inc/OpenJij,9,1,3,0,0,0
+Human (pre-ChatGPT),1323609371,Jij-Inc/OpenJij,0,2,2,0,0,0
+Human (pre-ChatGPT),1386703520,LorenFrankLab/spyglass,55,20,27,14,2,0
+Human (pre-ChatGPT),1390039441,LorenFrankLab/spyglass,55,20,27,14,2,0
+Human (pre-ChatGPT),1426213137,LorenFrankLab/spyglass,18,5,3,5,5,0
+Human (pre-ChatGPT),1430672043,LorenFrankLab/spyglass,113,31,5,4,0,4
+Human (pre-ChatGPT),1368207650,LorenFrankLab/spyglass,0,0,1,0,0,0
+Human (pre-ChatGPT),1443911004,LorenFrankLab/spyglass,0,1,0,0,0,0
+Human (pre-ChatGPT),1415737990,LorenFrankLab/spyglass,15,4,1,3,2,0
+Human (pre-ChatGPT),1381470684,LorenFrankLab/spyglass,1,1,1,1,0,0
+Human (pre-ChatGPT),1381210765,LorenFrankLab/spyglass,8,1,1,1,0,0
+Human (pre-ChatGPT),1424571455,LorenFrankLab/spyglass,2,1,0,0,0,0
+Human (pre-ChatGPT),1395566415,LorenFrankLab/spyglass,1,0,0,0,0,0
+Human (pre-ChatGPT),1394136215,LorenFrankLab/spyglass,4,0,0,1,0,0
+Human (pre-ChatGPT),1359530627,LorenFrankLab/spyglass,0,0,1,0,0,0
+Human (pre-ChatGPT),1360763638,Lumiwealth/lumibot,7,0,0,3,0,0
+Human (pre-ChatGPT),1379858605,Lumiwealth/lumibot,9,1,20,1,0,0
+Human (pre-ChatGPT),1335548707,Lumiwealth/lumibot,11,0,0,0,0,0
+Human (pre-ChatGPT),1383115402,Lumiwealth/lumibot,27,6,2,5,0,0
+Human (pre-ChatGPT),1338108416,Lumiwealth/lumibot,10,0,1,4,1,0
+Human (pre-ChatGPT),1346978811,Lumiwealth/lumibot,2,0,0,0,0,0
+Human (pre-ChatGPT),1388414948,Lumiwealth/lumibot,24,3,5,1,0,0
+Human (pre-ChatGPT),1330570494,Lumiwealth/lumibot,1,0,0,0,0,0
+Human (pre-ChatGPT),1329405024,Lumiwealth/lumibot,8,0,0,0,0,0
+Human (pre-ChatGPT),1349168602,MikePopoloski/slang,8,2,0,0,2,0
+Human (pre-ChatGPT),1390211165,MikePopoloski/slang,1,0,0,0,1,0
+Human (pre-ChatGPT),1267970448,MikePopoloski/slang,1,0,0,0,0,0
+Human (pre-ChatGPT),1395563786,MikePopoloski/slang,1,0,0,0,0,0
+Human (pre-ChatGPT),1376898677,MikePopoloski/slang,18,11,2,0,2,0
+Human (pre-ChatGPT),920178230,NewFuture/DDNS,46,7,11,1,3,0
+Human (pre-ChatGPT),1315608703,NewFuture/DDNS,1,1,1,0,0,0
+Human (pre-ChatGPT),1301197239,NewFuture/DDNS,6,2,3,0,0,0
+Human (pre-ChatGPT),1315811437,NewFuture/DDNS,12,2,2,0,0,0
+Human (pre-ChatGPT),1320726172,NewFuture/DDNS,1,0,0,0,0,0
+Human (pre-ChatGPT),1303369737,NewFuture/DDNS,2,0,0,0,0,0
+Human (pre-ChatGPT),859591601,NewFuture/DDNS,2,0,0,0,0,0
+Human (pre-ChatGPT),1315596308,NewFuture/DDNS,1,0,0,0,0,0
+Human (pre-ChatGPT),1285035016,TorchIO-project/torchio,117,43,13,7,1,0
+Human (pre-ChatGPT),1294881592,TorchIO-project/torchio,2,334,146,6,0,0
+Human (pre-ChatGPT),1294670417,TorchIO-project/torchio,87,354,155,12,1,4
+Human (pre-ChatGPT),1402437346,TorchIO-project/torchio,49,50,0,61,0,0
+Human (pre-ChatGPT),1401757092,TorchIO-project/torchio,25,0,2,0,1,0
+Human (pre-ChatGPT),1402334475,TorchIO-project/torchio,11,1,1,7,1,0
+Human (pre-ChatGPT),1326073601,TorchIO-project/torchio,67,25,15,6,6,1
+Human (pre-ChatGPT),1402354124,TorchIO-project/torchio,12,2,0,0,0,0
+Human (pre-ChatGPT),1368992588,TorchIO-project/torchio,3,2,1,0,0,0
+Human (pre-ChatGPT),1378454028,TorchIO-project/torchio,0,0,1,1,2,0
+Human (pre-ChatGPT),1283781196,TorchIO-project/torchio,4,0,0,0,0,0
+Human (pre-ChatGPT),1368400965,TorchIO-project/torchio,1,0,0,0,0,0
+Human (pre-ChatGPT),1443439670,Z3Prover/z3,520,40,22,37,17,1
+Human (pre-ChatGPT),1340359199,Z3Prover/z3,62,24,10,2,6,0
+Human (pre-ChatGPT),1362916207,Z3Prover/z3,9,0,0,0,6,0
+Human (pre-ChatGPT),1338986199,Z3Prover/z3,311,31,16,16,3,2
+Human (pre-ChatGPT),1348014712,Z3Prover/z3,36,0,0,1,0,0
+Human (pre-ChatGPT),1409290947,ailia-ai/ailia-models,17070,3562,1109,484,249,766
+Human (pre-ChatGPT),1414109762,ailia-ai/ailia-models,4678,1111,317,275,98,219
+Human (pre-ChatGPT),1427205168,ailia-ai/ailia-models,25,1,0,1,0,0
+Human (pre-ChatGPT),1429926308,ailia-ai/ailia-models,1916,459,133,96,40,99
+Human (pre-ChatGPT),1432337262,ailia-ai/ailia-models,22,5,0,0,0,0
+Human (pre-ChatGPT),1454748865,ailia-ai/ailia-models,0,0,1,0,0,0
+Human (pre-ChatGPT),1464073237,ailia-ai/ailia-models,97,30,16,23,4,0
+Human (pre-ChatGPT),1464435992,ailia-ai/ailia-models,33,6,3,2,0,0
+Human (pre-ChatGPT),1445533865,ailia-ai/ailia-models,273,68,31,6,9,8
+Human (pre-ChatGPT),1462623758,ailia-ai/ailia-models,9,0,0,0,0,0
+Human (pre-ChatGPT),1467570980,ailia-ai/ailia-models,10,0,0,0,0,0
+Human (pre-ChatGPT),1459982519,airbytehq/airbyte,16,10,21,8,1,0
+Human (pre-ChatGPT),1464735610,airbytehq/airbyte,22,3,3,3,1,0
+Human (pre-ChatGPT),1468064081,airbytehq/airbyte,2,0,3,1,0,0
+Human (pre-ChatGPT),1464251528,airbytehq/airbyte,5,1,0,1,0,0
+Human (pre-ChatGPT),1463455206,airbytehq/airbyte,5,1,2,1,0,0
+Human (pre-ChatGPT),1466133789,airbytehq/airbyte,5,0,1,0,0,0
+Human (pre-ChatGPT),1466958611,airbytehq/airbyte,3,0,0,0,0,0
+Human (pre-ChatGPT),1452449005,bentoml/BentoML,95,25,17,13,2,2
+Human (pre-ChatGPT),1452629859,bentoml/BentoML,130,55,40,32,0,0
+Human (pre-ChatGPT),1452079048,bentoml/BentoML,1,1,0,1,0,0
+Human (pre-ChatGPT),1450862970,bentoml/BentoML,2,0,0,0,0,0
+Human (pre-ChatGPT),1443284056,bentoml/BentoML,3,3,1,0,0,0
+Human (pre-ChatGPT),1459399842,bentoml/BentoML,2,0,0,0,0,0
+Human (pre-ChatGPT),1456053352,bentoml/BentoML,2,0,0,0,0,0
+Human (pre-ChatGPT),1463812023,bentoml/BentoML,1,0,0,1,0,0
+Human (pre-ChatGPT),1466693983,datahub-project/datahub,136,7,4,1,3,0
+Human (pre-ChatGPT),1461071764,datahub-project/datahub,3,0,0,0,0,0
+Human (pre-ChatGPT),1463016416,datahub-project/datahub,2,1,1,1,0,0
+Human (pre-ChatGPT),1460483597,datahub-project/datahub,1,2,3,0,0,0
+Human (pre-ChatGPT),1465192565,datahub-project/datahub,3,2,0,1,0,0
+Human (pre-ChatGPT),1467661138,datahub-project/datahub,5,0,2,0,0,0
+Human (pre-ChatGPT),1466511006,datahub-project/datahub,10,1,0,1,0,0
+Human (pre-ChatGPT),1468078194,datahub-project/datahub,3,0,0,0,0,0
+Human (pre-ChatGPT),1462230190,datahub-project/datahub,1,0,0,0,0,0
+Human (pre-ChatGPT),1467321588,datahub-project/datahub,2,0,0,1,0,0
+Human (pre-ChatGPT),1463385865,datahub-project/datahub,2,0,0,0,0,0
+Human (pre-ChatGPT),1464848738,datahub-project/datahub,4,0,0,0,0,0
+Human (pre-ChatGPT),1467977825,datahub-project/datahub,3,0,0,0,0,0
+Human (pre-ChatGPT),1466907847,datahub-project/datahub,1,0,0,0,0,0
+Human (pre-ChatGPT),1416181873,getsentry/sentry-python,271,100,87,58,18,4
+Human (pre-ChatGPT),1418834665,getsentry/sentry-python,115,31,30,38,5,3
+Human (pre-ChatGPT),1418155323,getsentry/sentry-python,30,8,10,9,1,0
+Human (pre-ChatGPT),1459603896,getsentry/sentry-python,8,0,0,1,0,0
+Human (pre-ChatGPT),1453723991,getsentry/sentry-python,13,0,0,2,0,0
+Human (pre-ChatGPT),1418067730,getsentry/sentry-python,11,3,2,4,1,0
+Human (pre-ChatGPT),1436034526,getsentry/sentry-python,65,22,1,2,3,0
+Human (pre-ChatGPT),1415643668,getsentry/sentry-python,32,8,10,8,0,0
+Human (pre-ChatGPT),1424979354,getsentry/sentry-python,8,1,0,3,0,0
+Human (pre-ChatGPT),1464736850,getsentry/sentry-python,10,9,1,2,9,2
+Human (pre-ChatGPT),1443863195,getsentry/sentry-python,1,0,0,0,0,0
+Human (pre-ChatGPT),1436252672,getsentry/sentry-python,2,0,0,1,0,0
+Human (pre-ChatGPT),1442407856,getsentry/sentry-python,3,0,0,0,0,0
+Human (pre-ChatGPT),1429735206,getsentry/sentry-python,0,1,0,0,0,0
+Human (pre-ChatGPT),1467065767,getsentry/sentry,54,13,10,10,1,0
+Human (pre-ChatGPT),1467293110,getsentry/sentry,15,0,0,0,0,0
+Human (pre-ChatGPT),1468710944,getsentry/sentry,4,0,0,0,0,0
+Human (pre-ChatGPT),1467114371,getsentry/sentry,68,3,11,14,3,1
+Human (pre-ChatGPT),1467034835,getsentry/sentry,19,2,12,10,0,0
+Human (pre-ChatGPT),1467316648,getsentry/sentry,38,8,9,0,1,0
+Human (pre-ChatGPT),1467230896,getsentry/sentry,72,3,11,15,3,1
+Human (pre-ChatGPT),1468587885,getsentry/sentry,10,1,2,0,0,0
+Human (pre-ChatGPT),1467238770,getsentry/sentry,0,1,0,0,0,0
+Human (pre-ChatGPT),1468542485,getsentry/sentry,0,0,0,1,0,0
+Human (pre-ChatGPT),1467099967,getsentry/sentry,1,1,1,0,0,0
+Human (pre-ChatGPT),1467543091,langchain-ai/langchain,2,3,3,1,0,0
+Human (pre-ChatGPT),1465174995,langchain-ai/langchain,35,12,8,1,8,0
+Human (pre-ChatGPT),1467953742,langchain-ai/langchain,10,5,5,2,0,0
+Human (pre-ChatGPT),1465051474,langchain-ai/langchain,11,0,1,1,1,0
+Human (pre-ChatGPT),1465277751,langchain-ai/langchain,154,58,23,8,7,0
+Human (pre-ChatGPT),1467311026,langchain-ai/langchain,1,2,1,1,0,0
+Human (pre-ChatGPT),1465530473,langchain-ai/langchain,2,2,0,0,0,0
+Human (pre-ChatGPT),1466758470,langchain-ai/langchain,0,2,0,0,0,0
+Human (pre-ChatGPT),1465063576,langchain-ai/langchain,1,0,0,0,0,0
+Human (pre-ChatGPT),1465266822,langchain-ai/langchain,2,0,0,0,0,0
+Human (pre-ChatGPT),1465049997,langchain-ai/langchain,6,0,0,0,0,0
+Human (pre-ChatGPT),358600573,matsui528/rii,5,1,2,2,1,0
+Human (pre-ChatGPT),559585688,matsui528/rii,15,1,0,0,0,0
+Human (pre-ChatGPT),956341528,matsui528/rii,2,1,0,0,0,0
+Human (pre-ChatGPT),1159793881,matsui528/rii,11,1,1,0,0,0
+Human (pre-ChatGPT),354297462,matsui528/rii,4,0,0,0,0,0
+Human (pre-ChatGPT),354651234,matsui528/rii,8,4,0,0,0,0
+Human (pre-ChatGPT),354821446,matsui528/rii,23,3,2,4,0,0
+Human (pre-ChatGPT),357897479,matsui528/rii,1,0,0,1,0,0
+Human (pre-ChatGPT),355814901,matsui528/rii,3,0,0,1,0,0
+Human (pre-ChatGPT),359744503,matsui528/rii,175,40,26,68,5,2
+Human (pre-ChatGPT),988427909,matsui528/rii,10,1,1,0,0,0
+Human (pre-ChatGPT),950158796,matthias-k/pysaliency,2,1,0,2,2,0
+Human (pre-ChatGPT),1440016716,microsoft/AzureTRE,136,36,45,12,6,0
+Human (pre-ChatGPT),1448616828,microsoft/AzureTRE,95,24,10,8,9,0
+Human (pre-ChatGPT),1437445792,microsoft/AzureTRE,174,13,27,68,35,2
+Human (pre-ChatGPT),1456871663,microsoft/AzureTRE,107,16,18,34,6,1
+Human (pre-ChatGPT),1450530169,microsoft/AzureTRE,207,34,24,46,12,1
+Human (pre-ChatGPT),1451867870,microsoft/AzureTRE,72,6,14,13,3,0
+Human (pre-ChatGPT),1467667485,microsoft/AzureTRE,1,0,0,0,0,0
+Human (pre-ChatGPT),1448394698,microsoft/AzureTRE,21,4,0,2,3,0
+Human (pre-ChatGPT),1463440537,microsoft/AzureTRE,2,0,0,0,0,0
+Human (pre-ChatGPT),1204010107,microsoft/Olive,68,3,33,2,4,0
+Human (pre-ChatGPT),1170552616,microsoft/Olive,1,0,0,0,0,0
+Human (pre-ChatGPT),1159193809,microsoft/Olive,2,1,0,1,0,0
+Human (pre-ChatGPT),1273107196,microsoft/Olive,7,2,0,1,0,0
+Human (pre-ChatGPT),1202831803,microsoft/Olive,42,2,28,2,4,0
+Human (pre-ChatGPT),1184394972,microsoft/Olive,3,1,1,0,0,0
+Human (pre-ChatGPT),1375413558,microsoft/Olive,8,0,0,0,0,0
+Human (pre-ChatGPT),1174868520,microsoft/Olive,9,2,0,1,0,0
+Human (pre-ChatGPT),1121191213,microsoft/Olive,3,0,0,0,0,0
+Human (pre-ChatGPT),1336659036,microsoft/Olive,187,57,7,4,4,1
+Human (pre-ChatGPT),1148954027,microsoft/Olive,4,4,1,1,0,0
+Human (pre-ChatGPT),1438321504,microsoft/Qcodes,42,21,10,6,0,0
+Human (pre-ChatGPT),1455316455,microsoft/Qcodes,116,67,36,21,17,0
+Human (pre-ChatGPT),1455215647,microsoft/Qcodes,3,13,5,0,0,0
+Human (pre-ChatGPT),1463134249,microsoft/Qcodes,29,11,5,11,1,0
+Human (pre-ChatGPT),1455288380,microsoft/Qcodes,1,1,0,0,0,0
+Human (pre-ChatGPT),1444193822,microsoft/Qcodes,8,3,0,1,1,0
+Human (pre-ChatGPT),1448121447,microsoft/Qcodes,15,11,2,6,2,1
+Human (pre-ChatGPT),1433409544,microsoft/Qcodes,2,3,0,0,0,0
+Human (pre-ChatGPT),1457753006,microsoft/Qcodes,0,1,0,0,0,0
+Human (pre-ChatGPT),1456554661,microsoft/lisa,14,0,1,0,0,0
+Human (pre-ChatGPT),1452780556,microsoft/lisa,1,0,0,0,0,0
+Human (pre-ChatGPT),1452791404,microsoft/lisa,5,0,0,0,0,0
+Human (pre-ChatGPT),1455005376,microsoft/lisa,1,0,0,0,0,0
+Human (pre-ChatGPT),1465927334,microsoft/lisa,3,3,1,0,0,0
+Human (pre-ChatGPT),1451792903,microsoft/lisa,5,1,0,0,1,0
+Human (pre-ChatGPT),1450003008,microsoft/lisa,2,0,0,1,0,0
+Human (pre-ChatGPT),1450214505,microsoft/lisa,1,0,0,0,0,0
+Human (pre-ChatGPT),1457196566,microsoft/lisa,1,0,0,0,0,0
+Human (pre-ChatGPT),1455428709,microsoft/lisa,0,1,1,0,0,0
+Human (pre-ChatGPT),1452377626,microsoft/lisa,1,0,0,0,0,0
+Human (pre-ChatGPT),1457973701,microsoft/lisa,5,1,0,0,0,0
+Human (pre-ChatGPT),1459931969,microsoft/lisa,3,0,0,0,0,0
+Human (pre-ChatGPT),1445987323,microsoft/onnxscript,109,21,6,7,9,0
+Human (pre-ChatGPT),1446145000,microsoft/onnxscript,337,83,27,32,25,1
+Human (pre-ChatGPT),1468395428,microsoft/onnxscript,39,14,5,15,1,0
+Human (pre-ChatGPT),1446524394,microsoft/onnxscript,844,135,63,11,17,0
+Human (pre-ChatGPT),1449644413,microsoft/onnxscript,8,1,0,1,0,0
+Human (pre-ChatGPT),1454054880,microsoft/onnxscript,38,28,20,8,4,0
+Human (pre-ChatGPT),1455829745,microsoft/onnxscript,45,28,21,7,2,0
+Human (pre-ChatGPT),1457334712,microsoft/onnxscript,2,10,10,2,0,0
+Human (pre-ChatGPT),1447430046,microsoft/onnxscript,222,50,21,22,15,1
+Human (pre-ChatGPT),1452553851,microsoft/onnxscript,19,11,11,2,0,0
+Human (pre-ChatGPT),1457279640,microsoft/onnxscript,10,12,10,2,0,0
+Human (pre-ChatGPT),1450271966,microsoft/onnxscript,35,13,11,4,2,0
+Human (pre-ChatGPT),1462160652,microsoft/onnxscript,5552,489,268,408,146,38
+Human (pre-ChatGPT),1448946855,microsoft/onnxscript,0,0,1,3,0,0
+Human (pre-ChatGPT),1468316428,microsoft/onnxscript,1,0,0,0,0,0
+Human (pre-ChatGPT),1185343814,mlco2/codecarbon,3,14,7,2,0,0
+Human (pre-ChatGPT),1241792124,mlco2/codecarbon,26,14,9,5,5,0
+Human (pre-ChatGPT),1396765224,mlco2/codecarbon,4,1,0,0,0,0
+Human (pre-ChatGPT),1200544171,mlco2/codecarbon,90,27,11,16,2,0
+Human (pre-ChatGPT),1309372968,mlco2/codecarbon,11,0,3,2,5,0
+Human (pre-ChatGPT),1211576329,mlco2/codecarbon,6,0,0,6,0,0
+Human (pre-ChatGPT),1231608152,mlco2/codecarbon,13,1,5,1,2,0
+Human (pre-ChatGPT),1166074712,mlco2/codecarbon,19,5,2,9,0,1
+Human (pre-ChatGPT),1333450657,mlco2/codecarbon,0,1,0,0,0,0
+Human (pre-ChatGPT),1455827018,mlflow/mlflow,977,206,68,158,39,3
+Human (pre-ChatGPT),1460070729,mlflow/mlflow,0,1,1,0,0,0
+Human (pre-ChatGPT),1466799601,mlflow/mlflow,10,2,1,5,1,1
+Human (pre-ChatGPT),1462224946,mlflow/mlflow,3,0,0,0,0,0
+Human (pre-ChatGPT),1458550192,mlflow/mlflow,1,0,0,0,0,0
+Human (pre-ChatGPT),1458532039,mlflow/mlflow,1,0,0,0,0,0
+Human (pre-ChatGPT),1459516893,mlflow/mlflow,89,15,79,155,0,0
+Human (pre-ChatGPT),1451061931,mlflow/mlflow,3,0,0,0,0,0
+Human (pre-ChatGPT),1462985441,mlflow/mlflow,26,4,2,1,3,0
+Human (pre-ChatGPT),1460132574,near/nearcore,40,6,0,0,0,0
+Human (pre-ChatGPT),1462723314,near/nearcore,296,71,26,24,14,0
+Human (pre-ChatGPT),1467355454,near/nearcore,38,3,1,0,0,0
+Human (pre-ChatGPT),1459622377,neondatabase/neon,37,11,6,10,1,0
+Human (pre-ChatGPT),1466239762,neondatabase/neon,13,6,1,1,0,0
+Human (pre-ChatGPT),1467897447,neondatabase/neon,7,0,0,1,0,0
+Human (pre-ChatGPT),1459609800,neondatabase/neon,1,0,0,0,0,0
+Human (pre-ChatGPT),1456644243,neondatabase/neon,2,0,0,0,0,0
+Human (pre-ChatGPT),1462529216,neondatabase/neon,13,2,1,0,1,0
+Human (pre-ChatGPT),1461558645,neondatabase/neon,23,1,2,0,1,0
+Human (pre-ChatGPT),1459428832,neondatabase/neon,2,0,0,0,0,0
+Human (pre-ChatGPT),1458232602,neondatabase/neon,1,0,0,0,0,0
+Human (pre-ChatGPT),1433542778,onnx/onnx,7120,1692,943,601,113,71
+Human (pre-ChatGPT),1445100121,onnx/onnx,14106,3490,1841,1194,220,138
+Human (pre-ChatGPT),1403867692,onnx/onnx,28,44,16,21,12,1
+Human (pre-ChatGPT),1450723876,onnx/onnx,28,5,10,2,0,1
+Human (pre-ChatGPT),1454978398,onnx/onnx,9,11,0,0,0,0
+Human (pre-ChatGPT),1449873128,onnx/onnx,30,7,10,2,0,1
+Human (pre-ChatGPT),1397936143,onnx/onnx,25,14,0,1,0,1
+Human (pre-ChatGPT),1408286785,onnx/onnx,22,5,0,0,0,0
+Human (pre-ChatGPT),1392071789,onnx/onnx,448,90,54,15,16,2
+Human (pre-ChatGPT),1459389733,onnx/onnx,44,22,0,0,0,1
+Human (pre-ChatGPT),1442610826,onnx/onnx,1,0,0,0,0,0
+Human (pre-ChatGPT),1423177111,onnx/onnx,69,37,6,4,4,2
+Human (pre-ChatGPT),1436743420,onnx/onnx,0,0,0,0,1,0
+Human (pre-ChatGPT),552510594,pulearn/pulearn,359,109,27,44,6,14
+Human (pre-ChatGPT),1390395056,pulearn/pulearn,63,10,1,8,0,0
+Human (pre-ChatGPT),577539654,pulearn/pulearn,3,2,0,0,0,0
+Human (pre-ChatGPT),1379562489,pydna-group/pydna,2,1,0,1,2,0
+Human (pre-ChatGPT),161040645,pydna-group/pydna,1567,197,109,101,6,5
+Human (pre-ChatGPT),594610495,pydna-group/pydna,7,2,4,2,0,0
+Human (pre-ChatGPT),1390460706,pydna-group/pydna,3,0,0,0,0,0
+Human (pre-ChatGPT),296411212,pydna-group/pydna,1,0,0,0,0,0
+Human (pre-ChatGPT),157934052,pydna-group/pydna,0,1,0,0,0,0
+Human (pre-ChatGPT),524397345,pydna-group/pydna,22,1,0,0,0,0
+Human (pre-ChatGPT),1062041328,python-cachier/cachier,39,9,11,10,0,0
+Human (pre-ChatGPT),1063384786,python-cachier/cachier,39,9,11,10,0,0
+Human (pre-ChatGPT),999391004,python-cachier/cachier,82,18,6,5,9,3
+Human (pre-ChatGPT),1016104386,python-cachier/cachier,82,18,6,5,9,3
+Human (pre-ChatGPT),950405443,python-cachier/cachier,0,1,0,0,0,0
+Human (pre-ChatGPT),750667921,python-cachier/cachier,160,41,32,56,24,3
+Human (pre-ChatGPT),853760267,python-cachier/cachier,5,1,2,1,2,0
+Human (pre-ChatGPT),997190661,python-cachier/cachier,82,19,6,5,10,3
+Human (pre-ChatGPT),744659354,python-cachier/cachier,143,40,29,49,14,3
+Human (pre-ChatGPT),882682865,python-cachier/cachier,89,21,6,6,11,4
+Human (pre-ChatGPT),929731040,python-cachier/cachier,5,3,2,1,1,0
+Human (pre-ChatGPT),968085937,python-cachier/cachier,82,19,6,5,10,3
+Human (pre-ChatGPT),1019030515,python-cachier/cachier,82,18,6,5,9,3
+Human (pre-ChatGPT),1022115985,python-cachier/cachier,206,46,40,63,27,3
+Human (pre-ChatGPT),1019183107,python-cachier/cachier,0,2,0,1,0,0
+Human (pre-ChatGPT),1463757161,reflex-dev/reflex,7,0,0,0,0,0
+Human (pre-ChatGPT),1457056660,reflex-dev/reflex,106,53,61,81,7,0
+Human (pre-ChatGPT),1467401644,reflex-dev/reflex,9,3,6,2,0,0
+Human (pre-ChatGPT),1457100885,reflex-dev/reflex,12,8,9,0,0,0
+Human (pre-ChatGPT),1458515518,reflex-dev/reflex,4,0,0,0,0,0
+Human (pre-ChatGPT),1456750998,reflex-dev/reflex,15,6,0,2,0,0
+Human (pre-ChatGPT),1458795929,reflex-dev/reflex,6,3,3,1,0,0
+Human (pre-ChatGPT),1458730210,reflex-dev/reflex,2,0,0,3,0,0
+Human (pre-ChatGPT),1457112362,reflex-dev/reflex,1,0,0,0,0,0
+Human (pre-ChatGPT),1408344001,rqlite/rqlite,5,3,2,0,0,0
+Human (pre-ChatGPT),1429821182,rqlite/rqlite,3,1,1,0,0,0
+Human (pre-ChatGPT),1430338399,rqlite/rqlite,4,0,1,1,0,0
+Human (pre-ChatGPT),1448145610,rqlite/rqlite,3,0,0,0,0,0
+Human (pre-ChatGPT),1447339747,rqlite/rqlite,2,0,0,0,0,0
+Human (pre-ChatGPT),1416512939,rqlite/rqlite,2,1,1,1,0,0
+Human (pre-ChatGPT),1460648971,rqlite/rqlite,10,3,2,1,0,0
+Human (pre-ChatGPT),1436311509,rqlite/rqlite,7,0,0,0,0,0
+Human (pre-ChatGPT),1414230379,rqlite/rqlite,6,0,0,2,0,0
+Human (pre-ChatGPT),1417337064,rqlite/rqlite,7,0,0,4,0,0
+Human (pre-ChatGPT),689160749,saturday06/VRM-Addon-for-Blender,1836,468,181,231,52,13
+Human (pre-ChatGPT),1085539136,saturday06/VRM-Addon-for-Blender,4,0,0,0,0,0
+Human (pre-ChatGPT),727544394,saturday06/VRM-Addon-for-Blender,1,0,0,0,0,0
+Human (pre-ChatGPT),861319124,saturday06/VRM-Addon-for-Blender,257,30,5,17,12,0
+Human (pre-ChatGPT),858698140,saturday06/VRM-Addon-for-Blender,68,9,2,0,0,0
+Human (pre-ChatGPT),1149972121,saturday06/VRM-Addon-for-Blender,7,1,2,0,0,1
+Human (pre-ChatGPT),814179768,saturday06/VRM-Addon-for-Blender,2,0,0,0,0,0
+Human (pre-ChatGPT),1452901253,skypilot-org/skypilot,3,1,4,0,2,0
+Human (pre-ChatGPT),1448802963,skypilot-org/skypilot,61,4,5,1,1,0
+Human (pre-ChatGPT),1465858944,skypilot-org/skypilot,48,8,3,0,1,0
+Human (pre-ChatGPT),1456075968,skypilot-org/skypilot,97,11,9,10,1,0
+Human (pre-ChatGPT),1458855963,skypilot-org/skypilot,14,0,2,0,0,0
+Human (pre-ChatGPT),1452876770,skypilot-org/skypilot,50,2,2,2,0,0
+Human (pre-ChatGPT),1455871496,skypilot-org/skypilot,1,1,0,7,0,0
+Human (pre-ChatGPT),1465851073,skypilot-org/skypilot,1,0,0,0,0,0
+Human (pre-ChatGPT),1467320858,skypilot-org/skypilot,21,2,2,6,0,0
+Human (pre-ChatGPT),1465319585,skypilot-org/skypilot,2,0,1,0,0,0
+Human (pre-ChatGPT),1450817556,skypilot-org/skypilot,4,0,0,0,0,0
+Human (pre-ChatGPT),1465619965,skypilot-org/skypilot,0,1,0,0,0,0
+Human (pre-ChatGPT),1449211400,skypilot-org/skypilot,3,0,2,0,0,0
+Human (pre-ChatGPT),1449293336,skypilot-org/skypilot,3,0,1,0,0,0
+Human (pre-ChatGPT),745130116,snok/django-guid,126,72,53,26,15,0
+Human (pre-ChatGPT),1078507951,snok/django-guid,0,4,3,0,0,0
+Human (pre-ChatGPT),744173455,snok/django-guid,107,48,24,11,9,0
+Human (pre-ChatGPT),1133751091,snok/django-guid,8,11,11,0,0,0
+Human (pre-ChatGPT),1223420983,snok/django-guid,40,10,7,8,3,0
+Human (pre-ChatGPT),756389937,snok/django-guid,33,14,4,3,2,0
+Human (pre-ChatGPT),1124946807,snok/django-guid,1,1,0,0,0,0
+Human (pre-ChatGPT),1078446032,snok/django-guid,8,1,0,2,0,0
+Human (pre-ChatGPT),981399767,snok/django-guid,1,0,0,0,0,0
+Human (pre-ChatGPT),1439851559,spcl/dace,2340,488,252,159,106,50
+Human (pre-ChatGPT),1412846000,spcl/dace,844,228,107,41,42,30
+Human (pre-ChatGPT),1429641480,spcl/dace,102,13,7,9,8,2
+Human (pre-ChatGPT),1410952732,spcl/dace,1190,252,110,112,46,58
+Human (pre-ChatGPT),1405815065,spcl/dace,60,27,7,9,11,0
+Human (pre-ChatGPT),1420219638,spcl/dace,1009,152,104,100,82,38
+Human (pre-ChatGPT),1401730290,spcl/dace,248,83,33,47,18,0
+Human (pre-ChatGPT),1438369489,spcl/dace,380,79,22,29,22,10
+Human (pre-ChatGPT),1451623036,spcl/dace,0,1,0,0,0,0
+Human (pre-ChatGPT),1430185186,spcl/dace,106,15,8,10,8,2
+Human (pre-ChatGPT),1436898325,spcl/dace,219,44,18,7,2,7
+Human (pre-ChatGPT),1438591469,spcl/dace,114,21,13,11,1,2
+Human (pre-ChatGPT),1401594483,spcl/dace,27,2,2,1,0,0
+Human (pre-ChatGPT),1467897860,spcl/dace,1,0,0,0,0,0
+Human (pre-ChatGPT),1404520836,spcl/dace,6,4,1,0,1,1
+Human (pre-ChatGPT),269307576,stefankoegl/python-json-pointer,5,2,1,0,0,0
+Human (pre-ChatGPT),57743967,stefankoegl/python-json-pointer,43,0,1,5,0,0
+Human (pre-ChatGPT),6809274,stefankoegl/python-json-pointer,1,4,9,0,0,0
+Human (pre-ChatGPT),1145137149,stefankoegl/python-json-pointer,74,8,2,3,0,0
+Human (pre-ChatGPT),47890591,stefankoegl/python-json-pointer,17,6,4,3,2,1
+Human (pre-ChatGPT),30215939,stefankoegl/python-json-pointer,8,2,0,0,0,0
+Human (pre-ChatGPT),1038335779,stefankoegl/python-json-pointer,12,5,0,1,2,0
+Human (pre-ChatGPT),47890338,stefankoegl/python-json-pointer,2,0,0,3,0,0
+Human (pre-ChatGPT),288622894,stefankoegl/python-json-pointer,1,0,0,0,0,0
+Human (pre-ChatGPT),1429416049,torchgeo/torchgeo,172,27,25,13,5,0
+Human (pre-ChatGPT),1433811078,torchgeo/torchgeo,3,0,0,0,0,0
+Human (pre-ChatGPT),1417102060,torchgeo/torchgeo,14,4,1,1,1,1
+Human (pre-ChatGPT),1424019781,torchgeo/torchgeo,18,0,0,0,0,0
+Human (pre-ChatGPT),1410236747,torchgeo/torchgeo,1,0,0,0,0,0
+Human (pre-ChatGPT),1410268577,torchgeo/torchgeo,8,1,0,0,0,0
+Human (pre-ChatGPT),1416294168,torchgeo/torchgeo,6,3,0,0,0,0
+Human (pre-ChatGPT),1409092390,torchgeo/torchgeo,0,26,0,0,0,0
+Human (pre-ChatGPT),1464900984,torchgeo/torchgeo,1,0,0,0,0,0
+Human (pre-ChatGPT),1453796840,valkey-io/valkey-glide,2,1,0,0,0,0
+Human (pre-ChatGPT),1393828753,valkey-io/valkey-glide,18,1,2,0,0,0
+Human (pre-ChatGPT),1447731939,valkey-io/valkey-glide,141,38,32,28,7,2
+Human (pre-ChatGPT),1390420613,valkey-io/valkey-glide,8,1,0,2,0,0
+Human (pre-ChatGPT),1453451162,valkey-io/valkey-glide,0,1,0,0,0,0
+Human (pre-ChatGPT),1389589135,valkey-io/valkey-glide,2,0,0,0,0,0
+Human (pre-ChatGPT),1372886410,valkey-io/valkey-glide,60,32,5,3,6,0
+Human (pre-ChatGPT),1417326604,valkey-io/valkey-glide,1,0,2,0,0,0
+Human (pre-ChatGPT),1425945530,valkey-io/valkey-glide,2,0,0,0,0,0
+Human (pre-ChatGPT),1354812281,vespa-engine/pyvespa,0,0,1,0,0,0
+Human (pre-ChatGPT),1382077599,vespa-engine/pyvespa,6,2,0,0,0,0
+Human (pre-ChatGPT),1401956109,vespa-engine/pyvespa,5,7,14,5,0,0
+Human (pre-ChatGPT),1435213759,vespa-engine/pyvespa,1,1,1,0,0,0
+Human (pre-ChatGPT),1435977432,vespa-engine/pyvespa,0,1,16,0,0,0
+Human (pre-ChatGPT),1295899874,vespa-engine/pyvespa,0,1,0,0,0,0
+Human (pre-ChatGPT),1395915199,vespa-engine/pyvespa,31,12,3,11,0,0
+Human (pre-ChatGPT),1394599289,vespa-engine/pyvespa,0,1,0,0,0,0
+Human (pre-ChatGPT),1419765869,vespa-engine/pyvespa,0,1,1,0,0,0
+Human (pre-ChatGPT),981274177,vibber-ai/fastapi-azure-auth,784,95,259,127,62,0
+Human (pre-ChatGPT),1291724459,vibber-ai/fastapi-azure-auth,247,34,112,33,25,0
+Human (pre-ChatGPT),1101776414,vibber-ai/fastapi-azure-auth,126,11,30,16,6,0
+Human (pre-ChatGPT),1126238378,vibber-ai/fastapi-azure-auth,38,1,0,3,1,0
+Human (pre-ChatGPT),1192143694,vibber-ai/fastapi-azure-auth,28,9,13,0,0,0
+Human (pre-ChatGPT),1443950761,vibber-ai/fastapi-azure-auth,1,1,0,0,1,0
+Human (pre-ChatGPT),1034144863,vibber-ai/fastapi-azure-auth,11,1,1,7,1,0
+Human (pre-ChatGPT),985000455,vibber-ai/fastapi-azure-auth,1,0,0,0,0,0
+Human (pre-ChatGPT),1218565753,vibber-ai/fastapi-azure-auth,0,0,2,0,0,0
+Human (pre-ChatGPT),747053106,vladfi1/slippi-ai,29,11,6,6,1,1
+Human (pre-ChatGPT),900081425,vladfi1/slippi-ai,88,15,10,17,7,1
+Human (pre-ChatGPT),759909817,vladfi1/slippi-ai,25,1,2,9,0,0
+Human (pre-ChatGPT),747087980,vladfi1/slippi-ai,23,0,2,8,0,0
+Human (pre-ChatGPT),745297413,vladfi1/slippi-ai,81,8,7,33,2,0
+Human (pre-ChatGPT),751956739,vladfi1/slippi-ai,42,3,5,2,0,0
+Human (pre-ChatGPT),748382276,vladfi1/slippi-ai,24,5,3,8,0,0
+Human (pre-ChatGPT),748824976,vladfi1/slippi-ai,3,3,1,2,0,0
+Human (pre-ChatGPT),748091780,vladfi1/slippi-ai,28,10,7,1,1,0
+Human (pre-ChatGPT),752471527,vladfi1/slippi-ai,20,9,16,1,0,0
+Human (pre-ChatGPT),747801327,vladfi1/slippi-ai,6,6,3,4,0,0
+Human (pre-ChatGPT),748105853,vladfi1/slippi-ai,57,11,5,3,0,2
+Human (pre-ChatGPT),748165063,vladfi1/slippi-ai,97,43,9,21,2,0
+Human (pre-ChatGPT),746959157,vladfi1/slippi-ai,18,5,6,7,1,0
+Human (pre-ChatGPT),752549658,vladfi1/slippi-ai,13,1,0,4,1,0
+Human (pre-ChatGPT),955769076,yutto-dev/yutto,73,10,14,7,3,0
+Human (pre-ChatGPT),1137707841,yutto-dev/yutto,66,35,18,9,3,1
+Human (pre-ChatGPT),1116320361,yutto-dev/yutto,33,3,2,5,0,0
+Human (pre-ChatGPT),1034647105,yutto-dev/yutto,51,14,12,0,1,0
+Human (pre-ChatGPT),1045422903,yutto-dev/yutto,7,0,0,0,0,0
+Human (pre-ChatGPT),1125254036,yutto-dev/yutto,440,130,127,37,5,8
+Human (pre-ChatGPT),1236258612,yutto-dev/yutto,7,1,6,1,0,0
+Human (pre-ChatGPT),1124984291,yutto-dev/yutto,42,27,10,1,3,0
+Human (pre-ChatGPT),1138323122,yutto-dev/yutto,4,0,0,1,2,0
+Human (pre-ChatGPT),1132585611,yutto-dev/yutto,2,2,1,0,0,0
+Human (pre-ChatGPT),1391187866,zfit/zfit,272,50,24,13,17,4
+Human (pre-ChatGPT),1344348677,zfit/zfit,262,42,28,34,6,7
+Human (pre-ChatGPT),1352665350,zfit/zfit,94,19,10,9,1,0
+Human (pre-ChatGPT),1353402882,zfit/zfit,365,60,34,45,11,1
+Human (pre-ChatGPT),1349874807,zfit/zfit,67,22,1,5,0,1
+Human (pre-ChatGPT),1221147515,zfit/zfit,13,1,0,0,1,0
+Human (pre-ChatGPT),1349750402,zfit/zfit,32,16,0,6,0,1
+Human (pre-ChatGPT),1345339167,zfit/zfit,29,3,2,1,0,0
+Human (pre-ChatGPT),1197314397,zfit/zfit,2,0,1,1,0,1
+Human (pre-ChatGPT),1253807135,zfit/zfit,1,3,1,0,0,0
+Human (pre-ChatGPT),1203042954,zfit/zfit,52,11,9,1,2,1
+Human (pre-ChatGPT),1286209709,zfit/zfit,87,11,2,19,6,0
+Human (pre-ChatGPT),1195202671,zfit/zfit,14,0,0,0,0,0

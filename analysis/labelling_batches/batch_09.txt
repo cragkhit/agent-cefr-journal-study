@@ -1,0 +1,277 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1436252672
+title: Performance optimizations
+body:
+Our Django signals integrations added a lot of overhead in some cases. 
+See: https://github.com/getsentry/sentry-python/issues/1721
+
+This code runs now over an order of magnitude faster for getting the name of a partials.
+
+Closes #1721
+
+----- PR -----
+pr_id: 1436311509
+title: Ensure randomly selected addresses can't be reused
+body:
+Address https://app.circleci.com/pipelines/github/rqlite/rqlite/2021/workflows/d7cee6c4-9dc1-45ad-af66-eb17622f9b13/jobs/9171?invite=true#step-109-111
+
+----- PR -----
+pr_id: 1436743420
+title: Output missing last new line from coverage reporter
+body:
+### Description
+<!-- - Describe your changes. -->
+`tabulate` function doesn't add new line to last row so it will be mixed up with next pytest summary
+
+### Motivation and Context
+<!-- - Why is this change required? What problem does it solve? -->
+<!-- - If it fixes an open issue, please link to the issue here. -->
+
+Without this, the pytest summary would be broken like following:
+
+```
+...
+Tanh                   No attributes
+ThresholdedRelu        alpha: 1
+Tile                   No attributes
+TopK                   axis: 2
+                       largest: 1
+                       sorted: 1
+Transpose              perm: 9
+Trilu                  upper: 1
+Xor                    No attributes
+PRelu                  No attributes============================= 1100 passed, 985 skipped, 80 xfailed, 1400 warnings in 11.72s ==============================
+```
+
+----- PR -----
+pr_id: 1436898325
+title: Helper functions for SDFG scheduling
+body:
+- [x] Scope-aware topological sort traversal of SDFG states
+- [x] Some fixes for state-order traversal
+- [x] Properties denote their owner class (for properties of subclasses)
+- [x] Find whether a view is a slice (with squeeze/unsqueeze) and the correspondence
+
+----- PR -----
+pr_id: 1437445792
+title: handle unsupported azure subscriptions in cost reporting
+body:
+# Resolves #2822 2822
+
+## What is being addressed
+
+Handle gracefully unsupported azure subscriptions in cost reporting.
+
+## How is this addressed
+
+- raise ```SubscriptionNotSupported``` for when cost management API returns 404 with the string ```"doesn't have valid WebDirect/AIRS"``` in response body and return 404 with response body ```"Azure subscription doesn't support cost management"```
+- Hide exception in UI when Azure TRE cost API returns 404
+- Update documentation
+- Update CHANGELOG.md
+
+----- PR -----
+pr_id: 1438300442
+title: Avoid sampling of NaN center location
+body:
+In #1946, np.full(..., np.nan) is required in order for FlipLR to work when keypoints are hidden. Occasionally though, a NaN point can be sampled as crop center https://github.com/DeepLabCut/DeepLabCut/blob/ecbb85818e49c6575597f1808a1c3e224d58ca8f/deeplabcut/pose_estimation_tensorflow/datasets/augmentation.py#L94-L107 causing imgaug errors.
+This one-liner addresses this bug.
+
+----- PR -----
+pr_id: 1438321504
+title: Add importlib resources bases import to VisaInstruments
+body:
+Cleaner implantation of #4789 which moves the logic into the visa instrument
+
+TODO
+- [x] Allow yaml files to be loaded from other modules
+- [x] Docstrings and documentation (specifically writing simulated instrument notebook)
+- [x] Tests?
+
+----- PR -----
+pr_id: 1438369489
+title: Enable more tests
+body:
+(empty)
+
+----- PR -----
+pr_id: 1438591469
+title: Check fpga vendor is supported
+body:
+Addresses #1140
+
+----- PR -----
+pr_id: 1439851559
+title: Fixed problem with Intel FPGA and long long
+body:
+(empty)
+
+----- PR -----
+pr_id: 1440016716
+title: E2E tests: Extract setting up test workspaces
+body:
+# Resolves #2839 
+
+## What is being addressed
+
+Reuse test workspaces between tests via introducing `setup_test_workspace` fixture.
+
+## How is this addressed
+
+- Added fixtures `setup_test_workspace` and `setup_test_aad_workspace` 
+- Added TEST_WORKSPACE_ID and TEST_WORKSPACE_AAD_ID env variables to e2e tests to make it easier to iterate on tests locally 
+- Simplify the `test_create_guacamole_service_into_aad_workspace` test: only check that the workspace was successfully deployed and can be returned from the API
+
+----- PR -----
+pr_id: 1440724171
+title: Update to Version 4.0.0
+body:
+- rework of the whole addon
+- improved tracking and creation of actions
+- new save system
+- added logging system
+- improved update functionality 
+- many bug fixes
+
+----- PR -----
+pr_id: 1442348528
+title: Use video-specific crop params in extract_outlier_frames
+body:
+Fixes #2036.
+
+----- PR -----
+pr_id: 1442357616
+title: Fixed AttributeError when unpickling HTTPAdapterWithSocketOptions.
+body:
+#### Pull Request Description
+
+Fixes https://github.com/Azure/azure-kusto-python/issues/430
+
+#### Future Release Comment
+**Fixes:**
+- Fixed Attribute error when unpickling HTTPAdapterWithSocketOptions
+
+----- PR -----
+pr_id: 1442407856
+title: ref(profiling): Do not error if already setup
+body:
+We currently error if profiling is already setup which can be error prone depending on the end user's setup. This change ensures that we only setup profiling once and once setup, it's reused.
+
+----- PR -----
+pr_id: 1442610826
+title: Fix enforce-style CI error: solve empty-body issue raised by mypy 0.990
+body:
+### Description
+<!-- - Describe your changes. -->
+Fix enforce-style CI error: solve empty-body issue raised by mypy 0.990
+
+
+### Motivation and Context
+Currently enforce-style CI failed due to the latest mypy 0.990
+
+----- PR -----
+pr_id: 1443284056
+title: chore: configuration check for development
+body:
+(empty)
+
+----- PR -----
+pr_id: 1443439670
+title: Xor
+body:
+Not working yet (however, compiling)
+Some functions missing
+Further polishing required
+
+----- PR -----
+pr_id: 1443863195
+title: Fix signals problem on sentry.io
+body:
+When using the newest version of the Python SDK on the sentry backend we get the following error:
+
+```
+tests/getsentry/billing/test_staged.py:838: in test_apply_inplace_trigger_post_save
+    subscription = self.create_subscription(
+    ...
+/usr/local/lib/python3.8/site-packages/sentry_sdk/integrations/django/signals_handlers.py:56: in wrapper
+    signal_name = _get_receiver_name(receiver)
+/usr/local/lib/python3.8/site-packages/sentry_sdk/integrations/django/signals_handlers.py:28: in _get_receiver_name
+    name = "partial(<function " + receiver.func.__name__ + ">)"  # type: ignore
+/usr/local/lib/python3.8/unittest/mock.py:639: in __getattr__
+    raise AttributeError(name)
+E   AttributeError: __name__
+```
+
+This change gets the `__name__` attribute in a very defensive way, to not raise any errors what so ever.
+
+----- PR -----
+pr_id: 1443911004
+title: dj_config handle second argument (one-line fix)
+body:
+In dj_config.py, the second argument should be the datajoint_config.yml file, but that doesn't get passed through.
+
+This is a one-line modification to fix that.
+
+----- PR -----
+pr_id: 1443950761
+title: chore: support python3.11
+body:
+(empty)
+
+----- PR -----
+pr_id: 1444193822
+title: log.warning instead of raise exception if measurement has been interrupted.
+body:
+Pull request for #4800
+
+----- PR -----
+pr_id: 1445100121
+title: Fix _parse_repo_info
+body:
+### Description
+
+
+
+### Motivation and Context
+<!-- - Why is this change required? What problem does it solve? -->
+<!-- - If it fixes an open issue, please link to the issue here. -->
+For example, if the repo info is `jcwchen/models:jcw/vnni-result`,
+the return value of current function will be ` jcwchen, models, jcw`
+So, the _get_base_url would be incorrect.
+
+In fact, the` jcwchen, models, jcw/vnni `is the correct return value
+
+----- PR -----
+pr_id: 1445533865
+title: Implement Film
+body:
+https://github.com/axinc-ai/ailia-models/issues/947
+
+----- PR -----
+pr_id: 1445987323
+title: Add support for returning input as output
+body:
+Add support so that graph-inputs can be returned as graph-outputs (which requires introducing an Identity op in ONNX).

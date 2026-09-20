@@ -1,0 +1,1467 @@
+pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human,n_review_comments_bot,n_review_comments_author,n_issue_comments_human,n_issue_comments_bot,n_issue_comments_author,n_review_comments_fetched,n_issue_comments_fetched
+2760243902,AI agents,AgentOps-AI/agentops,605,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2761311271,AI agents,bespokelabsai/curator,291,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2761325861,AI agents,crewAIInc/crewAI,1808,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2761376844,AI agents,crewAIInc/crewAI-tools,160,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2761977984,AI agents,crewAIInc/crewAI-tools,162,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2762078403,AI agents,crewAIInc/crewAI,1814,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2763242692,AI agents,crewAIInc/crewAI,1818,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2763395657,AI agents,crewAIInc/crewAI,1820,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2763878383,AI agents,crewAIInc/crewAI,1828,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2768257624,AI agents,crewAIInc/crewAI-tools,175,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2768982424,AI agents,vlm-run/vlmrun-hub,44,devin-ai-integration[bot],ok,3,0,0,0,1,0,3,1
+2770724281,AI agents,marimo-team/marimo,3349,devin-ai-integration[bot],ok,0,0,0,0,4,0,0,4
+2771417743,AI agents,vlm-run/vlmrun-hub,52,devin-ai-integration[bot],ok,3,0,0,0,1,0,3,1
+2771599553,AI agents,bespokelabsai/curator,308,devin-ai-integration[bot],ok,7,0,0,0,1,0,7,1
+2773427771,AI agents,bespokelabsai/curator,316,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2773911009,AI agents,bespokelabsai/curator,322,devin-ai-integration[bot],ok,1,0,0,0,1,0,1,1
+2776603613,AI agents,vlm-run/vlmrun-hub,58,devin-ai-integration[bot],ok,1,0,0,1,1,0,1,2
+2777165691,AI agents,goat-sdk/goat,204,devin-ai-integration[bot],ok,1,0,0,0,2,0,1,2
+2777500617,AI agents,vlm-run/vlmrun-hub,60,devin-ai-integration[bot],ok,6,0,0,0,2,0,6,2
+2780834098,AI agents,vlm-run/vlmrun-hub,67,devin-ai-integration[bot],ok,3,0,0,0,1,0,3,1
+2783423999,AI agents,patched-codes/patchwork,1192,devin-ai-integration[bot],ok,5,0,0,1,1,0,5,2
+2784386339,AI agents,goat-sdk/goat,216,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784399427,AI agents,goat-sdk/goat,217,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784409350,AI agents,goat-sdk/goat,218,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784417626,AI agents,goat-sdk/goat,219,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784574087,AI agents,goat-sdk/goat,220,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784590302,AI agents,goat-sdk/goat,221,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2784993744,AI agents,crewAIInc/crewAI,1888,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
+2786715226,AI agents,crewAIInc/crewAI,1892,devin-ai-integration[bot],ok,1,0,0,3,1,0,1,4
+2788022491,AI agents,goat-sdk/goat,223,devin-ai-integration[bot],ok,1,0,0,0,2,0,1,2
+2788029019,AI agents,goat-sdk/goat,224,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2790183982,AI agents,crewAIInc/crewAI,1899,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2790317638,AI agents,goat-sdk/goat,228,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2792386162,AI agents,goat-sdk/goat,233,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2794323375,AI agents,AgentOps-AI/agentops,650,devin-ai-integration[bot],ok,6,0,0,2,2,0,6,4
+2794907896,AI agents,goat-sdk/goat,236,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2795084819,AI agents,goat-sdk/goat,237,devin-ai-integration[bot],ok,4,0,0,0,2,0,4,2
+2795172513,AI agents,goat-sdk/goat,238,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2795821755,AI agents,marimo-team/marimo,3479,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2797482061,AI agents,crewAIInc/crewAI,1923,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2802180853,AI agents,goat-sdk/goat,258,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2802417432,AI agents,crewAIInc/crewAI,1937,devin-ai-integration[bot],ok,4,0,0,2,2,0,4,4
+2805690384,AI agents,bentoml/BentoML,5194,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2810378681,AI agents,crewAIInc/crewAI,1966,devin-ai-integration[bot],ok,3,0,0,1,1,0,3,2
+2814132697,AI agents,marimo-team/marimo,3591,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2814487611,AI agents,airbytehq/airbyte,52591,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2816690510,AI agents,onyx-dot-app/onyx,3817,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2816855074,AI agents,onyx-dot-app/onyx,3819,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2818558986,AI agents,marimo-team/marimo,3618,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2818857108,AI agents,onyx-dot-app/onyx,3831,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2819900203,AI agents,ag2ai/build-with-ag2,16,devin-ai-integration[bot],ok,6,0,0,6,1,0,6,7
+2821659019,AI agents,airbytehq/airbyte,52663,devin-ai-integration[bot],ok,4,0,0,1,2,0,4,3
+2821716083,AI agents,airbytehq/airbyte,52664,devin-ai-integration[bot],ok,4,0,0,4,3,0,4,7
+2827635328,AI agents,marimo-team/marimo,3671,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2833722888,AI agents,crewAIInc/crewAI,2039,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2839339063,AI agents,marimo-team/marimo,3723,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2839377784,AI agents,airbytehq/airbyte,53238,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2840161375,AI agents,marimo-team/marimo,3729,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2840202434,AI agents,crewAIInc/crewAI,2063,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2842178996,AI agents,goat-sdk/goat,325,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2842228579,AI agents,goat-sdk/goat,326,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2845335545,AI agents,goat-sdk/goat,333,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2848656258,AI agents,marimo-team/marimo,3768,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2861606292,AI agents,marimo-team/marimo,3840,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2861659768,AI agents,marimo-team/marimo,3842,devin-ai-integration[bot],ok,1,0,0,0,3,0,1,3
+2861751791,AI agents,marimo-team/marimo,3843,devin-ai-integration[bot],ok,0,0,0,0,5,0,0,5
+2862179936,AI agents,bentoml/BentoML,5222,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2869463251,AI agents,crewAIInc/crewAI,2192,devin-ai-integration[bot],ok,1,0,0,1,1,0,1,2
+2870860967,AI agents,marimo-team/marimo,3883,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2872773751,AI agents,disler/single-file-agents,5,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2878797964,AI agents,disler/single-file-agents,6,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2884473950,AI agents,ComposioHQ/composio,1378,devin-ai-integration[bot],ok,3,10,0,1,4,0,13,5
+2887628012,AI agents,codegen-sh/codegen,701,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2888969472,AI agents,airbytehq/airbyte,54878,devin-ai-integration[bot],ok,0,0,0,4,2,0,0,6
+2888982802,AI agents,airbytehq/airbyte,54897,devin-ai-integration[bot],ok,1,0,0,2,3,0,1,5
+2889084115,AI agents,airbytehq/airbyte,55005,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2889242157,AI agents,vlm-run/vlmrun-hub,121,devin-ai-integration[bot],ok,2,0,0,1,1,0,2,2
+2889287277,AI agents,vlm-run/vlmrun-hub,122,devin-ai-integration[bot],ok,2,0,0,0,1,0,2,1
+2889288178,AI agents,vlm-run/vlmrun-hub,123,devin-ai-integration[bot],ok,2,0,0,0,1,0,2,1
+2889292561,AI agents,vlm-run/vlmrun-hub,124,devin-ai-integration[bot],ok,1,0,0,0,1,0,1,1
+2892552345,AI agents,stack-auth/stack-auth,503,devin-ai-integration[bot],ok,26,0,0,2,3,0,26,5
+2892580326,AI agents,marimo-team/marimo,3966,devin-ai-integration[bot],ok,2,0,0,0,2,0,2,2
+2894930869,AI agents,crewAIInc/crewAI,2277,devin-ai-integration[bot],ok,5,0,0,4,1,0,5,5
+2895280174,AI agents,marimo-team/marimo,3977,devin-ai-integration[bot],ok,0,0,0,2,2,0,0,4
+2895280316,AI agents,marimo-team/marimo,3978,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2895754600,AI agents,AgentOps-AI/agentops,729,devin-ai-integration[bot],ok,0,7,0,0,2,0,7,2
+2895849861,AI agents,airbytehq/airbyte,55202,devin-ai-integration[bot],ok,0,0,0,14,2,0,0,16
+2901612191,AI agents,marimo-team/marimo,4008,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2901619958,AI agents,marimo-team/marimo,4009,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2901620466,AI agents,marimo-team/marimo,4010,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+2901653641,AI agents,marimo-team/marimo,4011,devin-ai-integration[bot],ok,0,0,0,1,4,0,0,5
+2904873173,AI agents,marimo-team/marimo,4033,devin-ai-integration[bot],ok,0,0,0,1,3,0,0,4
+2905480608,AI agents,Osly-AI/PocketManus,2,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2908717563,AI agents,marimo-team/marimo,4055,devin-ai-integration[bot],ok,0,0,0,1,3,0,0,4
+2910029842,AI agents,crewAIInc/crewAI,2335,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2911983646,AI agents,disler/single-file-agents,7,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2912958566,AI agents,crewAIInc/crewAI,2342,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2914582204,AI agents,crewAIInc/crewAI,2352,devin-ai-integration[bot],ok,2,0,0,2,2,0,2,4
+2918683850,AI agents,crewAIInc/crewAI,2369,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+2925357207,AI agents,disler/single-file-agents,8,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2926270506,AI agents,disler/single-file-agents,9,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2939503388,AI agents,get-convex/convex-helpers,510,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2939562448,AI agents,airbytehq/PyAirbyte,631,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2939739434,AI agents,airbytehq/PyAirbyte,633,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2947041637,AI agents,airbytehq/airbyte,56389,devin-ai-integration[bot],ok,0,0,0,1,3,0,0,4
+2949364196,AI agents,crewAIInc/crewAI,2476,devin-ai-integration[bot],ok,3,0,0,1,1,0,3,2
+2960029883,AI agents,Jij-Inc/OpenJij,451,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2964017894,AI agents,airbytehq/PyAirbyte,650,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+2970993516,AI agents,DannyMac180/meta-agent,15,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2971908072,AI agents,digitaldemocracy2030/kouchou-ai,232,devin-ai-integration[bot],ok,0,0,0,2,4,0,0,6
+2971926630,AI agents,digitaldemocracy2030/kouchou-ai,233,devin-ai-integration[bot],ok,5,0,0,1,4,0,5,5
+2976318527,AI agents,digitaldemocracy2030/kouchou-ai,244,devin-ai-integration[bot],ok,1,0,0,2,4,0,1,6
+2976319344,AI agents,digitaldemocracy2030/kouchou-ai,245,devin-ai-integration[bot],ok,1,0,0,2,2,0,1,4
+2976332198,AI agents,digitaldemocracy2030/kouchou-ai,247,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+2978436805,AI agents,digitaldemocracy2030/kouchou-ai,251,devin-ai-integration[bot],ok,1,0,0,6,3,0,1,9
+2978840535,AI agents,crewAIInc/crewAI,2537,devin-ai-integration[bot],ok,3,0,0,5,2,0,3,7
+2980213795,AI agents,GlareDB/glaredb,3608,devin-ai-integration[bot],ok,1,0,0,2,1,0,1,3
+2982204377,AI agents,crewAIInc/crewAI,2548,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2982438384,AI agents,crewAIInc/crewAI,2552,devin-ai-integration[bot],ok,3,0,0,6,2,0,3,8
+2984176797,AI agents,crewAIInc/crewAI,2562,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
+2986070957,AI agents,neondatabase/neon,11526,devin-ai-integration[bot],ok,3,0,0,2,2,0,3,4
+2989761342,AI agents,crewAIInc/crewAI,2588,devin-ai-integration[bot],ok,10,0,0,1,1,0,10,2
+2990115371,AI agents,crewAIInc/crewAI,2594,devin-ai-integration[bot],ok,4,0,0,2,1,0,4,3
+2990679795,AI agents,mendableai/firecrawl,1448,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+2993960739,AI agents,mendableai/firecrawl,1459,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3004072776,AI agents,digitaldemocracy2030/kouchou-ai,331,devin-ai-integration[bot],ok,0,0,0,3,2,0,0,5
+3006259704,AI agents,tumf/mcp-text-editor,8,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+3009041550,AI agents,vladfi1/slippi-ai,36,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3009482660,AI agents,vladfi1/slippi-ai,38,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3016994685,AI agents,neondatabase/neon,11698,devin-ai-integration[bot],ok,3,0,0,0,2,0,3,2
+3027014635,AI agents,reflex-dev/reflex-web,1314,devin-ai-integration[bot],ok,4,0,0,0,1,0,4,1
+3027102072,AI agents,reflex-dev/reflex-web,1318,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3029823831,AI agents,reflex-dev/reflex-web,1326,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3029848964,AI agents,reflex-dev/reflex-web,1328,devin-ai-integration[bot],ok,2,0,0,0,2,0,2,2
+3029881950,AI agents,reflex-dev/reflex-web,1330,devin-ai-integration[bot],ok,4,0,0,0,1,0,4,1
+3032813632,AI agents,reflex-dev/reflex,5226,devin-ai-integration[bot],ok,4,0,0,1,2,0,4,3
+3032932433,AI agents,mendableai/firecrawl,1510,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3033064900,AI agents,reflex-dev/reflex-web,1334,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3036314560,AI agents,mendableai/firecrawl,1514,devin-ai-integration[bot],ok,3,0,0,0,1,0,3,1
+3037451152,AI agents,digitaldemocracy2030/kouchou-ai,422,devin-ai-integration[bot],ok,0,0,0,10,3,0,0,13
+3050346044,AI agents,mendableai/firecrawl,1533,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3050491453,AI agents,langbot-app/LangBot,1376,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3057663648,AI agents,airbytehq/airbyte,60225,devin-ai-integration[bot],ok,4,0,0,0,3,0,4,3
+3058736038,AI agents,langbot-app/LangBot,1397,devin-ai-integration[bot],ok,1,0,0,0,1,0,1,1
+3061751436,AI agents,langbot-app/LangBot,1418,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3062887664,AI agents,langbot-app/LangBot,1421,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3064113810,AI agents,different-ai/zero-finance,106,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3064641172,AI agents,airbytehq/PyAirbyte,669,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3064701818,AI agents,airbytehq/PyAirbyte,670,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3067443431,AI agents,mendableai/firecrawl,1557,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3071829832,AI agents,digitaldemocracy2030/kouchou-ai,536,devin-ai-integration[bot],ok,0,0,0,5,3,0,0,8
+3075723453,AI agents,crewAIInc/crewAI,2865,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3075757415,AI agents,crewAIInc/crewAI,2866,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3076401687,AI agents,Azure/azure-kusto-python,583,copilot-swe-agent[bot],ok,0,2,0,6,8,0,2,14
+3076670977,AI agents,microsoft/AzureTRE,4551,copilot-swe-agent[bot],ok,1,6,0,6,9,0,7,15
+3076685839,AI agents,digitaldemocracy2030/kouchou-ai,549,devin-ai-integration[bot],ok,1,0,0,8,4,0,1,12
+3077212751,AI agents,langbot-app/LangBot,1461,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3077668165,AI agents,microsoft/magentic-ui,59,copilot-swe-agent[bot],ok,0,0,0,3,2,0,0,5
+3077768704,AI agents,microsoft/magentic-ui,62,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3078356584,AI agents,microsoft/lisa,3811,copilot-swe-agent[bot],ok,5,6,0,5,4,0,11,9
+3078777355,AI agents,crewAIInc/crewAI,2870,devin-ai-integration[bot],ok,4,0,0,1,1,0,4,2
+3078782339,AI agents,microsoft/graphrag,1944,copilot-swe-agent[bot],ok,0,0,0,4,4,0,0,8
+3080751824,AI agents,Azure/azure-sdk-for-net,50182,copilot-swe-agent[bot],ok,18,18,0,2,2,0,36,4
+3081361910,AI agents,microsoft/lisa,3816,copilot-swe-agent[bot],ok,3,3,0,2,1,0,6,3
+3081620313,AI agents,AliAkhtari78/SpotifyScraper,21,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3082070083,AI agents,Azure/azure-storage-fuse,1780,copilot-swe-agent[bot],ok,15,20,0,1,3,0,35,4
+3082820826,AI agents,mlflow/mlflow,15839,copilot-swe-agent[bot],ok,15,16,0,6,6,0,31,12
+3084261971,AI agents,microsoft/fabric-cicd,315,copilot-swe-agent[bot],ok,4,3,0,4,5,0,7,9
+3084794817,AI agents,microsoft/lisa,3822,copilot-swe-agent[bot],ok,4,4,0,3,2,0,8,5
+3084795047,AI agents,567-labs/instructor,1555,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+3085398469,AI agents,mlflow/mlflow,15856,copilot-swe-agent[bot],ok,8,5,0,2,3,0,13,5
+3090192279,AI agents,crewAIInc/crewAI,2904,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3090570894,AI agents,spcl/dace,2019,copilot-swe-agent[bot],ok,42,31,0,6,11,0,73,17
+3091643325,AI agents,AliAkhtari78/SpotifyScraper,48,copilot-swe-agent[bot],ok,0,4,0,6,5,0,4,11
+3091765131,AI agents,microsoft/debug-gym,126,copilot-swe-agent[bot],ok,4,4,0,1,1,0,8,2
+3091825094,AI agents,microsoft/debug-gym,129,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3092136699,AI agents,aavetis/PRarena,2,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3092813223,AI agents,frenck/spook,975,copilot-swe-agent[bot],ok,2,2,0,1,3,0,4,4
+3094020110,AI agents,mlflow/mlflow,15904,copilot-swe-agent[bot],ok,0,1,0,1,1,0,1,2
+3094173620,AI agents,rqlite/rqlite,2090,copilot-swe-agent[bot],ok,10,10,0,2,5,0,20,7
+3094439662,AI agents,567-labs/instructor,1566,devin-ai-integration[bot],ok,0,0,0,0,2,0,0,2
+3094442612,AI agents,567-labs/instructor,1567,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+3094575862,AI agents,adrgs/requestrepo,64,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3095115214,AI agents,aavetis/PRarena,4,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3097996516,AI agents,adrgs/requestrepo,67,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3103634798,AI agents,microsoft/graphrag,1956,copilot-swe-agent[bot],ok,0,0,0,47,43,0,0,90
+3108908027,AI agents,mlflow/mlflow,16009,copilot-swe-agent[bot],ok,6,6,0,0,1,0,12,1
+3109263417,AI agents,mlflow/mlflow,16014,copilot-swe-agent[bot],ok,1,1,0,0,1,0,2,1
+3113006799,AI agents,mlflow/mlflow,16039,copilot-swe-agent[bot],ok,0,3,0,2,2,0,3,4
+3113782046,AI agents,microsoft/lisa,3839,copilot-swe-agent[bot],ok,5,3,0,7,6,0,8,13
+3114898378,AI agents,artprima/prometheus-metrics-bundle,118,copilot-swe-agent[bot],ok,28,28,0,22,20,0,56,42
+3115451494,AI agents,crewAIInc/crewAI,2946,devin-ai-integration[bot],ok,1,0,0,1,1,0,1,2
+3116225832,AI agents,mlflow/mlflow,16053,copilot-swe-agent[bot],ok,0,0,0,0,2,0,0,2
+3117273620,AI agents,MikePopoloski/slang,1393,copilot-swe-agent[bot],ok,4,4,0,1,2,0,8,3
+3118493362,AI agents,aavetis/PRarena,10,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3118735492,AI agents,a16z/halmos,533,copilot-swe-agent[bot],ok,6,6,0,0,0,0,12,0
+3118782981,AI agents,aavetis/PRarena,13,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3119031442,AI agents,aavetis/PRarena,15,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3119042017,AI agents,microsoft/Olive,1897,copilot-swe-agent[bot],ok,14,27,0,13,10,0,41,23
+3119857154,AI agents,mlflow/mlflow,16080,copilot-swe-agent[bot],ok,2,1,0,1,3,0,3,4
+3120162244,AI agents,mlflow/mlflow,16088,copilot-swe-agent[bot],ok,0,1,0,1,1,0,1,2
+3120603357,AI agents,mlflow/mlflow,16093,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3122455352,AI agents,nearai/nearai,1179,copilot-swe-agent[bot],ok,0,2,0,1,0,0,2,1
+3123684653,AI agents,mlflow/mlflow,16112,copilot-swe-agent[bot],ok,4,4,0,6,6,0,8,12
+3125029980,AI agents,nearai/nearai,1181,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3125458401,AI agents,microsoft/Olive,1904,copilot-swe-agent[bot],ok,0,14,0,10,9,0,14,19
+3125531606,AI agents,Azure/azure-sdk-for-python,41463,copilot-swe-agent[bot],ok,24,18,0,3,5,0,42,8
+3126127102,AI agents,teaxyz/chai,112,sanchitram1,ok,1,1,1,1,0,1,2,1
+3126647068,AI agents,langbot-app/LangBot,1510,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3127150444,AI agents,octgn/OCTGN,2250,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3127341913,AI agents,ObservedObserver/async-code,1,ObservedObserver,ok,0,0,0,0,0,0,0,0
+3127380361,AI agents,ObservedObserver/async-code,2,ObservedObserver,ok,0,0,0,0,0,0,0,0
+3127998239,AI agents,ObservedObserver/async-code,3,ObservedObserver,ok,0,0,0,0,0,0,0,0
+3128183116,AI agents,ObservedObserver/async-code,4,ObservedObserver,ok,0,0,0,0,0,0,0,0
+3128820704,AI agents,aavetis/PRarena,23,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3130418267,AI agents,aavetis/PRarena,28,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3131328255,AI agents,getsentry/sentry,93150,billyvg,ok,0,0,0,0,1,0,0,1
+3131569548,AI agents,Azure/azure-sdk-for-python,41492,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3131698049,AI agents,BerriAI/litellm,11564,ishaan-jaff,ok,0,0,0,1,1,0,0,2
+3132740864,AI agents,keephq/keep,5002,talboren,ok,0,0,0,0,2,0,0,2
+3133771594,AI agents,microsoft/Qcodes,7213,copilot-swe-agent[bot],ok,38,24,0,6,8,0,62,14
+3135068930,AI agents,microsoft/Olive,1907,copilot-swe-agent[bot],ok,8,7,0,12,5,0,15,17
+3135410764,AI agents,crewAIInc/crewAI,2994,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3135538721,AI agents,getsentry/sentry,93304,iamrajjoshi,ok,1,0,1,0,2,0,1,2
+3136594828,AI agents,microsoft/Qcodes,7222,copilot-swe-agent[bot],ok,0,2,0,3,4,0,2,7
+3137099861,AI agents,getsentry/sentry,93325,roaga,ok,0,0,0,0,1,0,0,1
+3138256165,AI agents,a16z/halmos,539,copilot-swe-agent[bot],ok,8,5,0,2,1,0,13,3
+3138517311,AI agents,AgentOps-AI/agentops,1064,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3138534395,AI agents,getsentry/sentry,93402,iamrajjoshi,ok,8,0,3,0,1,0,8,1
+3138995292,AI agents,mlflow/mlflow,16221,copilot-swe-agent[bot],ok,2,2,0,0,2,0,4,2
+3139359977,AI agents,microsoft/lisa,3855,copilot-swe-agent[bot],ok,5,6,0,3,3,0,11,6
+3139579722,AI agents,microsoft/AzureTRE,4589,copilot-swe-agent[bot],ok,0,2,0,4,4,0,2,8
+3139974947,AI agents,getsentry/sentry-python,4459,szokeasaurusrex,ok,1,0,0,11,1,4,1,12
+3140117936,AI agents,keephq/keep,5015,shahargl,ok,0,0,0,0,1,0,0,1
+3140666398,AI agents,mlflow/mlflow,16231,copilot-swe-agent[bot],ok,9,9,0,3,5,0,18,8
+3140874272,AI agents,airbytehq/PyAirbyte,692,devin-ai-integration[bot],ok,0,0,0,0,3,0,0,3
+3144470664,AI agents,WorkflowAI/WorkflowAI,449,pierrevalade,ok,0,0,0,0,1,0,0,1
+3145373517,AI agents,microsoft/onnxscript,2383,copilot-swe-agent[bot],ok,3,1,0,0,1,0,4,1
+3146305288,AI agents,microsoft/Olive,1915,copilot-swe-agent[bot],ok,4,1,0,3,3,0,5,6
+3146310469,AI agents,microsoft/onnxscript,2388,copilot-swe-agent[bot],ok,1,9,0,1,2,0,10,3
+3147157841,AI agents,remotion-dev/remotion,5363,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3148267777,AI agents,microsoft/lisa,3863,copilot-swe-agent[bot],ok,14,12,0,16,13,0,26,29
+3148655251,AI agents,mlflow/mlflow,16273,copilot-swe-agent[bot],ok,1,1,0,0,2,0,2,2
+3148932692,AI agents,microsoft/Qcodes,7240,copilot-swe-agent[bot],ok,42,20,0,4,4,0,62,8
+3149019667,AI agents,remotion-dev/remotion,5384,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3149341709,AI agents,getsentry/sentry-python,4474,szokeasaurusrex,ok,2,0,1,0,1,0,2,1
+3150026775,AI agents,getsentry/sentry-python,4476,szokeasaurusrex,ok,0,0,0,3,1,2,0,4
+3150091151,AI agents,github/issue-metrics,540,copilot-swe-agent[bot],ok,4,4,0,6,5,0,8,11
+3150205159,AI agents,WorkflowAI/WorkflowAI,460,pierrevalade,ok,0,0,0,5,1,4,0,6
+3150510293,AI agents,a16z/halmos,544,copilot-swe-agent[bot],ok,6,0,0,0,0,0,6,0
+3150662401,AI agents,WorkflowAI/WorkflowAI,465,pierrevalade,ok,9,0,3,9,1,5,9,10
+3151697572,AI agents,microsoft/autogen,6684,copilot-swe-agent[bot],ok,0,0,0,2,3,0,0,5
+3152257828,AI agents,microsoft/typespec,7667,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3153698253,AI agents,microsoft/fabric-cicd,347,copilot-swe-agent[bot],ok,2,2,0,2,1,0,4,3
+3154088521,AI agents,getsentry/sentry,93709,billyvg,ok,0,0,0,0,1,0,0,1
+3154494868,AI agents,reflex-dev/reflex-web,1435,devin-ai-integration[bot],ok,2,4,0,0,1,0,6,1
+3154952530,AI agents,WorkflowAI/WorkflowAI,489,pierrevalade,ok,2,0,1,1,1,1,2,2
+3155084033,AI agents,microsoft/autogen,6690,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3155745045,AI agents,mlflow/mlflow,16307,copilot-swe-agent[bot],ok,2,2,0,0,2,0,4,2
+3156456557,AI agents,mlflow/mlflow,16311,copilot-swe-agent[bot],ok,3,3,0,1,3,0,6,4
+3158038793,AI agents,mendableai/firecrawl,1684,devin-ai-integration[bot],ok,1,0,0,0,1,0,1,1
+3158055411,AI agents,microsoft/onnxscript,2401,copilot-swe-agent[bot],ok,1,1,0,0,2,0,2,2
+3158079001,AI agents,teaxyz/chai,125,sanchitram1,ok,0,0,0,1,0,1,0,1
+3158220791,AI agents,Azure/azure-sdk-tools,10930,copilot-swe-agent[bot],ok,3,4,0,2,2,0,7,4
+3158599292,AI agents,WorkflowAI/WorkflowAI,509,pierrevalade,ok,1,0,0,1,1,0,1,2
+3158819982,AI agents,microsoft/autogen,6697,copilot-swe-agent[bot],ok,2,2,0,7,4,0,4,11
+3158983348,AI agents,microsoft/RD-Agent,975,copilot-swe-agent[bot],ok,0,0,0,4,4,0,0,8
+3160615563,AI agents,onnx/onnx,7055,copilot-swe-agent[bot],ok,6,4,0,3,4,0,10,7
+3161229907,AI agents,DonDebonair/slack-machine,1254,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3161317787,AI agents,microsoft/onnxscript,2406,copilot-swe-agent[bot],ok,4,7,0,3,3,0,11,6
+3161413967,AI agents,a16z/halmos,551,copilot-swe-agent[bot],ok,1,1,0,0,1,0,2,1
+3161437023,AI agents,WorkflowAI/WorkflowAI,521,pierrevalade,ok,0,0,0,2,1,1,0,3
+3164935344,AI agents,mlflow/mlflow,16367,copilot-swe-agent[bot],ok,1,1,0,0,2,0,2,2
+3165063018,AI agents,mlflow/mlflow,16369,copilot-swe-agent[bot],ok,0,0,0,0,2,0,0,2
+3165202236,AI agents,airbytehq/PyAirbyte,697,devin-ai-integration[bot],ok,0,2,0,1,4,0,2,5
+3165822621,AI agents,keephq/keep,5074,talboren,ok,0,0,0,0,1,0,0,1
+3166030819,AI agents,WorkflowAI/WorkflowAI,538,pierrevalade,ok,2,0,1,4,1,1,2,5
+3166697455,AI agents,reflex-dev/reflex-web,1445,devin-ai-integration[bot],ok,0,1,0,0,0,0,1,0
+3166878308,AI agents,mlflow/mlflow,16389,copilot-swe-agent[bot],ok,0,0,0,0,2,0,0,2
+3168726032,AI agents,WorkflowAI/WorkflowAI,548,guillaq,ok,0,0,0,1,1,1,0,2
+3168889284,AI agents,microsoft/debug-gym,161,copilot-swe-agent[bot],ok,0,2,0,5,6,0,2,11
+3169182560,AI agents,exa-labs/exa-py,99,gabrielcammany,ok,0,0,0,0,0,0,0,0
+3169258035,AI agents,exa-labs/exa-py,100,jld-adriano,ok,0,0,0,0,0,0,0,0
+3169711198,AI agents,skypilot-org/skypilot,6067,Michaelvll,ok,0,0,0,0,0,0,0,0
+3170718599,AI agents,OpenPipe/ART,161,saum7800,ok,0,0,0,0,0,0,0,0
+3171113463,AI agents,aztfmod/terraform-provider-azurecaf,328,copilot-swe-agent[bot],ok,1,6,0,12,13,0,7,25
+3171819372,AI agents,getsentry/sentry,94169,chargome,ok,7,0,1,0,0,0,7,0
+3171852682,AI agents,browser-use/browser-use,2086,mertunsall,ok,0,0,0,3,2,2,0,5
+3172444753,AI agents,microsoft/lisa,3884,copilot-swe-agent[bot],ok,0,0,0,6,4,0,0,10
+3172939109,AI agents,crewAIInc/crewAI,3060,devin-ai-integration[bot],ok,3,0,0,2,1,0,3,3
+3174546403,AI agents,OpenPipe/ART,162,saum7800,ok,0,0,0,0,0,0,0,0
+3174571388,AI agents,getsentry/sentry,94261,BYK,ok,0,0,0,0,0,0,0,0
+3174634284,AI agents,getsentry/sentry,94264,BYK,ok,0,0,0,3,1,1,0,4
+3175054599,AI agents,aztfmod/terraform-provider-azurecaf,332,copilot-swe-agent[bot],ok,0,0,0,7,8,0,0,15
+3176708032,AI agents,mendableai/firecrawl,1713,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3176759438,AI agents,keephq/keep,5101,shahargl,ok,0,0,0,0,1,0,0,1
+3176871505,AI agents,Z3Prover/z3,7695,copilot-swe-agent[bot],ok,0,0,0,5,3,0,0,8
+3177251348,AI agents,OpenPipe/ART,164,saum7800,ok,0,0,0,0,0,0,0,0
+3177433178,AI agents,OpenPipe/ART,165,saum7800,ok,0,0,0,0,0,0,0,0
+3179515957,AI agents,microsoft/typespec,7760,copilot-swe-agent[bot],ok,16,16,0,5,5,0,32,10
+3179973928,AI agents,Azure/azure-sdk-for-python,41797,copilot-swe-agent[bot],ok,0,0,0,2,1,0,0,3
+3180190431,AI agents,OpenPipe/ART,167,saum7800,ok,2,0,2,0,0,0,2,0
+3181433167,AI agents,microsoft/lisa,3898,copilot-swe-agent[bot],ok,5,5,0,3,1,0,10,4
+3181479231,AI agents,mlflow/mlflow,16472,copilot-swe-agent[bot],ok,0,0,0,0,2,0,0,2
+3182061205,AI agents,teaxyz/chai,133,sanchitram1,ok,2,1,1,0,0,0,3,0
+3182466609,AI agents,browser-use/browser-use,2150,mertunsall,ok,0,0,0,1,2,1,0,3
+3183504987,AI agents,Z3Prover/z3,7701,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3184116369,AI agents,reflex-dev/reflex-web,1452,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3184434153,AI agents,reflex-dev/reflex-web,1453,devin-ai-integration[bot],ok,0,2,0,7,2,0,2,9
+3185225851,AI agents,microsoft/torchgeo,2861,copilot-swe-agent[bot],ok,4,4,0,1,1,0,8,2
+3185333353,AI agents,TorchIO-project/torchio,1330,copilot-swe-agent[bot],ok,17,17,0,4,2,0,34,6
+3185381113,AI agents,browser-use/browser-use,2160,MagMueller,ok,0,0,0,0,2,0,0,2
+3185509791,AI agents,iterative/datachain,1191,dmpetrov,ok,0,2,0,0,3,0,2,3
+3187683940,AI agents,microsoft/lisa,3901,copilot-swe-agent[bot],ok,0,0,0,9,4,0,0,13
+3189898546,AI agents,microsoft/onnxscript,2426,copilot-swe-agent[bot],ok,2,15,0,1,2,0,17,3
+3190127291,AI agents,airbytehq/airbyte,62455,devin-ai-integration[bot],ok,0,0,0,0,5,0,0,5
+3190739105,AI agents,matsui528/rii,69,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3192012013,AI agents,zfit/zfit,643,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3192545670,AI agents,NewFuture/DDNS,495,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3192728541,AI agents,zfit/zfit,644,copilot-swe-agent[bot],ok,0,2,0,11,10,0,2,21
+3193101857,AI agents,EvolvingLMMs-Lab/lmms-eval,734,Luodian,ok,0,1,0,1,2,1,1,3
+3193514773,AI agents,microsoft/onnxscript,2431,copilot-swe-agent[bot],ok,0,0,0,2,3,0,0,5
+3193524394,AI agents,NewFuture/DDNS,498,copilot-swe-agent[bot],ok,28,28,0,1,3,0,56,4
+3193634550,AI agents,Azure/azure-sdk-for-python,41852,copilot-swe-agent[bot],ok,10,8,0,2,1,0,18,3
+3193741359,AI agents,microsoft/fabric-cicd,383,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3194326319,AI agents,NewFuture/DDNS,499,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3195573803,AI agents,NewFuture/DDNS,500,copilot-swe-agent[bot],ok,6,6,0,1,1,0,12,2
+3195788503,AI agents,NewFuture/DDNS,501,copilot-swe-agent[bot],ok,4,4,0,0,0,0,8,0
+3196295632,AI agents,microsoft/fabric-cicd,386,copilot-swe-agent[bot],ok,4,4,0,1,1,0,8,2
+3196955536,AI agents,valkey-io/valkey-glide,4289,copilot-swe-agent[bot],ok,0,4,0,5,5,0,4,10
+3198591963,AI agents,valkey-io/valkey-glide,4295,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3199112507,AI agents,NewFuture/DDNS,505,copilot-swe-agent[bot],ok,2,2,0,1,2,0,4,3
+3199839671,AI agents,microsoft/onnxscript,2437,copilot-swe-agent[bot],ok,2,3,0,1,2,0,5,3
+3199905484,AI agents,microsoft/autogen,6747,copilot-swe-agent[bot],ok,3,3,0,1,3,0,6,4
+3199964804,AI agents,microsoft/fabric-cicd,394,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3200319091,AI agents,mediar-ai/terminator,175,louis030195,ok,0,0,0,0,0,0,0,0
+3200615668,AI agents,getsentry/sentry,94889,jas-kas,ok,23,0,1,2,1,1,23,3
+3200836668,AI agents,514-labs/moose,2529,callicles,ok,0,3,0,0,1,0,3,1
+3200914224,AI agents,langflow-ai/langflow,8870,ogabrielluiz,ok,0,0,0,1,3,1,0,4
+3200961570,AI agents,laude-institute/terminal-bench,429,alexgshaw,ok,3,0,2,0,0,0,3,0
+3201207080,AI agents,datahub-project/datahub,13958,hsheth2,ok,0,0,0,0,3,0,0,3
+3201304127,AI agents,ucbepic/docetl,377,shreyashankar,ok,0,0,0,0,0,0,0,0
+3201407554,AI agents,ucbepic/docetl,378,shreyashankar,ok,0,0,0,0,0,0,0,0
+3201428116,AI agents,willccbb/verifiers,123,willccbb,ok,0,0,0,1,0,0,0,1
+3201813962,AI agents,willccbb/verifiers,124,willccbb,ok,0,0,0,1,0,0,0,1
+3203387779,AI agents,ucbepic/docetl,379,shreyashankar,ok,0,0,0,0,0,0,0,0
+3203515928,AI agents,laude-institute/terminal-bench,433,alexgshaw,ok,0,0,0,0,0,0,0,0
+3203547623,AI agents,radius-project/radius,9934,copilot-swe-agent[bot],ok,0,0,0,0,6,0,0,6
+3204333284,AI agents,ChristopheZhao/ChaGPT-API-Call,20,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3204337980,AI agents,InamuraJIN/ActionRecorder,84,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3204463734,AI agents,Efeckc17/YoutubeGO,16,Efeckc17,ok,0,0,0,0,0,0,0,0
+3204520335,AI agents,jxxghp/MoviePilot,4534,jxxghp,ok,0,0,0,0,0,0,0,0
+3205514535,AI agents,DeepLabCut/DeepLabCut,3047,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3206203957,AI agents,microsoft/autogen,6752,copilot-swe-agent[bot],ok,3,2,0,0,1,0,5,1
+3207071991,AI agents,browser-use/browser-use,2327,mertunsall,ok,0,0,0,0,2,0,0,2
+3207286828,AI agents,AgentOps-AI/agentops,1134,areibman,ok,0,0,0,0,0,0,0,0
+3207423060,AI agents,BlueFalconHD/apple_generative_model_safety_decrypted,1,jason-curtis,ok,0,0,0,1,0,0,0,1
+3209950136,AI agents,langfuse/langfuse-python,1246,marcklingen,ok,0,0,0,0,0,0,0,0
+3210536156,AI agents,reflex-dev/reflex-web,1465,devin-ai-integration[bot],ok,0,1,0,0,1,0,1,1
+3211580457,AI agents,browser-use/browser-use,2348,MagMueller,ok,0,0,0,2,2,1,0,4
+3211605383,AI agents,pulearn/pulearn,61,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3211849916,AI agents,jxxghp/MoviePilot,4561,jxxghp,ok,0,0,0,0,0,0,0,0
+3211931262,AI agents,pulearn/pulearn,62,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3212186764,AI agents,matthias-k/pysaliency,110,copilot-swe-agent[bot],ok,2,1,0,0,2,0,3,2
+3212315483,AI agents,WorkflowAI/WorkflowAI,672,yannbu,ok,2,0,1,1,1,1,2,2
+3212422037,AI agents,pulearn/pulearn,63,copilot-swe-agent[bot],ok,0,0,0,3,1,0,0,4
+3212856580,AI agents,getsentry/sentry,95035,buenaflor,ok,1,0,1,0,1,0,1,1
+3212993541,AI agents,jxxghp/MoviePilot,4566,jxxghp,ok,0,0,0,0,0,0,0,0
+3213110142,AI agents,bruin-data/ingestr,299,karakanb,ok,0,0,0,0,0,0,0,0
+3213367725,AI agents,Azure/azure-sdk-for-python,41942,copilot-swe-agent[bot],ok,3,3,0,0,0,0,6,0
+3213599064,AI agents,reflex-dev/reflex-web,1469,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3213779460,AI agents,iterative/datachain,1215,dmpetrov,ok,0,7,0,0,3,0,7,3
+3214122373,AI agents,spcl/dace,2077,copilot-swe-agent[bot],ok,7,6,0,1,1,0,13,2
+3214496315,AI agents,kyegomez/swarms,949,kyegomez,ok,0,0,0,0,1,0,0,1
+3214915262,AI agents,jxxghp/MoviePilot,4577,jxxghp,ok,0,0,0,0,0,0,0,0
+3215138589,AI agents,jxxghp/MoviePilot,4579,jxxghp,ok,0,0,0,0,0,0,0,0
+3215483455,AI agents,browser-use/browser-use,2374,mertunsall,ok,0,0,0,0,2,0,0,2
+3216289477,AI agents,LorenFrankLab/spyglass,1346,copilot-swe-agent[bot],ok,2,2,0,0,1,0,4,1
+3216426710,AI agents,python-cachier/cachier,279,copilot-swe-agent[bot],ok,0,0,0,1,0,0,0,1
+3217207276,AI agents,datahub-project/datahub,14016,hsheth2,ok,0,0,0,0,3,0,0,3
+3217261924,AI agents,datahub-project/datahub,14019,hsheth2,ok,0,0,0,2,1,1,0,3
+3217318621,AI agents,reflex-dev/reflex-web,1478,devin-ai-integration[bot],ok,0,1,0,0,1,0,1,1
+3219282636,AI agents,docling-project/docling,1926,copilot-swe-agent[bot],ok,2,0,0,0,3,0,2,3
+3219342467,AI agents,microsoft/debug-gym,179,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3219667345,AI agents,docling-project/docling,1928,copilot-swe-agent[bot],ok,0,0,0,1,4,0,0,5
+3220166345,AI agents,reflex-dev/reflex-web,1483,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3220699146,AI agents,reflex-dev/reflex-web,1484,devin-ai-integration[bot],ok,0,4,0,0,1,0,4,1
+3220799500,AI agents,reflex-dev/reflex,5555,devin-ai-integration[bot],ok,2,2,0,0,3,0,4,3
+3220805963,AI agents,reflex-dev/reflex-web,1485,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3220896124,AI agents,reflex-dev/reflex-web,1486,devin-ai-integration[bot],ok,0,4,0,0,2,0,4,2
+3221298768,AI agents,reflex-dev/reflex-web,1491,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3222565138,AI agents,microsoft/autogen,6797,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3222599276,AI agents,microsoft/autogen,6799,copilot-swe-agent[bot],ok,1,1,0,0,1,0,2,1
+3223299299,AI agents,reflex-dev/reflex-web,1502,devin-ai-integration[bot],ok,0,1,0,0,1,0,1,1
+3223461985,AI agents,microsoft/onnxscript,2447,copilot-swe-agent[bot],ok,10,18,0,4,4,0,28,8
+3223703470,AI agents,getsentry/sentry,95356,armenzg,ok,0,0,0,0,1,0,0,1
+3223709587,AI agents,allthingslinux/tux,944,kzndotsh,ok,0,0,0,0,2,0,0,2
+3223923166,AI agents,reflex-dev/reflex-web,1505,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
+3224534498,AI agents,reflex-dev/reflex-web,1510,devin-ai-integration[bot],ok,0,1,0,0,1,0,1,1
+3224735740,AI agents,NewFuture/DDNS,512,copilot-swe-agent[bot],ok,4,4,0,3,3,0,8,6
+3224777239,AI agents,14790897/handwriting-web,45,copilot-swe-agent[bot],ok,0,0,0,4,5,0,0,9
+3224798225,AI agents,bmander/graphserver,28,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3224819412,AI agents,bmander/graphserver,29,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3225037054,AI agents,NewFuture/DDNS,514,copilot-swe-agent[bot],ok,25,25,0,0,4,0,50,4
+3225093820,AI agents,bmander/graphserver,31,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3225271859,AI agents,python/python-docs-zh-tw,1105,copilot-swe-agent[bot],ok,5,5,0,2,4,0,10,6
+3225468380,AI agents,jeroenterheerdt/HAsmartirrigation,585,copilot-swe-agent[bot],ok,21,21,0,0,0,0,42,0
+3225486077,AI agents,NewFuture/DDNS,515,copilot-swe-agent[bot],ok,5,9,0,0,1,0,14,1
+3225614089,AI agents,bmander/graphserver,33,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3225638345,AI agents,BerriAI/litellm,12551,ishaan-jaff,ok,0,0,0,3,1,0,0,4
+3225681004,AI agents,jeroenterheerdt/HAsmartirrigation,588,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3226556821,AI agents,NewFuture/DDNS,521,copilot-swe-agent[bot],ok,14,19,0,0,3,0,33,3
+3226557036,AI agents,jeroenterheerdt/HAsmartirrigation,589,copilot-swe-agent[bot],ok,0,0,0,2,4,0,0,6
+3226602604,AI agents,jeroenterheerdt/HAsmartirrigation,590,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3226779561,AI agents,jeroenterheerdt/HAsmartirrigation,591,copilot-swe-agent[bot],ok,0,0,0,5,4,0,0,9
+3226800357,AI agents,crewAIInc/crewAI,3150,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3227004326,AI agents,messense/typst-py,108,copilot-swe-agent[bot],ok,2,2,0,7,5,0,4,12
+3228424652,AI agents,browser-use/browser-use,2437,mertunsall,ok,0,1,0,0,2,0,1,2
+3229043367,AI agents,jeroenterheerdt/HAsmartirrigation,593,copilot-swe-agent[bot],ok,0,0,0,3,2,0,0,5
+3229430451,AI agents,Arize-ai/phoenix,8571,mikeldking,ok,0,0,0,2,3,0,0,5
+3229578432,AI agents,reflex-dev/reflex-web,1513,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
+3230759504,AI agents,microsoft/onnxscript,2455,copilot-swe-agent[bot],ok,18,22,0,3,4,0,40,7
+3230910315,AI agents,PromtEngineer/localGPT,847,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3231931598,AI agents,valkey-io/valkey-glide,4376,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3231935037,AI agents,valkey-io/valkey-glide,4380,copilot-swe-agent[bot],ok,0,0,0,3,3,0,0,6
+3232422158,AI agents,willccbb/verifiers,141,willccbb,ok,0,0,0,1,0,0,0,1
+3232587454,AI agents,mendableai/firecrawl,1800,devin-ai-integration[bot],ok,0,0,0,1,1,0,0,2
+3232636358,AI agents,Azure/azure-sdk-for-python,42024,copilot-swe-agent[bot],ok,2,0,0,1,1,0,2,2
+3233131994,AI agents,reflex-dev/reflex-web,1518,devin-ai-integration[bot],ok,4,0,0,0,1,0,4,1
+3233174406,AI agents,reflex-dev/reflex,5575,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+3233722470,AI agents,PromtEngineer/localGPT,853,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3234052393,AI agents,axinc-ai/ailia-models,1704,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3235069491,AI agents,rohitg00/awesome-ai-apps,1,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3235347485,AI agents,NewFuture/DDNS,528,copilot-swe-agent[bot],ok,29,37,0,1,5,0,66,6
+3235734906,AI agents,kortix-ai/suna,953,markokraemer,ok,0,0,0,1,1,1,0,2
+3235947868,AI agents,reflex-dev/reflex-web,1520,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3236303099,AI agents,wzdavid/ThinkRAG,26,wzdavid,ok,0,0,0,0,0,0,0,0
+3236369998,AI agents,Azure/azure-sdk-for-python,42047,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3237976887,AI agents,jeroenterheerdt/HAsmartirrigation,604,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3238383944,AI agents,AgentOps-AI/agentops,1156,areibman,ok,0,0,0,0,1,0,0,1
+3239582067,AI agents,Bandit-HaxUnit/haxunit,34,Bandit-HaxUnit,ok,0,0,0,0,0,0,0,0
+3239748118,AI agents,valkey-io/valkey-glide,4407,copilot-swe-agent[bot],ok,5,3,0,0,0,0,8,0
+3241451851,AI agents,quantalogic/quantalogic,64,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3241570199,AI agents,Arize-ai/phoenix,8645,mikeldking,ok,2,0,1,1,0,1,2,1
+3241734959,AI agents,NewFuture/DDNS,536,copilot-swe-agent[bot],ok,7,25,0,1,4,0,32,5
+3244343726,AI agents,getsentry/sentry,95934,dcramer,ok,2,0,1,0,1,0,2,1
+3244675240,AI agents,Azure-Samples/openai-chat-vision-quickstart,54,copilot-swe-agent[bot],ok,2,2,0,0,0,0,4,0
+3244675358,AI agents,Azure-Samples/openai-chat-vision-quickstart,56,copilot-swe-agent[bot],ok,2,2,0,3,3,0,4,6
+3244901827,AI agents,NewFuture/DDNS,537,copilot-swe-agent[bot],ok,7,7,0,1,2,0,14,3
+3244974554,AI agents,Arize-ai/phoenix,8660,mikeldking,ok,2,0,0,1,0,0,2,1
+3244989711,AI agents,Arize-ai/phoenix,8661,mikeldking,ok,1,0,0,0,0,0,1,0
+3245408233,AI agents,kortix-ai/suna,1013,tnfssc,ok,0,0,0,0,1,0,0,1
+3245442057,AI agents,jeroenterheerdt/HAsmartirrigation,614,copilot-swe-agent[bot],ok,0,0,0,3,1,0,0,4
+3245783375,AI agents,jeroenterheerdt/HAsmartirrigation,620,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3246155636,AI agents,Ljzd-PRO/KToolBox,264,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3246180908,AI agents,langbot-app/LangBot,1582,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3246263935,AI agents,kortix-ai/suna,1018,tnfssc,ok,0,0,0,0,1,0,0,1
+3248544441,AI agents,wzdavid/ThinkRAG,27,wzdavid,ok,0,0,0,1,0,1,0,1
+3249840983,AI agents,reflex-dev/reflex-web,1533,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3249977632,AI agents,PromtEngineer/localGPT,904,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3250548398,AI agents,langchain-ai/langchain,32160,copilot-swe-agent[bot],ok,0,0,0,0,3,0,0,3
+3250549842,AI agents,langchain-ai/langchain,32161,copilot-swe-agent[bot],ok,0,0,0,1,4,0,0,5
+3250552871,AI agents,langchain-ai/langchain,32162,copilot-swe-agent[bot],ok,0,0,0,0,3,0,0,3
+3253313679,AI agents,567-labs/instructor,1735,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
+3253517563,AI agents,reflex-dev/reflex,5616,devin-ai-integration[bot],ok,2,1,0,0,3,0,3,3
+3253693371,AI agents,mendableai/firecrawl,1825,devin-ai-integration[bot],ok,0,0,0,2,2,0,0,4
+3255020828,AI agents,pamelafox/python-openai-demos,30,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
+3255564010,AI agents,docling-project/docling,1975,copilot-swe-agent[bot],ok,0,0,0,2,5,0,0,7
+3258691697,AI agents,Azure-Samples/openai-chat-vision-quickstart,60,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3258694358,AI agents,Azure-Samples/rag-postgres-openai-python,236,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
+3260366203,AI agents,browser-use/browser-use,2535,mertunsall,ok,0,0,0,0,2,0,0,2
+3261572196,AI agents,mlflow/mlflow,16878,copilot-swe-agent[bot],ok,8,5,0,1,2,0,13,3
+3265259944,AI agents,bmander/graphserver,49,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
+3265325720,AI agents,yutto-dev/yutto,539,copilot-swe-agent[bot],ok,4,6,0,0,5,0,10,5
+3266348344,AI agents,willccbb/verifiers,160,willccbb,ok,0,0,0,1,0,0,0,1
+3266377001,AI agents,willccbb/verifiers,161,willccbb,ok,0,0,0,1,0,0,0,1
+3266983404,AI agents,Ljzd-PRO/KToolBox,265,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3266984732,AI agents,Ljzd-PRO/KToolBox,267,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3267581502,AI agents,willccbb/verifiers,166,willccbb,ok,0,0,0,1,0,0,0,1
+3268208096,AI agents,mlflow/mlflow,16909,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3271196926,AI agents,AgentOps-AI/agentops,1179,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
+3271571849,AI agents,reflex-dev/reflex-web,1549,devin-ai-integration[bot],ok,11,1,0,5,2,0,12,7
+3271948323,AI agents,Ljzd-PRO/KToolBox,278,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+3271959157,AI agents,Ljzd-PRO/KToolBox,279,copilot-swe-agent[bot],ok,0,0,0,3,4,0,0,7
+3272051898,AI agents,mlflow/mlflow,16927,copilot-swe-agent[bot],ok,2,2,0,0,1,0,4,1
+3272229568,AI agents,vespa-engine/pyvespa,1097,copilot-swe-agent[bot],ok,0,0,0,2,0,0,0,2
+3272335041,AI agents,Ljzd-PRO/KToolBox,280,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3272353154,AI agents,Ljzd-PRO/KToolBox,283,copilot-swe-agent[bot],ok,0,0,0,0,1,0,0,1
+3275505167,AI agents,Ljzd-PRO/KToolBox,293,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
+2256920866,Human,keephq/keep,2958,shahargl,ok,0,0,0,0,1,0,0,1
+2257939947,Human,julep-ai/julep,1008,creatorrr,ok,2,0,1,0,3,0,2,3
+2258107647,Human,julep-ai/julep,1009,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
+2258241795,Human,microsoft/autogen,4881,jackgerrits,ok,0,0,0,1,0,0,0,1
+2258464517,Human,microsoft/typespec,5474,AlitzelMendez,ok,0,0,0,2,0,0,0,2
+2259134684,Human,crewAIInc/crewAI-tools,172,pythonbyte,ok,0,0,0,0,0,0,0,0
+2259244255,Human,astral-sh/ruff,15238,MichaReiser,ok,0,0,0,1,1,0,0,2
+2260748681,Human,keephq/keep,2979,shahargl,ok,0,0,0,0,1,0,0,1
+2260802549,Human,vlm-run/vlmrun-hub,46,spillai,ok,0,0,0,0,0,0,0,0
+2260812064,Human,vlm-run/vlmrun-hub,47,spillai,ok,0,0,0,0,0,0,0,0
+2262691551,Human,vlm-run/vlmrun-hub,53,spillai,ok,0,0,0,0,0,0,0,0
+2262795916,Human,SirVer/ultisnips,1562,idbrii,ok,0,0,0,6,0,3,0,6
+2263791524,Human,goat-sdk/goat,191,karimodm,ok,0,0,0,0,1,0,0,1
+2263908486,Human,dotnet/runtime,111152,pavelsavara,ok,8,0,4,3,1,1,8,4
+2264445875,Human,cloudflare/workerd,3301,dom96,ok,2,0,0,1,0,0,2,1
+2264866046,Human,airbytehq/airbyte,50971,edgao,ok,8,0,4,1,1,1,8,2
+2265140449,Human,blorm-network/ZerePy,62,leo-super-dev,ok,0,0,0,1,0,0,0,1
+2266427544,Human,marimo-team/marimo,3368,mscolnick,ok,0,0,0,0,2,0,0,2
+2266772678,Human,microsoft/semantic-kernel,10129,SergeyMenshykh,ok,4,0,2,0,0,0,4,0
+2267093351,Human,onyx-dot-app/onyx,3634,hagen-danswer,ok,2,0,2,0,1,0,2,1
+2267854135,Human,PriorLabs/TabPFN,103,eddiebergman,ok,0,0,0,0,0,0,0,0
+2268256983,Human,spcl/dace,1861,pratyai,ok,0,0,0,0,0,0,0,0
+2269208152,Human,wandb/weave,3358,gtarpenning,ok,0,0,0,0,1,0,0,1
+2270252961,Human,huggingface/smolagents,146,aymeric-roucher,ok,0,0,0,1,0,0,0,1
+2270266984,Human,goat-sdk/goat,209,0xaguspunk,ok,0,0,0,0,1,0,0,1
+2270393774,Human,goat-sdk/goat,210,karimodm,ok,0,0,0,0,1,0,0,1
+2272183023,Human,bespokelabsai/curator,345,adamoptimizer,ok,10,0,7,0,0,0,10,0
+2272274981,Human,Blaizzy/mlx-vlm,179,Blaizzy,ok,0,0,0,11,0,6,0,11
+2272586142,Human,Netflix/metaflow,2207,mt-ob,ok,8,0,3,0,0,0,8,0
+2272633617,Human,janbjorge/pgqueuer,283,tvallotton,ok,0,0,0,1,0,0,0,1
+2272661584,Human,ObservedObserver/streamlit-shadcn-ui,38,FengJingting,ok,0,0,0,0,0,0,0,0
+2274694131,Human,microsoft/onnxruntime-genai,1183,baijumeswani,ok,0,0,0,0,0,0,0,0
+2274941460,Human,blorm-network/ZerePy,81,guilherme-brandao,ok,0,0,0,3,0,0,0,3
+2274981373,Human,janbjorge/pgqueuer,286,janbjorge,ok,0,0,0,0,0,0,0,0
+2275392075,Human,commaai/opendbc,1634,sshane,ok,1,0,1,2,0,1,1,2
+2275685120,Human,Skyvern-AI/skyvern,1543,wintonzheng,ok,0,0,0,0,0,0,0,0
+2275795781,Human,MikePopoloski/slang,1210,parker-research,ok,6,0,0,1,1,1,6,2
+2276244631,Human,PriorLabs/TabPFN,135,LeoGrin,ok,0,0,0,11,0,3,0,11
+2276460202,Human,roboflow/inference,942,PawelPeczek-Roboflow,ok,0,0,0,0,0,0,0,0
+2276824107,Human,spcl/dace,1870,pratyai,ok,0,0,0,0,0,0,0,0
+2277915906,Human,marimo-team/marimo,3437,mscolnick,ok,0,0,0,1,1,0,0,2
+2278053264,Human,Kiln-AI/Kiln,110,leonardmq,ok,0,0,0,1,0,0,0,1
+2279176635,Human,Significant-Gravitas/AutoGPT,9272,aarushik93,ok,0,0,0,0,5,0,0,5
+2280794084,Human,dagster-io/dagster,27142,maximearmstrong,ok,1,0,0,5,0,3,1,5
+2281573752,Human,janbjorge/pgqueuer,290,janbjorge,ok,0,0,0,1,0,0,0,1
+2282210055,Human,uxlfoundation/oneDAL,3046,Alexandr-Solovev,ok,36,0,9,21,3,16,36,24
+2282388423,Human,airbytehq/airbyte,51585,aldogonzalez8,ok,1,0,1,0,1,0,1,1
+2282594982,Human,AgentOps-AI/agentops,647,teocns,ok,0,0,0,0,1,0,0,1
+2282684079,Human,assistant-ui/assistant-ui,1386,Yonom,ok,0,6,0,0,4,0,6,4
+2282773242,Human,microsoft/typespec,5639,iscai-msft,ok,1,0,0,2,0,0,1,2
+2283064887,Human,wandb/wandb,9287,timoffex,ok,0,0,0,0,1,0,0,1
+2283901622,Human,ComposioHQ/composio,1205,Prat011,ok,5,2,0,1,1,0,7,2
+2283939870,Human,mlflow/mlflow,14265,serena-ruan,ok,7,0,2,1,1,1,7,2
+2284670608,Human,goat-sdk/goat,243,kamalbuilds,ok,30,0,10,2,1,2,30,3
+2286020833,Human,Significant-Gravitas/AutoGPT,9295,majdyz,ok,2,0,1,0,3,0,2,3
+2286566641,Human,MikePopoloski/slang,1214,parker-research,ok,0,0,0,0,1,0,0,1
+2286936119,Human,julep-ai/julep,1068,creatorrr,ok,0,0,0,0,4,0,0,4
+2288142889,Human,spcl/dace,1885,phschaad,ok,0,0,0,0,0,0,0,0
+2288772617,Human,herbie-fp/herbie,1133,AYadrov,ok,5,0,2,1,0,1,5,1
+2290337879,Human,Significant-Gravitas/AutoGPT,9308,ntindle,ok,12,0,6,2,8,1,12,10
+2290730629,Human,marimo-team/marimo,3527,akshayka,ok,0,0,0,0,1,0,0,1
+2291207655,Human,EricLBuehler/mistral.rs,1077,EricLBuehler,ok,0,0,0,0,1,0,0,1
+2291282775,Human,bentoml/BentoML,5190,frostming,ok,0,0,0,0,0,0,0,0
+2291386657,Human,julep-ai/julep,1074,whiterabbit1983,ok,0,1,0,0,3,0,1,3
+2292256358,Human,spcl/dace,1896,pratyai,ok,0,0,0,1,0,1,0,1
+2293706753,Human,mlflow/mlflow,14304,daniellok-db,ok,0,0,0,0,2,0,0,2
+2293719331,Human,near/nearcore,12773,marcelo-gonzalez,ok,17,0,6,0,1,0,17,1
+2294324935,Human,near/nearcore,12776,VanBarbascu,ok,1,0,0,0,1,0,1,1
+2294642912,Human,tinygrad/tinygrad,8731,geohotstan,ok,0,0,0,1,0,0,0,1
+2295215962,Human,zenml-io/zenml,3314,stefannica,ok,15,0,10,0,1,0,15,1
+2295546141,Human,near/nearcore,12787,shreyan-gupta,ok,3,0,1,0,1,0,3,1
+2297770994,Human,opencv/opencv,26842,chacha21,ok,5,0,0,7,0,3,5,7
+2297781093,Human,promptfoo/promptfoo,2822,MrFlounder,ok,0,0,0,0,1,0,0,1
+2298301775,Human,567-labs/instructor,1319,charlieyou,ok,0,0,0,1,0,0,0,1
+2299613217,Human,rsyslog/rsyslog,5544,rgerhards,ok,0,0,0,1,0,1,0,1
+2300488657,Human,roboflow/inference,983,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
+2301636676,Human,ComposioHQ/composio,1229,Prat011,ok,2,1,0,1,2,0,3,3
+2301717301,Human,crewAIInc/crewAI-tools,197,beowolx,ok,0,0,0,3,0,2,0,3
+2301884134,Human,mlflow/mlflow,14364,harupy,ok,6,0,5,0,1,0,6,1
+2304107826,Human,roboflow/inference,986,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
+2304936326,Human,ag2ai/ag2,703,kumaranvpl,ok,0,0,0,1,0,0,0,1
+2305916890,Human,julep-ai/julep,1109,Vedantsahai18,ok,0,0,0,0,2,0,0,2
+2306686014,Human,ikamensh/flynt,204,un-pogaz,ok,0,0,0,2,0,1,0,2
+2306867477,Human,ComposioHQ/composio,1234,Prat011,ok,5,3,0,1,1,0,8,2
+2307381985,Human,marimo-team/marimo,3628,akshayka,ok,0,0,0,0,2,0,0,2
+2307815455,Human,dotnet/runtime,112016,amanasifkhalid,ok,0,0,0,6,1,5,0,7
+2307912274,Human,crewAIInc/crewAI-tools,198,lorenzejay,ok,3,0,0,0,0,0,3,0
+2308425047,Human,keephq/keep,3245,shahargl,ok,0,0,0,0,1,0,0,1
+2308602042,Human,remotion-dev/remotion,4837,JonnyBurger,ok,2,0,1,1,1,1,2,2
+2309356556,Human,goat-sdk/goat,295,Fbartoli,ok,0,0,0,0,1,0,0,1
+2309714629,Human,microsoft/autogen,5285,ekzhu,ok,1,0,0,0,1,0,1,1
+2310085567,Human,getsentry/sentry,84390,mrduncan,ok,0,0,0,0,1,0,0,1
+2310214732,Human,MervinPraison/PraisonAI,357,MervinPraison,ok,0,0,0,0,0,0,0,0
+2310831032,Human,Kiln-AI/Kiln,145,scosman,ok,0,0,0,0,0,0,0,0
+2311202049,Human,azerothcore/azerothcore-wotlk,21310,p-tkachuk,ok,0,0,0,8,0,4,0,8
+2312226914,Human,netket/netket,1995,vigsterkr,ok,11,0,5,5,1,1,11,6
+2312748329,Human,netket/netket,1996,PhilipVinc,ok,0,0,0,0,1,0,0,1
+2313076850,Human,Kiln-AI/Kiln,150,scosman,ok,0,0,0,0,0,0,0,0
+2313339743,Human,Significant-Gravitas/AutoGPT,9401,dependabot[bot],ok,0,0,0,0,3,0,0,3
+2313919432,Human,BerriAI/litellm,8227,,ok,0,0,0,0,1,0,0,1
+2315722929,Human,vlm-run/vlmrun-hub,82,spillai,ok,0,0,0,0,0,0,0,0
+2315875250,Human,Kiln-AI/Kiln,155,scosman,ok,0,0,0,0,0,0,0,0
+2315949481,Human,julep-ai/julep,1127,Ahmad-mtos,ok,3,0,0,0,3,0,3,3
+2317330363,Human,bespokelabsai/curator,445,kartik4949,ok,25,0,13,0,0,0,25,0
+2317921458,Human,julep-ai/julep,1131,Ahmad-mtos,ok,0,6,0,0,3,0,6,3
+2318016110,Human,vlm-run/vlmrun-hub,87,kaushikb11,ok,0,0,0,0,0,0,0,0
+2318387549,Human,marimo-team/marimo,3703,akshayka,ok,1,0,0,1,2,1,1,3
+2320571535,Human,roboflow/inference,1003,PawelPeczek-Roboflow,ok,0,0,0,0,0,0,0,0
+2321088762,Human,bespokelabsai/curator,459,samheutmaker,ok,0,0,0,0,0,0,0,0
+2321207962,Human,bentoml/BentoML,5203,frostming,ok,0,0,0,0,0,0,0,0
+2323330865,Human,commaai/openpilot,34547,sshane,ok,0,0,0,0,0,0,0,0
+2324261949,Human,julep-ai/julep,1144,Vedantsahai18,ok,0,0,0,1,2,1,0,3
+2324987642,Human,tinygrad/tinygrad,8994,Qazalin,ok,0,0,0,0,1,0,0,1
+2325260235,Human,julep-ai/julep,1145,whiterabbit1983,ok,0,0,0,0,5,0,0,5
+2325372908,Human,goat-sdk/goat,324,Fbartoli,ok,0,0,0,0,1,0,0,1
+2327061220,Human,getsentry/sentry-python,4034,cmanallen,ok,0,0,0,3,1,2,0,4
+2327904675,Human,janbjorge/pgqueuer,316,janbjorge,ok,1,0,0,0,0,0,1,0
+2328335930,Human,ComposioHQ/composio,1327,angrybayblade,ok,0,0,0,1,2,0,0,3
+2329041793,Human,mangiucugna/json_repair,96,sean-weber-cambri,ok,0,0,0,0,0,0,0,0
+2329914697,Human,marimo-team/marimo,3755,dmadisetti,ok,2,0,1,4,2,1,2,6
+2330651068,Human,julep-ai/julep,1151,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
+2330987167,Human,ag2ai/ag2,936,sternakt,ok,0,0,0,0,1,0,0,1
+2331266758,Human,julep-ai/julep,1153,whiterabbit1983,ok,0,0,0,0,2,0,0,2
+2332197870,Human,a16z/halmos,456,0xkarmacoma,ok,3,0,2,2,0,2,3,2
+2332333882,Human,getsentry/sentry,85102,evanpurkhiser,ok,1,0,0,0,1,0,1,1
+2332558096,Human,microsoft/onnxruntime,23674,tianleiwu,ok,0,2,0,3,0,1,2,3
+2332627314,Human,mlflow/mlflow,14572,serena-ruan,ok,0,0,0,0,1,0,0,1
+2333329270,Human,PriorLabs/TabPFN,184,mert-kurttutan,ok,1,0,0,13,0,7,1,13
+2334155600,Human,Skyvern-AI/skyvern,1767,wintonzheng,ok,0,4,0,0,0,0,4,0
+2334613112,Human,BerriAI/litellm,8523,,ok,0,0,0,0,2,0,0,2
+2334947154,Human,airbytehq/airbyte,53686,theyueli,ok,8,0,1,3,1,2,8,4
+2335012557,Human,onyx-dot-app/onyx,3997,pablonyx,ok,0,0,0,0,1,0,0,1
+2335576720,Human,dotnet/sdk,46856,github-actions[bot],ok,0,0,0,0,0,0,0,0
+2335926569,Human,roboflow/inference,1028,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
+2336377580,Human,tinygrad/tinygrad,9088,quortus,ok,0,0,0,3,1,1,0,4
+2337700846,Human,julep-ai/julep,1165,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
+2337771326,Human,julep-ai/julep,1166,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
+2338275002,Human,langchain-ai/langgraph,3463,ianchi,ok,0,0,0,1,1,0,0,2
+2338301511,Human,aipotheosis-labs/aci,32,hanyixxx,ok,0,0,0,0,1,0,0,1
+2338454215,Human,brentyi/tyro,256,brentyi,ok,0,0,0,0,1,0,0,1
+2338814541,Human,cvxpy/cvxpy,2716,PTNobel,ok,0,0,0,3,0,1,0,3
+2340199001,Human,near/nearcore,12943,stedfn,ok,9,0,1,0,1,0,9,1
+2340411739,Human,keephq/keep,3532,Matvey-Kuk,ok,0,0,0,0,1,0,0,1
+2340845626,Human,Kiln-AI/Kiln,205,scosman,ok,0,0,0,0,0,0,0,0
+2341061114,Human,mlflow/mlflow,14632,TomeHirata,ok,9,0,3,0,1,0,9,1
+2341398834,Human,julep-ai/julep,1171,Ahmad-mtos,ok,0,1,0,0,2,0,1,2
+2342963782,Human,aipotheosis-labs/aci,38,Jamie0gundiran,ok,9,0,4,0,1,0,9,1
+2343133415,Human,mendableai/firecrawl,1201,ericciarla,ok,10,0,0,0,0,0,10,0
+2344813558,Human,julep-ai/julep,1175,Ahmad-mtos,ok,0,0,0,2,2,1,0,4
+2344950093,Human,roboflow/inference,1037,bigbitbus,ok,0,0,0,1,0,0,0,1
+2345504485,Human,Kiln-AI/Kiln,210,scosman,ok,0,0,0,0,0,0,0,0
+2345558913,Human,mendableai/firecrawl,1206,aparupganguly,ok,0,0,0,1,0,0,0,1
+2345763476,Human,microsoft/onnxruntime-genai,1264,RyanUnderhill,ok,4,0,2,0,0,0,4,0
+2347982033,Human,test-zeus-ai/testzeus-hercules,42,shriyanshagnihotri,ok,0,0,0,0,0,0,0,0
+2348777785,Human,mlflow/mlflow,14689,TomeHirata,ok,9,0,2,1,2,1,9,3
+2351543999,Human,vlm-run/vlmrun-hub,102,spillai,ok,2,0,1,0,0,0,2,0
+2351814084,Human,BOINC/boinc,6107,Vulpine05,ok,0,0,0,6,1,2,0,7
+2352002275,Human,commaai/panda,2162,fredyshox,ok,0,0,0,0,0,0,0,0
+2352217584,Human,mlflow/mlflow,14703,brilee,ok,2,0,0,1,2,1,2,3
+2352418494,Human,commaai/opendbc,1825,crwusiz,ok,0,0,0,0,0,0,0,0
+2352743534,Human,julep-ai/julep,1183,Vedantsahai18,ok,9,27,4,0,4,0,36,4
+2353932762,Human,getsentry/sentry-python,4093,antonpirker,ok,0,0,0,0,1,0,0,1
+2354769460,Human,vlm-run/vlmrun-hub,105,Mirajul-Mohin,ok,6,0,0,0,0,0,6,0
+2355805138,Human,julep-ai/julep,1185,Ahmad-mtos,ok,0,0,0,0,5,0,0,5
+2355823480,Human,keephq/keep,3665,skynetigor,ok,0,0,0,0,1,0,0,1
+2355891934,Human,microsoft/typespec,6144,mzhongl524,ok,11,0,2,5,0,0,11,5
+2356042683,Human,bentoml/BentoML,5249,frostming,ok,0,0,0,0,0,0,0,0
+2356246191,Human,Kanaries/pygwalker,673,longxiaofei,ok,0,0,0,1,0,1,0,1
+2357159587,Human,airbytehq/airbyte,54677,szemek,ok,0,0,0,0,2,0,0,2
+2358893378,Human,bespokelabsai/curator,540,shreyaspimpalgaonkar,ok,3,0,0,0,0,0,3,0
+2358916441,Human,bespokelabsai/curator,541,madiator,ok,0,0,0,0,0,0,0,0
+2360768678,Human,marimo-team/marimo,3926,akshayka,ok,0,0,0,0,2,0,0,2
+2361949938,Human,julep-ai/julep,1190,Ahmad-mtos,ok,0,1,0,0,4,0,1,4
+2362692923,Human,crewAIInc/crewAI-tools,227,mplachta,ok,0,0,0,1,0,1,0,1
+2363577673,Human,bentoml/BentoML,5251,frostming,ok,0,0,0,0,0,0,0,0
+2363986187,Human,PriorLabs/TabPFN,217,noahho,ok,0,0,0,0,0,0,0,0
+2364156735,Human,tegnike/aituber-kit,309,tegnike,ok,0,5,0,0,2,0,5,2
+2364508628,Human,TobikoData/sqlmesh,3927,benfdking,ok,0,0,0,2,0,1,0,2
+2364953101,Human,spcl/dace,1958,pratyai,ok,0,0,0,0,0,0,0,0
+2364987713,Human,netket/netket,2012,PhilipVinc,ok,0,0,0,3,1,1,0,4
+2365534722,Human,dagster-io/dagster,28149,maximearmstrong,ok,3,0,1,1,0,1,3,1
+2365854601,Human,oven-sh/bun,17820,190n,ok,4,0,1,6,0,0,4,6
+2366807942,Human,tegnike/aituber-kit,313,tegnike,ok,0,4,0,0,2,0,4,2
+2366817698,Human,mendableai/firecrawl,1284,nickscamara,ok,0,0,0,0,0,0,0,0
+2366839400,Human,tegnike/aituber-kit,314,tegnike,ok,0,0,0,0,2,0,0,2
+2367079250,Human,Kiln-AI/Kiln,233,scosman,ok,0,0,0,0,0,0,0,0
+2368306114,Human,AgentOps-AI/agentops,714,teocns,ok,0,0,0,0,0,0,0,0
+2369044945,Human,joshyattridge/smart-money-concepts,73,joshyattridge,ok,0,0,0,0,0,0,0,0
+2369238232,Human,joshyattridge/smart-money-concepts,74,joshyattridge,ok,0,0,0,0,0,0,0,0
+2369253951,Human,joshyattridge/smart-money-concepts,75,joshyattridge,ok,0,0,0,0,0,0,0,0
+2371172565,Human,Skyvern-AI/skyvern,1882,wintonzheng,ok,0,0,0,0,0,0,0,0
+2371342937,Human,Skyvern-AI/skyvern,1883,wintonzheng,ok,0,0,0,0,0,0,0,0
+2371650610,Human,goat-sdk/goat,386,akawolfcito,ok,2,0,1,2,1,1,2,3
+2373275700,Human,mlflow/mlflow,14860,serena-ruan,ok,7,0,0,0,1,0,7,1
+2373978615,Human,ACEsuit/mace,841,ilyes319,ok,0,0,0,0,0,0,0,0
+2374159047,Human,skypilot-org/skypilot,4891,kristopolous,ok,0,0,0,0,0,0,0,0
+2375014471,Human,marimo-team/marimo,3993,Light2Dark,ok,1,0,1,0,2,0,1,2
+2376425978,Human,julep-ai/julep,1217,Ahmad-mtos,ok,15,5,3,0,3,0,20,3
+2378845122,Human,huggingface/huggingface.js,1260,nbarr07,ok,2,0,0,11,0,5,2,11
+2379148000,Human,rishikanthc/Scriberr,80,BarbellDwarf,ok,0,0,0,0,0,0,0,0
+2380702095,Human,SirVer/ultisnips,1567,SirVer,ok,0,0,0,0,0,0,0,0
+2381144892,Human,stanford-crfm/levanter,904,garymm,ok,0,0,0,0,0,0,0,0
+2382109803,Human,tegnike/aituber-kit,316,tegnike,ok,0,0,0,0,3,0,0,3
+2383582907,Human,near/nearcore,13094,shreyan-gupta,ok,0,0,0,0,1,0,0,1
+2383761721,Human,bentoml/BentoML,5268,yetone,ok,0,0,0,0,0,0,0,0
+2383765749,Human,mlflow/mlflow,14938,harupy,ok,1,7,0,0,1,0,8,1
+2385785847,Human,goat-sdk/goat,408,wispyiwnl,ok,0,0,0,1,1,0,0,2
+2385847879,Human,whitphx/streamlit-webrtc,1901,whitphx,ok,0,0,0,0,0,0,0,0
+2387062321,Human,Significant-Gravitas/AutoGPT,9620,majdyz,ok,0,0,0,2,5,1,0,7
+2388365918,Human,bruin-data/bruin,516,y-bruin,ok,3,0,1,0,0,0,3,0
+2389334004,Human,AgentOps-AI/agentops,811,Dwij1704,ok,0,0,0,1,0,0,0,1
+2389375209,Human,microsoft/debugpy,1870,TheJJ,ok,0,0,0,12,1,5,0,13
+2389875437,Human,AgentOps-AI/agentops,817,Dwij1704,ok,0,0,0,0,0,0,0,0
+2389891260,Human,AgentOps-AI/agentops,818,dot-agi,ok,0,0,0,0,0,0,0,0
+2390024977,Human,AgentOps-AI/agentops,819,Dwij1704,ok,0,0,0,0,0,0,0,0
+2390765352,Human,spcl/dace,1975,pratyai,ok,0,0,0,0,0,0,0,0
+2391309914,Human,julep-ai/julep,1241,Ahmad-mtos,ok,0,12,0,0,4,0,12,4
+2391963504,Human,dagster-io/dagster,28479,salazarm,ok,2,0,1,0,1,0,2,1
+2392791155,Human,microsoft/typespec,6452,weidongxu-microsoft,ok,0,0,0,1,1,0,0,2
+2394359557,Human,MaiM-with-u/MaiBot,401,SaigyoujiYusora,ok,3,0,0,0,0,0,3,0
+2394800356,Human,AgentOps-AI/agentops,847,teocns,ok,0,0,0,0,0,0,0,0
+2394823134,Human,langchain-ai/langsmith-sdk,1576,baskaryan,ok,0,0,0,0,0,0,0,0
+2397352966,Human,devitocodes/devito,2555,FabioLuporini,ok,0,0,0,0,1,0,0,1
+2397521401,Human,getsentry/sentry,87169,untitaker,ok,0,0,0,0,1,0,0,1
+2398678659,Human,onyx-dot-app/onyx,4293,pablonyx,ok,0,0,0,0,1,0,0,1
+2399463135,Human,Blaizzy/mlx-vlm,249,Blaizzy,ok,0,0,0,0,0,0,0,0
+2400261241,Human,567-labs/instructor,1420,ivanleomk,ok,1,2,1,1,1,1,3,2
+2400813849,Human,julep-ai/julep,1264,creatorrr,ok,0,12,0,0,3,0,12,3
+2402337662,Human,Kiln-AI/Kiln,258,scosman,ok,0,0,0,0,0,0,0,0
+2402507335,Human,julep-ai/julep,1268,Vedantsahai18,ok,3,15,0,0,2,0,18,2
+2404174558,Human,EricLBuehler/mistral.rs,1219,EricLBuehler,ok,0,0,0,0,1,0,0,1
+2404972295,Human,reflex-dev/reflex,4994,adhami3310,ok,0,0,0,0,1,0,0,1
+2405191622,Human,julep-ai/julep,1277,HamadaSalhab,ok,0,5,0,0,2,0,5,2
+2405425459,Human,wandb/weave,3916,neutralino1,ok,0,0,0,1,2,1,0,3
+2408616836,Human,roboflow/inference,1092,misrasaurabh1,ok,0,0,0,2,0,0,0,2
+2409498745,Human,bespokelabsai/curator,598,kartik4949,ok,11,0,4,0,0,0,11,0
+2411811233,Human,bespokelabsai/curator,600,CharlieJCJ,ok,3,0,2,2,0,2,3,2
+2413225736,Human,stanfordnlp/dspy,8003,TomeHirata,ok,9,0,4,2,0,0,9,2
+2414338451,Human,airbytehq/airbyte,56369,KimPlv,ok,0,0,0,0,2,0,0,2
+2414812043,Human,microsoft/typespec,6652,timotheeguerin,ok,0,0,0,1,1,0,0,2
+2415207829,Human,microsoft/graphrag,1841,natoverse,ok,0,0,0,2,0,1,0,2
+2415977644,Human,keephq/keep,4207,VladimirFilonov,ok,0,0,0,0,1,0,0,1
+2416987762,Human,Significant-Gravitas/AutoGPT,9697,Pwuts,ok,0,0,0,0,4,0,0,4
+2417452941,Human,goat-sdk/goat,450,sunosuporno,ok,0,0,0,10,1,5,0,11
+2417540342,Human,crewAIInc/crewAI-tools,250,parthbs,ok,0,0,0,1,0,0,0,1
+2417566506,Human,onyx-dot-app/onyx,4353,pablonyx,ok,0,0,0,0,1,0,0,1
+2420201980,Human,PrefectHQ/prefect,17607,zzstoatzz,ok,0,0,0,0,0,0,0,0
+2420444104,Human,onyx-dot-app/onyx,4363,pablonyx,ok,1,0,1,0,1,0,1,1
+2421585261,Human,promptfoo/promptfoo,3507,Mikkolehtimaki,ok,0,0,0,3,2,2,0,5
+2422882617,Human,microsoft/onnxruntime,24212,toothache,ok,13,0,7,7,3,2,13,10
+2422893059,Human,marimo-team/marimo,4279,mscolnick,ok,0,0,0,0,2,0,0,2
+2423298921,Human,a16z/halmos,486,0xkarmacoma,ok,0,0,0,0,0,0,0,0
+2424187155,Human,julep-ai/julep,1291,Vedantsahai18,ok,0,0,0,0,2,0,0,2
+2424508586,Human,mlflow/mlflow,15160,harupy,ok,0,0,0,0,1,0,0,1
+2424549019,Human,microsoft/onnxruntime,24229,xhcao,ok,0,0,0,10,7,2,0,17
+2427595507,Human,keephq/keep,4302,shahargl,ok,0,0,0,0,2,0,0,2
+2427808826,Human,mlflow/mlflow,15171,mlflow-app[bot],ok,0,0,0,0,3,0,0,3
+2428382467,Human,roboflow/inference,1129,grzegorz-roboflow,ok,2,0,1,0,0,0,2,0
+2429861894,Human,microsoft/typespec,6796,witemple-msft,ok,6,0,3,1,1,0,6,2
+2430313600,Human,reflex-dev/reflex,5069,adhami3310,ok,0,0,0,1,1,1,0,2
+2430314015,Human,Kanaries/pygwalker,692,longxiaofei,ok,0,0,0,0,0,0,0,0
+2434289186,Human,writer/writer-framework,805,ramedina86,ok,0,0,0,0,0,0,0,0
+2434638102,Human,pydata/pandas-datareader,1001,bashtage,ok,0,0,0,1,0,0,0,1
+2434746882,Human,goat-sdk/goat,461,alberto-crossmint,ok,2,0,1,2,1,1,2,3
+2435007062,Human,featureform/enrichmcp,4,epps,ok,0,0,0,0,0,0,0,0
+2436920877,Human,julep-ai/julep,1305,whiterabbit1983,ok,1,2,1,1,3,0,3,4
+2437191001,Human,cartography-cncf/cartography,1513,jychp,ok,1,2,1,0,0,0,3,0
+2438086945,Human,getsentry/sentry,88748,iamrajjoshi,ok,1,0,0,0,0,0,1,0
+2438259044,Human,featureform/enrichmcp,13,epps,ok,0,0,0,0,0,0,0,0
+2440808816,Human,Kanaries/pygwalker,694,longxiaofei,ok,0,0,0,0,0,0,0,0
+2441330487,Human,Kiln-AI/Kiln,270,scosman,ok,0,0,0,0,0,0,0,0
+2441758104,Human,GodsScion/Auto_job_applier_linkedIn,45,GodsScion,ok,0,0,0,0,0,0,0,0
+2442916529,Human,Blaizzy/mlx-vlm,290,vovw,ok,0,0,0,3,0,2,0,3
+2443127427,Human,microsoft/RD-Agent,764,XianBW,ok,0,0,0,0,0,0,0,0
+2443706665,Human,langchain-ai/langsmith-sdk,1641,angus-langchain,ok,0,0,0,1,0,1,0,1
+2444052038,Human,goat-sdk/goat,470,Peteredwardj,ok,0,0,0,0,1,0,0,1
+2444161151,Human,awslabs/mcp,92,jimini55,ok,0,0,0,0,0,0,0,0
+2445405546,Human,mlflow/mlflow,15256,TomeHirata,ok,4,1,2,0,1,0,5,1
+2446878923,Human,microsoft/typespec,6909,iscai-msft,ok,0,0,0,1,1,0,0,2
+2446905064,Human,TobikoData/sqlmesh,4101,themisvaltinos,ok,50,0,15,1,0,1,50,1
+2447403860,Human,marimo-team/marimo,4442,dmadisetti,ok,0,0,0,0,2,0,0,2
+2448420848,Human,risingwavelabs/risingwave,21323,florissmit10,ok,2,0,0,1,0,1,2,1
+2448591120,Human,AgentOps-AI/agentops,914,Dwij1704,ok,0,0,0,0,1,0,0,1
+2448748294,Human,tegnike/aituber-kit,337,ochisamu,ok,0,0,0,0,2,0,0,2
+2448918557,Human,getsentry/sentry-python,4264,szokeasaurusrex,ok,0,0,0,0,1,0,0,1
+2448959577,Human,AgentOps-AI/agentops,915,Dwij1704,ok,4,0,1,5,1,1,4,6
+2449210861,Human,marimo-team/marimo,4449,akshayka,ok,0,0,0,0,2,0,0,2
+2449229785,Human,cartography-cncf/cartography,1520,serge-wq,ok,0,0,0,0,1,0,0,1
+2450440359,Human,zenml-io/zenml,3525,schustmi,ok,0,0,0,0,1,0,0,1
+2452881601,Human,Azure/azure-sdk-for-net,49355,mcgallan,ok,0,0,0,1,0,0,0,1
+2453464080,Human,huggingface/huggingface.js,1349,kefranabg,ok,16,0,1,3,0,1,16,3
+2454776899,Human,AgentOps-AI/agentops,919,braelyn-ai,ok,0,0,0,2,1,0,0,3
+2454841034,Human,julep-ai/julep,1316,Ahmad-mtos,ok,1,4,0,0,3,0,5,3
+2455025552,Human,bentoml/BentoML,5317,frostming,ok,1,1,1,0,1,0,2,1
+2455489057,Human,tegnike/aituber-kit,343,tegnike,ok,0,4,0,0,3,0,4,3
+2455759309,Human,julep-ai/julep,1318,Vedantsahai18,ok,2,6,0,1,3,0,8,4
+2456276880,Human,EricLBuehler/mistral.rs,1277,EricLBuehler,ok,0,14,0,0,2,0,14,2
+2456461996,Human,mlflow/mlflow,15298,B-Step62,ok,8,0,4,0,1,0,8,1
+2457606922,Human,goat-sdk/goat,481,jainsanil18,ok,0,0,0,0,1,0,0,1
+2458717003,Human,microsoft/typespec,6977,iscai-msft,ok,0,0,0,1,1,0,0,2
+2460147666,Human,huggingface/huggingface_hub,3005,hanouticelina,ok,23,0,6,3,0,2,23,3
+2460742554,Human,netket/netket,2025,lgravina1997,ok,0,0,0,0,1,0,0,1
+2461648574,Human,OpenPipe/ART,51,corbt,ok,0,0,0,0,0,0,0,0
+2461755763,Human,onyx-dot-app/onyx,4534,rkuo-danswer,ok,0,6,0,0,1,0,6,1
+2462032838,Human,wandb/openui,228,vanpelt,ok,0,0,0,0,2,0,0,2
+2462139687,Human,reown-com/appkit,4221,zoruka,ok,0,0,0,0,3,0,0,3
+2462185471,Human,featureform/enrichmcp,16,,ok,6,0,0,0,0,0,6,0
+2463366494,Human,reown-com/appkit,4227,tomiir,ok,1,0,0,0,5,0,1,5
+2464579828,Human,cartography-cncf/cartography,1534,achantavy,ok,0,0,0,0,0,0,0,0
+2464811084,Human,onyx-dot-app/onyx,4547,Weves,ok,0,2,0,0,1,0,2,1
+2465429535,Human,PrefectHQ/marvin,1119,Anush008,ok,6,2,4,1,0,0,8,1
+2465780443,Human,roboflow/inference,1200,capjamesg,ok,0,0,0,0,0,0,0,0
+2466713034,Human,bespokelabsai/curator,645,sky-2002,ok,0,0,0,0,0,0,0,0
+2467087648,Human,dropseed/plain,28,davegaeddert,ok,0,0,0,0,0,0,0,0
+2467788242,Human,TheAlgorithms/Python,12676,isidroas,ok,3,0,0,0,0,0,3,0
+2469761206,Human,tegnike/aituber-kit,360,tegnike,ok,1,9,1,1,4,1,10,5
+2471938138,Human,openai/openai-agents-python,561,rm-openai,ok,0,0,0,0,0,0,0,0
+2472893702,Human,mlflow/mlflow,15420,harupy,ok,0,1,0,0,2,0,1,2
+2474303758,Human,mendableai/firecrawl,1490,rafaelsideguide,ok,0,0,0,0,0,0,0,0
+2474702276,Human,bentoml/BentoML,5329,aarnphm,ok,0,0,0,0,1,0,0,1
+2474912280,Human,featureform/enrichmcp,22,,ok,0,0,0,0,0,0,0,0
+2475411025,Human,janbjorge/pgqueuer,358,janbjorge,ok,0,0,0,0,0,0,0,0
+2476004130,Human,gptme/gptme,511,ErikBjare,ok,1,4,1,0,1,0,5,1
+2476088746,Human,crewAIInc/crewAI-tools,280,lucasgomide,ok,0,0,0,0,0,0,0,0
+2476323666,Human,featureform/enrichmcp,24,,ok,0,0,0,0,0,0,0,0
+2476426259,Human,crewAIInc/crewAI-tools,281,lucasgomide,ok,7,0,3,0,0,0,7,0
+2476534203,Human,featureform/enrichmcp,26,,ok,0,0,0,0,0,0,0,0
+2478356468,Human,crewAIInc/crewAI-tools,282,HarikrishnanK9,ok,16,0,4,12,0,10,16,12
+2478537850,Human,microsoft/typespec,7115,srnagar,ok,35,0,6,1,1,0,35,2
+2478962352,Human,mlflow/mlflow,15481,B-Step62,ok,6,0,1,0,1,0,6,1
+2480335338,Human,crewAIInc/crewAI-tools,285,lucasgomide,ok,7,0,4,1,0,1,7,1
+2480611839,Human,MaiM-with-u/MaiBot,842,smartmita,ok,0,1,0,0,1,0,1,1
+2482170552,Human,langchain-ai/langsmith-sdk,1694,baskaryan,ok,2,0,0,0,0,0,2,0
+2482475399,Human,mendableai/firecrawl,1501,rafaelsideguide,ok,0,0,0,0,0,0,0,0
+2483120959,Human,Significant-Gravitas/AutoGPT,9885,Abhi1992002,ok,0,1,0,0,3,0,1,3
+2483429223,Human,julep-ai/julep,1340,Ahmad-mtos,ok,0,0,0,0,2,0,0,2
+2483801280,Human,stair-lab/kg-gen,28,captainst,ok,0,0,0,1,0,0,0,1
+2484533924,Human,Skyvern-AI/skyvern,2231,wintonzheng,ok,0,1,0,0,0,0,1,0
+2484633517,Human,mlflow/mlflow,15522,serena-ruan,ok,0,0,0,1,1,0,0,2
+2484707366,Human,commaai/openpilot,35083,WilliamBonilla62,ok,0,0,0,1,0,0,0,1
+2485165438,Human,marimo-team/marimo,4700,Light2Dark,ok,0,0,0,0,2,0,0,2
+2486573779,Human,getsentry/sentry,90516,leeandher,ok,1,0,1,0,1,0,1,1
+2487549923,Human,marimo-team/marimo,4718,CyberQin,ok,0,0,0,0,3,0,0,3
+2488024698,Human,mangiucugna/json_repair,110,mangiucugna,ok,0,0,0,0,0,0,0,0
+2489510452,Human,marimo-team/marimo,4733,mscolnick,ok,0,0,0,0,2,0,0,2
+2489863587,Human,marimo-team/marimo,4737,dmadisetti,ok,0,0,0,0,2,0,0,2
+2489869522,Human,featureform/enrichmcp,30,,ok,3,0,0,0,0,0,3,0
+2491706379,Human,featureform/enrichmcp,31,,ok,10,0,0,0,0,0,10,0
+2492797998,Human,featureform/enrichmcp,32,,ok,0,0,0,0,0,0,0,0
+2492871484,Human,OpenPipe/ART,91,arcticfly,ok,0,0,0,0,0,0,0,0
+2493189964,Human,openai/codex,769,thegovind,ok,5,0,2,15,0,4,5,15
+2493806134,Human,Significant-Gravitas/AutoGPT,9902,majdyz,ok,0,0,0,0,4,0,0,4
+2493988876,Human,neondatabase/neon,11801,VladLazar,ok,3,0,1,2,1,1,3,3
+2494218951,Human,langchain-ai/langgraph,4497,sydney-runkle,ok,1,0,0,0,1,0,1,1
+2495510561,Human,Skyvern-AI/skyvern,2278,wintonzheng,ok,0,1,0,0,0,0,1,0
+2495956871,Human,gridaco/grida,317,softmarshmallow,ok,0,9,0,0,3,0,9,3
+2496790216,Human,a16z/halmos,505,Jayakumar2812,ok,12,0,0,0,0,0,12,0
+2496802096,Human,julep-ai/julep,1351,whiterabbit1983,ok,2,6,0,2,3,0,8,5
+2496892442,Human,OpenPipe/ART,104,corbt,ok,1,0,0,0,0,0,1,0
+2497413147,Human,crewAIInc/crewAI-tools,297,lorenzejay,ok,0,0,0,0,0,0,0,0
+2497441108,Human,gridaco/grida,319,softmarshmallow,ok,0,2,0,0,3,0,2,3
+2499298823,Human,roboflow/inference,1236,grzegorz-roboflow,ok,0,0,0,0,1,0,0,1
+2500796031,Human,zenml-io/zenml,3641,htahir1,ok,0,3,0,0,2,0,3,2
+2501616219,Human,tinygrad/tinygrad,10176,nimlgen,ok,0,0,0,0,1,0,0,1
+2502086135,Human,writer/writer-framework,857,madeindjs,ok,0,0,0,0,0,0,0,0
+2502348618,Human,Skyvern-AI/skyvern,2300,wintonzheng,ok,0,0,0,0,0,0,0,0
+2503986210,Human,mistralai/mistral-common,79,juliendenize,ok,2,0,0,1,0,1,2,1
+2504015780,Human,dense-analysis/neural,53,engelju,ok,0,0,0,0,0,0,0,0
+2505218165,Human,airbytehq/airbyte,59711,aldogonzalez8,ok,3,0,2,1,2,1,3,3
+2505436254,Human,marimo-team/marimo,4840,mscolnick,ok,1,0,0,0,1,0,1,1
+2506199692,Human,julep-ai/julep,1356,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
+2506495465,Human,Significant-Gravitas/AutoGPT,9921,majdyz,ok,7,0,4,0,5,0,7,5
+2507136336,Human,microsoft/Olive,1837,VishalX,ok,0,0,0,4,0,3,0,4
+2508359703,Human,a16z/halmos,509,daejunpark,ok,5,1,2,0,0,0,6,0
+2510098763,Human,BerriAI/litellm,10700,,ok,0,0,0,0,1,0,0,1
+2510412824,Human,marimo-team/marimo,4861,mscolnick,ok,8,2,2,0,2,0,10,2
+2511401891,Human,mediar-ai/terminator,18,divanshu-go,ok,2,0,1,1,1,0,2,2
+2511573741,Human,Kiln-AI/Kiln,307,scosman,ok,0,0,0,3,4,3,0,7
+2512266582,Human,allenai/open-instruct,670,hamishivi,ok,12,0,6,3,0,3,12,3
+2512329986,Human,Kiln-AI/Kiln,308,scosman,ok,0,0,0,1,2,1,0,3
+2513290516,Human,mlflow/mlflow,15683,TomeHirata,ok,4,0,2,0,1,0,4,1
+2513299472,Human,julep-ai/julep,1362,whiterabbit1983,ok,0,1,0,0,2,0,1,2
+2514803422,Human,marimo-team/marimo,4890,bjoaquinc,ok,0,0,0,1,2,0,0,3
+2515872022,Human,cartography-cncf/cartography,1563,jychp,ok,0,0,0,1,1,0,0,2
+2516078067,Human,BOINC/boinc,6322,AenBleidd,ok,0,0,0,3,0,1,0,3
+2516490273,Human,Significant-Gravitas/AutoGPT,9935,Pwuts,ok,3,2,3,0,3,0,5,3
+2518652004,Human,dotnet/runtime,115553,kotlarmilos,ok,13,1,4,1,1,1,14,2
+2518704449,Human,mlflow/mlflow,15733,B-Step62,ok,0,2,0,0,1,0,2,1
+2519061854,Human,julep-ai/julep,1367,whiterabbit1983,ok,4,6,1,0,3,0,10,3
+2519322384,Human,zenml-io/zenml,3670,schustmi,ok,0,0,0,0,1,0,0,1
+2519831355,Human,roboflow/inference,1280,codeflash-ai[bot],ok,0,0,0,0,0,0,0,0
+2520130599,Human,AgentOps-AI/agentops,981,dot-agi,ok,0,3,0,0,1,0,3,1
+2520978741,Human,mlflow/mlflow,15746,harupy,ok,2,1,2,0,1,0,3,1
+2522826360,Human,TobikoData/sqlmesh,4427,themisvaltinos,ok,51,0,22,1,0,1,51,1
+2523947863,Human,remotion-dev/remotion,5295,JonnyBurger,ok,0,0,0,0,1,0,0,1
+2524180167,Human,mangiucugna/json_repair,112,codeflash-ai[bot],ok,0,0,0,0,0,0,0,0
+2525424596,Human,BerriAI/litellm,10903,NANDINI-star,ok,2,0,1,0,1,0,2,1
+2525453714,Human,Skyvern-AI/skyvern,2367,wintonzheng,ok,0,0,0,0,0,0,0,0
+2526305378,Human,mlflow/mlflow,15786,rahuja23,ok,14,0,1,1,2,1,14,3
+2526673638,Human,Uberi/speech_recognition,843,ftnext,ok,0,0,0,1,0,0,0,1
+2527047579,Human,cartography-cncf/cartography,1571,AdityaPandeyCN,ok,10,0,0,3,0,3,10,3
+2529504231,Human,microsoft/qsharp,2429,minestarks,ok,1,0,1,2,0,1,1,2
+2530024859,Human,awslabs/mcp,373,mikegc-aws,ok,1,18,0,0,2,0,19,2
+2530551941,Human,mlflow/mlflow,15807,B-Step62,ok,5,0,2,1,2,1,5,3
+2530634034,Human,mlflow/mlflow,15809,dhruyads,ok,0,0,0,0,1,0,0,1
+2530772992,Human,mlflow/mlflow,15810,TomeHirata,ok,2,1,1,0,1,0,3,1
+2532214135,Human,bruin-data/ingestr,199,sanjushahgupta,ok,18,0,1,0,0,0,18,0
+2535720745,Human,Panchovix/stable-diffusion-webui-reForge,367,67372a,ok,0,0,0,0,0,0,0,0
+2536184715,Human,mlflow/mlflow,15834,harupy,ok,7,7,5,0,1,0,14,1
+2536644442,Human,mediar-ai/terminator,39,divanshu-go,ok,3,0,1,9,1,5,3,10
+2536954288,Human,Significant-Gravitas/AutoGPT,9999,majdyz,ok,0,0,0,0,4,0,0,4
+2537431731,Human,zenml-io/zenml,3694,stefannica,ok,0,0,0,0,2,0,0,2
+2539193736,Human,mlflow/mlflow,15859,TomeHirata,ok,6,1,3,0,1,0,7,1
+2540205307,Human,dropseed/plain,35,davegaeddert,ok,0,0,0,0,0,0,0,0
+2540997654,Human,skypilot-org/skypilot,5715,cblmemo,ok,0,0,0,0,0,0,0,0
+2542040727,Human,langchain-ai/langgraph,4819,nfcampos,ok,5,0,0,0,1,0,5,1
+2542348118,Human,effekseer/Effekseer,1050,durswd,ok,0,0,0,0,0,0,0,0
+2542934986,Human,airbytehq/airbyte,60906,elefeint,ok,1,0,0,2,3,0,1,5
+2543172477,Human,julep-ai/julep,1454,HamadaSalhab,ok,0,0,0,0,2,0,0,2
+2544166428,Human,crewAIInc/crewAI-tools,313,lucasgomide,ok,12,1,5,1,0,0,13,1
+2545179720,Human,NousResearch/atropos,135,shannonsands,ok,0,0,0,0,0,0,0,0
+2546517998,Human,mlflow/mlflow,15902,B-Step62,ok,7,2,3,0,1,0,9,1
+2546726071,Human,PrunaAI/pruna,153,johnrachwan123,ok,0,0,0,0,0,0,0,0
+2547160591,Human,effekseer/Effekseer,1055,durswd,ok,0,0,0,0,0,0,0,0
+2547279361,Human,Azure/azure-functions-core-tools,4440,liliankasem,ok,0,0,0,0,0,0,0,0
+2548010588,Human,wandb/weave,4595,chance-wnb,ok,6,0,4,2,1,1,6,3
+2548639363,Human,bruin-data/ingestr,207,karakanb,ok,0,0,0,0,0,0,0,0
+2549162857,Human,bruin-data/bruin,697,jbrand-dsp,ok,0,0,0,0,0,0,0,0
+2550459755,Human,neondatabase/neon,12049,hlinnaka,ok,0,0,0,1,2,0,0,3
+2551797459,Human,writer/writer-framework,898,raaymax,ok,0,1,0,0,1,0,1,1
+2551809139,Human,dotnet/fsharp,18633,github-actions[bot],ok,0,0,0,0,0,0,0,0
+2552315306,Human,AgentOps-AI/agentops,1018,fenilfaldu,ok,3,0,1,2,1,2,3,3
+2552725254,Human,bruin-data/bruin,700,turtleDev,ok,3,0,0,0,0,0,3,0
+2553341049,Human,awslabs/mcp,460,srhsrhsrhsrh,ok,0,0,0,4,1,2,0,5
+2553400368,Human,crewAIInc/crewAI-tools,316,lucasgomide,ok,0,0,0,1,0,0,0,1
+2554942977,Human,sooperset/mcp-atlassian,467,sooperset,ok,0,0,0,0,0,0,0,0
+2555850827,Human,mlflow/mlflow,15985,smoorjani,ok,0,0,0,0,1,0,0,1
+2556631520,Human,alexanderjeurissen/ranger_devicons,136,alexanderjeurissen,ok,0,0,0,0,0,0,0,0
+2556638049,Human,mediar-ai/terminator,61,divanshu-go,ok,0,0,0,1,1,0,0,2
+2558927034,Human,mlflow/mlflow,16001,harupy,ok,3,2,2,1,1,1,5,2
+2559292377,Human,awslabs/mcp,489,bx9900,ok,3,0,0,0,0,0,3,0
+2561677603,Human,GlareDB/glaredb,3894,scsmithr,ok,0,0,0,0,0,0,0,0
+2564827914,Human,awslabs/mcp,501,scottschreckengaust,ok,0,0,0,0,0,0,0,0
+2565257900,Human,commaai/panda,2222,maxime-desroches,ok,0,0,0,0,0,0,0,0
+2566068573,Human,mlflow/mlflow,16059,dbczumar,ok,9,0,4,0,1,0,9,1
+2567130351,Human,PrunaAI/pruna,174,begumcig,ok,0,0,0,0,0,0,0,0
+2569040246,Human,microsoft/onnxruntime,24962,quic-calvnguy,ok,9,2,4,14,10,3,11,24
+2570876716,Human,roboflow/inference,1331,PawelPeczek-Roboflow,ok,0,0,0,0,0,0,0,0
+2571668210,Human,allenai/reward-bench,242,jacob-morrison,ok,0,0,0,1,0,1,0,1
+2572033204,Human,mlflow/mlflow,16103,B-Step62,ok,0,0,0,0,1,0,0,1
+2573822378,Human,Azure/azure-functions-core-tools,4462,gavin-aguiar,ok,5,0,2,0,0,0,5,0
+2574401083,Human,stanfordnlp/dspy,8337,chenmoneygithub,ok,0,0,0,0,0,0,0,0
+2574405759,Human,mlflow/mlflow,16125,smoorjani,ok,0,0,0,0,1,0,0,1
+2574861103,Human,marimo-team/marimo,5224,Light2Dark,ok,1,0,0,0,2,0,1,2
+2576026392,Human,jlowin/fastmcp,748,jlowin,ok,0,1,0,0,0,0,1,0
+2576212936,Human,tinygrad/tinygrad,10689,geohot,ok,0,0,0,1,1,0,0,2
+2576376243,Human,volcengine/verl,1911,hebiao064,ok,2,0,1,4,0,2,2,4
+2578194357,Human,mistralai/mistral-common,93,juliendenize,ok,0,0,0,0,0,0,0,0
+2578599113,Human,BeehiveInnovations/zen-mcp-server,2,vwieczorek,ok,0,0,0,0,0,0,0,0
+2579713983,Human,allenai/reward-bench,245,alvations,ok,0,0,0,0,0,0,0,0
+2579953738,Human,wizarrrr/wizarr,605,fireph,ok,0,0,0,0,0,0,0,0
+2579991903,Human,Significant-Gravitas/AutoGPT,10139,majdyz,ok,0,0,0,1,4,0,0,5
+2580095745,Human,awslabs/mcp,560,matthewgoodman13,ok,38,0,13,0,0,0,38,0
+2582175523,Human,crewAIInc/crewAI-tools,325,lucasgomide,ok,4,0,2,0,0,0,4,0
+2585293213,Human,featureform/enrichmcp,41,simba-git,ok,0,0,0,0,0,0,0,0
+2587797965,Human,featureform/enrichmcp,47,simba-git,ok,0,0,0,0,0,0,0,0
+2590345700,Human,kohya-ss/sd-scripts,2121,Disty0,ok,0,0,0,3,0,1,0,3
+2591073348,Human,dagster-io/dagster,30693,OwenKephart,ok,0,0,0,2,0,2,0,2
+2594350058,Human,mlflow/mlflow,16271,TomeHirata,ok,0,0,0,0,1,0,0,1
+2596620305,Human,microsoft/qsharp,2530,minestarks,ok,0,0,0,0,0,0,0,0
+2596992929,Human,promptfoo/promptfoo,4510,gru-agent[bot],ok,0,0,0,1,2,0,0,3
+2597060187,Human,featureform/enrichmcp,72,simba-git,ok,0,0,0,0,0,0,0,0
+2600773171,Human,spcl/dace,2054,romanc,ok,0,0,0,2,0,2,0,2
+2603520463,Human,Skyvern-AI/skyvern,2750,Prakashmaheshwaran,ok,0,0,0,0,0,0,0,0
+2603695662,Human,open-webui/open-webui,15138,zhangtyzzz,ok,0,0,0,1,0,0,0,1
+2604844532,Human,electricitymaps/electricitymaps-contrib,8232,florianscheidl,ok,0,0,0,0,1,0,0,1
+2605359283,Human,mlflow/mlflow,16340,joelrobin18,ok,0,0,0,0,1,0,0,1
+2606069562,Human,microsoft/magentic-ui,209,husseinmozannar,ok,0,4,0,3,0,1,4,3
+2607442037,Human,zenml-io/zenml,3757,AlexejPenner,ok,0,0,0,3,2,2,0,5
+2608653300,Human,featureform/enrichmcp,89,simba-git,ok,0,0,0,0,0,0,0,0
+2608822195,Human,microsoft/magentic-ui,212,husseinmozannar,ok,0,0,0,1,0,0,0,1
+2609183598,Human,marimo-team/marimo,5398,dmadisetti,ok,2,1,0,0,1,0,3,1
+2609301316,Human,marimo-team/marimo,5403,akshayka,ok,2,0,1,5,2,3,2,7
+2609550717,Human,Kiln-AI/Kiln,384,leonardmq,ok,0,0,0,2,3,2,0,5
+2609611207,Human,TracecatHQ/tracecat,1213,daryllimyt,ok,0,0,0,0,0,0,0,0
+2610958081,Human,julep-ai/julep,1500,whiterabbit1983,ok,0,3,0,0,17,0,3,17
+2612105218,Human,dropseed/plain,47,davegaeddert,ok,0,0,0,0,0,0,0,0
+2615181588,Human,crewAIInc/crewAI-tools,341,lucasgomide,ok,0,0,0,0,0,0,0,0
+2615665027,Human,featureform/enrichmcp,90,simba-git,ok,0,0,0,0,0,0,0,0
+2615702170,Human,bruin-data/ingestr,264,karakanb,ok,0,0,0,0,0,0,0,0
+2615739647,Human,featureform/enrichmcp,92,simba-git,ok,0,0,0,0,0,0,0,0
+2615743216,Human,featureform/enrichmcp,93,simba-git,ok,0,0,0,0,0,0,0,0
+2616198898,Human,peass-ng/PEASS-ng,482,Aarav-Juneja,ok,0,0,0,0,0,0,0,0
+2616211667,Human,featureform/enrichmcp,95,simba-git,ok,0,0,0,0,0,0,0,0
+2617719726,Human,dlt-hub/dlt,2809,rudolfix,ok,0,0,0,0,1,0,0,1
+2618367092,Human,crewAIInc/crewAI-tools,345,lucasgomide,ok,0,0,0,1,0,0,0,1
+2619492805,Human,OpenPipe/ART,163,bradhilton,ok,0,0,0,4,0,2,0,4
+2620590040,Human,PriorLabs/TabPFN,347,noahho,ok,0,0,0,0,0,0,0,0
+2625218797,Human,Blaizzy/mlx-vlm,397,neilmehta24,ok,0,0,0,1,0,0,0,1
+2625235744,Human,dotnet/aspire,10095,radical,ok,0,1,0,0,0,0,1,0
+1016104386,Human (pre-ChatGPT),python-cachier/cachier,76,erap129,ok,0,0,0,0,0,0,0,0
+1019030515,Human (pre-ChatGPT),python-cachier/cachier,77,shaypal5,ok,0,0,0,1,1,0,0,2
+1019183107,Human (pre-ChatGPT),python-cachier/cachier,78,shaypal5,ok,0,0,0,0,0,0,0,0
+1022115985,Human (pre-ChatGPT),python-cachier/cachier,80,shaypal5,ok,0,0,0,0,1,0,0,1
+1034144863,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,34,JonasKs,ok,2,0,2,0,1,0,2,1
+1034647105,Human (pre-ChatGPT),yutto-dev/yutto,20,dydhyhwu,ok,0,0,0,6,0,3,0,6
+1038335779,Human (pre-ChatGPT),stefankoegl/python-json-pointer,46,PeterlitsZo,ok,0,0,0,8,0,5,0,8
+1045422903,Human (pre-ChatGPT),yutto-dev/yutto,26,ouuan,ok,0,0,0,1,0,0,0,1
+1062041328,Human (pre-ChatGPT),python-cachier/cachier,84,erap129,ok,0,0,0,0,0,0,0,0
+1063384786,Human (pre-ChatGPT),python-cachier/cachier,85,shaypal5,ok,0,0,0,0,1,0,0,1
+1078446032,Human (pre-ChatGPT),snok/django-guid,69,JonasKs,ok,0,0,0,0,2,0,0,2
+1078507951,Human (pre-ChatGPT),snok/django-guid,70,sondrelg,ok,0,0,0,0,2,0,0,2
+1085539136,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,74,TapGhoul,ok,0,0,0,1,0,0,0,1
+1101776414,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,44,bkmetzler,ok,0,0,0,7,1,3,0,8
+1116320361,Human (pre-ChatGPT),yutto-dev/yutto,46,SigureMo,ok,0,0,0,0,0,0,0,0
+1121191213,Human (pre-ChatGPT),microsoft/Olive,68,harishsk,ok,0,0,0,1,0,0,0,1
+1124946807,Human (pre-ChatGPT),snok/django-guid,77,dustinchilson,ok,0,0,0,8,2,3,0,10
+1124984291,Human (pre-ChatGPT),yutto-dev/yutto,50,SigureMo,ok,0,0,0,0,0,0,0,0
+1125254036,Human (pre-ChatGPT),yutto-dev/yutto,55,SigureMo,ok,0,0,0,3,0,2,0,3
+1126238378,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,48,robteeuwen,ok,0,0,0,17,1,3,0,18
+1132585611,Human (pre-ChatGPT),yutto-dev/yutto,57,hui-shao,ok,0,0,0,0,0,0,0,0
+1133751091,Human (pre-ChatGPT),snok/django-guid,78,sondrelg,ok,0,0,0,0,1,0,0,1
+1137707841,Human (pre-ChatGPT),yutto-dev/yutto,60,SigureMo,ok,0,0,0,2,0,2,0,2
+1138323122,Human (pre-ChatGPT),yutto-dev/yutto,61,SigureMo,ok,0,0,0,0,0,0,0,0
+1145137149,Human (pre-ChatGPT),stefankoegl/python-json-pointer,49,benkehoe,ok,0,0,0,4,0,0,0,4
+1148954027,Human (pre-ChatGPT),microsoft/Olive,72,leqiao-1,ok,0,0,0,0,0,0,0,0
+1149972121,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,90,uitcis,ok,0,0,0,1,0,0,0,1
+1159193809,Human (pre-ChatGPT),microsoft/Olive,74,leqiao-1,ok,0,0,0,0,0,0,0,0
+1159793881,Human (pre-ChatGPT),matsui528/rii,45,ashleyabraham,ok,13,0,6,6,0,2,13,6
+1166074712,Human (pre-ChatGPT),mlco2/codecarbon,290,benoit-cty,ok,0,0,0,0,0,0,0,0
+1170552616,Human (pre-ChatGPT),microsoft/Olive,75,harishsk,ok,0,0,0,0,0,0,0,0
+1174868520,Human (pre-ChatGPT),microsoft/Olive,76,leqiao-1,ok,0,0,0,0,0,0,0,0
+1184394972,Human (pre-ChatGPT),microsoft/Olive,81,leqiao-1,ok,0,0,0,0,0,0,0,0
+1185343814,Human (pre-ChatGPT),mlco2/codecarbon,293,benoit-cty,ok,2,0,2,1,0,0,2,1
+1192143694,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,69,JonasKs,ok,0,0,0,0,0,0,0,0
+1195202671,Human (pre-ChatGPT),zfit/zfit,394,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1197314397,Human (pre-ChatGPT),zfit/zfit,395,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1200544171,Human (pre-ChatGPT),mlco2/codecarbon,297,HerveMignot,ok,0,0,0,5,0,2,0,5
+1202831803,Human (pre-ChatGPT),microsoft/Olive,84,leqiao-1,ok,0,0,0,0,0,0,0,0
+1203042954,Human (pre-ChatGPT),zfit/zfit,396,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1204010107,Human (pre-ChatGPT),microsoft/Olive,85,leqiao-1,ok,0,0,0,0,0,0,0,0
+1211576329,Human (pre-ChatGPT),mlco2/codecarbon,301,benoit-cty,ok,0,0,0,0,0,0,0,0
+1218565753,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,75,manupatel007,ok,3,0,1,7,1,2,3,8
+1221147515,Human (pre-ChatGPT),zfit/zfit,398,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1223420983,Human (pre-ChatGPT),snok/django-guid,81,Mdslino,ok,4,0,1,7,1,2,4,8
+1231608152,Human (pre-ChatGPT),mlco2/codecarbon,308,benoit-cty,ok,0,0,0,0,0,0,0,0
+1236258612,Human (pre-ChatGPT),yutto-dev/yutto,77,SigureMo,ok,0,0,0,0,0,0,0,0
+1241792124,Human (pre-ChatGPT),mlco2/codecarbon,311,benoit-cty,ok,0,0,0,2,0,1,0,2
+1253807135,Human (pre-ChatGPT),zfit/zfit,404,redeboer,ok,0,0,0,1,0,0,0,1
+1267970448,Human (pre-ChatGPT),MikePopoloski/slang,547,zachd-hrt,ok,4,0,0,1,1,1,4,2
+1273107196,Human (pre-ChatGPT),microsoft/Olive,101,leqiao-1,ok,0,0,0,0,0,0,0,0
+1283781196,Human (pre-ChatGPT),TorchIO-project/torchio,912,iimog,ok,0,0,0,1,2,0,0,3
+1285035016,Human (pre-ChatGPT),TorchIO-project/torchio,914,fepegar,ok,0,0,0,3,1,2,0,4
+1286209709,Human (pre-ChatGPT),zfit/zfit,408,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1287418523,Human (pre-ChatGPT),Azure/azure-kusto-python,403,ronmonetaMicro,ok,20,1,4,0,2,0,21,2
+1291724459,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,93,Bulga-xD,ok,15,0,7,5,1,1,15,6
+1294670417,Human (pre-ChatGPT),TorchIO-project/torchio,925,fepegar,ok,0,0,0,0,1,0,0,1
+1294881592,Human (pre-ChatGPT),TorchIO-project/torchio,926,fepegar,ok,0,0,0,0,1,0,0,1
+1295899874,Human (pre-ChatGPT),vespa-engine/pyvespa,361,msminhas93,ok,0,0,0,4,0,2,0,4
+1301197239,Human (pre-ChatGPT),NewFuture/DDNS,325,Anankke,ok,0,0,0,0,0,0,0,0
+1303369737,Human (pre-ChatGPT),NewFuture/DDNS,329,NewFuture,ok,0,0,0,0,0,0,0,0
+1309372968,Human (pre-ChatGPT),mlco2/codecarbon,323,mp15,ok,2,0,0,4,0,2,2,4
+1315596308,Human (pre-ChatGPT),NewFuture/DDNS,331,NewFuture,ok,0,0,0,0,0,0,0,0
+1315608703,Human (pre-ChatGPT),NewFuture/DDNS,334,NewFuture,ok,0,0,0,0,0,0,0,0
+1315811437,Human (pre-ChatGPT),NewFuture/DDNS,336,NewFuture,ok,0,0,0,0,0,0,0,0
+1320726172,Human (pre-ChatGPT),NewFuture/DDNS,340,NewFuture,ok,0,0,0,0,0,0,0,0
+1323609371,Human (pre-ChatGPT),Jij-Inc/OpenJij,288,github-actions[bot],ok,0,0,0,0,2,0,0,2
+1326073601,Human (pre-ChatGPT),TorchIO-project/torchio,943,fepegar,ok,0,0,0,0,1,0,0,1
+1329405024,Human (pre-ChatGPT),Lumiwealth/lumibot,193,grzesir,ok,0,0,0,0,0,0,0,0
+1330570494,Human (pre-ChatGPT),Lumiwealth/lumibot,194,grzesir,ok,0,0,0,0,0,0,0,0
+1331569076,Human (pre-ChatGPT),Azure/azure-kusto-python,407,enmoed,ok,8,0,4,0,2,0,8,2
+1333450657,Human (pre-ChatGPT),mlco2/codecarbon,329,MarionCoutarel,ok,0,0,0,0,0,0,0,0
+1334239831,Human (pre-ChatGPT),Azure/azure-kusto-python,408,AsafMah,ok,1,0,0,0,2,0,1,2
+1335548707,Human (pre-ChatGPT),Lumiwealth/lumibot,195,grzesir,ok,0,0,0,0,0,0,0,0
+1335624499,Human (pre-ChatGPT),Azure/azure-kusto-python,409,AsafMah,ok,0,0,0,0,2,0,0,2
+1336659036,Human (pre-ChatGPT),microsoft/Olive,107,mreyesgomez,ok,1,0,0,0,0,0,1,0
+1338108416,Human (pre-ChatGPT),Lumiwealth/lumibot,196,grzesir,ok,0,0,0,0,0,0,0,0
+1338986199,Human (pre-ChatGPT),Z3Prover/z3,6277,jfleisher,ok,0,0,0,0,0,0,0,0
+1340121603,Human (pre-ChatGPT),Azure/azure-kusto-python,410,ohadbitt,ok,13,2,4,0,2,0,15,2
+1340359199,Human (pre-ChatGPT),Z3Prover/z3,6280,jfleisher,ok,0,0,0,2,0,1,0,2
+1344348677,Human (pre-ChatGPT),zfit/zfit,415,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1345339167,Human (pre-ChatGPT),zfit/zfit,416,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1346978811,Human (pre-ChatGPT),Lumiwealth/lumibot,199,grzesir,ok,0,0,0,0,0,0,0,0
+1348014712,Human (pre-ChatGPT),Z3Prover/z3,6297,jfleisher,ok,7,0,0,0,0,0,7,0
+1349168602,Human (pre-ChatGPT),MikePopoloski/slang,592,HungMingWu,ok,0,0,0,4,1,2,0,5
+1349750402,Human (pre-ChatGPT),zfit/zfit,419,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1349874807,Human (pre-ChatGPT),zfit/zfit,420,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1352665350,Human (pre-ChatGPT),zfit/zfit,421,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1353402882,Human (pre-ChatGPT),zfit/zfit,422,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1354812281,Human (pre-ChatGPT),vespa-engine/pyvespa,370,thigm85,ok,0,0,0,0,0,0,0,0
+1358674166,Human (pre-ChatGPT),Azure/azure-kusto-python,413,ronmonetaMicro,ok,4,0,1,0,2,0,4,2
+1359530627,Human (pre-ChatGPT),LorenFrankLab/spyglass,333,rly,ok,2,0,1,0,0,0,2,0
+1360763638,Human (pre-ChatGPT),Lumiwealth/lumibot,200,grzesir,ok,0,0,0,0,0,0,0,0
+1361499336,Human (pre-ChatGPT),Azure/azure-kusto-python,414,enmoed,ok,13,0,5,0,2,0,13,2
+1361658351,Human (pre-ChatGPT),Azure/azure-kusto-python,415,ohadbitt,ok,0,0,0,0,2,0,0,2
+1362916207,Human (pre-ChatGPT),Z3Prover/z3,6325,thpani,ok,0,0,0,0,0,0,0,0
+1368207650,Human (pre-ChatGPT),LorenFrankLab/spyglass,336,acomrie,ok,1,0,0,1,0,1,1,1
+1368400965,Human (pre-ChatGPT),TorchIO-project/torchio,958,fepegar,ok,0,0,0,0,1,0,0,1
+1368992588,Human (pre-ChatGPT),TorchIO-project/torchio,959,mueller-franzes,ok,5,0,2,1,2,0,5,3
+1369842427,Human (pre-ChatGPT),Azure/azure-kusto-python,418,AsafMah,ok,17,0,6,0,2,0,17,2
+1372886410,Human (pre-ChatGPT),valkey-io/valkey-glide,35,shachlanAmazon,ok,5,0,2,1,0,1,5,1
+1375221700,Human (pre-ChatGPT),Jij-Inc/OpenJij,294,29rou,ok,0,0,0,0,0,0,0,0
+1375413558,Human (pre-ChatGPT),microsoft/Olive,109,leqiao-1,ok,0,0,0,0,0,0,0,0
+1376898677,Human (pre-ChatGPT),MikePopoloski/slang,617,HungMingWu,ok,14,0,3,1,1,0,14,2
+1378454028,Human (pre-ChatGPT),TorchIO-project/torchio,965,fepegar,ok,0,0,0,0,1,0,0,1
+1379481242,Human (pre-ChatGPT),Azure/azure-kusto-python,420,AsafMah,ok,0,0,0,0,2,0,0,2
+1379562489,Human (pre-ChatGPT),pydna-group/pydna,84,jan-glx,ok,0,0,0,0,0,0,0,0
+1379858605,Human (pre-ChatGPT),Lumiwealth/lumibot,203,grzesir,ok,0,0,0,0,0,0,0,0
+1381210765,Human (pre-ChatGPT),LorenFrankLab/spyglass,343,jguides,ok,0,0,0,1,0,0,0,1
+1381470684,Human (pre-ChatGPT),LorenFrankLab/spyglass,344,rly,ok,0,0,0,5,0,0,0,5
+1382077599,Human (pre-ChatGPT),vespa-engine/pyvespa,375,thigm85,ok,0,0,0,0,0,0,0,0
+1383115402,Human (pre-ChatGPT),Lumiwealth/lumibot,205,grzesir,ok,0,0,0,0,0,0,0,0
+1384224314,Human (pre-ChatGPT),DonDebonair/slack-machine,633,DonDebonair,ok,0,0,0,0,1,0,0,1
+1386703520,Human (pre-ChatGPT),LorenFrankLab/spyglass,353,edeno,ok,0,0,0,2,1,1,0,3
+1388414948,Human (pre-ChatGPT),Lumiwealth/lumibot,208,grzesir,ok,0,0,0,0,0,0,0,0
+1389589135,Human (pre-ChatGPT),valkey-io/valkey-glide,44,shachlanAmazon,ok,0,0,0,0,0,0,0,0
+1390039441,Human (pre-ChatGPT),LorenFrankLab/spyglass,355,MichaelCoulter,ok,0,0,0,0,0,0,0,0
+1390211165,Human (pre-ChatGPT),MikePopoloski/slang,624,HungMingWu,ok,4,0,0,1,0,1,4,1
+1390395056,Human (pre-ChatGPT),pulearn/pulearn,19,kjappelbaum,ok,0,0,0,4,0,1,0,4
+1390420613,Human (pre-ChatGPT),valkey-io/valkey-glide,50,shachlanAmazon,ok,0,0,0,0,0,0,0,0
+1390460706,Human (pre-ChatGPT),pydna-group/pydna,86,jan-glx,ok,0,0,0,1,0,1,0,1
+1391187866,Human (pre-ChatGPT),zfit/zfit,425,jonas-eschle,ok,0,0,0,0,0,0,0,0
+1392071789,Human (pre-ChatGPT),onnx/onnx,4561,xadupre,ok,13,0,6,0,0,0,13,0
+1393828753,Human (pre-ChatGPT),valkey-io/valkey-glide,51,shachlanAmazon,ok,7,0,3,0,0,0,7,0
+1394136215,Human (pre-ChatGPT),LorenFrankLab/spyglass,358,khl02007,ok,0,0,0,1,0,0,0,1
+1394599289,Human (pre-ChatGPT),vespa-engine/pyvespa,380,thigm85,ok,0,0,0,0,0,0,0,0
+1395563786,Human (pre-ChatGPT),MikePopoloski/slang,627,HungMingWu,ok,0,0,0,0,0,0,0,0
+1395566415,Human (pre-ChatGPT),LorenFrankLab/spyglass,360,dpeg22,ok,0,0,0,0,0,0,0,0
+1395915199,Human (pre-ChatGPT),vespa-engine/pyvespa,381,thigm85,ok,0,0,0,0,0,0,0,0
+1396765224,Human (pre-ChatGPT),mlco2/codecarbon,337,benoit-cty,ok,0,0,0,0,0,0,0,0
+1397936143,Human (pre-ChatGPT),onnx/onnx,4572,cbourjau,ok,5,0,1,2,0,1,5,2
+1401594483,Human (pre-ChatGPT),spcl/dace,1118,tbennun,ok,0,0,0,0,0,0,0,0
+1401730290,Human (pre-ChatGPT),spcl/dace,1119,tbennun,ok,0,0,0,0,0,0,0,0
+1401757092,Human (pre-ChatGPT),TorchIO-project/torchio,978,fepegar,ok,0,0,0,0,1,0,0,1
+1401956109,Human (pre-ChatGPT),vespa-engine/pyvespa,382,thigm85,ok,0,0,0,0,0,0,0,0
+1402334475,Human (pre-ChatGPT),TorchIO-project/torchio,981,fepegar,ok,0,0,0,6,2,4,0,8
+1402354124,Human (pre-ChatGPT),TorchIO-project/torchio,982,fepegar,ok,0,0,0,5,1,3,0,6
+1402437346,Human (pre-ChatGPT),TorchIO-project/torchio,984,fepegar,ok,0,0,0,0,1,0,0,1
+1403867692,Human (pre-ChatGPT),onnx/onnx,4582,jcwchen,ok,14,0,6,5,0,2,14,5
+1404520836,Human (pre-ChatGPT),spcl/dace,1120,tbennun,ok,0,0,0,0,0,0,0,0
+1405815065,Human (pre-ChatGPT),spcl/dace,1121,tbennun,ok,0,0,0,0,0,0,0,0
+1408286785,Human (pre-ChatGPT),onnx/onnx,4600,jbachurski,ok,2,0,1,1,0,0,2,1
+1408344001,Human (pre-ChatGPT),rqlite/rqlite,1074,otoolep,ok,0,0,0,1,0,1,0,1
+1409092390,Human (pre-ChatGPT),torchgeo/torchgeo,846,nilsleh,ok,2,0,0,0,0,0,2,0
+1409290947,Human (pre-ChatGPT),ailia-ai/ailia-models,935,kyakuno,ok,0,0,0,0,0,0,0,0
+1409860475,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2015,jeylau,ok,0,0,0,1,0,0,0,1
+1410236747,Human (pre-ChatGPT),torchgeo/torchgeo,850,nilsleh,ok,0,0,0,0,0,0,0,0
+1410268577,Human (pre-ChatGPT),torchgeo/torchgeo,852,nilsleh,ok,11,0,2,0,0,0,11,0
+1410290763,Human (pre-ChatGPT),DonDebonair/slack-machine,659,DonDebonair,ok,0,0,0,0,0,0,0,0
+1410952732,Human (pre-ChatGPT),spcl/dace,1123,tbennun,ok,7,0,4,0,0,0,7,0
+1412846000,Human (pre-ChatGPT),spcl/dace,1124,phschaad,ok,17,0,5,0,0,0,17,0
+1412980156,Human (pre-ChatGPT),Azure/azure-kusto-python,425,ronmonetaMicro,ok,0,0,0,0,2,0,0,2
+1414109762,Human (pre-ChatGPT),ailia-ai/ailia-models,936,ooe1123,ok,0,0,0,18,0,2,0,18
+1414230379,Human (pre-ChatGPT),rqlite/rqlite,1081,otoolep,ok,0,0,0,0,0,0,0,0
+1415643668,Human (pre-ChatGPT),getsentry/sentry-python,1694,Zylphrex,ok,0,0,0,2,0,1,0,2
+1415737990,Human (pre-ChatGPT),LorenFrankLab/spyglass,366,dpeg22,ok,6,0,2,2,0,1,6,2
+1416181873,Human (pre-ChatGPT),getsentry/sentry-python,1695,antonpirker,ok,0,0,0,1,0,1,0,1
+1416294168,Human (pre-ChatGPT),torchgeo/torchgeo,861,daiki-kimura,ok,4,0,2,2,0,2,4,2
+1416512939,Human (pre-ChatGPT),rqlite/rqlite,1083,otoolep,ok,0,0,0,0,0,0,0,0
+1417102060,Human (pre-ChatGPT),torchgeo/torchgeo,862,pmandiola,ok,2,0,0,2,0,2,2,2
+1417326604,Human (pre-ChatGPT),valkey-io/valkey-glide,54,shachlanAmazon,ok,0,0,0,0,0,0,0,0
+1417337064,Human (pre-ChatGPT),rqlite/rqlite,1084,otoolep,ok,0,0,0,0,0,0,0,0
+1417351745,Human (pre-ChatGPT),DonDebonair/slack-machine,663,DonDebonair,ok,0,0,0,0,1,0,0,1
+1417942959,Human (pre-ChatGPT),Jij-Inc/OpenJij,326,j-i-k-o,ok,0,3,0,0,2,0,3,2
+1418067730,Human (pre-ChatGPT),getsentry/sentry-python,1698,antonpirker,ok,0,0,0,0,0,0,0,0
+1418155323,Human (pre-ChatGPT),getsentry/sentry-python,1699,antonpirker,ok,0,0,0,0,0,0,0,0
+1418526054,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2021,jeylau,ok,0,0,0,0,0,0,0,0
+1418834665,Human (pre-ChatGPT),getsentry/sentry-python,1702,Zylphrex,ok,1,0,1,0,0,0,1,0
+1419204777,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2022,jeylau,ok,0,0,0,7,0,2,0,7
+1419687175,Human (pre-ChatGPT),Jij-Inc/OpenJij,327,j-i-k-o,ok,0,2,0,0,2,0,2,2
+1419765869,Human (pre-ChatGPT),vespa-engine/pyvespa,386,thigm85,ok,0,0,0,0,0,0,0,0
+1420219638,Human (pre-ChatGPT),spcl/dace,1127,tbennun,ok,3,0,1,0,0,0,3,0
+1421575499,Human (pre-ChatGPT),Jij-Inc/OpenJij,329,j-i-k-o,ok,0,3,0,0,2,0,3,2
+1422243645,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2025,jeylau,ok,0,0,0,1,0,0,0,1
+1423177111,Human (pre-ChatGPT),onnx/onnx,4621,yuanyao-nv,ok,8,1,0,4,0,2,9,4
+1424019781,Human (pre-ChatGPT),torchgeo/torchgeo,870,pmandiola,ok,2,0,1,1,0,0,2,1
+1424571455,Human (pre-ChatGPT),LorenFrankLab/spyglass,370,rly,ok,0,0,0,0,0,0,0,0
+1424979354,Human (pre-ChatGPT),getsentry/sentry-python,1711,mgaligniana,ok,0,0,0,0,0,0,0,0
+1425945530,Human (pre-ChatGPT),valkey-io/valkey-glide,60,shachlanAmazon,ok,5,0,2,0,0,0,5,0
+1426213137,Human (pre-ChatGPT),LorenFrankLab/spyglass,374,dpeg22,ok,0,0,0,0,0,0,0,0
+1427205168,Human (pre-ChatGPT),ailia-ai/ailia-models,938,kyakuno,ok,0,0,0,11,0,11,0,11
+1428302955,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2028,stes,ok,26,0,26,3,0,2,26,3
+1428875966,Human (pre-ChatGPT),Azure/azure-kusto-python,427,yihezkel,ok,0,0,0,0,2,0,0,2
+1429416049,Human (pre-ChatGPT),torchgeo/torchgeo,878,ashnair1,ok,6,0,1,0,0,0,6,0
+1429641480,Human (pre-ChatGPT),spcl/dace,1132,tbennun,ok,0,0,0,0,0,0,0,0
+1429735206,Human (pre-ChatGPT),getsentry/sentry-python,1716,sl0thentr0py,ok,0,0,0,2,0,0,0,2
+1429821182,Human (pre-ChatGPT),rqlite/rqlite,1099,otoolep,ok,0,0,0,0,0,0,0,0
+1429926308,Human (pre-ChatGPT),ailia-ai/ailia-models,940,ooe1123,ok,0,0,0,6,0,0,0,6
+1430185186,Human (pre-ChatGPT),spcl/dace,1133,TizianoDeMatteis,ok,0,0,0,0,0,0,0,0
+1430338399,Human (pre-ChatGPT),rqlite/rqlite,1100,otoolep,ok,0,0,0,0,0,0,0,0
+1430672043,Human (pre-ChatGPT),LorenFrankLab/spyglass,375,MichaelCoulter,ok,0,0,0,2,0,1,0,2
+1432337262,Human (pre-ChatGPT),ailia-ai/ailia-models,942,kyakuno,ok,0,0,0,0,0,0,0,0
+1433409544,Human (pre-ChatGPT),microsoft/Qcodes,4788,peendebak,ok,0,0,0,1,1,0,0,2
+1433542778,Human (pre-ChatGPT),onnx/onnx,4632,jcwchen,ok,14,1,6,1,0,0,15,1
+1433811078,Human (pre-ChatGPT),torchgeo/torchgeo,885,dependabot[bot],ok,0,0,0,0,0,0,0,0
+1435213759,Human (pre-ChatGPT),vespa-engine/pyvespa,390,thigm85,ok,0,0,0,0,0,0,0,0
+1435977432,Human (pre-ChatGPT),vespa-engine/pyvespa,391,thigm85,ok,0,0,0,0,0,0,0,0
+1436034526,Human (pre-ChatGPT),getsentry/sentry-python,1724,antonpirker,ok,10,0,5,0,1,0,10,1
+1436194259,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2033,MMathisLab,ok,0,0,0,0,0,0,0,0
+1436205486,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2034,MMathisLab,ok,0,0,0,0,0,0,0,0
+1436252672,Human (pre-ChatGPT),getsentry/sentry-python,1725,antonpirker,ok,5,0,3,1,0,1,5,1
+1436311509,Human (pre-ChatGPT),rqlite/rqlite,1107,otoolep,ok,0,0,0,0,0,0,0,0
+1436743420,Human (pre-ChatGPT),onnx/onnx,4636,take-cheeze,ok,0,0,0,1,0,1,0,1
+1436898325,Human (pre-ChatGPT),spcl/dace,1138,tbennun,ok,0,0,0,2,0,1,0,2
+1437445792,Human (pre-ChatGPT),microsoft/AzureTRE,2823,guybartal,ok,0,0,0,1,2,1,0,3
+1438300442,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2037,jeylau,ok,0,0,0,0,0,0,0,0
+1438321504,Human (pre-ChatGPT),microsoft/Qcodes,4790,jenshnielsen,ok,2,0,0,1,1,1,2,2
+1438369489,Human (pre-ChatGPT),spcl/dace,1141,TizianoDeMatteis,ok,0,0,0,0,0,0,0,0
+1438591469,Human (pre-ChatGPT),spcl/dace,1143,TizianoDeMatteis,ok,2,0,1,1,0,1,2,1
+1439851559,Human (pre-ChatGPT),spcl/dace,1144,sarahtr,ok,14,0,1,0,0,0,14,0
+1440016716,Human (pre-ChatGPT),microsoft/AzureTRE,2842,tanya-borisova,ok,6,1,3,7,14,7,7,21
+1440724171,Human (pre-ChatGPT),InamuraJIN/ActionRecorder,34,RivinHD,ok,0,0,0,0,0,0,0,0
+1442348528,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2040,jeylau,ok,0,0,0,0,0,0,0,0
+1442357616,Human (pre-ChatGPT),Azure/azure-kusto-python,431,creste,ok,4,0,2,7,0,3,4,7
+1442407856,Human (pre-ChatGPT),getsentry/sentry-python,1731,Zylphrex,ok,0,0,0,0,1,0,0,1
+1442610826,Human (pre-ChatGPT),onnx/onnx,4643,jcwchen,ok,1,0,0,0,0,0,1,0
+1443284056,Human (pre-ChatGPT),bentoml/BentoML,3223,aarnphm,ok,0,0,0,0,1,0,0,1
+1443439670,Human (pre-ChatGPT),Z3Prover/z3,6448,CEisenhofer,ok,0,0,0,0,0,0,0,0
+1443863195,Human (pre-ChatGPT),getsentry/sentry-python,1732,antonpirker,ok,0,0,0,1,1,0,0,2
+1443911004,Human (pre-ChatGPT),LorenFrankLab/spyglass,378,magland,ok,1,0,0,1,0,1,1,1
+1443950761,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,107,JonasKs,ok,1,0,1,0,0,0,1,0
+1444193822,Human (pre-ChatGPT),microsoft/Qcodes,4801,grothe6,ok,0,0,0,2,1,1,0,3
+1445100121,Human (pre-ChatGPT),onnx/onnx,4648,mszhanyi,ok,0,0,0,0,0,0,0,0
+1445533865,Human (pre-ChatGPT),ailia-ai/ailia-models,950,ooe1123,ok,0,0,0,0,0,0,0,0
+1445987323,Human (pre-ChatGPT),microsoft/onnxscript,184,gramalingam,ok,0,1,0,0,1,0,1,1
+1446145000,Human (pre-ChatGPT),microsoft/onnxscript,185,justinchuby,ok,0,0,0,1,1,0,0,2
+1446524394,Human (pre-ChatGPT),microsoft/onnxscript,187,justinchuby,ok,0,4,0,0,0,0,4,0
+1447339747,Human (pre-ChatGPT),rqlite/rqlite,1116,otoolep,ok,0,0,0,0,0,0,0,0
+1447430046,Human (pre-ChatGPT),microsoft/onnxscript,189,xiaowuhu,ok,9,11,3,1,1,0,20,2
+1447731939,Human (pre-ChatGPT),valkey-io/valkey-glide,76,barshaul,ok,48,0,18,4,0,3,48,4
+1448121447,Human (pre-ChatGPT),microsoft/Qcodes,4802,jenshnielsen,ok,2,0,1,1,3,1,2,4
+1448145610,Human (pre-ChatGPT),rqlite/rqlite,1117,otoolep,ok,0,0,0,0,0,0,0,0
+1448394698,Human (pre-ChatGPT),microsoft/AzureTRE,2872,tanya-borisova,ok,0,0,0,5,7,5,0,12
+1448616828,Human (pre-ChatGPT),microsoft/AzureTRE,2873,damoodamoo,ok,0,0,0,5,17,5,0,22
+1448802963,Human (pre-ChatGPT),skypilot-org/skypilot,1414,Michaelvll,ok,13,0,6,0,0,0,13,0
+1448946855,Human (pre-ChatGPT),microsoft/onnxscript,191,justinchuby,ok,0,0,0,0,1,0,0,1
+1449211400,Human (pre-ChatGPT),skypilot-org/skypilot,1416,Michaelvll,ok,0,0,0,0,0,0,0,0
+1449293336,Human (pre-ChatGPT),skypilot-org/skypilot,1417,Michaelvll,ok,0,0,0,0,0,0,0,0
+1449644413,Human (pre-ChatGPT),microsoft/onnxscript,193,xadupre,ok,0,5,0,0,1,0,5,1
+1449873128,Human (pre-ChatGPT),onnx/onnx,4658,xadupre,ok,0,1,0,4,0,3,1,4
+1449896319,Human (pre-ChatGPT),InamuraJIN/ActionRecorder,40,RivinHD,ok,0,0,0,1,0,1,0,1
+1450003008,Human (pre-ChatGPT),microsoft/lisa,2399,LiliDeng,ok,0,0,0,0,0,0,0,0
+1450214505,Human (pre-ChatGPT),microsoft/lisa,2401,mcgov,ok,0,0,0,1,0,1,0,1
+1450271966,Human (pre-ChatGPT),microsoft/onnxscript,195,gramalingam,ok,2,0,1,0,1,0,2,1
+1450530169,Human (pre-ChatGPT),microsoft/AzureTRE,2883,jjgriff93,ok,6,0,2,2,3,2,6,5
+1450723876,Human (pre-ChatGPT),onnx/onnx,4662,YanBC,ok,0,0,0,1,0,1,0,1
+1450817556,Human (pre-ChatGPT),skypilot-org/skypilot,1421,dongreenberg,ok,1,0,0,0,0,0,1,0
+1450862970,Human (pre-ChatGPT),bentoml/BentoML,3253,sauyon,ok,0,0,0,1,1,0,0,2
+1451061931,Human (pre-ChatGPT),mlflow/mlflow,7354,harupy,ok,0,0,0,2,0,1,0,2
+1451623036,Human (pre-ChatGPT),spcl/dace,1153,tbennun,ok,0,0,0,0,0,0,0,0
+1451792903,Human (pre-ChatGPT),microsoft/lisa,2404,avylove,ok,0,0,0,1,0,0,0,1
+1451867870,Human (pre-ChatGPT),microsoft/AzureTRE,2887,guybartal,ok,7,0,0,4,10,4,7,14
+1452079048,Human (pre-ChatGPT),bentoml/BentoML,3254,bojiang,ok,0,0,0,0,1,0,0,1
+1452377626,Human (pre-ChatGPT),microsoft/lisa,2405,contre,ok,0,0,0,0,0,0,0,0
+1452449005,Human (pre-ChatGPT),bentoml/BentoML,3255,aarnphm,ok,0,0,0,0,1,0,0,1
+1452553851,Human (pre-ChatGPT),microsoft/onnxscript,197,justinchuby,ok,1,12,0,0,1,0,13,1
+1452629859,Human (pre-ChatGPT),bentoml/BentoML,3257,bojiang,ok,7,0,1,2,1,0,7,3
+1452643545,Human (pre-ChatGPT),Arize-ai/phoenix,15,fjcasti1,ok,0,0,0,0,0,0,0,0
+1452703302,Human (pre-ChatGPT),Arize-ai/phoenix,16,fjcasti1,ok,0,0,0,0,0,0,0,0
+1452780556,Human (pre-ChatGPT),microsoft/lisa,2407,anirudhrb,ok,0,0,0,0,0,0,0,0
+1452791404,Human (pre-ChatGPT),microsoft/lisa,2408,smit-gardhariya,ok,8,0,5,1,0,0,8,1
+1452876770,Human (pre-ChatGPT),skypilot-org/skypilot,1426,WoosukKwon,ok,14,0,6,1,0,1,14,1
+1452901253,Human (pre-ChatGPT),skypilot-org/skypilot,1427,Michaelvll,ok,13,0,6,1,0,0,13,1
+1453451162,Human (pre-ChatGPT),valkey-io/valkey-glide,78,shachlanAmazon,ok,0,0,0,0,0,0,0,0
+1453723991,Human (pre-ChatGPT),getsentry/sentry-python,1746,sl0thentr0py,ok,0,0,0,0,1,0,0,1
+1453796840,Human (pre-ChatGPT),valkey-io/valkey-glide,79,shachlanAmazon,ok,0,0,0,0,0,0,0,0
+1454039769,Human (pre-ChatGPT),Arize-ai/phoenix,23,mikeldking,ok,0,0,0,0,1,0,0,1
+1454054880,Human (pre-ChatGPT),microsoft/onnxscript,198,gramalingam,ok,11,5,5,8,1,3,16,9
+1454232318,Human (pre-ChatGPT),Arize-ai/phoenix,25,davidgmonical,ok,0,0,0,0,0,0,0,0
+1454675597,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2054,jeylau,ok,0,0,0,0,0,0,0,0
+1454748865,Human (pre-ChatGPT),ailia-ai/ailia-models,955,mmitti,ok,0,0,0,0,0,0,0,0
+1454978398,Human (pre-ChatGPT),onnx/onnx,4666,p-wysocki,ok,2,0,0,1,0,1,2,1
+1455005376,Human (pre-ChatGPT),microsoft/lisa,2411,LiliDeng,ok,0,0,0,0,0,0,0,0
+1455215647,Human (pre-ChatGPT),microsoft/Qcodes,4810,jenshnielsen,ok,0,0,0,0,1,0,0,1
+1455288380,Human (pre-ChatGPT),microsoft/Qcodes,4811,astafan8,ok,3,0,2,0,1,0,3,1
+1455316455,Human (pre-ChatGPT),microsoft/Qcodes,4812,jenshnielsen,ok,0,0,0,0,1,0,0,1
+1455428709,Human (pre-ChatGPT),microsoft/lisa,2412,dsrivastavv,ok,3,0,2,0,0,0,3,0
+1455539241,Human (pre-ChatGPT),Arize-ai/phoenix,27,davidgmonical,ok,0,0,0,0,0,0,0,0
+1455685395,Human (pre-ChatGPT),Arize-ai/phoenix,29,davidgmonical,ok,3,0,0,0,0,0,3,0
+1455723667,Human (pre-ChatGPT),Arize-ai/phoenix,30,mikeldking,ok,0,0,0,0,0,0,0,0
+1455827018,Human (pre-ChatGPT),mlflow/mlflow,7364,BenWilson2,ok,6,0,3,1,0,0,6,1
+1455829745,Human (pre-ChatGPT),microsoft/onnxscript,199,gramalingam,ok,19,9,6,3,1,2,28,4
+1455871496,Human (pre-ChatGPT),skypilot-org/skypilot,1432,Michaelvll,ok,0,0,0,0,0,0,0,0
+1456033317,Human (pre-ChatGPT),Arize-ai/phoenix,38,fjcasti1,ok,2,0,1,0,1,0,2,1
+1456053352,Human (pre-ChatGPT),bentoml/BentoML,3261,aarnphm,ok,1,0,0,0,1,0,1,1
+1456075968,Human (pre-ChatGPT),skypilot-org/skypilot,1433,Michaelvll,ok,8,0,3,5,0,4,8,5
+1456092041,Human (pre-ChatGPT),Arize-ai/phoenix,41,axiomofjoy,ok,0,0,0,0,0,0,0,0
+1456198279,Human (pre-ChatGPT),Arize-ai/phoenix,42,mikeldking,ok,0,0,0,0,1,0,0,1
+1456227752,Human (pre-ChatGPT),Arize-ai/phoenix,43,fjcasti1,ok,6,0,3,2,1,1,6,3
+1456554661,Human (pre-ChatGPT),microsoft/lisa,2414,LiliDeng,ok,0,0,0,0,0,0,0,0
+1456644243,Human (pre-ChatGPT),neondatabase/neon,2870,hlinnaka,ok,0,0,0,0,0,0,0,0
+1456750998,Human (pre-ChatGPT),reflex-dev/reflex,6,Alek99,ok,0,0,0,0,0,0,0,0
+1456871663,Human (pre-ChatGPT),microsoft/AzureTRE,2894,guybartal,ok,18,0,4,3,3,3,18,6
+1456969356,Human (pre-ChatGPT),InamuraJIN/ActionRecorder,41,RivinHD,ok,0,0,0,0,0,0,0,0
+1457056660,Human (pre-ChatGPT),reflex-dev/reflex,7,picklelo,ok,10,0,6,0,0,0,10,0
+1457100885,Human (pre-ChatGPT),reflex-dev/reflex,8,picklelo,ok,1,0,0,0,0,0,1,0
+1457112362,Human (pre-ChatGPT),reflex-dev/reflex,9,picklelo,ok,0,0,0,0,0,0,0,0
+1457196566,Human (pre-ChatGPT),microsoft/lisa,2416,LiliDeng,ok,0,0,0,0,0,0,0,0
+1457279640,Human (pre-ChatGPT),microsoft/onnxscript,200,justinchuby,ok,2,0,2,3,1,2,2,4
+1457334712,Human (pre-ChatGPT),microsoft/onnxscript,201,justinchuby,ok,2,0,1,0,1,0,2,1
+1457486443,Human (pre-ChatGPT),Azure/azure-kusto-python,433,AsafMah,ok,0,0,0,0,2,0,0,2
+1457753006,Human (pre-ChatGPT),microsoft/Qcodes,4816,astafan8,ok,0,0,0,0,1,0,0,1
+1457973701,Human (pre-ChatGPT),microsoft/lisa,2417,LiliDeng,ok,2,0,1,0,0,0,2,0
+1458232602,Human (pre-ChatGPT),neondatabase/neon,2878,bojanserafimov,ok,2,0,1,0,0,0,2,0
+1458515518,Human (pre-ChatGPT),reflex-dev/reflex,10,picklelo,ok,0,0,0,0,0,0,0,0
+1458532039,Human (pre-ChatGPT),mlflow/mlflow,7370,dbczumar,ok,4,0,2,1,0,0,4,1
+1458550192,Human (pre-ChatGPT),mlflow/mlflow,7371,dbczumar,ok,0,0,0,1,0,0,0,1
+1458615792,Human (pre-ChatGPT),Arize-ai/phoenix,51,davidgmonical,ok,0,0,0,0,1,0,0,1
+1458730210,Human (pre-ChatGPT),reflex-dev/reflex,11,picklelo,ok,0,0,0,0,0,0,0,0
+1458795929,Human (pre-ChatGPT),reflex-dev/reflex,12,picklelo,ok,0,0,0,0,0,0,0,0
+1458855963,Human (pre-ChatGPT),skypilot-org/skypilot,1442,Michaelvll,ok,0,0,0,3,0,2,0,3
+1459247528,Human (pre-ChatGPT),Arize-ai/phoenix,55,mikeldking,ok,9,0,2,0,1,0,9,1
+1459389733,Human (pre-ChatGPT),onnx/onnx,4671,xadupre,ok,2,10,0,0,0,0,12,0
+1459399842,Human (pre-ChatGPT),bentoml/BentoML,3271,benjamintanweihao,ok,0,0,0,0,1,0,0,1
+1459428832,Human (pre-ChatGPT),neondatabase/neon,2886,problame,ok,0,0,0,1,0,0,0,1
+1459516893,Human (pre-ChatGPT),mlflow/mlflow,7376,harupy,ok,0,0,0,1,0,0,0,1
+1459603896,Human (pre-ChatGPT),getsentry/sentry-python,1751,sl0thentr0py,ok,0,0,0,0,0,0,0,0
+1459609800,Human (pre-ChatGPT),neondatabase/neon,2891,bayandin,ok,0,0,0,2,0,2,0,2
+1459622377,Human (pre-ChatGPT),neondatabase/neon,2892,problame,ok,4,0,0,6,0,1,4,6
+1459931969,Human (pre-ChatGPT),microsoft/lisa,2421,avylove,ok,0,0,0,7,0,3,0,7
+1459982519,Human (pre-ChatGPT),airbytehq/airbyte,19712,davydov-d,ok,1,0,0,3,0,2,1,3
+1460070729,Human (pre-ChatGPT),mlflow/mlflow,7381,BenWilson2,ok,1,0,0,1,0,0,1,1
+1460132574,Human (pre-ChatGPT),near/nearcore,8104,marcelo-gonzalez,ok,3,0,1,0,0,0,3,0
+1460405154,Human (pre-ChatGPT),Arize-ai/phoenix,57,fjcasti1,ok,48,0,23,0,1,0,48,1
+1460483597,Human (pre-ChatGPT),datahub-project/datahub,6525,hsheth2,ok,0,0,0,0,2,0,0,2
+1460648971,Human (pre-ChatGPT),rqlite/rqlite,1121,otoolep,ok,0,0,0,0,0,0,0,0
+1460800072,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2059,AlexEMG,ok,0,0,0,0,0,0,0,0
+1460806826,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2060,AlexEMG,ok,0,0,0,0,0,0,0,0
+1461071764,Human (pre-ChatGPT),datahub-project/datahub,6528,hsheth2,ok,0,0,0,0,1,0,0,1
+1461558645,Human (pre-ChatGPT),neondatabase/neon,2902,knizhnik,ok,0,0,0,0,0,0,0,0
+1462160652,Human (pre-ChatGPT),microsoft/onnxscript,211,gramalingam,ok,10,6,4,6,1,2,16,7
+1462224946,Human (pre-ChatGPT),mlflow/mlflow,7391,BenWilson2,ok,0,0,0,2,0,1,0,2
+1462230190,Human (pre-ChatGPT),datahub-project/datahub,6537,hsheth2,ok,2,0,1,0,2,0,2,2
+1462529216,Human (pre-ChatGPT),neondatabase/neon,2910,hlinnaka,ok,7,0,3,2,0,1,7,2
+1462623758,Human (pre-ChatGPT),ailia-ai/ailia-models,962,kyakuno,ok,0,0,0,0,0,0,0,0
+1462723314,Human (pre-ChatGPT),near/nearcore,8111,marcelo-gonzalez,ok,1,0,0,0,0,0,1,0
+1462985441,Human (pre-ChatGPT),mlflow/mlflow,7396,harupy,ok,0,0,0,1,0,0,0,1
+1463016416,Human (pre-ChatGPT),datahub-project/datahub,6545,mayurinehate,ok,0,0,0,0,2,0,0,2
+1463134249,Human (pre-ChatGPT),microsoft/Qcodes,4818,jenshnielsen,ok,0,0,0,0,1,0,0,1
+1463283172,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27686,D-W-,ok,11,0,4,1,0,0,11,1
+1463385865,Human (pre-ChatGPT),datahub-project/datahub,6548,mayurinehate,ok,0,0,0,0,2,0,0,2
+1463440537,Human (pre-ChatGPT),microsoft/AzureTRE,2907,tamirkamara,ok,0,0,0,3,5,3,0,8
+1463455206,Human (pre-ChatGPT),airbytehq/airbyte,19792,grubberr,ok,0,0,0,3,0,3,0,3
+1463757161,Human (pre-ChatGPT),reflex-dev/reflex,13,picklelo,ok,0,0,0,0,0,0,0,0
+1463812023,Human (pre-ChatGPT),bentoml/BentoML,3275,mqk,ok,1,0,0,1,1,0,1,2
+1464073237,Human (pre-ChatGPT),ailia-ai/ailia-models,964,kyakuno,ok,0,0,0,1,0,1,0,1
+1464102540,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27692,azure-sdk,ok,0,0,0,1,0,1,0,1
+1464124455,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27693,azure-sdk,ok,0,0,0,2,0,1,0,2
+1464146839,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27694,Xingyu-Yue,ok,2,0,0,1,0,0,2,1
+1464251528,Human (pre-ChatGPT),airbytehq/airbyte,19803,grubberr,ok,2,0,1,9,0,9,2,9
+1464435992,Human (pre-ChatGPT),ailia-ai/ailia-models,965,kyakuno,ok,0,0,0,0,0,0,0,0
+1464735610,Human (pre-ChatGPT),airbytehq/airbyte,19806,alafanechere,ok,3,0,1,3,1,3,3,4
+1464736850,Human (pre-ChatGPT),getsentry/sentry-python,1756,Zylphrex,ok,0,0,0,2,0,1,0,2
+1464848738,Human (pre-ChatGPT),datahub-project/datahub,6553,treff7es,ok,3,0,1,0,2,0,3,2
+1464900984,Human (pre-ChatGPT),torchgeo/torchgeo,915,dependabot[bot],ok,0,0,0,0,0,0,0,0
+1465049997,Human (pre-ChatGPT),langchain-ai/langchain,196,hwchase17,ok,0,0,0,0,0,0,0,0
+1465051474,Human (pre-ChatGPT),langchain-ai/langchain,197,hwchase17,ok,0,0,0,0,0,0,0,0
+1465063576,Human (pre-ChatGPT),langchain-ai/langchain,198,hwchase17,ok,0,0,0,0,0,0,0,0
+1465174995,Human (pre-ChatGPT),langchain-ai/langchain,203,markey,ok,0,0,0,0,0,0,0,0
+1465192565,Human (pre-ChatGPT),datahub-project/datahub,6554,treff7es,ok,5,0,2,0,2,0,5,2
+1465266822,Human (pre-ChatGPT),langchain-ai/langchain,206,hwchase17,ok,0,0,0,0,0,0,0,0
+1465277751,Human (pre-ChatGPT),langchain-ai/langchain,207,hwchase17,ok,0,0,0,1,0,0,0,1
+1465319585,Human (pre-ChatGPT),skypilot-org/skypilot,1452,concretevitamin,ok,2,0,1,0,0,0,2,0
+1465508056,Human (pre-ChatGPT),DonDebonair/slack-machine,677,DonDebonair,ok,0,0,0,0,1,0,0,1
+1465530473,Human (pre-ChatGPT),langchain-ai/langchain,210,hwchase17,ok,0,0,0,0,0,0,0,0
+1465619965,Human (pre-ChatGPT),skypilot-org/skypilot,1454,concretevitamin,ok,0,0,0,0,0,0,0,0
+1465729706,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27697,azure-sdk,ok,0,0,0,2,0,1,0,2
+1465730711,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27698,azure-sdk,ok,0,0,0,1,0,1,0,1
+1465851073,Human (pre-ChatGPT),skypilot-org/skypilot,1457,Michaelvll,ok,5,0,2,0,0,0,5,0
+1465858944,Human (pre-ChatGPT),skypilot-org/skypilot,1458,concretevitamin,ok,7,0,4,1,0,0,7,1
+1465927334,Human (pre-ChatGPT),microsoft/lisa,2428,LiliDeng,ok,0,0,0,0,0,0,0,0
+1466133789,Human (pre-ChatGPT),airbytehq/airbyte,19820,alafanechere,ok,3,0,1,1,1,1,3,2
+1466239762,Human (pre-ChatGPT),neondatabase/neon,2942,problame,ok,12,0,5,10,0,7,12,10
+1466511006,Human (pre-ChatGPT),datahub-project/datahub,6558,treff7es,ok,3,0,0,0,2,0,3,2
+1466693983,Human (pre-ChatGPT),datahub-project/datahub,6559,mmmeeedddsss,ok,0,0,0,3,2,1,0,5
+1466758470,Human (pre-ChatGPT),langchain-ai/langchain,214,Hansenq,ok,0,0,0,1,0,0,0,1
+1466799601,Human (pre-ChatGPT),mlflow/mlflow,7414,sunishsheth2009,ok,3,0,0,1,0,0,3,1
+1466907847,Human (pre-ChatGPT),datahub-project/datahub,6561,hsheth2,ok,0,0,0,0,2,0,0,2
+1466958611,Human (pre-ChatGPT),airbytehq/airbyte,19843,evantahler,ok,0,0,0,0,0,0,0,0
+1467034835,Human (pre-ChatGPT),getsentry/sentry,41793,Abdkhan14,ok,5,0,3,0,0,0,5,0
+1467065767,Human (pre-ChatGPT),getsentry/sentry,41794,armenzg,ok,0,0,0,0,0,0,0,0
+1467099967,Human (pre-ChatGPT),getsentry/sentry,41798,jan-auer,ok,3,0,1,0,0,0,3,0
+1467114371,Human (pre-ChatGPT),getsentry/sentry,41799,JoshFerge,ok,1,0,1,1,0,0,1,1
+1467132791,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27706,jalauzon-msft,ok,0,0,0,1,0,0,0,1
+1467172114,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27707,jalauzon-msft,ok,0,0,0,1,0,0,0,1
+1467203348,Human (pre-ChatGPT),Arize-ai/phoenix,68,axiomofjoy,ok,1,0,0,0,0,0,1,0
+1467230896,Human (pre-ChatGPT),getsentry/sentry,41812,lynnagara,ok,0,0,0,0,0,0,0,0
+1467238770,Human (pre-ChatGPT),getsentry/sentry,41813,barkbarkimashark,ok,2,0,1,0,0,0,2,0
+1467293110,Human (pre-ChatGPT),getsentry/sentry,41816,AniketDas-Tekky,ok,2,0,1,0,0,0,2,0
+1467305035,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27712,kristapratico,ok,0,0,0,0,0,0,0,0
+1467311026,Human (pre-ChatGPT),langchain-ai/langchain,219,hwchase17,ok,0,0,0,0,0,0,0,0
+1467316648,Human (pre-ChatGPT),getsentry/sentry,41819,ceorourke,ok,0,0,0,0,0,0,0,0
+1467320858,Human (pre-ChatGPT),skypilot-org/skypilot,1464,Michaelvll,ok,6,0,2,3,0,2,6,3
+1467321588,Human (pre-ChatGPT),datahub-project/datahub,6566,hsheth2,ok,1,0,0,1,2,1,1,3
+1467355454,Human (pre-ChatGPT),near/nearcore,8130,marcelo-gonzalez,ok,0,0,0,0,0,0,0,0
+1467362557,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27714,msyyc,ok,0,0,0,0,0,0,0,0
+1467398695,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27716,D-W-,ok,0,0,0,1,0,0,0,1
+1467401644,Human (pre-ChatGPT),reflex-dev/reflex,16,picklelo,ok,0,0,0,0,0,0,0,0
+1467543091,Human (pre-ChatGPT),langchain-ai/langchain,221,asamant21,ok,0,0,0,0,0,0,0,0
+1467570980,Human (pre-ChatGPT),ailia-ai/ailia-models,966,kyakuno,ok,0,0,0,2,0,2,0,2
+1467661138,Human (pre-ChatGPT),datahub-project/datahub,6568,mayurinehate,ok,0,0,0,0,2,0,0,2
+1467667485,Human (pre-ChatGPT),microsoft/AzureTRE,2922,LizaShak,ok,0,0,0,4,6,2,0,10
+1467703373,Human (pre-ChatGPT),Azure/azure-sdk-for-python,27720,msyyc,ok,0,0,0,1,0,1,0,1
+1467897447,Human (pre-ChatGPT),neondatabase/neon,2953,hlinnaka,ok,0,0,0,1,0,1,0,1
+1467897860,Human (pre-ChatGPT),spcl/dace,1161,tbennun,ok,0,0,0,0,0,0,0,0
+1467953742,Human (pre-ChatGPT),langchain-ai/langchain,222,andrewgleave,ok,0,0,0,1,0,0,0,1
+1467977825,Human (pre-ChatGPT),datahub-project/datahub,6569,anshbansal,ok,0,0,0,1,2,1,0,3
+1468064081,Human (pre-ChatGPT),airbytehq/airbyte,19873,alafanechere,ok,0,0,0,0,0,0,0,0
+1468078194,Human (pre-ChatGPT),datahub-project/datahub,6572,mayurinehate,ok,0,0,0,0,2,0,0,2
+1468316428,Human (pre-ChatGPT),microsoft/onnxscript,213,abock,ok,0,0,0,0,1,0,0,1
+1468395428,Human (pre-ChatGPT),microsoft/onnxscript,216,abock,ok,1,1,0,0,1,0,2,1
+1468542485,Human (pre-ChatGPT),getsentry/sentry,41844,JoshFerge,ok,0,0,0,0,0,0,0,0
+1468587885,Human (pre-ChatGPT),getsentry/sentry,41849,ceorourke,ok,0,0,0,0,0,0,0,0
+1468710944,Human (pre-ChatGPT),getsentry/sentry,41863,gggritso,ok,0,0,0,0,0,0,0,0
+157934052,Human (pre-ChatGPT),pydna-group/pydna,17,timovwb,ok,0,0,0,2,0,1,0,2
+161040645,Human (pre-ChatGPT),pydna-group/pydna,18,bruno2git,ok,0,0,0,0,0,0,0,0
+269307576,Human (pre-ChatGPT),stefankoegl/python-json-pointer,24,stefankoegl,ok,0,0,0,0,0,0,0,0
+288622894,Human (pre-ChatGPT),stefankoegl/python-json-pointer,28,hugovk,ok,0,0,0,3,0,1,0,3
+296411212,Human (pre-ChatGPT),pydna-group/pydna,45,cbrueffer,ok,0,0,0,1,1,0,0,2
+30215939,Human (pre-ChatGPT),stefankoegl/python-json-pointer,7,meredithdutton,ok,0,0,0,2,0,1,0,2
+354297462,Human (pre-ChatGPT),matsui528/rii,14,Hi-king,ok,0,0,0,1,0,0,0,1
+354651234,Human (pre-ChatGPT),matsui528/rii,16,matsui528,ok,0,0,0,0,0,0,0,0
+354821446,Human (pre-ChatGPT),matsui528/rii,18,matsui528,ok,0,0,0,0,0,0,0,0
+355814901,Human (pre-ChatGPT),matsui528/rii,20,matsui528,ok,0,0,0,0,0,0,0,0
+357897479,Human (pre-ChatGPT),matsui528/rii,21,matsui528,ok,0,0,0,0,0,0,0,0
+358600573,Human (pre-ChatGPT),matsui528/rii,22,matsui528,ok,0,0,0,0,0,0,0,0
+359744503,Human (pre-ChatGPT),matsui528/rii,23,matsui528,ok,0,0,0,0,0,0,0,0
+47890338,Human (pre-ChatGPT),stefankoegl/python-json-pointer,11,thekafkaf,ok,13,0,5,4,0,1,13,4
+47890591,Human (pre-ChatGPT),stefankoegl/python-json-pointer,12,thekafkaf,ok,5,0,2,3,0,0,5,3
+524397345,Human (pre-ChatGPT),pydna-group/pydna,60,mountainpenguin,ok,0,0,0,2,1,1,0,3
+552510594,Human (pre-ChatGPT),pulearn/pulearn,1,shaypal5,ok,0,0,0,0,0,0,0,0
+559585688,Human (pre-ChatGPT),matsui528/rii,36,matsui528,ok,0,0,0,2,0,2,0,2
+57743967,Human (pre-ChatGPT),stefankoegl/python-json-pointer,16,meredithdutton,ok,4,0,0,18,0,7,4,18
+577539654,Human (pre-ChatGPT),pulearn/pulearn,2,kerengaiger,ok,3,0,0,1,0,0,3,1
+594610495,Human (pre-ChatGPT),pydna-group/pydna,63,harijay,ok,0,0,0,0,0,0,0,0
+6809274,Human (pre-ChatGPT),stefankoegl/python-json-pointer,2,kxepal,ok,0,0,0,1,0,0,0,1
+689160749,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,8,iCyP,ok,0,0,0,0,0,0,0,0
+727544394,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,23,Cj-bc,ok,0,0,0,21,0,10,0,21
+744173455,Human (pre-ChatGPT),snok/django-guid,49,sondrelg,ok,0,0,0,0,0,0,0,0
+744659354,Human (pre-ChatGPT),python-cachier/cachier,39,cthoyt,ok,2,0,1,6,0,2,2,6
+745130116,Human (pre-ChatGPT),snok/django-guid,50,sondrelg,ok,1,0,1,1,0,1,1,1
+745297413,Human (pre-ChatGPT),vladfi1/slippi-ai,3,maxwshen,ok,9,0,1,0,0,0,9,0
+746959157,Human (pre-ChatGPT),vladfi1/slippi-ai,4,vladfi1,ok,0,0,0,0,0,0,0,0
+747053106,Human (pre-ChatGPT),vladfi1/slippi-ai,5,vladfi1,ok,0,0,0,0,0,0,0,0
+747087980,Human (pre-ChatGPT),vladfi1/slippi-ai,6,vladfi1,ok,0,0,0,0,0,0,0,0
+747801327,Human (pre-ChatGPT),vladfi1/slippi-ai,7,vladfi1,ok,0,0,0,0,0,0,0,0
+748091780,Human (pre-ChatGPT),vladfi1/slippi-ai,8,vladfi1,ok,0,0,0,0,0,0,0,0
+748105853,Human (pre-ChatGPT),vladfi1/slippi-ai,9,vladfi1,ok,0,0,0,0,0,0,0,0
+748165063,Human (pre-ChatGPT),vladfi1/slippi-ai,14,maxwshen,ok,13,0,2,1,0,1,13,1
+748382276,Human (pre-ChatGPT),vladfi1/slippi-ai,16,vladfi1,ok,0,0,0,0,0,0,0,0
+748824976,Human (pre-ChatGPT),vladfi1/slippi-ai,17,vladfi1,ok,0,0,0,0,0,0,0,0
+750667921,Human (pre-ChatGPT),python-cachier/cachier,40,shaypal5,ok,0,0,0,2,0,1,0,2
+751956739,Human (pre-ChatGPT),vladfi1/slippi-ai,18,vladfi1,ok,0,0,0,0,0,0,0,0
+752471527,Human (pre-ChatGPT),vladfi1/slippi-ai,19,maxwshen,ok,0,0,0,0,0,0,0,0
+752549658,Human (pre-ChatGPT),vladfi1/slippi-ai,20,vladfi1,ok,0,0,0,0,0,0,0,0
+756389937,Human (pre-ChatGPT),snok/django-guid,53,sondrelg,ok,0,0,0,0,0,0,0,0
+759909817,Human (pre-ChatGPT),vladfi1/slippi-ai,21,vladfi1,ok,0,0,0,0,0,0,0,0
+814179768,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,53,Cj-bc,ok,4,0,2,4,0,2,4,4
+853760267,Human (pre-ChatGPT),python-cachier/cachier,50,filyp,ok,0,0,0,4,0,2,0,4
+858698140,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,59,FujiSunflower,ok,0,0,0,2,0,0,0,2
+859591601,Human (pre-ChatGPT),NewFuture/DDNS,255,CrazyBoyFeng,ok,0,0,0,0,0,0,0,0
+861319124,Human (pre-ChatGPT),saturday06/VRM-Addon-for-Blender,65,FujiSunflower,ok,0,0,0,4,0,1,0,4
+882682865,Human (pre-ChatGPT),python-cachier/cachier,54,erap129,ok,17,0,7,5,0,2,17,5
+900081425,Human (pre-ChatGPT),vladfi1/slippi-ai,22,wmcnicho,ok,2,0,2,2,0,1,2,2
+920178230,Human (pre-ChatGPT),NewFuture/DDNS,269,NewFuture,ok,0,0,0,0,0,0,0,0
+929731040,Human (pre-ChatGPT),python-cachier/cachier,59,benzlock,ok,0,0,0,5,0,1,0,5
+950158796,Human (pre-ChatGPT),matthias-k/pysaliency,18,matthias-k,ok,0,0,0,0,0,0,0,0
+950405443,Human (pre-ChatGPT),python-cachier/cachier,62,ofirnk,ok,0,0,0,8,0,4,0,8
+955769076,Human (pre-ChatGPT),yutto-dev/yutto,10,cjc7373,ok,0,0,0,4,0,2,0,4
+956341528,Human (pre-ChatGPT),matsui528/rii,42,ashleyabraham,ok,0,0,0,3,0,1,0,3
+968085937,Human (pre-ChatGPT),python-cachier/cachier,69,erap129,ok,0,0,0,5,0,3,0,5
+981274177,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,16,JonasKs,ok,1,0,1,2,1,2,1,3
+981399767,Human (pre-ChatGPT),snok/django-guid,64,sondrelg,ok,0,0,0,0,1,0,0,1
+985000455,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,19,JonasKs,ok,0,0,0,0,1,0,0,1
+988427909,Human (pre-ChatGPT),matsui528/rii,43,matsui528,ok,0,0,0,0,0,0,0,0
+997190661,Human (pre-ChatGPT),python-cachier/cachier,72,erap129,ok,0,0,0,6,0,2,0,6
+999391004,Human (pre-ChatGPT),python-cachier/cachier,74,erap129,ok,0,0,0,0,0,0,0,0

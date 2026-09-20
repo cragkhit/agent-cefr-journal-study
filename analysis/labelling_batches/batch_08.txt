@@ -1,0 +1,408 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1424019781
+title: Add transforms to UnionDataset and IntersectionDataset
+body:
+This PR adds the feature described in #867
+
+Closes #867
+
+----- PR -----
+pr_id: 1424571455
+title: Apply black formatter to common_ripple
+body:
+(empty)
+
+----- PR -----
+pr_id: 1424979354
+title: fix(utils): strip_string() checks text length counting bytes not chars
+body:
+Hello!
+
+In this PR I applied the antonpirker suggest. Now the truncation and indexes in the AnnotatedValues it's done by number of bytes and not number of characters.
+
+Thank you!
+
+Fixes GH-1691
+
+----- PR -----
+pr_id: 1425945530
+title: Add host parameter to benchmarks. 
+body:
+This allows us to easily benchmark against our own private ElastiCache
+clusters.
+
+----- PR -----
+pr_id: 1426213137
+title: Allow for smoothing method to be flexible. Add insert1 validation.
+body:
+This change allows a user to choose a user-defined function to smooth through the addition of a `'smooth_method'` parameter and the `_key_to_smooth_func_dict` to implement this flexibility. 
+This PR also overwrites the `insert1` method for SmoothInterpParams to validate the parameter inputs.
+
+----- PR -----
+pr_id: 1427205168
+title: Whisper workaround for ailia SDK and macOS
+body:
+ailia SDKでフレーム毎にinput shapeを変更した場合に、UNSETTLED SHAPEのエラーが出るために、推論に失敗する問題を修正するワークアラウンドです。
+#936
+
+----- PR -----
+pr_id: 1428302955
+title: Code for automatically updating license headers
+body:
+## More updates:
+
+- As discussed, reverted the actual changes to the license headers for now
+- Added a new `tools` directory for future developer tools (like pre-commit functions, etc.)
+
+## Some updates:
+
+It is not possible to configure various license statements directly in `NOTICE.yml`. This is also useful in general to have an overview over third partly licenses applicable to the code.
+
+For updating license headers in the whole repository, simply run
+
+```
+python update_license_headers.py
+```
+
+now. Some TODOs:
+
+- [x] **Before merging**, we need to remove the old docstring license headers. I left them in this PR to more easily compare if the correct licenses was applied everywhere. I can do that once I got that approval.
+- [x] It should be decided where to put the `update_license_headers.py` helper script. Afaik there is not "developer tools" directory right now. The options I can think of are: (1) leave it in the repo root (2) put it in `.github` or (3) add it to `deeplabcut.utils`. Opinions?
+
+
+## Original PR description
+
+Prior to this PR, the license headers in the codebase had two issues:
+
+- They were not standardized, and the version information was outdated ("DeepLabCut2.0", etc.)
+- They were added to the modules `__doc__` variable because
+- Potentially maintainers used some automated tool for this, but the correct license header to use was not added to the repo
+
+This PR proposes the following changes:
+- Use license headers that are started by `#` instead of tripe quotes (`"""`). This avoids a clash between the module docstring and makes it easier to write API docs on module level.
+- Update the contribution guide with instructions of how to automatically update the license headers (see below)
+- Add license headers to all files in `tests/` and `examples/`
+- Updated the header to ~"DeepLabCut2.0-2.3 Toolbox" (the version info could optionally also be automatically inserted, if desired)~ DeepLabCut Toolbox
+- License header can now be configured in `.copyright.tmpl` file
+
+The headers can always be updated by running (this can be automated and e.g. be added to a script that also triggers code formatting w/ black, etc):
+
+```bash
+find deeplabcut tests examples -iname '*.py' -type f \
+  -exec licenseheaders -t .copyright.tmpl -f {} \;
+licenseheaders -t .copyright.tmpl -f dlc.py
+```
+
+TODO (for maintainers):
+- [x] Please check if the info in `.copyright.tmpl` is accurate/should be updated
+- [x] update non-dlc copy right headers accordingly (see review comments)
+
+----- PR -----
+pr_id: 1428875966
+title: Minor verbiage fixes
+body:
+#### Pull Request Description
+
+Minor verbiage fixes
+
+---
+
+#### Future Release Comment
+**Fixes:**
+- Minor verbiage fixes
+
+----- PR -----
+pr_id: 1429416049
+title: Add SpaceNet6 & data.py
+body:
+This PR adds the `SpaceNet6` dataset and a `data.py` for the SpaceNet datasets.
+
+
+Plot examples:
+
+PS-RGB
+
+![SN6_RGB](https://user-images.githubusercontent.com/32295036/198958024-5072d70d-6219-4e42-a307-8479eff98eae.png)
+
+SAR
+
+![SN6_SAR](https://user-images.githubusercontent.com/32295036/198958042-123f9e31-4d87-459e-9264-c80a18f5edab.png)
+
+Closes #159
+
+----- PR -----
+pr_id: 1429641480
+title: Convenience SDFG Optimization API
+body:
+Avoids recreating SDFGs / regenerating code / recompiling them
+
+Also removes the now-unnecessary .sdfgl file
+
+----- PR -----
+pr_id: 1429735206
+title: Move relay to port 5333 to avoid collisions
+body:
+goes with https://github.com/getsentry/action-build-aws-lambda-extension/pull/6
+and https://github.com/getsentry/sentry-javascript/pull/6093
+
+----- PR -----
+pr_id: 1429821182
+title: Explicitly support .exit in CLI
+body:
+(empty)
+
+----- PR -----
+pr_id: 1429926308
+title: Whisper fix kv_cache shape
+body:
+kv_cacheのshapeを固定化しました。
+kv_cache以外にも、tokensについても初回と2回目以降でshapeが異なるため、
+workaroundの修正が必要となっています。
+
+https://github.com/axinc-ai/ailia-models/pull/936
+
+----- PR -----
+pr_id: 1430185186
+title: Intel FPGA: scalar NSDFG arg passed by value
+body:
+Pass nested SDFG argument as scalar when they are actually scalar
+
+----- PR -----
+pr_id: 1430338399
+title: HTTP server now up faster, Store may not be ready
+body:
+(empty)
+
+----- PR -----
+pr_id: 1430672043
+title: New manual curation and num_spikes metric
+body:
+code for generating new figURL for manual curation. creates part table within SortingviewWorkspace
+
+----- PR -----
+pr_id: 1432337262
+title: Add Benchmark mode
+body:
+ベンチマークモードが実装されていなかったモデルにベンチマークモードを追加しました。
+
+----- PR -----
+pr_id: 1433409544
+title: Make h5py and ruamel lazy loading
+body:
+This PR uses the [lazy_loader](https://github.com/scientific-python/lazy_loader) package to make the qcodes import time lower. The lazy_loader package has been adapoted by several scientific python packages, for details see https://scientific-python.org/specs/spec-0001/
+
+The h5py and ruamal components have been selected because they take time in the import and are only used in components that not all users will use (e.g. the legacy dataset and the Monitor). The PR is intended to be fully backwards compatible.
+
+More gains can be made with non-backwards compatible changes. For example in the main qcodes `__init__.py` the number of direct imports which could be reduced.
+
+Also see #4543
+
+@jenshnielsen 
+
+<!--
+
+Thanks for submitting a pull request against QCoDeS.
+
+To help us effectively merge your pr please consider the following check list.
+
+- [ ] Make sure that the pull request contains a short description of the changes made.
+- [ ] If you are submitting a new feature please document it. This can be in the form of inline
+      docstrings, an example notebook or restructured text files.
+- [ ] Please include automatic tests for the changes made when possible.
+
+Unless your change is a small or trivial fix please add a small changelog entry:
+
+- [ ] Create a file in the docs\changes\newsfragments folder with a short description of the change.
+
+This file should be in the format number.categoryofcontribution. Here the number should either be the number
+of the pull request. To get the number of the pull request one must
+first the pull request and then subsequently update the number. The category of contribution should be
+one of ``breaking``, ``new``, ``improved``, ``new_driver`` ``improved_driver``, ``underthehood``.
+
+If this fixes a known bug reported against QCoDeS:
+
+- [ ] Please include a string in the following form ``closes #xxx`` where ``xxx``` is the number of the bug fixed.
+
+Please have a look at [the contributing guide](https://qcodes.github.io/Qcodes/community/contributing.html)
+for more information.
+
+If you are in doubt about any of this please ask and we will be happy to help.
+
+-->
+
+----- PR -----
+pr_id: 1433542778
+title: Consider GraphInferenceContext in inference functions: InferenceContext
+body:
+### Description
+<!-- - Describe your changes. -->
+- Consider GraphInferenceContext in inference functions (InferenceContextImpl) to cover more use cases.
+- Add a test to test node with subgraph.
+- TODO in another PR: expose functionProto as well.
+
+### Motivation and Context
+<!-- - Why is this change required? What problem does it solve? -->
+<!-- - If it fixes an open issue, please link to the issue here. -->
+Follow up for https://github.com/onnx/onnx/pull/4409. Further consider GraphInferenceContext for inference function
+
+----- PR -----
+pr_id: 1433811078
+title: Bump pytorch-lightning from 1.7.7 to 1.8.0.post1 in /requirements
+body:
+Bumps [pytorch-lightning](https://github.com/Lightning-AI/lightning) from 1.7.7 to 1.8.0.post1.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a href="https://github.com/Lightning-AI/lightning/releases">pytorch-lightning's releases</a>.</em></p>
+<blockquote>
+<h2>Minor pkg stability fix</h2>
+<h2>What's Changed</h2>
+<ul>
+<li>Implement freeze batchnorm with freezing track running stats by <a href="https://github.com/PososikTeam"><code>@​PososikTeam</code></a> in <a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/pull/15063">Lightning-AI/lightning#15063</a></li>
+<li>Pkg: fix parsing versions by <a href="https://github.com/Borda"><code>@​Borda</code></a> in <a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/pull/15401">Lightning-AI/lightning#15401</a></li>
+<li>Remove pytest as a requirement to run app by <a href="https://github.com/manskx"><code>@​manskx</code></a> in <a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/pull/15449">Lightning-AI/lightning#15449</a></li>
+</ul>
+<h2>New Contributors</h2>
+<ul>
+<li><a href="https://github.com/PososikTeam"><code>@​PososikTeam</code></a> made their first contribution in <a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/pull/15063">Lightning-AI/lightning#15063</a></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a href="https://github.com/Lightning-AI/lightning/compare/1.8.0...1.8.0.post1">https://github.com/Lightning-AI/lightning/compare/1.8.0...1.8.0.post1</a></p>
+<h2>Lightning 1.8: Colossal-AI Strategy, Commands and Secrets for Apps, FSDP Improvements and More!</h2>
+<p>The core team is excited to announce the release of Lightning 1.8 :zap:</p>
+<ul>
+<li><a href="https://github.com/Lightning-AI/lightning/blob/HEAD/#highlights">Highlights</a></li>
+<li><a href="https://github.com/Lightning-AI/lightning/blob/HEAD/#bc-changes">Backward Incompatible Changes</a></li>
+<li><a href="https://github.com/Lightning-AI/lightning/blob/HEAD/#deprecations">Deprecations</a></li>
+<li><a href="https://github.com/Lightning-AI/lightning/blob/HEAD/#changelog">Full Changelog</a></li>
+<li><a href="https://github.com/Lightning-AI/lightning/blob/HEAD/#contributors">Contributors</a></li>
+</ul>
+<p>Lightning v1.8 is the culmination of work from 52 contributors who have worked on features, bug-fixes, and documentation for a total of over 550+ commits since v1.7.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h2>Highlights</h2>
+<h3>Colossal-AI</h3>
+<p><a href="https://github.com/hpcaitech/ColossalAI">Colossal-AI</a> focuses on improving efficiency when training large-scale AI models with billions of parameters. With the new Colossal-AI strategy in Lightning 1.8, you can train existing models like GPT-3 with up to half as many GPUs as usually needed. You can also train models up to twice as big with the same number of GPUs, saving you significant cost. Here is how you use it:</p>
+<pre lang="python"><code># Select the strategy with good defaults
+trainer = Trainer(strategy=&quot;colossalai&quot;)
+<h1>or tune parameters to your liking</h1>
+<p>from lightning.pytorch.strategies import ColossalAIStrategy</p>
+<p>trainer = Trainer(strategy=ColossalAIStrategy(placement_policy=&quot;cpu&quot;, ...))
+</code></pre></p>
+<p>You can find Colossal-AI's benchmarks with Lightning on GPT-2 <a href="https://github.com/hpcaitech/ColossalAI-Pytorch-lightning/tree/main/benchmark">here</a>.</p>
+<p>Under the hood, Colossal-AI implements different parallelism algorithms that are especially interesting for the development of SOTA transformer models:</p>
+<ul>
+<li>Data Parallelism</li>
+<li>Pipeline Parallelism</li>
+<li>1D, 2D, 2.5D, 3D Tensor Parallelism</li>
+<li>Sequence Parallelism</li>
+<li>Zero Redundancy Optimization</li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Commits</summary>
+<ul>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/0edeb21d83ade731634a6a00a1d05a2f9a244921"><code>0edeb21</code></a> releasing 1.8.0.post1 (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15476">#15476</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/7e3b5c479de99fd39965e5a16ae32da87ac82596"><code>7e3b5c4</code></a> Remove pytest as a requirement to run app (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15449">#15449</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/5d638cf3c833ef6c222924b971e5e525e29f6f8f"><code>5d638cf</code></a> ci: fix &amp; unify pkg name (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15470">#15470</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/56132d9cb412e96732c80427bf2201b13b7be685"><code>56132d9</code></a> CI: fix typo in workflow &amp; trigger (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15465">#15465</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/2fccd1edf1424eb414ccf95b48df40642b169c09"><code>2fccd1e</code></a> CI: adjust doctests for lightning.pytorch (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15469">#15469</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/be4cb35fa8fcb2114c9a271e51efff12864cd458"><code>be4cb35</code></a> update docs deploy: stable/latest (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15460">#15460</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/c0149d86df118fe718fc90ccfacf1b6d670393af"><code>c0149d8</code></a> Pkg: fix parsing versions (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15401">#15401</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/1b56daf4f79207f77c4866583c3225138b2424de"><code>1b56daf</code></a> Update psutil requirement from &lt;5.9.3 to &lt;5.9.4 in /requirements (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15423">#15423</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/d9a5f10dfb14270351dfdec928fcdd084f2e5cd1"><code>d9a5f10</code></a> CI: adjust examples for <code>lightning.pytorch</code> (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15457">#15457</a>)</li>
+<li><a href="https://github.com/Lightning-AI/lightning/commit/69cb719482fe39ccbadbc9b612948bc2a546f671"><code>69cb719</code></a> Use PL <code>1.8.0</code> instead of <code>1.8.0rc</code> in app example requirements (<a href="https://github-redirect.dependabot.com/Lightning-AI/lightning/issues/15454">#15454</a>)</li>
+<li>Additional commits viewable in <a href="https://github.com/Lightning-AI/lightning/compare/1.7.7...1.8.0.post1">compare view</a></li>
+</ul>
+</details>
+<br />
+
+
+[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=pytorch-lightning&package-manager=pip&previous-version=1.7.7&new-version=1.8.0.post1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+
+Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.
+
+[//]: # (dependabot-automerge-start)
+[//]: # (dependabot-automerge-end)
+
+---
+
+<details>
+<summary>Dependabot commands and options</summary>
+<br />
+
+You can trigger Dependabot actions by commenting on this PR:
+- `@dependabot rebase` will rebase this PR
+- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it
+- `@dependabot merge` will merge this PR after your CI passes on it
+- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it
+- `@dependabot cancel merge` will cancel a previously requested merge and block automerging
+- `@dependabot reopen` will reopen this PR if it is closed
+- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually
+- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)
+- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)
+
+
+</details>
+
+----- PR -----
+pr_id: 1435213759
+title: Tgm/move ml from package
+body:
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1435977432
+title: remove serialization code
+body:
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1436034526
+title: Fix reading FastAPI request body twice. 
+body:
+Starlette/FastAPI is internally caching the request body if read via `request.json()` or `request.body()` but NOT when using `request.form()`. This leads to a problem when our Sentry Starlette integration wants to read the body data and also the users code wants to read the same data. 
+
+Solution:
+Force caching of request body for `.form()` calls too, to prevent error when body is read twice.
+
+The tests where mocking `.stream()` and thus hiding this problem. So the tests have been refactored to mock the underlying `._receive()` function instead.
+
+Fixes #1675
+
+----- PR -----
+pr_id: 1436194259
+title: merge master into m1m2
+body:
+(empty)
+
+----- PR -----
+pr_id: 1436205486
+title: merging in master
+body:
+(empty)

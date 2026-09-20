@@ -1,0 +1,140 @@
+full_name,n_agent_prs,agents,repo_exists,resolved_full_name,repo_created_at,created_before_cutoff,stars,language,archived,pre_cutoff_merged_prs,status,note,fetched_at
+crewAIInc/crewAI,34,Devin,True,,2023-10-27T03:26:59Z,False,56493.0,Python,False,0.0,OK,,2026-08-02T09:44:15.946897+00:00
+reflex-dev/reflex-web,34,Devin,True,,2022-12-14T00:42:00Z,False,327.0,Python,True,0.0,OK,,2026-08-02T09:44:18.952262+00:00
+marimo-team/marimo,21,Devin,True,,2023-08-14T18:56:20Z,False,22191.0,Python,False,0.0,OK,,2026-08-02T09:44:21.934940+00:00
+mlflow/mlflow,17,Copilot,True,,2018-06-05T16:05:58Z,True,27325.0,Python,False,3594.0,OK,,2026-08-02T09:44:24.909733+00:00
+airbytehq/airbyte,16,Devin,True,,2020-07-27T23:55:54Z,True,21764.0,Python,False,8460.0,OK,,2026-08-02T09:44:27.997812+00:00
+goat-sdk/goat,15,Devin,True,,2024-11-26T18:46:09Z,False,1009.0,TypeScript,False,0.0,OK,,2026-08-02T09:45:08.283164+00:00
+getsentry/sentry,14,Cursor,True,,2010-08-30T22:06:41Z,True,44428.0,Python,False,31749.0,OK,,2026-08-02T09:45:11.252251+00:00
+NewFuture/DDNS,13,Copilot,True,,2016-06-10T11:51:51Z,True,4686.0,Python,False,87.0,OK,,2026-08-02T09:45:14.386805+00:00
+WorkflowAI/WorkflowAI,12,Cursor,True,,2024-12-05T17:08:51Z,False,470.0,Python,True,0.0,OK,,2026-08-02T09:45:17.428374+00:00
+vlm-run/vlmrun-hub,11,Devin,True,,2024-11-11T20:07:48Z,False,554.0,Python,False,0.0,OK,,2026-08-02T09:45:20.409529+00:00
+Azure/azure-sdk-for-python,10,Copilot,True,,2012-04-24T16:46:12Z,True,5580.0,Python,False,12770.0,OK,,2026-08-02T09:45:23.371120+00:00
+appdotbuild/agent,10,Devin,True,,2026-03-19T04:38:40Z,False,2.0,Shell,False,0.0,OK,,2026-08-02T09:45:26.494206+00:00
+digitaldemocracy2030/kouchou-ai,10,Devin,True,,2025-02-18T15:25:33Z,False,168.0,Python,False,0.0,OK,,2026-08-02T09:45:29.452948+00:00
+jeroenterheerdt/HAsmartirrigation,10,Copilot,True,altmenorg/HAsmartirrigation,2020-05-11T23:09:45Z,True,538.0,Python,False,8.0,RENAMED,redirected to altmenorg/HAsmartirrigation,2026-08-02T09:45:32.493905+00:00
+browser-use/browser-use,9,Cursor,True,,2024-10-31T16:00:56Z,False,107551.0,Python,False,0.0,OK,,2026-08-02T09:45:35.883319+00:00
+microsoft/lisa,9,Copilot,True,,2019-03-09T00:23:37Z,True,332.0,Python,False,1944.0,OK,,2026-08-02T09:45:38.902843+00:00
+microsoft/onnxscript,9,Copilot,True,,2022-02-28T17:23:33Z,True,450.0,Python,False,146.0,OK,,2026-08-02T09:45:41.990571+00:00
+Ljzd-PRO/KToolBox,8,Copilot,True,,2023-11-06T15:24:12Z,False,572.0,Python,False,0.0,OK,,2026-08-02T09:45:45.047829+00:00
+mendableai/firecrawl,8,Devin,True,firecrawl/firecrawl,2024-04-15T21:02:29Z,False,159246.0,TypeScript,False,0.0,RENAMED,redirected to firecrawl/firecrawl,2026-08-02T09:45:47.969569+00:00
+AgentOps-AI/agentops,7,Cursor|Devin,True,,2023-08-15T23:26:23Z,False,5748.0,Python,False,0.0,OK,,2026-08-02T09:45:51.285568+00:00
+airbytehq/PyAirbyte,7,Devin,True,,2024-02-04T05:10:15Z,False,341.0,Python,False,0.0,OK,,2026-08-02T09:45:54.274369+00:00
+microsoft/autogen,7,Copilot,True,,2023-08-18T11:43:45Z,False,60164.0,Python,False,0.0,OK,,2026-08-02T09:45:57.333547+00:00
+microsoft/fabric-cicd,7,Copilot,True,,2024-12-03T23:13:10Z,False,315.0,Python,False,0.0,OK,,2026-08-02T09:46:00.792482+00:00
+near/nearcore,7,Devin,True,,2018-10-02T22:30:39Z,True,2608.0,Rust,False,4639.0,OK,,2026-08-02T09:46:03.790746+00:00
+langbot-app/LangBot,6,Devin,True,,2022-12-07T08:48:02Z,False,17218.0,Python,False,0.0,OK,,2026-08-02T09:46:06.859467+00:00
+willccbb/verifiers,6,Cursor,True,PrimeIntellect-ai/verifiers,2025-01-22T12:58:34Z,False,4423.0,Python,False,0.0,RENAMED,redirected to PrimeIntellect-ai/verifiers,2026-08-02T09:46:09.822323+00:00
+OpenPipe/ART,5,Cursor,True,,2025-03-10T18:25:47Z,False,10558.0,Python,False,0.0,OK,,2026-08-02T09:46:13.172135+00:00
+bmander/graphserver,5,Copilot,True,,2009-02-05T07:36:46Z,True,122.0,Python,False,0.0,OK,,2026-08-02T09:46:16.157155+00:00
+disler/single-file-agents,5,Devin,True,,2025-02-16T19:08:01Z,False,438.0,Python,False,0.0,OK,,2026-08-02T09:46:19.519946+00:00
+jxxghp/MoviePilot,5,Cursor,True,,2023-05-31T00:06:46Z,False,11464.0,Python,False,0.0,OK,,2026-08-02T09:46:22.460533+00:00
+valkey-io/valkey-glide,5,Copilot,True,,2022-07-06T13:08:07Z,True,769.0,Java,False,65.0,OK,,2026-08-02T09:46:25.324569+00:00
+567-labs/instructor,4,Devin,True,,2023-06-14T10:42:23Z,False,13664.0,Python,False,0.0,OK,,2026-08-02T09:46:28.343041+00:00
+bespokelabsai/curator,4,Devin,True,,2024-10-28T01:11:41Z,False,1708.0,Python,False,0.0,OK,,2026-08-02T09:46:31.719495+00:00
+docling-project/docling,4,Copilot,True,,2024-07-09T07:50:26Z,False,64114.0,Python,False,0.0,OK,,2026-08-02T09:46:34.664129+00:00
+keephq/keep,4,Cursor,True,,2023-02-04T18:43:27Z,False,12141.0,Python,False,0.0,OK,,2026-08-02T09:46:37.641203+00:00
+microsoft/Olive,4,Copilot,True,,2019-08-12T19:00:23Z,True,2369.0,Python,False,76.0,OK,,2026-08-02T09:46:40.638965+00:00
+microsoft/debug-gym,4,Copilot,True,,2024-11-04T14:24:06Z,False,300.0,Python,False,0.0,OK,,2026-08-02T09:46:43.698882+00:00
+pulearn/pulearn,4,Copilot,True,,2020-01-08T22:03:41Z,True,260.0,Jupyter Notebook,False,4.0,OK,,2026-08-02T09:46:46.723856+00:00
+reflex-dev/reflex,4,Devin,True,,2022-10-25T03:08:48Z,True,28745.0,Python,False,10.0,OK,,2026-08-02T09:46:49.756335+00:00
+saturday06/VRM-Addon-for-Blender,4,Devin,True,,2019-01-07T03:41:57Z,True,1675.0,Python,False,38.0,OK,,2026-08-02T09:46:52.834489+00:00
+Arize-ai/phoenix,3,Cursor,True,,2022-11-09T23:44:35Z,True,10853.0,Python,False,22.0,OK,,2026-08-02T09:46:55.838923+00:00
+Azure-Samples/openai-chat-vision-quickstart,3,Copilot,True,,2024-08-01T17:50:03Z,False,223.0,Jupyter Notebook,False,0.0,OK,,2026-08-02T09:46:59.045227+00:00
+PromtEngineer/localGPT,3,Devin,True,,2023-05-24T05:32:40Z,False,22205.0,Python,False,0.0,OK,,2026-08-02T09:47:02.056163+00:00
+Z3Prover/z3,3,Copilot,True,,2015-03-26T18:16:07Z,True,12508.0,C++,False,1137.0,OK,,2026-08-02T09:47:04.984032+00:00
+a16z/halmos,3,Copilot,True,,2022-12-12T21:28:33Z,False,1026.0,Python,False,0.0,OK,,2026-08-02T09:47:08.036905+00:00
+aavetis/PRarena,3,Copilot,True,,2025-05-22T17:51:08Z,False,300.0,HTML,False,0.0,OK,,2026-08-02T09:47:11.022597+00:00
+crewAIInc/crewAI-tools,3,Devin,True,,2024-01-11T17:29:13Z,False,1461.0,Python,True,0.0,OK,,2026-08-02T09:47:13.960651+00:00
+datahub-project/datahub,3,Cursor,True,,2015-11-18T05:47:40Z,True,12427.0,Python,False,4629.0,OK,,2026-08-02T09:47:16.922926+00:00
+getsentry/sentry-python,3,Cursor,True,,2018-06-18T22:51:10Z,True,2203.0,Python,False,723.0,OK,,2026-08-02T09:47:19.957607+00:00
+kortix-ai/suna,3,Cursor,True,,2024-10-05T17:01:01Z,False,20060.0,TypeScript,False,0.0,OK,,2026-08-02T09:47:23.023351+00:00
+langchain-ai/langchain,3,Copilot,True,,2022-10-17T02:58:36Z,True,143208.0,Python,False,161.0,OK,,2026-08-02T09:47:25.961547+00:00
+microsoft/Qcodes,3,Copilot,True,,2015-06-09T14:42:14Z,True,450.0,Python,False,3701.0,OK,,2026-08-02T09:47:29.038463+00:00
+teaxyz/chai,3,Cursor,True,,2024-09-27T19:44:45Z,False,208.0,Python,False,0.0,OK,,2026-08-02T09:47:32.133363+00:00
+514-labs/moose,2,Cursor,True,514-labs/moosestack,2023-07-20T00:23:21Z,False,587.0,Rust,False,0.0,RENAMED,redirected to 514-labs/moosestack,2026-08-02T09:47:35.105446+00:00
+AliAkhtari78/SpotifyScraper,2,Copilot,True,,2020-04-28T22:40:47Z,True,285.0,Python,False,0.0,OK,,2026-08-02T09:47:38.438755+00:00
+Bandit-HaxUnit/haxunit,2,Cursor,True,,2022-03-03T16:00:05Z,True,332.0,Python,False,0.0,OK,,2026-08-02T09:47:41.761374+00:00
+BerriAI/litellm,2,Cursor,True,,2023-07-27T00:09:52Z,False,55325.0,Python,False,0.0,OK,,2026-08-02T09:47:44.722841+00:00
+DeepLabCut/DeepLabCut,2,Copilot,True,,2018-03-26T22:29:12Z,True,5726.0,Python,False,467.0,OK,,2026-08-02T09:47:47.748737+00:00
+adrgs/requestrepo,2,Devin,True,,2022-12-28T16:18:09Z,False,533.0,Rust,False,0.0,OK,,2026-08-02T09:47:50.781428+00:00
+aztfmod/terraform-provider-azurecaf,2,Copilot,True,,2020-03-20T08:20:57Z,True,186.0,Go,False,78.0,OK,,2026-08-02T09:47:54.132511+00:00
+exa-labs/exa-py,2,Cursor,True,,2023-07-04T22:56:45Z,False,225.0,Python,False,0.0,OK,,2026-08-02T09:47:57.205531+00:00
+laude-institute/terminal-bench,2,Cursor,True,harbor-framework/terminal-bench,2025-01-17T22:34:26Z,False,2510.0,Python,False,0.0,RENAMED,redirected to harbor-framework/terminal-bench,2026-08-02T09:48:00.196550+00:00
+microsoft/AzureTRE,2,Copilot,True,,2021-03-04T14:58:07Z,True,234.0,Python,False,1243.0,OK,,2026-08-02T09:48:03.551116+00:00
+microsoft/graphrag,2,Copilot,True,,2024-03-27T17:57:52Z,False,35161.0,Python,False,0.0,OK,,2026-08-02T09:48:06.619884+00:00
+microsoft/magentic-ui,2,Copilot,True,,2025-05-05T20:24:30Z,False,10038.0,Python,False,0.0,OK,,2026-08-02T09:48:09.624855+00:00
+microsoft/typespec,2,Copilot,True,,2021-06-30T23:29:49Z,True,5810.0,Java,False,649.0,OK,,2026-08-02T09:48:13.052185+00:00
+nearai/nearai,2,Copilot,True,,2024-05-08T00:22:09Z,False,116.0,Python,True,0.0,OK,,2026-08-02T09:48:16.165482+00:00
+neondatabase/neon,2,Devin,True,,2021-03-26T14:20:47Z,True,22727.0,Rust,False,1552.0,OK,,2026-08-02T09:48:19.123784+00:00
+onyx-dot-app/onyx,2,Devin,True,,2023-04-27T06:04:01Z,False,31370.0,Python,False,0.0,OK,,2026-08-02T09:48:22.229388+00:00
+remotion-dev/remotion,2,Copilot,True,,2020-06-23T19:49:10Z,True,55238.0,TypeScript,False,818.0,OK,,2026-08-02T09:48:25.177449+00:00
+spcl/dace,2,Copilot,True,,2019-02-26T12:05:50Z,True,592.0,Python,False,776.0,OK,,2026-08-02T09:48:28.228377+00:00
+ucbepic/docetl,2,Cursor,True,,2024-07-09T05:57:16Z,False,3955.0,Python,False,0.0,OK,,2026-08-02T09:48:31.355877+00:00
+vladfi1/slippi-ai,2,Devin,True,,2020-11-10T23:39:29Z,True,151.0,Python,False,18.0,OK,,2026-08-02T09:48:34.281729+00:00
+zfit/zfit,2,Copilot,True,,2018-03-22T09:31:20Z,True,204.0,Python,False,283.0,OK,,2026-08-02T09:48:37.258617+00:00
+14790897/handwriting-web,1,Copilot,True,,2023-06-15T12:22:29Z,False,1377.0,Python,False,0.0,OK,,2026-08-02T09:48:40.291555+00:00
+567-labs/kura,1,Devin,True,jxnl/kura,2025-01-04T16:12:18Z,False,510.0,Python,False,0.0,RENAMED,redirected to jxnl/kura,2026-08-02T09:48:43.190185+00:00
+Azure-Samples/rag-postgres-openai-python,1,Copilot,True,,2024-05-14T18:09:19Z,False,498.0,Python,False,0.0,OK,,2026-08-02T09:48:46.455131+00:00
+Azure/azure-kusto-python,1,Copilot,True,,2017-10-25T10:55:44Z,True,204.0,Python,False,251.0,OK,,2026-08-02T09:48:49.429968+00:00
+Azure/azure-sdk-for-net,1,Copilot,True,,2011-12-06T23:32:47Z,True,6031.0,C#,False,16050.0,OK,,2026-08-02T09:48:52.528933+00:00
+Azure/azure-sdk-tools,1,Copilot,True,,2019-02-13T22:55:46Z,True,136.0,C#,False,2327.0,OK,,2026-08-02T09:48:55.633658+00:00
+Azure/azure-storage-fuse,1,Copilot,True,,2017-09-12T18:31:50Z,True,806.0,Go,False,365.0,OK,,2026-08-02T09:48:58.773137+00:00
+ChristopheZhao/ChaGPT-API-Call,1,Devin,True,,2023-03-04T15:27:21Z,False,114.0,TypeScript,False,0.0,OK,,2026-08-02T09:49:01.866338+00:00
+ComposioHQ/composio,1,Devin,True,,2024-02-23T13:58:27Z,False,29496.0,TypeScript,False,0.0,OK,,2026-08-02T09:49:04.795187+00:00
+DannyMac180/meta-agent,1,Devin,True,,2025-03-15T01:33:21Z,False,418.0,TypeScript,False,0.0,OK,,2026-08-02T09:49:07.803400+00:00
+DonDebonair/slack-machine,1,Copilot,True,,2017-09-01T10:26:33Z,True,769.0,Python,False,414.0,OK,,2026-08-02T09:49:10.735461+00:00
+Efeckc17/YoutubeGO,1,Cursor,True,,2024-11-15T20:47:34Z,False,440.0,Python,False,0.0,OK,,2026-08-02T09:49:13.705795+00:00
+EvolvingLMMs-Lab/lmms-eval,1,Cursor,True,,2024-03-07T12:09:25Z,False,4344.0,Python,False,0.0,OK,,2026-08-02T09:49:17.103495+00:00
+GlareDB/glaredb,1,Devin,True,,2022-05-27T00:52:47Z,True,1019.0,Rust,False,139.0,OK,,2026-08-02T09:49:20.098133+00:00
+InamuraJIN/ActionRecorder,1,Copilot,True,,2020-08-20T15:08:43Z,True,224.0,Python,False,6.0,OK,,2026-08-02T09:49:23.179327+00:00
+Jij-Inc/OpenJij,1,Devin,True,,2019-01-04T14:31:51Z,True,131.0,C++,False,247.0,OK,,2026-08-02T09:49:26.162470+00:00
+LorenFrankLab/spyglass,1,Copilot,True,,2020-02-04T19:03:15Z,True,118.0,Jupyter Notebook,False,176.0,OK,,2026-08-02T09:49:29.210063+00:00
+Lumiwealth/lumibot,1,Cursor,True,,2020-09-10T10:00:16Z,True,1869.0,Python,False,162.0,OK,,2026-08-02T09:49:32.264213+00:00
+MikePopoloski/slang,1,Copilot,True,,2017-02-03T22:20:21Z,True,1100.0,C++,False,157.0,OK,,2026-08-02T09:49:35.298928+00:00
+ObservedObserver/async-code,1,Cursor,True,,2025-06-06T13:19:35Z,False,538.0,TypeScript,False,0.0,OK,,2026-08-02T09:49:38.269722+00:00
+Osly-AI/PocketManus,1,Devin,True,,2025-03-08T00:45:29Z,False,304.0,Python,False,0.0,OK,,2026-08-02T09:49:41.199801+00:00
+PDFMathTranslate/PDFMathTranslate-next,1,Copilot,True,,2025-12-05T02:55:15Z,False,536.0,Python,False,0.0,OK,,2026-08-02T09:49:44.194788+00:00
+TorchIO-project/torchio,1,Copilot,True,,2019-11-26T09:10:09Z,True,2428.0,Python,False,316.0,OK,,2026-08-02T09:49:47.205801+00:00
+ag2ai/build-with-ag2,1,Devin,True,,2024-11-11T21:15:39Z,False,247.0,Python,False,0.0,OK,,2026-08-02T09:49:50.664011+00:00
+allthingslinux/tux,1,Cursor,True,,2023-11-28T18:19:43Z,False,167.0,Python,True,0.0,OK,,2026-08-02T09:49:53.601397+00:00
+artprima/prometheus-metrics-bundle,1,Copilot,True,,2018-10-19T14:25:55Z,True,177.0,PHP,False,35.0,OK,,2026-08-02T09:49:56.656451+00:00
+axinc-ai/ailia-models,1,Devin,True,ailia-ai/ailia-models,2019-09-07T04:50:59Z,True,2359.0,Python,False,455.0,RENAMED,redirected to ailia-ai/ailia-models,2026-08-02T09:49:59.674505+00:00
+bentoml/BentoML,1,Devin,True,,2019-04-02T01:39:27Z,True,8747.0,Python,False,2066.0,OK,,2026-08-02T09:50:03.049525+00:00
+bruin-data/ingestr,1,Cursor,True,,2024-02-12T23:00:36Z,False,3829.0,Go,False,0.0,OK,,2026-08-02T09:50:06.122180+00:00
+codegen-sh/codegen,1,Devin,True,,2025-01-21T19:35:33Z,False,520.0,Python,True,0.0,OK,,2026-08-02T09:50:09.088826+00:00
+different-ai/zero-finance,1,Devin,True,different-ai/agent-bank,2024-11-05T16:31:53Z,False,245.0,TypeScript,False,0.0,RENAMED,redirected to different-ai/agent-bank,2026-08-02T09:50:12.054001+00:00
+frenck/spook,1,Copilot,True,,2023-02-23T15:22:51Z,False,1211.0,Python,False,0.0,OK,,2026-08-02T09:50:15.425796+00:00
+get-convex/convex-helpers,1,Devin,True,,2023-01-20T18:50:15Z,False,486.0,TypeScript,False,0.0,OK,,2026-08-02T09:50:18.376544+00:00
+github/issue-metrics,1,Copilot,True,github-community-projects/issue-metrics,2023-06-01T18:40:18Z,False,534.0,Python,False,0.0,RENAMED,redirected to github-community-projects/issue-metrics,2026-08-02T09:50:21.371168+00:00
+intility/fastapi-azure-auth,1,Copilot,True,vibber-ai/fastapi-azure-auth,2021-08-10T19:46:24Z,True,677.0,Python,False,50.0,RENAMED,redirected to vibber-ai/fastapi-azure-auth,2026-08-02T09:50:24.750068+00:00
+iterative/datachain,1,Cursor,True,datachain-ai/datachain,2024-06-25T22:29:35Z,False,2803.0,Python,False,0.0,RENAMED,redirected to datachain-ai/datachain,2026-08-02T09:50:28.590798+00:00
+kyegomez/swarms,1,Cursor,True,,2023-05-11T01:09:00Z,False,7016.0,Python,False,0.0,OK,,2026-08-02T09:50:31.882772+00:00
+langflow-ai/langflow,1,Cursor,True,,2023-02-08T22:28:03Z,False,152741.0,Python,False,0.0,OK,,2026-08-02T09:50:34.765773+00:00
+langfuse/langfuse-python,1,Cursor,True,,2023-07-17T10:56:29Z,False,444.0,Python,False,0.0,OK,,2026-08-02T09:50:37.850229+00:00
+matsui528/rii,1,Copilot,True,,2018-07-24T09:12:54Z,True,155.0,C++,False,26.0,OK,,2026-08-02T09:50:40.850943+00:00
+matthias-k/pysaliency,1,Copilot,True,,2015-11-25T23:08:26Z,True,177.0,Jupyter Notebook,False,1.0,OK,,2026-08-02T09:50:43.807025+00:00
+mediar-ai/terminator,1,Cursor,True,,2025-04-11T02:48:04Z,False,1564.0,Rust,False,0.0,OK,,2026-08-02T09:50:47.222459+00:00
+messense/typst-py,1,Copilot,True,,2023-04-02T15:20:04Z,False,341.0,Rust,False,0.0,OK,,2026-08-02T09:50:50.278035+00:00
+microsoft/RD-Agent,1,Copilot,True,,2024-04-03T03:39:33Z,False,14104.0,Python,False,0.0,OK,,2026-08-02T09:50:53.207166+00:00
+microsoft/torchgeo,1,Copilot,True,torchgeo/torchgeo,2021-05-21T05:58:56Z,True,4126.0,Python,False,541.0,RENAMED,redirected to torchgeo/torchgeo,2026-08-02T09:50:56.187848+00:00
+mlco2/codecarbon,1,Copilot,True,,2020-05-12T14:44:03Z,True,1891.0,Python,False,176.0,OK,,2026-08-02T09:50:59.571231+00:00
+modal-labs/modal-client,1,Devin,True,,2022-10-18T23:14:11Z,True,495.0,Python,False,0.0,OK,,2026-08-02T09:51:02.609017+00:00
+onnx/onnx,1,Copilot,True,,2017-09-07T04:53:45Z,True,21250.0,Python,False,1910.0,OK,,2026-08-02T09:51:05.602986+00:00
+pamelafox/python-openai-demos,1,Copilot,True,,2024-03-23T13:44:12Z,False,417.0,Python,True,0.0,OK,,2026-08-02T09:51:08.639230+00:00
+patched-codes/patchwork,1,Devin,True,,2024-04-05T14:07:29Z,False,1569.0,Python,False,0.0,OK,,2026-08-02T09:51:11.664668+00:00
+plexguide/Huntarr.io,1,Copilot,False,,,,,,,,NOT_FOUND,"repo deleted, renamed without redirect, or made private",2026-08-02T09:51:15.084591+00:00
+pydna-group/pydna,1,Copilot,True,,2015-02-04T06:43:08Z,True,228.0,Python,False,10.0,OK,,2026-08-02T09:51:17.523120+00:00
+python-cachier/cachier,1,Copilot,True,,2016-08-24T13:34:12Z,True,662.0,Python,False,25.0,OK,,2026-08-02T09:51:20.566004+00:00
+python/python-docs-zh-tw,1,Copilot,True,,2018-06-24T06:19:52Z,True,282.0,Python,False,188.0,OK,,2026-08-02T09:51:23.596855+00:00
+quantalogic/quantalogic,1,Copilot,True,,2025-01-02T12:40:21Z,False,466.0,Python,False,0.0,OK,,2026-08-02T09:51:26.690390+00:00
+rohitg00/awesome-ai-apps,1,Copilot,True,,2025-06-12T10:12:14Z,False,810.0,HTML,False,0.0,OK,,2026-08-02T09:51:29.654113+00:00
+rqlite/rqlite,1,Copilot,True,,2014-08-23T04:31:18Z,True,17664.0,Go,False,609.0,OK,,2026-08-02T09:51:32.562619+00:00
+skypilot-org/skypilot,1,Cursor,True,,2021-08-11T23:32:15Z,True,10432.0,Python,False,695.0,OK,,2026-08-02T09:51:35.575651+00:00
+snok/django-guid,1,Copilot,True,,2019-12-20T10:25:27Z,True,483.0,Python,False,57.0,OK,,2026-08-02T09:51:38.602448+00:00
+stack-auth/stack-auth,1,Devin,True,hexclave/hexclave,2024-02-28T13:01:24Z,False,6843.0,TypeScript,False,0.0,RENAMED,redirected to hexclave/hexclave,2026-08-02T09:51:41.640376+00:00
+stefankoegl/python-json-pointer,1,Copilot,True,,2011-07-31T19:53:51Z,True,149.0,Python,False,16.0,OK,,2026-08-02T09:51:44.987774+00:00
+tumf/mcp-text-editor,1,Devin,True,,2024-12-11T10:12:28Z,False,198.0,Python,False,0.0,OK,,2026-08-02T09:51:47.938720+00:00
+vespa-engine/pyvespa,1,Copilot,True,,2020-06-10T10:48:27Z,True,171.0,Python,False,317.0,OK,,2026-08-02T09:51:50.864684+00:00
+wzdavid/ThinkRAG,1,Cursor,True,,2024-07-15T07:20:24Z,False,349.0,Python,False,0.0,OK,,2026-08-02T09:51:53.901721+00:00
+yutto-dev/yutto,1,Copilot,True,,2021-05-02T15:58:56Z,True,1956.0,Python,False,40.0,OK,,2026-08-02T09:51:56.850197+00:00

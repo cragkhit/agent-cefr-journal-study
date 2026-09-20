@@ -1,0 +1,69 @@
+\begin{table}[t]
+\centering
+\caption{Distribution of AI agents' Python code constructs breakdown by PR task type.}
+\label{tab:rq1-tasktype}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Type & A1 & A2 & B1 & B2 & C1 & C2 & Total \\
+\midrule
+feat & 35,170 (67.65\%) & 6,187 (11.90\%) & 4,613 (8.87\%) & 4,037 (7.76\%) & 1,715 (3.30\%) & 269 (0.52\%) & 51,991 \\
+fix & 25,264 (67.22\%) & 5,029 (13.38\%) & 3,334 (8.87\%) & 2,830 (7.53\%) & 949 (2.53\%) & 177 (0.47\%) & 37,583 \\
+refactor & 10,694 (64.75\%) & 2,012 (12.18\%) & 1,830 (11.08\%) & 1,427 (8.64\%) & 431 (2.61\%) & 122 (0.74\%) & 16,516 \\
+chore & 4,970 (66.32\%) & 1,072 (14.30\%) & 708 (9.45\%) & 521 (6.95\%) & 185 (2.47\%) & 38 (0.51\%) & 7,494 \\
+build & 4,822 (65.53\%) & 1,082 (14.70\%) & 726 (9.87\%) & 504 (6.85\%) & 187 (2.54\%) & 38 (0.52\%) & 7,359 \\
+test & 3,479 (55.19\%) & 939 (14.90\%) & 693 (10.99\%) & 908 (14.40\%) & 277 (4.39\%) & 8 (0.13\%) & 6,304 \\
+docs & 1,151 (72.03\%) & 215 (13.45\%) & 107 (6.70\%) & 89 (5.57\%) & 35 (2.19\%) & 1 (0.06\%) & 1,598 \\
+ci & 91 (46.43\%) & 30 (15.31\%) & 38 (19.39\%) & 35 (17.86\%) & 2 (1.02\%) & 0 (0.00\%) & 196 \\
+perf & 105 (55.56\%) & 36 (19.05\%) & 22 (11.64\%) & 23 (12.17\%) & 3 (1.59\%) & 0 (0.00\%) & 189 \\
+style & 31 (100.00\%) & 0 (0.00\%) & 0 (0.00\%) & 0 (0.00\%) & 0 (0.00\%) & 0 (0.00\%) & 31 \\
+other & 2 (66.67\%) & 0 (0.00\%) & 1 (33.33\%) & 0 (0.00\%) & 0 (0.00\%) & 0 (0.00\%) & 3 \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+% ======================================================================
+
+\begin{table}[t]
+\centering
+\caption{Standardized Pearson residuals of agents' proficiency levels by PR task type.}
+\label{tab:rq1-residuals}
+\begin{tabular}{lrrrrrr}
+\toprule
+PR Type & A1 & A2 & B1 & B2 & C1 & C2 \\
+\midrule
+feat & \textbf{3.60} & \textbf{-6.00} & \textbf{-3.48} & \textbf{-2.10} & \textbf{4.95} & 0.39 \\
+fix & \textbf{2.05} & \textbf{2.91} & \textbf{-2.97} & \textbf{-3.39} & \textbf{-4.56} & -0.93 \\
+refactor & \textbf{-2.54} & \textbf{-2.37} & \textbf{7.32} & \textbf{2.79} & \textbf{-2.39} & \textbf{4.22} \\
+chore & -0.04 & \textbf{3.53} & 0.31 & \textbf{-3.28} & \textbf{-2.32} & 0.02 \\
+build & -0.88 & \textbf{4.45} & 1.48 & \textbf{-3.56} & -1.94 & 0.14 \\
+test & \textbf{-10.89} & \textbf{4.55} & \textbf{4.30} & \textbf{17.88} & \textbf{6.81} & \textbf{-4.23} \\
+docs & \textbf{2.78} & 0.68 & \textbf{-3.46} & \textbf{-3.47} & -1.72 & \textbf{-2.49} \\
+ci & \textbf{-3.43} & 0.96 & \textbf{4.60} & \textbf{4.86} & -1.56 & -1.00 \\
+perf & -1.82 & \textbf{2.38} & 1.04 & \textbf{2.01} & -1.08 & -0.98 \\
+style & \textbf{2.30} & \textbf{-2.00} & -1.70 & -1.58 & -0.95 & -0.40 \\
+other & 0.01 & -0.62 & 1.36 & -0.49 & -0.30 & -0.12 \\
+\bottomrule
+\end{tabular}
+\small\textit{Note: values with $|r| \geq 2$ (bold) are considered meaningful deviations from the expected frequencies.}
+\end{table}
+
+% ======================================================================
+
+\begin{table}[t]
+\centering
+\caption{Task types of the outlier AI agent PRs containing the most proficient code (C1+C2).}
+\label{tab:rq3-outliers}
+\begin{tabular}{lrrr}
+\toprule
+Task & PRs & C1+C2 constructs & Avg. per PR \\
+\midrule
+feat & 36 & 1,510 & 41.94 \\
+fix & 9 & 902 & 100.22 \\
+refactor & 9 & 506 & 56.22 \\
+build & 1 & 224 & 224.00 \\
+chore & 1 & 219 & 219.00 \\
+test & 5 & 204 & 40.80 \\
+\bottomrule
+\end{tabular}
+\end{table}

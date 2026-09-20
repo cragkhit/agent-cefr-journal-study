@@ -1,0 +1,277 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1273107196
+title: add fp32
+body:
+(empty)
+
+----- PR -----
+pr_id: 1283781196
+title: Add fftshift to fourier_transform with torch.fft
+body:
+<!-- Replace {issue_number} with the issue that will be closed after merging this PR -->
+Fixes #911
+
+**Description**
+This makes the behavior of fourier_transform and inv_fourier_transform
+consistent with earlier versions of torchio. It is also independent of
+whether torch or numpy is used to perform the transform.
+
+**Checklist**
+
+<!-- You do not need to complete all the items by the time you submit the pull
+request, but most likely the changes will only be merged if all the tasks are
+done. See more information about the submission process in the
+CONTRIBUTING (https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs. -->
+
+<!-- Write an `x` in all the boxes that apply -->
+- [X] I have read the [`CONTRIBUTING`](https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs and have a developer setup (especially important are `pre-commit`and `pytest`)
+- [X] Non-breaking change (would not break existing functionality)
+- [ ] Breaking change (would cause existing functionality to change)
+- [ ] Tests added or modified to cover the changes
+- [X] Integration tests passed locally by running `pytest`
+- [ ] In-line docstrings updated
+- [ ] Documentation updated, tested running `make html` inside the `docs/` folder
+- [X] This pull request is ready to be reviewed
+- [X] If the PR is ready and there are multiple commits, I have [squashed them and force-pushed](https://www.w3docs.com/snippets/git/how-to-combine-multiple-commits-into-one-with-3-steps.html#force-pushing-commits-7)
+
+----- PR -----
+pr_id: 1285035016
+title: Fix mypy errors
+body:
+<!-- Replace {issue_number} with the issue that will be closed after merging this PR -->
+
+Related to #810.
+
+**Description**
+This pull request addresses many of the mypy errors in the library. Next should be:
+
+- Run mypy in CI
+- Annotating the tests
+- Make mypy pass even with the `--strict` flag 
+
+**Checklist**
+<!-- You do not need to complete all the items by the time you submit the pull
+request, but most likely the changes will only be merged if all the tasks are
+done. See more information about the submission process in the
+CONTRIBUTING (https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs. -->
+
+<!-- Write an `x` in all the boxes that apply -->
+- [x] I have read the [`CONTRIBUTING`](https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs and have a developer setup (especially important are `pre-commit`and `pytest`)
+- [x] Non-breaking change (would not break existing functionality)
+- [ ] Breaking change (would cause existing functionality to change)
+- [ ] Tests added or modified to cover the changes
+- [x] Integration tests passed locally by running `pytest`
+- [ ] In-line docstrings updated
+- [ ] Documentation updated, tested running `make html` inside the `docs/` folder
+- [x] This pull request is ready to be reviewed
+- [ ] If the PR is ready and there are multiple commits, I have [squashed them and force-pushed](https://www.w3docs.com/snippets/git/how-to-combine-multiple-commits-into-one-with-3-steps.html#force-pushing-commits-7)
+
+----- PR -----
+pr_id: 1286209709
+title: add hash functionality to dataset
+body:
+Needed for caching as in #405 
+
+## Proposed Changes
+
+- adds an eager caching method, namely a `hashint` attribute to unbinned datasets. Resampleable datasets are not hashable.
+
+## Tests added
+
+- checking the invalidation of the hashint
+
+## Checklist
+
+- [x] change approved
+- [x] implementation finished
+- [x] correct namespace imported
+- [x] tests added
+- [x] CHANGELOG updated
+- [x] (if new public method/class) docs in rst file updated?
+
+----- PR -----
+pr_id: 1287418523
+title: t-ronmoneta/python sample app
+body:
+Only deviation i made from C# was moving the AuthenticationModeOptions enum from sample_app to Utils - due to python limitations.
+
+----- PR -----
+pr_id: 1291724459
+title: Working Solution for B2C MultiTenant
+body:
+This is a working copy for B2C Multitenant. It's still not perfect but this is not a bad start to push this project forward! Love it!  Thanks @JonasKs !
+
+Have to add a couple of more tests in future PRs.
+
+Hope you like it.
+
+----- PR -----
+pr_id: 1294670417
+title: Add some pre-commit hooks
+body:
+(empty)
+
+----- PR -----
+pr_id: 1294881592
+title: Use tqdm.auto
+body:
+(empty)
+
+----- PR -----
+pr_id: 1295899874
+title: Bug fix for feed_batch
+body:
+Fixed bug in feed_batch by replacing 0 return with the expected feed_results variable
+
+----- PR -----
+pr_id: 1301197239
+title: Fix #324
+body:
+This fixed #324
+
+----- PR -----
+pr_id: 1303369737
+title: fix(dnspod_com): resolve #286
+body:
+change user_token to login_token
+
+----- PR -----
+pr_id: 1309372968
+title: Add max_energy_range_uj to deal with RAPL wraparound
+body:
+When we detect a negative delta from RAPL energy usage then assume we have wrapped around and add max_energy_range_uj to it. According to Intel docs this should happen about every 60 secs under a heavy load. Fixes #322
+
+----- PR -----
+pr_id: 1315596308
+title: publish pypi with github actions
+body:
+(empty)
+
+----- PR -----
+pr_id: 1315608703
+title: fix pypi build
+body:
+(empty)
+
+----- PR -----
+pr_id: 1315811437
+title: build(matrix): multi-os
+body:
+(empty)
+
+----- PR -----
+pr_id: 1320726172
+title: Replace version
+body:
+(empty)
+
+----- PR -----
+pr_id: 1323609371
+title: Format
+body:
+(empty)
+
+----- PR -----
+pr_id: 1326073601
+title: Add RSNA 2022 Cervical Spine Fracture Detection dataset
+body:
+**Description**
+Add new class to work on the [RSNA 2022 Cervical Spine Fracture Detection](https://www.kaggle.com/competitions/rsna-2022-cervical-spine-fracture-detection).
+
+**Checklist**
+
+<!-- You do not need to complete all the items by the time you submit the pull
+request, but most likely the changes will only be merged if all the tasks are
+done. See more information about the submission process in the
+CONTRIBUTING (https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs. -->
+
+<!-- Write an `x` in all the boxes that apply -->
+- [x] I have read the [`CONTRIBUTING`](https://github.com/fepegar/torchio/blob/main/CONTRIBUTING.rst) docs and have a developer setup (especially important are `pre-commit`and `pytest`)
+- [x] Non-breaking change (would not break existing functionality)
+- [ ] Breaking change (would cause existing functionality to change)
+- [ ] Tests added or modified to cover the changes
+- [ ] Integration tests passed locally by running `pytest`
+- [x] In-line docstrings updated
+- [x] Documentation updated, tested running `make html` inside the `docs/` folder
+- [x] This pull request is ready to be reviewed
+- [ ] If the PR is ready and there are multiple commits, I have [squashed them and force-pushed](https://www.w3docs.com/snippets/git/how-to-combine-multiple-commits-into-one-with-3-steps.html#force-pushing-commits-7)
+
+----- PR -----
+pr_id: 1329405024
+title: bug fix when using old style of configs
+body:
+(empty)
+
+----- PR -----
+pr_id: 1330570494
+title: fixed quantstats bug
+body:
+(empty)
+
+----- PR -----
+pr_id: 1331569076
+title: User/t eitanmoed/add-e2e-tests-kusto-data
+body:
+#### Pull Request Description
+
+Split e2e test suite into ingest and data suites. Added an e2e test for Application Insights flow.
+
+---
+
+
+**Breaking Changes:**
+- None
+
+**Features:**
+- None
+
+**Fixes:**
+- None
+
+----- PR -----
+pr_id: 1333450657
+title: Update documentation
+body:
+Update documentation
+
+----- PR -----
+pr_id: 1334239831
+title: Quick start - remove extra keys + upper case format
+body:
+(empty)
+
+----- PR -----
+pr_id: 1335548707
+title: Dev
+body:
+(empty)
+
+----- PR -----
+pr_id: 1335624499
+title: Simplified quickstart object creation
+body:
+Simplified quickstart object creation

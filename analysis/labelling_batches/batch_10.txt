@@ -1,0 +1,330 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1446145000
+title: Move common test utils to common directory
+body:
+Stack from [ghstack](https://github.com/ezyang/ghstack) (oldest at bottom):
+* __->__ #185
+
+Move testutils and checker to the common directory to make their functions clear and promote reuse. So we have test files structured in a way resembling the source
+
+Also parameterized `eager_test`
+
+----- PR -----
+pr_id: 1446524394
+title: Add pylint to lintrunner
+body:
+Stack from [ghstack](https://github.com/ezyang/ghstack) (oldest at bottom):
+* __->__ #187
+
+----- PR -----
+pr_id: 1447339747
+title: Support associative responses
+body:
+(empty)
+
+----- PR -----
+pr_id: 1447430046
+title: Make test case on range stricter
+body:
+Signed-off-by: xiaowuhu <xiaowuhu@microsoft.com>
+
+- for the previous test case, if tensor.__index__() return 1, can also pass.
+- Also updated user call to convert float and int to Tensor
+
+----- PR -----
+pr_id: 1447731939
+title: Added python support for async socket client
+body:
+- Added support for python async client using a unix domain socket transport protocol
+- Fixed maturin develop to run with release flag
+- Removed uvloop benchmark as it less relevant for this stage and makes the benchmarks too long
+
+----- PR -----
+pr_id: 1448121447
+title: Load coordinates from netcdf in the correct order.
+body:
+data_array.coords is not guaranteed to return
+in the same order as its written. However, this is guaranteed for data_array.dims so use that to order coords when loading
+
+TODO
+
+- [x] Changelog
+- [x] See if we can find a way to test this
+
+----- PR -----
+pr_id: 1448145610
+title: Add types to associative output
+body:
+(empty)
+
+----- PR -----
+pr_id: 1448394698
+title: Remove secret for setting up E2E parallelism
+body:
+## What is being addressed
+
+In https://github.com/microsoft/AzureTRE/pull/2858 , I added a secret controlling how many threads to run e2e tests in. However @tamirkamara  made a point that it's unlikely to be useful to configure from a secret, and would obfuscate numbers in logs too. 
+Changed it instead to be a variable in Makefile, and it can still be overridden from e2e_tests/.env file.
+
+----- PR -----
+pr_id: 1448616828
+title: Redacting nested props (retry)
+body:
+# Resolves #2836 
+
+## What is being addressed
+Following the move on the base workspace to conditional properties via allOf, the client secret was no longer being redacted as it was assumed to be in the main template properties and the input property was assumed to be a flat list with no nesting. This fixes that and supports conditional properties in the template as well as nested properties.
+
+----- PR -----
+pr_id: 1448802963
+title: [Spot] Let cancel interrupt the spot job
+body:
+Closes #1146 
+
+Tested:
+- [x] `./tests/run_smoke_tests.sh test_spot_cancellation`
+- [x] `./tests/run_smoke_tests.sh test_use_spot`
+- [x] `./tests/run_smoke_tests.sh test_spot`
+- [x] `./tests/run_smoke_tests.sh test_gcp_spot`
+- [x] `./tests/run_smoke_tests.sh test_spot_recovery`
+- [x] `./tests/run_smoke_tests.sh test_spot_recovery_multi_node`
+
+----- PR -----
+pr_id: 1448946855
+title: Convert more % formatted strings to f-strings
+body:
+Stack from [ghstack](https://github.com/ezyang/ghstack) (oldest at bottom):
+* #185
+* __->__ #191
+
+- Also enable pylint `consider-using-f-string` rule
+
+----- PR -----
+pr_id: 1449211400
+title: [Release] Fix pypi description
+body:
+This PR removes the dark mode switcher for pypi description due to lack of support from PyPi.
+
+<img width="1045" alt="image" src="https://user-images.githubusercontent.com/6753189/201837576-eb83da31-3e57-4c0b-8e0b-c37e457cf6eb.png">
+
+Tested:
+- https://test.pypi.org/project/skypilot/0.2.1rc2/
+
+----- PR -----
+pr_id: 1449293336
+title: [Release] Fix pypi description (#1416)
+body:
+Cherry-pick #1416
+
+----- PR -----
+pr_id: 1449644413
+title: Address issue #192, remove istft, fix skipped test in eager_test.py
+body:
+istft is not part of onnx specification, it can be removed until it is brought in onnx specification.
+
+Fixes #192
+
+----- PR -----
+pr_id: 1449873128
+title: Fix backend test for ReferenceEvaluator with numpy 1.16.6
+body:
+Replaces #4657.
+
+----- PR -----
+pr_id: 1449896319
+title: Version 4.0.1
+body:
+# The Update doesn't work properly in Version 4.0.0 please download from the release (Version 4.0.1)
+- fixed recording issue (https://github.com/InamuraJIN/ActionRecorder/issues/39)
+- fixed clipboard issue
+- fixed preference issue
+- fixed update issue
+- fixed import issue
+- added linting support
+
+----- PR -----
+pr_id: 1450003008
+title: fix permission denied issue when copy back files into local
+body:
+(empty)
+
+----- PR -----
+pr_id: 1450214505
+title: Enable sriov before SRIOV test cases
+body:
+A lot of sriov tests assume SRIOV is enabled, add enable in before_case.
+
+----- PR -----
+pr_id: 1450271966
+title: Handle copy within loop body
+body:
+A continuation of the recent PR to handle copy-assignments. This handles such assignments inside a loop body. (Forgot to merge this change with the previous PR).
+
+----- PR -----
+pr_id: 1450530169
+title: Airlock UI: support multiple review vms
+body:
+# Resolves #2764
+
+## What is being addressed
+
+This PR adds support in the API and UI for multiple reviewers being able to create review VMs for an airlock request. This also adds functionality for re-deploying a review resource if it's in a failed state and automatic clean-up of the previous resource.
+
+<img width="682" alt="image" src="https://user-images.githubusercontent.com/25235950/202045681-17f1ff43-ef10-4cee-bcb9-3b0ec9a5f170.png">
+
+## How is this addressed
+
+- Changed reviewUserResources from array to dictionary, using the signed-in user's userId as the key to ensure one user resource per user
+- Added migration to update from previous format
+- Expanded /create-review-resource API to do a check for an existing resource, in which case it checks its health, returns a 409 conflict if healthy, otherwise redeploys and removes the old failed resource
+- Also made some general improvements to the airlock experience - allowed actions are now returned with most airlock API calls meaning the user doesn't need to refresh the UI for some options to appear when a request is updated
+- Review user resource block shows loading shimmers/spinner instead of defaulting to not created view when looking up an existing resource
+- Updated to React 18 and updated dependencies to latest versions
+- Update CHANGELOG.md
+
+----- PR -----
+pr_id: 1450723876
+title: update docs for onnx.save_model
+body:
+### Description
+<!-- - Describe your changes. -->
+Update doc stirng for function `onnx.save_model`
+
+### Motivation and Context
+<!-- - Why is this change required? What problem does it solve? -->
+The old doc string is confusing and missing documentation of one input parameter `save_as_external_data`,
+
+<!-- - If it fixes an open issue, please link to the issue here. -->
+
+----- PR -----
+pr_id: 1450817556
+title: [Bug fix] head_ip extraction from Ray stdout
+body:
+When Skypilot infers the head_ip from the Ray output message, it can capture a few extra characters (“’\n\x1b[0m”) which end up beinbg appended to the IP, which causes failures if you try to use the command runner. This PR replaces that capture with a regex to exactly match the IP.
+
+----- PR -----
+pr_id: 1450862970
+title: fix: multipart for client
+body:
+Never tested this after refactor to use aiohttp...
+
+----- PR -----
+pr_id: 1451061931
+title: Do not use dict as argument default value
+body:
+Signed-off-by: harupy <hkawamura0130@gmail.com>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## Related Issues/PRs
+
+<!--
+Please reference any related feature requests, issues, or PRs here. For example, `#123`. To automatically close the referenced issues when this PR is merged, please use a closing keyword (close, fix, or resolve). For example, `Resolve #123`. See https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue for more information.
+-->
+
+<!-- Resolve --> #xxx
+
+## What changes are proposed in this pull request?
+
+We should never use a mutable object as an argument default value. It's error-prone.
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [x] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [ ] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [ ] No. You can skip the rest of this section.
+- [ ] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+(Details in 1-2 sentences. You can just refer to another PR with a description if this PR is part of a larger change.)
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [ ] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [x] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1451623036
+title: Break import loop
+body:
+(empty)

@@ -1,0 +1,316 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1148954027
+title: regenerate input dict for different type
+body:
+(empty)
+
+----- PR -----
+pr_id: 1149972121
+title: 添加中文翻译
+body:
+不知道调用文件写的对不对
+
+----- PR -----
+pr_id: 1159193809
+title: add cpu cores
+body:
+(empty)
+
+----- PR -----
+pr_id: 1159793881
+title: Updated build for Windows
+body:
+GitHub actions upgraded windows-latest to windows-2022 from windows-2019, which doesn't include C++14 toolset required for Python 3.5 setup, updated the build.yml and fixed any required changes for windows-latest to build successfully
+
+----- PR -----
+pr_id: 1166074712
+title: Fix missing global_energy_mix.json in package
+body:
+- Put back Intel RAPL monitoring
+- Fix wrong value in log
+- Fix missing global_energy_mix.json in package
+- Fix Pandas Warning on deprecated df.append
+
+----- PR -----
+pr_id: 1170552616
+title: Added indentation to json dump
+body:
+(empty)
+
+----- PR -----
+pr_id: 1174868520
+title: add latency check
+body:
+(empty)
+
+----- PR -----
+pr_id: 1184394972
+title: add block size
+body:
+(empty)
+
+----- PR -----
+pr_id: 1185343814
+title: Release 2.0.0 and fix imprecision with duration
+body:
+- Remove support for Python 3.6 as it reached its end of life in December 2021.
+- Fix duration measurement : The last_duration was computed before making measurement, and the _last_measured_time was set after, so we "lost" some time. Measurement on Windows Intel Power Gadget could take up to 1.6 seconds. For GPU on Linux up to 0.07 second.
+- Add a start() method to Hardware to read energy at start() : allow to handle start/stop when reading energy counter.
+- Fix a dependency error with black, see https://github.com/psf/black/issues/2969. I upgrade all pre-commit package version. So there is format changes in code.
+
+----- PR -----
+pr_id: 1192143694
+title: Documentation, closes #40, #45, #61, #62
+body:
+Thank you @bkmetzler , @u-iandono & @h3rmanj for helping out in issues :tada:
+
+----- PR -----
+pr_id: 1195202671
+title: ci: fix windows and macos runner
+body:
+(empty)
+
+----- PR -----
+pr_id: 1197314397
+title: fix: simpleloss would fail if no params was given if it cannot infer …
+body:
+## Proposed Changes
+
+- do a try-except instead of signature check
+
+## Checklist
+
+- [x] change approved
+- [x] implementation finished
+- [x] correct namespace imported
+- [x] tests added
+- [x] CHANGELOG updated
+- [x] (if new public method/class) docs in rst file updated?
+…from the signature
+
+----- PR -----
+pr_id: 1200544171
+title: Add output to loggers option
+body:
+# Logger Output
+
+## New feature
+
+Add two classes to output emissions data to loggers:
+* `LoggerOutput()`: output to Python logging logger.
+* `GoogleCloudLoggerOutput()`: output to Google Cloud Logging. This sends emissions data of tracked scripts/workloads to some project Cloud Logging
+
+Emissions data are logged as a JSON record, on `tracker.stop()`
+
+See `Collecting emissions to a logger.md` for additional explanations & examples.
+
+
+## Files modified
+
+* `codecarbon/output.py`: add new classes
+* `codecarbon/emissions_tracker.py`: add arguments for saving to loggers
+
+Note: `.pre-commit-config.yaml` has been updated to black 22.3.0 since version 21 is broken by click 8.1.
+
+ ## Files added
+
+* `tests/test_logging_output.py`: `LoggerOutput` test case
+* `examples/logging_demo.py`: example to demonstrate usage from the command line
+* `Collecting emissions to a logger.md`: explanations & examples
+
+## Misc
+
+pre-commit has been applied.
+
+
+## Roadmap
+
+* Add option to format / structure output to loggers
+* Add support for AWS & Azure logging facilities.
+
+----- PR -----
+pr_id: 1202831803
+title: Leqiao/ma integration
+body:
+(empty)
+
+----- PR -----
+pr_id: 1203042954
+title: feat: add possibility for limits in `from_root` constructor
+body:
+Fixes long awaited possibility to have limits when loading from root
+
+
+## Tests added
+
+- extended data tests with limits
+
+## Checklist
+
+- [x] change approved
+- [x] implementation finished
+- [x] correct namespace imported
+- [x] tests added
+- [x] CHANGELOG updated
+- [x] (if new public method/class) docs in rst file updated?
+
+----- PR -----
+pr_id: 1204010107
+title: Leqiao/ort110
+body:
+update ort version to 1.10
+
+----- PR -----
+pr_id: 1211576329
+title: Upload delta instead of sum
+body:
+The emission's data uploaded to the API is cumulative, I propose to upload a delta, so we could aggregate them between experiments.
+
+----- PR -----
+pr_id: 1218565753
+title: Support Python 3.8
+body:
+Following is the summary of changes done -
+
+1. Using type hints from typing library instead of built-in type hints [introduced in python 3.9](https://docs.python.org/3/whatsnew/3.9.html#type-hinting-generics-in-standard-collections).
+
+2. Using older way to concatenate 2 dictionaries instead of [newer one](https://docs.python.org/3/whatsnew/3.9.html#dictionary-merge-update-operators).
+
+Example of older way to concatenate 2 dictionaries -> dmerged = {**d1,**d2}, here d1 and d2 are 2 dictionaries, merged into 1 as dmerged
+
+
+Close #74
+
+----- PR -----
+pr_id: 1221147515
+title: fix: simultaneous binned fits correctly sum over all dimensions
+body:
+Simultaneous binned fit
+
+## Proposed Changes
+
+- sum over all dimensions in the binned fits would fail with different binnings because a dimension was not summed over and therefore mismatched
+
+## Tests added
+
+- add simultaneous test with different binnings
+
+## Checklist
+
+- [x] change approved
+- [x] implementation finished
+- [x] correct namespace imported
+- [x] tests added
+- [x] CHANGELOG updated
+- [x] (if new public method/class) docs in rst file updated?
+
+----- PR -----
+pr_id: 1223420983
+title: Add UUID_FORMAT config
+body:
+PR adds the option to formating the current generated GUID in the available formats.
+
+----- PR -----
+pr_id: 1231608152
+title: Fix carbonboard
+body:
+Continue code from https://github.com/mlco2/codecarbon/pull/307 to fix carbonboard.
+- Use country_name everywhere instead of countryName.
+- Add a version check in GitHub Action
+
+----- PR -----
+pr_id: 1236258612
+title: ♻️ refactor: use pathlib instead of os.path
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 动机
+
+<!-- 请在这里描述你的修改 -->
+<!-- 如果有相关讨论 issue 请链接到该处 -->
+<!-- 如 fixes #59，这将会在本 PR 合并后自动 close 该 issue -->
+<!-- 当然，如果这不是一个 bug fix 的 PR，请使用 closes #59 -->
+<!-- 或者如果本 PR 只是与该 issue 相关，并没有完全解决该 issue 的话，请使用其他符号 -->
+<!-- 如 related to #59 -->
+
+使用 pathlib 来替代 os.path 模块
+
+## 解决方案
+
+<!-- 如果你的 PR 改动内容较多，请在这里详述你的解决方案 -->
+
+## 类型
+
+<!-- 本 PR 的类型（至少选择一个） -->
+
+-  [ ] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [x] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [ ] :technologist: dx: 优化开发体验
+-  [ ] :hammer: workflow: 工作流变动
+-  [ ] :label: types: 类型声明修改
+-  [ ] :construction: wip: 工作正在进行中
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+-  [ ] :arrow_up: deps: 依赖项修改
+-  [ ] :bookmark: release: 发布新版本
+
+----- PR -----
+pr_id: 1241792124
+title: Fix Emission tracker decorator exception handling for offline tracker #310
+body:
+@qmarcou add an exception handler to prevent the tracker to keep running after exception in code.
+
+TODO:
+
+- [x] Add tests
+- [x] ~Add docs~ : This will be done in https://github.com/mlco2/codecarbon/pull/313
+- [x] Bump version
+
+----- PR -----
+pr_id: 1253807135
+title: build: set zfit version with importlib-metadata
+body:
+[`importlib.metadata`](https://docs.python.org/3/library/importlib.metadata.html) is preferred over the older `pkg_resources`. The current setup with `pkg_resources` [also causes CI problems](https://github.com/ComPWA/compwa-org/runs/6612064353?check_suite_focus=true#step:5:210).
+
+See also https://github.com/zfit/phasespace/issues/80
+
+----- PR -----
+pr_id: 1267970448
+title: Remove specialization of std::hash for std::tuple
+body:
+The current specialization makes slang incompatible with other libraries that also include one, such as folly.

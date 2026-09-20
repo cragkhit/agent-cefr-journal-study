@@ -1,0 +1,253 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 358600573
+title: Optimization for search
+body:
+- Introduce a helper structure DistanceTable to aim a better locality
+- Avoid omp parallel for some parts because it makes the search slower even for billion-scale
+- Some compile flags for optimization. It seems -Ofast works well
+- Accessor for `__version__`
+
+----- PR -----
+pr_id: 359744503
+title: sift1m/sift1b benchmark
+body:
+- Benchmark scripts for SIFT1M/SIFT1B
+- #1
+
+----- PR -----
+pr_id: 47890338
+title: Refactored jsonpointer.py, added tox.ini
+body:
+And fixed most of flake8 errors(except 'lines too long' errors where its ok)
+I would review this pr not unified :)
+Hope it helps!
+
+----- PR -----
+pr_id: 47890591
+title: Default not returned bugfix
+body:
+Catching a broad exception to ensure the return of the default, added te...sts, fixed a bug where obj.contains(obj) returned false, added test case.
+
+----- PR -----
+pr_id: 524397345
+title: Fix problem with feature locations when 3' sticky ends are involved
+body:
+When adding fragments in which the 'other' sequence has a 3' sticky end at its 5' end, the features in 'other' are shifted in the wrong direction (since the ovhg is positive, not negative).
+
+This pull request fixes this issue in `dseqrecord.__add__` and in `dseqrecord.looped`.
+
+I will try to create an example assembly workflow to demonstrate the problem, and how it is fixed if you would like?
+
+EDIT: It seems I managed to include a typo in my commit message (and -> are) sorry about this!
+
+----- PR -----
+pr_id: 552510594
+title: Bagging PU Classifier
+body:
+(empty)
+
+----- PR -----
+pr_id: 559585688
+title: Support Mac OS (gcc and clang)
+body:
+To make the library works on Mac (both gcc and clang), 
+- disable c++17
+- add `-fno-sized-deallocation` to the compiler options
+- setup github actions to automatically test the library by CI
+
+----- PR -----
+pr_id: 57743967
+title: More efficient resolving
+body:
+I was profiling some of my code which used `jsonpointer`, and I noticed that resolving pointers could be made faster.
+
+My profiling script is at https://gist.github.com/alexsdutton/bb95e47a381d0e250fd3/988feaa0e8968893287df01c87eb233c9b86a010. Running on af04ec0, we get the following times on my laptop (Macbook Air, Fedora, Python 2.7.8):
+
+```
+3.43161201477 (/a/b/c/d/e/f)
+8.24996113777 (/b/1/1/1/1/1)
+7.04101395607 (/c/1/d/1/e/1/f)
+1.00753712654 (/-)
+```
+
+After each commit we get, respectively:
+
+```
+2.40125393867
+5.88285589218
+4.9583530426
+1.05458307266
+
+3.08297109604
+4.70882201195
+4.62245106697
+1.13339781761
+
+1.59154200554
+3.8058848381
+3.40330195427
+0.9848549366
+```
+
+So, about a 2x speed-up on the original code.
+
+----- PR -----
+pr_id: 577539654
+title: fix fit function in basic and weighted modules
+body:
+hold out set was created from positive samples only but should have been sampled out of all data set
+
+----- PR -----
+pr_id: 594610495
+title: Small modifications to allow for extra long LOCUS names to be handled…
+body:
+… correctlly and added ability to read circular topology from Genbank header. Added test Genbank file with long header name.
+
+----- PR -----
+pr_id: 6809274
+title: Compatibility fixes
+body:
+Python 2.5, Python 3.x and Jython 2.5 - all tests passed.
+
+----- PR -----
+pr_id: 689160749
+title: prepair transfer test
+body:
+(empty)
+
+----- PR -----
+pr_id: 727544394
+title: Fix: 'nomalmap' typo (cats-blender-plugin will support correct spell)
+body:
+`nomalmapTexture`のtypoについて、https://github.com/saturday06/VRM_IMPORTER_for_Blender/commit/4fe05cec9e2dccba90c22e244daf3fd4448e3a65 で「`cats-blender-plugin`でtypoのまま登録されているため、typoの修正ができない」となっていたと思います。
+そこで先方のコードを読みに行っていたのですが、`development`ブランチに「typoも正しいスペルも受け入れる」というコミットが追加されていました。
+そのため、そのコミットがreleaseされ次第こちらも修正が可能になると思います。
+いつになるかはわかりませんが、とりあえず忘れないようにPRを立てた次第です。
+
+https://github.com/GiveMeAllYourCats/cats-blender-plugin/blob/85731298b3b767f0b9edf12942b492cd129fa183/tools/common.py#L2000-L2004
+
+https://github.com/GiveMeAllYourCats/cats-blender-plugin/commit/c6aead4783abff1adaa0744aebd1b15d990066f8
+
+----- PR -----
+pr_id: 744173455
+title: Rework settings
+body:
+PR for settings rework. Splits out that part of #48 to simplify reviewing, and to make tests pass in isolation from all the celery changes.
+
+#### Changes
+
+1. Adds a `UUID_LENGTH` optional setting (this will also be applied in the CeleryIntegration)
+2. Makes settings lazy, and runs settings validation in the `appConfig` ready method so that any bad settings raise errors after the Django app is initialized. This should also remove all issues concerning import circularity (hopefully).
+3. Adds the skeleton for `IntegrationSettings`
+
+----- PR -----
+pr_id: 744659354
+title: Implement "in memory" backend
+body:
+Closes #6 
+
+This PR implements an "in memory" backend. It mostly excludes all of the locking and waiting functionalities that were in the pickle backend, since the in-memory should have negligible write and read times (in comparison to pickle). I may have misunderstood the purpose of that functionality, so if it's needed, I think it will be easy to put back in. 
+
+This PR also includes the changes from #38 because those were necessary to enable switching between multiple backends.
+
+**Caveat** the tests aren't written in a very reusable way, so I'm not sure the best way to test this without duplicating a lot of code. I'd appreciate some advice/help on what to do here
+
+----- PR -----
+pr_id: 745130116
+title: Celery integration
+body:
+Cleaned up version of #48
+
+---------
+
+Left to do:
+
+- [ ] Write docs (in a separate PR)
+- [x] Add unit tests (100% coverage)
+- [x] Add extras
+
+### Changes
+
+- Added CeleryIntegration with its own log filter and settings
+- Set extras in the `pyproject.toml` so you can run 
+    - `pip install django-guid[celery]`,
+    - `pip install django-guid[sentry]`, or
+    - `pip install django-guid[all]`,
+
+----- PR -----
+pr_id: 745297413
+title: Merged with vlad main to eval on cpu; added copier and residual policy
+body:
+merged with vlad main
+
+----- PR -----
+pr_id: 746959157
+title: Abstract controller_head defines sampling and log_prob on actions.
+body:
+In preparation for auto=regressive controller head.
+
+----- PR -----
+pr_id: 747053106
+title: Autoregressive
+body:
+@maxwshen here it is
+
+----- PR -----
+pr_id: 747087980
+title: Discrete stick embedding.
+body:
+(empty)
+
+----- PR -----
+pr_id: 747801327
+title: Read data in a separate process.
+body:
+Up to 2x speedup for slow networks.
+
+----- PR -----
+pr_id: 748091780
+title: Nested dynamic_rnn with test.
+body:
+(empty)
+
+----- PR -----
+pr_id: 748105853
+title: Variable action repeat
+body:
+(empty)
+
+----- PR -----
+pr_id: 748165063
+title: Debug trained model behavior, logging to pd.DataFrame (debug*.py).
+body:
+(empty)
+
+----- PR -----
+pr_id: 748382276
+title: AutoRegressive controller_head with residual blocks.
+body:
+(empty)

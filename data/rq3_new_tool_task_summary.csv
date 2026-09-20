@@ -1,0 +1,7 @@
+type,prs,constructs,avg
+feat,36,1510,41.94
+fix,9,902,100.22
+refactor,9,506,56.22
+build,1,224,224.0
+chore,1,219,219.0
+test,5,204,40.8

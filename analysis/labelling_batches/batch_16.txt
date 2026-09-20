@@ -1,0 +1,328 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1466758470
+title: Add chain name to verbose logging
+body:
+Adds some context over what chain is running, thereby making it more obvious how different chains are entered and existed
+
+<img width="867" alt="Screen Shot 2022-11-28 at 11 55 34 AM" src="https://user-images.githubusercontent.com/2548973/204336849-25d87b44-6f5d-487b-b583-5455f306a470.png">
+
+(note that the `...` is because the output is too long and VSCode truncated it)
+
+----- PR -----
+pr_id: 1466799601
+title: Adding positive and negative splits profiling
+body:
+## What changes are proposed in this pull request?
+Adding positive and negative splits profiling
+
+## How is this patch tested?
+![image](https://user-images.githubusercontent.com/5621432/204403308-54179bfd-9449-4241-b4c7-f1e964f3b573.png)
+
+
+## Does this PR change the documentation?
+
+- [x] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [ ] No. You can skip the rest of this section.
+- [x] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+For binary classification template, adding feature to visualize positive and negative split profiling
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [ ] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [x] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [x] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1466907847
+title: fix(ingest): handle docker-compose version `v` prefix
+body:
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1466958611
+title: Add description for `AirbyteEstimateTraceMessage` types
+body:
+From https://github.com/airbytehq/airbyte/pull/19814 - adding more description
+
+----- PR -----
+pr_id: 1467034835
+title: fix(discover): Added coalesce for http.status_code
+body:
+Http status code exists both as a field and tag in discover. 
+1. Added coalesce, prioritizing field.
+2. Added tests.
+
+----- PR -----
+pr_id: 1467065767
+title: feat(derive_code_mappings): Include repository files for various languages
+body:
+This change does not add support for multiple languages for code derivation, however, it start keeping track of the source files for these languages:
+
+* Javascript (.js)
+* React (.jsx)
+* Typescript + React (.tsx)
+* Typescript (.ts)
+* Node ES6 modules (.mjs)
+* Python (.py)
+* Ruby (.rb)
+* Php (.php)
+* Go lang (.go)
+
+Follow up changes will be required to add code mapping derivation for these languages.
+
+Fixes WOR-2427
+
+----- PR -----
+pr_id: 1467099967
+title: fix(metrics): Use consume timestamp for metric outcomes
+body:
+Gets timestamps of outcomes derived from metrics closer to their event-based counterpart. This should reduce a gap of usage numbers between indexed and total transactions when transactions are backdated.
+
+### Details
+
+There are two types of performance traffic that are tracked with separate outcomes:
+
+ - Transaction events flow through the `save_event` task. EventManager uses the `start_time` parameter to track outcomes for indexed transactions. That time is set by Relay during ingest and represents the time at which the event was first recorded at the ingest endpoint. This can be significantly different from the stated transaction timestamp if the transaction is submitted with a delay.
+ - Transaction metrics flow through the indexer and the `billing_metrics_consumer`. This consumer uses counts from the `transaction.duration` metric to record outcomes for total transactions. Metric buckets have no received timestamp, since the individual metrics that ended up in a bucket may have been received at different times. The former implementation of this consumer used the stated bucket timestamp to record outcomes, derived from the transaction timestamp. For backdated buckets, this means the outcome is recorded in the past rather than at ingest time.
+
+This difference can create gaps where there are more indexed transactions than total transactions in a given timeframe. Since metrics do not have a `start_time` like events, it's not possible to avoid such a gap entirely. However, the consumer can use the current time to produce the metrics-based outcomes, which will be closer to the ingest time than the bucket timestamp.
+
+Note that this was also fixed in https://github.com/getsentry/sentry/pull/41638 but subsequently reverted.
+
+----- PR -----
+pr_id: 1467114371
+title: feat(replays): remove 5 second duration condition on replay snuba query
+body:
+We will test removing the `> 5 seconds` condition on our default query, as this is filtering out replays that get tagged onto events. Even if the replays in these cases are super short, they may contain valuable information to help debug. 
+
+This will partly address our Replay Connectivity Issue https://github.com/getsentry/replay-backend/issues/190, as right now this is a source of "incorrect counts".
+
+----- PR -----
+pr_id: 1467132791
+title: [Storage] Fix flaky upload tests
+body:
+Attempting to fix some tests that occasionally fail in live test pipeline when trying to talk with external site. Changed the tests to upload and use a sperate blob rather than downloading from external site.
+
+----- PR -----
+pr_id: 1467172114
+title: [Storage] Cleanup old test classes after test proxy migration
+body:
+Now that all Storage tests have been migrated to test proxy, we can remove the old VCR test base classes that were replaced with new test proxy versions. Additionally cleaning up some other functions that are no longer used.
+
+----- PR -----
+pr_id: 1467203348
+title: refactor: Change return type of Euclidean distance function
+body:
+Resolves #62
+
+----- PR -----
+pr_id: 1467230896
+title: feat(indexer): Fix indexer handling of backpressure
+body:
+This attempts to fix how the metrics indexer is handling backpressure by keeping track of whether it is in backpressure mode with a boolean value `apply_backpressure`. The previous implementation solved the problem by attempting to identify the duplicate values in the batch by their offset number. But it wasn't partition aware so if the batch spans multiple partitions it may have been wrong.
+
+This is a required refactor for the upgrade to Arroyo 2.0.0, which will allow messages to represent a batch of values from the broker than might span multiple partitions.
+
+----- PR -----
+pr_id: 1467238770
+title: ref(tests): update rule processor test to use GroupEvent
+body:
+Fairly innocuous change, the actual code already makes use of `GroupEvent` in event_manager, this just updates the tests to reflect that.
+
+----- PR -----
+pr_id: 1467293110
+title: feat(scim): Mark idp flags for org member provisioning
+body:
+This will mark the `idp:provisioned` flag for all scim org members and the `idp:role-restricted` flag only if they fixed the role through scim
+
+----- PR -----
+pr_id: 1467305035
+title: add packages to env exclusions which aren't ready for type checking
+body:
+(empty)
+
+----- PR -----
+pr_id: 1467311026
+title: Harrison/fix react stateful
+body:
+fix issue with react being stateful
+
+----- PR -----
+pr_id: 1467316648
+title: Revert "ref(debug view): Clean up repeated code"
+body:
+Reverts getsentry/sentry#41583
+
+Snapshots are failing https://storage.googleapis.com/sentry-visual-snapshots/getsentry/sentry/03635d08bba3d0332fd2a441df4c660079bd6b3f/index.html
+
+----- PR -----
+pr_id: 1467320858
+title: [Spot] Make sure the cluster status is not None when showing
+body:
+A user found the `cluster_status` to be `None`, at the place we modified. It seems to be a very rare case, where the controller can connect to the spot cluster with ssh to check the job status, but found the whole cluster is preempted right after the succeeded ssh. However, it is good to make sure that won't cause a problem.
+
+The following is the error from the user:
+```
+(segm-4-nodes pid=2494) I 11-28 14:41:32 spot_utils.py:67] ==================================
+(segm-4-nodes pid=2494) I 11-28 14:41:54 spot_utils.py:58] === Checking the job status... ===
+(segm-4-nodes pid=2494) I 11-28 14:41:57 spot_utils.py:64] Job status: JobStatus.RUNNING
+(segm-4-nodes pid=2494) I 11-28 14:41:57 spot_utils.py:67] ==================================
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163] Traceback (most recent call last):
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163]   File "/home/ubuntu/.local/lib/python3.9/site-packages/sky/spot/controller.py", line 151, in run
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163]     self._run()
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163]   File "/home/ubuntu/.local/lib/python3.9/site-packages/sky/spot/controller.py", line 99, in _run
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163]     logger.info(f'Cluster status {cluster_status.value}. '
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163] AttributeError: 'NoneType' object has no attribute 'value'
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:163]
+(segm-4-nodes pid=2494) E 11-28 14:41:59 controller.py:164] Unexpected error occurred: AttributeError: 'NoneType' object has no attribute 'value'
+(segm-4-nodes pid=2494) I 11-28 14:41:59 controller.py:171] Previous spot job status: RUNNING
+(segm-4-nodes pid=2494) I 11-28 14:41:59 spot_state.py:198] Job failed due to unexpected controller failure.
+```
+
+----- PR -----
+pr_id: 1467321588
+title: fix(ingest): set DataProcessInstance created ts to start time
+body:
+In the dataJob runs tab (which shows dataProcessInstances), the "Time" column displays the `dataProcessInstanceProperties.created` timestamp. This change makes the emitter actually show the start times when provided.
+
+Slack ref: https://datahubspace.slack.com/archives/CUMUWQU66/p1669108847712609?thread_ts=1669020230.808929&cid=CUMUWQU66
+
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1467355454
+title: feat(mirror): send extra AddKey txs for function calls that add keys
+body:
+right now the only keys that get mapped are the ones that come from actual AddKey transactions. This misses any keys that get added from contract calls, which is actually pretty common. So to fix this, we will search through the txs and receipts of each block looking for function calls that generated AddKey transactions. When we see one, we'll just send an extra AddKey transaction to map the key the way we do for normal AddKey transactions.
+
+This change doesn't handle the case of CreateAccount actions generated by function calls, since the logic there is different, so we'll take care of that in another PR.
+
+----- PR -----
+pr_id: 1467362557
+title: [auto-release] Update release tips about release date
+body:
+(empty)
+
+----- PR -----
+pr_id: 1467398695
+title: [ML][Pipelines] Skip parallel_for live test
+body:
+# Description
+
+Please add an informative description that covers that changes made by the pull request and link all relevant issues.
+
+Skip parallel_for live test since it's not ready in canary
+
+If an SDK is being regenerated based on a new swagger spec, a link to the pull request containing these swagger spec changes has been included above.
+
+# All SDK Contribution checklist:
+- [ ] **The pull request does not introduce [breaking changes]**
+- [ ] **CHANGELOG is updated for new features, bug fixes or other significant changes.**
+- [ ] **I have read the [contribution guidelines](https://github.com/Azure/azure-sdk-for-python/blob/main/CONTRIBUTING.md).**
+
+## General Guidelines and Best Practices
+- [ ] Title of the pull request is clear and informative.
+- [ ] There are a small number of commits, each of which have an informative message. This means that previously merged commits do not appear in the history of the PR. For more information on cleaning up the commits in your PR, [see this page](https://github.com/Azure/azure-powershell/blob/master/documentation/development-docs/cleaning-up-commits.md).
+
+### [Testing Guidelines](https://github.com/Azure/azure-sdk-for-python/blob/main/CONTRIBUTING.md##building-and-testing)
+- [ ] Pull request includes test coverage for the included changes.
+
+----- PR -----
+pr_id: 1467401644
+title: Fix state indexing
+body:
+* Added better checks for generic aliases, to support all versions of Python.
+
+----- PR -----
+pr_id: 1467543091
+title: Bug Fix
+body:
+Quick bug fix for semantic similarity vector injection
+
+----- PR -----
+pr_id: 1467570980
+title: Implement profile mode for onnx runtime
+body:
+ONNX Runtimeのプロファイルの仕様
+https://onnxruntime.ai/docs/api/python/auto_examples/plot_profiling.html

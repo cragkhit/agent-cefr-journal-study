@@ -1,0 +1,268 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1467661138
+title: fix(ingest): graceful error handling in snowflake classification
+body:
+- Also reverts termcolor dependency version to >=1.0.0 for airflow 2.0.2 compatibility
+
+## Checklist
+
+- [x] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1467667485
+title: Fix api to accept list of address spaces
+body:
+## What is being addressed
+
+Fixes #2915 
+
+Fix api app to handle array of address spaces
+
+----- PR -----
+pr_id: 1467703373
+title: [pipeline][cadl] update output-path
+body:
+(empty)
+
+----- PR -----
+pr_id: 1467897447
+title: Test that physical size is the same before and after re-attaching tenant
+body:
+Extracted from PR #2785
+
+----- PR -----
+pr_id: 1467897860
+title: Dead Dataflow Elimination bugfix
+body:
+(empty)
+
+----- PR -----
+pr_id: 1467953742
+title: Support SQL statements that return no results
+body:
+Adds support for statements such as insert, update etc which do not return any rows.
+
+`engine.execute` is deprecated and so execution has been updated to use `connection.exec_driver_sql` as-per:
+
+https://docs.sqlalchemy.org/en/14/core/connections.html#sqlalchemy.engine.Engine.execute
+
+----- PR -----
+pr_id: 1467977825
+title: feat(cli): remove inconsistency check command
+body:
+## Checklist
+
+- [x] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [x] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [x] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1468064081
+title: connector-ops ci check: handle missing definitions
+body:
+## What
+Our script that checks that strictness level is set to `high` for GA connectors does not handle well changes made to a connector that is not declared in source_definitions.yaml .
+
+We have a couple of connectors that are not published hence not declared in `source_definitions.yaml`: e.g. source-relational-database, scaffolds etc.
+
+## How
+Log a warning when the connector definition could not be found.
+
+----- PR -----
+pr_id: 1468078194
+title: fix(ingest): fix types changes in clickhouse sqlalchemy 0.2.3
+body:
+Due to [this change](https://github.com/xzkostyan/clickhouse-sqlalchemy/commit/0517d203b4976ede5efb9b0e63b5e36f5a526847) in clickhouse-sqlalchemy version 2.3.0, DataHub field type for "DateTime" and "DateTime64" is incorrectly represented as DateType instead of TimeType. 
+To add more context, Clickhouse types DateTime and DateTime64 are subclassed from sqlalchemy Date type instead of DateTime type, hence the above change caused inconsistent types in DataHub.
+
+
+## Checklist
+
+- [x] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
+
+----- PR -----
+pr_id: 1468316428
+title: Skip static generation of deprecated ops
+body:
+I forgot to do this in #162.
+
+----- PR -----
+pr_id: 1468395428
+title: Stub out a test harness for pygen
+body:
+(empty)
+
+----- PR -----
+pr_id: 1468542485
+title: feat(replays): remove 5 second duration condition on replay snuba query (round two!)
+body:
+re-opening #41799 for when after #41843 lands
+
+----- PR -----
+pr_id: 1468587885
+title: Revert "Revert "ref(debug view): Clean up repeated code""
+body:
+Reverts getsentry/sentry#41819 and undoes the changes to `ActivityMailDebugView` since that resulted in flaky visual snapshots.
+
+----- PR -----
+pr_id: 1468710944
+title: fix(perf-issues): Handle missing span description in N+1 API Calls detector
+body:
+- Fall back to empty span description
+- Ignore spans with no descriptions
+
+I know doing both seems like overkill, but it's the kind of logic that's easy to overlook and change by accident.
+
+----- PR -----
+pr_id: 157934052
+title: Use logging to notify if pydna.gel is available
+body:
+This replaces the print statements and greatly reduces clutter in stdout.
+
+----- PR -----
+pr_id: 161040645
+title: Addressed the issue of DNA bands not visible on Gel electrophoresis
+body:
+When two samples have very dispar quantities of DNA (different orders of magnitude), in order not to violate the relationship between the amount of DNA and the light intensity detected, the bands with less DNA are not distinguishable from the background.
+While this attempts to be realistic, it might not be practical for the user that his samples just don't show up and it might create confusion.
+To address this issue, when the light intensity at the center of the band differs less than a "detection limit" (`detectlim`, 0.04) from the background, a white dotted contour is drawn around it.
+
+Additionally, the default quantity `Dseqrecord.n` was changed from 10 pmol to 0.05 pmol in order to keep the samples generated with default quantities closer to the commonly used commercial standards.
+
+----- PR -----
+pr_id: 269307576
+title: Perform input validation in JsonPoiner
+body:
+Perform input validation in `JsonPointer.__init__()` as suggested in #20
+
+----- PR -----
+pr_id: 288622894
+title: Drop support for EOL Python 2.6 and 3.3
+body:
+Python 2.6 and 3.3 are EOL and no longer receiving security updates. They're also little used.
+
+
+![image](https://user-images.githubusercontent.com/1324225/34263159-38b766bc-e677-11e7-918b-54bc889cfff0.png)
+
+https://en.wikipedia.org/wiki/CPython#Version_history
+
+Here's the pip installs from PyPI for jsonpointer for last month, showing very low fractions for 2.6 and 3.3:
+
+| python_version | percent | download_count |
+| -------------- | ------: | -------------: |
+| 2.7            |   92.5% |        274,004 |
+| 3.6            |    3.0% |          8,889 |
+| 3.5            |    2.5% |          7,435 |
+| 3.4            |    1.9% |          5,673 |
+| 3.3            |    0.1% |            156 |
+| 2.6            |    0.0% |            113 |
+| 3.7            |    0.0% |             63 |
+| None           |    0.0% |              9 |
+
+Source: `pypinfo --start-date -45 --end-date -15 --percent --pip --markdown jsonpointer pyversion`
+
+----- PR -----
+pr_id: 296411212
+title: Use UTF-8 when reading __init__.py.
+body:
+This change fixes an encoding error I encountered on macOS Python 3.6 while updating the pydna bioconda package:
+
+Full build log: https://circleci.com/gh/bioconda/bioconda-recipes/2242
+
+```
+06:27:51 BIOCONDA ERROR STDOUT+STDERR:
++ source /tmp/workspace/miniconda/bin/activate /tmp/workspace/miniconda/conda-bld/pydna_1518445616469/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla
++ /tmp/workspace/miniconda/conda-bld/pydna_1518445616469/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/bin/python setup.py install --single-version-externally-managed --record=record.txt
+Traceback (most recent call last):
+  File "setup.py", line 7, in <module>
+    for line in open('pydna/__init__.py'):
+  File "/tmp/workspace/miniconda/conda-bld/pydna_1518445616469/_b_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 470: ordinal not in range(128)
+```
+
+----- PR -----
+pr_id: 30215939
+title: JsonPointer.from_parts should handle the empty path
+body:
+[The RFC says](http://tools.ietf.org/html/rfc6901#page-5) that the path `""` points at the original document. However, passing `[]` to `from_parts()` results in a path of `"/"` (the same as when one passes `[""]`. This makes the empty list produce a pointer for the empty path.
+
+----- PR -----
+pr_id: 354297462
+title: (usually) OSX doesn't have openmp
+body:
+This is just a workaround.
+Of course, checking existence of openmp is preferable.
+
+----- PR -----
+pr_id: 354651234
+title: Use SIMD for the L2 square distance computation
+body:
+See #13 
+
+SSE, AVX, AVX512 implementations are introduced. I followed Faiss implementation for SSE and AVX: https://github.com/facebookresearch/faiss/blob/master/utils.cpp
+Depending on your architecture, the faster one is automatically selected (AVX512>AVX>SSE)
+
+Based on Faiss's implementation, I wrote an AVX512 version. But it doesn't drastically fast. Almost same as AVX. 
+
+See this for isolated benchmark: https://gist.github.com/matsui528/583925f88fcb08240319030202588c74
+
+The result on c5.2xlarge instance on AWS EC2 are:
+- ref: 1345 msec
+- sse: 371 msec
+- avx: 262 msec
+- avx512: 255 msec
+
+----- PR -----
+pr_id: 354821446
+title: Implemented a merge function
+body:
+#2
+
+----- PR -----
+pr_id: 355814901
+title: Bug fix in print functions. Updated some references. v0.2.2
+body:
+- Fixed a bug in a print function
+- Updated a reference
+- pypi badge
+
+----- PR -----
+pr_id: 357897479
+title: Trigger a verbose flag of codec when that of a rii instance is changed
+body:
+(empty)

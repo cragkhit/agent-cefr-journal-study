@@ -1,0 +1,416 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1016104386
+title: several pickle files
+body:
+once again. Fixed author issue
+
+----- PR -----
+pr_id: 1019030515
+title: Several pickle files by erap129 
+body:
+(empty)
+
+----- PR -----
+pr_id: 1019183107
+title: A fix by @ericmjl to the inotify bug
+body:
+(empty)
+
+----- PR -----
+pr_id: 1022115985
+title: In-Memory Core + wait_for_calc_timeout
+body:
+(empty)
+
+----- PR -----
+pr_id: 1034144863
+title: Trio support
+body:
+- Support `trio` by replacing `aiohttp` with `httpx`
+- Remove unused `end_session_endpoint`
+- Rewrite tests
+
+Closes #31
+
+----- PR -----
+pr_id: 1034647105
+title: #15 添加媒体描述文件生成支持（暂时只支持番剧，格式仅支持nfo）
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 概述
+
+添加媒体描述文件生成支持， 目前仅支持番剧，格式只支持nfo
+
+本 PR 的类型（至少选择一个）
+
+-  [x] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [x] :pencil: docs: 对文档进行修改
+-  [ ] :art: style: 对代码语义无影响的格式修改（如去除无用空格、格式化等等修改）
+-  [ ] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+
+closes #15
+
+----- PR -----
+pr_id: 1038335779
+title: Add method and add classmethod tag
+body:
+Set get_part as a classmethod, and add method `get_parts`
+
+For: #36, #45
+
+----- PR -----
+pr_id: 1045422903
+title: ✨ feat: add tmp-dir option
+body:
+## 概述
+
+增加 `--tmp-dir` 选项来设置临时文件的存放目录。closes #25
+
+本 PR 的类型（至少选择一个）
+
+-  [x] :sparkles: feat: 添加新功能
+
+----- PR -----
+pr_id: 1062041328
+title: Added wait_for_calc_timeout to pickle core.
+body:
+Added wait_for_calc_timeout to pickle core.
+Moved wait_for_calc_timeout tests to test_general.py (now common among the pickle and mongo cores).
+
+----- PR -----
+pr_id: 1063384786
+title: Added wait_for_calc_timeout to pickle core.
+body:
+(empty)
+
+----- PR -----
+pr_id: 1078446032
+title: Remove logging of invalid headers if they are not safe
+body:
+That way we won't ever be the source if log4shell would become an issue in the Python world.
+
+----- PR -----
+pr_id: 1078507951
+title: Make type checker stricter
+body:
+- Adds the `disallow_untyped_defs` flag to the mypy config and resolves a few issues.
+- Updates pre-commit hooks
+- Removes a duplicated development status metadata tag
+
+----- PR -----
+pr_id: 1085539136
+title: Check for active object before switching to object mode
+body:
+When the exporter iterates through each mesh to export, it needs to enter edit mode to work with the mesh data.
+Before this must happen, we must enter object mode so we can pick the mesh we want to use.
+
+However, in some cases, there will be no mesh selected - causing mode_set() to fail, as there is no active object, causing a crash.
+This fixes this crash by just not bothering to switch into object mode if nothing is selected, as it's a redundant operation at that point.
+
+Additionally, blender safeguards against misbehavior here - if you try to deselect `bpy.context.view_layer.objects.active` by setting it to none while in any mode other than object mode, it kicks you back into object mode, allowing you to select a new mesh.
+
+Fixes #70
+
+----- PR -----
+pr_id: 1101776414
+title: Implement `auto_error` flag - Resolves #43
+body:
+- Expose and implement auto_error
+- Update docs to reference new exposed field
+
+----- PR -----
+pr_id: 1116320361
+title: ✨ feat: add metadata support for acg video
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+close #21 
+
+## 概述
+
+<!-- 请在这里描述你的修改 -->
+
+本 PR 的类型（至少选择一个）
+
+-  [x] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [x] :pencil: docs: 对文档进行修改
+-  [ ] :art: style: 对代码语义无影响的格式修改（如去除无用空格、格式化等等修改）
+-  [ ] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [x] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+
+----- PR -----
+pr_id: 1121191213
+title: Fixed exception when olive is invoked without parameters
+body:
+If olive is invoked without any parameters it throws an exception. This PR fixes that.
+I also updated .gitignore to include files to ignore during local development.
+
+----- PR -----
+pr_id: 1124946807
+title: Conditionally use deprecated default_app_config
+body:
+`default_app_config` is being removed in Django 4.1 and a new warning has shown up since django 3.2
+
+https://docs.djangoproject.com/en/dev/internals/deprecation/#deprecation-removed-in-4-1
+
+----- PR -----
+pr_id: 1124984291
+title: ⚡️ perf: parallelising video url parser
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+closes #49 
+
+## 概述
+
+<!-- 请在这里描述你的修改 -->
+
+本 PR 的类型（至少选择一个）
+
+-  [ ] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [ ] :art: style: 对代码语义无影响的格式修改（如去除无用空格、格式化等等修改）
+-  [x] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [x] :zap: perf: 提高性能的代码修改
+-  [x] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+
+----- PR -----
+pr_id: 1125254036
+title: ♻️ refactor: refactor parser code into extractor
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 概述
+
+<!-- 请在这里描述你的修改 -->
+
+本 PR 的类型（至少选择一个）
+
+-  [ ] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [ ] :art: style: 对代码语义无影响的格式修改（如去除无用空格、格式化等等修改）
+-  [x] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+
+----- PR -----
+pr_id: 1126238378
+title: Feature/b2c support
+body:
+Added support for tokens without `x5c` fields, and added optional `openid_config_url` override, this would close #46 
+
+Not all tests are working yet, not sure if that is due to the code itself or due to the test config
+
+----- PR -----
+pr_id: 1132585611
+title: ✨ feat: support colorful display on Windows
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 概述
+
+<!-- 请在这里描述你的修改 -->
+
+在 cmd 以及 powershell 上支持了显示彩色
+
+fixes #56 
+
+
+## 本 PR 的类型（至少选择一个）
+
+-  [x] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [ ] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [ ] :technologist: dx: 优化开发体验
+-  [ ] :hammer: workflow: 工作流变动
+-  [ ] :label: types: 类型声明修改
+-  [ ] :construction: wip: 工作正在进行中
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+-  [ ] :arrow_up: deps: 依赖项修改
+-  [ ] :bookmark: release: 发布新版本
+
+----- PR -----
+pr_id: 1133751091
+title: Update dependencies and improve linting
+body:
+Changes:
+
+- Removes `pytest-cov` in favor of just `coverage`
+- Configures `flake-type-checking` and fixes lints
+- Upgrades lockfile
+- Upgrades pre-commit config
+- Adds Python 3.11 to test matrix
+
+----- PR -----
+pr_id: 1137707841
+title: 🐛 fix: repeated requests
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 概述
+
+related to #59 
+
+<!-- 请在这里描述你的修改 -->
+
+本 PR 的类型（至少选择一个）
+
+-  [ ] :sparkles: feat: 添加新功能
+-  [x] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [x] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [x] :zap: perf: 提高性能的代码修改
+-  [ ] :technologist: dx: 优化开发体验
+-  [ ] :hammer: workflow: 工作流变动
+-  [x] :label: types: 类型声明修改
+-  [x] :construction: wip: 工作正在进行中
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+-  [ ] :arrow_up: deps: 依赖项修改
+-  [ ] :bookmark: release: 发布新版本
+
+----- PR -----
+pr_id: 1138323122
+title: ♻️ refactor: delaying the parsing process
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 动机
+
+fixes #59 
+
+<!-- 请在这里描述你的修改 -->
+
+## 解决方案
+
+将下载链接（含字幕、弹幕）的解析过程延迟到下载前一刻。
+
+至于怎么解决嘛，就是 extrator 不直接解析出详细的 `EpisodeData`，而是构造一个返回 `EpisodeData` 的协程任务，这个任务会在下载前一刻才执行～
+
+## 类型
+
+本 PR 的类型（至少选择一个）
+
+-  [ ] :sparkles: feat: 添加新功能
+-  [x] :bug: fix: 修复 bug
+-  [x] :pencil: docs: 对文档进行修改
+-  [x] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [ ] :technologist: dx: 优化开发体验
+-  [ ] :hammer: workflow: 工作流变动
+-  [ ] :label: types: 类型声明修改
+-  [x] :construction: wip: 工作正在进行中
+-  [ ] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+-  [ ] :arrow_up: deps: 依赖项修改
+-  [ ] :bookmark: release: 发布新版本
+
+----- PR -----
+pr_id: 1145137149
+title: str/repr, join, and setting - for arrays
+body:
+I batched these together but can split them out/discard as desired.
+
+### `__str__` and `__repr__` methods
+Pretty straightforward, some hoops to jump through for Python 2 support, as `__str__` should return a `str`, not `unicode` (#48 is relevant).
+
+### Join
+Add a `join()` method for combining two pointers. Works with strings and parts as well (can be more restrictive on types if you want). Also supports the / magic method (`__truediv__` in Python 3, `__div__` in Python 2), like pathlib.
+
+### Setting - for arrays
+A pointer like `/foo/-` represents the element past the end of an array. Calling `set()` with one of these pointers should append to the array.

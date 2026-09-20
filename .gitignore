@@ -7,3 +7,9 @@ data/pre_chatgpt_results_by_repo/
 __pycache__/
 *.pyc
 .venv/
+
+# Run logs written by the analysis scripts
+log files/
+
+# Never commit credentials
+.env

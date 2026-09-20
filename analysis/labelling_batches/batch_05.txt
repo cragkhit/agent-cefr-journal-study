@@ -1,0 +1,242 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1372886410
+title: Create result files and CSV file with all results.
+body:
+This change makes C# & Node write JSON result files, and that all of the files from a single run will have the same name, except for a prefix identifying the benchmark - so, for a given date/time, the files will be csharp/node/python-<date-time>.json.
+
+After this, all the files are read by a Python script which collects all of the data, and creates a CSV file from it.
+
+----- PR -----
+pr_id: 1375221700
+title: Foramt
+body:
+(empty)
+
+----- PR -----
+pr_id: 1375413558
+title: change tuning combos
+body:
+change tuning combos
+
+----- PR -----
+pr_id: 1376898677
+title: Enhance syntax clone functionality, include deepClone
+body:
+Here is my attempt to implement deepClone semantics in discussion #599 
+Try to uniform API usage, any suggestion is welcome
+
+----- PR -----
+pr_id: 1378454028
+title: Fix flake8 errors in CI
+body:
+(empty)
+
+----- PR -----
+pr_id: 1379481242
+title: enum serialize fix
+body:
+(empty)
+
+----- PR -----
+pr_id: 1379562489
+title: fix pydna.seqrecord.SeqRecord.__add__ returning a Bio.SeqRecord
+body:
+Currently 
+```
+from pydna.seqrecord import SeqRecord
+from Bio.Seq import Seq
+type(SeqRecord(Seq("AAAC")) + SeqRecord(Seq("GTAAC")))
+```
+unexpectedly returns `Bio.SeqRecord.SeqRecord`.
+This PR fixes that by providing a factory method that generates a pydna SeqRecord from a Bio SeqRecord and using it in the pydna's `SeqRecord.__add__` method. The factory method is also used in the `reverse_complement` method.
+Since some of it's code would be shared with the constructor, that code is transferred to a separate method (`fix_attributes`)
+
+----- PR -----
+pr_id: 1379858605
+title: Dev
+body:
+(empty)
+
+----- PR -----
+pr_id: 1381210765
+title: add function to change analysis nwbf group permissions
+body:
+This pull request adds a function to nwb_helper_fn.py that allows a user to change the group permissions on their analysis nwb files.
+
+----- PR -----
+pr_id: 1381470684
+title: Remove mountainsort and ghostipy dependencies
+body:
+Mountainsort cannot be installed on windows. It also has difficulty installing on a Mac M1 (see #340). These are not necessary for spyglass. The user may want to use kilosort or other sorters. The user can install mountainsort if they seek to use it.
+
+Ghostipy relies on pyfftw which currently cannot be installed from pip on a Mac M1 (see #340). It can be installed from conda-forge though. SInce ghostipy is used only in the filtering code, I adjusted the filtering code to import ghostipy (and raise an error if it is not installed) only on demand.
+
+----- PR -----
+pr_id: 1382077599
+title: Deprecate evaluation module
+body:
+* All the tests and documentation now use `learntorank.evaluation` module.
+* I have added DeprecationWarning to the `vespa.evaluation` module and to the methods `vespa.application.Vespa.evaluate` and `vespa.application.Vespa.evaluate_query`.
+* After this PR is merged, I will publish pyvespa 0.26.0, which will still include the deprecated code.
+* pyvespa 0.3.0 will no longer contain the deprecated evaluation code mentioned above.
+
+I confirm that this contribution is made under the terms of the license found in the root directory of this repository's source tree and that I have the authority necessary to make this contribution on behalf of its copyright owner.
+
+----- PR -----
+pr_id: 1383115402
+title: Dev
+body:
+(empty)
+
+----- PR -----
+pr_id: 1384224314
+title: fix: all type hints are now present and correct
+body:
+(empty)
+
+----- PR -----
+pr_id: 1386703520
+title: Add black formatting
+body:
++ Uses the black formatter to allow for more consistent code style
++ Adds github action that checks for black
++ Removes some unnecessary imports
+
+----- PR -----
+pr_id: 1388414948
+title: improved backtesting accuracy
+body:
+(empty)
+
+----- PR -----
+pr_id: 1389589135
+title: Add standard deviation to benchmarks.
+body:
+(empty)
+
+----- PR -----
+pr_id: 1390039441
+title: num jobs = 8 for SpikeSortingRecording.populate()
+body:
+makes generating a new recording faster by running multiple jobs
+
+----- PR -----
+pr_id: 1390211165
+title: Bugfix, fix deepClone crash issue on token copy
+body:
+This is a bugfix for deepClone.
+In the previous implementation, token would adopt shallow copy.
+So with different life cycle BumpAllocators, it would crash.
+Here is my test case.
+``` cpp
+        auto tree = SyntaxTree::fromText(R"(module m; reg tmp; endmodule)");
+        class CloneRewriter : public SyntaxVisitor<CloneRewriter> {
+            std::shared_ptr<SyntaxTree>& tree;
+
+        public:
+            CloneRewriter(std::shared_ptr<SyntaxTree>& tree) : tree(tree) {}
+            void handle(const ModuleDeclarationSyntax& decl) {
+                BumpAllocator newAlloc;
+                auto newModule = slang::syntax::deepClone(decl, newAlloc);
+                tree = std::make_shared<SyntaxTree>(newModule, tree->sourceManager(),
+                                                    std::move(newAlloc));
+            }
+        };
+        CloneRewriter visitor(tree);
+        tree->root().visit(visitor);
+```
+Without modification, the original BumpAllocator would be destroyed, and it would meet use-after-free issue.
+
+----- PR -----
+pr_id: 1390395056
+title: feat: implement metrics 
+body:
+partially addresses #12 
+
+also updates documentation to address #8
+
+----- PR -----
+pr_id: 1390420613
+title: Benchmarks: Allow user to set benchmark parameters
+body:
+This change allows the user to pass to the script the parameters data and tasks, both of which take a variadic list of numbers.
+
+----- PR -----
+pr_id: 1390460706
+title: forward explicit kwargs
+body:
+fixes specified id, name or description being ignored (failed tests in e.g. https://github.com/BjornFJohansson/pydna/actions/runs/3098962613/jobs/5017517313 )
+
+----- PR -----
+pr_id: 1391187866
+title: Cleanup and remove deprecations
+body:
+Fixes extended yield sum of morphing
+
+## Tests added
+
+- Morphing PDF sum test
+
+## Checklist
+
+- [x] change approved
+- [x] implementation finished
+- [x] correct namespace imported
+- [x] tests added
+- [x] CHANGELOG updated
+- [x] (if new public method/class) docs in rst file updated?
+
+----- PR -----
+pr_id: 1392071789
+title: Add ONNX docs to onnx.ai (2)
+body:
+### Description
+
+Autogenerate and autopublish ONNX documentation to the https://onnx.ai/ website
+
+Docs are staged here: https://xadupre.github.io/draft/onnx/ (and once this PR is merged will autopublish to https://onnx.ai/onnx)
+
+Original PR #4543, it takes stacks all commits in one single signed commit and add a couple of new more to fix minor issues.
+
+### Motivation and Context
+
+Markdown documentation is slow and difficult to navigate through. This automated documentation is faster, includes a tutorial on onnx based on Python API. It also includes pages showing differences accross different versions of the same operator.
+
+----- PR -----
+pr_id: 1393828753
+title: Benchmarks: Separate gets to set and unset values.
+body:
+This will allow us to compare the latency of get calls that return a value, to those that don't. `get` calls are now split between those that target the range of keys that `set` calls target, where we should receive a returned value, and those that target the range above it, which should return null. We expect to see different latency between these 2 sets of calls.
+
+Before each test starts the DB is filled with values of the same length, to ensure that all `get` calls will have the same data marshalling complexity.
+
+----- PR -----
+pr_id: 1394136215
+title: Fix `ghostipy` import error
+body:
+To address #357 
+@rsnevers
