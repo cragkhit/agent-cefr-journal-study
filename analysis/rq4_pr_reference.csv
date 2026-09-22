@@ -111,16 +111,12 @@ AI agents,2964017894,airbytehq/PyAirbyte,650
 AI agents,2970993516,DannyMac180/meta-agent,15
 AI agents,2971908072,digitaldemocracy2030/kouchou-ai,232
 AI agents,2971926630,digitaldemocracy2030/kouchou-ai,233
-AI agents,2976318527,digitaldemocracy2030/kouchou-ai,244
 AI agents,2976319344,digitaldemocracy2030/kouchou-ai,245
-AI agents,2976332198,digitaldemocracy2030/kouchou-ai,247
-AI agents,2978436805,digitaldemocracy2030/kouchou-ai,251
 AI agents,2978840535,crewAIInc/crewAI,2537
 AI agents,2980213795,GlareDB/glaredb,3608
 AI agents,2982204377,crewAIInc/crewAI,2548
 AI agents,2982438384,crewAIInc/crewAI,2552
 AI agents,2984176797,crewAIInc/crewAI,2562
-AI agents,2986070957,neondatabase/neon,11526
 AI agents,2989761342,crewAIInc/crewAI,2588
 AI agents,2990115371,crewAIInc/crewAI,2594
 AI agents,2990679795,mendableai/firecrawl,1448
@@ -199,9 +195,7 @@ AI agents,3118735492,a16z/halmos,533
 AI agents,3118782981,aavetis/PRarena,13
 AI agents,3119031442,aavetis/PRarena,15
 AI agents,3119042017,microsoft/Olive,1897
-AI agents,3119857154,mlflow/mlflow,16080
 AI agents,3120162244,mlflow/mlflow,16088
-AI agents,3120603357,mlflow/mlflow,16093
 AI agents,3122455352,nearai/nearai,1179
 AI agents,3123684653,mlflow/mlflow,16112
 AI agents,3125029980,nearai/nearai,1181
@@ -229,7 +223,6 @@ AI agents,3137099861,getsentry/sentry,93325
 AI agents,3138256165,a16z/halmos,539
 AI agents,3138517311,AgentOps-AI/agentops,1064
 AI agents,3138534395,getsentry/sentry,93402
-AI agents,3138995292,mlflow/mlflow,16221
 AI agents,3139359977,microsoft/lisa,3855
 AI agents,3139579722,microsoft/AzureTRE,4589
 AI agents,3139974947,getsentry/sentry-python,4459
@@ -285,7 +278,6 @@ AI agents,3169182560,exa-labs/exa-py,99
 AI agents,3169258035,exa-labs/exa-py,100
 AI agents,3169711198,skypilot-org/skypilot,6067
 AI agents,3170718599,OpenPipe/ART,161
-AI agents,3171113463,aztfmod/terraform-provider-azurecaf,328
 AI agents,3171819372,getsentry/sentry,94169
 AI agents,3171852682,browser-use/browser-use,2086
 AI agents,3172444753,microsoft/lisa,3884
@@ -320,7 +312,6 @@ AI agents,3190739105,matsui528/rii,69
 AI agents,3192012013,zfit/zfit,643
 AI agents,3192545670,NewFuture/DDNS,495
 AI agents,3192728541,zfit/zfit,644
-AI agents,3193101857,EvolvingLMMs-Lab/lmms-eval,734
 AI agents,3193514773,microsoft/onnxscript,2431
 AI agents,3193524394,NewFuture/DDNS,498
 AI agents,3193634550,Azure/azure-sdk-for-python,41852
@@ -398,7 +389,6 @@ AI agents,3223299299,reflex-dev/reflex-web,1502
 AI agents,3223461985,microsoft/onnxscript,2447
 AI agents,3223703470,getsentry/sentry,95356
 AI agents,3223709587,allthingslinux/tux,944
-AI agents,3223923166,reflex-dev/reflex-web,1505
 AI agents,3224534498,reflex-dev/reflex-web,1510
 AI agents,3224735740,NewFuture/DDNS,512
 AI agents,3224777239,14790897/handwriting-web,45
@@ -491,12 +481,8 @@ AI agents,3272335041,Ljzd-PRO/KToolBox,280
 AI agents,3272353154,Ljzd-PRO/KToolBox,283
 AI agents,3275505167,Ljzd-PRO/KToolBox,293
 Human,2256920866,keephq/keep,2958
-Human,2257424685,crewAIInc/crewAI,1836
 Human,2257939947,julep-ai/julep,1008
 Human,2258107647,julep-ai/julep,1009
-Human,2258241795,microsoft/autogen,4881
-Human,2258407801,crewAIInc/crewAI,1842
-Human,2258464517,microsoft/typespec,5474
 Human,2259134684,crewAIInc/crewAI-tools,172
 Human,2259244255,astral-sh/ruff,15238
 Human,2259409621,crewAIInc/crewAI,1843
@@ -509,13 +495,10 @@ Human,2262339176,crewAIInc/crewAI,1858
 Human,2262691551,vlm-run/vlmrun-hub,53
 Human,2262795916,SirVer/ultisnips,1562
 Human,2263791524,goat-sdk/goat,191
-Human,2263908486,dotnet/runtime,111152
 Human,2264445875,cloudflare/workerd,3301
-Human,2264866046,airbytehq/airbyte,50971
 Human,2265140449,blorm-network/ZerePy,62
 Human,2266347131,crewAIInc/crewAI,1864
 Human,2266427544,marimo-team/marimo,3368
-Human,2266772678,microsoft/semantic-kernel,10129
 Human,2267093351,onyx-dot-app/onyx,3634
 Human,2267141880,crewAIInc/crewAI,1868
 Human,2267854135,PriorLabs/TabPFN,103
@@ -523,7 +506,6 @@ Human,2268256983,spcl/dace,1861
 Human,2269208152,wandb/weave,3358
 Human,2270252961,huggingface/smolagents,146
 Human,2270266984,goat-sdk/goat,209
-Human,2270393774,goat-sdk/goat,210
 Human,2271028668,crewAIInc/crewAI,1878
 Human,2272183023,bespokelabsai/curator,345
 Human,2272274981,Blaizzy/mlx-vlm,179
@@ -533,21 +515,16 @@ Human,2272661584,ObservedObserver/streamlit-shadcn-ui,38
 Human,2274694131,microsoft/onnxruntime-genai,1183
 Human,2274941460,blorm-network/ZerePy,81
 Human,2274981373,janbjorge/pgqueuer,286
-Human,2275392075,commaai/opendbc,1634
 Human,2275685120,Skyvern-AI/skyvern,1543
 Human,2275795781,MikePopoloski/slang,1210
 Human,2276244631,PriorLabs/TabPFN,135
 Human,2276460202,roboflow/inference,942
 Human,2276824107,spcl/dace,1870
-Human,2277513970,crewAIInc/crewAI,1893
 Human,2277915906,marimo-team/marimo,3437
 Human,2278053264,Kiln-AI/Kiln,110
 Human,2279176635,Significant-Gravitas/AutoGPT,9272
 Human,2279949383,crewAIInc/crewAI,1905
 Human,2280794084,dagster-io/dagster,27142
-Human,2281573752,janbjorge/pgqueuer,290
-Human,2282210055,uxlfoundation/oneDAL,3046
-Human,2282276280,crewAIInc/crewAI,1909
 Human,2282388423,airbytehq/airbyte,51585
 Human,2282594982,AgentOps-AI/agentops,647
 Human,2282684079,assistant-ui/assistant-ui,1386
@@ -555,14 +532,12 @@ Human,2282773242,microsoft/typespec,5639
 Human,2283064887,wandb/wandb,9287
 Human,2283901622,ComposioHQ/composio,1205
 Human,2283939870,mlflow/mlflow,14265
-Human,2284670608,goat-sdk/goat,243
 Human,2286020833,Significant-Gravitas/AutoGPT,9295
 Human,2286429519,crewAIInc/crewAI,1927
 Human,2286566641,MikePopoloski/slang,1214
 Human,2286936119,julep-ai/julep,1068
 Human,2288132868,crewAIInc/crewAI,1931
 Human,2288142889,spcl/dace,1885
-Human,2288772617,herbie-fp/herbie,1133
 Human,2290337879,Significant-Gravitas/AutoGPT,9308
 Human,2290730629,marimo-team/marimo,3527
 Human,2290763666,crewAIInc/crewAI,1943
@@ -573,47 +548,34 @@ Human,2291386657,julep-ai/julep,1074
 Human,2292256358,spcl/dace,1896
 Human,2292816579,crewAIInc/crewAI,1953
 Human,2293706753,mlflow/mlflow,14304
-Human,2293719331,near/nearcore,12773
 Human,2294324935,near/nearcore,12776
 Human,2294642912,tinygrad/tinygrad,8731
 Human,2295215962,zenml-io/zenml,3314
 Human,2295546141,near/nearcore,12787
-Human,2297770994,opencv/opencv,26842
-Human,2297781093,promptfoo/promptfoo,2822
-Human,2298215908,crewAIInc/crewAI,1971
 Human,2298301775,567-labs/instructor,1319
 Human,2299613217,rsyslog/rsyslog,5544
 Human,2300488657,roboflow/inference,983
 Human,2300872354,crewAIInc/crewAI,1986
 Human,2301636676,ComposioHQ/composio,1229
-Human,2301650713,crewAIInc/crewAI,1988
 Human,2301717301,crewAIInc/crewAI-tools,197
-Human,2301884134,mlflow/mlflow,14364
 Human,2302954528,crewAIInc/crewAI,1993
 Human,2304107826,roboflow/inference,986
-Human,2304936326,ag2ai/ag2,703
 Human,2305518056,crewAIInc/crewAI,2003
 Human,2305916890,julep-ai/julep,1109
 Human,2306686014,ikamensh/flynt,204
 Human,2306867477,ComposioHQ/composio,1234
 Human,2307381985,marimo-team/marimo,3628
-Human,2307815455,dotnet/runtime,112016
 Human,2307862531,crewAIInc/crewAI,2009
 Human,2307912274,crewAIInc/crewAI-tools,198
-Human,2307975331,crewAIInc/crewAI,2010
 Human,2308425047,keephq/keep,3245
 Human,2308602042,remotion-dev/remotion,4837
-Human,2309356556,goat-sdk/goat,295
 Human,2309714629,microsoft/autogen,5285
 Human,2309721352,crewAIInc/crewAI,2018
-Human,2310085567,getsentry/sentry,84390
 Human,2310214732,MervinPraison/PraisonAI,357
 Human,2310831032,Kiln-AI/Kiln,145
-Human,2311202049,azerothcore/azerothcore-wotlk,21310
 Human,2312226914,netket/netket,1995
 Human,2312748329,netket/netket,1996
 Human,2313076850,Kiln-AI/Kiln,150
-Human,2313339743,Significant-Gravitas/AutoGPT,9401
 Human,2313919432,BerriAI/litellm,8227
 Human,2315421154,crewAIInc/crewAI,2027
 Human,2315722929,vlm-run/vlmrun-hub,82
@@ -623,7 +585,6 @@ Human,2315949481,julep-ai/julep,1127
 Human,2317330363,bespokelabsai/curator,445
 Human,2317921458,julep-ai/julep,1131
 Human,2318016110,vlm-run/vlmrun-hub,87
-Human,2318180373,crewAIInc/crewAI,2038
 Human,2318387549,marimo-team/marimo,3703
 Human,2318504207,crewAIInc/crewAI,2042
 Human,2320571535,roboflow/inference,1003
@@ -634,14 +595,10 @@ Human,2322590988,crewAIInc/crewAI,2056
 Human,2323035316,crewAIInc/crewAI,2059
 Human,2323330865,commaai/openpilot,34547
 Human,2324261949,julep-ai/julep,1144
-Human,2324987642,tinygrad/tinygrad,8994
 Human,2325260235,julep-ai/julep,1145
-Human,2325372908,goat-sdk/goat,324
 Human,2325911874,crewAIInc/crewAI,2086
-Human,2326564664,crewAIInc/crewAI,2089
 Human,2327061220,getsentry/sentry-python,4034
 Human,2327904675,janbjorge/pgqueuer,316
-Human,2328335930,ComposioHQ/composio,1327
 Human,2329041793,mangiucugna/json_repair,96
 Human,2329914697,marimo-team/marimo,3755
 Human,2330651068,julep-ai/julep,1151
@@ -655,20 +612,15 @@ Human,2332627314,mlflow/mlflow,14572
 Human,2333329270,PriorLabs/TabPFN,184
 Human,2334155600,Skyvern-AI/skyvern,1767
 Human,2334613112,BerriAI/litellm,8523
-Human,2334947154,airbytehq/airbyte,53686
 Human,2335012557,onyx-dot-app/onyx,3997
-Human,2335576720,dotnet/sdk,46856
 Human,2335926569,roboflow/inference,1028
 Human,2336377580,tinygrad/tinygrad,9088
-Human,2337664006,crewAIInc/crewAI,2138
 Human,2337700846,julep-ai/julep,1165
 Human,2337771326,julep-ai/julep,1166
-Human,2337914874,crewAIInc/crewAI,2144
 Human,2338275002,langchain-ai/langgraph,3463
 Human,2338301511,aipotheosis-labs/aci,32
 Human,2338454215,brentyi/tyro,256
 Human,2338814541,cvxpy/cvxpy,2716
-Human,2340199001,near/nearcore,12943
 Human,2340411739,keephq/keep,3532
 Human,2340415841,crewAIInc/crewAI,2155
 Human,2340845626,Kiln-AI/Kiln,205
@@ -679,7 +631,6 @@ Human,2343048840,crewAIInc/crewAI,2159
 Human,2343133415,mendableai/firecrawl,1201
 Human,2343359978,crewAIInc/crewAI,2161
 Human,2344813558,julep-ai/julep,1175
-Human,2344950093,roboflow/inference,1037
 Human,2345245386,crewAIInc/crewAI,2169
 Human,2345381566,crewAIInc/crewAI,2170
 Human,2345504485,Kiln-AI/Kiln,210
@@ -687,12 +638,8 @@ Human,2345558913,mendableai/firecrawl,1206
 Human,2345763476,microsoft/onnxruntime-genai,1264
 Human,2347595567,crewAIInc/crewAI,2178
 Human,2347982033,test-zeus-ai/testzeus-hercules,42
-Human,2348026203,crewAIInc/crewAI,2182
-Human,2348293372,crewAIInc/crewAI,2184
 Human,2348777785,mlflow/mlflow,14689
-Human,2350676311,crewAIInc/crewAI,2196
 Human,2351543999,vlm-run/vlmrun-hub,102
-Human,2351814084,BOINC/boinc,6107
 Human,2352002275,commaai/panda,2162
 Human,2352217584,mlflow/mlflow,14703
 Human,2352418494,commaai/opendbc,1825
@@ -703,12 +650,10 @@ Human,2354769460,vlm-run/vlmrun-hub,105
 Human,2355300308,RockChinQ/LangBot,1127
 Human,2355805138,julep-ai/julep,1185
 Human,2355823480,keephq/keep,3665
-Human,2355891934,microsoft/typespec,6144
 Human,2356042683,bentoml/BentoML,5249
 Human,2356246191,Kanaries/pygwalker,673
 Human,2357159587,airbytehq/airbyte,54677
 Human,2357294413,crewAIInc/crewAI,2223
-Human,2357329519,crewAIInc/crewAI,2224
 Human,2357405562,crewAIInc/crewAI,2226
 Human,2357793364,crewAIInc/crewAI,2231
 Human,2357935218,crewAIInc/crewAI,2232
@@ -721,14 +666,11 @@ Human,2362692923,crewAIInc/crewAI-tools,227
 Human,2363577673,bentoml/BentoML,5251
 Human,2363986187,PriorLabs/TabPFN,217
 Human,2364156735,tegnike/aituber-kit,309
-Human,2364339053,crewAIInc/crewAI,2254
 Human,2364508628,TobikoData/sqlmesh,3927
 Human,2364787187,RockChinQ/LangBot,1148
 Human,2364953101,spcl/dace,1958
 Human,2364987713,netket/netket,2012
 Human,2365534722,dagster-io/dagster,28149
-Human,2365854601,oven-sh/bun,17820
-Human,2366769880,crewAIInc/crewAI,2259
 Human,2366807942,tegnike/aituber-kit,313
 Human,2366817698,mendableai/firecrawl,1284
 Human,2366839400,tegnike/aituber-kit,314
@@ -739,52 +681,36 @@ Human,2368800162,crewAIInc/crewAI,2266
 Human,2369044945,joshyattridge/smart-money-concepts,73
 Human,2369238232,joshyattridge/smart-money-concepts,74
 Human,2369253951,joshyattridge/smart-money-concepts,75
-Human,2370866483,crewAIInc/crewAI,2275
 Human,2371172565,Skyvern-AI/skyvern,1882
 Human,2371342937,Skyvern-AI/skyvern,1883
-Human,2371650610,goat-sdk/goat,386
 Human,2373275700,mlflow/mlflow,14860
 Human,2373978615,ACEsuit/mace,841
 Human,2374159047,skypilot-org/skypilot,4891
-Human,2374803772,crewAIInc/crewAI,2291
 Human,2375014471,marimo-team/marimo,3993
-Human,2375952745,crewAIInc/crewAI,2297
 Human,2376425978,julep-ai/julep,1217
 Human,2377969663,crewAIInc/crewAI,2304
-Human,2378845122,huggingface/huggingface.js,1260
 Human,2379148000,rishikanthc/Scriberr,80
 Human,2380702095,SirVer/ultisnips,1567
 Human,2381144892,stanford-crfm/levanter,904
 Human,2382109803,tegnike/aituber-kit,316
-Human,2383582907,near/nearcore,13094
 Human,2383761721,bentoml/BentoML,5268
 Human,2383765749,mlflow/mlflow,14938
 Human,2384903678,crewAIInc/crewAI,2336
-Human,2385785847,goat-sdk/goat,408
 Human,2385847879,whitphx/streamlit-webrtc,1901
-Human,2387062321,Significant-Gravitas/AutoGPT,9620
 Human,2388365918,bruin-data/bruin,516
-Human,2389334004,AgentOps-AI/agentops,811
 Human,2389375209,microsoft/debugpy,1870
-Human,2389875437,AgentOps-AI/agentops,817
 Human,2389891260,AgentOps-AI/agentops,818
 Human,2390024977,AgentOps-AI/agentops,819
 Human,2390765352,spcl/dace,1975
 Human,2391309914,julep-ai/julep,1241
-Human,2391963504,dagster-io/dagster,28479
-Human,2392791155,microsoft/typespec,6452
 Human,2394359557,MaiM-with-u/MaiBot,401
 Human,2394800356,AgentOps-AI/agentops,847
 Human,2394823134,langchain-ai/langsmith-sdk,1576
-Human,2395130345,crewAIInc/crewAI,2375
 Human,2395736133,crewAIInc/crewAI,2377
-Human,2397036219,crewAIInc/crewAI,2387
 Human,2397352966,devitocodes/devito,2555
 Human,2397521401,getsentry/sentry,87169
 Human,2398678659,onyx-dot-app/onyx,4293
 Human,2399463135,Blaizzy/mlx-vlm,249
-Human,2400016065,crewAIInc/crewAI,2397
-Human,2400073348,crewAIInc/crewAI,2398
 Human,2400261241,567-labs/instructor,1420
 Human,2400813849,julep-ai/julep,1264
 Human,2401471175,crewAIInc/crewAI,2401
@@ -798,43 +724,32 @@ Human,2405425459,wandb/weave,3916
 Human,2406710118,crewAIInc/crewAI,2424
 Human,2407260224,crewAIInc/crewAI,2428
 Human,2407843599,crewAIInc/crewAI,2429
-Human,2408616836,roboflow/inference,1092
 Human,2409498745,bespokelabsai/curator,598
 Human,2411811233,bespokelabsai/curator,600
 Human,2413163485,crewAIInc/crewAI,2456
 Human,2413225736,stanfordnlp/dspy,8003
 Human,2414330903,crewAIInc/crewAI,2461
-Human,2414338451,airbytehq/airbyte,56369
-Human,2414812043,microsoft/typespec,6652
 Human,2415207829,microsoft/graphrag,1841
 Human,2415977644,keephq/keep,4207
 Human,2416987762,Significant-Gravitas/AutoGPT,9697
-Human,2417452941,goat-sdk/goat,450
 Human,2417540342,crewAIInc/crewAI-tools,250
 Human,2417566506,onyx-dot-app/onyx,4353
 Human,2419373483,crewAIInc/crewAI,2477
 Human,2419596001,crewAIInc/crewAI,2479
-Human,2419756676,crewAIInc/crewAI,2480
 Human,2419768442,crewAIInc/crewAI,2481
-Human,2419803338,crewAIInc/crewAI,2482
 Human,2419949551,crewAIInc/crewAI,2483
 Human,2420201980,PrefectHQ/prefect,17607
 Human,2420444104,onyx-dot-app/onyx,4363
 Human,2421585261,promptfoo/promptfoo,3507
-Human,2422882617,microsoft/onnxruntime,24212
 Human,2422893059,marimo-team/marimo,4279
 Human,2423298921,a16z/halmos,486
-Human,2424187155,julep-ai/julep,1291
 Human,2424508586,mlflow/mlflow,15160
-Human,2424549019,microsoft/onnxruntime,24229
 Human,2425648879,RockChinQ/LangBot,1245
 Human,2425787906,crewAIInc/crewAI,2495
-Human,2427394493,crewAIInc/crewAI,2498
 Human,2427595507,keephq/keep,4302
 Human,2427808826,mlflow/mlflow,15171
 Human,2428059466,RockChinQ/LangBot,1258
 Human,2428382467,roboflow/inference,1129
-Human,2429861894,microsoft/typespec,6796
 Human,2430313600,reflex-dev/reflex,5069
 Human,2430314015,Kanaries/pygwalker,692
 Human,2431562619,crewAIInc/crewAI,2507
@@ -846,7 +761,6 @@ Human,2434746882,goat-sdk/goat,461
 Human,2435007062,featureform/enrichmcp,4
 Human,2436920877,julep-ai/julep,1305
 Human,2437191001,cartography-cncf/cartography,1513
-Human,2437426439,crewAIInc/crewAI,2520
 Human,2437697330,crewAIInc/crewAI,2523
 Human,2438086945,getsentry/sentry,88748
 Human,2438259044,featureform/enrichmcp,13
@@ -854,7 +768,6 @@ Human,2440441097,Azure/azure-sdk-for-python,40382
 Human,2440808816,Kanaries/pygwalker,694
 Human,2441330487,Kiln-AI/Kiln,270
 Human,2441758104,GodsScion/Auto_job_applier_linkedIn,45
-Human,2442916529,Blaizzy/mlx-vlm,290
 Human,2443127427,microsoft/RD-Agent,764
 Human,2443706665,langchain-ai/langsmith-sdk,1641
 Human,2444052038,goat-sdk/goat,470
@@ -864,10 +777,7 @@ Human,2446305071,plexguide/Huntarr.io,45
 Human,2446878923,microsoft/typespec,6909
 Human,2446905064,TobikoData/sqlmesh,4101
 Human,2447403860,marimo-team/marimo,4442
-Human,2448420848,risingwavelabs/risingwave,21323
 Human,2448591120,AgentOps-AI/agentops,914
-Human,2448658771,crewAIInc/crewAI,2553
-Human,2448748294,tegnike/aituber-kit,337
 Human,2448918557,getsentry/sentry-python,4264
 Human,2448959577,AgentOps-AI/agentops,915
 Human,2449032917,Azure/azure-sdk-for-python,40443
@@ -877,16 +787,13 @@ Human,2449273362,crewAIInc/crewAI,2556
 Human,2450440359,zenml-io/zenml,3525
 Human,2451443553,crewAIInc/crewAI,2570
 Human,2452209048,crewAIInc/crewAI,2582
-Human,2452881601,Azure/azure-sdk-for-net,49355
 Human,2453464080,huggingface/huggingface.js,1349
 Human,2454776899,AgentOps-AI/agentops,919
 Human,2454841034,julep-ai/julep,1316
 Human,2455025552,bentoml/BentoML,5317
-Human,2455434480,crewAIInc/crewAI,2595
 Human,2455489057,tegnike/aituber-kit,343
 Human,2455635139,crewAIInc/crewAI,2597
 Human,2455759309,julep-ai/julep,1318
-Human,2456276880,EricLBuehler/mistral.rs,1277
 Human,2456461996,mlflow/mlflow,15298
 Human,2457606922,goat-sdk/goat,481
 Human,2458149257,crewAIInc/crewAI,2604
@@ -896,7 +803,6 @@ Human,2460742554,netket/netket,2025
 Human,2461648574,OpenPipe/ART,51
 Human,2461755763,onyx-dot-app/onyx,4534
 Human,2462032838,wandb/openui,228
-Human,2462139687,reown-com/appkit,4221
 Human,2462185471,featureform/enrichmcp,16
 Human,2463366494,reown-com/appkit,4227
 Human,2464366664,crewAIInc/crewAI,2627
@@ -904,11 +810,9 @@ Human,2464579828,cartography-cncf/cartography,1534
 Human,2464811084,onyx-dot-app/onyx,4547
 Human,2465429535,PrefectHQ/marvin,1119
 Human,2465464455,RockChinQ/LangBot,1311
-Human,2465780443,roboflow/inference,1200
 Human,2466713034,bespokelabsai/curator,645
 Human,2467087648,dropseed/plain,28
 Human,2467788242,TheAlgorithms/Python,12676
-Human,2469761206,tegnike/aituber-kit,360
 Human,2471938138,openai/openai-agents-python,561
 Human,2472893702,mlflow/mlflow,15420
 Human,2473992346,crewAIInc/crewAI,2662
@@ -923,15 +827,11 @@ Human,2476323666,featureform/enrichmcp,24
 Human,2476426259,crewAIInc/crewAI-tools,281
 Human,2476534203,featureform/enrichmcp,26
 Human,2478356468,crewAIInc/crewAI-tools,282
-Human,2478537850,microsoft/typespec,7115
 Human,2478962352,mlflow/mlflow,15481
-Human,2479797388,crewAIInc/crewAI,2684
 Human,2480335338,crewAIInc/crewAI-tools,285
 Human,2480611839,MaiM-with-u/MaiBot,842
 Human,2482170552,langchain-ai/langsmith-sdk,1694
-Human,2482427127,crewAIInc/crewAI,2691
 Human,2482475399,mendableai/firecrawl,1501
-Human,2483120959,Significant-Gravitas/AutoGPT,9885
 Human,2483429223,julep-ai/julep,1340
 Human,2483801280,stair-lab/kg-gen,28
 Human,2483823196,RockChinQ/LangBot,1339
@@ -940,9 +840,7 @@ Human,2484633517,mlflow/mlflow,15522
 Human,2484707366,commaai/openpilot,35083
 Human,2485165438,marimo-team/marimo,4700
 Human,2486573779,getsentry/sentry,90516
-Human,2486761780,crewAIInc/crewAI,2707
 Human,2487549923,marimo-team/marimo,4718
-Human,2487987691,crewAIInc/crewAI,2713
 Human,2488024698,mangiucugna/json_repair,110
 Human,2489510452,marimo-team/marimo,4733
 Human,2489551645,crewAIInc/crewAI,2723
@@ -950,16 +848,13 @@ Human,2489863587,marimo-team/marimo,4737
 Human,2489869522,featureform/enrichmcp,30
 Human,2489970694,crewAIInc/crewAI,2726
 Human,2490479931,crewAIInc/crewAI,2727
-Human,2490820490,crewAIInc/crewAI,2728
 Human,2491706379,featureform/enrichmcp,31
 Human,2492065021,crewAIInc/crewAI,2731
 Human,2492492371,Azure/azure-sdk-for-python,40820
 Human,2492797998,featureform/enrichmcp,32
 Human,2492871484,OpenPipe/ART,91
-Human,2493189964,openai/codex,769
 Human,2493806134,Significant-Gravitas/AutoGPT,9902
 Human,2493988876,neondatabase/neon,11801
-Human,2494218951,langchain-ai/langgraph,4497
 Human,2495510561,Skyvern-AI/skyvern,2278
 Human,2495956871,gridaco/grida,317
 Human,2496790216,a16z/halmos,505
@@ -999,22 +894,16 @@ Human,2514803422,marimo-team/marimo,4890
 Human,2514963554,crewAIInc/crewAI,2819
 Human,2515872022,cartography-cncf/cartography,1563
 Human,2516078067,BOINC/boinc,6322
-Human,2516490273,Significant-Gravitas/AutoGPT,9935
-Human,2517361361,crewAIInc/crewAI,2825
 Human,2518007609,RockChinQ/LangBot,1417
-Human,2518652004,dotnet/runtime,115553
 Human,2518704449,mlflow/mlflow,15733
 Human,2518881728,crewAIInc/crewAI,2829
 Human,2519061854,julep-ai/julep,1367
 Human,2519322384,zenml-io/zenml,3670
 Human,2519831355,roboflow/inference,1280
 Human,2520130599,AgentOps-AI/agentops,981
-Human,2520520652,crewAIInc/crewAI,2835
 Human,2520978741,mlflow/mlflow,15746
-Human,2521968459,crewAIInc/crewAI,2840
 Human,2522613536,Azure/azure-sdk-for-python,41123
 Human,2522826360,TobikoData/sqlmesh,4427
-Human,2523497110,crewAIInc/crewAI,2849
 Human,2523947863,remotion-dev/remotion,5295
 Human,2524180167,mangiucugna/json_repair,112
 Human,2524441113,crewAIInc/crewAI,2851
@@ -1023,8 +912,6 @@ Human,2525453714,Skyvern-AI/skyvern,2367
 Human,2526305378,mlflow/mlflow,15786
 Human,2526673638,Uberi/speech_recognition,843
 Human,2527047579,cartography-cncf/cartography,1571
-Human,2527656583,crewAIInc/crewAI,2861
-Human,2529504231,microsoft/qsharp,2429
 Human,2530024859,awslabs/mcp,373
 Human,2530551941,mlflow/mlflow,15807
 Human,2530634034,mlflow/mlflow,15809
@@ -1032,7 +919,6 @@ Human,2530772992,mlflow/mlflow,15810
 Human,2531079994,Azure/azure-sdk-for-python,41218
 Human,2532214135,bruin-data/ingestr,199
 Human,2532696552,crewAIInc/crewAI,2869
-Human,2533298162,crewAIInc/crewAI,2871
 Human,2534242211,crewAIInc/crewAI,2876
 Human,2535720745,Panchovix/stable-diffusion-webui-reForge,367
 Human,2536184715,mlflow/mlflow,15834
@@ -1040,29 +926,23 @@ Human,2536644442,mediar-ai/terminator,39
 Human,2536954288,Significant-Gravitas/AutoGPT,9999
 Human,2537431731,zenml-io/zenml,3694
 Human,2539193736,mlflow/mlflow,15859
-Human,2540205307,dropseed/plain,35
 Human,2540997654,skypilot-org/skypilot,5715
 Human,2542040727,langchain-ai/langgraph,4819
 Human,2542348118,effekseer/Effekseer,1050
-Human,2542621311,crewAIInc/crewAI,2902
 Human,2542934986,airbytehq/airbyte,60906
 Human,2543172477,julep-ai/julep,1454
-Human,2543469021,crewAIInc/crewAI,2905
 Human,2544166428,crewAIInc/crewAI-tools,313
 Human,2545179720,NousResearch/atropos,135
 Human,2546517998,mlflow/mlflow,15902
 Human,2546726071,PrunaAI/pruna,153
 Human,2547160591,effekseer/Effekseer,1055
 Human,2547279361,Azure/azure-functions-core-tools,4440
-Human,2548010588,wandb/weave,4595
 Human,2548639363,bruin-data/ingestr,207
-Human,2549162857,bruin-data/bruin,697
 Human,2550459755,neondatabase/neon,12049
 Human,2551797459,writer/writer-framework,898
 Human,2551809139,dotnet/fsharp,18633
 Human,2552315306,AgentOps-AI/agentops,1018
 Human,2552324549,crewAIInc/crewAI,2916
-Human,2552725254,bruin-data/bruin,700
 Human,2553341049,awslabs/mcp,460
 Human,2553400368,crewAIInc/crewAI-tools,316
 Human,2554942977,sooperset/mcp-atlassian,467
@@ -1072,17 +952,12 @@ Human,2556638049,mediar-ai/terminator,61
 Human,2558927034,mlflow/mlflow,16001
 Human,2559292377,awslabs/mcp,489
 Human,2561677603,GlareDB/glaredb,3894
-Human,2564186622,crewAIInc/crewAI,2940
 Human,2564827914,awslabs/mcp,501
 Human,2565257900,commaai/panda,2222
 Human,2565281191,crewAIInc/crewAI,2948
 Human,2566068573,mlflow/mlflow,16059
 Human,2567130351,PrunaAI/pruna,174
-Human,2567582405,crewAIInc/crewAI,2957
 Human,2567658267,crewAIInc/crewAI,2958
-Human,2568413405,crewAIInc/crewAI,2959
-Human,2569040246,microsoft/onnxruntime,24962
-Human,2570156540,crewAIInc/crewAI,2963
 Human,2570876716,roboflow/inference,1331
 Human,2571668210,allenai/reward-bench,242
 Human,2572033204,mlflow/mlflow,16103
@@ -1092,7 +967,6 @@ Human,2574401083,stanfordnlp/dspy,8337
 Human,2574405759,mlflow/mlflow,16125
 Human,2574861103,marimo-team/marimo,5224
 Human,2576026392,jlowin/fastmcp,748
-Human,2576212936,tinygrad/tinygrad,10689
 Human,2576376243,volcengine/verl,1911
 Human,2578194357,mistralai/mistral-common,93
 Human,2578599113,BeehiveInnovations/zen-mcp-server,2
@@ -1105,7 +979,6 @@ Human,2580095745,awslabs/mcp,560
 Human,2582168338,crewAIInc/crewAI,2988
 Human,2582175523,crewAIInc/crewAI-tools,325
 Human,2585293213,featureform/enrichmcp,41
-Human,2585527884,crewAIInc/crewAI,2999
 Human,2587797965,featureform/enrichmcp,47
 Human,2588019871,crewAIInc/crewAI,3004
 Human,2590345700,kohya-ss/sd-scripts,2121
@@ -1115,15 +988,12 @@ Human,2594350058,mlflow/mlflow,16271
 Human,2596069069,crewAIInc/crewAI,3014
 Human,2596620305,microsoft/qsharp,2530
 Human,2596785730,crewAIInc/crewAI,3016
-Human,2596992929,promptfoo/promptfoo,4510
 Human,2597060187,featureform/enrichmcp,72
 Human,2600773171,spcl/dace,2054
-Human,2603520463,Skyvern-AI/skyvern,2750
 Human,2603695662,open-webui/open-webui,15138
 Human,2604844532,electricitymaps/electricitymaps-contrib,8232
 Human,2605359283,mlflow/mlflow,16340
 Human,2606069562,microsoft/magentic-ui,209
-Human,2607442037,zenml-io/zenml,3757
 Human,2608653300,featureform/enrichmcp,89
 Human,2608822195,microsoft/magentic-ui,212
 Human,2609183598,marimo-team/marimo,5398
@@ -1145,15 +1015,12 @@ Human,2617719726,dlt-hub/dlt,2809
 Human,2618367092,crewAIInc/crewAI-tools,345
 Human,2619492805,OpenPipe/ART,163
 Human,2620590040,PriorLabs/TabPFN,347
-Human,2620691920,crewAIInc/crewAI,3070
 Human,2621480434,crewAIInc/crewAI,3072
 Human,2625218797,Blaizzy/mlx-vlm,397
-Human,2625235744,dotnet/aspire,10095
 Human (pre-ChatGPT),1016104386,python-cachier/cachier,76
 Human (pre-ChatGPT),1019030515,python-cachier/cachier,77
 Human (pre-ChatGPT),1019183107,python-cachier/cachier,78
 Human (pre-ChatGPT),1022115985,python-cachier/cachier,80
-Human (pre-ChatGPT),1034144863,vibber-ai/fastapi-azure-auth,34
 Human (pre-ChatGPT),1034647105,yutto-dev/yutto,20
 Human (pre-ChatGPT),1038335779,stefankoegl/python-json-pointer,46
 Human (pre-ChatGPT),1045422903,yutto-dev/yutto,26
@@ -1206,7 +1073,6 @@ Human (pre-ChatGPT),1286209709,zfit/zfit,408
 Human (pre-ChatGPT),1287418523,Azure/azure-kusto-python,403
 Human (pre-ChatGPT),1291724459,vibber-ai/fastapi-azure-auth,93
 Human (pre-ChatGPT),1294670417,TorchIO-project/torchio,925
-Human (pre-ChatGPT),1294881592,TorchIO-project/torchio,926
 Human (pre-ChatGPT),1295899874,vespa-engine/pyvespa,361
 Human (pre-ChatGPT),1301197239,NewFuture/DDNS,325
 Human (pre-ChatGPT),1303369737,NewFuture/DDNS,329
@@ -1228,7 +1094,6 @@ Human (pre-ChatGPT),1336659036,microsoft/Olive,107
 Human (pre-ChatGPT),1338108416,Lumiwealth/lumibot,196
 Human (pre-ChatGPT),1338986199,Z3Prover/z3,6277
 Human (pre-ChatGPT),1340121603,Azure/azure-kusto-python,410
-Human (pre-ChatGPT),1340359199,Z3Prover/z3,6280
 Human (pre-ChatGPT),1344348677,zfit/zfit,415
 Human (pre-ChatGPT),1345339167,zfit/zfit,416
 Human (pre-ChatGPT),1346978811,Lumiwealth/lumibot,199
@@ -1292,7 +1157,6 @@ Human (pre-ChatGPT),1404520836,spcl/dace,1120
 Human (pre-ChatGPT),1405815065,spcl/dace,1121
 Human (pre-ChatGPT),1408286785,onnx/onnx,4600
 Human (pre-ChatGPT),1408344001,rqlite/rqlite,1074
-Human (pre-ChatGPT),1409092390,torchgeo/torchgeo,846
 Human (pre-ChatGPT),1409290947,ailia-ai/ailia-models,935
 Human (pre-ChatGPT),1409860475,DeepLabCut/DeepLabCut,2015
 Human (pre-ChatGPT),1410236747,torchgeo/torchgeo,850
@@ -1300,7 +1164,6 @@ Human (pre-ChatGPT),1410268577,torchgeo/torchgeo,852
 Human (pre-ChatGPT),1410290763,DonDebonair/slack-machine,659
 Human (pre-ChatGPT),1410952732,spcl/dace,1123
 Human (pre-ChatGPT),1412846000,spcl/dace,1124
-Human (pre-ChatGPT),1412980156,Azure/azure-kusto-python,425
 Human (pre-ChatGPT),1414109762,ailia-ai/ailia-models,936
 Human (pre-ChatGPT),1414230379,rqlite/rqlite,1081
 Human (pre-ChatGPT),1415643668,getsentry/sentry-python,1694
@@ -1381,7 +1244,6 @@ Human (pre-ChatGPT),1447430046,microsoft/onnxscript,189
 Human (pre-ChatGPT),1447731939,valkey-io/valkey-glide,76
 Human (pre-ChatGPT),1448121447,microsoft/Qcodes,4802
 Human (pre-ChatGPT),1448145610,rqlite/rqlite,1117
-Human (pre-ChatGPT),1448394698,microsoft/AzureTRE,2872
 Human (pre-ChatGPT),1448616828,microsoft/AzureTRE,2873
 Human (pre-ChatGPT),1448802963,skypilot-org/skypilot,1414
 Human (pre-ChatGPT),1448946855,microsoft/onnxscript,191
@@ -1394,7 +1256,6 @@ Human (pre-ChatGPT),1450003008,microsoft/lisa,2399
 Human (pre-ChatGPT),1450214505,microsoft/lisa,2401
 Human (pre-ChatGPT),1450271966,microsoft/onnxscript,195
 Human (pre-ChatGPT),1450530169,microsoft/AzureTRE,2883
-Human (pre-ChatGPT),1450723876,onnx/onnx,4662
 Human (pre-ChatGPT),1450817556,skypilot-org/skypilot,1421
 Human (pre-ChatGPT),1450862970,bentoml/BentoML,3253
 Human (pre-ChatGPT),1451061931,mlflow/mlflow,7354
@@ -1416,11 +1277,9 @@ Human (pre-ChatGPT),1453451162,valkey-io/valkey-glide,78
 Human (pre-ChatGPT),1453723991,getsentry/sentry-python,1746
 Human (pre-ChatGPT),1453796840,valkey-io/valkey-glide,79
 Human (pre-ChatGPT),1454039769,Arize-ai/phoenix,23
-Human (pre-ChatGPT),1454054880,microsoft/onnxscript,198
 Human (pre-ChatGPT),1454232318,Arize-ai/phoenix,25
 Human (pre-ChatGPT),1454675597,DeepLabCut/DeepLabCut,2054
 Human (pre-ChatGPT),1454748865,ailia-ai/ailia-models,955
-Human (pre-ChatGPT),1454978398,onnx/onnx,4666
 Human (pre-ChatGPT),1455005376,microsoft/lisa,2411
 Human (pre-ChatGPT),1455215647,microsoft/Qcodes,4810
 Human (pre-ChatGPT),1455288380,microsoft/Qcodes,4811
@@ -1448,7 +1307,6 @@ Human (pre-ChatGPT),1457100885,reflex-dev/reflex,8
 Human (pre-ChatGPT),1457112362,reflex-dev/reflex,9
 Human (pre-ChatGPT),1457196566,microsoft/lisa,2416
 Human (pre-ChatGPT),1457279640,microsoft/onnxscript,200
-Human (pre-ChatGPT),1457334712,microsoft/onnxscript,201
 Human (pre-ChatGPT),1457486443,Azure/azure-kusto-python,433
 Human (pre-ChatGPT),1457753006,microsoft/Qcodes,4816
 Human (pre-ChatGPT),1457973701,microsoft/lisa,2417
@@ -1555,7 +1413,6 @@ Human (pre-ChatGPT),1467703373,Azure/azure-sdk-for-python,27720
 Human (pre-ChatGPT),1467897447,neondatabase/neon,2953
 Human (pre-ChatGPT),1467897860,spcl/dace,1161
 Human (pre-ChatGPT),1467953742,langchain-ai/langchain,222
-Human (pre-ChatGPT),1467977825,datahub-project/datahub,6569
 Human (pre-ChatGPT),1468064081,airbytehq/airbyte,19873
 Human (pre-ChatGPT),1468078194,datahub-project/datahub,6572
 Human (pre-ChatGPT),1468316428,microsoft/onnxscript,213
@@ -1622,7 +1479,6 @@ Human (pre-ChatGPT),956341528,matsui528/rii,42
 Human (pre-ChatGPT),968085937,python-cachier/cachier,69
 Human (pre-ChatGPT),981274177,vibber-ai/fastapi-azure-auth,16
 Human (pre-ChatGPT),981399767,snok/django-guid,64
-Human (pre-ChatGPT),985000455,vibber-ai/fastapi-azure-auth,19
 Human (pre-ChatGPT),988427909,matsui528/rii,43
 Human (pre-ChatGPT),997190661,python-cachier/cachier,72
 Human (pre-ChatGPT),999391004,python-cachier/cachier,74

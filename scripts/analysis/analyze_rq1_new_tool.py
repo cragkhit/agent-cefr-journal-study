@@ -27,6 +27,8 @@ Replicates the MSR paper so the new numbers are comparable with the published on
   * Agent identity is not present in the tool's output; it is joined by pr_id from
     aidev_all_commits.parquet. This closes the "Known gap" noted in the professor's README.
   * Sec 4.1 - only Copilot, Cursor and Devin are analysed.
+  * Files are paired by full repository path and merge commits are excluded -- see
+    cpet_artifacts.py for why (both corrected 2026-09-22).
 
 Outputs
 -------
@@ -40,23 +42,19 @@ Usage:
 """
 
 import argparse
-import ast
 import collections
 import glob
 import os
-import re
 from datetime import datetime
 
 import pandas as pd
 from scipy.stats import chi2_contingency, kruskal
 
+from cpet_artifacts import build_groups, difference
+
 LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 COUNT_COLS = ['count_' + L for L in LEVELS]
 AGENTS = ['Copilot', 'Cursor', 'Devin']
-
-# filename: owner__repo__pr<id>__<ts>__<sha>__<root>_<variant>
-FN = re.compile(r'^(?P<owner>.+?)__(?P<repo>.+?)__pr(?P<pr>\d+)__(?P<ts>\d{8}_\d{6})__'
-                r'(?P<sha>[0-9a-f]{7,40})__(?P<rest>.+)$')
 
 
 def log_factory(path):
@@ -84,29 +82,16 @@ def load_mapping(path, log):
     return m
 
 
-def parse_fn(name):
-    m = FN.match(name)
-    if not m:
-        return None
-    rest = m.group('rest')
-    low = rest.lower()
-    if low.endswith('_before'):
-        variant, base = 'before', rest[:-7]
-    elif low.endswith('_after'):
-        variant, base = 'after', rest[:-6]
-    elif low.endswith('_new'):
-        variant, base = 'new', rest[:-4]
-    else:
-        variant, base = 'new', rest
-    return dict(owner=m.group('owner'), repo=m.group('repo'), pr_id=m.group('pr'),
-                sha=m.group('sha'), base=base, variant=variant)
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--output-dir', required=True)
     ap.add_argument('--mapping', required=True)
     ap.add_argument('--commits', default='aidev_all_commits.parquet')
+    ap.add_argument('--fetch-summary', default=None,
+                    help='default: ai_fetch_summary.csv next to --output-dir')
+    ap.add_argument('--parents', default='data/commit_parents.csv')
+    ap.add_argument('--keep-merges', action='store_true',
+                    help='reproduce the pre-2026-09-22 numbers (merge commits included)')
     args = ap.parse_args()
 
     ts = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -117,59 +102,13 @@ def main():
     files = sorted(glob.glob(os.path.join(args.output_dir, '*.csv')) + glob.glob(os.path.join(args.output_dir, '*.csv.gz')))
     files = [f for f in files if 'run_log' not in os.path.basename(f)]
     log(f'repo result CSVs: {len(files)}')
-
-    # (pr_id, sha, base) -> {variant: Counter(construct)}
-    groups = collections.defaultdict(dict)
-    unparsed = bad_list = n_rows = 0
-
-    for i, f in enumerate(files, 1):
-        try:
-            d = pd.read_csv(f, usecols=['filename', 'code_type'] + COUNT_COLS)
-        except Exception as e:
-            log(f'  skip {os.path.basename(f)}: {e.__class__.__name__}')
-            continue
-        for _, r in d.iterrows():
-            n_rows += 1
-            info = parse_fn(str(r['filename']))
-            if not info:
-                unparsed += 1
-                continue
-            try:
-                lst = ast.literal_eval(r['code_type']) if isinstance(r['code_type'], str) else []
-            except Exception:
-                bad_list += 1
-                lst = []
-            groups[(info['pr_id'], info['sha'], info['base'])][info['variant']] = collections.Counter(lst)
-        if i % 40 == 0:
-            log(f'  read {i}/{len(files)} repos')
-
-    log(f'file rows={n_rows}  unparsed filenames={unparsed}  unreadable code_type={bad_list}')
+    summary = args.fetch_summary or os.path.join(os.path.dirname(os.path.normpath(args.output_dir)),
+                                                 'ai_fetch_summary.csv')
+    groups = build_groups(files, summary, args.parents, log, keep_merges=args.keep_merges)
     log(f'(pr, commit, file) groups: {len(groups)}')
 
     # ---- Sec 4.2 differential, per construct -----------------------------------
-    per_pr = collections.defaultdict(collections.Counter)
-    n_new = n_pair = n_orphan = 0
-    for (pr, sha, base), v in groups.items():
-        if 'new' in v:
-            delta, n_new = v['new'], n_new + 1
-        elif 'before' in v and 'after' in v:
-            b, a = v['before'], v['after']
-            delta = collections.Counter()
-            for k in set(a) | set(b):
-                dd = a.get(k, 0) - b.get(k, 0)
-                if dd > 0:
-                    delta[k] = dd
-            n_pair += 1
-        else:
-            # only one side present - count it as-is rather than discarding
-            delta = next(iter(v.values()))
-            n_orphan += 1
-        for c, n in delta.items():
-            lv = mapping.get(c)
-            if lv:
-                per_pr[pr][lv] += n
-
-    log(f'new files={n_new}  before/after pairs={n_pair}  single-sided={n_orphan}')
+    per_pr, _ = difference(groups, mapping, log)
 
     df = pd.DataFrame([{'pr_id': p, **{L: c.get(L, 0) for L in LEVELS}}
                        for p, c in per_pr.items()])

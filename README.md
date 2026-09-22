@@ -123,6 +123,7 @@ repository root**. `pip install -r requirements.txt`; scripts that call the GitH
 | Human | `collect_human_prs.py` (AIDev `human_pull_request`) → `collect_human_commits.py` (file-level commit details from the GitHub API) → `filter_human_commits.py` (keep `.py` files and merged PRs: 27,029 rows, 795 PRs) → `make_file_versions_human.py --input-csv data_csv/human_commit_data_py.csv`. `human_prs_to_csv.py` and `collect_human_pr_commits.py` are an earlier commit-level exporter; its output covers only 46% of the final corpus and was not what the corpus was built from. |
 | Human, pre-ChatGPT | `collect_pre_chatgpt_prs.py` + `analyze_pre_chatgpt_prs.py` (which repositories have pre-2022-11-30 history → `data/td1_*.csv`, `data/td2_td3_*.csv`) → `collect_pre_chatgpt_commits.py` → `make_file_versions.py`; `fetch_pre_chatgpt_titles.py` adds PR titles/bodies for task-type labelling |
 | all | `package_paper_corpora.py` drops failed fetches and non-merged PRs and zips the corpora stored under `data/` |
+| all | `fetch_commit_parents.py --study-data data` records every corpus commit's parent count → `data/commit_parents.csv` (947 of 7,462 commits are merges) |
 
 ### Stage 2 — proficiency extraction
 
@@ -131,6 +132,17 @@ repository root**. `pip install -r requirements.txt`; scripts that call the GitH
 
 ### Stage 3 — results
 
+> **Merge commits are excluded, and files are paired by full path.** The corpora contain
+> every commit listed on each PR, including merge commits such as "Merge branch 'main'
+> into feature", whose diff is upstream code rather than the PR author's; they are 64% of
+> the human file snapshots, 32% of the pre-ChatGPT ones and 14% of the agent ones. The
+> analysis skips any commit with more than one parent (`data/commit_parents.csv`). The
+> tool's output names each file by basename only, so every output row is also mapped
+> back to its fetch-summary row to recover the full repository path — otherwise two files
+> with the same name in one commit would be differenced against each other. Both are
+> implemented once, in `scripts/analysis/cpet_artifacts.py`, and shared by the RQ1 and
+> RQ2 scripts; pass `--keep-merges` to reproduce the earlier merge-inclusive numbers.
+
 | Paper artifact | Command | Output |
 |---|---|---|
 | Table 4, RQ1 statistics | `python scripts/analysis/analyze_rq1_new_tool.py --output-dir data/output_by_repo --mapping data/ubersequenceLevel.csv --commits data/aidev_pr_agent.parquet` | `data/rq1_new_tool_*.csv` |
@@ -138,6 +150,7 @@ repository root**. `pip install -r requirements.txt`; scripts that call the GitH
 | Figures 3–4 (task type × agent) | `python analysis/rq1_make_fig_task_type_agent.py` | `cefr_*_task_types.pdf` at the repository root (copies in `figures/`) |
 | Table 7, RQ2 statistics | `python scripts/analysis/analyze_rq2_three_groups.py --repo-root .` then `python scripts/analysis/rq2_pairwise_stats.py` | `data/rq2_three_groups_*.csv`; pairwise tests printed |
 | Figure 5 (repository-paired) | `python scripts/analysis/make_fig_repo_paired.py` | `figures/repo_paired_cefr.pdf` |
+| Pre-ChatGPT per-PR table | `python scripts/analysis/make_rq3_pre_chatgpt_table.py --labelled analysis/rq3_pre_chatgpt_prs_with_task_type.csv` | re-bases the GPT-4.1-mini-labelled table on the current counts, labels untouched |
 | RQ3 tables and figures | `analysis/rq3_task_type_proficiency.ipynb` | `analysis/rq3_tables/`, `figures/rq3_outlier_tasks_*.pdf` |
 | RQ4 tables and figures | `analysis/rq4_review_effort.ipynb` | `analysis/rq4_tables/`, `figures/rq4_predicted_effort_*.pdf` |
 
