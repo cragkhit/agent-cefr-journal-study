@@ -110,16 +110,12 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2970993516,AI agents,DannyMac180/meta-agent,15,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
 2971908072,AI agents,digitaldemocracy2030/kouchou-ai,232,devin-ai-integration[bot],ok,0,0,0,2,4,0,0,6
 2971926630,AI agents,digitaldemocracy2030/kouchou-ai,233,devin-ai-integration[bot],ok,5,0,0,1,4,0,5,5
-2976318527,AI agents,digitaldemocracy2030/kouchou-ai,244,devin-ai-integration[bot],ok,1,0,0,2,4,0,1,6
 2976319344,AI agents,digitaldemocracy2030/kouchou-ai,245,devin-ai-integration[bot],ok,1,0,0,2,2,0,1,4
-2976332198,AI agents,digitaldemocracy2030/kouchou-ai,247,devin-ai-integration[bot],ok,0,0,0,1,2,0,0,3
-2978436805,AI agents,digitaldemocracy2030/kouchou-ai,251,devin-ai-integration[bot],ok,1,0,0,6,3,0,1,9
 2978840535,AI agents,crewAIInc/crewAI,2537,devin-ai-integration[bot],ok,3,0,0,5,2,0,3,7
 2980213795,AI agents,GlareDB/glaredb,3608,devin-ai-integration[bot],ok,1,0,0,2,1,0,1,3
 2982204377,AI agents,crewAIInc/crewAI,2548,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
 2982438384,AI agents,crewAIInc/crewAI,2552,devin-ai-integration[bot],ok,3,0,0,6,2,0,3,8
 2984176797,AI agents,crewAIInc/crewAI,2562,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
-2986070957,AI agents,neondatabase/neon,11526,devin-ai-integration[bot],ok,3,0,0,2,2,0,3,4
 2989761342,AI agents,crewAIInc/crewAI,2588,devin-ai-integration[bot],ok,10,0,0,1,1,0,10,2
 2990115371,AI agents,crewAIInc/crewAI,2594,devin-ai-integration[bot],ok,4,0,0,2,1,0,4,3
 2990679795,AI agents,mendableai/firecrawl,1448,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
@@ -198,9 +194,7 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 3118782981,AI agents,aavetis/PRarena,13,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
 3119031442,AI agents,aavetis/PRarena,15,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
 3119042017,AI agents,microsoft/Olive,1897,copilot-swe-agent[bot],ok,14,27,0,13,10,0,41,23
-3119857154,AI agents,mlflow/mlflow,16080,copilot-swe-agent[bot],ok,2,1,0,1,3,0,3,4
 3120162244,AI agents,mlflow/mlflow,16088,copilot-swe-agent[bot],ok,0,1,0,1,1,0,1,2
-3120603357,AI agents,mlflow/mlflow,16093,copilot-swe-agent[bot],ok,0,0,0,1,2,0,0,3
 3122455352,AI agents,nearai/nearai,1179,copilot-swe-agent[bot],ok,0,2,0,1,0,0,2,1
 3123684653,AI agents,mlflow/mlflow,16112,copilot-swe-agent[bot],ok,4,4,0,6,6,0,8,12
 3125029980,AI agents,nearai/nearai,1181,copilot-swe-agent[bot],ok,0,0,0,1,1,0,0,2
@@ -228,7 +222,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 3138256165,AI agents,a16z/halmos,539,copilot-swe-agent[bot],ok,8,5,0,2,1,0,13,3
 3138517311,AI agents,AgentOps-AI/agentops,1064,devin-ai-integration[bot],ok,0,0,0,0,1,0,0,1
 3138534395,AI agents,getsentry/sentry,93402,iamrajjoshi,ok,8,0,3,0,1,0,8,1
-3138995292,AI agents,mlflow/mlflow,16221,copilot-swe-agent[bot],ok,2,2,0,0,2,0,4,2
 3139359977,AI agents,microsoft/lisa,3855,copilot-swe-agent[bot],ok,5,6,0,3,3,0,11,6
 3139579722,AI agents,microsoft/AzureTRE,4589,copilot-swe-agent[bot],ok,0,2,0,4,4,0,2,8
 3139974947,AI agents,getsentry/sentry-python,4459,szokeasaurusrex,ok,1,0,0,11,1,4,1,12
@@ -284,7 +277,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 3169258035,AI agents,exa-labs/exa-py,100,jld-adriano,ok,0,0,0,0,0,0,0,0
 3169711198,AI agents,skypilot-org/skypilot,6067,Michaelvll,ok,0,0,0,0,0,0,0,0
 3170718599,AI agents,OpenPipe/ART,161,saum7800,ok,0,0,0,0,0,0,0,0
-3171113463,AI agents,aztfmod/terraform-provider-azurecaf,328,copilot-swe-agent[bot],ok,1,6,0,12,13,0,7,25
 3171819372,AI agents,getsentry/sentry,94169,chargome,ok,7,0,1,0,0,0,7,0
 3171852682,AI agents,browser-use/browser-use,2086,mertunsall,ok,0,0,0,3,2,2,0,5
 3172444753,AI agents,microsoft/lisa,3884,copilot-swe-agent[bot],ok,0,0,0,6,4,0,0,10
@@ -319,7 +311,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 3192012013,AI agents,zfit/zfit,643,copilot-swe-agent[bot],ok,0,0,0,2,2,0,0,4
 3192545670,AI agents,NewFuture/DDNS,495,copilot-swe-agent[bot],ok,0,0,0,0,0,0,0,0
 3192728541,AI agents,zfit/zfit,644,copilot-swe-agent[bot],ok,0,2,0,11,10,0,2,21
-3193101857,AI agents,EvolvingLMMs-Lab/lmms-eval,734,Luodian,ok,0,1,0,1,2,1,1,3
 3193514773,AI agents,microsoft/onnxscript,2431,copilot-swe-agent[bot],ok,0,0,0,2,3,0,0,5
 3193524394,AI agents,NewFuture/DDNS,498,copilot-swe-agent[bot],ok,28,28,0,1,3,0,56,4
 3193634550,AI agents,Azure/azure-sdk-for-python,41852,copilot-swe-agent[bot],ok,10,8,0,2,1,0,18,3
@@ -396,7 +387,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 3223461985,AI agents,microsoft/onnxscript,2447,copilot-swe-agent[bot],ok,10,18,0,4,4,0,28,8
 3223703470,AI agents,getsentry/sentry,95356,armenzg,ok,0,0,0,0,1,0,0,1
 3223709587,AI agents,allthingslinux/tux,944,kzndotsh,ok,0,0,0,0,2,0,0,2
-3223923166,AI agents,reflex-dev/reflex-web,1505,devin-ai-integration[bot],ok,0,0,0,2,1,0,0,3
 3224534498,AI agents,reflex-dev/reflex-web,1510,devin-ai-integration[bot],ok,0,1,0,0,1,0,1,1
 3224735740,AI agents,NewFuture/DDNS,512,copilot-swe-agent[bot],ok,4,4,0,3,3,0,8,6
 3224777239,AI agents,14790897/handwriting-web,45,copilot-swe-agent[bot],ok,0,0,0,4,5,0,0,9
@@ -491,8 +481,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2256920866,Human,keephq/keep,2958,shahargl,ok,0,0,0,0,1,0,0,1
 2257939947,Human,julep-ai/julep,1008,creatorrr,ok,2,0,1,0,3,0,2,3
 2258107647,Human,julep-ai/julep,1009,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
-2258241795,Human,microsoft/autogen,4881,jackgerrits,ok,0,0,0,1,0,0,0,1
-2258464517,Human,microsoft/typespec,5474,AlitzelMendez,ok,0,0,0,2,0,0,0,2
 2259134684,Human,crewAIInc/crewAI-tools,172,pythonbyte,ok,0,0,0,0,0,0,0,0
 2259244255,Human,astral-sh/ruff,15238,MichaReiser,ok,0,0,0,1,1,0,0,2
 2260748681,Human,keephq/keep,2979,shahargl,ok,0,0,0,0,1,0,0,1
@@ -501,19 +489,15 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2262691551,Human,vlm-run/vlmrun-hub,53,spillai,ok,0,0,0,0,0,0,0,0
 2262795916,Human,SirVer/ultisnips,1562,idbrii,ok,0,0,0,6,0,3,0,6
 2263791524,Human,goat-sdk/goat,191,karimodm,ok,0,0,0,0,1,0,0,1
-2263908486,Human,dotnet/runtime,111152,pavelsavara,ok,8,0,4,3,1,1,8,4
 2264445875,Human,cloudflare/workerd,3301,dom96,ok,2,0,0,1,0,0,2,1
-2264866046,Human,airbytehq/airbyte,50971,edgao,ok,8,0,4,1,1,1,8,2
 2265140449,Human,blorm-network/ZerePy,62,leo-super-dev,ok,0,0,0,1,0,0,0,1
 2266427544,Human,marimo-team/marimo,3368,mscolnick,ok,0,0,0,0,2,0,0,2
-2266772678,Human,microsoft/semantic-kernel,10129,SergeyMenshykh,ok,4,0,2,0,0,0,4,0
 2267093351,Human,onyx-dot-app/onyx,3634,hagen-danswer,ok,2,0,2,0,1,0,2,1
 2267854135,Human,PriorLabs/TabPFN,103,eddiebergman,ok,0,0,0,0,0,0,0,0
 2268256983,Human,spcl/dace,1861,pratyai,ok,0,0,0,0,0,0,0,0
 2269208152,Human,wandb/weave,3358,gtarpenning,ok,0,0,0,0,1,0,0,1
 2270252961,Human,huggingface/smolagents,146,aymeric-roucher,ok,0,0,0,1,0,0,0,1
 2270266984,Human,goat-sdk/goat,209,0xaguspunk,ok,0,0,0,0,1,0,0,1
-2270393774,Human,goat-sdk/goat,210,karimodm,ok,0,0,0,0,1,0,0,1
 2272183023,Human,bespokelabsai/curator,345,adamoptimizer,ok,10,0,7,0,0,0,10,0
 2272274981,Human,Blaizzy/mlx-vlm,179,Blaizzy,ok,0,0,0,11,0,6,0,11
 2272586142,Human,Netflix/metaflow,2207,mt-ob,ok,8,0,3,0,0,0,8,0
@@ -522,7 +506,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2274694131,Human,microsoft/onnxruntime-genai,1183,baijumeswani,ok,0,0,0,0,0,0,0,0
 2274941460,Human,blorm-network/ZerePy,81,guilherme-brandao,ok,0,0,0,3,0,0,0,3
 2274981373,Human,janbjorge/pgqueuer,286,janbjorge,ok,0,0,0,0,0,0,0,0
-2275392075,Human,commaai/opendbc,1634,sshane,ok,1,0,1,2,0,1,1,2
 2275685120,Human,Skyvern-AI/skyvern,1543,wintonzheng,ok,0,0,0,0,0,0,0,0
 2275795781,Human,MikePopoloski/slang,1210,parker-research,ok,6,0,0,1,1,1,6,2
 2276244631,Human,PriorLabs/TabPFN,135,LeoGrin,ok,0,0,0,11,0,3,0,11
@@ -532,8 +515,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2278053264,Human,Kiln-AI/Kiln,110,leonardmq,ok,0,0,0,1,0,0,0,1
 2279176635,Human,Significant-Gravitas/AutoGPT,9272,aarushik93,ok,0,0,0,0,5,0,0,5
 2280794084,Human,dagster-io/dagster,27142,maximearmstrong,ok,1,0,0,5,0,3,1,5
-2281573752,Human,janbjorge/pgqueuer,290,janbjorge,ok,0,0,0,1,0,0,0,1
-2282210055,Human,uxlfoundation/oneDAL,3046,Alexandr-Solovev,ok,36,0,9,21,3,16,36,24
 2282388423,Human,airbytehq/airbyte,51585,aldogonzalez8,ok,1,0,1,0,1,0,1,1
 2282594982,Human,AgentOps-AI/agentops,647,teocns,ok,0,0,0,0,1,0,0,1
 2282684079,Human,assistant-ui/assistant-ui,1386,Yonom,ok,0,6,0,0,4,0,6,4
@@ -541,12 +522,10 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2283064887,Human,wandb/wandb,9287,timoffex,ok,0,0,0,0,1,0,0,1
 2283901622,Human,ComposioHQ/composio,1205,Prat011,ok,5,2,0,1,1,0,7,2
 2283939870,Human,mlflow/mlflow,14265,serena-ruan,ok,7,0,2,1,1,1,7,2
-2284670608,Human,goat-sdk/goat,243,kamalbuilds,ok,30,0,10,2,1,2,30,3
 2286020833,Human,Significant-Gravitas/AutoGPT,9295,majdyz,ok,2,0,1,0,3,0,2,3
 2286566641,Human,MikePopoloski/slang,1214,parker-research,ok,0,0,0,0,1,0,0,1
 2286936119,Human,julep-ai/julep,1068,creatorrr,ok,0,0,0,0,4,0,0,4
 2288142889,Human,spcl/dace,1885,phschaad,ok,0,0,0,0,0,0,0,0
-2288772617,Human,herbie-fp/herbie,1133,AYadrov,ok,5,0,2,1,0,1,5,1
 2290337879,Human,Significant-Gravitas/AutoGPT,9308,ntindle,ok,12,0,6,2,8,1,12,10
 2290730629,Human,marimo-team/marimo,3527,akshayka,ok,0,0,0,0,1,0,0,1
 2291207655,Human,EricLBuehler/mistral.rs,1077,EricLBuehler,ok,0,0,0,0,1,0,0,1
@@ -554,39 +533,29 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2291386657,Human,julep-ai/julep,1074,whiterabbit1983,ok,0,1,0,0,3,0,1,3
 2292256358,Human,spcl/dace,1896,pratyai,ok,0,0,0,1,0,1,0,1
 2293706753,Human,mlflow/mlflow,14304,daniellok-db,ok,0,0,0,0,2,0,0,2
-2293719331,Human,near/nearcore,12773,marcelo-gonzalez,ok,17,0,6,0,1,0,17,1
 2294324935,Human,near/nearcore,12776,VanBarbascu,ok,1,0,0,0,1,0,1,1
 2294642912,Human,tinygrad/tinygrad,8731,geohotstan,ok,0,0,0,1,0,0,0,1
 2295215962,Human,zenml-io/zenml,3314,stefannica,ok,15,0,10,0,1,0,15,1
 2295546141,Human,near/nearcore,12787,shreyan-gupta,ok,3,0,1,0,1,0,3,1
-2297770994,Human,opencv/opencv,26842,chacha21,ok,5,0,0,7,0,3,5,7
-2297781093,Human,promptfoo/promptfoo,2822,MrFlounder,ok,0,0,0,0,1,0,0,1
 2298301775,Human,567-labs/instructor,1319,charlieyou,ok,0,0,0,1,0,0,0,1
 2299613217,Human,rsyslog/rsyslog,5544,rgerhards,ok,0,0,0,1,0,1,0,1
 2300488657,Human,roboflow/inference,983,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
 2301636676,Human,ComposioHQ/composio,1229,Prat011,ok,2,1,0,1,2,0,3,3
 2301717301,Human,crewAIInc/crewAI-tools,197,beowolx,ok,0,0,0,3,0,2,0,3
-2301884134,Human,mlflow/mlflow,14364,harupy,ok,6,0,5,0,1,0,6,1
 2304107826,Human,roboflow/inference,986,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
-2304936326,Human,ag2ai/ag2,703,kumaranvpl,ok,0,0,0,1,0,0,0,1
 2305916890,Human,julep-ai/julep,1109,Vedantsahai18,ok,0,0,0,0,2,0,0,2
 2306686014,Human,ikamensh/flynt,204,un-pogaz,ok,0,0,0,2,0,1,0,2
 2306867477,Human,ComposioHQ/composio,1234,Prat011,ok,5,3,0,1,1,0,8,2
 2307381985,Human,marimo-team/marimo,3628,akshayka,ok,0,0,0,0,2,0,0,2
-2307815455,Human,dotnet/runtime,112016,amanasifkhalid,ok,0,0,0,6,1,5,0,7
 2307912274,Human,crewAIInc/crewAI-tools,198,lorenzejay,ok,3,0,0,0,0,0,3,0
 2308425047,Human,keephq/keep,3245,shahargl,ok,0,0,0,0,1,0,0,1
 2308602042,Human,remotion-dev/remotion,4837,JonnyBurger,ok,2,0,1,1,1,1,2,2
-2309356556,Human,goat-sdk/goat,295,Fbartoli,ok,0,0,0,0,1,0,0,1
 2309714629,Human,microsoft/autogen,5285,ekzhu,ok,1,0,0,0,1,0,1,1
-2310085567,Human,getsentry/sentry,84390,mrduncan,ok,0,0,0,0,1,0,0,1
 2310214732,Human,MervinPraison/PraisonAI,357,MervinPraison,ok,0,0,0,0,0,0,0,0
 2310831032,Human,Kiln-AI/Kiln,145,scosman,ok,0,0,0,0,0,0,0,0
-2311202049,Human,azerothcore/azerothcore-wotlk,21310,p-tkachuk,ok,0,0,0,8,0,4,0,8
 2312226914,Human,netket/netket,1995,vigsterkr,ok,11,0,5,5,1,1,11,6
 2312748329,Human,netket/netket,1996,PhilipVinc,ok,0,0,0,0,1,0,0,1
 2313076850,Human,Kiln-AI/Kiln,150,scosman,ok,0,0,0,0,0,0,0,0
-2313339743,Human,Significant-Gravitas/AutoGPT,9401,dependabot[bot],ok,0,0,0,0,3,0,0,3
 2313919432,Human,BerriAI/litellm,8227,,ok,0,0,0,0,1,0,0,1
 2315722929,Human,vlm-run/vlmrun-hub,82,spillai,ok,0,0,0,0,0,0,0,0
 2315875250,Human,Kiln-AI/Kiln,155,scosman,ok,0,0,0,0,0,0,0,0
@@ -600,12 +569,9 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2321207962,Human,bentoml/BentoML,5203,frostming,ok,0,0,0,0,0,0,0,0
 2323330865,Human,commaai/openpilot,34547,sshane,ok,0,0,0,0,0,0,0,0
 2324261949,Human,julep-ai/julep,1144,Vedantsahai18,ok,0,0,0,1,2,1,0,3
-2324987642,Human,tinygrad/tinygrad,8994,Qazalin,ok,0,0,0,0,1,0,0,1
 2325260235,Human,julep-ai/julep,1145,whiterabbit1983,ok,0,0,0,0,5,0,0,5
-2325372908,Human,goat-sdk/goat,324,Fbartoli,ok,0,0,0,0,1,0,0,1
 2327061220,Human,getsentry/sentry-python,4034,cmanallen,ok,0,0,0,3,1,2,0,4
 2327904675,Human,janbjorge/pgqueuer,316,janbjorge,ok,1,0,0,0,0,0,1,0
-2328335930,Human,ComposioHQ/composio,1327,angrybayblade,ok,0,0,0,1,2,0,0,3
 2329041793,Human,mangiucugna/json_repair,96,sean-weber-cambri,ok,0,0,0,0,0,0,0,0
 2329914697,Human,marimo-team/marimo,3755,dmadisetti,ok,2,0,1,4,2,1,2,6
 2330651068,Human,julep-ai/julep,1151,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
@@ -618,9 +584,7 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2333329270,Human,PriorLabs/TabPFN,184,mert-kurttutan,ok,1,0,0,13,0,7,1,13
 2334155600,Human,Skyvern-AI/skyvern,1767,wintonzheng,ok,0,4,0,0,0,0,4,0
 2334613112,Human,BerriAI/litellm,8523,,ok,0,0,0,0,2,0,0,2
-2334947154,Human,airbytehq/airbyte,53686,theyueli,ok,8,0,1,3,1,2,8,4
 2335012557,Human,onyx-dot-app/onyx,3997,pablonyx,ok,0,0,0,0,1,0,0,1
-2335576720,Human,dotnet/sdk,46856,github-actions[bot],ok,0,0,0,0,0,0,0,0
 2335926569,Human,roboflow/inference,1028,grzegorz-roboflow,ok,0,0,0,0,0,0,0,0
 2336377580,Human,tinygrad/tinygrad,9088,quortus,ok,0,0,0,3,1,1,0,4
 2337700846,Human,julep-ai/julep,1165,Ahmad-mtos,ok,0,0,0,0,3,0,0,3
@@ -629,7 +593,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2338301511,Human,aipotheosis-labs/aci,32,hanyixxx,ok,0,0,0,0,1,0,0,1
 2338454215,Human,brentyi/tyro,256,brentyi,ok,0,0,0,0,1,0,0,1
 2338814541,Human,cvxpy/cvxpy,2716,PTNobel,ok,0,0,0,3,0,1,0,3
-2340199001,Human,near/nearcore,12943,stedfn,ok,9,0,1,0,1,0,9,1
 2340411739,Human,keephq/keep,3532,Matvey-Kuk,ok,0,0,0,0,1,0,0,1
 2340845626,Human,Kiln-AI/Kiln,205,scosman,ok,0,0,0,0,0,0,0,0
 2341061114,Human,mlflow/mlflow,14632,TomeHirata,ok,9,0,3,0,1,0,9,1
@@ -637,14 +600,12 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2342963782,Human,aipotheosis-labs/aci,38,Jamie0gundiran,ok,9,0,4,0,1,0,9,1
 2343133415,Human,mendableai/firecrawl,1201,ericciarla,ok,10,0,0,0,0,0,10,0
 2344813558,Human,julep-ai/julep,1175,Ahmad-mtos,ok,0,0,0,2,2,1,0,4
-2344950093,Human,roboflow/inference,1037,bigbitbus,ok,0,0,0,1,0,0,0,1
 2345504485,Human,Kiln-AI/Kiln,210,scosman,ok,0,0,0,0,0,0,0,0
 2345558913,Human,mendableai/firecrawl,1206,aparupganguly,ok,0,0,0,1,0,0,0,1
 2345763476,Human,microsoft/onnxruntime-genai,1264,RyanUnderhill,ok,4,0,2,0,0,0,4,0
 2347982033,Human,test-zeus-ai/testzeus-hercules,42,shriyanshagnihotri,ok,0,0,0,0,0,0,0,0
 2348777785,Human,mlflow/mlflow,14689,TomeHirata,ok,9,0,2,1,2,1,9,3
 2351543999,Human,vlm-run/vlmrun-hub,102,spillai,ok,2,0,1,0,0,0,2,0
-2351814084,Human,BOINC/boinc,6107,Vulpine05,ok,0,0,0,6,1,2,0,7
 2352002275,Human,commaai/panda,2162,fredyshox,ok,0,0,0,0,0,0,0,0
 2352217584,Human,mlflow/mlflow,14703,brilee,ok,2,0,0,1,2,1,2,3
 2352418494,Human,commaai/opendbc,1825,crwusiz,ok,0,0,0,0,0,0,0,0
@@ -653,7 +614,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2354769460,Human,vlm-run/vlmrun-hub,105,Mirajul-Mohin,ok,6,0,0,0,0,0,6,0
 2355805138,Human,julep-ai/julep,1185,Ahmad-mtos,ok,0,0,0,0,5,0,0,5
 2355823480,Human,keephq/keep,3665,skynetigor,ok,0,0,0,0,1,0,0,1
-2355891934,Human,microsoft/typespec,6144,mzhongl524,ok,11,0,2,5,0,0,11,5
 2356042683,Human,bentoml/BentoML,5249,frostming,ok,0,0,0,0,0,0,0,0
 2356246191,Human,Kanaries/pygwalker,673,longxiaofei,ok,0,0,0,1,0,1,0,1
 2357159587,Human,airbytehq/airbyte,54677,szemek,ok,0,0,0,0,2,0,0,2
@@ -669,7 +629,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2364953101,Human,spcl/dace,1958,pratyai,ok,0,0,0,0,0,0,0,0
 2364987713,Human,netket/netket,2012,PhilipVinc,ok,0,0,0,3,1,1,0,4
 2365534722,Human,dagster-io/dagster,28149,maximearmstrong,ok,3,0,1,1,0,1,3,1
-2365854601,Human,oven-sh/bun,17820,190n,ok,4,0,1,6,0,0,4,6
 2366807942,Human,tegnike/aituber-kit,313,tegnike,ok,0,4,0,0,2,0,4,2
 2366817698,Human,mendableai/firecrawl,1284,nickscamara,ok,0,0,0,0,0,0,0,0
 2366839400,Human,tegnike/aituber-kit,314,tegnike,ok,0,0,0,0,2,0,0,2
@@ -680,33 +639,24 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2369253951,Human,joshyattridge/smart-money-concepts,75,joshyattridge,ok,0,0,0,0,0,0,0,0
 2371172565,Human,Skyvern-AI/skyvern,1882,wintonzheng,ok,0,0,0,0,0,0,0,0
 2371342937,Human,Skyvern-AI/skyvern,1883,wintonzheng,ok,0,0,0,0,0,0,0,0
-2371650610,Human,goat-sdk/goat,386,akawolfcito,ok,2,0,1,2,1,1,2,3
 2373275700,Human,mlflow/mlflow,14860,serena-ruan,ok,7,0,0,0,1,0,7,1
 2373978615,Human,ACEsuit/mace,841,ilyes319,ok,0,0,0,0,0,0,0,0
 2374159047,Human,skypilot-org/skypilot,4891,kristopolous,ok,0,0,0,0,0,0,0,0
 2375014471,Human,marimo-team/marimo,3993,Light2Dark,ok,1,0,1,0,2,0,1,2
 2376425978,Human,julep-ai/julep,1217,Ahmad-mtos,ok,15,5,3,0,3,0,20,3
-2378845122,Human,huggingface/huggingface.js,1260,nbarr07,ok,2,0,0,11,0,5,2,11
 2379148000,Human,rishikanthc/Scriberr,80,BarbellDwarf,ok,0,0,0,0,0,0,0,0
 2380702095,Human,SirVer/ultisnips,1567,SirVer,ok,0,0,0,0,0,0,0,0
 2381144892,Human,stanford-crfm/levanter,904,garymm,ok,0,0,0,0,0,0,0,0
 2382109803,Human,tegnike/aituber-kit,316,tegnike,ok,0,0,0,0,3,0,0,3
-2383582907,Human,near/nearcore,13094,shreyan-gupta,ok,0,0,0,0,1,0,0,1
 2383761721,Human,bentoml/BentoML,5268,yetone,ok,0,0,0,0,0,0,0,0
 2383765749,Human,mlflow/mlflow,14938,harupy,ok,1,7,0,0,1,0,8,1
-2385785847,Human,goat-sdk/goat,408,wispyiwnl,ok,0,0,0,1,1,0,0,2
 2385847879,Human,whitphx/streamlit-webrtc,1901,whitphx,ok,0,0,0,0,0,0,0,0
-2387062321,Human,Significant-Gravitas/AutoGPT,9620,majdyz,ok,0,0,0,2,5,1,0,7
 2388365918,Human,bruin-data/bruin,516,y-bruin,ok,3,0,1,0,0,0,3,0
-2389334004,Human,AgentOps-AI/agentops,811,Dwij1704,ok,0,0,0,1,0,0,0,1
 2389375209,Human,microsoft/debugpy,1870,TheJJ,ok,0,0,0,12,1,5,0,13
-2389875437,Human,AgentOps-AI/agentops,817,Dwij1704,ok,0,0,0,0,0,0,0,0
 2389891260,Human,AgentOps-AI/agentops,818,dot-agi,ok,0,0,0,0,0,0,0,0
 2390024977,Human,AgentOps-AI/agentops,819,Dwij1704,ok,0,0,0,0,0,0,0,0
 2390765352,Human,spcl/dace,1975,pratyai,ok,0,0,0,0,0,0,0,0
 2391309914,Human,julep-ai/julep,1241,Ahmad-mtos,ok,0,12,0,0,4,0,12,4
-2391963504,Human,dagster-io/dagster,28479,salazarm,ok,2,0,1,0,1,0,2,1
-2392791155,Human,microsoft/typespec,6452,weidongxu-microsoft,ok,0,0,0,1,1,0,0,2
 2394359557,Human,MaiM-with-u/MaiBot,401,SaigyoujiYusora,ok,3,0,0,0,0,0,3,0
 2394800356,Human,AgentOps-AI/agentops,847,teocns,ok,0,0,0,0,0,0,0,0
 2394823134,Human,langchain-ai/langsmith-sdk,1576,baskaryan,ok,0,0,0,0,0,0,0,0
@@ -722,31 +672,23 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2404972295,Human,reflex-dev/reflex,4994,adhami3310,ok,0,0,0,0,1,0,0,1
 2405191622,Human,julep-ai/julep,1277,HamadaSalhab,ok,0,5,0,0,2,0,5,2
 2405425459,Human,wandb/weave,3916,neutralino1,ok,0,0,0,1,2,1,0,3
-2408616836,Human,roboflow/inference,1092,misrasaurabh1,ok,0,0,0,2,0,0,0,2
 2409498745,Human,bespokelabsai/curator,598,kartik4949,ok,11,0,4,0,0,0,11,0
 2411811233,Human,bespokelabsai/curator,600,CharlieJCJ,ok,3,0,2,2,0,2,3,2
 2413225736,Human,stanfordnlp/dspy,8003,TomeHirata,ok,9,0,4,2,0,0,9,2
-2414338451,Human,airbytehq/airbyte,56369,KimPlv,ok,0,0,0,0,2,0,0,2
-2414812043,Human,microsoft/typespec,6652,timotheeguerin,ok,0,0,0,1,1,0,0,2
 2415207829,Human,microsoft/graphrag,1841,natoverse,ok,0,0,0,2,0,1,0,2
 2415977644,Human,keephq/keep,4207,VladimirFilonov,ok,0,0,0,0,1,0,0,1
 2416987762,Human,Significant-Gravitas/AutoGPT,9697,Pwuts,ok,0,0,0,0,4,0,0,4
-2417452941,Human,goat-sdk/goat,450,sunosuporno,ok,0,0,0,10,1,5,0,11
 2417540342,Human,crewAIInc/crewAI-tools,250,parthbs,ok,0,0,0,1,0,0,0,1
 2417566506,Human,onyx-dot-app/onyx,4353,pablonyx,ok,0,0,0,0,1,0,0,1
 2420201980,Human,PrefectHQ/prefect,17607,zzstoatzz,ok,0,0,0,0,0,0,0,0
 2420444104,Human,onyx-dot-app/onyx,4363,pablonyx,ok,1,0,1,0,1,0,1,1
 2421585261,Human,promptfoo/promptfoo,3507,Mikkolehtimaki,ok,0,0,0,3,2,2,0,5
-2422882617,Human,microsoft/onnxruntime,24212,toothache,ok,13,0,7,7,3,2,13,10
 2422893059,Human,marimo-team/marimo,4279,mscolnick,ok,0,0,0,0,2,0,0,2
 2423298921,Human,a16z/halmos,486,0xkarmacoma,ok,0,0,0,0,0,0,0,0
-2424187155,Human,julep-ai/julep,1291,Vedantsahai18,ok,0,0,0,0,2,0,0,2
 2424508586,Human,mlflow/mlflow,15160,harupy,ok,0,0,0,0,1,0,0,1
-2424549019,Human,microsoft/onnxruntime,24229,xhcao,ok,0,0,0,10,7,2,0,17
 2427595507,Human,keephq/keep,4302,shahargl,ok,0,0,0,0,2,0,0,2
 2427808826,Human,mlflow/mlflow,15171,mlflow-app[bot],ok,0,0,0,0,3,0,0,3
 2428382467,Human,roboflow/inference,1129,grzegorz-roboflow,ok,2,0,1,0,0,0,2,0
-2429861894,Human,microsoft/typespec,6796,witemple-msft,ok,6,0,3,1,1,0,6,2
 2430313600,Human,reflex-dev/reflex,5069,adhami3310,ok,0,0,0,1,1,1,0,2
 2430314015,Human,Kanaries/pygwalker,692,longxiaofei,ok,0,0,0,0,0,0,0,0
 2434289186,Human,writer/writer-framework,805,ramedina86,ok,0,0,0,0,0,0,0,0
@@ -760,7 +702,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2440808816,Human,Kanaries/pygwalker,694,longxiaofei,ok,0,0,0,0,0,0,0,0
 2441330487,Human,Kiln-AI/Kiln,270,scosman,ok,0,0,0,0,0,0,0,0
 2441758104,Human,GodsScion/Auto_job_applier_linkedIn,45,GodsScion,ok,0,0,0,0,0,0,0,0
-2442916529,Human,Blaizzy/mlx-vlm,290,vovw,ok,0,0,0,3,0,2,0,3
 2443127427,Human,microsoft/RD-Agent,764,XianBW,ok,0,0,0,0,0,0,0,0
 2443706665,Human,langchain-ai/langsmith-sdk,1641,angus-langchain,ok,0,0,0,1,0,1,0,1
 2444052038,Human,goat-sdk/goat,470,Peteredwardj,ok,0,0,0,0,1,0,0,1
@@ -769,22 +710,18 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2446878923,Human,microsoft/typespec,6909,iscai-msft,ok,0,0,0,1,1,0,0,2
 2446905064,Human,TobikoData/sqlmesh,4101,themisvaltinos,ok,50,0,15,1,0,1,50,1
 2447403860,Human,marimo-team/marimo,4442,dmadisetti,ok,0,0,0,0,2,0,0,2
-2448420848,Human,risingwavelabs/risingwave,21323,florissmit10,ok,2,0,0,1,0,1,2,1
 2448591120,Human,AgentOps-AI/agentops,914,Dwij1704,ok,0,0,0,0,1,0,0,1
-2448748294,Human,tegnike/aituber-kit,337,ochisamu,ok,0,0,0,0,2,0,0,2
 2448918557,Human,getsentry/sentry-python,4264,szokeasaurusrex,ok,0,0,0,0,1,0,0,1
 2448959577,Human,AgentOps-AI/agentops,915,Dwij1704,ok,4,0,1,5,1,1,4,6
 2449210861,Human,marimo-team/marimo,4449,akshayka,ok,0,0,0,0,2,0,0,2
 2449229785,Human,cartography-cncf/cartography,1520,serge-wq,ok,0,0,0,0,1,0,0,1
 2450440359,Human,zenml-io/zenml,3525,schustmi,ok,0,0,0,0,1,0,0,1
-2452881601,Human,Azure/azure-sdk-for-net,49355,mcgallan,ok,0,0,0,1,0,0,0,1
 2453464080,Human,huggingface/huggingface.js,1349,kefranabg,ok,16,0,1,3,0,1,16,3
 2454776899,Human,AgentOps-AI/agentops,919,braelyn-ai,ok,0,0,0,2,1,0,0,3
 2454841034,Human,julep-ai/julep,1316,Ahmad-mtos,ok,1,4,0,0,3,0,5,3
 2455025552,Human,bentoml/BentoML,5317,frostming,ok,1,1,1,0,1,0,2,1
 2455489057,Human,tegnike/aituber-kit,343,tegnike,ok,0,4,0,0,3,0,4,3
 2455759309,Human,julep-ai/julep,1318,Vedantsahai18,ok,2,6,0,1,3,0,8,4
-2456276880,Human,EricLBuehler/mistral.rs,1277,EricLBuehler,ok,0,14,0,0,2,0,14,2
 2456461996,Human,mlflow/mlflow,15298,B-Step62,ok,8,0,4,0,1,0,8,1
 2457606922,Human,goat-sdk/goat,481,jainsanil18,ok,0,0,0,0,1,0,0,1
 2458717003,Human,microsoft/typespec,6977,iscai-msft,ok,0,0,0,1,1,0,0,2
@@ -793,17 +730,14 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2461648574,Human,OpenPipe/ART,51,corbt,ok,0,0,0,0,0,0,0,0
 2461755763,Human,onyx-dot-app/onyx,4534,rkuo-danswer,ok,0,6,0,0,1,0,6,1
 2462032838,Human,wandb/openui,228,vanpelt,ok,0,0,0,0,2,0,0,2
-2462139687,Human,reown-com/appkit,4221,zoruka,ok,0,0,0,0,3,0,0,3
 2462185471,Human,featureform/enrichmcp,16,,ok,6,0,0,0,0,0,6,0
 2463366494,Human,reown-com/appkit,4227,tomiir,ok,1,0,0,0,5,0,1,5
 2464579828,Human,cartography-cncf/cartography,1534,achantavy,ok,0,0,0,0,0,0,0,0
 2464811084,Human,onyx-dot-app/onyx,4547,Weves,ok,0,2,0,0,1,0,2,1
 2465429535,Human,PrefectHQ/marvin,1119,Anush008,ok,6,2,4,1,0,0,8,1
-2465780443,Human,roboflow/inference,1200,capjamesg,ok,0,0,0,0,0,0,0,0
 2466713034,Human,bespokelabsai/curator,645,sky-2002,ok,0,0,0,0,0,0,0,0
 2467087648,Human,dropseed/plain,28,davegaeddert,ok,0,0,0,0,0,0,0,0
 2467788242,Human,TheAlgorithms/Python,12676,isidroas,ok,3,0,0,0,0,0,3,0
-2469761206,Human,tegnike/aituber-kit,360,tegnike,ok,1,9,1,1,4,1,10,5
 2471938138,Human,openai/openai-agents-python,561,rm-openai,ok,0,0,0,0,0,0,0,0
 2472893702,Human,mlflow/mlflow,15420,harupy,ok,0,1,0,0,2,0,1,2
 2474303758,Human,mendableai/firecrawl,1490,rafaelsideguide,ok,0,0,0,0,0,0,0,0
@@ -816,13 +750,11 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2476426259,Human,crewAIInc/crewAI-tools,281,lucasgomide,ok,7,0,3,0,0,0,7,0
 2476534203,Human,featureform/enrichmcp,26,,ok,0,0,0,0,0,0,0,0
 2478356468,Human,crewAIInc/crewAI-tools,282,HarikrishnanK9,ok,16,0,4,12,0,10,16,12
-2478537850,Human,microsoft/typespec,7115,srnagar,ok,35,0,6,1,1,0,35,2
 2478962352,Human,mlflow/mlflow,15481,B-Step62,ok,6,0,1,0,1,0,6,1
 2480335338,Human,crewAIInc/crewAI-tools,285,lucasgomide,ok,7,0,4,1,0,1,7,1
 2480611839,Human,MaiM-with-u/MaiBot,842,smartmita,ok,0,1,0,0,1,0,1,1
 2482170552,Human,langchain-ai/langsmith-sdk,1694,baskaryan,ok,2,0,0,0,0,0,2,0
 2482475399,Human,mendableai/firecrawl,1501,rafaelsideguide,ok,0,0,0,0,0,0,0,0
-2483120959,Human,Significant-Gravitas/AutoGPT,9885,Abhi1992002,ok,0,1,0,0,3,0,1,3
 2483429223,Human,julep-ai/julep,1340,Ahmad-mtos,ok,0,0,0,0,2,0,0,2
 2483801280,Human,stair-lab/kg-gen,28,captainst,ok,0,0,0,1,0,0,0,1
 2484533924,Human,Skyvern-AI/skyvern,2231,wintonzheng,ok,0,1,0,0,0,0,1,0
@@ -838,10 +770,8 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2491706379,Human,featureform/enrichmcp,31,,ok,10,0,0,0,0,0,10,0
 2492797998,Human,featureform/enrichmcp,32,,ok,0,0,0,0,0,0,0,0
 2492871484,Human,OpenPipe/ART,91,arcticfly,ok,0,0,0,0,0,0,0,0
-2493189964,Human,openai/codex,769,thegovind,ok,5,0,2,15,0,4,5,15
 2493806134,Human,Significant-Gravitas/AutoGPT,9902,majdyz,ok,0,0,0,0,4,0,0,4
 2493988876,Human,neondatabase/neon,11801,VladLazar,ok,3,0,1,2,1,1,3,3
-2494218951,Human,langchain-ai/langgraph,4497,sydney-runkle,ok,1,0,0,0,1,0,1,1
 2495510561,Human,Skyvern-AI/skyvern,2278,wintonzheng,ok,0,1,0,0,0,0,1,0
 2495956871,Human,gridaco/grida,317,softmarshmallow,ok,0,9,0,0,3,0,9,3
 2496790216,Human,a16z/halmos,505,Jayakumar2812,ok,12,0,0,0,0,0,12,0
@@ -873,8 +803,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2514803422,Human,marimo-team/marimo,4890,bjoaquinc,ok,0,0,0,1,2,0,0,3
 2515872022,Human,cartography-cncf/cartography,1563,jychp,ok,0,0,0,1,1,0,0,2
 2516078067,Human,BOINC/boinc,6322,AenBleidd,ok,0,0,0,3,0,1,0,3
-2516490273,Human,Significant-Gravitas/AutoGPT,9935,Pwuts,ok,3,2,3,0,3,0,5,3
-2518652004,Human,dotnet/runtime,115553,kotlarmilos,ok,13,1,4,1,1,1,14,2
 2518704449,Human,mlflow/mlflow,15733,B-Step62,ok,0,2,0,0,1,0,2,1
 2519061854,Human,julep-ai/julep,1367,whiterabbit1983,ok,4,6,1,0,3,0,10,3
 2519322384,Human,zenml-io/zenml,3670,schustmi,ok,0,0,0,0,1,0,0,1
@@ -889,7 +817,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2526305378,Human,mlflow/mlflow,15786,rahuja23,ok,14,0,1,1,2,1,14,3
 2526673638,Human,Uberi/speech_recognition,843,ftnext,ok,0,0,0,1,0,0,0,1
 2527047579,Human,cartography-cncf/cartography,1571,AdityaPandeyCN,ok,10,0,0,3,0,3,10,3
-2529504231,Human,microsoft/qsharp,2429,minestarks,ok,1,0,1,2,0,1,1,2
 2530024859,Human,awslabs/mcp,373,mikegc-aws,ok,1,18,0,0,2,0,19,2
 2530551941,Human,mlflow/mlflow,15807,B-Step62,ok,5,0,2,1,2,1,5,3
 2530634034,Human,mlflow/mlflow,15809,dhruyads,ok,0,0,0,0,1,0,0,1
@@ -901,7 +828,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2536954288,Human,Significant-Gravitas/AutoGPT,9999,majdyz,ok,0,0,0,0,4,0,0,4
 2537431731,Human,zenml-io/zenml,3694,stefannica,ok,0,0,0,0,2,0,0,2
 2539193736,Human,mlflow/mlflow,15859,TomeHirata,ok,6,1,3,0,1,0,7,1
-2540205307,Human,dropseed/plain,35,davegaeddert,ok,0,0,0,0,0,0,0,0
 2540997654,Human,skypilot-org/skypilot,5715,cblmemo,ok,0,0,0,0,0,0,0,0
 2542040727,Human,langchain-ai/langgraph,4819,nfcampos,ok,5,0,0,0,1,0,5,1
 2542348118,Human,effekseer/Effekseer,1050,durswd,ok,0,0,0,0,0,0,0,0
@@ -913,14 +839,11 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2546726071,Human,PrunaAI/pruna,153,johnrachwan123,ok,0,0,0,0,0,0,0,0
 2547160591,Human,effekseer/Effekseer,1055,durswd,ok,0,0,0,0,0,0,0,0
 2547279361,Human,Azure/azure-functions-core-tools,4440,liliankasem,ok,0,0,0,0,0,0,0,0
-2548010588,Human,wandb/weave,4595,chance-wnb,ok,6,0,4,2,1,1,6,3
 2548639363,Human,bruin-data/ingestr,207,karakanb,ok,0,0,0,0,0,0,0,0
-2549162857,Human,bruin-data/bruin,697,jbrand-dsp,ok,0,0,0,0,0,0,0,0
 2550459755,Human,neondatabase/neon,12049,hlinnaka,ok,0,0,0,1,2,0,0,3
 2551797459,Human,writer/writer-framework,898,raaymax,ok,0,1,0,0,1,0,1,1
 2551809139,Human,dotnet/fsharp,18633,github-actions[bot],ok,0,0,0,0,0,0,0,0
 2552315306,Human,AgentOps-AI/agentops,1018,fenilfaldu,ok,3,0,1,2,1,2,3,3
-2552725254,Human,bruin-data/bruin,700,turtleDev,ok,3,0,0,0,0,0,3,0
 2553341049,Human,awslabs/mcp,460,srhsrhsrhsrh,ok,0,0,0,4,1,2,0,5
 2553400368,Human,crewAIInc/crewAI-tools,316,lucasgomide,ok,0,0,0,1,0,0,0,1
 2554942977,Human,sooperset/mcp-atlassian,467,sooperset,ok,0,0,0,0,0,0,0,0
@@ -934,7 +857,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2565257900,Human,commaai/panda,2222,maxime-desroches,ok,0,0,0,0,0,0,0,0
 2566068573,Human,mlflow/mlflow,16059,dbczumar,ok,9,0,4,0,1,0,9,1
 2567130351,Human,PrunaAI/pruna,174,begumcig,ok,0,0,0,0,0,0,0,0
-2569040246,Human,microsoft/onnxruntime,24962,quic-calvnguy,ok,9,2,4,14,10,3,11,24
 2570876716,Human,roboflow/inference,1331,PawelPeczek-Roboflow,ok,0,0,0,0,0,0,0,0
 2571668210,Human,allenai/reward-bench,242,jacob-morrison,ok,0,0,0,1,0,1,0,1
 2572033204,Human,mlflow/mlflow,16103,B-Step62,ok,0,0,0,0,1,0,0,1
@@ -943,7 +865,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2574405759,Human,mlflow/mlflow,16125,smoorjani,ok,0,0,0,0,1,0,0,1
 2574861103,Human,marimo-team/marimo,5224,Light2Dark,ok,1,0,0,0,2,0,1,2
 2576026392,Human,jlowin/fastmcp,748,jlowin,ok,0,1,0,0,0,0,1,0
-2576212936,Human,tinygrad/tinygrad,10689,geohot,ok,0,0,0,1,1,0,0,2
 2576376243,Human,volcengine/verl,1911,hebiao064,ok,2,0,1,4,0,2,2,4
 2578194357,Human,mistralai/mistral-common,93,juliendenize,ok,0,0,0,0,0,0,0,0
 2578599113,Human,BeehiveInnovations/zen-mcp-server,2,vwieczorek,ok,0,0,0,0,0,0,0,0
@@ -958,15 +879,12 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2591073348,Human,dagster-io/dagster,30693,OwenKephart,ok,0,0,0,2,0,2,0,2
 2594350058,Human,mlflow/mlflow,16271,TomeHirata,ok,0,0,0,0,1,0,0,1
 2596620305,Human,microsoft/qsharp,2530,minestarks,ok,0,0,0,0,0,0,0,0
-2596992929,Human,promptfoo/promptfoo,4510,gru-agent[bot],ok,0,0,0,1,2,0,0,3
 2597060187,Human,featureform/enrichmcp,72,simba-git,ok,0,0,0,0,0,0,0,0
 2600773171,Human,spcl/dace,2054,romanc,ok,0,0,0,2,0,2,0,2
-2603520463,Human,Skyvern-AI/skyvern,2750,Prakashmaheshwaran,ok,0,0,0,0,0,0,0,0
 2603695662,Human,open-webui/open-webui,15138,zhangtyzzz,ok,0,0,0,1,0,0,0,1
 2604844532,Human,electricitymaps/electricitymaps-contrib,8232,florianscheidl,ok,0,0,0,0,1,0,0,1
 2605359283,Human,mlflow/mlflow,16340,joelrobin18,ok,0,0,0,0,1,0,0,1
 2606069562,Human,microsoft/magentic-ui,209,husseinmozannar,ok,0,4,0,3,0,1,4,3
-2607442037,Human,zenml-io/zenml,3757,AlexejPenner,ok,0,0,0,3,2,2,0,5
 2608653300,Human,featureform/enrichmcp,89,simba-git,ok,0,0,0,0,0,0,0,0
 2608822195,Human,microsoft/magentic-ui,212,husseinmozannar,ok,0,0,0,1,0,0,0,1
 2609183598,Human,marimo-team/marimo,5398,dmadisetti,ok,2,1,0,0,1,0,3,1
@@ -987,12 +905,10 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2619492805,Human,OpenPipe/ART,163,bradhilton,ok,0,0,0,4,0,2,0,4
 2620590040,Human,PriorLabs/TabPFN,347,noahho,ok,0,0,0,0,0,0,0,0
 2625218797,Human,Blaizzy/mlx-vlm,397,neilmehta24,ok,0,0,0,1,0,0,0,1
-2625235744,Human,dotnet/aspire,10095,radical,ok,0,1,0,0,0,0,1,0
 1016104386,Human (pre-ChatGPT),python-cachier/cachier,76,erap129,ok,0,0,0,0,0,0,0,0
 1019030515,Human (pre-ChatGPT),python-cachier/cachier,77,shaypal5,ok,0,0,0,1,1,0,0,2
 1019183107,Human (pre-ChatGPT),python-cachier/cachier,78,shaypal5,ok,0,0,0,0,0,0,0,0
 1022115985,Human (pre-ChatGPT),python-cachier/cachier,80,shaypal5,ok,0,0,0,0,1,0,0,1
-1034144863,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,34,JonasKs,ok,2,0,2,0,1,0,2,1
 1034647105,Human (pre-ChatGPT),yutto-dev/yutto,20,dydhyhwu,ok,0,0,0,6,0,3,0,6
 1038335779,Human (pre-ChatGPT),stefankoegl/python-json-pointer,46,PeterlitsZo,ok,0,0,0,8,0,5,0,8
 1045422903,Human (pre-ChatGPT),yutto-dev/yutto,26,ouuan,ok,0,0,0,1,0,0,0,1
@@ -1045,7 +961,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1287418523,Human (pre-ChatGPT),Azure/azure-kusto-python,403,ronmonetaMicro,ok,20,1,4,0,2,0,21,2
 1291724459,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,93,Bulga-xD,ok,15,0,7,5,1,1,15,6
 1294670417,Human (pre-ChatGPT),TorchIO-project/torchio,925,fepegar,ok,0,0,0,0,1,0,0,1
-1294881592,Human (pre-ChatGPT),TorchIO-project/torchio,926,fepegar,ok,0,0,0,0,1,0,0,1
 1295899874,Human (pre-ChatGPT),vespa-engine/pyvespa,361,msminhas93,ok,0,0,0,4,0,2,0,4
 1301197239,Human (pre-ChatGPT),NewFuture/DDNS,325,Anankke,ok,0,0,0,0,0,0,0,0
 1303369737,Human (pre-ChatGPT),NewFuture/DDNS,329,NewFuture,ok,0,0,0,0,0,0,0,0
@@ -1067,7 +982,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1338108416,Human (pre-ChatGPT),Lumiwealth/lumibot,196,grzesir,ok,0,0,0,0,0,0,0,0
 1338986199,Human (pre-ChatGPT),Z3Prover/z3,6277,jfleisher,ok,0,0,0,0,0,0,0,0
 1340121603,Human (pre-ChatGPT),Azure/azure-kusto-python,410,ohadbitt,ok,13,2,4,0,2,0,15,2
-1340359199,Human (pre-ChatGPT),Z3Prover/z3,6280,jfleisher,ok,0,0,0,2,0,1,0,2
 1344348677,Human (pre-ChatGPT),zfit/zfit,415,jonas-eschle,ok,0,0,0,0,0,0,0,0
 1345339167,Human (pre-ChatGPT),zfit/zfit,416,jonas-eschle,ok,0,0,0,0,0,0,0,0
 1346978811,Human (pre-ChatGPT),Lumiwealth/lumibot,199,grzesir,ok,0,0,0,0,0,0,0,0
@@ -1131,7 +1045,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1405815065,Human (pre-ChatGPT),spcl/dace,1121,tbennun,ok,0,0,0,0,0,0,0,0
 1408286785,Human (pre-ChatGPT),onnx/onnx,4600,jbachurski,ok,2,0,1,1,0,0,2,1
 1408344001,Human (pre-ChatGPT),rqlite/rqlite,1074,otoolep,ok,0,0,0,1,0,1,0,1
-1409092390,Human (pre-ChatGPT),torchgeo/torchgeo,846,nilsleh,ok,2,0,0,0,0,0,2,0
 1409290947,Human (pre-ChatGPT),ailia-ai/ailia-models,935,kyakuno,ok,0,0,0,0,0,0,0,0
 1409860475,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2015,jeylau,ok,0,0,0,1,0,0,0,1
 1410236747,Human (pre-ChatGPT),torchgeo/torchgeo,850,nilsleh,ok,0,0,0,0,0,0,0,0
@@ -1139,7 +1052,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1410290763,Human (pre-ChatGPT),DonDebonair/slack-machine,659,DonDebonair,ok,0,0,0,0,0,0,0,0
 1410952732,Human (pre-ChatGPT),spcl/dace,1123,tbennun,ok,7,0,4,0,0,0,7,0
 1412846000,Human (pre-ChatGPT),spcl/dace,1124,phschaad,ok,17,0,5,0,0,0,17,0
-1412980156,Human (pre-ChatGPT),Azure/azure-kusto-python,425,ronmonetaMicro,ok,0,0,0,0,2,0,0,2
 1414109762,Human (pre-ChatGPT),ailia-ai/ailia-models,936,ooe1123,ok,0,0,0,18,0,2,0,18
 1414230379,Human (pre-ChatGPT),rqlite/rqlite,1081,otoolep,ok,0,0,0,0,0,0,0,0
 1415643668,Human (pre-ChatGPT),getsentry/sentry-python,1694,Zylphrex,ok,0,0,0,2,0,1,0,2
@@ -1220,7 +1132,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1447731939,Human (pre-ChatGPT),valkey-io/valkey-glide,76,barshaul,ok,48,0,18,4,0,3,48,4
 1448121447,Human (pre-ChatGPT),microsoft/Qcodes,4802,jenshnielsen,ok,2,0,1,1,3,1,2,4
 1448145610,Human (pre-ChatGPT),rqlite/rqlite,1117,otoolep,ok,0,0,0,0,0,0,0,0
-1448394698,Human (pre-ChatGPT),microsoft/AzureTRE,2872,tanya-borisova,ok,0,0,0,5,7,5,0,12
 1448616828,Human (pre-ChatGPT),microsoft/AzureTRE,2873,damoodamoo,ok,0,0,0,5,17,5,0,22
 1448802963,Human (pre-ChatGPT),skypilot-org/skypilot,1414,Michaelvll,ok,13,0,6,0,0,0,13,0
 1448946855,Human (pre-ChatGPT),microsoft/onnxscript,191,justinchuby,ok,0,0,0,0,1,0,0,1
@@ -1233,7 +1144,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1450214505,Human (pre-ChatGPT),microsoft/lisa,2401,mcgov,ok,0,0,0,1,0,1,0,1
 1450271966,Human (pre-ChatGPT),microsoft/onnxscript,195,gramalingam,ok,2,0,1,0,1,0,2,1
 1450530169,Human (pre-ChatGPT),microsoft/AzureTRE,2883,jjgriff93,ok,6,0,2,2,3,2,6,5
-1450723876,Human (pre-ChatGPT),onnx/onnx,4662,YanBC,ok,0,0,0,1,0,1,0,1
 1450817556,Human (pre-ChatGPT),skypilot-org/skypilot,1421,dongreenberg,ok,1,0,0,0,0,0,1,0
 1450862970,Human (pre-ChatGPT),bentoml/BentoML,3253,sauyon,ok,0,0,0,1,1,0,0,2
 1451061931,Human (pre-ChatGPT),mlflow/mlflow,7354,harupy,ok,0,0,0,2,0,1,0,2
@@ -1255,11 +1165,9 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1453723991,Human (pre-ChatGPT),getsentry/sentry-python,1746,sl0thentr0py,ok,0,0,0,0,1,0,0,1
 1453796840,Human (pre-ChatGPT),valkey-io/valkey-glide,79,shachlanAmazon,ok,0,0,0,0,0,0,0,0
 1454039769,Human (pre-ChatGPT),Arize-ai/phoenix,23,mikeldking,ok,0,0,0,0,1,0,0,1
-1454054880,Human (pre-ChatGPT),microsoft/onnxscript,198,gramalingam,ok,11,5,5,8,1,3,16,9
 1454232318,Human (pre-ChatGPT),Arize-ai/phoenix,25,davidgmonical,ok,0,0,0,0,0,0,0,0
 1454675597,Human (pre-ChatGPT),DeepLabCut/DeepLabCut,2054,jeylau,ok,0,0,0,0,0,0,0,0
 1454748865,Human (pre-ChatGPT),ailia-ai/ailia-models,955,mmitti,ok,0,0,0,0,0,0,0,0
-1454978398,Human (pre-ChatGPT),onnx/onnx,4666,p-wysocki,ok,2,0,0,1,0,1,2,1
 1455005376,Human (pre-ChatGPT),microsoft/lisa,2411,LiliDeng,ok,0,0,0,0,0,0,0,0
 1455215647,Human (pre-ChatGPT),microsoft/Qcodes,4810,jenshnielsen,ok,0,0,0,0,1,0,0,1
 1455288380,Human (pre-ChatGPT),microsoft/Qcodes,4811,astafan8,ok,3,0,2,0,1,0,3,1
@@ -1287,7 +1195,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1457112362,Human (pre-ChatGPT),reflex-dev/reflex,9,picklelo,ok,0,0,0,0,0,0,0,0
 1457196566,Human (pre-ChatGPT),microsoft/lisa,2416,LiliDeng,ok,0,0,0,0,0,0,0,0
 1457279640,Human (pre-ChatGPT),microsoft/onnxscript,200,justinchuby,ok,2,0,2,3,1,2,2,4
-1457334712,Human (pre-ChatGPT),microsoft/onnxscript,201,justinchuby,ok,2,0,1,0,1,0,2,1
 1457486443,Human (pre-ChatGPT),Azure/azure-kusto-python,433,AsafMah,ok,0,0,0,0,2,0,0,2
 1457753006,Human (pre-ChatGPT),microsoft/Qcodes,4816,astafan8,ok,0,0,0,0,1,0,0,1
 1457973701,Human (pre-ChatGPT),microsoft/lisa,2417,LiliDeng,ok,2,0,1,0,0,0,2,0
@@ -1394,7 +1301,6 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 1467897447,Human (pre-ChatGPT),neondatabase/neon,2953,hlinnaka,ok,0,0,0,1,0,1,0,1
 1467897860,Human (pre-ChatGPT),spcl/dace,1161,tbennun,ok,0,0,0,0,0,0,0,0
 1467953742,Human (pre-ChatGPT),langchain-ai/langchain,222,andrewgleave,ok,0,0,0,1,0,0,0,1
-1467977825,Human (pre-ChatGPT),datahub-project/datahub,6569,anshbansal,ok,0,0,0,1,2,1,0,3
 1468064081,Human (pre-ChatGPT),airbytehq/airbyte,19873,alafanechere,ok,0,0,0,0,0,0,0,0
 1468078194,Human (pre-ChatGPT),datahub-project/datahub,6572,mayurinehate,ok,0,0,0,0,2,0,0,2
 1468316428,Human (pre-ChatGPT),microsoft/onnxscript,213,abock,ok,0,0,0,0,1,0,0,1
@@ -1461,12 +1367,9 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 968085937,Human (pre-ChatGPT),python-cachier/cachier,69,erap129,ok,0,0,0,5,0,3,0,5
 981274177,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,16,JonasKs,ok,1,0,1,2,1,2,1,3
 981399767,Human (pre-ChatGPT),snok/django-guid,64,sondrelg,ok,0,0,0,0,1,0,0,1
-985000455,Human (pre-ChatGPT),vibber-ai/fastapi-azure-auth,19,JonasKs,ok,0,0,0,0,1,0,0,1
 988427909,Human (pre-ChatGPT),matsui528/rii,43,matsui528,ok,0,0,0,0,0,0,0,0
 997190661,Human (pre-ChatGPT),python-cachier/cachier,72,erap129,ok,0,0,0,6,0,2,0,6
 999391004,Human (pre-ChatGPT),python-cachier/cachier,74,erap129,ok,0,0,0,0,0,0,0,0
-2257424685,Human,crewAIInc/crewAI,1836,sambharia,ok,0,0,0,2,0,1,0,2
-2258407801,Human,crewAIInc/crewAI,1842,tonykipkemboi,ok,0,0,0,1,0,0,0,1
 2259409621,Human,crewAIInc/crewAI,1843,bhancockio,ok,4,0,1,3,1,0,4,4
 2259921353,Human,crewAIInc/crewAI,1845,joaomdmoura,ok,0,0,0,1,0,1,0,1
 2262012370,Human,crewAIInc/crewAI,1857,pigna90,ok,0,0,0,3,0,0,0,3
@@ -1474,63 +1377,41 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2266347131,Human,crewAIInc/crewAI,1864,raspawar,ok,0,0,0,5,0,2,0,5
 2267141880,Human,crewAIInc/crewAI,1868,bhancockio,ok,2,0,0,1,1,0,2,2
 2271028668,Human,crewAIInc/crewAI,1878,bhancockio,ok,1,0,0,2,0,0,1,2
-2277513970,Human,crewAIInc/crewAI,1893,bhancockio,ok,0,0,0,1,0,0,0,1
 2279949383,Human,crewAIInc/crewAI,1905,bhancockio,ok,3,0,0,1,0,0,3,1
-2282276280,Human,crewAIInc/crewAI,1909,bhancockio,ok,3,0,0,1,0,0,3,1
 2286429519,Human,crewAIInc/crewAI,1927,lorenzejay,ok,6,0,0,1,0,0,6,1
 2288132868,Human,crewAIInc/crewAI,1931,joaomdmoura,ok,0,0,0,1,0,1,0,1
 2290763666,Human,crewAIInc/crewAI,1943,bhancockio,ok,3,0,0,1,0,0,3,1
 2290991358,Human,crewAIInc/crewAI,1947,bobbywlindsey,ok,0,0,0,1,0,0,0,1
 2292816579,Human,crewAIInc/crewAI,1953,bhancockio,ok,1,0,0,1,0,0,1,1
-2298215908,Human,crewAIInc/crewAI,1971,juanfiguera,ok,0,0,0,1,0,0,0,1
 2300872354,Human,crewAIInc/crewAI,1986,bhancockio,ok,1,0,0,1,0,0,1,1
-2301650713,Human,crewAIInc/crewAI,1988,TomeHirata,ok,0,0,0,1,0,1,0,1
 2302954528,Human,crewAIInc/crewAI,1993,bhancockio,ok,5,0,1,1,0,0,5,1
 2305518056,Human,crewAIInc/crewAI,2003,bhancockio,ok,2,0,0,1,0,0,2,1
 2307862531,Human,crewAIInc/crewAI,2009,bhancockio,ok,1,0,0,1,0,0,1,1
-2307975331,Human,crewAIInc/crewAI,2010,JinxTheCatto,ok,0,0,0,2,0,0,0,2
 2309721352,Human,crewAIInc/crewAI,2018,bhancockio,ok,2,0,0,1,0,0,2,1
 2315421154,Human,crewAIInc/crewAI,2027,pythonbyte,ok,6,0,3,1,0,0,6,1
 2315788773,Human,crewAIInc/crewAI,2029,bhancockio,ok,0,0,0,1,0,0,0,1
-2318180373,Human,crewAIInc/crewAI,2038,androw,ok,0,0,0,1,0,0,0,1
 2318504207,Human,crewAIInc/crewAI,2042,bhancockio,ok,4,0,1,1,0,0,4,1
 2320665719,Human,crewAIInc/crewAI,2048,lorenzejay,ok,24,0,6,1,0,0,24,1
 2322590988,Human,crewAIInc/crewAI,2056,bhancockio,ok,0,0,0,1,0,0,0,1
 2323035316,Human,crewAIInc/crewAI,2059,bhancockio,ok,0,0,0,1,0,0,0,1
 2325911874,Human,crewAIInc/crewAI,2086,sharmasundip,ok,0,0,0,1,0,1,0,1
-2326564664,Human,crewAIInc/crewAI,2089,bhancockio,ok,0,0,0,0,0,0,0,0
 2332036167,Human,crewAIInc/crewAI,2114,vinibrsl,ok,2,0,1,1,0,0,2,1
-2337664006,Human,crewAIInc/crewAI,2138,nikolaidk,ok,0,0,0,1,0,0,0,1
-2337914874,Human,crewAIInc/crewAI,2144,RealVidy,ok,0,0,0,1,0,0,0,1
 2340415841,Human,crewAIInc/crewAI,2155,Vidit-Ostwal,ok,0,0,0,1,0,0,0,1
 2343048840,Human,crewAIInc/crewAI,2159,bhancockio,ok,0,0,0,1,0,0,0,1
 2343359978,Human,crewAIInc/crewAI,2161,vinibrsl,ok,0,0,0,1,0,0,0,1
 2345245386,Human,crewAIInc/crewAI,2169,bhancockio,ok,0,0,0,2,0,0,0,2
 2345381566,Human,crewAIInc/crewAI,2170,cardofe,ok,0,0,0,3,0,1,0,3
 2347595567,Human,crewAIInc/crewAI,2178,elda27,ok,0,0,0,1,0,0,0,1
-2348026203,Human,crewAIInc/crewAI,2182,bhancockio,ok,1,0,0,1,0,0,1,1
-2348293372,Human,crewAIInc/crewAI,2184,tonykipkemboi,ok,0,0,0,1,0,0,0,1
-2350676311,Human,crewAIInc/crewAI,2196,tonykipkemboi,ok,3,0,0,1,0,0,3,1
 2354037309,Human,crewAIInc/crewAI,2211,bhancockio,ok,0,0,0,1,0,0,0,1
 2357294413,Human,crewAIInc/crewAI,2223,bhancockio,ok,0,0,0,1,0,0,0,1
-2357329519,Human,crewAIInc/crewAI,2224,bhancockio,ok,0,0,0,1,0,0,0,1
 2357405562,Human,crewAIInc/crewAI,2226,bhancockio,ok,1,0,0,2,0,0,1,2
 2357793364,Human,crewAIInc/crewAI,2231,bhancockio,ok,2,0,1,1,0,0,2,1
 2357935218,Human,crewAIInc/crewAI,2232,lorenzejay,ok,0,0,0,3,0,2,0,3
-2364339053,Human,crewAIInc/crewAI,2254,MQ37,ok,3,0,1,2,0,1,3,2
-2366769880,Human,crewAIInc/crewAI,2259,tonykipkemboi,ok,0,0,0,1,0,0,0,1
 2368438500,Human,crewAIInc/crewAI,2265,Vidit-Ostwal,ok,4,0,2,4,0,3,4,4
 2368800162,Human,crewAIInc/crewAI,2266,bhancockio,ok,0,0,0,1,0,0,0,1
-2370866483,Human,crewAIInc/crewAI,2275,amine759,ok,0,0,0,1,0,0,0,1
-2374803772,Human,crewAIInc/crewAI,2291,EnggQasim,ok,0,0,0,1,0,0,0,1
-2375952745,Human,crewAIInc/crewAI,2297,EnggQasim,ok,0,0,0,1,0,0,0,1
 2377969663,Human,crewAIInc/crewAI,2304,cardofe,ok,0,0,0,2,0,0,0,2
 2384903678,Human,crewAIInc/crewAI,2336,sakunkun,ok,0,0,0,4,0,0,0,4
-2395130345,Human,crewAIInc/crewAI,2375,amanagarwal042,ok,0,0,0,1,0,0,0,1
 2395736133,Human,crewAIInc/crewAI,2377,JulioPeixoto,ok,0,0,0,1,0,0,0,1
-2397036219,Human,crewAIInc/crewAI,2387,agindre,ok,0,0,0,3,0,1,0,3
-2400016065,Human,crewAIInc/crewAI,2397,mangiucugna,ok,0,0,0,1,0,0,0,1
-2400073348,Human,crewAIInc/crewAI,2398,chienjchienj,ok,0,0,0,1,0,0,0,1
 2401471175,Human,crewAIInc/crewAI,2401,vinibrsl,ok,0,0,0,1,0,0,0,1
 2404580117,Human,crewAIInc/crewAI,2408,Vidit-Ostwal,ok,2,0,1,4,0,0,2,4
 2406710118,Human,crewAIInc/crewAI,2424,vinibrsl,ok,4,0,2,1,0,0,4,1
@@ -1540,36 +1421,25 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2414330903,Human,crewAIInc/crewAI,2461,lucasgomide,ok,1,0,0,1,0,0,1,1
 2419373483,Human,crewAIInc/crewAI,2477,pythonbyte,ok,1,0,0,1,0,0,1,1
 2419596001,Human,crewAIInc/crewAI,2479,vinibrsl,ok,0,0,0,1,0,0,0,1
-2419756676,Human,crewAIInc/crewAI,2480,lorenzejay,ok,0,0,0,1,0,0,0,1
 2419768442,Human,crewAIInc/crewAI,2481,bhancockio,ok,2,0,0,4,0,1,2,4
-2419803338,Human,crewAIInc/crewAI,2482,tonykipkemboi,ok,0,0,0,1,0,0,0,1
 2419949551,Human,crewAIInc/crewAI,2483,bhancockio,ok,2,0,0,1,0,0,2,1
 2425787906,Human,crewAIInc/crewAI,2495,Vidit-Ostwal,ok,0,0,0,5,0,3,0,5
-2427394493,Human,crewAIInc/crewAI,2498,orcema,ok,0,0,0,1,0,0,0,1
 2431562619,Human,crewAIInc/crewAI,2507,lucasgomide,ok,0,0,0,1,0,0,0,1
 2432652514,Human,crewAIInc/crewAI,2510,lucasgomide,ok,1,0,0,2,0,0,1,2
 2433002376,Human,Azure/azure-sdk-for-python,40333,azure-sdk,ok,2,0,0,1,0,1,2,1
-2437426439,Human,crewAIInc/crewAI,2520,exiao,ok,0,0,0,3,0,2,0,3
 2437697330,Human,crewAIInc/crewAI,2523,lorenzejay,ok,23,0,4,2,0,1,23,2
 2440441097,Human,Azure/azure-sdk-for-python,40382,nagkumar91,ok,0,0,0,1,0,0,0,1
-2448658771,Human,crewAIInc/crewAI,2553,lucasgomide,ok,1,0,0,0,0,0,1,0
 2449032917,Human,Azure/azure-sdk-for-python,40443,dargilco,ok,0,0,0,0,0,0,0,0
 2449273362,Human,crewAIInc/crewAI,2556,lorenzejay,ok,3,0,0,0,0,0,3,0
 2451443553,Human,crewAIInc/crewAI,2570,Vidit-Ostwal,ok,11,0,5,1,0,1,11,1
 2452209048,Human,crewAIInc/crewAI,2582,lucasgomide,ok,10,0,5,0,0,0,10,0
-2455434480,Human,crewAIInc/crewAI,2595,orcema,ok,0,0,0,0,0,0,0,0
 2455635139,Human,crewAIInc/crewAI,2597,lucasgomide,ok,9,0,4,0,0,0,9,0
 2458149257,Human,crewAIInc/crewAI,2604,Dev-Khant,ok,21,0,8,9,0,4,21,9
 2464366664,Human,crewAIInc/crewAI,2627,greysonlalonde,ok,0,0,0,0,0,0,0,0
 2473992346,Human,crewAIInc/crewAI,2662,vinibrsl,ok,1,0,1,0,0,0,1,0
-2479797388,Human,crewAIInc/crewAI,2684,lucasgomide,ok,0,0,0,0,0,0,0,0
-2482427127,Human,crewAIInc/crewAI,2691,tonykipkemboi,ok,0,0,0,0,0,0,0,0
-2486761780,Human,crewAIInc/crewAI,2707,lucasgomide,ok,0,0,0,1,0,0,0,1
-2487987691,Human,crewAIInc/crewAI,2713,Vidit-Ostwal,ok,0,0,0,5,0,2,0,5
 2489551645,Human,crewAIInc/crewAI,2723,vinibrsl,ok,11,0,4,2,0,0,11,2
 2489970694,Human,crewAIInc/crewAI,2726,lucasgomide,ok,3,0,1,0,0,0,3,0
 2490479931,Human,crewAIInc/crewAI,2727,lorenzejay,ok,19,0,8,4,0,0,19,4
-2490820490,Human,crewAIInc/crewAI,2728,tonykipkemboi,ok,0,0,0,0,0,0,0,0
 2492065021,Human,crewAIInc/crewAI,2731,lucasgomide,ok,0,0,0,2,0,0,0,2
 2492492371,Human,Azure/azure-sdk-for-python,40820,howieleung,ok,3,0,1,2,0,0,3,2
 2499368647,Human,crewAIInc/crewAI,2758,lucasgomide,ok,0,0,0,2,0,1,0,2
@@ -1578,36 +1448,22 @@ pr_id,group,full_name,number,author_login,comment_status,n_review_comments_human
 2508388895,Human,crewAIInc/crewAI,2793,lucasgomide,ok,5,0,2,1,0,0,5,1
 2513949410,Human,crewAIInc/crewAI,2816,lucasgomide,ok,5,0,2,1,0,0,5,1
 2514963554,Human,crewAIInc/crewAI,2819,Vidit-Ostwal,ok,4,0,2,2,0,2,4,2
-2517361361,Human,crewAIInc/crewAI,2825,seyeong-han,ok,0,0,0,2,0,1,0,2
 2518881728,Human,crewAIInc/crewAI,2829,lucasgomide,ok,0,0,0,1,0,0,0,1
-2520520652,Human,crewAIInc/crewAI,2835,lorenzejay,ok,0,0,0,1,0,0,0,1
-2521968459,Human,crewAIInc/crewAI,2840,lucasgomide,ok,0,0,0,1,0,0,0,1
 2522613536,Human,Azure/azure-sdk-for-python,41123,singankit,ok,0,0,0,0,0,0,0,0
-2523497110,Human,crewAIInc/crewAI,2849,richardlzluo,ok,0,0,0,1,0,0,0,1
 2524441113,Human,crewAIInc/crewAI,2851,lucasgomide,ok,5,0,2,1,0,0,5,1
-2527656583,Human,crewAIInc/crewAI,2861,akmadan,ok,3,0,0,5,0,3,3,5
 2531079994,Human,Azure/azure-sdk-for-python,41218,msyyc,ok,0,3,0,1,0,1,3,1
 2532696552,Human,crewAIInc/crewAI,2869,greysonlalonde,ok,2,0,0,1,0,0,2,1
-2533298162,Human,crewAIInc/crewAI,2871,tonykipkemboi,ok,0,0,0,0,0,0,0,0
 2534242211,Human,crewAIInc/crewAI,2876,vinibrsl,ok,0,0,0,1,0,0,0,1
-2542621311,Human,crewAIInc/crewAI,2902,tonykipkemboi,ok,0,0,0,2,0,1,0,2
-2543469021,Human,crewAIInc/crewAI,2905,oxy-rostyslav,ok,2,0,1,3,0,2,2,3
 2552324549,Human,crewAIInc/crewAI,2916,lucasgomide,ok,3,0,0,1,0,0,3,1
-2564186622,Human,crewAIInc/crewAI,2940,lucasgomide,ok,0,0,0,1,0,0,0,1
 2565281191,Human,crewAIInc/crewAI,2948,lorenzejay,ok,2,0,1,1,0,0,2,1
-2567582405,Human,crewAIInc/crewAI,2957,mplachta,ok,0,0,0,1,0,0,0,1
 2567658267,Human,crewAIInc/crewAI,2958,lucasgomide,ok,0,0,0,1,0,0,0,1
-2568413405,Human,crewAIInc/crewAI,2959,tonykipkemboi,ok,0,0,0,1,0,0,0,1
-2570156540,Human,crewAIInc/crewAI,2963,lucasgomide,ok,0,0,0,1,0,0,0,1
 2573402396,Human,crewAIInc/crewAI,2969,lucasgomide,ok,2,0,0,4,0,2,2,4
 2578618188,Human,crewAIInc/crewAI,2980,lucasgomide,ok,0,0,0,1,0,0,0,1
 2579412972,Human,crewAIInc/crewAI,2983,lucasgomide,ok,1,0,0,1,0,0,1,1
 2582168338,Human,crewAIInc/crewAI,2988,Vidit-Ostwal,ok,2,0,1,1,0,0,2,1
-2585527884,Human,crewAIInc/crewAI,2999,lorenzejay,ok,0,0,0,1,0,0,0,1
 2588019871,Human,crewAIInc/crewAI,3004,lorenzejay,ok,0,0,0,1,0,0,0,1
 2596069069,Human,crewAIInc/crewAI,3014,lucasgomide,ok,0,0,0,2,0,0,0,2
 2596785730,Human,crewAIInc/crewAI,3016,lucasgomide,ok,0,0,0,1,0,0,0,1
 2615049612,Human,crewAIInc/crewAI,3057,lucasgomide,ok,3,0,0,2,0,0,3,2
 2615575502,Human,crewAIInc/crewAI,3058,lucasgomide,ok,0,0,0,1,0,0,0,1
-2620691920,Human,crewAIInc/crewAI,3070,Astrodevil,ok,0,0,0,1,0,0,0,1
 2621480434,Human,crewAIInc/crewAI,3072,lucasgomide,ok,0,0,0,2,0,1,0,2

@@ -170,7 +170,7 @@ Fixes #1703
 The planning handler now includes agent knowledge sources in task summaries, allowing the planning agent to consider available knowledge when creating task execution plans. This ensures that agents can leverage their knowledge not just during execution but also during the planning phase.
 
 Link to Devin run: https://app.devin.ai/sessions/f1dd70552c504423996a695855e0e2c7
-",fix,10,title provides conventional commit label,117,43,19,28,5,0,212,212,5,2.3585,1.8726,184.0,7.0,3.0,17.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.8327777777777776,1.8327777777777776,15.071388888888889,closed,1.0,0.0,CONTRIBUTOR,2024-12-30T13:52:21Z,2024-12-31T04:56:38Z,crewAIInc/crewAI,1818,ok
+",fix,10,title provides conventional commit label,41,20,16,5,3,0,85,85,3,3.5294,1.9294,184.0,7.0,3.0,17.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.8327777777777776,1.8327777777777776,15.071388888888889,closed,1.0,0.0,CONTRIBUTOR,2024-12-30T13:52:21Z,2024-12-31T04:56:38Z,crewAIInc/crewAI,1818,ok
 AI agents,2763395657,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/1820,fix(manager_llm): handle coworker role name case/whitespace properly,"Fix: Include Agent Knowledge in Planning Process
 
 Fixes #1703
@@ -465,7 +465,7 @@ This PR adds a diff field to the output of both FixIssue and ModifyCode steps to
 The changes will be verified through the Vercel preview deployment.
 All CI checks have passed including core functionality, security features, and main features tests.
 
-Link to Devin run: https://app.devin.ai/sessions/b30f54a48e664572a26fe77a43afecce",feat,10,title provides conventional commit label,72,9,7,11,1,0,100,100,1,1.0,1.6,157.0,22.0,5.0,8.0,2.0,5.0,4.0,4.0,0.0,1.0,0.0,1.0,2.0,1.0,1.0,18.692777777777778,18.692777777777778,44.15777777777778,closed,1.0,0.0,CONTRIBUTOR,2025-01-13T09:21:57Z,2025-01-15T05:31:25Z,patched-codes/patchwork,1192,ok
+Link to Devin run: https://app.devin.ai/sessions/b30f54a48e664572a26fe77a43afecce",feat,10,title provides conventional commit label,70,9,8,11,1,0,99,99,1,1.0101,1.6263,157.0,22.0,5.0,8.0,2.0,5.0,4.0,4.0,0.0,1.0,0.0,1.0,2.0,1.0,1.0,18.692777777777778,18.692777777777778,44.15777777777778,closed,1.0,0.0,CONTRIBUTOR,2025-01-13T09:21:57Z,2025-01-15T05:31:25Z,patched-codes/patchwork,1192,ok
 AI agents,2784386339,goat-sdk/goat,Devin,https://github.com/goat-sdk/goat/pull/216,feat: Add Python implementation of OpenSea plugin,"# Python Implementation of OpenSea Plugin
 
 This PR adds a Python implementation of the OpenSea plugin, following the same structure and functionality as the existing TypeScript version.
@@ -667,7 +667,7 @@ class ChatFlow(Flow[ChatState]):
 - [ ] State restoration verification
 
 Link to Devin run: https://app.devin.ai/sessions/22958d99277c4b4087bb1fa591ca41f6
-",feat,9,"The PR introduces a new feature by adding a class-level @persist decorator and setting a default SQLiteFlowPersistence backend, enhancing flow persistence functionality.",1186,231,167,191,50,4,1829,1829,54,2.9524,1.7425,1064.0,141.0,10.0,21.0,4.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,3.680833333333333,3.680833333333333,51.44972222222222,closed,1.0,0.0,CONTRIBUTOR,2025-01-14T09:56:47Z,2025-01-16T13:23:46Z,crewAIInc/crewAI,1892,ok
+",feat,9,"The PR introduces a new feature by adding a class-level @persist decorator and setting a default SQLiteFlowPersistence backend, enhancing flow persistence functionality.",290,49,40,65,21,3,468,468,24,5.1282,1.9038,1064.0,141.0,10.0,21.0,4.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,3.680833333333333,3.680833333333333,51.44972222222222,closed,1.0,0.0,CONTRIBUTOR,2025-01-14T09:56:47Z,2025-01-16T13:23:46Z,crewAIInc/crewAI,1892,ok
 AI agents,2788022491,goat-sdk/goat,Devin,https://github.com/goat-sdk/goat/pull/223,feat: Add Superfluid plugin for Python SDK,"Add Python implementation of the Superfluid plugin, matching the TypeScript functionality.\n\nKey changes:\n- Implement all Superfluid tools (flow, getFlowrate, pool operations)\n- Add proper flowrate validation and address resolution\n- Fix transaction hash handling in Web3EVMWalletClient\n- Include comprehensive parameter validation\n- Add proper token approval mechanism\n\nLink to Devin run: https://app.devin.ai/sessions/c448726ea461436f964b137213ea3d57",feat,10,title provides conventional commit label,72,8,16,11,0,1,108,108,1,0.9259,1.7222,827.0,0.0,7.0,4.0,2.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,20.24944444444445,20.24944444444445,21.19083333333333,closed,1.0,0.0,CONTRIBUTOR,2025-01-14T18:36:42Z,2025-01-15T15:48:09Z,goat-sdk/goat,223,ok
 AI agents,2788029019,goat-sdk/goat,Devin,https://github.com/goat-sdk/goat/pull/224,feat: Add Python jsonrpc plugin,"# Python JSON-RPC Plugin
 
@@ -710,7 +710,7 @@ The test demonstrates successful:
 
 ## Link to Devin run
 https://app.devin.ai/sessions/4f4e85905bcf44f5aa750307b9427b30
-",feat,10,title provides conventional commit label,15,5,4,6,0,0,30,30,0,0.0,2.0333,148.0,0.0,5.0,2.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,20.12,20.12,20.121944444444445,closed,1.0,0.0,CONTRIBUTOR,2025-01-14T18:40:33Z,2025-01-15T14:47:52Z,goat-sdk/goat,224,ok
+",feat,10,title provides conventional commit label,17,8,7,9,0,1,42,42,1,2.381,2.2857,148.0,0.0,5.0,2.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,20.12,20.12,20.121944444444445,closed,1.0,0.0,CONTRIBUTOR,2025-01-14T18:40:33Z,2025-01-15T14:47:52Z,goat-sdk/goat,224,ok
 AI agents,2790183982,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/1899,Fix SQLite log handling issue causing ValueError: Logs cannot be None in tests,"## Description
 Fixed the SQLite log handling issue that was causing 'ValueError: Logs cannot be None' in tests by:
 - Adding proper error handling in SQLite storage operations
@@ -965,7 +965,7 @@ This PR fixes an issue where using multiple conditional tasks, or having two tas
 Link to Devin run: https://app.devin.ai/sessions/551953893ee74e29ad18839ccc39bb87
 
 
-Closes #1928",fix,10,title provides conventional commit label,153,55,17,35,14,0,274,274,14,5.1095,1.9124,253.0,8.0,2.0,9.0,4.0,4.0,2.0,2.0,0.0,1.0,0.0,0.0,2.0,0.0,1.0,26.816944444444445,26.816944444444445,457.9458333333333,closed,1.0,0.0,CONTRIBUTOR,2025-01-21T17:23:32Z,2025-02-09T19:20:17Z,crewAIInc/crewAI,1937,ok
+Closes #1928",fix,10,title provides conventional commit label,86,22,0,21,4,0,133,133,4,3.0075,1.7594,253.0,8.0,2.0,9.0,4.0,4.0,2.0,2.0,0.0,1.0,0.0,0.0,2.0,0.0,1.0,26.816944444444445,26.816944444444445,457.9458333333333,closed,1.0,0.0,CONTRIBUTOR,2025-01-21T17:23:32Z,2025-02-09T19:20:17Z,crewAIInc/crewAI,1937,ok
 AI agents,2805690384,bentoml/BentoML,Devin,https://github.com/bentoml/BentoML/pull/5194,feat: add @bentoml.on_startup decorator,"feat: add @bentoml.on_startup decorator
 
 Added @bentoml.on_startup decorator to mirror existing lifecycle hook functionality. The main difference from ""@bentoml.on_shutdown"" is that these hooks run on service startup rather than shutdown.
@@ -1080,7 +1080,7 @@ Changes:
 
 Linear: OX-1234
 
-Link to Devin run: https://app.devin.ai/sessions/283a01f7dda243599347829bd174236a",feat,9,"The changes introduce a new feature that allows Slack workflow messages to be processed when a specific setting is enabled, which is an enhancement rather than a bug fix or other type of change.",9,0,1,0,0,0,10,10,0,0.0,1.2,10.0,4.0,1.0,4.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.8583333333333332,1.8583333333333332,2.831111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-01-28T22:39:31Z,2025-01-29T01:29:23Z,onyx-dot-app/onyx,3819,ok
+Link to Devin run: https://app.devin.ai/sessions/283a01f7dda243599347829bd174236a",feat,9,"The changes introduce a new feature that allows Slack workflow messages to be processed when a specific setting is enabled, which is an enhancement rather than a bug fix or other type of change.",9,0,1,0,0,0,10,10,0,0.0,1.2,10.0,4.0,1.0,4.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.8583333333333327,1.8583333333333327,2.831111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-01-28T22:39:31Z,2025-01-29T01:29:23Z,onyx-dot-app/onyx,3819,ok
 AI agents,2818558986,marimo-team/marimo,Devin,https://github.com/marimo-team/marimo/pull/3618,fix: handle numeric formatting in table widgets,"Fix numeric formatting in table widgets
 
 This PR fixes two issues with number formatting in marimo table widgets:
@@ -1186,7 +1186,7 @@ https://app.devin.ai/sessions/7b158d1965bd493db84ea04078974ce6
 - [x] All Python versions updated to 3.11 in pyproject.toml files
 - [x] All airbyte_ci configurations updated to use Python 3.11
 - [ ] Specific version constraints preserved where needed
-- [ ] distutils.util.strtobool replaced with custom implementation",feat,10,title provides conventional commit label,60,13,3,5,4,0,85,85,4,4.7059,1.5882,2387.0,1405.0,46.0,25.0,7.0,4.0,3.0,3.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,1.2719444444444443,1.2719444444444443,21.805,closed,1.0,0.0,CONTRIBUTOR,2025-01-30T20:07:06Z,2025-01-31T17:55:24Z,airbytehq/airbyte,52664,ok
+- [ ] distutils.util.strtobool replaced with custom implementation",feat,10,title provides conventional commit label,7,1,0,0,0,0,8,8,0,0.0,1.125,2387.0,1405.0,46.0,25.0,7.0,4.0,3.0,3.0,0.0,1.0,0.0,1.0,0.0,2.0,0.0,1.2719444444444443,1.2719444444444443,21.805,closed,1.0,0.0,CONTRIBUTOR,2025-01-30T20:07:06Z,2025-01-31T17:55:24Z,airbytehq/airbyte,52664,ok
 AI agents,2827635328,marimo-team/marimo,Devin,https://github.com/marimo-team/marimo/pull/3671,fix: handle TOML parsing errors in config reader,"Fix TOML parsing errors in config reader
 
 This PR fixes an issue where invalid TOML files would cause unhandled exceptions. Now, when a TOML file has parsing errors, the code will gracefully fall back to the default configuration.
@@ -1332,7 +1332,7 @@ cd python/src/wallets/crossmint/tests
 ```
 
 Link to Devin run: https://app.devin.ai/sessions/08ab011495da490aa880dc2289280768
-",test,10,title provides conventional commit label,310,60,34,66,11,1,482,482,12,2.4896,1.778,3387.0,164.0,16.0,42.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,22.066111111111116,closed,1.0,0.0,CONTRIBUTOR,2025-02-10T11:50:22Z,2025-02-11T09:54:20Z,goat-sdk/goat,325,ok
+",test,10,title provides conventional commit label,310,60,34,66,11,1,482,482,12,2.4896,1.778,3387.0,164.0,16.0,42.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,22.06611111111112,closed,1.0,0.0,CONTRIBUTOR,2025-02-10T11:50:22Z,2025-02-11T09:54:20Z,goat-sdk/goat,325,ok
 AI agents,2842228579,goat-sdk/goat,Devin,https://github.com/goat-sdk/goat/pull/326,test: Add comprehensive test coverage for Crossmint API implementation,"# Add comprehensive test coverage for Crossmint API implementation
 
 This PR adds comprehensive test coverage for both TypeScript and Python implementations of the Crossmint API integration, ensuring complete parity between both implementations.
@@ -1530,7 +1530,7 @@ This PR migrates the project from pipenv to the uv package manager.
 
 Link to Devin run: https://app.devin.ai/sessions/f7646e35f78740cb9f5b8d1d21e7c670
 Requested by: rahul@composio.dev
-",feat,10,title provides conventional commit label,156,19,22,12,0,1,210,210,1,0.4762,1.4952,716.0,185.0,26.0,23.0,5.0,13.0,14.0,4.0,10.0,2.0,1.0,1.0,0.0,3.0,0.0,0.0825,0.0825,229.9886111111111,closed,1.0,0.0,CONTRIBUTOR,2025-02-27T13:05:39Z,2025-03-09T03:04:58Z,ComposioHQ/composio,1378,ok
+",feat,10,title provides conventional commit label,72,15,9,9,0,0,105,105,0,0.0,1.5714,716.0,185.0,26.0,23.0,5.0,13.0,14.0,4.0,10.0,2.0,1.0,1.0,0.0,3.0,0.0,0.0825,0.0825,229.9886111111111,closed,1.0,0.0,CONTRIBUTOR,2025-02-27T13:05:39Z,2025-03-09T03:04:58Z,ComposioHQ/composio,1378,ok
 AI agents,2887628012,codegen-sh/codegen,Devin,https://github.com/codegen-sh/codegen/pull/701,Extract LangSmith URL generation and run finding logic into utility functions,"Extracted the LangSmith URL generation and run finding logic from the CodeAgent class into utility functions in a new file called get_langsmith_url.py. This improves code organization, reduces duplication, and makes the functionality reusable across the codebase.
 
 Link to Devin run: https://app.devin.ai/sessions/6f8a32358770466aaf2838b3896c1078",refactor,9,"The change involves moving existing logic into utility functions to improve code organization and reusability without adding new features or fixing bugs, which is a typical refactor.",43,5,5,0,0,0,53,53,0,0.0,1.283,107.0,75.0,3.0,2.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0683333333333333,0.0683333333333333,0.0705555555555555,closed,1.0,0.0,CONTRIBUTOR,2025-02-28T16:46:38Z,2025-02-28T16:50:52Z,codegen-sh/codegen,701,ok
@@ -1566,7 +1566,7 @@ This PR restores the `migrate-to-inline-schemas` command that was deleted in PR 
 https://app.devin.ai/sessions/42b07ce68cc743f194d5cab3a60227f4
 
 Requested by: natikgadzhi
-",feat,10,title provides conventional commit label,209,43,23,15,1,2,293,293,3,1.0239,1.5051,627.0,3.0,7.0,1.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.1155555555555555,0.1155555555555555,5.456111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-03-01T18:42:34Z,2025-03-02T00:09:56Z,airbytehq/airbyte,55005,ok
+",feat,10,title provides conventional commit label,211,43,23,15,1,2,295,295,3,1.0169,1.5017,627.0,3.0,7.0,1.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.1155555555555555,0.1155555555555555,5.456111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-03-01T18:42:34Z,2025-03-02T00:09:56Z,airbytehq/airbyte,55005,ok
 AI agents,2889242157,vlm-run/vlmrun-hub,Devin,https://github.com/vlm-run/vlmrun-hub/pull/121,feat(schema): add `logistics.bill-of-lading` schema,"# Add logistics.bill-of-lading schema
 
 This PR adds a new schema for the Bill of Lading document type to the vlmrun-hub repository.
@@ -1983,7 +1983,7 @@ This PR ensures that kwargs passed to `agentops.init()` are correctly passed dow
 - Add tests for custom exporter configuration
 
 Link to Devin run: https://app.devin.ai/sessions/1e7a27e69cfd4308a9c6a9f67602651e
-",fix,9,"The PR fixes an issue with kwargs passing and initialization in the AgentOps client, ensuring correct behavior and adding tests for the fix.",101,20,13,15,2,0,151,151,2,1.3245,1.6556,457.0,107.0,15.0,20.0,2.0,7.0,7.0,0.0,7.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.2797222222222222,25.445833333333333,closed,1.0,0.0,CONTRIBUTOR,2025-03-05T00:12:16Z,2025-03-06T01:39:01Z,AgentOps-AI/agentops,729,ok
+",fix,9,"The PR fixes an issue with kwargs passing and initialization in the AgentOps client, ensuring correct behavior and adding tests for the fix.",101,21,13,15,2,0,152,152,2,1.3158,1.6579,457.0,107.0,15.0,20.0,2.0,7.0,7.0,0.0,7.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.2797222222222222,25.445833333333333,closed,1.0,0.0,CONTRIBUTOR,2025-03-05T00:12:16Z,2025-03-06T01:39:01Z,AgentOps-AI/agentops,729,ok
 AI agents,2895849861,airbytehq/airbyte,Devin,https://github.com/airbytehq/airbyte/pull/55202,chore(source-s3): update base image to 4.0.0 and use caret dependencies (do not merge),"Update source-s3 to:
 - Use new base image (4.0.0)
 - Replace dependency declarations from specific versions to use carets
@@ -2173,7 +2173,7 @@ All examples have been tested and run successfully with `uv run main.py`.
 
 Link to Devin run: https://app.devin.ai/sessions/2910c759416a4396b08c0a5703523875
 Requested by: Dan
-",feat,9,"The PR introduces new examples demonstrating different codebase architectures, which adds new content and features to the repository.",1682,198,134,245,180,3,2442,2442,183,7.4939,1.7928,5131.0,0.0,49.0,6.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.6947222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-03-17T14:42:25Z,2025-03-17T16:24:06Z,disler/single-file-agents,8,ok
+",feat,9,"The PR introduces new examples demonstrating different codebase architectures, which adds new content and features to the repository.",1905,245,156,266,210,3,2785,2785,213,7.6481,1.7935,5131.0,0.0,49.0,6.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.6947222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-03-17T14:42:25Z,2025-03-17T16:24:06Z,disler/single-file-agents,8,ok
 AI agents,2926270506,disler/single-file-agents,Devin,https://github.com/disler/single-file-agents/pull/9,Implement file editor agent in four codebase architectures,"# Implement file editor agent in four codebase architectures
 
 This PR implements the file editor agent (sfa_file_editor_sonny37_v1.py) in four different codebase architectures:
@@ -2207,7 +2207,7 @@ uv run example-agent-codebase-arch/<architecture>/main.py --prompt ""Show me the
 
 Link to Devin run: https://app.devin.ai/sessions/3f01c39da742406f987d04faf14380ec
 Requested by: user
-",feat,9,"The PR introduces a new feature by implementing a file editor agent across four different codebase architectures, adding new functionality rather than fixing bugs or making other types of changes.",1612,244,197,79,135,0,2267,2267,135,5.955,1.6242,4642.0,1.0,77.0,11.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,4.684166666666667,closed,1.0,0.0,CONTRIBUTOR,2025-03-17T20:21:10Z,2025-03-18T01:02:13Z,disler/single-file-agents,9,ok
+",feat,9,"The PR introduces a new feature by implementing a file editor agent across four different codebase architectures, adding new functionality rather than fixing bugs or making other types of changes.",1762,279,211,79,138,0,2469,2469,138,5.5893,1.6035,4642.0,1.0,77.0,11.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,4.684166666666667,closed,1.0,0.0,CONTRIBUTOR,2025-03-17T20:21:10Z,2025-03-18T01:02:13Z,disler/single-file-agents,9,ok
 AI agents,2939503388,get-convex/convex-helpers,Devin,https://github.com/get-convex/convex-helpers/pull/510,Add GitHub workflow to check for CLA text in PR descriptions,"This PR adds a GitHub workflow that verifies pull request descriptions include the required Contributor License Agreement (CLA) text.
 
 By submitting this pull request, I confirm that you can use, modify, copy, and redistribute this contribution, under the terms of your choice.
@@ -2328,7 +2328,7 @@ AI agents,2971908072,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/di
 Fixes #230
 
 Link to Devin run: https://app.devin.ai/sessions/dc95c7c8dabb4dd7b02bdf6a4544c1fc
-Requested by: annyotaka@gmail.com",feat,9,"The PR introduces a new feature for deleting reports, including new status, endpoint, and UI changes, which aligns with the 'feat' type.",37,6,8,8,2,0,61,61,2,3.2787,1.8852,57.0,7.0,4.0,5.0,6.0,0.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,93.87583333333332,93.87583333333332,97.78361111111111,closed,1.0,0.0,CONTRIBUTOR,2025-04-04T10:08:38Z,2025-04-08T11:55:39Z,digitaldemocracy2030/kouchou-ai,232,ok
+Requested by: annyotaka@gmail.com",feat,9,"The PR introduces a new feature for deleting reports, including new status, endpoint, and UI changes, which aligns with the 'feat' type.",17,5,6,3,1,0,32,32,1,3.125,1.9375,57.0,7.0,4.0,5.0,6.0,0.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,0.0,0.0,93.87583333333332,93.87583333333332,97.78361111111111,closed,1.0,0.0,CONTRIBUTOR,2025-04-04T10:08:38Z,2025-04-08T11:55:39Z,digitaldemocracy2030/kouchou-ai,232,ok
 AI agents,2971926630,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/233,[FEATURE]レポートの公開/非公開状態の設定 (#229),"# [FEATURE]レポートの公開/非公開状態の設定 (#229)
 
 このPRでは、広聴AIのレポートの公開/非公開状態を切り替える機能を実装しています。管理者はレポートごとにトグルスイッチで公開/非公開を設定でき、公開中のレポートのみがクライアント側で表示されます。
@@ -2341,46 +2341,8 @@ AI agents,2971926630,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/di
 
 Link to Devin run: https://app.devin.ai/sessions/5934f18249994900886ec0abe2360456
 Requested by: annyotaka
-",feat,9,"The PR introduces a new feature that allows toggling the public/private state of reports, including schema changes, API updates, and UI additions, which clearly fits the 'feat' category.",17,2,5,3,1,0,28,28,1,3.5714,1.8929,79.0,10.0,7.0,12.0,5.0,5.0,7.0,7.0,0.0,2.0,0.0,2.0,2.0,3.0,1.0,37.93527777777778,37.93527777777778,69.17111111111112,closed,1.0,0.0,CONTRIBUTOR,2025-04-04T10:14:57Z,2025-04-07T07:25:13Z,digitaldemocracy2030/kouchou-ai,233,ok
-AI agents,2976318527,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/244,[FEATURE] おすすめクラスタ数設定機能の実装 (#241),"Issue #241 の実装を行いました。
-
-- 案0: README.mdとhow_to_use/README.mdに推奨クラスタ数の情報を追加
-- 案1: CSVアップロード後に推奨クラスタ数設定UIを追加
-- 計算方法: コメント数の立方根(∛n)を基準に計算
-
-Google Spreadsheetの部分は無視しています。
-
-テスト手順:
-1. CSVファイルをアップロード
-2. 推奨クラスタ数が表示されることを確認
-3. 「この設定にする」ボタンで設定が適用されることを確認
-
-Link to Devin run: https://app.devin.ai/sessions/4edce5fbbb4241d3b2c60118e98d4b8d
-Requested by: annyotaka@gmail.com",feat,9,"The PR introduces a new feature for setting recommended cluster numbers with UI and calculation logic, as described in the title and body.",461,94,64,46,36,3,704,704,39,5.5398,1.7372,82.0,1.0,3.0,4.0,6.0,1.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,0.045,0.045,42.51,closed,1.0,0.0,CONTRIBUTOR,2025-04-07T10:00:36Z,2025-04-09T04:31:12Z,digitaldemocracy2030/kouchou-ai,244,ok
-AI agents,2976319344,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/245,[FEATURE] レポート一覧に作成日時を追加する,Issue #218 の対応: レポート一覧に作成日時を追加しました。\n\nLink to Devin run: https://app.devin.ai/sessions/b13628010677450a813d14ed748a51ca\nRequested by: annyotaka@gmail.com,feat,9,"The title and body clearly indicate that a new feature was added, specifically adding creation date to the report list, which is a new functionality.",473,96,70,49,37,3,728,728,40,5.4945,1.75,9.0,0.0,4.0,5.0,4.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,29.07638888888889,29.07638888888889,39.15,closed,1.0,0.0,CONTRIBUTOR,2025-04-07T10:00:47Z,2025-04-09T01:09:47Z,digitaldemocracy2030/kouchou-ai,245,ok
-AI agents,2976332198,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/247,[FEATURE] client/client-adminのテストをGitHub Actionsで実行する,"Issue #219 を解決します。
-
-# 変更内容
-- clientとclient-adminにJestのセットアップを追加
-- ユーティリティ関数（getApiBaseUrl, getClusterNum）のテストを実装
-- GitHub Actionsで自動テスト実行するためのワークフローを追加
-
-# 検証方法
-- ローカルでテストを実行し、パスすることを確認
-- PR作成後、GitHub Actionsが正常に実行されることを確認
-
-Close #219
-
-Link to Devin run: https://app.devin.ai/sessions/e3d45689784648ae809350c5a927f2ee
-Requested by: annyotaka@gmail.com",feat,9,"The PR introduces new test setups and adds automated test execution workflows, which are new features enhancing the project capabilities.",328,66,52,33,33,2,514,514,35,6.8093,1.7996,13142.0,1633.0,13.0,5.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,25.91027777777778,25.91027777777778,25.912777777777777,closed,1.0,0.0,CONTRIBUTOR,2025-04-07T10:05:13Z,2025-04-08T11:59:59Z,digitaldemocracy2030/kouchou-ai,247,ok
-AI agents,2978436805,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/251,[FEATURE] GoogleAnalytics 対応 #54,"GoogleAnalyticsを実装しました。
-
-環境変数`NEXT_PUBLIC_GA_MEASUREMENT_ID`を追加し、client と client-admin の両方のアプリケーションでGoogleAnalytics 4のトラッキングコードを実装しました。
-
-開発環境では自動的にGAが無効になるよう実装しています。
-
-Link to Devin run: https://app.devin.ai/sessions/bf89d99cdeb94897a6a5085d8e34826e
-Requested by: annyotaka@gmail.com",feat,9,"The PR introduces a new feature by implementing Google Analytics tracking in the application, including environment variable setup and conditional enabling in development environment.",473,95,69,49,37,3,726,726,40,5.5096,1.7479,1012.0,0.0,12.0,9.0,9.0,1.0,2.0,2.0,0.0,2.0,0.0,1.0,1.0,0.0,1.0,0.3133333333333333,0.3133333333333333,29.39388888888889,closed,1.0,0.0,CONTRIBUTOR,2025-04-08T02:32:53Z,2025-04-09T07:56:31Z,digitaldemocracy2030/kouchou-ai,251,ok
+",feat,9,"The PR introduces a new feature that allows toggling the public/private state of reports, including schema changes, API updates, and UI additions, which clearly fits the 'feat' category.",23,2,3,4,1,0,33,33,1,3.0303,1.7273,79.0,10.0,7.0,12.0,5.0,5.0,7.0,7.0,0.0,2.0,0.0,2.0,2.0,3.0,1.0,37.93527777777778,37.93527777777778,69.17111111111112,closed,1.0,0.0,CONTRIBUTOR,2025-04-04T10:14:57Z,2025-04-07T07:25:13Z,digitaldemocracy2030/kouchou-ai,233,ok
+AI agents,2976319344,digitaldemocracy2030/kouchou-ai,Devin,https://github.com/digitaldemocracy2030/kouchou-ai/pull/245,[FEATURE] レポート一覧に作成日時を追加する,Issue #218 の対応: レポート一覧に作成日時を追加しました。\n\nLink to Devin run: https://app.devin.ai/sessions/b13628010677450a813d14ed748a51ca\nRequested by: annyotaka@gmail.com,feat,9,"The title and body clearly indicate that a new feature was added, specifically adding creation date to the report list, which is a new functionality.",2,1,1,0,0,0,4,4,0,0.0,1.75,9.0,0.0,4.0,5.0,4.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,29.07638888888889,29.07638888888889,39.15,closed,1.0,0.0,CONTRIBUTOR,2025-04-07T10:00:47Z,2025-04-09T01:09:47Z,digitaldemocracy2030/kouchou-ai,245,ok
 AI agents,2978840535,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/2537,Fix #2536: Add CREWAI_DISABLE_TELEMETRY environment variable,"# Fix for Issue #2536: Add CREWAI_DISABLE_TELEMETRY environment variable
 
 ## Description
@@ -2398,7 +2360,7 @@ This PR adds a new environment variable `CREWAI_DISABLE_TELEMETRY` that allows u
 Fixes #2536
 
 Link to Devin run: https://app.devin.ai/sessions/31d4592c139c4fe5a0584ccd0d48a6ed
-Requested by: Joe Moura (joao@crewai.com)",fix,10,title provides conventional commit label,20,17,11,6,2,0,56,56,2,3.5714,2.1607,51.0,5.0,4.0,5.0,7.0,3.0,3.0,3.0,0.0,2.0,0.0,2.0,0.0,1.0,0.0,24.2825,24.2825,34.07111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-04-08T07:16:18Z,2025-04-09T17:20:34Z,crewAIInc/crewAI,2537,ok
+Requested by: Joe Moura (joao@crewai.com)",fix,10,title provides conventional commit label,11,8,5,4,0,0,28,28,0,0.0,2.0714,51.0,5.0,4.0,5.0,7.0,3.0,3.0,3.0,0.0,2.0,0.0,2.0,0.0,1.0,0.0,24.2825,24.2825,34.07111111111111,closed,1.0,0.0,CONTRIBUTOR,2025-04-08T07:16:18Z,2025-04-09T17:20:34Z,crewAIInc/crewAI,2537,ok
 AI agents,2980213795,GlareDB/glaredb,Devin,https://github.com/GlareDB/glaredb/pull/3608,docs: ensure all documentation headers follow Title Case,"This PR updates all headers in the documentation to follow Title Case rules for consistent styling across the documentation.
 
 Link to Devin run: https://app.devin.ai/sessions/48504c4b54004d7594e5e20684143a62
@@ -2425,7 +2387,7 @@ AI agents,2982438384,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/
 - Added tests to verify the changes
 
 Link to Devin run: https://app.devin.ai/sessions/47cc5ca0b5aa4726a75c7e9271d24831
-Requested by: Joe Moura (joao@crewai.com)",fix,10,title provides conventional commit label,141,47,9,25,9,0,231,231,9,3.8961,1.7619,38.0,3.0,3.0,16.0,8.0,3.0,7.0,7.0,0.0,1.0,0.0,3.0,0.0,4.0,0.0,9.68361111111111,9.68361111111111,129.53694444444446,closed,1.0,0.0,CONTRIBUTOR,2025-04-09T10:55:52Z,2025-04-14T20:28:05Z,crewAIInc/crewAI,2552,ok
+Requested by: Joe Moura (joao@crewai.com)",fix,10,title provides conventional commit label,16,6,1,1,1,0,25,25,1,4.0,1.6,38.0,3.0,3.0,16.0,8.0,3.0,7.0,7.0,0.0,1.0,0.0,3.0,0.0,4.0,0.0,9.68361111111111,9.68361111111111,129.53694444444446,closed,1.0,0.0,CONTRIBUTOR,2025-04-09T10:55:52Z,2025-04-14T20:28:05Z,crewAIInc/crewAI,2552,ok
 AI agents,2984176797,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/2562,Add result_as_answer parameter to @tool decorator,"Fixes #2561
 
 This PR adds the `result_as_answer` parameter to the `@tool` decorator, allowing users to specify whether the tool's result should be used as the final agent answer directly from the decorator.
@@ -2440,19 +2402,6 @@ def my_tool(param: str) -> str:
 
 Link to Devin run: https://app.devin.ai/sessions/423917f8cdca49a09c1795b5a60bd254
 Joe Moura (joao@crewai.com)",feat,9,"The PR introduces a new parameter to an existing decorator, which adds new functionality to the codebase, thus it is a new feature.",8,1,0,2,2,0,13,13,2,15.3846,2.1538,28.0,1.0,2.0,3.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,12.354166666666666,12.354166666666666,12.355833333333331,closed,1.0,0.0,CONTRIBUTOR,2025-04-10T00:40:05Z,2025-04-10T13:01:26Z,crewAIInc/crewAI,2562,ok
-AI agents,2986070957,neondatabase/neon,Devin,https://github.com/neondatabase/neon/pull/11526,Add --dev CLI flag to pageserver and safekeeper binaries,"# Add --dev CLI flag to pageserver and safekeeper binaries
-
-This PR adds the `--dev` CLI flag to both the pageserver and safekeeper binaries without implementing any functionality yet. This is a precursor to PR #11517, which will implement the full functionality to require authentication by default unless the `--dev` flag is specified.
-
-## Changes
-- Add `dev_mode` config field to pageserver binary
-- Add `--dev` CLI flag to safekeeper binary
-
-This PR is needed for forward compatibility tests to work properly, when we try to merge #11517
-
-Link to Devin run: https://app.devin.ai/sessions/ad8231b4e2be430398072b6fc4e85d46
-Requested by: John Spray (john@neon.tech)
-",feat,9,"The PR introduces a new CLI flag '--dev' to the pageserver and safekeeper binaries, which is a new feature addition without bug fixes or other changes.",443,81,62,105,12,9,712,712,21,2.9494,1.861,14.0,0.0,3.0,5.0,4.0,3.0,4.0,4.0,0.0,2.0,0.0,1.0,0.0,3.0,0.0,18.157777777777778,18.157777777777778,331.41333333333336,closed,1.0,0.0,CONTRIBUTOR,2025-04-10T15:27:46Z,2025-04-24T10:52:34Z,neondatabase/neon,11526,ok
 AI agents,2989761342,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/2588,Fix: Use mem0_local_config instead of config in Memory.from_config,"# Fix: Use mem0_local_config instead of config in Memory.from_config
 
 Fixes #2587
@@ -2478,7 +2427,7 @@ Fixes #2593
 Requested by: Joe Moura (joao@crewai.com)
 Link to Devin run: https://app.devin.ai/sessions/0ab0c78a8eb6466893ff33e04751c4b1
 
-**Note:** While the specific test added for this issue passes locally, the full test suite fails due to apparent environment issues (API connection errors, VCR cassette problems). The CI run on this PR should provide definitive results.",fix,10,title provides conventional commit label,58,6,3,16,0,2,85,85,2,2.3529,1.8235,64.0,3.0,2.0,6.0,3.0,4.0,3.0,3.0,0.0,2.0,0.0,1.0,0.0,2.0,0.0,60.115,60.115,64.3963888888889,closed,1.0,0.0,CONTRIBUTOR,2025-04-12T02:35:25Z,2025-04-14T18:59:12Z,crewAIInc/crewAI,2594,ok
+**Note:** While the specific test added for this issue passes locally, the full test suite fails due to apparent environment issues (API connection errors, VCR cassette problems). The CI run on this PR should provide definitive results.",fix,10,title provides conventional commit label,57,6,3,16,0,2,84,84,2,2.381,1.8333,64.0,3.0,2.0,6.0,3.0,4.0,3.0,3.0,0.0,2.0,0.0,1.0,0.0,2.0,0.0,60.115,60.115,64.3963888888889,closed,1.0,0.0,CONTRIBUTOR,2025-04-12T02:35:25Z,2025-04-14T18:59:12Z,crewAIInc/crewAI,2594,ok
 AI agents,2990679795,mendableai/firecrawl,Devin,https://github.com/mendableai/firecrawl/pull/1448,Add change tracking support to Python and JS SDKs,"Implements the change tracking interface on the Python and JS SDKs based on PR #1445.
 
 Features added:
@@ -2546,7 +2495,7 @@ This PR replaces PR #6 from VertexStudio with conflicts resolved.
 
 Link to Devin run: https://app.devin.ai/sessions/3fd53962ba244e84b211b2c4965182d5
 Requested by: tumf (y.takahara@gmail.com)
-",feat,9,"The PR introduces Docker support, which is a new feature for the project, including a Dockerfile and usage instructions, thus adding new functionality rather than fixing a bug or making other changes.",2,1,9,0,1,0,13,13,1,7.6923,2.7692,94.0,14.0,12.0,3.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,0.0466666666666666,closed,1.0,0.0,CONTRIBUTOR,2025-04-19T07:15:22Z,2025-04-19T07:18:10Z,tumf/mcp-text-editor,8,ok
+",feat,9,"The PR introduces Docker support, which is a new feature for the project, including a Dockerfile and usage instructions, thus adding new functionality rather than fixing a bug or making other changes.",1,0,0,0,0,0,1,1,0,0.0,1.0,94.0,14.0,12.0,3.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,0.0466666666666666,closed,1.0,0.0,CONTRIBUTOR,2025-04-19T07:15:22Z,2025-04-19T07:18:10Z,tumf/mcp-text-editor,8,ok
 AI agents,3009041550,vladfi1/slippi-ai,Devin,https://github.com/vladfi1/slippi-ai/pull/36,Add test to verify replay parsing is the same in libmelee and peppi,"# Add test to verify replay parsing is the same in libmelee and peppi
 
 This PR adds a test that verifies replay parsing is the same using libmelee and peppi. The test:
@@ -2575,7 +2524,7 @@ The test verifies that the dataset creation pipeline works correctly and can pro
 
 Link to Devin run: https://app.devin.ai/sessions/d9330dc95d38470790d24d0898d1fed0
 Requested by: Vlad Firoiu (vladfi2@gmail.com)
-",test,9,"The PR adds a new test for the dataset creation functions, which is clearly related to testing and does not introduce new features or fix bugs.",53,21,7,5,4,1,91,91,5,5.4945,1.7802,122.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,3.7816666666666663,closed,1.0,0.0,CONTRIBUTOR,2025-04-21T23:24:22Z,2025-04-22T03:11:16Z,vladfi1/slippi-ai,38,ok
+",test,9,"The PR adds a new test for the dataset creation functions, which is clearly related to testing and does not introduce new features or fix bugs.",53,21,7,5,4,1,91,91,5,5.4945,1.7802,122.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,3.7816666666666654,closed,1.0,0.0,CONTRIBUTOR,2025-04-21T23:24:22Z,2025-04-22T03:11:16Z,vladfi1/slippi-ai,38,ok
 AI agents,3016994685,neondatabase/neon,Devin,https://github.com/neondatabase/neon/pull/11698,Remove SAFEKEEPER_AUTH_TOKEN env var parsing from safekeeper,"# Remove SAFEKEEPER_AUTH_TOKEN env var parsing from safekeeper
 
 This PR is a follow-up to #11443 that removes the parsing of the `SAFEKEEPER_AUTH_TOKEN` environment variable from the safekeeper codebase while keeping the `auth_token_path` CLI flag functionality. 
@@ -2630,7 +2579,7 @@ This PR adds documentation for the undocumented `rx.dynamic_icon` feature to the
 
 Link to Devin run: https://app.devin.ai/sessions/c7b13ad9909246e59a5b8f9aebdcc96a
 Requested by: Alek Petuskey (alek@reflex.dev)
-",docs,10,"The PR adds new documentation for an existing feature without changing code functionality, which fits the 'docs' category.",10,3,0,0,0,0,13,13,0,0.0,1.2308,34.0,7.0,1.0,4.0,1.0,0.0,2.0,2.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,18.227777777777774,18.227777777777774,18.656944444444445,closed,1.0,0.0,CONTRIBUTOR,2025-04-29T05:34:35Z,2025-04-30T00:14:00Z,reflex-dev/reflex-web,1318,ok
+",docs,10,"The PR adds new documentation for an existing feature without changing code functionality, which fits the 'docs' category.",10,3,0,0,0,0,13,13,0,0.0,1.2308,34.0,7.0,1.0,4.0,1.0,0.0,2.0,2.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,18.22777777777777,18.22777777777777,18.656944444444445,closed,1.0,0.0,CONTRIBUTOR,2025-04-29T05:34:35Z,2025-04-30T00:14:00Z,reflex-dev/reflex-web,1318,ok
 AI agents,3029823831,reflex-dev/reflex-web,Devin,https://github.com/reflex-dev/reflex-web/pull/1326,Add environment variables documentation to API reference,"# Add environment variables documentation to API reference
 
 This PR adds a new page to the API reference section documenting all environment variables in Reflex. The documentation is auto-generated from the EnvironmentVariables class in the reflex codebase.
@@ -3012,7 +2961,7 @@ Requested by: 種延真之 (mtane0412@gmail.com)
 - **ドキュメント**
   - pytestのasyncioマーカー定義を追加しました。
 
-<!-- end of auto-generated comment: release notes by coderabbit.ai -->",feat,9,"The PR introduces a new feature that tracks and displays token usage in various parts of the application, including API responses and UI components. It also adds new fields and functionality related to token usage, which clearly indicates a feature addition rather than a fix or other change type.",353,19,24,86,6,0,488,488,6,1.2295,1.7152,598.0,65.0,20.0,21.0,8.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,38.65083333333333,38.65083333333333,38.6525,closed,1.0,0.0,CONTRIBUTOR,2025-05-18T14:30:09Z,2025-05-20T05:09:18Z,digitaldemocracy2030/kouchou-ai,536,ok
+<!-- end of auto-generated comment: release notes by coderabbit.ai -->",feat,9,"The PR introduces a new feature that tracks and displays token usage in various parts of the application, including API responses and UI components. It also adds new fields and functionality related to token usage, which clearly indicates a feature addition rather than a fix or other change type.",268,15,18,77,6,0,384,384,6,1.5625,1.7969,598.0,65.0,20.0,21.0,8.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,38.65083333333333,38.65083333333333,38.6525,closed,1.0,0.0,CONTRIBUTOR,2025-05-18T14:30:09Z,2025-05-20T05:09:18Z,digitaldemocracy2030/kouchou-ai,536,ok
 AI agents,3075723453,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/2865,Add markdown attribute to Task class,"# Add markdown attribute to Task class
 
 This PR adds a new boolean attribute to the Task class called `markdown` that, when set to True, will automatically inject instructions into the task prompt to return the final answer formatted in Markdown.
@@ -3320,7 +3269,7 @@ This PR adds embeddings model management functionality to LangBot, which will be
 
 Link to Devin run: https://app.devin.ai/sessions/8f4d249bd412475e88479b6483e27275
 Requested by: Junyan Qin (Chin)
-",feat,10,title provides conventional commit label,99,23,12,26,3,1,164,164,4,2.439,1.8659,1371.0,65.0,44.0,13.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,14.351944444444444,closed,1.0,0.0,CONTRIBUTOR,2025-05-20T14:21:32Z,2025-05-21T04:42:39Z,langbot-app/LangBot,1461,ok
+",feat,10,title provides conventional commit label,112,23,14,26,3,1,179,179,4,2.2346,1.8156,1371.0,65.0,44.0,13.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,14.351944444444444,closed,1.0,0.0,CONTRIBUTOR,2025-05-20T14:21:32Z,2025-05-21T04:42:39Z,langbot-app/LangBot,1461,ok
 AI agents,3077668165,microsoft/magentic-ui,Copilot,https://github.com/microsoft/magentic-ui/pull/59,Consolidate package version into a single source of truth,"This PR consolidates the package version information into a single source of truth to avoid inconsistencies and reduce maintenance overhead.
 
 Previously, version information was stored in multiple locations:
@@ -3347,7 +3296,7 @@ Fixes #39.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR fixes inconsistencies in version information across multiple files by consolidating it into a single source of truth, which resolves a bug related to version mismatches.",10,4,3,1,0,0,18,18,0,0.0,1.7222,14.0,13.0,7.0,5.0,5.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,4.179722222222222,4.179722222222222,4.19,closed,1.0,0.0,CONTRIBUTOR,2025-05-20T16:55:37Z,2025-05-20T21:07:01Z,microsoft/magentic-ui,59,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR fixes inconsistencies in version information across multiple files by consolidating it into a single source of truth, which resolves a bug related to version mismatches.",10,5,3,1,0,0,19,19,0,0.0,1.7368,14.0,13.0,7.0,5.0,5.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,4.179722222222222,4.179722222222222,4.19,closed,1.0,0.0,CONTRIBUTOR,2025-05-20T16:55:37Z,2025-05-20T21:07:01Z,microsoft/magentic-ui,59,ok
 AI agents,3077768704,microsoft/magentic-ui,Copilot,https://github.com/microsoft/magentic-ui/pull/62,Fix tiktoken warning issue,"Previously, the code in `WebpageTextUtilsPlaywright` was using `tiktoken.encoding_for_model(""gpt-4o"")` to tokenize text content. This approach causes tiktoken to issue warnings when the specified model isn't found and it falls back to a default model, making the logging too verbose.
 
 This PR replaces the model-based encoding approach with a direct encoding approach using `tiktoken.get_encoding(""cl100k_base"")`, which:
@@ -3510,7 +3459,7 @@ Fixes #1943.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,10,title provides conventional commit label,483,130,101,215,14,3,946,946,17,1.797,2.1078,109.0,25.0,3.0,7.0,8.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1214.6591666666666,1214.6591666666666,1214.6683333333333,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T03:28:38Z,2025-07-10T18:08:44Z,microsoft/graphrag,1944,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,10,title provides conventional commit label,16,8,7,2,5,0,38,38,5,13.1579,2.2632,109.0,25.0,3.0,7.0,8.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1214.6591666666666,1214.6591666666666,1214.6683333333333,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T03:28:38Z,2025-07-10T18:08:44Z,microsoft/graphrag,1944,ok
 AI agents,3080751824,Azure/azure-sdk-for-net,Copilot,https://github.com/Azure/azure-sdk-for-net/pull/50182,Create library inventory tool for Swagger to TypeSpec migration planning,"This PR adds a comprehensive set of tools to inventory the libraries in the Azure SDK for .NET repository and support the planning of migrations from Swagger to TypeSpec:
 
 ## Library Inventory Toolkit
@@ -3567,7 +3516,7 @@ Fixes #49982.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new tool and related documentation to inventory libraries and plan migrations, which constitutes a new feature addition.",281,109,37,25,16,5,473,473,21,4.4397,1.7336,898.0,0.0,3.0,17.0,4.0,36.0,36.0,18.0,18.0,3.0,1.0,2.0,0.0,16.0,0.0,2.587222222222222,2.587222222222222,7.934166666666667,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T16:04:08Z,2025-05-22T00:00:11Z,Azure/azure-sdk-for-net,50182,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new tool and related documentation to inventory libraries and plan migrations, which constitutes a new feature addition.",281,110,37,25,16,5,474,474,21,4.4304,1.7342,898.0,0.0,3.0,17.0,4.0,36.0,36.0,18.0,18.0,3.0,1.0,2.0,0.0,16.0,0.0,2.587222222222222,2.587222222222222,7.934166666666667,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T16:04:08Z,2025-05-22T00:00:11Z,Azure/azure-sdk-for-net,50182,ok
 AI agents,3081361910,microsoft/lisa,Copilot,https://github.com/microsoft/lisa/pull/3816,Refactor exception variable names from 'identifier' to 'e',"## Overview
 This PR addresses an inconsistency in exception variable naming throughout the codebase. All exception variable names that were using `identifier` have been renamed to `e` for consistency with Python naming conventions and internal code style.
 
@@ -3604,7 +3553,7 @@ Fixes #3815.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,10,title provides conventional commit label,23,9,4,4,0,1,41,41,1,2.439,1.8293,266.0,278.0,44.0,6.0,3.0,6.0,7.0,4.0,3.0,1.0,1.0,1.0,0.0,3.0,0.0,8.14611111111111,8.14611111111111,10.922222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T20:39:40Z,2025-05-22T07:35:00Z,microsoft/lisa,3816,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,10,title provides conventional commit label,0,0,0,3,0,1,4,4,1,25.0,4.5,266.0,278.0,44.0,6.0,3.0,6.0,7.0,4.0,3.0,1.0,1.0,1.0,0.0,3.0,0.0,8.14611111111111,8.14611111111111,10.922222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-05-21T20:39:40Z,2025-05-22T07:35:00Z,microsoft/lisa,3816,ok
 AI agents,3081620313,AliAkhtari78/SpotifyScraper,Copilot,https://github.com/AliAkhtari78/SpotifyScraper/pull/21,Implement TrackExtractor for Spotify Track Data Extraction with Lyrics Support,"This PR implements the `TrackExtractor` class for extracting comprehensive track data from Spotify web pages. The implementation includes the exciting new feature of extracting lyrics with synchronized timing information.
 
 ## 🚀 Features Implemented
@@ -3848,7 +3797,7 @@ Fixes #15855.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR adds a new dependency to an optional extra, effectively adding new functionality for users who install MLflow with the databricks extra. This is a new feature rather than a bug fix or documentation change.",3260,622,474,414,143,61,4974,4974,204,4.1013,1.7417,5.0,0.0,4.0,9.0,5.0,13.0,16.0,10.0,6.0,3.0,2.0,1.0,0.0,8.0,0.0,0.3205555555555555,0.2886111111111111,285.16083333333336,closed,1.0,0.0,CONTRIBUTOR,2025-05-23T06:59:06Z,2025-06-04T04:08:45Z,mlflow/mlflow,15856,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR adds a new dependency to an optional extra, effectively adding new functionality for users who install MLflow with the databricks extra. This is a new feature rather than a bug fix or documentation change.",4,0,0,0,0,0,4,4,0,0.0,1.0,5.0,0.0,4.0,9.0,5.0,13.0,16.0,10.0,6.0,3.0,2.0,1.0,0.0,8.0,0.0,0.3205555555555555,0.2886111111111111,285.16083333333336,closed,1.0,0.0,CONTRIBUTOR,2025-05-23T06:59:06Z,2025-06-04T04:08:45Z,mlflow/mlflow,15856,ok
 AI agents,3090192279,crewAIInc/crewAI,Devin,https://github.com/crewAIInc/crewAI/pull/2904,Add usage limit feature to BaseTool class,"# Add Usage Limit Feature to BaseTool Class
 
 This PR adds a new feature to limit the number of times a tool can be used. After the limit is hit, the tool returns an error message indicating it can't be used anymore.
@@ -4216,7 +4165,7 @@ Closes #1560
 
 Link to Devin run: https://app.devin.ai/sessions/aadb89a18581497cb23315170dcda64c
 Requested by: Jason Liu (work@jxnl.co)
-",feat,10,title provides conventional commit label,6,2,1,0,0,0,9,9,0,0.0,1.4444,57.0,52.0,5.0,4.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,4.055,closed,1.0,0.0,CONTRIBUTOR,2025-05-27T15:58:08Z,2025-05-27T20:01:26Z,567-labs/instructor,1566,ok
+",feat,10,title provides conventional commit label,13,4,2,0,0,0,19,19,0,0.0,1.4211,57.0,52.0,5.0,4.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,4.055,closed,1.0,0.0,CONTRIBUTOR,2025-05-27T15:58:08Z,2025-05-27T20:01:26Z,567-labs/instructor,1566,ok
 AI agents,3094442612,567-labs/instructor,Devin,https://github.com/567-labs/instructor/pull/1567,Fix documentation for dynamic model creation example,"# Fix documentation for dynamic model creation example
 
 This PR fixes the documentation issue described in [#1558](https://github.com/567-labs/instructor/issues/1558).
@@ -4394,7 +4343,7 @@ Fixes #1955.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,9,"The PR refactors the internal logging system to use Python's standard logging module, improving design and maintainability without adding new features or fixing bugs.",415,75,123,24,28,12,677,677,40,5.9084,1.8346,2134.0,2024.0,128.0,92.0,90.0,0.0,2.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,167.31555555555556,167.31555555555556,968.4413888888888,closed,1.0,0.0,CONTRIBUTOR,2025-05-30T16:02:34Z,2025-07-10T00:29:03Z,microsoft/graphrag,1956,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,9,"The PR refactors the internal logging system to use Python's standard logging module, improving design and maintainability without adding new features or fixing bugs.",126,41,25,12,1,0,205,205,1,0.4878,1.639,2134.0,2024.0,128.0,92.0,90.0,0.0,2.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,167.31555555555556,167.31555555555556,968.4413888888888,closed,1.0,0.0,CONTRIBUTOR,2025-05-30T16:02:34Z,2025-07-10T00:29:03Z,microsoft/graphrag,1956,ok
 AI agents,3108908027,mlflow/mlflow,Copilot,https://github.com/mlflow/mlflow/pull/16009,Replace `dev/check-notebooks.sh` with `clint` rule for trace UI detection,"This PR replaces the standalone `dev/check-notebooks.sh` script with a proper `clint` rule that integrates seamlessly with the existing linting infrastructure.
 
 ## Changes Made
@@ -5089,78 +5038,6 @@ Fixes #1896.
 ---
 
 💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new feature that dynamically detects the documentation version based on Git tags, replacing a previously hardcoded value. This adds new functionality to the documentation build process, which fits the 'feat' category.",87,34,9,2,6,0,138,138,6,4.3478,1.5942,27.0,68.0,3.0,12.0,23.0,41.0,25.0,14.0,11.0,3.0,2.0,4.0,1.0,9.0,1.0,24.44638888888889,24.44638888888889,193.14944444444444,closed,1.0,0.0,CONTRIBUTOR,2025-06-04T20:32:40Z,2025-06-12T21:41:38Z,microsoft/Olive,1897,ok
-AI agents,3119857154,mlflow/mlflow,Copilot,https://github.com/mlflow/mlflow/pull/16080,Enhance check-vcs-permalinks pre-commit hook configuration,"This PR adds the `check-vcs-permalinks` pre-commit hook to ensure VCS permalinks across the codebase use permanent commit hashes instead of branch names.
-
-## Changes Made
-
-Added `check-vcs-permalinks` hook to `.pre-commit-config.yaml`:
-
-```yaml
-- id: check-vcs-permalinks
-  files: \.(py|md|mdx|rst|yaml|yml)$
-  require_serial: true
-```
-
-## Benefits
-
-- **Consistency**: Ensures all VCS permalinks follow the same permanent format
-- **Maintenance**: Helps identify and fix outdated or non-permanent links
-- **Documentation Quality**: Improves reliability of links in documentation and code
-- **Expanded Coverage**: Checks multiple file types where VCS permalinks might be present
-
-## File Types Covered
-
-The hook now checks for VCS permalinks in:
-- Python files (`.py`)
-- Markdown files (`.md`, `.mdx`) 
-- reStructuredText files (`.rst`)
-- YAML configuration files (`.yaml`, `.yml`)
-
-## What It Detects
-
-The hook identifies GitHub URLs that use branch names instead of commit hashes:
-
-❌ **Non-permanent** (will be flagged):
-```
-https://github.com/owner/repo/blob/main/file.py#L10
-https://github.com/owner/repo/blob/master/file.py#L20
-```
-
-✅ **Permanent** (will pass):
-```
-https://github.com/owner/repo/blob/9db0f205adcf315d16961fea7e9e6906cb950d43/file.py#L10
-```
-
-## Testing
-
-- Hook successfully integrates with existing pre-commit workflow
-- Tested on various file types across the repository
-- Found 7 existing non-permanent links that maintainers can address in future PRs
-- Does not break any existing functionality
-
-Fixes #16078.
-
-> [!WARNING]
->
-> <details>
-> <summary>Firewall rules blocked me from connecting to one or more addresses</summary>
->
-> #### I tried to connect to the following addresses, but was blocked by firewall rules:
->
-> - `api.github.com`
->   - Triggering command: `curl -s REDACTED ` (dns block)
->
-> If you need me to access, download, or install something from one of these locations, you can either:
->
-> - Configure [Actions setup steps](https://gh.io/copilot/actions-setup-steps) to set up my environment, which run before the firewall is enabled
-> - Add the appropriate URLs or hosts to my [firewall allow list](https://gh.io/copilot/firewall-config)
->
-> </details>
-
-
----
-
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR adds a new pre-commit hook configuration to enhance code quality and consistency by checking VCS permalinks. This is an addition of a new feature to the pre-commit setup, not a bug fix or documentation change.",94,23,20,20,13,0,170,170,13,7.6471,2.0294,6.0,3.0,4.0,5.0,4.0,3.0,4.0,2.0,2.0,1.0,2.0,1.0,0.0,1.0,0.0,0.2258333333333333,0.1833333333333333,11.061944444444444,closed,1.0,0.0,CONTRIBUTOR,2025-06-05T05:07:38Z,2025-06-05T16:11:21Z,mlflow/mlflow,16080,ok
 AI agents,3120162244,mlflow/mlflow,Copilot,https://github.com/mlflow/mlflow/pull/16088,Add custom lint rule to detect @pytest.mark.repeat decorator,"## Problem
 
 The `@pytest.mark.repeat` decorator is used for local testing to repeat tests and check for flakiness, but it should not be committed to the repository as it's only meant for debugging purposes.
@@ -5243,86 +5120,6 @@ Fixes #16087.
 ---
 
 💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new custom lint rule to detect and prevent the use of a specific decorator in committed test code, which is a new feature addition to the linter tool. It also fixes a minor bug in JSON output formatting, but the primary change is the addition of the lint rule, classifying it as a feature.",17,3,1,4,4,0,29,29,4,13.7931,2.1379,59.0,4.0,2.0,2.0,2.0,1.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,1.2002777777777778,0.4191666666666667,1.8719444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-06-05T07:34:11Z,2025-06-05T09:26:30Z,mlflow/mlflow,16088,ok
-AI agents,3120603357,mlflow/mlflow,Copilot,https://github.com/mlflow/mlflow/pull/16093,[BUG] ERROR mlflow.server: Exception on /graphql when trying to open a run if auth is enabled,"- [x] Identify the root cause of the TypeError in GraphQL endpoint when auth is enabled
-- [x] Understand how Flask endpoints are registered and how auth after_request handlers work
-- [x] Implement fix in get_endpoints() function to handle GraphQL endpoint properly for after_request handlers
-- [x] Create test to verify the fix works correctly - test_graphql_with_auth added to test_auth.py  
-- [x] Test the solution logic manually to confirm it handles both normal and auth scenarios correctly
-- [x] Verify minimal code changes and syntax correctness
-
-**Summary:** Fixed TypeError that occurred when accessing GraphQL endpoint with auth enabled. The issue was that `_after_request` hook was calling `_graphql(resp)` with a response argument, but `_graphql()` takes no arguments.
-
-**Root Cause:** The GraphQL endpoint was hardcoded in `get_endpoints()` and didn't respect the `get_handler` parameter used by auth module to register after-request handlers.
-
-**Solution:** Modified `get_endpoints()` to check the handler function name:
-- Normal case: `get_handler.__name__ == ""get_handler""` → uses `_graphql` 
-- Auth case: other handler functions (like `get_after_request_handler`) → calls `get_handler(None)` which returns `None`
-
-When handler is `None`, the auth module's `_after_request` doesn't call it, preventing the TypeError.
-
-**Changes:** 
-- 12 lines added, 1 removed in `mlflow/server/handlers.py` (mostly comments + 9 lines of logic)
-- 38 lines added for comprehensive test `test_graphql_with_auth`
-
-**Testing:** Logic verified manually and comprehensive test added to ensure GraphQL works correctly with authentication enabled.
-
-Fixes #16071.
-
----
-
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.
-
-
----
-
-### Checks
-
-Before
-
-<img width=""891"" alt=""image"" src=""https://github.com/user-attachments/assets/e1278af3-b046-4bdf-b7f0-d01b9d0acdea"" />
-
-Server logs
-
-```
-Traceback (most recent call last):
-  File ""/Users/harutaka.kawamura/.pyenv/versions/miniconda3-latest/envs/mlflow/lib/python3.9/site-packages/flask/app.py"", line 2529, in wsgi_app
-    response = self.full_dispatch_request()
-  File ""/Users/harutaka.kawamura/.pyenv/versions/miniconda3-latest/envs/mlflow/lib/python3.9/site-packages/flask/app.py"", line 1826, in full_dispatch_request
-    return self.finalize_request(rv)
-  File ""/Users/harutaka.kawamura/.pyenv/versions/miniconda3-latest/envs/mlflow/lib/python3.9/site-packages/flask/app.py"", line 1847, in finalize_request
-    response = self.process_response(response)
-  File ""/Users/harutaka.kawamura/.pyenv/versions/miniconda3-latest/envs/mlflow/lib/python3.9/site-packages/flask/app.py"", line 2341, in process_response
-    response = self.ensure_sync(func)(response)
-  File ""/Users/harutaka.kawamura/Desktop/repositories/mlflow/mlflow/server/handlers.py"", line 594, in wrapper
-    return func(*args, **kwargs)
-  File ""/Users/harutaka.kawamura/Desktop/repositories/mlflow/mlflow/server/auth/__init__.py"", line 849, in _after_request
-    handler(resp)
-  File ""/Users/harutaka.kawamura/Desktop/repositories/mlflow/mlflow/server/handlers.py"", line 594, in wrapper
-    return func(*args, **kwargs)
-TypeError: _graphql() takes 0 positional arguments but 1 was given
-2025/06/10 19:19:54 ERROR mlflow.server: Exception on /graphql [POST]
-```
-
-After
-
-<img width=""891"" alt=""image"" src=""https://github.com/user-attachments/assets/b4453473-a6e5-4bda-ae45-8a113af01ff5"" />
-
-Server logs
-
-```
-[2025-06-10 19:21:01 +0900] [64942] [INFO] Starting gunicorn 23.0.0
-[2025-06-10 19:21:01 +0900] [64942] [INFO] Listening at: http://0.0.0.0:5005 (64942)
-[2025-06-10 19:21:01 +0900] [64942] [INFO] Using worker: sync
-[2025-06-10 19:21:01 +0900] [64943] [INFO] Booting worker with pid: 64943
-[2025-06-10 19:21:01 +0900] [64945] [INFO] Booting worker with pid: 64945
-[2025-06-10 19:21:01 +0900] [64946] [INFO] Booting worker with pid: 64946
-[2025-06-10 19:21:02 +0900] [64947] [INFO] Booting worker with pid: 64947
-2025/06/10 19:21:04 WARNING mlflow.server.auth: This feature is still experimental and may change in a future release without warning
-2025/06/10 19:21:04 WARNING mlflow.server.auth: This feature is still experimental and may change in a future release without warning
-2025/06/10 19:21:04 WARNING mlflow.server.auth: This feature is still experimental and may change in a future release without warning
-2025/06/10 19:21:04 WARNING mlflow.server.auth: This feature is still experimental and may change in a future release without warning
-
-```",fix,10,The PR fixes a TypeError bug in the GraphQL endpoint when authentication is enabled by modifying the handler logic and adding tests to verify the fix. This is clearly a bug fix.,316,85,61,53,30,3,548,548,33,6.0219,1.9142,1.0,0.0,1.0,5.0,3.0,0.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,91.16666666666669,1.0711111111111111,121.25611111111112,closed,1.0,0.0,CONTRIBUTOR,2025-06-05T10:03:21Z,2025-06-10T11:18:43Z,mlflow/mlflow,16093,ok
 AI agents,3122455352,nearai/nearai,Copilot,https://github.com/nearai/nearai/pull/1179,Cache hub_client.beta.threads.messages.list in environment.py,"The `hub_client.beta.threads.messages.list` API call was taking a long time to run and being called repeatedly during agent execution, causing performance issues.
 
 This PR implements a message cache in the `Environment` class that:
@@ -5508,7 +5305,7 @@ Fixes #1903.
 
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new CLI command 'olive one' that adds new functionality for running single passes on models, which is a new feature.",442,135,255,72,13,2,919,919,15,1.6322,2.0044,584.0,1.0,4.0,20.0,19.0,14.0,8.0,3.0,5.0,1.0,1.0,1.0,0.0,0.0,0.0,134.59583333333333,4.563611111111111,148.79361111111112,closed,1.0,0.0,CONTRIBUTOR,2025-06-06T17:45:12Z,2025-06-12T22:32:49Z,microsoft/Olive,1904,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new CLI command 'olive one' that adds new functionality for running single passes on models, which is a new feature.",284,101,140,51,5,2,583,583,7,1.2007,1.9674,584.0,1.0,4.0,20.0,19.0,14.0,8.0,3.0,5.0,1.0,1.0,1.0,0.0,0.0,0.0,134.59583333333333,4.563611111111111,148.79361111111112,closed,1.0,0.0,CONTRIBUTOR,2025-06-06T17:45:12Z,2025-06-12T22:32:49Z,microsoft/Olive,1904,ok
 AI agents,3125531606,Azure/azure-sdk-for-python,Copilot,https://github.com/Azure/azure-sdk-for-python/pull/41463,Add comprehensive thread and coroutine safety documentation and examples for Event Hubs and Service Bus,"This PR addresses [#33710](https://github.com/Azure/azure-sdk-for-python/issues/33710) by adding comprehensive thread safety and coroutine safety documentation and examples for Azure Event Hubs and Service Bus client libraries.
 
 Also addresses #36334
@@ -5648,7 +5445,7 @@ The implementation has been tested locally with both backend and frontend server
 **Link to Devin run**: https://app.devin.ai/sessions/5b29b01f9bac47fe8ca72442cc83aa2d
 
 **Requested by**: Junyan Qin (Chin), ""秦骏言"" in Chinese, you can call me my english name Rock Chin. (rockchinq@gmail.com)
-",feat,10,title provides conventional commit label,74,18,6,10,4,1,113,113,5,4.4248,1.7168,1358.0,25.0,25.0,20.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,24.009444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-06-07T07:33:53Z,2025-06-08T07:34:27Z,langbot-app/LangBot,1510,ok
+",feat,10,title provides conventional commit label,116,34,10,26,5,1,192,192,6,3.125,1.8177,1358.0,25.0,25.0,20.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,24.009444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-06-07T07:33:53Z,2025-06-08T07:34:27Z,langbot-app/LangBot,1510,ok
 AI agents,3127150444,octgn/OCTGN,Copilot,https://github.com/octgn/OCTGN/pull/2250,"Implement networking support for pile protection ""Ask"" state","This PR implements networking support for the pile protection ""Ask"" state feature, addressing the issue where pile protection was implemented but did not account for networking at all.
 
 ## Problem
@@ -5926,7 +5723,7 @@ Frontend changes:
 *   `keep-ui/entities/presets/model/usePresetColumnState.ts`: A unified hook was introduced, prioritizing backend configuration when a `presetId` is available, otherwise falling back to local storage.
 *   `keep-ui/widgets/alerts-table/ui/ColumnSelection.tsx`, `SettingsSelection.tsx`, `alert-table-server-side.tsx`: Components were updated to utilize the new `usePresetColumnState` hook and pass `presetId`. A ""Synced across devices"" indicator was added to `ColumnSelection.tsx`.
 
-This enables cross-device synchronization and team collaboration for column preferences, with backward compatibility maintained. Comprehensive documentation was added in `docs/column-configuration-migration.md`.",feat,10,title provides conventional commit label,755,83,65,18,29,0,950,950,29,3.0526,1.4032,945.0,114.0,19.0,31.0,2.0,0.0,26.0,2.0,24.0,2.0,1.0,1.0,0.0,0.0,0.0,28.774722222222223,0.0777777777777777,310.9,closed,1.0,0.0,MEMBER,2025-06-10T08:58:17Z,2025-06-23T07:52:17Z,keephq/keep,5002,ok
+This enables cross-device synchronization and team collaboration for column preferences, with backward compatibility maintained. Comprehensive documentation was added in `docs/column-configuration-migration.md`.",feat,10,title provides conventional commit label,775,88,65,18,34,0,980,980,34,3.4694,1.4163,945.0,114.0,19.0,31.0,2.0,0.0,26.0,2.0,24.0,2.0,1.0,1.0,0.0,0.0,0.0,28.774722222222223,0.0777777777777777,310.9,closed,1.0,0.0,MEMBER,2025-06-10T08:58:17Z,2025-06-23T07:52:17Z,keephq/keep,5002,ok
 AI agents,3133771594,microsoft/Qcodes,Copilot,https://github.com/microsoft/Qcodes/pull/7213,Add function to export datasets to NetCDF and create metadata-only database,"This PR implements a new function `export_datasets_and_create_metadata_db()` that addresses the common issue of data duplication when users have both database files with raw data and exported NetCDF files.
 
 ## Problem
@@ -6128,7 +5925,7 @@ Fixes #2993
 ",fix,10,title provides conventional commit label,101,33,11,12,2,0,159,159,2,1.2579,1.6226,331.0,28.0,4.0,2.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,11.959444444444443,11.959444444444443,11.98,closed,1.0,0.0,CONTRIBUTOR,2025-06-11T04:09:12Z,2025-06-11T16:08:00Z,crewAIInc/crewAI,2994,ok
 AI agents,3135538721,getsentry/sentry,Cursor,https://github.com/getsentry/sentry/pull/93304,feat(open-pr-comments): Add C# support,"Adds Open PR Comment Support for C#
 
-Built using Cursor Background Agent with some cleanup by me, pretty cool!",feat,10,title provides conventional commit label,363,41,25,22,0,0,451,451,0,0.0,1.3481,395.0,14.0,9.0,6.0,2.0,1.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,9.3475,9.3475,16.015,closed,1.0,0.0,COLLABORATOR,2025-06-11T05:31:09Z,2025-06-11T21:32:03Z,getsentry/sentry,93304,ok
+Built using Cursor Background Agent with some cleanup by me, pretty cool!",feat,10,title provides conventional commit label,256,16,8,8,0,0,288,288,0,0.0,1.1944,395.0,14.0,9.0,6.0,2.0,1.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,9.3475,9.3475,16.015,closed,1.0,0.0,COLLABORATOR,2025-06-11T05:31:09Z,2025-06-11T21:32:03Z,getsentry/sentry,93304,ok
 AI agents,3136594828,microsoft/Qcodes,Copilot,https://github.com/microsoft/Qcodes/pull/7222,Bug: load_from_netcdf fails if a dataset does is not completed,"- [x] Analyze the issue: load_from_netcdf fails for non-completed datasets due to missing completed_timestamp_raw attribute
 - [x] Review the code and understand that completed_timestamp_raw is conditionally exported (only if not None)
 - [x] Create a minimal fix to check if completed_timestamp_raw exists before accessing it
@@ -6284,43 +6081,6 @@ Requested by: adam@agentops.ai
 AI agents,3138534395,getsentry/sentry,Cursor,https://github.com/getsentry/sentry/pull/93402,feat(open-pr-comments): Golang Language Support,"Support for a Golang for Open PR Comments
 
 Co-authored by Cursor",feat,10,title provides conventional commit label,178,25,2,14,2,2,223,223,4,1.7937,1.3991,390.0,11.0,4.0,6.0,1.0,8.0,6.0,6.0,0.0,3.0,0.0,1.0,0.0,5.0,0.0,15.441666666666666,15.441666666666666,131.49277777777775,closed,1.0,0.0,COLLABORATOR,2025-06-12T02:01:39Z,2025-06-17T13:31:13Z,getsentry/sentry,93402,ok
-AI agents,3138995292,mlflow/mlflow,Copilot,https://github.com/mlflow/mlflow/pull/16221,"Fix typo: ""asynchnorous"" should be ""asynchronous"" in anthropic/__init__.py","<details><summary>&#x1F6E0 DevTools &#x1F6E0</summary>
-<p>
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Copilot/mlflow/pull/16221?quickstart=1)
-
-#### Install mlflow from this PR
-
-```
-# mlflow
-pip install git+https://github.com/mlflow/mlflow.git@refs/pull/16221/merge
-# mlflow-skinny
-pip install git+https://github.com/mlflow/mlflow.git@refs/pull/16221/merge#subdirectory=skinny
-```
-
-For Databricks, use the following command:
-
-```
-%sh curl -LsSf https://raw.githubusercontent.com/mlflow/mlflow/HEAD/dev/install-skinny.sh | sh -s pull/16221/merge
-```
-
-</p>
-</details>
-
-Fixed a spelling error in the docstring of `mlflow.anthropic.autolog()` function where ""asynchnorous"" was incorrectly spelled instead of ""asynchronous"".
-
-**Changes:**
-- Updated line 17 in `mlflow/anthropic/__init__.py`
-- Changed ""Only synchronous calls and asynchnorous APIs are supported"" to ""Only synchronous calls and asynchronous APIs are supported""
-
-This is a simple documentation improvement that enhances code readability without affecting any functionality.
-
-Fixes #16220.
-
-<!-- START COPILOT CODING AGENT TIPS -->
----
-
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,10,title provides conventional commit label,8,2,0,0,1,0,11,11,1,9.0909,1.5455,6.0,6.0,6.0,4.0,2.0,4.0,5.0,3.0,2.0,1.0,1.0,1.0,0.0,2.0,0.0,0.9694444444444444,0.9694444444444444,3.178611111111111,closed,1.0,0.0,CONTRIBUTOR,2025-06-12T06:23:47Z,2025-06-12T09:34:30Z,mlflow/mlflow,16221,ok
 AI agents,3139359977,microsoft/lisa,Copilot,https://github.com/microsoft/lisa/pull/3855,Add support for source_address_prefixes and resource_group_name in azure_deploy transformer,"The `azure_deploy` transformer now supports `source_address_prefixes` and `resource_group_name` fields, allowing users to specify custom network security and resource group settings directly in their runbook transformers.
 
 ## Changes Made
@@ -6433,7 +6193,7 @@ Fixes #4543.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new feature: the ability to revoke approved Airlock export requests and adds confirmation dialogs to prevent accidental approvals, which enhances the functionality of the system.",170,12,11,26,4,0,223,223,4,1.7937,1.574,380.0,48.0,16.0,11.0,8.0,2.0,4.0,3.0,1.0,3.0,1.0,3.0,0.0,0.0,0.0,362.1705555555556,340.8336111111111,509.9180555555556,closed,1.0,0.0,CONTRIBUTOR,2025-06-12T09:45:47Z,2025-07-03T15:40:52Z,microsoft/AzureTRE,4589,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new feature: the ability to revoke approved Airlock export requests and adds confirmation dialogs to prevent accidental approvals, which enhances the functionality of the system.",81,1,9,22,6,0,119,119,6,5.042,1.916,380.0,48.0,16.0,11.0,8.0,2.0,4.0,3.0,1.0,3.0,1.0,3.0,0.0,0.0,0.0,362.1705555555556,340.8336111111111,509.9180555555556,closed,1.0,0.0,CONTRIBUTOR,2025-06-12T09:45:47Z,2025-07-03T15:40:52Z,microsoft/AzureTRE,4589,ok
 AI agents,3139974947,getsentry/sentry-python,Cursor,https://github.com/getsentry/sentry-python/pull/4459,fix: Ensure tags values are strings,"Ensure tag values are strings before serializing an event or a transaction to an `Event` dictionary.
 
 Fixes #4391 ",fix,10,title provides conventional commit label,40,14,5,29,0,0,88,88,0,0.0,2.2614,272.0,27.0,13.0,2.0,12.0,1.0,2.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,117.70416666666668,117.70416666666668,452.4947222222222,closed,1.0,0.0,MEMBER,2025-06-12T11:47:53Z,2025-07-01T08:17:34Z,getsentry/sentry-python,4459,ok
@@ -6536,7 +6296,7 @@ Fixes #16230.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",feat,9,"The PR introduces a new lint rule to enforce naming of threading.Thread instances, which is a new feature added to the linter tool within the codebase.",244,33,35,33,20,3,368,368,23,6.25,1.8071,57.0,3.0,5.0,13.0,8.0,18.0,20.0,11.0,9.0,2.0,1.0,2.0,0.0,9.0,0.0,0.2791666666666667,0.2791666666666667,17.197222222222223,closed,1.0,0.0,CONTRIBUTOR,2025-06-12T15:06:29Z,2025-06-13T08:18:19Z,mlflow/mlflow,16231,ok
+💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",feat,9,"The PR introduces a new lint rule to enforce naming of threading.Thread instances, which is a new feature added to the linter tool within the codebase.",30,7,1,9,6,0,53,53,6,11.3208,2.1321,57.0,3.0,5.0,13.0,8.0,18.0,20.0,11.0,9.0,2.0,1.0,2.0,0.0,9.0,0.0,0.2791666666666667,0.2791666666666667,17.197222222222223,closed,1.0,0.0,CONTRIBUTOR,2025-06-12T15:06:29Z,2025-06-13T08:18:19Z,mlflow/mlflow,16231,ok
 AI agents,3140874272,airbytehq/PyAirbyte,Devin,https://github.com/airbytehq/PyAirbyte/pull/692,docs(mcp): Add comprehensive MCP server documentation with pdoc integration,"This PR targets the following PR:
 - #691
 
@@ -6840,7 +6600,7 @@ No breaking changes or user action required.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",build,9,"The change updates the version constraint of a dependency (boto3) to support newer versions without modifying functionality or fixing a bug. This is a maintenance update to the build configuration, which fits the 'build' category.",4783,1081,726,504,186,38,7318,7318,224,3.0609,1.6804,5.0,1.0,2.0,4.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.1144444444444443,closed,1.0,0.0,CONTRIBUTOR,2025-06-15T06:21:35Z,2025-06-15T07:28:27Z,remotion-dev/remotion,5363,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",build,9,"The change updates the version constraint of a dependency (boto3) to support newer versions without modifying functionality or fixing a bug. This is a maintenance update to the build configuration, which fits the 'build' category.",5883,1375,865,593,257,51,9024,9024,308,3.4131,1.6834,5.0,1.0,2.0,4.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.1144444444444443,closed,1.0,0.0,CONTRIBUTOR,2025-06-15T06:21:35Z,2025-06-15T07:28:27Z,remotion-dev/remotion,5363,ok
 AI agents,3148267777,microsoft/lisa,Copilot,https://github.com/microsoft/lisa/pull/3863,Add unified performance message support to ntttcp test cases,"This PR implements unified performance message support for ntttcp test cases, enabling standardized performance metric reporting alongside the existing specific network performance messages.
 
 ## Changes Made
@@ -7326,7 +7086,7 @@ Fixes #7610.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",chore,9,"The PR is focused on upgrading dependencies without adding new features or fixing bugs. It updates package versions and related lock files, which is typically classified as a chore related to maintenance tasks.",4952,1062,693,516,181,38,7442,7442,219,2.9428,1.6598,13.0,5.0,3.0,4.0,2.0,0.0,5.0,5.0,0.0,3.0,0.0,5.0,0.0,0.0,0.0,0.2969444444444444,0.2969444444444444,45.16138888888889,closed,1.0,0.0,CONTRIBUTOR,2025-06-17T06:40:23Z,2025-06-19T03:50:04Z,microsoft/typespec,7667,ok
+💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",chore,9,"The PR is focused on upgrading dependencies without adding new features or fixing bugs. It updates package versions and related lock files, which is typically classified as a chore related to maintenance tasks.",6300,1402,888,630,262,56,9538,9538,318,3.334,1.6706,13.0,5.0,3.0,4.0,2.0,0.0,5.0,5.0,0.0,3.0,0.0,5.0,0.0,0.0,0.0,0.2969444444444444,0.2969444444444444,45.16138888888889,closed,1.0,0.0,CONTRIBUTOR,2025-06-17T06:40:23Z,2025-06-19T03:50:04Z,microsoft/typespec,7667,ok
 AI agents,3153698253,microsoft/fabric-cicd,Copilot,https://github.com/microsoft/fabric-cicd/pull/347,Fixes #345 workspace ID replacement in JSON files for pipeline deployments,"## Issue
 In version 0.1.20, pipelines referencing notebooks have their workspace IDs incorrectly set to `00000000-0000-0000-0000-000000000000` instead of the target workspace ID, causing notebook references to fail during deployment. This worked correctly in v0.1.19.
 
@@ -7447,7 +7207,7 @@ A verification script (`verify_constants.py`) was added to test that:
 Link to Devin run: https://app.devin.ai/sessions/c66baa3c93da45dd9bb350090dd3f8f8f8
 
 Requested by: Alek (alek@reflex.dev)
-",refactor,9,The PR consolidates and cleans up constants without adding new features or fixing bugs. It improves code organization and maintainability by refactoring how constants are managed and imported across the codebase.,102,21,20,1,4,2,150,150,6,4.0,1.6,43.0,30.0,6.0,8.0,1.0,6.0,3.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.2883333333333333,0.0113888888888888,1.3069444444444445,closed,1.0,0.0,CONTRIBUTOR,2025-06-17T19:06:53Z,2025-06-17T20:25:18Z,reflex-dev/reflex-web,1435,ok
+",refactor,9,The PR consolidates and cleans up constants without adding new features or fixing bugs. It improves code organization and maintainability by refactoring how constants are managed and imported across the codebase.,81,14,12,0,2,0,109,109,2,1.8349,1.422,43.0,30.0,6.0,8.0,1.0,6.0,3.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.2883333333333333,0.0113888888888888,1.3069444444444445,closed,1.0,0.0,CONTRIBUTOR,2025-06-17T19:06:53Z,2025-06-17T20:25:18Z,reflex-dev/reflex-web,1435,ok
 AI agents,3154952530,WorkflowAI/WorkflowAI,Cursor,https://github.com/WorkflowAI/WorkflowAI/pull/489,Improve API error message for model lookup,"The `missing_model_error` method in `api/api/routers/openai_proxy/_openai_proxy_handler.py` was updated to enhance model not found error messages.
 
 *   A `_curl_command` variable was introduced, set to `""curl https://run.workflowai.com/v1/models""`.
@@ -7702,7 +7462,7 @@ Fixes #16310.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new linting rule to enforce the use of thread_name_prefix in ThreadPoolExecutor, which is a new feature to improve code quality and debugging. It does not fix a bug or just refactor existing code, but adds a new capability to the linting tool.",10,3,1,0,2,1,17,17,3,17.6471,2.0588,45.0,6.0,7.0,6.0,4.0,6.0,7.0,4.0,3.0,1.0,1.0,1.0,0.0,3.0,0.0,0.1786111111111111,0.1786111111111111,12.485833333333334,closed,1.0,0.0,CONTRIBUTOR,2025-06-18T11:11:46Z,2025-06-18T23:40:55Z,mlflow/mlflow,16311,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,9,"The PR introduces a new linting rule to enforce the use of thread_name_prefix in ThreadPoolExecutor, which is a new feature to improve code quality and debugging. It does not fix a bug or just refactor existing code, but adds a new capability to the linting tool.",11,3,1,0,2,1,18,18,3,16.6667,2.0,45.0,6.0,7.0,6.0,4.0,6.0,7.0,4.0,3.0,1.0,1.0,1.0,0.0,3.0,0.0,0.1786111111111111,0.1786111111111111,12.485833333333334,closed,1.0,0.0,CONTRIBUTOR,2025-06-18T11:11:46Z,2025-06-18T23:40:55Z,mlflow/mlflow,16311,ok
 AI agents,3158038793,mendableai/firecrawl,Devin,https://github.com/mendableai/firecrawl/pull/1684,feat: add followInternalLinks parameter as semantic replacement for allowBackwardLinks,"# Add followInternalLinks parameter as semantic replacement for allowBackwardLinks
 
 ## Summary
@@ -8704,91 +8464,6 @@ Key changes and additions include:
 *   **Evaluation**: Periodic evaluation is performed using `evaluate_model` on a validation set, leveraging the same `rollout_tau_bench_task` mechanism.
 
 The implementation reuses `tau-bench` abstractions like `get_env` and `agent_factory` to maintain consistency and minimize changes to the existing codebase.",feat,9,"The PR introduces a new file with a new ART RL training loop and associated configurations, which adds new functionality rather than fixing bugs or making other types of changes.",226,31,18,1,1,0,277,277,1,0.361,1.2671,385.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,0.0038888888888888,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T07:25:18Z,2025-06-24T07:25:32Z,OpenPipe/ART,161,ok
-AI agents,3171113463,aztfmod/terraform-provider-azurecaf,Copilot,https://github.com/aztfmod/terraform-provider-azurecaf/pull/328,Add import functionality for pre-existing names in azurecaf_name resource,"## Overview
-
-This PR adds import functionality to the `azurecaf_name` resource, allowing users to import pre-existing Azure resource names into Terraform state management. This addresses a key limitation where users had to recreate naming resources instead of being able to manage existing ones through Terraform.
-
-## Changes Made
-
-### Core Implementation
-- **Added Importer field** to `resourceName()` schema with custom import function
-- **Implemented `resourceNameImport()`** function with comprehensive validation
-- **Import ID format**: `<resource_type>:<existing_name>` (e.g., `azurerm_storage_account:mystorageaccount123`)
-- **Automatic passthrough mode** for imported resources to preserve existing names exactly as-is
-- **Azure naming validation** ensures imported names comply with resource-specific naming requirements
-
-### Testing
-- **Comprehensive unit tests** in `azurecaf/resource_name_import_test.go`
-- **Edge case coverage** including invalid formats, unsupported resource types, and non-compliant names
-- **All tests pass** with 100% success rate
-
-### Documentation
-- **Updated `docs/resources/azurecaf_name.md`** with complete import section
-- **Usage examples** for different resource types
-- **Import syntax and behavior** explanation
-- **Post-import configuration** guidance
-
-## Usage Example
-
-```bash
-# Import existing storage account name
-terraform import azurecaf_name.storage azurerm_storage_account:mystorageaccount123
-
-# Import existing resource group name
-terraform import azurecaf_name.rg azurerm_resource_group:my-production-rg
-```
-
-After import, the Terraform configuration should match:
-
-```hcl
-resource ""azurecaf_name"" ""storage"" {
-  name          = ""mystorageaccount123""
-  resource_type = ""azurerm_storage_account""
-  passthrough   = true
-}
-```
-
-## Key Features
-
-- **Validation**: Names are validated against Azure naming requirements per resource type
-- **Passthrough Mode**: Imported resources automatically use `passthrough = true` to preserve original names
-- **Error Handling**: Clear error messages for validation failures and malformed import IDs
-- **No Breaking Changes**: Pure additive enhancement that doesn't affect existing functionality
-- **300+ Resource Types**: Supports all existing azurecaf resource types with proper validation
-
-## Benefits
-
-1. **Seamless Migration**: Import existing Azure resource names without recreation
-2. **Terraform Management**: Bring pre-existing names under Terraform state control
-3. **CAF Compliance**: Validate existing names against Azure naming conventions
-4. **Preserve Names**: Keep existing Azure resource names exactly as they are
-5. **Backward Compatible**: No impact on existing azurecaf_name resources
-
-Fixes #327.
-
-> [!WARNING]
->
-> <details>
-> <summary>Firewall rules blocked me from connecting to one or more addresses</summary>
->
-> #### I tried to connect to the following addresses, but was blocked by firewall rules:
->
-> - `checkpoint-api.hashicorp.com`
->   - Triggering command: `/tmp/go-build1039431790/b494/azurecaf.test -test.testlogfile=/tmp/go-build1039431790/b494/testlog.txt -test.paniconexit0 -test.gocoverdir=/tmp/go-build1039431790/b494/gocoverdir -test.timeout=10m0s ` (dns block)
->
-> If you need me to access, download, or install something from one of these locations, you can either:
->
-> - Configure [Actions setup steps](https://gh.io/copilot/actions-setup-steps) to set up my environment, which run before the firewall is enabled
-> - Add the appropriate URLs or hosts to my [firewall allow list](https://gh.io/copilot/firewall-config)
->
-> </details>
-
-
-
-<!-- START COPILOT CODING AGENT TIPS -->
----
-
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new feature that adds import functionality to the azurecaf_name resource, enabling users to import existing Azure resource names into Terraform state management. This is a clear addition of new capability rather than a bug fix or other change type.",84,10,6,1,3,0,104,104,3,2.8846,1.3558,7688.0,3017.0,50.0,30.0,25.0,7.0,6.0,2.0,4.0,2.0,2.0,1.0,0.0,1.0,0.0,145.6988888888889,0.4783333333333333,168.24777777777777,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T09:11:51Z,2025-07-01T09:26:43Z,aztfmod/terraform-provider-azurecaf,328,ok
 AI agents,3171819372,getsentry/sentry,Cursor,https://github.com/getsentry/sentry/pull/94169,feat(platform): Add React Router Framework onboarding platform in FE,"Adds onboarding for react-router in framework mode for `@sentry/react-router`
 
 BE part: https://github.com/getsentry/sentry/pull/94157
@@ -8821,7 +8496,7 @@ Added an option to disable the ""thinking"" field in the browser-use agent’s o
 
 <!-- End of auto-generated description by cubic. -->
 
-",feat,9,"The PR introduces a new optional feature to deactivate the 'thinking' field in the agent's output, adding a new parameter and related functionality without fixing a bug or just refactoring existing code.",1260,168,108,205,28,10,1779,1779,38,2.136,1.6526,258.0,58.0,6.0,12.0,5.0,0.0,4.0,0.0,4.0,0.0,2.0,0.0,0.0,0.0,0.0,,0.0380555555555555,3.7511111111111113,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T12:40:19Z,2025-06-24T16:25:23Z,browser-use/browser-use,2086,ok
+",feat,9,"The PR introduces a new optional feature to deactivate the 'thinking' field in the agent's output, adding a new parameter and related functionality without fixing a bug or just refactoring existing code.",56,4,4,7,4,0,75,75,4,5.3333,1.6533,258.0,58.0,6.0,12.0,5.0,0.0,4.0,0.0,4.0,0.0,2.0,0.0,0.0,0.0,0.0,,0.0380555555555555,3.7511111111111113,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T12:40:19Z,2025-06-24T16:25:23Z,browser-use/browser-use,2086,ok
 AI agents,3172444753,microsoft/lisa,Copilot,https://github.com/microsoft/lisa/pull/3884,"Make appending the message ID to test case names configurable - only include it when combinators are used; otherwise, use the base test case name.","Thanks for assigning this issue to me. I'm starting to work on it and will keep this PR's description up to date as I form a plan and make progress.
 
 Original issue description:
@@ -8915,7 +8590,7 @@ Please verify:
 - Fixes #3059
 - Link to Devin run: https://app.devin.ai/sessions/c4fb629fec1b492b87922c2e7022fb78
 - Requested by: João (joao@crewai.com)
-",fix,10,title provides conventional commit label,143,40,22,54,9,2,270,270,11,4.0741,2.0815,290.0,3.0,4.0,15.0,3.0,3.0,4.0,4.0,0.0,1.0,0.0,1.0,0.0,3.0,0.0,0.6091666666666666,0.6091666666666666,43.55222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T18:38:08Z,2025-06-26T14:11:16Z,crewAIInc/crewAI,3060,ok
+",fix,10,title provides conventional commit label,118,29,15,49,6,1,218,218,7,3.211,2.078,290.0,3.0,4.0,15.0,3.0,3.0,4.0,4.0,0.0,1.0,0.0,1.0,0.0,3.0,0.0,0.6091666666666666,0.6091666666666666,43.55222222222222,closed,1.0,0.0,CONTRIBUTOR,2025-06-24T18:38:08Z,2025-06-26T14:11:16Z,crewAIInc/crewAI,3060,ok
 AI agents,3174546403,OpenPipe/ART,Cursor,https://github.com/OpenPipe/ART/pull/162,Create run_training.py for remote training,"A new file, `run_training.py`, was created to facilitate remote RL training for tau-bench models using SkyPilot. This script adapts the pattern found in `examples/art-e/run_training.py`.
 
 The file:
@@ -9300,7 +8975,7 @@ Fixes #40766.
 ---
 
 💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,8,"The PR updates existing health and typing completeness reports to check for the presence of pyproject.toml in addition to setup.py, which is a modification to existing functionality rather than a new feature or a bug fix. It is an enhancement to the current checks, so it fits best under 'refactor'.",2,0,0,0,0,0,2,2,0,0.0,1.0,4.0,2.0,2.0,2.0,3.0,0.0,4.0,3.0,1.0,3.0,1.0,3.0,0.0,0.0,0.0,1.7802777777777778,1.7802777777777778,2.645,closed,1.0,0.0,CONTRIBUTOR,2025-06-26T18:23:15Z,2025-06-26T21:01:57Z,Azure/azure-sdk-for-python,41797,ok
-AI agents,3180190431,OpenPipe/ART,Cursor,https://github.com/OpenPipe/ART/pull/167,Refactor dev/tau-bench for true async,,refactor,10,title provides conventional commit label,2,3,1,4,1,0,11,11,1,9.0909,2.9091,178.0,78.0,8.0,1.0,0.0,2.0,2.0,2.0,0.0,1.0,0.0,0.0,0.0,2.0,0.0,0.0752777777777777,0.0752777777777777,0.0013888888888888,closed,1.0,0.0,CONTRIBUTOR,2025-06-26T19:39:11Z,2025-06-26T19:39:16Z,OpenPipe/ART,167,ok
+AI agents,3180190431,OpenPipe/ART,Cursor,https://github.com/OpenPipe/ART/pull/167,Refactor dev/tau-bench for true async,,refactor,10,title provides conventional commit label,2,2,0,4,0,0,8,8,0,0.0,2.75,178.0,78.0,8.0,1.0,0.0,2.0,2.0,2.0,0.0,1.0,0.0,0.0,0.0,2.0,0.0,0.0752777777777777,0.0752777777777777,0.0013888888888888,closed,1.0,0.0,CONTRIBUTOR,2025-06-26T19:39:11Z,2025-06-26T19:39:16Z,OpenPipe/ART,167,ok
 AI agents,3181433167,microsoft/lisa,Copilot,https://github.com/microsoft/lisa/pull/3898,Add unified performance message support to FIO cases,"This PR implements unified performance message support for FIO cases, enabling standardized performance metrics reporting alongside the existing disk performance messages.
 
 ## Changes
@@ -9410,7 +9085,7 @@ Fixes #16471.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR enables a new linting rule and fixes all existing violations related to ambiguous unicode characters in docstrings, which is a bug fix to improve code quality and prevent future issues.",1020,75,72,39,17,3,1226,1226,20,1.6313,1.3418,14.0,13.0,12.0,2.0,2.0,0.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.7780555555555555,0.3277777777777778,1.755,closed,1.0,0.0,CONTRIBUTOR,2025-06-27T05:57:44Z,2025-06-27T07:43:02Z,mlflow/mlflow,16472,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR enables a new linting rule and fixes all existing violations related to ambiguous unicode characters in docstrings, which is a bug fix to improve code quality and prevent future issues.",3,0,0,0,0,0,3,3,0,0.0,1.0,14.0,13.0,12.0,2.0,2.0,0.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.7780555555555555,0.3277777777777778,1.755,closed,1.0,0.0,CONTRIBUTOR,2025-06-27T05:57:44Z,2025-06-27T07:43:02Z,mlflow/mlflow,16472,ok
 AI agents,3182061205,teaxyz/chai,Cursor,https://github.com/teaxyz/chai/pull/133,cursor/update debian pipeline for diff structure a696,"- gets the Debian indexer up-to-date with the rest of the indexers
 - includes binary packages that can be tied to a source (doesn't impact deduplication, since a single source providing multiple packages generally has the same homepage URL)
 - fixes all the tests for debian",fix,9,"The changes update the Debian pipeline and fix all the tests related to Debian, indicating bug fixes and improvements to existing functionality rather than new features or documentation changes.",490,60,90,65,2,0,707,707,2,0.2829,1.6266,2025.0,736.0,19.0,23.0,0.0,3.0,3.0,2.0,1.0,2.0,1.0,1.0,0.0,1.0,0.0,4.987222222222222,4.987222222222222,10.512777777777778,closed,1.0,0.0,CONTRIBUTOR,2025-06-27T09:16:42Z,2025-06-27T19:47:28Z,teaxyz/chai,133,ok
@@ -9423,7 +9098,7 @@ Removed the deprecated mem0 memory system and all related code, parameters, and 
 
 <!-- End of auto-generated description by cubic. -->
 
-",refactor,9,"The commit removes deprecated code and related documentation without adding new features or fixing bugs, which is a refactor to clean up and improve the codebase structure.",334,5,69,17,5,2,432,432,7,1.6204,1.5185,27.0,543.0,11.0,10.0,3.0,0.0,3.0,1.0,2.0,1.0,2.0,1.0,0.0,0.0,0.0,1.006388888888889,0.0527777777777777,1.196388888888889,closed,1.0,0.0,CONTRIBUTOR,2025-06-27T11:27:38Z,2025-06-27T12:39:25Z,browser-use/browser-use,2150,ok
+",refactor,9,"The commit removes deprecated code and related documentation without adding new features or fixing bugs, which is a refactor to clean up and improve the codebase structure.",1,0,0,0,0,0,1,1,0,0.0,1.0,27.0,543.0,11.0,10.0,3.0,0.0,3.0,1.0,2.0,1.0,2.0,1.0,0.0,0.0,0.0,1.006388888888889,0.0527777777777777,1.196388888888889,closed,1.0,0.0,CONTRIBUTOR,2025-06-27T11:27:38Z,2025-06-27T12:39:25Z,browser-use/browser-use,2150,ok
 AI agents,3183504987,Z3Prover/z3,Copilot,https://github.com/Z3Prover/z3/pull/7701,Improve Extract function documentation to clarify bit-vector vs sequence usage,"The Extract function documentation was confusing because it's overloaded to handle both bit-vector extraction and sequence extraction, but the parameter descriptions were misleading.
 
 ## Issue
@@ -9745,7 +9420,7 @@ Added structured output support for agent tasks by letting the Controller enforc
 
 <!-- End of auto-generated description by cubic. -->
 
-",feat,9,"The PR introduces a new feature that implements structured output for agent responses by using JSON schemas and dynamic Pydantic models, enhancing the functionality of the judge system.",423,15,79,22,6,2,547,547,8,1.4625,1.4991,184.0,10.0,2.0,8.0,2.0,0.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,,0.0441666666666666,0.5838888888888889,closed,1.0,0.0,COLLABORATOR,2025-06-28T18:58:53Z,2025-06-28T19:33:55Z,browser-use/browser-use,2160,ok
+",feat,9,"The PR introduces a new feature that implements structured output for agent responses by using JSON schemas and dynamic Pydantic models, enhancing the functionality of the judge system.",84,12,11,7,1,0,115,115,1,0.8696,1.513,184.0,10.0,2.0,8.0,2.0,0.0,2.0,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0,,0.0441666666666666,0.5838888888888889,closed,1.0,0.0,COLLABORATOR,2025-06-28T18:58:53Z,2025-06-28T19:33:55Z,browser-use/browser-use,2160,ok
 AI agents,3185509791,iterative/datachain,Cursor,https://github.com/iterative/datachain/pull/1191,Enhance partition_by to support strings,"This pull request contains changes generated by Cursor background composer.
 
 ## Summary by Sourcery
@@ -10124,49 +9799,6 @@ Fixes #620.
 ---
 
 💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",fix,10,title provides conventional commit label,733,116,38,94,24,1,1006,1006,25,2.4851,1.5716,1300.0,222.0,53.0,31.0,21.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,41.62138888888889,41.62138888888889,172.03583333333333,closed,1.0,0.0,CONTRIBUTOR,2025-07-01T14:27:39Z,2025-07-08T18:29:48Z,zfit/zfit,644,ok
-AI agents,3193101857,EvolvingLMMs-Lab/lmms-eval,Cursor,https://github.com/EvolvingLMMs-Lab/lmms-eval/pull/734,Fix three bugs in the codebase,"Before you open a pull-request, please check if a similar issue already exists or has been closed before.
-
-### When you open a pull-request, please be sure to include the following
-
-- [x] A descriptive title: [Bugfix] Fix 3 identified issues: exception handling, dead code, and bare except
-- [x] A detailed description
-
-This PR addresses three distinct bugs identified in the codebase, improving reliability, maintainability, and error handling:
-
-1.  **Incorrect Exception Handling (`lmms_eval/utils.py`)**:
-    *   **Why**: The `get_git_commit_hash()` function used incorrect Python syntax (`or` instead of a tuple) for catching multiple exception types, leading to `FileNotFoundError` not being caught when `git` is not installed.
-    *   **Fix**: Corrected the `except` clause to `except (subprocess.CalledProcessError, FileNotFoundError):` for proper error handling.
-
-2.  **Dead Code - Duplicate Return Statement (`lmms_eval/utils.py`)**:
-    *   **Why**: The `get_datetime_str()` function contained a duplicate `return` statement, making the second line unreachable dead code.
-    *   **Fix**: Removed the redundant `return` statement to improve code clarity and maintainability.
-
-3.  **Bare Exception Clause (`lmms_eval/tasks/worldqa/utils.py`)**:
-    *   **Why**: The `worldq_gen_gpt_eval()` function used a bare `except:` clause, which catches all exceptions, including system-critical ones. This can mask underlying issues and hinder debugging.
-    *   **Fix**: Replaced the bare `except:` with a specific `except (ValueError, TypeError, AttributeError):` to only catch expected data conversion errors.
-
-A detailed `bug_report.md` has also been added, providing a comprehensive analysis of these issues and additional observations.
-
-If you meet the lint warnings, you can use following scripts to reformat code.
-
-```sh
-pip install pre-commit
-pre-commit install
-pre-commit run --all-files
-```
-
-Thank you for your contributions!
-
-<!-- This is an auto-generated comment: release notes by coderabbit.ai -->
-## Summary by CodeRabbit
-
-* **Bug Fixes**
-  * Improved exception handling to prevent crashes and enhance reliability in several utility functions.
-  * Removed redundant code to streamline date-time formatting.
-
-* **Documentation**
-  * Added a detailed bug report outlining recent issues, fixes, and recommendations for improved code quality and maintainability.
-<!-- end of auto-generated comment: release notes by coderabbit.ai -->",fix,10,title provides conventional commit label,249,68,36,43,7,3,406,406,10,2.4631,1.7685,135.0,9.0,4.0,2.0,3.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.4316666666666666,0.6666666666666666,closed,1.0,0.0,CONTRIBUTOR,2025-07-01T16:25:10Z,2025-07-01T17:05:10Z,EvolvingLMMs-Lab/lmms-eval,734,ok
 AI agents,3193514773,microsoft/onnxscript,Copilot,https://github.com/microsoft/onnxscript/pull/2431,Fix MatchResult.fail() call signature in redundant_scatter_nd.py,"The `fail` helper function in `onnxscript/rewriter/redundant_scatter_nd.py` was incorrectly passing multiple arguments to `MatchResult.fail()`, causing a TypeError when pattern matching failed.
 
 ## Problem
@@ -11454,7 +11086,7 @@ Added an optional include_tool_call_examples parameter to the Agent class to let
 
 <!-- End of auto-generated description by cubic. -->
 
-",feat,9,"The PR introduces a new optional parameter to the Agent class, adding new functionality that allows users to control the inclusion of tool call example messages. This is a clear addition of a new feature rather than a fix or other change type.",591,80,58,106,8,4,847,847,12,1.4168,1.6682,53.0,46.0,3.0,4.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.0419444444444444,13.650555555555556,closed,1.0,0.0,CONTRIBUTOR,2025-07-06T21:53:07Z,2025-07-07T11:32:09Z,browser-use/browser-use,2327,ok
+",feat,9,"The PR introduces a new optional parameter to the Agent class, adding new functionality that allows users to control the inclusion of tool call example messages. This is a clear addition of a new feature rather than a fix or other change type.",11,0,0,1,0,0,12,12,0,0.0,1.25,53.0,46.0,3.0,4.0,2.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.0419444444444444,13.650555555555556,closed,1.0,0.0,CONTRIBUTOR,2025-07-06T21:53:07Z,2025-07-07T11:32:09Z,browser-use/browser-use,2327,ok
 AI agents,3207286828,AgentOps-AI/agentops,Cursor,https://github.com/AgentOps-AI/agentops/pull/1134,Cursor/improve agno tool integrations py output d88d,"## 📥 Pull Request
 
 **📘 Description**
@@ -11784,7 +11416,7 @@ Fixes #109.
 ---
 
 💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",feat,9,"The PR introduces a new class `HTTPScanpathSaliencyMapModel` that adds new functionality for HTTP-based saliency map predictions, which is a new feature rather than a bug fix or other change type.",115,29,27,7,3,6,187,187,9,4.8128,1.7807,278.0,0.0,3.0,4.0,2.0,3.0,4.0,3.0,1.0,1.0,1.0,0.0,2.0,1.0,1.0,8.92,8.92,9.644444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-07-08T11:37:15Z,2025-07-08T21:15:55Z,matthias-k/pysaliency,110,ok
-AI agents,3212315483,WorkflowAI/WorkflowAI,Cursor,https://github.com/WorkflowAI/WorkflowAI/pull/672,Add speed index to models,Still need to feed the model values with relevant ones,feat,8,"The title indicates the addition of a new feature (speed index) to the models, which aligns with the 'feat' category. The body suggests ongoing work but does not indicate a fix or other type of change.",211,19,21,14,8,1,274,274,9,3.2847,1.5109,422.0,9.0,21.0,11.0,2.0,2.0,3.0,3.0,0.0,3.0,0.0,2.0,0.0,1.0,0.0,26.419166666666666,26.419166666666666,26.84888888888889,closed,1.0,0.0,CONTRIBUTOR,2025-07-08T12:16:04Z,2025-07-09T15:07:00Z,WorkflowAI/WorkflowAI,672,ok
+AI agents,3212315483,WorkflowAI/WorkflowAI,Cursor,https://github.com/WorkflowAI/WorkflowAI/pull/672,Add speed index to models,Still need to feed the model values with relevant ones,feat,8,"The title indicates the addition of a new feature (speed index) to the models, which aligns with the 'feat' category. The body suggests ongoing work but does not indicate a fix or other type of change.",170,8,17,9,0,0,204,204,0,0.0,1.3382,422.0,9.0,21.0,11.0,2.0,2.0,3.0,3.0,0.0,3.0,0.0,2.0,0.0,1.0,0.0,26.419166666666666,26.419166666666666,26.84888888888889,closed,1.0,0.0,CONTRIBUTOR,2025-07-08T12:16:04Z,2025-07-09T15:07:00Z,WorkflowAI/WorkflowAI,672,ok
 AI agents,3212422037,pulearn/pulearn,Copilot,https://github.com/pulearn/pulearn/pull/63,Add tests for ElkanotoPuClassifier edge case with small holdout ratio (issue #25),"This PR adds comprehensive tests for the specific scenario described in issue #25 where `ElkanotoPuClassifier` with a very small `hold_out_ratio` could potentially cause confusing error messages.
 
 ## Problem
@@ -11833,7 +11465,7 @@ AI agents,3212856580,getsentry/sentry,Cursor,https://github.com/getsentry/sentry
 also added tests for dart / flutter frames",feat,10,title provides conventional commit label,430,66,86,32,0,0,614,614,0,0.0,1.544,249.0,0.0,3.0,10.0,1.0,1.0,2.0,2.0,0.0,2.0,0.0,1.0,0.0,1.0,0.0,20.584722222222226,20.584722222222226,23.414722222222224,closed,1.0,0.0,CONTRIBUTOR,2025-07-08T14:53:33Z,2025-07-09T14:18:26Z,getsentry/sentry,95035,ok
 AI agents,3212993541,jxxghp/MoviePilot,Cursor,https://github.com/jxxghp/MoviePilot/pull/4566,新增工作流分享相关接口和helper,"<!-- Add workflow sharing APIs and helper, including a dedicated toggle, and refactor workflow database operations to use WorkflowOper. -->
 
-This PR introduces the ability to share workflows via a public server, mirroring existing subscription sharing. It includes a new dedicated configuration switch for workflow sharing and refactors all workflow-related database interactions to consistently use `WorkflowOper`, as requested, to improve modularity and maintainability.",feat,9,"The PR introduces new APIs and a helper for workflow sharing, which adds new functionality. It also includes a refactor of database operations, but the primary change is the addition of new features.",170,39,44,17,17,0,287,287,17,5.9233,1.8571,473.0,12.0,7.0,5.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.0369444444444444,0.5819444444444445,closed,1.0,0.0,OWNER,2025-07-08T15:38:01Z,2025-07-08T16:12:56Z,jxxghp/MoviePilot,4566,ok
+This PR introduces the ability to share workflows via a public server, mirroring existing subscription sharing. It includes a new dedicated configuration switch for workflow sharing and refactors all workflow-related database interactions to consistently use `WorkflowOper`, as requested, to improve modularity and maintainability.",feat,9,"The PR introduces new APIs and a helper for workflow sharing, which adds new functionality. It also includes a refactor of database operations, but the primary change is the addition of new features.",143,32,44,15,7,0,241,241,7,2.9046,1.8008,473.0,12.0,7.0,5.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,,0.0369444444444444,0.5819444444444445,closed,1.0,0.0,OWNER,2025-07-08T15:38:01Z,2025-07-08T16:12:56Z,jxxghp/MoviePilot,4566,ok
 AI agents,3213110142,bruin-data/ingestr,Cursor,https://github.com/bruin-data/ingestr/pull/299,Add platform field to applovin max data,"Add `platform` field to AppLovin Max source data to allow distinguishing between Android, iOS, and FireOS.
 
 Although the AppLovin Max source already separates data by platform internally, this information was not included in the final yielded data, making it impossible to distinguish platforms in the resulting table.
@@ -12284,7 +11916,7 @@ Before you submit your PR, please go through the checklist below:
 - [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)
 
 -->
-",fix,10,title provides conventional commit label,28,0,3,0,0,0,31,31,0,0.0,1.1935,6.0,18.0,6.0,1.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,10.428888888888888,10.428888888888888,18.93583333333333,closed,1.0,0.0,CONTRIBUTOR,2025-07-09T21:30:13Z,2025-07-10T16:26:22Z,datahub-project/datahub,14016,ok
+",fix,10,title provides conventional commit label,6,0,0,0,0,0,6,6,0,0.0,1.0,6.0,18.0,6.0,1.0,3.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,10.428888888888888,10.428888888888888,18.93583333333333,closed,1.0,0.0,CONTRIBUTOR,2025-07-09T21:30:13Z,2025-07-10T16:26:22Z,datahub-project/datahub,14016,ok
 AI agents,3217261924,datahub-project/datahub,Cursor,https://github.com/datahub-project/datahub/pull/14019,chore(ingest): simplify MetadataChangeProposalWrapper usages,"Refactor: Simplify MetadataChangeProposalWrapper Usage
 
 This PR refactors the usage of `MetadataChangeProposalWrapper` across the codebase to leverage its automatic inference capabilities.
@@ -12760,7 +12392,7 @@ classDef context fill:#FFFFFF
 - The `shell=True` approach was critical for properly capturing subprocess output - previous attempts without it failed to detect server readiness
 - Integration test failures are expected at this stage; the goal was to get the basic subprocess infrastructure working
 - All darglint errors have been resolved by adding proper parameter documentation and fixing return type documentation
-",refactor,10,title provides conventional commit label,103,15,9,17,1,0,145,145,1,0.6897,1.6069,360.0,399.0,17.0,25.0,3.0,4.0,3.0,2.0,1.0,2.0,1.0,1.0,0.0,1.0,0.0,141.64,0.0205555555555555,143.35861111111112,closed,1.0,0.0,CONTRIBUTOR,2025-07-10T21:47:00Z,2025-07-16T21:08:31Z,reflex-dev/reflex,5555,ok
+",refactor,10,title provides conventional commit label,78,7,5,16,0,0,106,106,0,0.0,1.6132,360.0,399.0,17.0,25.0,3.0,4.0,3.0,2.0,1.0,2.0,1.0,1.0,0.0,1.0,0.0,141.64,0.0205555555555555,143.35861111111112,closed,1.0,0.0,CONTRIBUTOR,2025-07-10T21:47:00Z,2025-07-16T21:08:31Z,reflex-dev/reflex,5555,ok
 AI agents,3220805963,reflex-dev/reflex-web,Devin,https://github.com/reflex-dev/reflex-web/pull/1485,Fix double slash issues in library page URL generation,"
 # Fix double slash issues in library page URL generation
 
@@ -13366,68 +12998,7 @@ Enhancements:
 - Add custom_modules to .gitignore and remove the obsolete extensions README
 
 Documentation:
-- Add ARCHITECTURE.md and REFACTOR_SUMMARY.md detailing the new modular architecture and migration guidance",refactor,10,title provides conventional commit label,6679,1280,1119,830,260,87,10255,10255,347,3.3837,1.7297,761.0,545.0,146.0,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,13.079444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-07-11T17:31:45Z,2025-07-12T06:36:31Z,allthingslinux/tux,944,ok
-AI agents,3223923166,reflex-dev/reflex-web,Devin,https://github.com/reflex-dev/reflex-web/pull/1505,Add comprehensive API Reference and enhanced examples for drag-and-drop documentation,"
-# Format API Reference to match library component styling
-
-## Summary
-
-Updated the drag-and-drop documentation's API Reference section to use the same visual components (`h1_comp`, `h2_comp`) and CSS classes (`flex flex-col`) as library component documentation, addressing user feedback to make it ""close to the other page"". 
-
-The changes replace markdown headers with proper Reflex components while maintaining all comprehensive API documentation content for `rxe.dnd.draggable` and `rxe.dnd.drop_target` components, including parameters, monitor classes, and collected parameters.
-
-## Review & Testing Checklist for Human
-
-**Risk Level: 🟡 Medium** - Component integration with enterprise documentation system
-
-- [ ] **Visual consistency verification**: Compare the API Reference section styling with library component documentation (e.g., `/docs/library/overlay/drawer`) to ensure visual consistency
-- [ ] **React stability check**: Verify no ""TypeError: useContext is not a function"" or other React frontend exceptions occur when loading the page
-- [ ] **Content completeness**: Confirm all API Reference content (component signatures, parameters, monitor classes, collected parameters) renders properly with correct formatting
-- [ ] **Interactive functionality**: Test that all existing drag-and-drop examples still work correctly and aren't affected by the API Reference changes
-- [ ] **Navigation testing**: Verify table of contents links properly navigate to API Reference sections
-
-**Test Plan**: Navigate to `/docs/enterprise/drag-and-drop`, scroll to API Reference section, compare visual styling with library components, test interactive examples, and verify no console errors.
-
----
-
-### Diagram
-
-```mermaid
-%%{ init : { ""theme"" : ""default"" }}%%
-graph TD
-    A[""docs/enterprise/<br/>drag-and-drop.md""]:::major-edit
-    B[""pcweb/templates/<br/>docpage.py""]:::context
-    C[""pcweb/pages/docs/<br/>component.py""]:::context
-    D[""Frontend API<br/>Reference Display""]:::context
-    
-    A --> |imports| B
-    B --> |provides h1_comp<br/>h2_comp| A
-    C --> |reference styling<br/>patterns| A
-    A --> |renders to| D
-    
-    subgraph Legend
-        L1[Major Edit]:::major-edit
-        L2[Minor Edit]:::minor-edit
-        L3[Context/No Edit]:::context
-    end
-    
-    classDef major-edit fill:#90EE90
-    classDef minor-edit fill:#87CEEB
-    classDef context fill:#FFFFFF
-```
-
-### Notes
-
-- **Background**: Enterprise components can't use frontmatter metadata for automatic API Reference generation (only works for `docs/library` paths), so manual formatting is required
-- **Approach**: Used the same components (`h1_comp`, `h2_comp`) and CSS classes (`flex flex-col`) that library components use in their auto-generated API sections
-- **Previous Issue**: Earlier attempts with these components caused React useContext errors, but current implementation appears stable after server restart
-
-**Link to Devin run**: https://app.devin.ai/sessions/bb6265b286714008b4e208c6933f07b2  
-**Requested by**: thomas@reflex.dev
-
-**Browser Testing Screenshots**:
-![Documentation page after formatting](https://devin-public-attachments.s3.dualstack.us-west-2.amazonaws.com/attachments_private/org_uvZMrXBpDIHXePDQ/44800f8a-0e30-4802-9cca-9baf23cf676f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT64VHFT7TCL6H25F%2F20250716%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250716T201532Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEwaCXVzLWVhc3QtMSJHMEUCIQC6uOQW%2FTqATLjs543yyxq1bEVpepPiyRV6wHu7EWFnVgIgRs3c48fdkV4q6k5O%2F2UxSHyVBAadsQaQiKClcYBBKB0qtwUIZRABGgwyNzI1MDY0OTgzMDMiDDPhDRqL5wkvXNOenyqUBWrQupORP3YrxSZHgbc66gLb%2BwpxiBP5%2BA%2BqrbGJUkUpoM5VovHjSyJdRKzg%2BXQe5FOSvY0wD62bQ7EWFPgPJMRGmMNM3T6tdlfqloTCXhZnhHoCKOoaJCajGCt75vuakPbRQI1udL6%2Bjg828LVevehjPenl1iLcxQWYkP%2BSrqx9PXi4970Wfx5ou9xASY6dRYDOZDDDBhgSvj3YN3N%2Fcduzkvr3mwcN6C2VP%2BNXfvNGAX9VXkVSVqWejRC1tjF4mVEUpkjs17%2B3MCtykHgHDplhnLHKqX0w9kzLmajEyTrEQsGQljHSP1UblmJfbWw78RXJ3GWQipdCiDymEkNvdr%2Fv7MPUk5ANRqTptPsXNgfN32ZGbkflOKrlG8K11YMazlvz1duHmfFu6hqgzaeNykGA8k3auu45PiQXjDbObK7WP8NJW48nKIJ9VJ66QLlfEM6rw5lXFhNz3o0cb6YutbYl%2BkLOVbYY263ZeCoQTdW4606dgUHLDbqRQy7qZNFvZgQJxccB5R8Di5wRbiNfMBNMB8B3%2F0VeDpSPYKO6iPH5AhV0jMsRnAKXPK51pV79yq3KGq7xQQJQltQsmLi72NwQEMiBMbF95ZbyjIz7JUvgFhb8JX1nbW8M7wdPbBU4uNHcasRYZqHFbd3pD1YOOxNHbC48s%2ByvUihndAIn6kM%2BCtud7r%2BV%2F3%2BbLLBMD%2BPKYzIdcVYWBEiQlqLUgmWdPl0ovN1UmhNSeZzlvLdF3%2BZy3l96jFS13lU7lZf%2FfsyNm0Y71k%2BrEvZ%2BJf12xqUvs8vRc3JG3ytnahIKLhdFHOPiLcETaAZfaUOCUYbiwI9U6lmiu4lfyybKqSe1hw7Vz51RCRESHxtJAHAtWFISuKmnBp1YoDCKiuDDBjqYAemlUXkF5C2mgjC3BHrpoh22qvWicA04it3bLNho9vqEyhcWziq3%2FemoetS7gcWlXOGCACUQLhbJ%2FOmuOaODG58QoBNuPVMv5KMdmAXwq62T8SpdKMmLVyXgcTmzOBoPSB8tFKCe9McKmzlry9hbmfKBRaZJt1rJywTz4wtIqMr4Ptdq5mWx1%2Bmh7fPxL%2BMB%2BzWYLpP0rysm&X-Amz-Signature=9e0d8cfd8e293c5317af950cb9089867cb7df56889caf289da3dedb4405432d2)
-",docs,9,"The PR updates the documentation's API Reference section by changing the formatting and styling to match existing library components, without adding new features or fixing bugs. It is a documentation enhancement focused on visual consistency and content presentation.",562,65,33,35,4,0,699,699,4,0.5722,1.3605,224.0,5.0,1.0,10.0,3.0,0.0,2.0,1.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,124.91,0.0102777777777777,124.9161111111111,closed,1.0,0.0,CONTRIBUTOR,2025-07-11T19:03:41Z,2025-07-16T23:58:39Z,reflex-dev/reflex-web,1505,ok
+- Add ARCHITECTURE.md and REFACTOR_SUMMARY.md detailing the new modular architecture and migration guidance",refactor,10,title provides conventional commit label,7447,1408,1302,943,289,92,11481,11481,381,3.3185,1.7366,761.0,545.0,146.0,2.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,13.079444444444444,closed,1.0,0.0,CONTRIBUTOR,2025-07-11T17:31:45Z,2025-07-12T06:36:31Z,allthingslinux/tux,944,ok
 AI agents,3224534498,reflex-dev/reflex-web,Devin,https://github.com/reflex-dev/reflex-web/pull/1510,Restore Cal.com booking capability with 5+ employee threshold,"
 # Restore Cal.com booking capability with 5+ employee threshold
 
@@ -16125,7 +15696,7 @@ graph TD
 
 **Session Info**: 
 - Link to Devin run: https://app.devin.ai/sessions/0c04e38765e94acfbb06412d55aea1cd
-- Requested by: @LineIndent (ahmad@reflex.dev)",fix,10,title provides conventional commit label,3,0,0,0,0,0,3,3,0,0.0,1.0,10.0,5.0,2.0,2.0,1.0,0.0,3.0,2.0,1.0,2.0,1.0,2.0,0.0,0.0,0.0,1.9627777777777775,0.0088888888888888,2.318611111111111,closed,1.0,0.0,CONTRIBUTOR,2025-07-16T13:14:39Z,2025-07-16T15:33:46Z,reflex-dev/reflex-web,1520,ok
+- Requested by: @LineIndent (ahmad@reflex.dev)",fix,10,title provides conventional commit label,3,0,0,0,0,0,3,3,0,0.0,1.0,10.0,5.0,2.0,2.0,1.0,0.0,3.0,2.0,1.0,2.0,1.0,2.0,0.0,0.0,0.0,1.9627777777777773,0.0088888888888888,2.318611111111111,closed,1.0,0.0,CONTRIBUTOR,2025-07-16T13:14:39Z,2025-07-16T15:33:46Z,reflex-dev/reflex-web,1520,ok
 AI agents,3236303099,wzdavid/ThinkRAG,Cursor,https://github.com/wzdavid/ThinkRAG/pull/26,Fix three codebase bugs,"Fixes a division by zero error, an Ollama state initialization bug, and a path traversal vulnerability.",fix,10,title provides conventional commit label,13,2,0,1,0,0,16,16,0,0.0,1.3125,180.0,8.0,4.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,0.0083333333333333,closed,1.0,0.0,OWNER,2025-07-16T14:56:11Z,2025-07-16T14:56:41Z,wzdavid/ThinkRAG,26,ok
 AI agents,3236369998,Azure/azure-sdk-for-python,Copilot,https://github.com/Azure/azure-sdk-for-python/pull/42047,Fix randomization seed consistency issue in azure-ai-evaluation SDK,"## Problem
 
@@ -16563,7 +16134,7 @@ Fixes #53.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,10,title provides conventional commit label,4839,1117,722,485,188,41,7392,7392,229,3.0979,1.6728,4.0,2.0,2.0,5.0,0.0,4.0,4.0,2.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,64.6,64.6,64.845,closed,1.0,0.0,CONTRIBUTOR,2025-07-19T00:17:14Z,2025-07-21T17:07:56Z,Azure-Samples/openai-chat-vision-quickstart,54,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,10,title provides conventional commit label,5883,1375,865,593,257,51,9024,9024,308,3.4131,1.6834,4.0,2.0,2.0,5.0,0.0,4.0,4.0,2.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,64.6,64.6,64.845,closed,1.0,0.0,CONTRIBUTOR,2025-07-19T00:17:14Z,2025-07-21T17:07:56Z,Azure-Samples/openai-chat-vision-quickstart,54,ok
 AI agents,3244675358,Azure-Samples/openai-chat-vision-quickstart,Copilot,https://github.com/Azure-Samples/openai-chat-vision-quickstart/pull/56,Fix h11 dependency upgrade from 0.14.0 to 0.16.0 for Dependabot PR #42,"This PR resolves the dependency conflict that was preventing Dependabot PR #42 from being merged. The issue was that the h11 package needed to be upgraded from version 0.14.0 to 0.16.0, but the CI was failing due to this change.
 
 ## Changes Made
@@ -16589,7 +16160,7 @@ Fixes #55.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",fix,10,title provides conventional commit label,10092,1888,1400,1016,385,98,14879,14879,483,3.2462,1.6564,4.0,4.0,2.0,8.0,6.0,4.0,4.0,2.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,66.84722222222223,66.84722222222223,66.94583333333334,closed,1.0,0.0,CONTRIBUTOR,2025-07-19T00:17:23Z,2025-07-21T19:14:08Z,Azure-Samples/openai-chat-vision-quickstart,56,ok
+💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",fix,10,title provides conventional commit label,12298,2376,1693,1265,490,119,18241,18241,609,3.3386,1.664,4.0,4.0,2.0,8.0,6.0,4.0,4.0,2.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,66.84722222222223,66.84722222222223,66.94583333333334,closed,1.0,0.0,CONTRIBUTOR,2025-07-19T00:17:23Z,2025-07-21T19:14:08Z,Azure-Samples/openai-chat-vision-quickstart,56,ok
 AI agents,3244901827,NewFuture/DDNS,Copilot,https://github.com/NewFuture/DDNS/pull/537,"refactor(http.proxy): add ""SYSTEM"" and fix ""DIRECT"" proxy, implement proxy list support with automatic fallback","This PR implements proxy list support for the HTTP module as requested in the issue, enabling automatic proxy fallback functionality.
 
 ## Changes Made
@@ -17649,7 +17220,7 @@ Fixes #29.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",fix,9,"The PR updates the codebase by replacing deprecated URLs with new ones, which is a bug fix to ensure the system continues to function correctly with the new endpoint. It does not add new features or change functionality beyond fixing the endpoint references.",33,13,0,0,1,0,47,47,1,2.1277,1.3617,118.0,119.0,56.0,5.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,24.419722222222223,24.419722222222223,24.421388888888888,closed,1.0,0.0,CONTRIBUTOR,2025-07-23T06:11:39Z,2025-07-24T06:36:56Z,pamelafox/python-openai-demos,30,ok
+💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",fix,9,"The PR updates the codebase by replacing deprecated URLs with new ones, which is a bug fix to ensure the system continues to function correctly with the new endpoint. It does not add new features or change functionality beyond fixing the endpoint references.",56,0,0,0,0,0,56,56,0,0.0,1.0,118.0,119.0,56.0,5.0,2.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,24.419722222222223,24.419722222222223,24.421388888888888,closed,1.0,0.0,CONTRIBUTOR,2025-07-23T06:11:39Z,2025-07-24T06:36:56Z,pamelafox/python-openai-demos,30,ok
 AI agents,3255564010,docling-project/docling,Copilot,https://github.com/docling-project/docling/pull/1975,fix: Preserve PARTIAL_SUCCESS status when document timeout hits,"This PR adds comprehensive test coverage for the document timeout handling fix that prevents AssertionError in ReadingOrderModel when `pipeline_options.document_timeout` is set.
 
 ## Background
@@ -18001,7 +17572,7 @@ This implementation provides a solid foundation for multimodal routing by combin
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",feat,10,"The PR introduces a new transit edge provider feature for GTFS-based routing, adding new capabilities and dependencies without fixing bugs or refactoring existing code.",428,102,41,50,8,6,635,635,14,2.2047,1.6236,1528.0,0.0,9.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,12.928888888888888,closed,1.0,0.0,CONTRIBUTOR,2025-07-26T07:05:29Z,2025-07-26T20:01:13Z,bmander/graphserver,49,ok
+💬 Share your feedback on Copilot coding agent for the chance to win a $200 gift card! Click [here](https://survey.alchemer.com/s3/8343779/Copilot-Coding-agent) to start the survey.",feat,10,"The PR introduces a new transit edge provider feature for GTFS-based routing, adding new capabilities and dependencies without fixing bugs or refactoring existing code.",428,103,45,51,8,6,641,641,14,2.1841,1.6365,1528.0,0.0,9.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,12.928888888888888,closed,1.0,0.0,CONTRIBUTOR,2025-07-26T07:05:29Z,2025-07-26T20:01:13Z,bmander/graphserver,49,ok
 AI agents,3265325720,yutto-dev/yutto,Copilot,https://github.com/yutto-dev/yutto/pull/539,"♻️ refactor: optimize repository structure, rename `bilibili_typing` to media and improve function naming","This PR addresses the repository structure optimization issues identified in the codebase by renaming poorly named modules and functions to better reflect their actual purpose and functionality.
 
 ## Key Changes
@@ -18048,7 +17619,7 @@ Fixes #538.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,9,"The PR primarily involves renaming modules and functions to improve clarity and maintainability without adding new features or fixing bugs. This is a classic example of a refactor, as it changes code structure and naming without altering functionality.",196,60,35,17,0,0,308,308,0,0.0,1.5877,125.0,118.0,57.0,6.0,5.0,10.0,10.0,5.0,5.0,1.0,2.0,1.0,0.0,4.0,0.0,0.9294444444444444,0.9294444444444444,3.0372222222222223,closed,1.0,0.0,CONTRIBUTOR,2025-07-26T08:15:19Z,2025-07-26T11:17:33Z,yutto-dev/yutto,539,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",refactor,9,"The PR primarily involves renaming modules and functions to improve clarity and maintainability without adding new features or fixing bugs. This is a classic example of a refactor, as it changes code structure and naming without altering functionality.",10,17,6,1,0,0,34,34,0,0.0,1.9412,125.0,118.0,57.0,6.0,5.0,10.0,10.0,5.0,5.0,1.0,2.0,1.0,0.0,4.0,0.0,0.9294444444444444,0.9294444444444444,3.0372222222222223,closed,1.0,0.0,CONTRIBUTOR,2025-07-26T08:15:19Z,2025-07-26T11:17:33Z,yutto-dev/yutto,539,ok
 AI agents,3266348344,willccbb/verifiers,Cursor,https://github.com/willccbb/verifiers/pull/160,Create and evaluate a new Hugging Face environment,"## Description
 Adds a new `truthful_qa` environment for evaluating language models on their ability to provide accurate and truthful information. This environment leverages the Hugging Face TruthfulQA dataset and includes multi-criteria evaluation with weighted reward functions for correctness, avoiding misinformation, informativeness, and clarity.
 
@@ -18081,7 +17652,7 @@ This environment is designed to test models on a fact-checking/trivia task using
 
 ---
 
-[Open in Web](https://cursor.com/agents?id=bc-193144b5-8c56-426c-9b3d-4ef2fff01f46) • [Open in Cursor](https://cursor.com/background-agent?bcId=bc-193144b5-8c56-426c-9b3d-4ef2fff01f46) • [Open Docs](https://docs.cursor.com/background-agent/web-and-mobile)",feat,9,"The PR introduces a new environment feature for evaluating language models, which adds new functionality without fixing a bug or making other types of changes.",274,49,30,8,6,2,369,369,8,2.168,1.4526,300.0,0.0,4.0,14.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,20.896944444444443,closed,1.0,0.0,MEMBER,2025-07-27T00:19:45Z,2025-07-27T21:13:34Z,willccbb/verifiers,160,ok
+[Open in Web](https://cursor.com/agents?id=bc-193144b5-8c56-426c-9b3d-4ef2fff01f46) • [Open in Cursor](https://cursor.com/background-agent?bcId=bc-193144b5-8c56-426c-9b3d-4ef2fff01f46) • [Open Docs](https://docs.cursor.com/background-agent/web-and-mobile)",feat,9,"The PR introduces a new environment feature for evaluating language models, which adds new functionality without fixing a bug or making other types of changes.",212,41,24,6,6,1,290,290,7,2.4138,1.469,300.0,0.0,4.0,14.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,20.896944444444443,closed,1.0,0.0,MEMBER,2025-07-27T00:19:45Z,2025-07-27T21:13:34Z,willccbb/verifiers,160,ok
 AI agents,3266377001,willccbb/verifiers,Cursor,https://github.com/willccbb/verifiers/pull/161,Create and evaluate a new environment with a dataset,"## Description
 This PR introduces a new environment, `toxicity_explanation`, designed to evaluate models on their ability to classify text toxicity and provide context-aware explanations.
 
@@ -18183,7 +17754,7 @@ Fixes #240.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new feature that adds comprehensive support for revision posts, including new API endpoints, configuration options, and enhanced command capabilities, which extends the existing functionality.",118,20,21,16,6,0,181,181,6,3.3149,1.7403,449.0,26.0,10.0,5.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,40.092777777777776,closed,1.0,0.0,CONTRIBUTOR,2025-07-27T10:43:14Z,2025-07-29T02:48:48Z,Ljzd-PRO/KToolBox,265,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",feat,10,"The PR introduces a new feature that adds comprehensive support for revision posts, including new API endpoints, configuration options, and enhanced command capabilities, which extends the existing functionality.",155,36,27,26,9,0,253,253,9,3.5573,1.8063,449.0,26.0,10.0,5.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,40.092777777777776,closed,1.0,0.0,CONTRIBUTOR,2025-07-27T10:43:14Z,2025-07-29T02:48:48Z,Ljzd-PRO/KToolBox,265,ok
 AI agents,3266984732,Ljzd-PRO/KToolBox,Copilot,https://github.com/Ljzd-PRO/KToolBox/pull/267,Preserve image metadata (published date) when downloading files,"This PR implements metadata preservation for downloaded images, ensuring that the original published date from the source (Patreon, fanbox, etc.) is retained in the file's modification time.
 
 ## Problem
@@ -18323,7 +17894,7 @@ Fixes #16908.
 <!-- START COPILOT CODING AGENT TIPS -->
 ---
 
-💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR removes a duplicated lint rule from the configuration and cleans up related suppression comments, which is a fix to reduce redundancy and maintenance overhead, effectively fixing a problem in the linting setup.",1057,145,165,70,60,8,1505,1505,68,4.5183,1.6412,55.0,56.0,35.0,3.0,1.0,0.0,2.0,2.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.1969444444444444,0.1969444444444444,0.4066666666666667,closed,1.0,0.0,CONTRIBUTOR,2025-07-28T05:41:53Z,2025-07-28T06:06:17Z,mlflow/mlflow,16909,ok
+💡 You can make Copilot smarter by setting up custom instructions, customizing its development environment and configuring Model Context Protocol (MCP) servers. Learn more [Copilot coding agent tips](https://gh.io/copilot-coding-agent-tips) in the docs.",fix,9,"The PR removes a duplicated lint rule from the configuration and cleans up related suppression comments, which is a fix to reduce redundancy and maintenance overhead, effectively fixing a problem in the linting setup.",0,3,0,0,0,0,3,3,0,0.0,2.0,55.0,56.0,35.0,3.0,1.0,0.0,2.0,2.0,0.0,1.0,0.0,2.0,0.0,0.0,0.0,0.1969444444444444,0.1969444444444444,0.4066666666666667,closed,1.0,0.0,CONTRIBUTOR,2025-07-28T05:41:53Z,2025-07-28T06:06:17Z,mlflow/mlflow,16909,ok
 AI agents,3271196926,AgentOps-AI/agentops,Devin,https://github.com/AgentOps-AI/agentops/pull/1179,Add llms.txt compilation system for AI model documentation,"# Add llms.txt compilation system for AI model documentation
 
 ## Summary

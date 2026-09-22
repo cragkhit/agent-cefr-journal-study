@@ -8,7 +8,8 @@ Table 7 (RQ2) with the new proficiency tool, for three comparison groups:
 
 Method is identical to analyze_rq1_new_tool.py so the three rows are comparable:
 per-construct Sec 4.2 differencing (delta = max(after - before, 0)) applied BEFORE
-mapping constructs to levels, using the tool's own Index-bucket rule.
+mapping constructs to levels, using the tool's own Index-bucket rule. Files are paired
+by full repository path and merge commits are excluded -- see cpet_artifacts.py.
 
 Two scopes are reported:
   * all repos in each group
@@ -24,27 +25,28 @@ Outputs
 """
 
 import argparse
-import ast
-import collections
 import glob
 import os
-import re
 from datetime import datetime
 
 import pandas as pd
 from scipy.stats import chi2_contingency, kruskal
 
+from cpet_artifacts import build_groups, difference
+
 LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 COUNT_COLS = ['count_' + L for L in LEVELS]
-
-FN = re.compile(r'^(?P<owner>.+?)__(?P<repo>.+?)__pr(?P<pr>\d+)__(?P<ts>\d{8}_\d{6})__'
-                r'(?P<sha>[0-9a-f]{7,40})__(?P<rest>.+)$')
 
 GROUPS = [
     ('AI agents',           'output_by_repo'),
     ('Human',               'output_by_repo_human'),
     ('Human (pre-ChatGPT)', 'output_by_repo_pre_chatgpt'),
 ]
+SUMMARY = {
+    'output_by_repo':             'ai_fetch_summary.csv',
+    'output_by_repo_human':       'human_fetch_summary.csv',
+    'output_by_repo_pre_chatgpt': 'pre_chatgpt_fetch_summary.csv',
+}
 
 
 def log_factory(path):
@@ -70,76 +72,16 @@ def load_mapping(path):
     return m
 
 
-def parse_fn(name):
-    m = FN.match(name)
-    if not m:
-        return None
-    rest = m.group('rest')
-    low = rest.lower()
-    if low.endswith('_before'):
-        variant, base = 'before', rest[:-7]
-    elif low.endswith('_after'):
-        variant, base = 'after', rest[:-6]
-    elif low.endswith('_new'):
-        variant, base = 'new', rest[:-4]
-    else:
-        variant, base = 'new', rest
-    return (m.group('owner'), m.group('repo'), m.group('pr'), m.group('sha'), base, variant)
-
-
-def process(dirpath, mapping, log, label):
+def process(dirpath, mapping, log, label, parents, keep_merges=False):
     files = [f for f in sorted(glob.glob(os.path.join(dirpath, '*.csv')) + glob.glob(os.path.join(dirpath, '*.csv.gz')))
              if 'run_log' not in os.path.basename(f)]
-    groups, unparsed, nrows = collections.defaultdict(dict), 0, 0
-    for f in files:
-        try:
-            d = pd.read_csv(f, usecols=['filename', 'code_type'] + COUNT_COLS)
-        except Exception:
-            continue
-        for _, r in d.iterrows():
-            nrows += 1
-            info = parse_fn(str(r['filename']))
-            if not info:
-                unparsed += 1
-                continue
-            owner, repo, pr, sha, base, variant = info
-            try:
-                lst = ast.literal_eval(r['code_type']) if isinstance(r['code_type'], str) else []
-            except Exception:
-                lst = []
-            groups[(owner, repo, pr, sha, base)][variant] = collections.Counter(lst)
-
-    rows, n_new, n_pair, n_one = [], 0, 0, 0
-    per_pr = collections.defaultdict(lambda: collections.Counter())
-    pr_repo = {}
-    for (owner, repo, pr, sha, base), v in groups.items():
-        if 'new' in v:
-            delta, n_new = v['new'], n_new + 1
-        elif 'before' in v and 'after' in v:
-            b, a = v['before'], v['after']
-            delta = collections.Counter()
-            for k in set(a) | set(b):
-                dd = a.get(k, 0) - b.get(k, 0)
-                if dd > 0:
-                    delta[k] = dd
-            n_pair += 1
-        else:
-            delta, n_one = next(iter(v.values())), n_one + 1
-        pr_repo[pr] = f'{owner}/{repo}'
-        for c, n in delta.items():
-            lv = mapping.get(c)
-            if lv:
-                per_pr[pr][lv] += n
-
-    for pr, c in per_pr.items():
-        rows.append({'group': label, 'pr_id': pr, 'repo': pr_repo[pr],
-                     **{L: c.get(L, 0) for L in LEVELS}})
-    df = pd.DataFrame(rows)
-    log(f'{label:22s} repos={len(files):3d}  file rows={nrows:6d}  groups={len(groups):5d}  '
-        f'new={n_new} pairs={n_pair} single={n_one}  PRs with constructs={len(df)}')
-    if unparsed:
-        log(f'{"":22s} unparsed filenames: {unparsed}')
-    return df
+    summary = os.path.join(os.path.dirname(os.path.normpath(dirpath)), SUMMARY[os.path.basename(os.path.normpath(dirpath))])
+    log(f'{label}  ({len(files)} repo CSVs)')
+    groups = build_groups(files, summary, parents, log, keep_merges=keep_merges)
+    per_pr, pr_repo = difference(groups, mapping, log)
+    rows = [{'group': label, 'pr_id': pr, 'repo': pr_repo[pr], **{L: c.get(L, 0) for L in LEVELS}}
+            for pr, c in per_pr.items()]
+    return pd.DataFrame(rows)
 
 
 def table(df_all, log, title):
@@ -194,6 +136,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--repo-root', required=True, help='path to agent-cefr-journal-study')
     ap.add_argument('--mapping', default='data/ubersequenceLevel.csv')
+    ap.add_argument('--parents', default='data/commit_parents.csv')
+    ap.add_argument('--keep-merges', action='store_true',
+                    help='reproduce the pre-2026-09-22 numbers (merge commits included)')
     args = ap.parse_args()
 
     ts = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -208,7 +153,7 @@ def main():
         if not os.path.isdir(d):
             log(f'MISSING {d}')
             continue
-        frames.append(process(d, mapping, log, label))
+        frames.append(process(d, mapping, log, label, args.parents, args.keep_merges))
     df = pd.concat(frames, ignore_index=True)
     df.to_csv('data/rq2_three_groups_per_pr.csv', index=False)
 
