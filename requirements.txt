@@ -1,13 +1,26 @@
-# Collection (scripts/collection) and analysis (scripts/analysis, analysis/)
-pandas
-numpy
+# Python 3.14.5 was used for the results reported in the paper.
+#
+# Versions below are the ones the analysis actually ran on. They are pinned with >=
+# rather than == so the package still installs on slightly older environments; if you
+# need to reproduce the reported numbers exactly, pin with == instead.
+
+# Analysis (rq1/ .. rq4/, lib/)
+pandas>=3.0.5
+numpy>=2.5.3
+scipy>=1.18.1
+statsmodels>=0.15.0
+patsy>=1.0.3
+matplotlib>=3.11.1
+
+# Notebooks (rq3/, rq4/)
+jupyter
+ipykernel>=7.3.0
+nbclient>=0.11.0
+nbformat>=5.11.1
+
+# Collection (collection/, rq4/ fetch scripts) and the AIDev parquet tables
 pyarrow
 fsspec
 huggingface_hub
 requests
 python-dotenv
-scipy
-statsmodels
-patsy
-matplotlib
-jupyter

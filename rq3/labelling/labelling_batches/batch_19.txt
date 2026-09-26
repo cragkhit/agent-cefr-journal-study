@@ -1,0 +1,310 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 748824976
+title: Resnet
+body:
+Let me know if this looks like a reasonable resnet to you! It seems to do slightly better than the MLP in my experiments.
+
+----- PR -----
+pr_id: 750667921
+title: in-memory core
+body:
+Mainly the work of @cthoyt . I've only added the thread-safety functionality.
+
+----- PR -----
+pr_id: 751956739
+title: Filter characters
+body:
+Lets us train on fox vs all to prevent overfitting.
+
+Some other improvements too, like shuffling the train set which
+
+----- PR -----
+pr_id: 752471527
+title: Rewards
+body:
+Rewards are calculated in `rewards.py`, and passed around several classes as the 3rd item in the gamestate tuple:
+
+`gamestate, action_repeats, rewards = gamestate`
+
+Imitation learning as implemented in the current policy class ignores rewards for prediction and loss.
+
+----- PR -----
+pr_id: 752549658
+title: Layernorm
+body:
+(empty)
+
+----- PR -----
+pr_id: 756389937
+title: Add sentry integration-step to worker prerun celery signal
+body:
+PR adds functionality for adding Sentry transaction_id's in the new Celery integration.
+
+-------------
+
+I'm not sure why the one test is failing @JonasKs - perhaps you could take a look at it? Also, feel free to change changelog/docs as well if there's anything you would prefer to word differently.
+
+----- PR -----
+pr_id: 759909817
+title: Residual LSTM network.
+body:
+(empty)
+
+----- PR -----
+pr_id: 814179768
+title: Fix import problem that was found because of #23
+body:
+関連: https://github.com/saturday06/VRM_Addon_for_Blender/pull/23#issuecomment-782580000
+
+----- PR -----
+pr_id: 853760267
+title: Handle function defaults correctly
+body:
+(empty)
+
+----- PR -----
+pr_id: 858698140
+title: Fix unregister menus
+body:
+Fix unregister import and export menus.
+And Update VRM panel
+![3](https://user-images.githubusercontent.com/20571538/114879369-173c8280-9e3c-11eb-9799-be1d2695f614.png)
+
+----- PR -----
+pr_id: 859591601
+title: fix quote_via not compatible with Python2
+body:
+https://github.com/NewFuture/DDNS/issues/231#issuecomment-820912617
+
+use `replace('+','%20')` instead.
+
+----- PR -----
+pr_id: 861319124
+title: Add VRM Props Panels
+body:
+VRMのプロパティを表示できるようにしてみたものです。
+割とコンフリクトとしているようなので、参考程度にどうぞ。
+![1](https://user-images.githubusercontent.com/20571538/115247001-597a0280-a161-11eb-962f-b6e3d55e142d.png)
+![2](https://user-images.githubusercontent.com/20571538/115247024-60a11080-a161-11eb-9c90-9cf39b3220be.png)
+![3](https://user-images.githubusercontent.com/20571538/115247041-63036a80-a161-11eb-94cd-681d7d6deb48.png)
+![4](https://user-images.githubusercontent.com/20571538/115247050-64cd2e00-a161-11eb-9c3f-dfe30a18f9da.png)
+
+----- PR -----
+pr_id: 882682865
+title: Pickle several files
+body:
+Added option to save cache in several files.
+
+speed comparison:
+speed_eval.py::test_separate_files_vs_single_file 
+
+======================== 1 passed in 64.13s (0:01:04) =========================
+
+Process finished with exit code 0
+separate files time: 5.108353137969971
+single file time: 58.55821681022644
+PASSED
+
+----- PR -----
+pr_id: 900081425
+title: Update Main with remote changes
+body:
+Grabbing commits from `save_to_s3` allowing S3 dependency to be optional.
+
+Works locally, testing in B9 enviornment.
+
+@vladfi1 Let me know what you think, my modifications are contained mostly to `train.py`
+
+----- PR -----
+pr_id: 920178230
+title: feat(config): supports cli argument and environment variables  to set config
+body:
+配置可通过 命令行参数或者环境变量 #220 传递
+
+## 优先级
+`命令行参数` > `配置文件`  > `环境变量`
+
+## 参数
+
+命令行 : `--key`
+环境变量(DDNS 前缀): `${DDNS_KEY}` (或者全小写)
+
+## 详情
+
+```
+ddns [-h] [-v] [-c CONFIG] [--dns {alidns,cloudflare,dnscom,dnspod,dnspod_com,he,huaweidns,callback}] [--id ID] [--token TOKEN] [--ipv4 [IPV4 [IPV4 ...]]] [--ipv6 [IPV6 [IPV6 ...]]] [--index4 INDEX4] [--index6 INDEX6]
+              [--ttl TTL] [--proxy [PROXY [PROXY ...]]] [--debug [DEBUG]] [--cache [CACHE]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -v, --version         show program's version number and exit
+  -c CONFIG, --config CONFIG
+                        run with config file [配置文件路径]
+  --dns {alidns,cloudflare,dnscom,dnspod,dnspod_com,he,huaweidns,callback}
+                        DNS Provider [DNS服务提供商]
+  --id ID               api ID [授权账户]
+  --token TOKEN         api token or Secret key [授权访问凭证或密钥]
+  --ipv4 [IPV4 [IPV4 ...]]
+                        ipv4 domain list [IPV4域名列表]
+  --ipv6 [IPV6 [IPV6 ...]]
+                        ipv6 domain list [IPV6域名列表]
+  --index4 INDEX4       the way to get ipv4 [IPV4 获取方式]
+  --index6 INDEX6       the way to get ipv6 [IPV6获取方式]
+  --ttl TTL             ttl for DNS [DNS 解析 TTL 时间]
+  --proxy [PROXY [PROXY ...]]
+                        https proxy [设置http 代理，多代理逐个尝试直到成功]
+  --debug [DEBUG]       debug mode [是否开启调试,默认否]
+  --cache [CACHE]       eusing cache [是否缓存记录,默认是]
+```
+
+----- PR -----
+pr_id: 929731040
+title: added sentinel value between args and kwargs when generating entry key
+body:
+To create the key for a cache entry, the current implementation uses the following expression:
+
+```
+key = args + tuple(sorted(kwds.items())) ...
+```
+
+For a function with signature `spam(*args, **kwargs)`, this will generate the same key for `spam(1, a=2)` and `spam(1, ("a", 2))`, which may be undesirable.
+
+This is solved by inserting a sentinel value to mark the boundary between `args` and `kwds` when creating the key. From the example above, instead of both calls having the key `(1, ("a", 2))`, they have keys `(1, _Sentinel, ("a", 2))` and `(1, ("a", 2), _Sentinel)` respectively.
+
+----- PR -----
+pr_id: 950158796
+title: github workflow for testing
+body:
+Signed-off-by: Matthias Kümmerer <<email redacted>>
+
+----- PR -----
+pr_id: 950405443
+title: Change wait_on_entry_calc to use while loop instead of recursion
+body:
+From https://github.com/shaypal5/cachier/pull/25/ , just rebased
+
+----- PR -----
+pr_id: 955769076
+title: ✨ feat: add favlist download support
+body:
+<!-- PULL REQUEST TEMPLATE -->
+<!-- (Update "[ ]" to "[x]" to check a box) -->
+
+<!-- 感谢你的贡献 -->
+<!-- 为了让我们更快地了解你所作的更改, **请不要删除本模板** -->
+<!-- 在开始一个 PR 之前，请确定你已经阅读过 CONTRIBUTING.md -->
+<!-- 为了节省你的时间，如果你需要一个新特性，在你开始为其工作之前，最佳选择是开启一个 featrue request 的 issue 让大家一起讨论 -->
+
+## 概述
+
+- 添加了下载收藏夹的功能
+  - 目前的正则匹配和代码分支的顺序是关联的 (yutto/cli/batch_get.py:L144), 可能需要更好的方式 
+- 在稿件只有 1P 的时候, 使用稿件名称作为视频文件名
+- 添加了 404 时的错误处理
+
+本 PR 的类型（至少选择一个）
+
+-  [x] :sparkles: feat: 添加新功能
+-  [ ] :bug: fix: 修复 bug
+-  [ ] :pencil: docs: 对文档进行修改
+-  [ ] :art: style: 对代码语义无影响的格式修改（如去除无用空格、格式化等等修改）
+-  [ ] :recycle: refactor: 代码重构（既不是新增功能，也不是修改 bug 的代码变动）
+-  [ ] :zap: perf: 提高性能的代码修改
+-  [x] :white_check_mark: test: 测试用例添加及修改
+-  [ ] :hammer: build: 影响构建系统或外部依赖关系的更改
+-  [ ] :construction_worker: ci: 更改 CI 配置文件和脚本
+-  [ ] :question: chore: 其它不涉及源码以及测试的修改
+
+----- PR -----
+pr_id: 956341528
+title: Windows support - SIMD headers and code change
+body:
+Added SIMD support to Windows10 x64, MSVC /arch:AVX2, /openmp:llvm
+
+----- PR -----
+pr_id: 968085937
+title: Several pickle files
+body:
+I really hope I got it right this time ;)
+
+----- PR -----
+pr_id: 981274177
+title: v3.0.0: Add `v2` token support for single-tenant applications, add multi-tenant support.
+body:
+**Multi-tenant support:**
+- Support for multi-tenant applications
+- Takes a coroutine to fetch valid `iss` for given `tid`
+
+**Single-tenant features:**
+- Support for v2 tokens for single-tenant applications
+
+**Removal:**
+- `allow_guest_users` setting is removed. This can be done in Azure AD instead. (Also removal of `GuestUserException`)
+
+**Other:**
+- User object is reworked, and now also contains the access_token for easier Azure Graph implementation
+ - Add support for denying requests with wrong scopes, when `Securiy()` is used (instead of `Depends()`)
+- Add SECURITY.md
+- Relax aiohttp requirement
+- Move `InvalidAuth` to `exceptions.py`
+- Add role check example in demo project
+- Add `iss` fetcher example in demo project
+- No longer inheriting `OAuth2AuthorizationCodeBearer`, solving mypy errors.
+- Rename `provider_config.py` to `openid_config.py` and `ProviderConfig()` to `OpenIdConfig()`
+- Removal of pre-instance of `provider_config` due to OpenAPI authorization URL issues. This is now instanced on `SingleTenantAzureAuthorizationCodeBearer` or `MultiTenantAzureAuthorizationCodeBearer`.
+
+**Tests:**
+Done
+
+**TODO:**
+- [x] Documentation needs full rewrite
+- [x] Tests for multi-tenant (base)
+  - [x] Tests for all multi-tenant settings 
+- [x] Test for `openid_config` `app_id`
+- [x] Change `callable` check into a `coroutine` check (`asyncio.iscoroutinefunction(iss_callable)`)
+- [x] Tests for `scopes` check, using `Security()`
+
+**Closes:**
+#13 #14
+
+----- PR -----
+pr_id: 981399767
+title: Replace linting job
+body:
+Replaces the `linting` job in the test workflow with an external workflow.
+
+----- PR -----
+pr_id: 985000455
+title: 3.0.0
+body:
+Closes #18
+
+----- PR -----
+pr_id: 988427909
+title: Follow up PR for #42
+body:
+(empty)

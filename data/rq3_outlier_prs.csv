@@ -1,0 +1,192 @@
+group,pr_id,repo,agent,type,confidence,c1c2,c1c2_pct,total,cefr_mean,additions,deletions,changed_files,title,html_url
+AI agents,3244675358,Azure-Samples/openai-chat-vision-quickstart,Copilot,fix,10.0,609,3.3386,18241,1.664,4.0,4.0,2.0,Fix h11 dependency upgrade from 0.14.0 to 0.16.0 for Dependabot PR #42,https://github.com/Azure-Samples/openai-chat-vision-quickstart/pull/56
+AI agents,3223709587,allthingslinux/tux,Cursor,refactor,10.0,381,3.3185,11481,1.7366,761.0,545.0,146.0,Refactor project structure for modularity,https://github.com/allthingslinux/tux/pull/944
+AI agents,3152257828,microsoft/typespec,Copilot,chore,9.0,318,3.334,9538,1.6706,13.0,5.0,3.0,[python] Upgrade TCGC 0.57.1 for http-client-python,https://github.com/microsoft/typespec/pull/7667
+AI agents,3147157841,remotion-dev/remotion,Copilot,build,9.0,308,3.4131,9024,1.6834,5.0,1.0,2.0,Update boto3 version constraint to support latest versions (1.38.x),https://github.com/remotion-dev/remotion/pull/5363
+AI agents,3244675240,Azure-Samples/openai-chat-vision-quickstart,Copilot,fix,10.0,308,3.4131,9024,1.6834,4.0,2.0,2.0,Fix dependency conflict: update aiosignal to 1.4.0 for aiohttp 3.12.14 compatibility,https://github.com/Azure-Samples/openai-chat-vision-quickstart/pull/54
+AI agents,2925357207,disler/single-file-agents,Devin,feat,9.0,213,7.6481,2785,1.7935,5131.0,0.0,49.0,Add codebase architectures examples,https://github.com/disler/single-file-agents/pull/8
+AI agents,2926270506,disler/single-file-agents,Devin,feat,9.0,138,5.5893,2469,1.6035,4642.0,1.0,77.0,Implement file editor agent in four codebase architectures,https://github.com/disler/single-file-agents/pull/9
+AI agents,3214915262,jxxghp/MoviePilot,Cursor,feat,9.0,119,24.6888,482,2.2344,552.0,16.0,1.0,Analyze memory usage discrepancies,https://github.com/jxxghp/MoviePilot/pull/4577
+AI agents,3201428116,willccbb/verifiers,Cursor,test,9.0,102,7.6749,1329,2.2099,2847.0,1.0,15.0,Create minimal pytest setup for tests,https://github.com/willccbb/verifiers/pull/123
+AI agents,3200914224,langflow-ai/langflow,Cursor,feat,9.0,43,4.0681,1057,1.8912,1373.0,191.0,8.0,Implement mcp support for serve command,https://github.com/langflow-ai/langflow/pull/8870
+AI agents,3234052393,axinc-ai/ailia-models,Devin,feat,10.0,42,6.9421,605,1.7322,876.0,0.0,10.0,Add 6DRepNet360 for 360-degree head pose estimation,https://github.com/axinc-ai/ailia-models/pull/1704
+AI agents,3082820826,mlflow/mlflow,Copilot,feat,9.0,41,14.1379,290,2.631,141.0,5.0,3.0,Add support for classmethods and staticmethods to @mlflow.trace decorator,https://github.com/mlflow/mlflow/pull/15839
+AI agents,3128183116,ObservedObserver/async-code,Cursor,feat,9.0,39,4.943,789,1.4842,5247.0,866.0,19.0,Develop project and task management features,https://github.com/ObservedObserver/async-code/pull/4
+AI agents,2842228579,goat-sdk/goat,Devin,test,10.0,36,9.9448,362,2.0691,3197.0,307.0,8.0,test: Add comprehensive test coverage for Crossmint API implementation,https://github.com/goat-sdk/goat/pull/326
+AI agents,3132740864,keephq/keep,Cursor,feat,10.0,34,3.4694,980,1.4163,945.0,114.0,19.0,feat: Improve selected columns storage mechanism,https://github.com/keephq/keep/pull/5002
+AI agents,3226556821,NewFuture/DDNS,Copilot,feat,10.0,32,8.8154,363,1.8788,871.0,12.0,18.0,feat(provider:edgeone): 支持腾讯EdgeOne Add Tencent Cloud EdgeOne DNS provider support,https://github.com/NewFuture/DDNS/pull/521
+AI agents,3090570894,spcl/dace,Copilot,feat,9.0,31,8.5635,362,1.8591,810.0,86.0,12.0,Add UndefinedSymbol for deferred runtime values,https://github.com/spcl/dace/pull/2019
+AI agents,3193524394,NewFuture/DDNS,Copilot,feat,10.0,31,6.7834,457,1.7527,1389.0,316.0,37.0,feat(AliESA) 阿里云边缘安全加速 DNS provider support,https://github.com/NewFuture/DDNS/pull/498
+AI agents,2911983646,disler/single-file-agents,Devin,feat,9.0,29,2.2998,1261,1.6178,3292.0,0.0,22.0,Add OpenAI Agents SDK Examples,https://github.com/disler/single-file-agents/pull/7
+AI agents,2790317638,goat-sdk/goat,Devin,feat,9.0,28,10.0358,279,1.9606,333.0,0.0,2.0,Add plugin generator script,https://github.com/goat-sdk/goat/pull/228
+AI agents,2908717563,marimo-team/marimo,Devin,test,9.0,25,6.3452,394,2.2411,755.0,0.0,5.0,Add test coverage for marimo/_save/loaders module,https://github.com/marimo-team/marimo/pull/4055
+AI agents,3192728541,zfit/zfit,Copilot,fix,10.0,25,2.4851,1006,1.5716,1300.0,222.0,53.0,Fix KDE with negative weights producing NaN values,https://github.com/zfit/zfit/pull/644
+AI agents,2786715226,crewAIInc/crewAI,Devin,feat,9.0,24,5.1282,468,1.9038,1064.0,141.0,10.0,Add @persist decorator with FlowPersistence interface,https://github.com/crewAIInc/crewAI/pull/1892
+AI agents,3126127102,teaxyz/chai,Cursor,refactor,10.0,24,6.4516,372,2.5618,1713.0,2338.0,17.0,refactor tests to use pytest framework,https://github.com/teaxyz/chai/pull/112
+AI agents,3226602604,jeroenterheerdt/HAsmartirrigation,Copilot,feat,10.0,24,6.1069,393,1.8524,1329.0,9.0,9.0,Implement 12-month watering calendar for irrigation zones based on historical climate data,https://github.com/jeroenterheerdt/HAsmartirrigation/pull/590
+AI agents,3232422158,willccbb/verifiers,Cursor,test,9.0,23,3.6683,627,1.9856,1223.0,295.0,18.0,Update tests for refactored environment and parser components,https://github.com/willccbb/verifiers/pull/141
+AI agents,3080751824,Azure/azure-sdk-for-net,Copilot,feat,9.0,21,4.4304,474,1.7342,898.0,0.0,3.0,Create library inventory tool for Swagger to TypeSpec migration planning,https://github.com/Azure/azure-sdk-for-net/pull/50182
+AI agents,3140117936,keephq/keep,Cursor,feat,10.0,19,10.2151,186,2.457,488.0,18.0,6.0,feat(provider): Implement ticket 5014 with unit tests,https://github.com/keephq/keep/pull/5015
+AI agents,3146310469,microsoft/onnxscript,Copilot,refactor,9.0,19,5.0532,376,1.5266,47.0,33.0,3.0,[rewriter] Decouple llama rule sets and make API explicit,https://github.com/microsoft/onnxscript/pull/2388
+AI agents,2901612191,marimo-team/marimo,Devin,test,9.0,18,4.1284,436,1.8876,557.0,0.0,1.0,Add test coverage for marimo/_ai/llm/_impl.py,https://github.com/marimo-team/marimo/pull/4008
+AI agents,3155084033,microsoft/autogen,Copilot,feat,10.0,18,2.5605,703,2.0413,767.0,25.0,6.0,Add tool name and description override functionality to Workbench implementations,https://github.com/microsoft/autogen/pull/6690
+AI agents,3214122373,spcl/dace,Copilot,feat,9.0,17,5.1672,329,1.7751,325.0,22.0,3.0,Implement simpler library node expansion interface,https://github.com/spcl/dace/pull/2077
+AI agents,3225037054,NewFuture/DDNS,Copilot,feat,10.0,17,6.9959,243,1.93,766.0,3.0,10.0,feat(provider:NameSilo):添加NameSilo支持(待验证),https://github.com/NewFuture/DDNS/pull/514
+AI agents,3244901827,NewFuture/DDNS,Copilot,refactor,10.0,17,6.6148,257,1.9416,983.0,749.0,26.0,"refactor(http.proxy): add ""SYSTEM"" and fix ""DIRECT"" proxy, implement proxy list support with automatic fallback",https://github.com/NewFuture/DDNS/pull/537
+AI agents,2794323375,AgentOps-AI/agentops,Devin,feat,10.0,16,2.7826,575,1.727,830.0,0.0,11.0,feat: Add Gemini API integration,https://github.com/AgentOps-AI/agentops/pull/650
+AI agents,2912958566,crewAIInc/crewAI,Devin,refactor,9.0,16,11.0345,145,2.0138,59.0,5.0,4.0,Remove redundant null check in Crew.fingerprint property,https://github.com/crewAIInc/crewAI/pull/2342
+AI agents,2918683850,crewAIInc/crewAI,Devin,fix,10.0,16,10.9589,146,2.0068,0.0,13.0,1.0,Fix type check error in fingerprint property,https://github.com/crewAIInc/crewAI/pull/2369
+AI agents,3165822621,keephq/keep,Cursor,feat,10.0,15,4.5045,333,1.7538,1050.0,60.0,8.0,feat: Improve OpenShift provider connection validation using REST API,https://github.com/keephq/keep/pull/5074
+AI agents,2892552345,stack-auth/stack-auth,Devin,feat,9.0,14,5.4475,257,1.6926,783.0,5.0,17.0,Add CLI authentication endpoints,https://github.com/stack-auth/stack-auth/pull/503
+AI agents,3091643325,AliAkhtari78/SpotifyScraper,Copilot,fix,10.0,14,4.811,291,1.6151,1313.0,12.0,14.0,Fix missing `album` object in `get_track_info()` response,https://github.com/AliAkhtari78/SpotifyScraper/pull/48
+AI agents,3199112507,NewFuture/DDNS,Copilot,feat,10.0,14,6.25,224,1.5536,685.0,6.0,8.0,Add No-IP (noip.com) Dynamic DNS Provider Support,https://github.com/NewFuture/DDNS/pull/505
+AI agents,3265259944,bmander/graphserver,Copilot,feat,10.0,14,2.1841,641,1.6365,1528.0,0.0,9.0,Implement transit edge provider for GTFS-based routing,https://github.com/bmander/graphserver/pull/49
+AI agents,3057663648,airbytehq/airbyte,Devin,refactor,10.0,13,8.6667,150,1.88,621.0,0.0,5.0,refactor(connectors): move version increment check to connectors_qa package,https://github.com/airbytehq/airbyte/pull/60225
+AI agents,3201407554,ucbepic/docetl,Cursor,refactor,10.0,13,2.7027,481,1.6715,663.0,13.0,6.0,Refactor api.py for structured output,https://github.com/ucbepic/docetl/pull/378
+AI agents,2842178996,goat-sdk/goat,Devin,test,10.0,12,2.4896,482,1.778,3387.0,164.0,16.0,test: add crossmint wallet implementation tests,https://github.com/goat-sdk/goat/pull/325
+AI agents,3150091151,github/issue-metrics,Copilot,feat,10.0,11,4.7009,234,1.5983,465.0,14.0,11.0,feat: add assignee support to issue metrics reporting,https://github.com/github/issue-metrics/pull/540
+AI agents,3235069491,rohitg00/awesome-ai-apps,Copilot,feat,10.0,11,7.7465,142,1.6901,15098.0,21.0,84.0,Create Hugo site in /website directory with GitHub Pages deployment,https://github.com/rohitg00/awesome-ai-apps/pull/1
+Human,2580095745,awslabs/mcp,,test,,244,5.0833,4800,1.8981,10373.0,5395.0,34.0,test(ecs-mcp-server): Upgrade test coverage for ECS MCP Server + update clients,https://github.com/awslabs/mcp/pull/560
+Human,2352217584,mlflow/mlflow,,fix,,132,4.8369,2729,2.1257,2815.0,3.0,16.0,"Revert deletion of Assessment, Evaluation, log_evaluations experimental APIs.",https://github.com/mlflow/mlflow/pull/14703
+Human,2367079250,Kiln-AI/Kiln,,docs,,109,2.3137,4711,1.7805,13273.0,2078.0,137.0,Update Docs for v0.12.0,https://github.com/Kiln-AI/Kiln/pull/233
+Human,2320665719,crewAIInc/crewAI,,feat,,99,10.3125,960,2.3448,13880.0,589.0,48.0,WIP crew events emitter,https://github.com/crewAIInc/crewAI/pull/2048
+Human,2512266582,allenai/open-instruct,,feat,,93,2.0489,4539,1.6332,3055.0,287.0,36.0,Tool + RL-rag,https://github.com/allenai/open-instruct/pull/670
+Human,2400813849,julep-ai/julep,,feat,,65,3.9514,1645,1.8578,8439.0,747.0,140.0,"dev -> main (March 18, 2025)",https://github.com/julep-ai/julep/pull/1264
+Human,2433002376,Azure/azure-sdk-for-python,,feat,,56,2.0558,2724,1.4464,4693.0,619.0,104.0,[AutoRelease] t2-containerservicefleet-2025-04-02-13338(can only be merged by SDK owner),https://github.com/Azure/azure-sdk-for-python/pull/40333
+Human,2506199692,julep-ai/julep,,feat,,55,5.4509,1009,1.9415,2088.0,694.0,46.0,feat(agents-api): secrets custom key + misc fixes,https://github.com/julep-ai/julep/pull/1356
+Human,2272661584,ObservedObserver/streamlit-shadcn-ui,,feat,,53,10.2713,516,2.1589,4894.0,1005.0,123.0,"Add  breadcrumb, input_otp, skeleton, dropdown_menu",https://github.com/ObservedObserver/streamlit-shadcn-ui/pull/38
+Human,2530024859,awslabs/mcp,,feat,,52,3.733,1393,1.8177,2775.0,4.0,14.0,feat: MCP Lambda Handler,https://github.com/awslabs/mcp/pull/373
+Human,2587797965,featureform/enrichmcp,,feat,,50,3.9968,1251,1.8273,2140.0,12.0,29.0,Add SQLAlchemy support,https://github.com/featureform/enrichmcp/pull/47
+Human,2619492805,OpenPipe/ART,,feat,,49,2.4451,2004,1.6307,6863.0,4330.0,37.0,feat: Multi-device training,https://github.com/OpenPipe/ART/pull/163
+Human,2478962352,mlflow/mlflow,,refactor,,43,2.651,1622,1.5727,2750.0,2675.0,21.0,Clean up __init__ file for some GenAI flavors,https://github.com/mlflow/mlflow/pull/15481
+Human,2591073348,dagster-io/dagster,,refactor,,43,4.5891,937,1.6948,1831.0,11.0,14.0,[freshness] Update instance method to batch queries,https://github.com/dagster-io/dagster/pull/30693
+Human,2389891260,AgentOps-AI/agentops,,fix,,41,4.2008,976,1.7172,4272.0,4955.0,146.0,fix: checks for `dev` before release,https://github.com/AgentOps-AI/agentops/pull/818
+Human,2496802096,julep-ai/julep,,feat,,41,5.8655,699,1.9514,1131.0,58.0,13.0,Developers and costs check,https://github.com/julep-ai/julep/pull/1351
+Human,2390024977,AgentOps-AI/agentops,,feat,,40,4.3573,918,1.7135,2887.0,3.0,33.0,Added Agents SDK Examples,https://github.com/AgentOps-AI/agentops/pull/819
+Human,2347982033,test-zeus-ai/testzeus-hercules,,feat,,38,4.6972,809,1.801,5586.0,1793.0,36.0,Adding Dynamic LTM for learning long-term knowledge.,https://github.com/test-zeus-ai/testzeus-hercules/pull/42
+Human,2476426259,crewAIInc/crewAI-tools,,feat,,38,21.4689,177,2.2825,532.0,52.0,3.0,Add secure Python Sandbox and Enhanced Logging in CodeInterpreterTool,https://github.com/crewAIInc/crewAI-tools/pull/281
+Human,2446305071,plexguide/Huntarr.io,,other,,32,11.1888,286,1.8112,,,,Dev,https://github.com/plexguide/Huntarr.io/pull/45
+Human,2573402396,crewAIInc/crewAI,,feat,,32,10.9589,292,2.0479,444.0,2.0,9.0,Support multi org in CLI,https://github.com/crewAIInc/crewAI/pull/2969
+Human,2617719726,dlt-hub/dlt,,chore,,32,4.2105,760,1.7276,11906.0,13712.0,100.0,master merge for 1.12.2 release,https://github.com/dlt-hub/dlt/pull/2809
+Human,2277915906,marimo-team/marimo,,feat,,31,8.6111,360,1.975,758.0,66.0,19.0,feat: marimo edit --watch,https://github.com/marimo-team/marimo/pull/3437
+Human,2315421154,crewAIInc/crewAI,,feat,,31,4.7328,655,1.884,1254.0,48.0,12.0,feat: add prompt observability code,https://github.com/crewAIInc/crewAI/pull/2027
+Human,2519061854,julep-ai/julep,,feat,,30,2.7855,1077,1.7604,1072.0,886.0,8.0,Add chat streaming support,https://github.com/julep-ai/julep/pull/1367
+Human,2419949551,crewAIInc/crewAI,,feat,,28,2.1132,1325,1.5479,18225.0,9114.0,42.0,Feat/individual react agent,https://github.com/crewAIInc/crewAI/pull/2483
+Human,2329914697,marimo-team/marimo,,feat,,26,9.9617,261,1.7701,483.0,42.0,14.0,feat: top level functions,https://github.com/marimo-team/marimo/pull/3755
+Human,2358893378,bespokelabsai/curator,,fix,,25,3.7481,667,1.5727,1720.0,107.0,20.0,update examples and minor fix to docker backend,https://github.com/bespokelabsai/curator/pull/540
+Human,2478356468,crewAIInc/crewAI-tools,,feat,,24,10.0418,239,1.749,331.0,0.0,5.0,FileCompressorTool with support for files and subdirectories,https://github.com/crewAIInc/crewAI-tools/pull/282
+Human,2325260235,julep-ai/julep,,feat,,23,1.1699,1966,1.5478,55262.0,22544.0,255.0,dev->main,https://github.com/julep-ai/julep/pull/1145
+Human,2373978615,ACEsuit/mace,,feat,,23,1.6535,1391,1.5988,2191.0,154.0,21.0,cueq 0.2.0 compatibilty + LMDB database,https://github.com/ACEsuit/mace/pull/841
+Human,2364156735,tegnike/aituber-kit,,feat,,21,2.9453,713,1.432,5608.0,362.0,65.0,本番リリース,https://github.com/tegnike/aituber-kit/pull/309
+Human,2610958081,julep-ai/julep,,feat,,21,4.2857,490,1.9714,6432.0,6860.0,830.0,dev->main (23 Jun 2025),https://github.com/julep-ai/julep/pull/1500
+Human,2363986187,PriorLabs/TabPFN,,test,,18,3.0508,590,1.5915,887.0,0.0,9.0,Add model consistency tests,https://github.com/PriorLabs/TabPFN/pull/217
+Human,2368306114,AgentOps-AI/agentops,,refactor,,18,1.7192,1047,1.7689,1847.0,427.0,19.0,Client HTTP Module Refactoring and Test Fixes,https://github.com/AgentOps-AI/agentops/pull/714
+Human,2286936119,julep-ai/julep,,fix,,17,7.489,227,1.859,373.0,84.0,15.0,fix(agents-api): Fix blob-store interceptor implementation,https://github.com/julep-ai/julep/pull/1068
+Human,2368800162,crewAIInc/crewAI,,feat,,17,4.0865,416,1.601,5135.0,299.0,15.0,Enhance LLM Streaming Response Handling and Event System,https://github.com/crewAIInc/crewAI/pull/2266
+Human,2428059466,RockChinQ/LangBot,,feat,,17,5.8621,290,1.9276,,,,Feat/slack,https://github.com/RockChinQ/LangBot/pull/1258
+Human,2446905064,TobikoData/sqlmesh,,feat,,17,4.0284,422,1.6659,575.0,88.0,32.0,Feat!: Add support for multiple virtual layers controlled by gateway,https://github.com/TobikoData/sqlmesh/pull/4101
+Human,2454841034,julep-ai/julep,,feat,,17,4.1162,413,1.7094,640.0,1.0,8.0,feat(agents-api): add usage tracking + usage table,https://github.com/julep-ai/julep/pull/1316
+Human,2476323666,featureform/enrichmcp,,feat,,17,4.8851,348,1.819,736.0,13.0,26.0,Add Lambda demos,https://github.com/featureform/enrichmcp/pull/24
+Human,2476534203,featureform/enrichmcp,,docs,,17,5.5195,308,1.8734,0.0,0.0,1.0,Add README to weather app,https://github.com/featureform/enrichmcp/pull/26
+Human,2535720745,Panchovix/stable-diffusion-webui-reForge,,fix,,17,3.2692,520,1.4442,2.0,2.0,1.0,Fix boft,https://github.com/Panchovix/stable-diffusion-webui-reForge/pull/367
+Human,2345504485,Kiln-AI/Kiln,,feat,,16,4.2895,373,1.9303,766.0,69.0,11.0,Evals runner,https://github.com/Kiln-AI/Kiln/pull/210
+Human,2615743216,featureform/enrichmcp,,feat,,16,10.0629,159,1.9937,246.0,0.0,5.0,Add basic memory utilities as example,https://github.com/featureform/enrichmcp/pull/93
+Human,2441330487,Kiln-AI/Kiln,,docs,,15,2.1739,690,1.6406,2456.0,1891.0,42.0,Update docs for v0.14,https://github.com/Kiln-AI/Kiln/pull/270
+Human,2400261241,567-labs/instructor,,feat,,14,7.5676,185,1.7892,514.0,40.0,10.0,Adding Streaming for Mistral and VertexAI,https://github.com/567-labs/instructor/pull/1420
+Human,2432652514,crewAIInc/crewAI,,feat,,13,5.6522,230,2.2391,3870.0,76.0,19.0,Add support for External Memory (the future replacement for UserMemory),https://github.com/crewAIInc/crewAI/pull/2510
+Human,2440441097,Azure/azure-sdk-for-python,,feat,,13,13.9785,93,2.1505,258.0,115.0,7.0,Output structure for red team,https://github.com/Azure/azure-sdk-for-python/pull/40382
+Human,2462185471,featureform/enrichmcp,,feat,,13,5.7269,227,1.9559,655.0,36.0,17.0,Streamable HTTP,https://github.com/featureform/enrichmcp/pull/16
+Human,2585293213,featureform/enrichmcp,,feat,,13,4.127,315,1.6317,753.0,23.0,10.0,Add Context and lifespan support,https://github.com/featureform/enrichmcp/pull/41
+Human,2272586142,Netflix/metaflow,,feat,,12,3.8835,309,1.8123,193.0,1.0,6.0,metadata for spot termination for k8s,https://github.com/Netflix/metaflow/pull/2207
+Human,2446878923,microsoft/typespec,,test,,12,5.4299,221,2.1946,493.0,17.0,15.0,"[python] move unittests to this repo, add separate section for them",https://github.com/microsoft/typespec/pull/6909
+Human,2452209048,crewAIInc/crewAI,,feat,,12,8.2759,145,1.8552,992.0,399.0,21.0,Unblock LLM(stream=True) to work with tools,https://github.com/crewAIInc/crewAI/pull/2582
+Human,2552315306,AgentOps-AI/agentops,,feat,,12,3.6585,328,1.8841,754.0,73.0,4.0,Implement concurrent.futures instrumentation for OpenTelemetry contex…,https://github.com/AgentOps-AI/agentops/pull/1018
+Human,2615049612,crewAIInc/crewAI,,feat,,12,15.0,80,2.2375,173.0,47.0,2.0,feat: improve Crew search while resetting their memories,https://github.com/crewAIInc/crewAI/pull/3057
+Human,2259409621,crewAIInc/crewAI,,feat,,11,1.4925,737,1.6296,1105.0,945.0,17.0,Brandon/eng 266 conversation crew v1,https://github.com/crewAIInc/crewAI/pull/1843
+Human,2293706753,mlflow/mlflow,,chore,,11,2.8351,388,1.9948,633.0,96.0,15.0,Rebase again,https://github.com/mlflow/mlflow/pull/14304
+Human,2437697330,crewAIInc/crewAI,,feat,,11,1.26,873,1.8786,1525.0,18.0,16.0,Feat/byoa,https://github.com/crewAIInc/crewAI/pull/2523
+Human,2513949410,crewAIInc/crewAI,,feat,,11,12.6437,87,2.2414,143.0,6.0,5.0,feat: support to load an Agent from a repository,https://github.com/crewAIInc/crewAI/pull/2816
+Human,2518007609,RockChinQ/LangBot,,feat,,11,0.6703,1641,1.6917,,,,添加了对wechatpad的apisdk以及适配器，完成个人微信的基础功能（聊天，收发语音，收发图片等功能）,https://github.com/RockChinQ/LangBot/pull/1417
+Human,2290337879,Significant-Gravitas/AutoGPT,,feat,,10,1.9157,522,1.5134,196.0,6.0,8.0,feat: add screenshotone block,https://github.com/Significant-Gravitas/AutoGPT/pull/9308
+Human,2352743534,julep-ai/julep,,feat,,10,2.1459,466,1.5322,2162.0,1577.0,26.0,F/rag-improv: Misc RAG Improvements ,https://github.com/julep-ai/julep/pull/1183
+Human,2404972295,reflex-dev/reflex,,other,,10,16.3934,61,2.1967,268.0,200.0,12.0,granian all the way,https://github.com/reflex-dev/reflex/pull/4994
+Human,2492871484,OpenPipe/ART,,refactor,,10,2.1459,466,1.6738,3792.0,3384.0,34.0,Rename API -> Backend,https://github.com/OpenPipe/ART/pull/91
+Human,2527047579,cartography-cncf/cartography,,feat,,10,3.268,306,1.5915,515.0,46.0,7.0,feat:  Add Secret manager secret version support ,https://github.com/cartography-cncf/cartography/pull/1571
+Human,2276460202,roboflow/inference,,feat,,9,4.9451,182,1.6264,329.0,99.0,8.0,Add changes required to effectively index content of batch processing,https://github.com/roboflow/inference/pull/942
+Human,2288132868,crewAIInc/crewAI,,feat,,9,4.1096,219,2.2831,337.0,220.0,9.0,Stateful flows,https://github.com/crewAIInc/crewAI/pull/1931
+Human,2292816579,crewAIInc/crewAI,,test,,9,12.0,75,2.2667,686.0,20.0,7.0,Updated calls and added tests to verify,https://github.com/crewAIInc/crewAI/pull/1953
+Human,2332036167,crewAIInc/crewAI,,feat,,9,5.8065,155,2.7935,259.0,22.0,3.0,Ensure `@start` methods emit `MethodExecutionStartedEvent`,https://github.com/crewAIInc/crewAI/pull/2114
+Human,2333329270,PriorLabs/TabPFN,,feat,,9,7.5,120,2.0417,162.0,53.0,9.0,Implement get_total_memory for windows,https://github.com/PriorLabs/TabPFN/pull/184
+Human,2338301511,aipotheosis-labs/aci,,feat,,9,3.8627,233,1.8197,579.0,204.0,13.0,Feat/upsert functions cli,https://github.com/aipotheosis-labs/aci/pull/32
+Human,2490479931,crewAIInc/crewAI,,feat,,9,4.0724,221,1.4615,2667.0,356.0,13.0,feat: implement knowledge retrieval events in Agent,https://github.com/crewAIInc/crewAI/pull/2727
+Human,2579412972,crewAIInc/crewAI,,feat,,9,10.0,90,2.3,1341.0,120.0,7.0,Support async tool executions,https://github.com/crewAIInc/crewAI/pull/2983
+Human,2332197870,a16z/halmos,,feat,,8,13.5593,59,2.0847,138.0,33.0,6.0,add SSTORE and SLOAD to traces,https://github.com/a16z/halmos/pull/456
+Human,2357793364,crewAIInc/crewAI,,feat,,8,15.3846,52,2.7885,128.0,17.0,2.0,Support multiple router calls and address issue #2175,https://github.com/crewAIInc/crewAI/pull/2231
+Human,2449032917,Azure/azure-sdk-for-python,,feat,,8,2.974,269,1.7918,766.0,35.0,12.0,Updates to new 1DP Python Projects SDK,https://github.com/Azure/azure-sdk-for-python/pull/40443
+Human,2476088746,crewAIInc/crewAI-tools,,fix,,8,9.1954,87,1.8966,155.0,4.0,2.0,fix: do not use deprecated distutils in FileWriterTool,https://github.com/crewAIInc/crewAI-tools/pull/280
+Human,2576026392,jlowin/fastmcp,,feat,,8,1.4337,558,2.0125,521.0,27.0,6.0,Add support for tag-based component filtering,https://github.com/jlowin/fastmcp/pull/748
+Human (pre-ChatGPT),1464102540,Azure/azure-sdk-for-python,,other,7.0,208,3.1809,6539,1.5385,13670.0,3029.0,81.0,[AutoRelease] t2-azurestackhci-2022-11-25-04826(can only be merged by SDK owner),https://github.com/Azure/azure-sdk-for-python/pull/27692
+Human (pre-ChatGPT),1445100121,onnx/onnx,,fix,9.0,183,1.706,10727,1.5892,3.0,3.0,1.0,Fix _parse_repo_info,https://github.com/onnx/onnx/pull/4648
+Human (pre-ChatGPT),1440724171,InamuraJIN/ActionRecorder,,feat,8.0,151,3.919,3853,1.5959,9311.0,3765.0,91.0,Update to Version 4.0.0,https://github.com/InamuraJIN/ActionRecorder/pull/34
+Human (pre-ChatGPT),1465730711,Azure/azure-sdk-for-python,,chore,8.0,145,5.0086,2895,1.6978,8620.0,3312.0,48.0,[AutoRelease] t2-communication-2022-11-28-60964(can only be merged by SDK owner),https://github.com/Azure/azure-sdk-for-python/pull/27698
+Human (pre-ChatGPT),1465729706,Azure/azure-sdk-for-python,,build,8.0,115,5.1225,2245,1.7657,5153.0,2022.0,43.0,[AutoRelease] t2-imagebuilder-2022-11-28-46274(can only be merged by SDK owner),https://github.com/Azure/azure-sdk-for-python/pull/27697
+Human (pre-ChatGPT),1464124455,Azure/azure-sdk-for-python,,build,9.0,110,5.2808,2083,1.7312,3986.0,1537.0,39.0,[AutoRelease] t2-confidentialledger-2022-11-25-65044(can only be merged by SDK owner),https://github.com/Azure/azure-sdk-for-python/pull/27693
+Human (pre-ChatGPT),1439851559,spcl/dace,,fix,9.0,72,5.1502,1398,1.7332,99.0,13.0,10.0,Fixed problem with Intel FPGA and long long,https://github.com/spcl/dace/pull/1144
+Human (pre-ChatGPT),981274177,vibber-ai/fastapi-azure-auth,,feat,10.0,69,4.9006,1408,1.9538,1672.0,556.0,40.0,"v3.0.0: Add `v2` token support for single-tenant applications, add multi-tenant support.",https://github.com/vibber-ai/fastapi-azure-auth/pull/16
+Human (pre-ChatGPT),689160749,saturday06/VRM-Addon-for-Blender,,test,6.0,65,2.3373,2781,1.6458,7354.0,5120.0,48.0,prepair transfer test,https://github.com/saturday06/VRM-Addon-for-Blender/pull/8
+Human (pre-ChatGPT),1409290947,ailia-ai/ailia-models,,feat,7.0,62,5.4101,1146,1.6361,2379.0,12.0,29.0,Added model for ailia SDK 1.2.13,https://github.com/ailia-ai/ailia-models/pull/935
+Human (pre-ChatGPT),1287418523,Azure/azure-kusto-python,,feat,6.0,56,17.7778,315,1.9841,662.0,457.0,7.0,t-ronmoneta/python sample app,https://github.com/Azure/azure-kusto-python/pull/403
+Human (pre-ChatGPT),1463283172,Azure/azure-sdk-for-python,,feat,9.0,53,10.1338,523,2.2122,187.0,30.0,5.0,[ML][Pipelines]support Output & port type Input in @group,https://github.com/Azure/azure-sdk-for-python/pull/27686
+Human (pre-ChatGPT),1331569076,Azure/azure-kusto-python,,test,9.0,52,9.2035,565,2.1221,309.0,126.0,4.0,User/t eitanmoed/add-e2e-tests-kusto-data,https://github.com/Azure/azure-kusto-python/pull/407
+Human (pre-ChatGPT),1414109762,ailia-ai/ailia-models,,feat,7.0,41,3.3065,1240,1.5895,51730.0,0.0,15.0,Implement whisper,https://github.com/ailia-ai/ailia-models/pull/936
+Human (pre-ChatGPT),1022115985,python-cachier/cachier,,feat,6.0,30,7.7922,385,2.1377,914.0,38.0,12.0,In-Memory Core + wait_for_calc_timeout,https://github.com/python-cachier/cachier/pull/80
+Human (pre-ChatGPT),1412846000,spcl/dace,,refactor,9.0,29,14.9485,194,2.268,303.0,249.0,22.0,Passes Interface Improvements,https://github.com/spcl/dace/pull/1124
+Human (pre-ChatGPT),1460405154,Arize-ai/phoenix,,feat,10.0,28,7.6087,368,2.1087,443.0,253.0,9.0,feat(pointcloud): Add HDBSCAN to point cloud,https://github.com/Arize-ai/phoenix/pull/57
+Human (pre-ChatGPT),1419204777,DeepLabCut/DeepLabCut,,chore,9.0,27,4.8043,562,1.7633,1218.0,249.0,55.0,"Straightforward, functional installation on Apple Silicon // moving to PySide6 // rc2",https://github.com/DeepLabCut/DeepLabCut/pull/2022
+Human (pre-ChatGPT),1422243645,DeepLabCut/DeepLabCut,,fix,10.0,27,5.0847,531,1.7439,1029.0,134.0,24.0,Fix corrupted video analysis,https://github.com/DeepLabCut/DeepLabCut/pull/2025
+Human (pre-ChatGPT),1436194259,DeepLabCut/DeepLabCut,,other,3.0,27,5.104,529,1.7467,993.0,90.0,23.0,merge master into m1m2,https://github.com/DeepLabCut/DeepLabCut/pull/2033
+Human (pre-ChatGPT),1436205486,DeepLabCut/DeepLabCut,,other,3.0,27,5.104,529,1.7467,993.0,90.0,23.0,merging in master,https://github.com/DeepLabCut/DeepLabCut/pull/2034
+Human (pre-ChatGPT),750667921,python-cachier/cachier,,feat,7.0,27,8.5443,316,2.2152,750.0,5.0,9.0,in-memory core,https://github.com/python-cachier/cachier/pull/40
+Human (pre-ChatGPT),1291724459,vibber-ai/fastapi-azure-auth,,feat,8.0,24,5.0633,474,1.9768,526.0,28.0,16.0,Working Solution for B2C MultiTenant,https://github.com/vibber-ai/fastapi-azure-auth/pull/93
+Human (pre-ChatGPT),1391187866,zfit/zfit,,fix,8.0,21,5.5263,380,1.5921,792.0,331.0,41.0,Cleanup and remove deprecations,https://github.com/zfit/zfit/pull/425
+Human (pre-ChatGPT),552510594,pulearn/pulearn,,feat,6.0,20,3.5778,559,1.6959,1516.0,33.0,10.0,Bagging PU Classifier,https://github.com/pulearn/pulearn/pull/1
+Human (pre-ChatGPT),1401730290,spcl/dace,,fix,8.0,18,4.9315,365,1.9425,645.0,123.0,14.0,PyObject Callbacks,https://github.com/spcl/dace/pull/1119
+Human (pre-ChatGPT),1410952732,spcl/dace,,feat,8.0,18,4.6632,386,1.671,467.0,111.0,19.0,Generic slice view removal transformation,https://github.com/spcl/dace/pull/1123
+Human (pre-ChatGPT),1456969356,InamuraJIN/ActionRecorder,,fix,8.0,18,41.8605,43,3.3023,105.0,46.0,12.0,Version 4.0.2,https://github.com/InamuraJIN/ActionRecorder/pull/41
+Human (pre-ChatGPT),1445533865,ailia-ai/ailia-models,,feat,7.0,17,4.3038,395,1.5671,553.0,0.0,8.0,Implement Film,https://github.com/ailia-ai/ailia-models/pull/950
+Human (pre-ChatGPT),744659354,python-cachier/cachier,,feat,9.0,17,6.1151,278,2.1367,395.0,3.0,4.0,"Implement ""in memory"" backend",https://github.com/python-cachier/cachier/pull/39
+Human (pre-ChatGPT),745130116,snok/django-guid,,feat,9.0,16,5.3156,301,2.0997,1144.0,273.0,20.0,Celery integration,https://github.com/snok/django-guid/pull/50
+Human (pre-ChatGPT),1446524394,microsoft/onnxscript,,ci,8.0,15,1.5806,949,1.3309,115.0,70.0,16.0,Add pylint to lintrunner,https://github.com/microsoft/onnxscript/pull/187
+Human (pre-ChatGPT),882682865,python-cachier/cachier,,feat,9.0,15,10.9489,137,1.8394,291.0,137.0,6.0,Pickle several files,https://github.com/python-cachier/cachier/pull/54
+Human (pre-ChatGPT),1392071789,onnx/onnx,,docs,10.0,14,2.3411,598,1.4799,4673.0,33.0,61.0,Add ONNX docs to onnx.ai (2),https://github.com/onnx/onnx/pull/4561
+Human (pre-ChatGPT),1462723314,near/nearcore,,feat,10.0,14,3.2483,431,1.5824,707.0,290.0,10.0,feat(mirror): don't start a full node for the source chain by default,https://github.com/near/nearcore/pull/8111
+Human (pre-ChatGPT),1125254036,yutto-dev/yutto,,refactor,10.0,13,1.7403,747,1.743,1136.0,735.0,30.0,♻️ refactor: refactor parser code into extractor,https://github.com/yutto-dev/yutto/pull/55
+Human (pre-ChatGPT),968085937,python-cachier/cachier,,other,3.0,13,10.4,125,1.808,290.0,136.0,5.0,Several pickle files,https://github.com/python-cachier/cachier/pull/69
+Human (pre-ChatGPT),997190661,python-cachier/cachier,,test,8.0,13,10.4,125,1.808,293.0,138.0,5.0,Several pickle files,https://github.com/python-cachier/cachier/pull/72
+Human (pre-ChatGPT),1016104386,python-cachier/cachier,,fix,6.0,12,9.7561,123,1.7805,293.0,138.0,5.0,several pickle files,https://github.com/python-cachier/cachier/pull/76
+Human (pre-ChatGPT),1019030515,python-cachier/cachier,,other,3.0,12,9.7561,123,1.7805,293.0,138.0,5.0,Several pickle files by erap129 ,https://github.com/python-cachier/cachier/pull/77
+Human (pre-ChatGPT),1353402882,zfit/zfit,,feat,9.0,12,2.3256,516,1.6047,847.0,105.0,27.0,"Implementing missing methods: create_sampler, to_binned, to_unbinned",https://github.com/zfit/zfit/pull/422
+Human (pre-ChatGPT),861319124,saturday06/VRM-Addon-for-Blender,,feat,9.0,12,3.7383,321,1.433,1058.0,199.0,2.0,Add VRM Props Panels,https://github.com/saturday06/VRM-Addon-for-Blender/pull/65
+Human (pre-ChatGPT),999391004,python-cachier/cachier,,other,3.0,12,9.7561,123,1.7805,293.0,138.0,5.0,several pickle files,https://github.com/python-cachier/cachier/pull/74
+Human (pre-ChatGPT),1405815065,spcl/dace,,perf,8.0,11,9.6491,114,1.9825,188.0,4.0,7.0,Infer aliasing information for nested SDFGs,https://github.com/spcl/dace/pull/1121
+Human (pre-ChatGPT),1464736850,getsentry/sentry-python,,fix,10.0,11,33.3333,33,2.9091,61.0,3.0,2.0,fix(profiling): Resolve inherited method class names,https://github.com/getsentry/sentry-python/pull/1756
+Human (pre-ChatGPT),1420219638,spcl/dace,,fix,9.0,10,12.5,80,1.95,157.0,28.0,9.0,Assortment of code generation and simplify fixes,https://github.com/spcl/dace/pull/1127
+Human (pre-ChatGPT),1429641480,spcl/dace,,perf,8.0,10,7.1429,140,1.6786,315.0,108.0,6.0,Convenience SDFG Optimization API,https://github.com/spcl/dace/pull/1132
+Human (pre-ChatGPT),1447731939,valkey-io/valkey-glide,,feat,9.0,9,3.629,248,1.9032,382.0,45.0,15.0,Added python support for async socket client,https://github.com/valkey-io/valkey-glide/pull/76
+Human (pre-ChatGPT),744173455,snok/django-guid,,refactor,8.0,9,4.5226,199,1.8291,453.0,288.0,16.0,Rework settings,https://github.com/snok/django-guid/pull/49
+Human (pre-ChatGPT),1358674166,Azure/azure-kusto-python,,fix,6.0,8,10.5263,76,1.9605,174.0,71.0,7.0,ignorefirstrecord fix,https://github.com/Azure/azure-kusto-python/pull/413
+Human (pre-ChatGPT),1361499336,Azure/azure-kusto-python,,refactor,8.0,8,12.6984,63,2.2222,125.0,62.0,3.0,User/t eitanmoed/ingestion flow class update,https://github.com/Azure/azure-kusto-python/pull/414
+Human (pre-ChatGPT),1428302955,DeepLabCut/DeepLabCut,,chore,9.0,8,7.9208,101,1.8713,198.0,0.0,4.0,Code for automatically updating license headers,https://github.com/DeepLabCut/DeepLabCut/pull/2028
+Human (pre-ChatGPT),1445987323,microsoft/onnxscript,,feat,9.0,8,13.7931,58,2.1207,79.0,3.0,4.0,Add support for returning input as output,https://github.com/microsoft/onnxscript/pull/184
+Human (pre-ChatGPT),900081425,vladfi1/slippi-ai,,chore,7.0,8,5.7971,138,1.8623,192.0,28.0,9.0,Update Main with remote changes,https://github.com/vladfi1/slippi-ai/pull/22
+Human (pre-ChatGPT),1326073601,TorchIO-project/torchio,,feat,9.0,7,5.8333,120,1.85,171.0,3.0,6.0,Add RSNA 2022 Cervical Spine Fracture Detection dataset,https://github.com/TorchIO-project/torchio/pull/943
+Human (pre-ChatGPT),1416181873,getsentry/sentry-python,,fix,9.0,7,5.0725,138,2.2899,67.0,1.0,2.0,Add exception handling to Asyncio Integration,https://github.com/getsentry/sentry-python/pull/1695
+Human (pre-ChatGPT),1457056660,reflex-dev/reflex,,test,10.0,7,2.2727,308,2.4481,637.0,120.0,20.0,Add basic unit tests,https://github.com/reflex-dev/reflex/pull/7
+Human (pre-ChatGPT),359744503,matsui528/rii,,test,8.0,7,2.2152,316,2.0316,420.0,0.0,11.0,sift1m/sift1b benchmark,https://github.com/matsui528/rii/pull/23
+Human (pre-ChatGPT),1286209709,zfit/zfit,,feat,9.0,6,4.8,125,1.768,197.0,60.0,5.0,add hash functionality to dataset,https://github.com/zfit/zfit/pull/408
+Human (pre-ChatGPT),1362916207,Z3Prover/z3,,fix,9.0,6,40.0,15,2.6,7.0,0.0,1.0,Handle `_out(STRING)` parameters in Java API,https://github.com/Z3Prover/z3/pull/6325
+Human (pre-ChatGPT),1372886410,valkey-io/valkey-glide,,feat,9.0,6,5.6604,106,1.7075,252.0,56.0,10.0,Create result files and CSV file with all results.,https://github.com/valkey-io/valkey-glide/pull/35
+Human (pre-ChatGPT),1417942959,Jij-Inc/OpenJij,,perf,9.0,6,0.9885,607,1.8254,1203.0,25.0,15.0,add CSRSparse class and improve performance,https://github.com/Jij-Inc/OpenJij/pull/326
+Human (pre-ChatGPT),1423177111,onnx/onnx,,feat,10.0,6,4.918,122,1.7131,468.0,21.0,52.0,add GroupNormalization-18,https://github.com/onnx/onnx/pull/4621
+Human (pre-ChatGPT),1452643545,Arize-ai/phoenix,,refactor,7.0,6,100.0,6,5.0,30.0,36.0,3.0,Improve import paths,https://github.com/Arize-ai/phoenix/pull/15
+Human (pre-ChatGPT),1465277751,langchain-ai/langchain,,other,3.0,6,3.2432,185,1.6757,528.0,0.0,6.0,pal chain,https://github.com/langchain-ai/langchain/pull/207
