@@ -26,17 +26,17 @@ weaker seniority proxy than `GET /users/{login}`.
 
 | File | Rows | What |
 |---|---|---|
-| `rq3_agent_prs_with_task_type.csv` | 491 | per-PR table, **now with RQ4 columns added** |
-| `rq3_human_prs_with_task_type.csv` | 513 | same |
-| `rq3_pre_chatgpt_prs_with_task_type.csv` | 477 | same, keeping your GPT-4.1-mini labels |
-| `rq4_pr_review_metrics.csv` | 1,481 | the review metrics on their own |
-| `rq4_reviews_long.csv` | 4,206 | one row per review submission (reviewer, state, timestamp) |
-| `rq4_reviewers.csv` | 601 | one row per distinct human reviewer — seniority proxy |
-| `rq4_pr_reference.csv` | 1,481 | `pr_id → full_name, number` |
-| `rq4_pr_comment_authors.csv` | 1,466 | comments split into human / bot / PR author |
+| `rq3_agent_prs_with_task_type.csv` | 481 | per-PR table, **now with RQ4 columns added** |
+| `rq3_human_prs_with_task_type.csv` | 537 | same |
+| `rq3_pre_chatgpt_prs_with_task_type.csv` | 465 | same, keeping your GPT-4.1-mini labels |
+| `rq4_pr_review_metrics.csv` | 1,483 | the review metrics on their own |
+| `rq4_reviews_long.csv` | 4,180 | one row per review submission (reviewer, state, timestamp) |
+| `rq4_reviewers.csv` | 536 | one row per distinct human reviewer — seniority proxy |
+| `rq4_pr_reference.csv` | 1,483 | `pr_id → full_name, number`, built from the three tables above by `rq4_make_pr_reference.py` |
+| `rq4_pr_comment_authors.csv` | 1,468 | comments split into human / bot / PR author |
 
-Regenerate with `rq4_fetch_review_data.py`, then `rq4_make_tables.py`, then
-`rq4_fetch_comment_authors.py` (all here). Every fetch checkpoints per PR and resumes;
+Regenerate with `rq4_make_pr_reference.py`, then `rq4_fetch_review_data.py`, then
+`rq4_make_tables.py`, then `rq4_fetch_comment_authors.py` (all here). Every fetch checkpoints per PR and resumes;
 they need `GITHUB_TOKEN` in `.env` or the environment (`GITHUB_TOKEN=$(gh auth token)`
 works). All paths are relative to this `analysis/` directory.
 
@@ -82,7 +82,7 @@ out.
 
 ### `status`
 
-`ok` for 1,466 PRs. **15 PRs returned 404** — 2 agent, 13 human, 0 pre-ChatGPT. The
+`ok` for 1,468 PRs. **15 PRs returned 404** — 2 agent, 13 human, 0 pre-ChatGPT. The
 repositories still exist; the individual PRs have been deleted. Filter on
 `status == 'ok'`. This is 1.0% and matches the loss the paper already describes in §4.2.
 
@@ -96,9 +96,9 @@ Zero-inflated but **not degenerate — modelling is viable.**
 
 | Group | n | Zero human reviews | Zero comments | Median comments | Changes requested |
 |---|---|---|---|---|---|
-| AI agents | 489 | 31.7% | 10.0% | 3.0 | **10.4%** |
-| Human | 500 | 33.4% | 27.0% | 2.0 | 4.0% |
-| Human (pre-ChatGPT) | 477 | 36.9% | 40.0% | 1.0 | 5.0% |
+| AI agents | 479 | 32.2% | 10.2% | 3.0 | **10.4%** |
+| Human | 524 | 29.8% | 25.2% | 2.0 | 5.0% |
+| Human (pre-ChatGPT) | 465 | 37.2% | 41.1% | 1.0 | 4.7% |
 
 Negative binomial with zero inflation, as proposed, is the right model.
 

@@ -163,7 +163,9 @@ The two human CPET outputs stored as `.csv.gz` are read transparently — the sc
 `analysis/` is self-contained (its scripts and notebooks use paths relative to that folder):
 the per-PR tables for the three groups with task types and review-effort columns, the
 pre-ChatGPT task-type labelling (prompt, batches, GPT-4.1-mini labels), and the RQ4
-review-effort data pulled from the GitHub API. `analysis/rq4-review-effort-data.md` is the
+review-effort data pulled from the GitHub API (`rq4_make_pr_reference.py` derives the PR list
+from the three tables, `rq4_fetch_review_data.py` pulls the data, `rq4_make_tables.py` joins it
+back, `rq4_fetch_comment_authors.py` splits comments by author). `analysis/rq4-review-effort-data.md` is the
 column reference. The notebooks write figures one level up (the paper includes them from its
 root); copies of every generated figure in the paper are in `figures/`.
 
