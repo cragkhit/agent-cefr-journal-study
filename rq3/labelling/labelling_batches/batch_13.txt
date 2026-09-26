@@ -1,0 +1,575 @@
+You are labelling GitHub pull requests by task type, following the Conventional
+Commits specification.
+
+For each PR below, output `pr_id`, `type`, `confidence`, `reason`.
+
+- `type` must be exactly one of: build, chore, ci, docs, feat, fix, other, perf, refactor, style, test
+- `confidence` is an integer from 3 to 10 (10 = the PR states its task type
+  unambiguously; 3 = too vague to be sure)
+- `reason` is one sentence explaining the choice
+
+Judge from the PR title and body together. Some PRs have an empty body — judge from
+the title alone in that case. If a PR is ambiguous, pick the most likely label and
+lower the confidence rather than falling back to `other`. Reserve `other` for PRs
+that genuinely fit no category; label a revert as `other`.
+
+Assign exactly one label per PR.
+
+Return CSV with the header `pr_id,type,confidence,reason`, one row per input PR and
+nothing else — no commentary, no code fence. Quote the `reason` field. Preserve each
+`pr_id` exactly as given: they are 10-digit integers, do not round, reformat, or
+truncate them. Return exactly 25 rows, in the order given.
+
+Input (25 PRs):
+
+----- PR -----
+pr_id: 1457486443
+title: Fixed AttributeError when unpickling HTTPAdapterWithSocketOptions. (#…
+body:
+…431)
+
+Fixes https://github.com/Azure/azure-kusto-python/issues/430
+
+#### Pull Request Description
+
+_[Add a description of your pull request here]_
+
+---
+
+#### Future Release Comment
+_[Add description of your change, to include in the next release]_
+_[Delete any or all irrelevant sections, e.g. if your change does not warrant a release comment at all]_
+
+**Breaking Changes:**
+- None
+
+**Features:**
+- None
+
+**Fixes:**
+- None
+
+----- PR -----
+pr_id: 1457753006
+title: Add RunDescriber and friends to dataset public API
+body:
+(empty)
+
+----- PR -----
+pr_id: 1457973701
+title: [fix issues] wait for a while for waagent write device timeout value
+body:
+(empty)
+
+----- PR -----
+pr_id: 1458232602
+title: Fix remote seqscan test
+body:
+I haven't tested yet if the tests pass now, and how long they take
+
+----- PR -----
+pr_id: 1458515518
+title: Remove blue box around focused items
+body:
+I added a package to remove the blue borders around the Chakra components.
+
+See: https://medium.com/@keeganfamouss/accessibility-on-demand-with-chakra-ui-and-focus-visible-19413b1bc6f9
+
+----- PR -----
+pr_id: 1458532039
+title: Disable incompatible TF 2.11 transformers test (fixes cross version tests)
+body:
+Signed-off-by: dbczumar <<email redacted>>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## What changes are proposed in this pull request?
+
+Disable incompatible TF 2.11 transformers test
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [X] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+(Details in 1-2 sentences. You can just refer to another PR with a description if this PR is part of a larger change.)
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [X] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [X] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1458550192
+title: Fix TF 2.10.1 param assert in test
+body:
+Signed-off-by: dbczumar <<email redacted>>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## What changes are proposed in this pull request?
+
+Fix TF 2.10.1 param assert in test
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [X] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+(Details in 1-2 sentences. You can just refer to another PR with a description if this PR is part of a larger change.)
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [X] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [X] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1458615792
+title: feat: Parquet support for Datasets
+body:
+resolves #45
+
+----- PR -----
+pr_id: 1458730210
+title: Fix redis setup
+body:
+* Avoid circular import by updating the `StateManager.setup` method
+* Check that Redis is working with gunicorn / Redis on the Twitter app
+
+----- PR -----
+pr_id: 1458795929
+title: Create Github Action for pytest
+body:
+Set up initial GitHub actions workflow.
+
+It runs the following:
+* pytest
+* pyright
+* darglint
+* pydocstyle
+
+----- PR -----
+pr_id: 1458855963
+title: [Usage] Robustify the user hash to avoid empty string
+body:
+This PR is to robustify the user hash, to avoid getting empty user hash from the file. It could happen before when the program crashed before writing to the file.
+https://github.com/skypilot-org/skypilot/blob/48d4a84865821b468d0a608ef4860d7f352859f0/sky/utils/common_utils.py#L55-L56
+
+----- PR -----
+pr_id: 1459247528
+title: fix: python types
+body:
+(empty)
+
+----- PR -----
+pr_id: 1459389733
+title: Fix reference implementation for reduce operators and issue #4653
+body:
+Signed-off-by: xadupre <<email redacted>>
+
+### Description
+
+The implementation for the reduce operators introduced in opset 18 were not registered in file `_op_list.py` and could not be used by the reference implementation. It fixes issue #4653.
+
+
+### Motivation and Context
+
+Extend the list of supported backend tests.
+
+----- PR -----
+pr_id: 1459399842
+title: fix: instructions for missing sklearn dependency
+body:
+## What does this PR address?
+
+Fixes wrong instruction for install scikit-learn.
+
+----- PR -----
+pr_id: 1459428832
+title: test_runner: ignore 'sender is dropped while join handle is still alive' warnings
+body:
+The need for a proper solution to this is tracked in https://github.com/neondatabase/neon/issues/2885
+
+----- PR -----
+pr_id: 1459516893
+title: Replace `assertEqual` in tests/store/model_registry/test_file_store.py
+body:
+Signed-off-by: harupy <<email redacted>>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## Related Issues/PRs
+
+<!--
+Please reference any related feature requests, issues, or PRs here. For example, `#123`. To automatically close the referenced issues when this PR is merged, please use a closing keyword (close, fix, or resolve). For example, `Resolve #123`. See https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue for more information.
+-->
+
+<!-- Resolve --> #xxx
+
+## What changes are proposed in this pull request?
+
+Replace `assertEqual` in tests/store/model_registry/test_file_store.py with a plain `assert`.
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [x] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [ ] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [ ] No. You can skip the rest of this section.
+- [ ] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+(Details in 1-2 sentences. You can just refer to another PR with a description if this PR is part of a larger change.)
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [ ] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [x] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1459603896
+title: Move set_transaction_name out of event processor in fastapi/starlette
+body:
+Doing this in the event processor breaks the transaction name contract if the user sets the transaction name manually on scope.
+
+----- PR -----
+pr_id: 1459609800
+title: Disable statement timeout for performance tests
+body:
+Fix `test_seqscans` by disabling statement timeout.
+
+Also, replace increasing statement timeout with disabling it for performance tests. This should make tests more stable and allow us to observe performance degradation instead of test failures.
+
+Ref https://github.com/neondatabase/neon/actions/runs/3520063845/jobs/5900633702#step:6:277
+
+----- PR -----
+pr_id: 1459622377
+title: per-tenant-remote-sync: storage_sync metrics + upload retry unit tests
+body:
+Curiously, the added unit test fails after attach with
+
+```
+              stdout: Starting existing postgres main_pg_node...
+Safekeepers synced on 0/174DCF0
+Extracting base backup to create postgres instance: path=/home/cs/src/neon-work-2/test_output/test_remote_storage_upload_queue_retries[local_fs]/repo/pgdatadirs/tenants/c5debc0d4332fb4c4068c8d7ed3ee6d7/main_pg_node port=15012
+
+              stderr: command failed: extracting base backup failed
+
+Caused by:
+    0: failed to iterate over archive
+    1: db error: ERROR: could not find data for key 010000000000000000000000000000000000 at LSN 0/174DCF1, for request at LSN 0/174DCF0
+```
+
+But it even fails if I disable the failpoints, so, it can't be related to the retry logic.
+
+----- PR -----
+pr_id: 1459931969
+title: Use compat mode editable install for dev environment
+body:
+This forces the .pth file created by the lisa editable install to be the legacy static format rather than the current dynamic format. This is to resolve a path issue for non-package directories in the root of lisa repot like microsoft. This is a workaround to restore the previous behavior provided by poetry. This only worked with poetry because of a quirk in the order of path evaluation and this behavior is not guaranteed by the Python API, so we'll need to prioritize moving these non-package directories.
+
+run `nox -vs dev` after installing to update the dev virtual environment
+
+----- PR -----
+pr_id: 1459982519
+title: CDK Lowcode: allow parametrizing initial page when using PageIncrement
+body:
+## What
+PageIncrement starts counting pages from 0 which is not always a good choice 
+
+## How
+Allow configuring the number of the start page
+
+Use case: pagination starts from 1 in [Zenloop](https://github.com/airbytehq/airbyte/pull/19624), Delighted(work in progress)
+
+----- PR -----
+pr_id: 1460070729
+title: Fix Examples pip requirements dependency checks
+body:
+Signed-off-by: Ben Wilson <<email redacted>>
+
+<!-- 🚨 We recommend pull requests be filed from a non-master branch on a repository fork (e.g. <username>:fix-xxx). 🚨 -->
+
+## Related Issues/PRs
+
+<!--
+Please reference any related feature requests, issues, or PRs here. For example, `#123`. To automatically close the referenced issues when this PR is merged, please use a closing keyword (close, fix, or resolve). For example, `Resolve #123`. See https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue for more information.
+-->
+
+<!-- Resolve --> #xxx
+
+## What changes are proposed in this pull request?
+
+Fix the examples test suite for dependency validation for pip requirements with mlflow on the new pinned range version logic
+
+## How is this patch tested?
+
+<!--
+If you're unsure about what to test, where to add tests, or how to run tests, please feel free to ask.
+-->
+- [X] Existing unit/integration tests
+- [ ] New unit/integration tests
+- [ ] Manual tests (describe details, including test results, below)
+
+<!--
+Please describe how you confirmed the proposed feature/bug-fix/change works here. For example, if you fixed an MLflow client API, you could attach the code that didn't work prior to the fix but works now, or if you added a new feature on MLflow UI, you could attach a video that demonstrates the feature.
+-->
+
+## Does this PR change the documentation?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Make sure the changed pages / sections render correctly in the documentation preview.
+
+## Release Notes
+
+### Is this a user-facing change?
+
+- [X] No. You can skip the rest of this section.
+- [ ] Yes. Give a description of this change to be included in the release notes for MLflow users.
+
+(Details in 1-2 sentences. You can just refer to another PR with a description if this PR is part of a larger change.)
+
+### What component(s), interfaces, languages, and integrations does this PR affect?
+Components
+- [ ] `area/artifacts`: Artifact stores and artifact logging
+- [X] `area/build`: Build and test infrastructure for MLflow
+- [ ] `area/docs`: MLflow documentation pages
+- [ ] `area/examples`: Example code
+- [ ] `area/model-registry`: Model Registry service, APIs, and the fluent client calls for Model Registry
+- [ ] `area/models`: MLmodel format, model serialization/deserialization, flavors
+- [ ] `area/recipes`: Recipes, Recipe APIs, Recipe configs, Recipe Templates
+- [ ] `area/projects`: MLproject format, project running backends
+- [ ] `area/scoring`: MLflow Model server, model deployment tools, Spark UDFs
+- [ ] `area/server-infra`: MLflow Tracking server backend
+- [ ] `area/tracking`: Tracking Service, tracking client APIs, autologging
+
+Interface
+- [ ] `area/uiux`: Front-end, user experience, plotting, JavaScript, JavaScript dev server
+- [ ] `area/docker`: Docker use across MLflow's components, such as MLflow Projects and MLflow Models
+- [ ] `area/sqlalchemy`: Use of SQLAlchemy in the Tracking Service or Model Registry
+- [ ] `area/windows`: Windows support
+
+Language
+- [ ] `language/r`: R APIs and clients
+- [ ] `language/java`: Java APIs and clients
+- [ ] `language/new`: Proposals for new client languages
+
+Integrations
+- [ ] `integrations/azure`: Azure and Azure ML integrations
+- [ ] `integrations/sagemaker`: SageMaker integrations
+- [ ] `integrations/databricks`: Databricks integrations
+
+<!--
+Insert an empty named anchor here to allow jumping to this section with a fragment URL
+(e.g. https://github.com/mlflow/mlflow/pull/123#user-content-release-note-category).
+Note that GitHub prefixes anchor names in markdown with "user-content-".
+-->
+<a name="release-note-category"></a>
+### How should the PR be classified in the release notes? Choose one:
+
+- [ ] `rn/breaking-change` - The PR will be mentioned in the "Breaking Changes" section
+- [X] `rn/none` - No description will be included. The PR will be mentioned only by the PR number in the "Small Bugfixes and Documentation Updates" section
+- [ ] `rn/feature` - A new user-facing feature worth mentioning in the release notes
+- [ ] `rn/bug-fix` - A user-facing bug fix worth mentioning in the release notes
+- [ ] `rn/documentation` - A user-facing documentation change worth mentioning in the release notes
+
+----- PR -----
+pr_id: 1460132574
+title: fix(mirror): fix bug in handling of access keys that have been deleted
+body:
+right now we're just storing the source and target nonces for added keys, but then we don't update anything if the key is deleted and readded. So to fix this, we'll store only the target chain nonce on disk, along with the hashes of txs and receipts that might update it in the future.
+
+A big downside to this is that the logic around handling nonces is much more complicated and probably more bug prone. But doing this will make it easier to get around the problem of access keys added by FunctionCalls by just sending extra transactions.
+
+This PR also adds traffic to the corresponding pytest that fails before this change, but passes after (except for a few mishaps where the AddKey tx hasn't made it on chain by the time we want to use it)
+
+----- PR -----
+pr_id: 1460405154
+title: feat(pointcloud): Add HDBSCAN to point cloud
+body:
+resolves #46
+
+----- PR -----
+pr_id: 1460483597
+title: fix(ingest): make kafka emit callback optional
+body:
+## Checklist
+
+- [ ] The PR conforms to DataHub's [Contributing Guideline](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md) (particularly [Commit Message Format](https://github.com/datahub-project/datahub/blob/master/docs/CONTRIBUTING.md#commit-message-format))
+- [ ] Links to related issues (if applicable)
+- [ ] Tests for the changes have been added/updated (if applicable)
+- [ ] Docs related to the changes have been added/updated (if applicable). If a new feature has been added a Usage Guide has been added for the same.
+- [ ] For any breaking change/potential downtime/deprecation/big changes an entry has been made in [Updating DataHub](https://github.com/datahub-project/datahub/blob/master/docs/how/updating-datahub.md)

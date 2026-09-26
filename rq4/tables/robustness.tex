@@ -1,0 +1,25 @@
+\begin{tabular}{llllll}
+\toprule
+ & outcome & changes & comments & comments\_human & rounds \\
+group & check &  &  &  &  \\
+\midrule
+\multirow[t]{5}{*}{AI agents} & C1+C2 as a share & 0.92 [0.70, 1.21] & 0.98 [0.80, 1.19] & -- & 1.04 [0.94, 1.15] \\
+ & author replies included & -- & -- & 1.14 [0.95, 1.38] & -- \\
+ & bot reviews controlled & 1.20 [0.88, 1.64] & 1.03 [0.89, 1.20] & -- & 0.97 [0.86, 1.10] \\
+ & main model & 1.35 [0.96, 1.89] & 1.16 [0.96, 1.41] & -- & 1.11 [0.95, 1.31] \\
+ & repos with >= 3 PRs & 1.23 [0.81, 1.86] & 1.16 [0.92, 1.47] & -- & 1.08 [0.88, 1.32] \\
+\cline{1-6}
+\multirow[t]{5}{*}{Human} & C1+C2 as a share & 0.62 [0.34, 1.16] & 0.95 [0.87, 1.05] & -- & 1.04 [0.94, 1.16] \\
+ & author replies included & -- & -- & 1.19 [0.99, 1.45] & -- \\
+ & bot reviews controlled & 1.25 [0.70, 2.24] & 1.13 [0.93, 1.37] & -- & 1.26 [1.05, 1.51]* \\
+ & main model & 1.25 [0.69, 2.24] & 1.13 [0.93, 1.38] & -- & 1.26 [1.05, 1.51]* \\
+ & repos with >= 3 PRs & 1.54 [0.77, 3.11] & 1.18 [0.96, 1.44] & -- & 1.28 [1.05, 1.55]* \\
+\cline{1-6}
+\multirow[t]{5}{*}{Human (pre-ChatGPT)} & C1+C2 as a share & 0.99 [0.82, 1.20] & 0.91 [0.77, 1.09] & -- & 0.98 [0.90, 1.07] \\
+ & author replies included & -- & -- & 1.26 [0.99, 1.59] & -- \\
+ & bot reviews controlled & 1.89 [1.12, 3.22]* & 1.26 [1.00, 1.60] & -- & 1.28 [1.05, 1.56]* \\
+ & main model & 1.90 [1.12, 3.23]* & 1.24 [0.98, 1.57] & -- & 1.26 [1.03, 1.53]* \\
+ & repos with >= 3 PRs & 1.90 [1.12, 3.23]* & 1.24 [0.98, 1.57] & -- & 1.26 [1.04, 1.53]* \\
+\cline{1-6}
+\bottomrule
+\end{tabular}

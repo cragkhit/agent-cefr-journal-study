@@ -1,4 +1,4 @@
-# Regenerable derived layouts -- see scripts/group_by_repo.py
+# Regenerable derived layouts -- see extraction/group_by_repo.py
 data/ai_agent_corpus_by_repo/
 data/human_corpus_by_repo/
 data/pre_chatgpt_results_by_repo/
@@ -7,9 +7,18 @@ data/pre_chatgpt_results_by_repo/
 __pycache__/
 *.pyc
 .venv/
+.DS_Store
 
-# Run logs written by the analysis scripts
+# Fetch checkpoints and run logs (regenerable; the fetch scripts resume from them)
 log files/
+
+# LaTeX build artefacts from paper/supplementary.tex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 
 # Never commit credentials
 .env
